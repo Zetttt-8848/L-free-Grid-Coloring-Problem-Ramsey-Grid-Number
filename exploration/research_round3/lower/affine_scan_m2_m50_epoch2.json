@@ -1,0 +1,208 @@
+{
+  "coefficient_range": "all ordered (a,b) in Z_m^2 for each m",
+  "expected_parameter_pairs": 42924,
+  "family": "chi(x,y)=f((a*x+b*y) mod m)",
+  "hardest_by_solver_conflicts": [
+    {
+      "a": 2,
+      "b": 2,
+      "clauses": 1365,
+      "conflicts": 50979,
+      "decisions": 66713,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "clauses": 1365,
+      "conflicts": 50960,
+      "decisions": 67923,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 11,
+      "b": 11,
+      "clauses": 1365,
+      "conflicts": 50874,
+      "decisions": 64849,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 19,
+      "b": 19,
+      "clauses": 1365,
+      "conflicts": 50203,
+      "decisions": 65608,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 16,
+      "b": 16,
+      "clauses": 1365,
+      "conflicts": 47489,
+      "decisions": 63323,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 8,
+      "b": 8,
+      "clauses": 1365,
+      "conflicts": 47154,
+      "decisions": 62474,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 15,
+      "b": 15,
+      "clauses": 1365,
+      "conflicts": 40061,
+      "decisions": 52969,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 10,
+      "b": 10,
+      "clauses": 1365,
+      "conflicts": 38161,
+      "decisions": 52259,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 12,
+      "b": 12,
+      "clauses": 1365,
+      "conflicts": 36090,
+      "decisions": 50775,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "clauses": 1365,
+      "conflicts": 32498,
+      "decisions": 45159,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 9,
+      "b": 9,
+      "clauses": 1365,
+      "conflicts": 32366,
+      "decisions": 48626,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 21,
+      "b": 21,
+      "clauses": 1365,
+      "conflicts": 31412,
+      "decisions": 41659,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 13,
+      "b": 13,
+      "clauses": 1365,
+      "conflicts": 31286,
+      "decisions": 45063,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "clauses": 1365,
+      "conflicts": 29108,
+      "decisions": 46425,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 18,
+      "b": 18,
+      "clauses": 1365,
+      "conflicts": 29044,
+      "decisions": 39916,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 31,
+      "b": 28,
+      "clauses": 2056,
+      "conflicts": 29043,
+      "decisions": 39520,
+      "distinct_residue_triples": 633,
+      "m": 39
+    },
+    {
+      "a": 7,
+      "b": 34,
+      "clauses": 2056,
+      "conflicts": 28853,
+      "decisions": 39231,
+      "distinct_residue_triples": 633,
+      "m": 39
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "clauses": 1365,
+      "conflicts": 28281,
+      "decisions": 40904,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "clauses": 1365,
+      "conflicts": 28034,
+      "decisions": 41462,
+      "distinct_residue_triples": 400,
+      "m": 41
+    },
+    {
+      "a": 23,
+      "b": 23,
+      "clauses": 1365,
+      "conflicts": 27732,
+      "decisions": 43923,
+      "distinct_residue_triples": 400,
+      "m": 41
+    }
+  ],
+  "interrupted_undecided": 0,
+  "mathematical_status": "UNDECIDED_NO_NEGATIVE_PROOFS",
+  "modulus_range_inclusive": [
+    2,
+    50
+  ],
+  "n": 21,
+  "next_pair_index": 23114,
+  "non_claim": "raw UNSAT across a finite family is telemetry unless every negative decision receives an independently checked certificate",
+  "pairs_attempted": 4198,
+  "pairs_in_epoch_scope": 24008,
+  "per_call_conflict_budget": 100000,
+  "python_sat_version": "1.9.dev15",
+  "raw_unsat_unverified": 4198,
+  "schema": "round3_lower_affine_modular_scan_v1",
+  "solver": "maplechrono",
+  "start_pair_index": 18916,
+  "wall_cap_seconds": 300.0,
+  "wall_seconds": 300.0669825999976,
+  "witness": null,
+  "witness_path": null
+}

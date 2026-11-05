@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "claim_id": "R2-R1-signed-one-defect-family",
+  "repository": {"commit": "not-a-git-repository", "dirty": true},
+  "command": "1) python research_round2\\checks\\weights_signed_scan.py; 2) python research_round2\\checks\\verify_weights_signed_scan.py",
+  "environment": {
+    "software": ["Python 3.13.5", "fractions.Fraction and Python integers"],
+    "hardware": "Windows x86_64 local CPU; hardware is not load-bearing"
+  },
+  "mathematics": {
+    "assertion_tested": "All exact feasible t=93 profiles with background 64 and one interior negative integer defect",
+    "coefficient_domain": "integers and exact rationals",
+    "conventions": "Every positive-lag autocorrelation a_d must be nonnegative; c_d=n-d-18q_d",
+    "inputs": ["research_round2/MANDATE.txt", "inherited H_0..H_28 table"],
+    "bounds": {"n": [464, 465], "t": 93, "background": 64, "feasible_profiles": 111840},
+    "non_claims": ["The one-defect family does not optimize the full signed admissible cone"]
+  },
+  "randomness": {"used": false, "generator": "none", "seed": 0},
+  "run": {"started_at": "2026-09-09T13:26:19-03:00", "runtime_seconds": 123.0, "exit_status": 0},
+  "outputs": [
+    {"path": "research_round2/checks/weights_signed_scan_result.json", "sha256": "440a3f7b7b18e8fb34b06f10d3177290b9081d7cbff64161fc95a8bda6cfa82b"},
+    {"path": "research_round2/checks/verify_weights_signed_scan_result.json", "sha256": "5a033fc652f94d3d18bed1a20966e8941fb5421763b1c8598db29f0002bacc42"}
+  ],
+  "checks": ["111840 profiles independently reenumerated", "Best saved profiles directly convolved", "All displayed autocorrelations and scores checked"],
+  "result": "PROVED finite scan: no positive score in this family at n=464 or n=465",
+  "residual_risks": ["Narrow structured family only"]
+}

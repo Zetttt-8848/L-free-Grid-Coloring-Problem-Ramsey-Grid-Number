@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "width": 13,
+  "raw_masks_checked": 8192,
+  "good_count": 7147,
+  "bad_count": 1045,
+  "minimal_bad_proofs_checked": 109,
+  "rup_additions_checked": 31605,
+  "maximal_good_colorings_checked": 334,
+  "capacities": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 5,
+    "7": 6,
+    "8": 7,
+    "9": 7,
+    "10": 8,
+    "11": 9,
+    "12": 9,
+    "13": 10
+  },
+  "minimum_possible_span_by_size": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 6,
+    "7": 7,
+    "8": 9,
+    "9": 10,
+    "10": 12
+  },
+  "source_sha256": "c31b0260e0a02026f29abaa6cf47cef813db8a1ef6937dcae6f4f326637a5fae",
+  "runtime_seconds": 8.29932713508606,
+  "scope": "Complete labeled support-mask classification in width13; no orbit count or wider-window exhaustion claimed"
+}

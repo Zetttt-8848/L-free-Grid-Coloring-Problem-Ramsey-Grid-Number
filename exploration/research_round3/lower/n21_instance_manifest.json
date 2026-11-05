@@ -1,0 +1,30 @@
+{
+  "cnf_file": "research_round3\\lower\\n21_exact.cnf",
+  "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+  "colors": 3,
+  "counts": {
+    "cell_clauses": 1764,
+    "clauses_before_symmetry": 10374,
+    "forbidden_color_clauses": 8610,
+    "geometric_triples": 2870,
+    "symmetry_clauses": 441,
+    "total_clauses": 10815,
+    "variables": 1323
+  },
+  "cube_file": "research_round3\\lower\\n21_cubes.json",
+  "formal_orientation": "(x,y),(x+d,y),(x+d,y+d)",
+  "indexing": "zero-based x,y; 1 <= d < min(n-x,n-y); colors 0,1,2 in CNF",
+  "legacy_input": "research_round2\\checks\\lower\\cube_n21_maplechrono.json",
+  "legacy_sha256": "7202421417d03d714114c18f2f7b340bfaaafedc292acd380b3150644ba7a8a3",
+  "n": 21,
+  "schema": "round3_lower_instance_manifest_v1",
+  "symmetry": {
+    "fixed_cell": [
+      0,
+      0
+    ],
+    "fixed_color": 0,
+    "restricted_growth": "color 2 cannot occur before the first occurrence of color 1 in row-major order",
+    "soundness": "permute the first-cell color to 0, then swap residual colors 1 and 2 if their first-occurrence order requires it"
+  }
+}

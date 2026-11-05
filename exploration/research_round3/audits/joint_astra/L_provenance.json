@@ -1,0 +1,23 @@
+{
+  "python": "3.13.5",
+  "input_sha256": {
+    "lower/ENCODING.md": "db88b456eb869fd8d77829ecec131a1a4201f21b4cf8b74e03dc06b8516664c8",
+    "lower/AFFINE_CONSTRUCTIONS.md": "3e04c410ec445d3bfeff16c570363135d1a37cc26ec580b8eaac01b645031e00",
+    "lower/SUBTASK_REPORT.md": "0899a07537f900ae9f6611aa90f4139fa5adb294afd91c19a7a763779242008b",
+    "lower/MAPLECM_DISPOSITION.md": "932215a414df9e58da9aa60bd123f0599d79fdeeebb4872fc34f64454a787788",
+    "lower/n21_exact.cnf": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+    "lower/n21_cubes.json": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+    "lower/n21_quick_cube_proofs.json": "37e7a782b9ffcc48c28299bd334273db0f69cb278ff12252cd531403a12de9f2",
+    "lower/n21_stage1_maplechrono.json": "4c86483efec20e6794501678adfcb273913fbae0e45bdab3aff0e21c612545b0",
+    "lower/n21_stage2_portfolio_merged.json": "9feba3f3fbf574c32ff1bd73b7513338e8229d3c00a2e963a3d3884dc3acea03",
+    "lower/n21_stage2_glucose4.json": "4fc7e930620f4118a4beae48725295b9e337bf7ab170702b9652e237ac8ae7c4",
+    "lower/n21_stage2_maplecm.json": "e38de0f570274e37ded90a7962c83a43e0dcd6cd3c2fa2534541ff618134f43b",
+    "lower/n21_stage2_glucose3_recovery.json": "4d1d3475ad9ecde4fdd3b68155289f1fe0c16648e0762f38a09059b051c94e7e",
+    "lower/difference_circulant_n3.txt": "6c6f355fb14605b05d54e4dace6590a8d7dbd00e4ea34fd578d1400c1dc528cb",
+    "lower/affine_scan_m2_m50.json": "97c4a519242ae283f060e6ea6b260cae711990b2b3e49f683e8dfd1dfbaf614b",
+    "lower/affine_scan_m2_m50_epoch2.json": "3ac6f1c6f2746e288d3369db8ca8c3cf4bfcb8176d2793b0aac5687ae4cbd602",
+    "lower/affine_scan_m2_m50_epoch3.json": "c39dc314d2b0a7e9b311a23292002da5040afd6461aad805c602c625350d6946"
+  },
+  "script_sha256": "ba380a39f670576c068423dc257be5280db201a926a6dbff043f1409f7bcb044",
+  "independence": "No project module imported or executed."
+}

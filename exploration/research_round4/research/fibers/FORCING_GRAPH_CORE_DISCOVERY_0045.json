@@ -1,0 +1,1724 @@
+{
+  "scope": "One raw graph-invariant observation from the saved 120-cell coloring. No coloring solver or properness recheck was run.",
+  "source": [
+    0,
+    1,
+    3,
+    4,
+    9,
+    10,
+    12,
+    13,
+    27,
+    28,
+    30,
+    31,
+    36,
+    37,
+    39,
+    40
+  ],
+  "vertices": 120,
+  "corners_read": 200,
+  "active_equal_endpoint_corners": 75,
+  "simple_edges": 150,
+  "maximum_degree": 12,
+  "peeling_maximum_degree": 3,
+  "peeling_degree_histogram": {
+    "0": 15,
+    "1": 62,
+    "2": 41,
+    "3": 2
+  },
+  "core_histogram": {
+    "0": 12,
+    "1": 40,
+    "2": 49,
+    "3": 19
+  },
+  "maximum_core": 3,
+  "peeling_order": [
+    {
+      "vertex": [
+        9,
+        4
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        27,
+        4
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        27,
+        9
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        27,
+        10
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        27,
+        12
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        27,
+        13
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        28,
+        12
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        28,
+        13
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        30,
+        13
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        36,
+        13
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        36,
+        31
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        40,
+        36
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        3,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        9,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        9,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        10,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        10,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        12,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        12,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        12,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        13,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        13,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        27,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        27,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        28,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        28,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        30,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        30,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        30,
+        28
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        12
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        28
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        30
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        37,
+        1
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        9
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        13
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        31
+      ],
+      "degree_at_removal": 0
+    },
+    {
+      "vertex": [
+        37,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        13
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        31
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        37
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        0
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        28
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        30
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        4,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        10,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        4,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        28,
+        3
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        10,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        28,
+        9
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        28,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        13,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        31,
+        9
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        27,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        28,
+        10
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        30,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        30,
+        12
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        30,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        12,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        30,
+        27
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        31,
+        4
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        31,
+        13
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        31,
+        10
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        13,
+        10
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        12
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        13,
+        12
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        37,
+        12
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        28
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        31,
+        30
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        37,
+        30
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        36
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        31,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        1,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        3,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        13,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        9,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        13,
+        4
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        37,
+        10
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        4
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        37,
+        28
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        28
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        30
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        36
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        39,
+        0
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        39,
+        12
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        12
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        4,
+        1
+      ],
+      "degree_at_removal": 3
+    },
+    {
+      "vertex": [
+        12,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        10,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        12,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        30,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        28,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        30,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        36,
+        1
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        36,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        36,
+        9
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        36,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        1
+      ],
+      "degree_at_removal": 3
+    },
+    {
+      "vertex": [
+        40,
+        13
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        40,
+        3
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        40,
+        31
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        9
+      ],
+      "degree_at_removal": 2
+    },
+    {
+      "vertex": [
+        40,
+        37
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        27
+      ],
+      "degree_at_removal": 1
+    },
+    {
+      "vertex": [
+        40,
+        39
+      ],
+      "degree_at_removal": 0
+    }
+  ],
+  "core_numbers": [
+    {
+      "vertex": [
+        1,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        3,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        3,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        4,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        4,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        4,
+        3
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        9,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        9,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        9,
+        3
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        9,
+        4
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        10,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        10,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        10,
+        3
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        10,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        10,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        12,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        12,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        12,
+        3
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        12,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        12,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        12,
+        10
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        13,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        13,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        13,
+        3
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        13,
+        4
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        13,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        13,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        13,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        27,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        27,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        27,
+        3
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        27,
+        4
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        27,
+        9
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        27,
+        10
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        27,
+        12
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        27,
+        13
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        28,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        28,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        28,
+        3
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        28,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        28,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        28,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        28,
+        12
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        28,
+        13
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        28,
+        27
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        30,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        30,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        30,
+        3
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        30,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        30,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        30,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        30,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        30,
+        13
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        30,
+        27
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        30,
+        28
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        31,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        31,
+        3
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        31,
+        4
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        13
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        27
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        28
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        31,
+        30
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        36,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        36,
+        3
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        36,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        9
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        36,
+        10
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        12
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        13
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        36,
+        27
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        36,
+        28
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        30
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        36,
+        31
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        37,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        1
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        3
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        4
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        9
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        13
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        27
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        28
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        30
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        37,
+        31
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        37,
+        36
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        0
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        1
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        3
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        4
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        9
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        10
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        13
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        39,
+        27
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        39,
+        28
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        30
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        31
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        39,
+        36
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        39,
+        37
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        0
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        1
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        3
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        4
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        9
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        10
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        12
+      ],
+      "core": 2
+    },
+    {
+      "vertex": [
+        40,
+        13
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        27
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        28
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        30
+      ],
+      "core": 1
+    },
+    {
+      "vertex": [
+        40,
+        31
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        36
+      ],
+      "core": 0
+    },
+    {
+      "vertex": [
+        40,
+        37
+      ],
+      "core": 3
+    },
+    {
+      "vertex": [
+        40,
+        39
+      ],
+      "core": 3
+    }
+  ]
+}

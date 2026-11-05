@@ -1,0 +1,35 @@
+{
+  "order": 34,
+  "units": [
+    5,
+    64,
+    67,
+    1323
+  ],
+  "trace": [
+    [
+      5,
+      null
+    ],
+    [
+      64,
+      null
+    ],
+    [
+      67,
+      null
+    ],
+    [
+      1323,
+      null
+    ],
+    [
+      1,
+      10374
+    ]
+  ],
+  "conflict": {
+    "empty_clause": 1764
+  },
+  "clause_index_base": 0
+}

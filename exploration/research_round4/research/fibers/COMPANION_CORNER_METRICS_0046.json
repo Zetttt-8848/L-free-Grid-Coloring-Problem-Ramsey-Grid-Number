@@ -1,0 +1,122 @@
+{
+  "scope": "Metrics only from three saved symbolic proper strict-source rules. No solver run and no properness recheck was performed.",
+  "provenance": {
+    "three_cube": "research/THREE_CUBE_MIXED_CORNER_MINIMUM_0046.md, Section 2",
+    "four_cube": "research/fibers/FOUR_CUBE_NONLINEAR_CONSTRUCTION_0045.md, Tables (4)--(6)",
+    "weight_two_r5": "research/fibers/WEIGHT_TWO_LAYER.md, rule (1), with the stated powers-of-five family"
+  },
+  "records": {
+    "three_cube": {
+      "source_size": 8,
+      "cells": 28,
+      "corners": 24,
+      "forcing_corners": 15,
+      "mixed_corners": 9,
+      "companion_parallelograms": {
+        "FF": 6,
+        "FM": 3,
+        "MM": 3
+      },
+      "ap3_corners": {},
+      "forcing_triples_by_outer_color": {
+        "0": {
+          "anchor_class_size": 18,
+          "forcing_endpoint_triples": 9,
+          "anchors_with_forcing_triple": 3,
+          "forcing_load_histogram": {
+            "0": 15,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "anchored_pairs_of_forcing_triples": 10
+        },
+        "1": {
+          "anchor_class_size": 10,
+          "forcing_endpoint_triples": 6,
+          "anchors_with_forcing_triple": 3,
+          "forcing_load_histogram": {
+            "0": 7,
+            "2": 3
+          },
+          "anchored_pairs_of_forcing_triples": 3
+        }
+      }
+    },
+    "four_cube": {
+      "source_size": 16,
+      "cells": 120,
+      "corners": 200,
+      "forcing_corners": 75,
+      "mixed_corners": 125,
+      "companion_parallelograms": {
+        "FF": 15,
+        "FM": 45,
+        "MM": 40
+      },
+      "ap3_corners": {},
+      "forcing_triples_by_outer_color": {
+        "0": {
+          "anchor_class_size": 61,
+          "forcing_endpoint_triples": 37,
+          "anchors_with_forcing_triple": 16,
+          "forcing_load_histogram": {
+            "0": 45,
+            "1": 6,
+            "2": 5,
+            "4": 4,
+            "5": 1
+          },
+          "anchored_pairs_of_forcing_triples": 39
+        },
+        "1": {
+          "anchor_class_size": 59,
+          "forcing_endpoint_triples": 38,
+          "anchors_with_forcing_triple": 17,
+          "forcing_load_histogram": {
+            "0": 42,
+            "1": 7,
+            "2": 4,
+            "3": 3,
+            "4": 2,
+            "6": 1
+          },
+          "anchored_pairs_of_forcing_triples": 40
+        }
+      }
+    },
+    "weight_two_r5": {
+      "source_size": 10,
+      "cells": 45,
+      "corners": 30,
+      "forcing_corners": 30,
+      "mixed_corners": 0,
+      "companion_parallelograms": {
+        "FF": 15
+      },
+      "ap3_corners": {},
+      "forcing_triples_by_outer_color": {
+        "0": {
+          "anchor_class_size": 30,
+          "forcing_endpoint_triples": 0,
+          "anchors_with_forcing_triple": 0,
+          "forcing_load_histogram": {
+            "0": 30
+          },
+          "anchored_pairs_of_forcing_triples": 0
+        },
+        "1": {
+          "anchor_class_size": 15,
+          "forcing_endpoint_triples": 30,
+          "anchors_with_forcing_triple": 10,
+          "forcing_load_histogram": {
+            "0": 5,
+            "2": 5,
+            "4": 5
+          },
+          "anchored_pairs_of_forcing_triples": 35
+        }
+      }
+    }
+  }
+}

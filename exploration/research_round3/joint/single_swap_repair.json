@@ -1,0 +1,8 @@
+{
+  "proposals": 47586,
+  "cap_pass": 0,
+  "pattern_pass": 0,
+  "success": false,
+  "runtime_seconds": 0.8258998394012451,
+  "scope": "single-swap neighborhood of a fixed snapshot only"
+}

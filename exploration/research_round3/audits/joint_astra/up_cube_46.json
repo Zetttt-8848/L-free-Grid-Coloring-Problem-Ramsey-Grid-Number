@@ -1,0 +1,19 @@
+{
+  "order": 46,
+  "units": [
+    6,
+    64,
+    68,
+    1323
+  ],
+  "trace": [
+    [
+      6,
+      null
+    ]
+  ],
+  "conflict": {
+    "empty_clause": 10375
+  },
+  "clause_index_base": 0
+}

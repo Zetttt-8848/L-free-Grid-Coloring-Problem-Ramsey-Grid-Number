@@ -1,0 +1,13 @@
+[
+  {
+    "n": 10,
+    "status": "raw negative",
+    "seconds": 0.11607700001331978,
+    "stats": {
+      "restarts": 2,
+      "conflicts": 17560,
+      "decisions": 20009,
+      "propagations": 451830
+    }
+  }
+]

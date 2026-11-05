@@ -1,0 +1,38 @@
+[
+  {
+    "script": "research_round3/cap/ap5_exact_checks.py",
+    "exit": 0,
+    "stdout": "{\"bad_AP5_groups\": 5, \"first_bad_group\": {\"step\": 12, \"starts\": [212, 286]}, \"counts\": [[1, 2, 2], [2, 8, 6], [4, 1024, 36], [5, 32768, 0]], \"W4_diagonal_patterns\": {\"0101\": 6, \"0100\": 2, \"0110\": 2, \"0011\": 6, \"0010\": 2, \"1010\": 6, \"1001\": 2, \"1100\": 6, \"1101\": 2, \"1011\": 2}}\n",
+    "stderr": ""
+  },
+  {
+    "script": "research_round3/cap/endpoint_audit.py",
+    "exit": 0,
+    "stdout": "{\n  \"small_checks\": 7181,\n  \"ell\": [\n    0,\n    1,\n    2,\n    3,\n    4,\n    6,\n    7,\n    9,\n    10,\n    12,\n    13,\n    14,\n    15,\n    16,\n    18\n  ],\n  \"bounds\": [\n    {\n      \"window\": false,\n      \"maximum_not_excluded\": 158,\n      \"first_exclusion\": {\n        \"n\": 464,\n        \"s\": 159,\n        \"profile\": \"inherited\",\n        \"window\": false,\n        \"excluded\": true,\n        \"best\": {\n          \"c\": 13,\n          \"H\": 1976,\n          \"minimum\": 41676,\n          \"upper\": 41405,\n          \"margin\": 271,\n          \"last_distance\": 42,\n          \"correction\": 728\n        }\n      }\n    },\n    {\n      \"window\": true,\n      \"maximum_not_excluded\": 158,\n      \"first_exclusion\": {\n        \"n\": 464,\n        \"s\": 159,\n        \"profile\": \"inherited\",\n        \"window\": true,\n        \"excluded\": true,\n        \"best\": {\n          \"c\": 15,\n          \"H\": 2265,\n          \"minimum\": 54666,\n          \"upper\": 54214,\n          \"margin\": 452,\n          \"last_distance\": 48,\n          \"correction\": 1346\n        }\n      }\n    }\n  ],\n  \"conditional45\": [\n    454,\n    457,\n    458,\n    459,\n    460,\n    461,\n    462,\n    463,\n    464,\n    465\n  ],\n  \"three_shaves\": {\n    \"n\": 464,\n    \"s\": 155,\n    \"profile\": \"46+3\",\n    \"window\": true,\n    \"excluded\": true,\n    \"best\": {\n      \"c\": 10,\n      \"H\": 1495,\n      \"minimum\": 25110,\n      \"upper\": 25091,\n      \"margin\": 19,\n      \"last_distance\": 33,\n      \"correction\": 374\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "research_round3/cap/verify_pair_forcing.py",
+    "exit": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"cases\": 60,\n  \"verified_forcing_steps\": 16425,\n  \"five_ap_free_unions\": 59,\n  \"first_order24_AP5_free\": [\n    24,\n    true,\n    2\n  ],\n  \"coverage\": \"every specified disjoint translation/reflection, no solver used\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "research_round3/overlap/exact_overlap.py",
+    "exit": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"range_n\": [\n    1,\n    7\n  ],\n  \"universe\": \"all source subsets, all positive d<e<n, all independent subsets B_d of F_d and B_e of F_e; no quotient or pruning\",\n  \"cases\": 26104,\n  \"sum_overlap\": 3491,\n  \"literal_saturation\": {\n    \"Bd\": [\n      1,\n      18\n    ],\n    \"Be\": [\n      1,\n      14\n    ],\n    \"M\": 2,\n    \"O\": 1,\n    \"union\": 1\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "research_round3/general/exact_scalars.py",
+    "exit": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"old_squared_gaps\": [\n    \"81/1600\",\n    \"369/1600\",\n    \"81/1600\"\n  ],\n  \"new_squared_gaps\": [\n    \"243/31250\",\n    \"5761/1000000\",\n    \"8641/1000000\",\n    \"32401/1000000\",\n    \"230401/1000000\"\n  ],\n  \"scalar_k_range\": [\n    6,\n    12\n  ],\n  \"golomb_primes\": [\n    3,\n    5,\n    7,\n    11,\n    13,\n    17,\n    19,\n    23,\n    29,\n    31\n  ],\n  \"N5\": \"6568408355712890625\",\n  \"N6_new\": \"37608910510519071039902074217516707306379521\",\n  \"k6_margin\": \"68925828964323664149419624101576583553901223087/15\",\n  \"universal_proof_not_replaced_by_finite_checks\": true\n}\n",
+    "stderr": ""
+  },
+  {
+    "script": "research_round3/audits/verify_joint_root.py",
+    "exit": 0,
+    "stdout": "{\"verdict\": \"PASS\", \"method\": \"Independent integer-bitset intersections for distances and sixfold shifts for AP starts\", \"source_sha256\": \"68b49802651fea2c1e0a2b9c2086a581db62abff400c6a4fd736b5531ca36132\", \"n\": 464, \"size\": 155, \"pairs\": 11935, \"distance_constraints\": 463, \"APs\": 21298, \"bad_APs\": 0, \"small_distance_profile\": [46, 47, 47, 48, 48, 47, 48, 48, 47, 48, 48, 48, 48, 48, 48, 47, 45, 43, 47, 45, 47, 47, 48, 47, 44, 42, 46], \"small_distances_above_45\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 21, 22, 23, 24, 27], \"scope\": \"One-class necessary conditions are feasible; no grid coloring or Ramsey lower bound is asserted.\"}\n",
+    "stderr": ""
+  }
+]

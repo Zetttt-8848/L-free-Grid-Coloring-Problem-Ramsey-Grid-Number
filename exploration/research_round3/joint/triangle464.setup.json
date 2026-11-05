@@ -1,0 +1,14 @@
+{
+  "variables": 11935,
+  "corners": 187167,
+  "clauses": 374335,
+  "solver": "glucose4",
+  "seconds": 600,
+  "cnf_sha256": "26dca5d61d44ef001ef659d45e0c104fe0fa73b4063ada930a7c1681f500a5cb",
+  "arguments": {
+    "witness": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\witness_464.json",
+    "seconds": 600,
+    "solver": "glucose4",
+    "tag": "triangle464"
+  }
+}

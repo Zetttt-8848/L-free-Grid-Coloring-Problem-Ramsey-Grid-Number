@@ -1,0 +1,35 @@
+{
+  "affine_scan": {
+    "attempted": 26103,
+    "parameter_pairs": 42924,
+    "remaining": 16821
+  },
+  "all_exact_checks_pass": true,
+  "arithmetic_type": "Python integers and fractions only",
+  "difference_circulant_n3": {
+    "corners": 5
+  },
+  "inherited_gap": {
+    "integer_gap": 444,
+    "lower_bound": 21,
+    "ratio_denominator": 7,
+    "ratio_numerator": 155,
+    "upper_bound": 465
+  },
+  "n21": {
+    "cell_clauses": 1764,
+    "certified_easy_plus_unresolved_hard": 81,
+    "clauses_before_symmetry": 10374,
+    "corner_count_match": true,
+    "corners_closed_formula": 2870,
+    "corners_direct_sum": 2870,
+    "cubes": 81,
+    "forbidden_color_clauses": 8610,
+    "hard_cubes": 48,
+    "stage1_nominal_solver_cap_seconds": 546,
+    "symmetry_clauses": 441,
+    "total_clauses": 10815,
+    "variables": 1323
+  },
+  "schema": "round3_lower_exact_claims_v1"
+}

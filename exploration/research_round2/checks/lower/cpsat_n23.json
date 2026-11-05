@@ -1,0 +1,27 @@
+{
+  "branches": 1674673,
+  "canonical_expanded_hint_sha256": "24918a3e98588f3eb817a1db29ce66e962a1b0d80f7b527cab1d7838a2a07064",
+  "colors": 3,
+  "conflicts": 623363,
+  "constraints": 3797,
+  "geometric_triples": 3795,
+  "hint_path": "research_round2\\checks\\lower\\breakout_n21_corrected.json",
+  "hint_transposed": false,
+  "measured_wall_seconds": 20.030315999989398,
+  "n": 23,
+  "non_claims": [
+    "UNKNOWN and unproved INFEASIBLE statuses are not UNSAT certificates"
+  ],
+  "orientation": "(x,y),(x+d,y),(x+d,y+d)",
+  "ortools_version": "9.15.6755",
+  "random_seed": 823,
+  "raw_solver_status": "UNKNOWN",
+  "schema": "round2_lower_cp_sat_v1",
+  "solver_wall_cap_seconds": 20.0,
+  "solver_wall_time_seconds": 20.027634300000003,
+  "status": "UNDECIDED",
+  "symmetry_breaking": "cell 0 = 0 and cell 1 <= 1; sound residual color permutation",
+  "variables": 529,
+  "witness": null,
+  "workers": 2
+}

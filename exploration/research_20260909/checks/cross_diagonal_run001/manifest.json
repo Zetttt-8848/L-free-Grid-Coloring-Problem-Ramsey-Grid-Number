@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "claim_id": "CD1_CD3_AUDIT_R3_465",
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research_20260909/checks/cross_diagonal_verify.py",
+    "research_20260909/checks/cross_diagonal_run001/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.13.5"
+      },
+      {
+        "name": "Python",
+        "version": "3.13.5, Anaconda distribution; Python standard library only"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "The displayed T6 forcing certificate covers every binary assignment; T6 has zero and T5 has 36 corner-free binary colorings; six-AP-free subsets of [11] have size at most 9; direct convolution identities hold for every ternary word of length 6 with weights (1,2,3,2,1); the explicitly stated weight and Golomb caps give score 285630 at N=465.",
+    "coefficient_domain": "Z, exact integers",
+    "conventions": "T_m={(i,j):0<=j<i<=m-1}; fixed corner is ((i,j),(i+d,j),(i+d,j+d)), d>0; binary colors are 0 and 1; energy words use colors 0,1,2; Golomb span is max-min.",
+    "inputs": [
+      "research_20260909/checks/cross_diagonal_verify.py",
+      "Supplied Golomb length lower bounds G(24)>=425, G(25)>=480"
+    ],
+    "bounds": {
+      "triangle_sizes": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "max_triangle_binary_assignments": 32768,
+      "proof_branch_assignments": 16384,
+      "AP_interval_size": 11,
+      "energy_word_length": 6,
+      "energy_word_color_count": 3,
+      "N": 465,
+      "weight_support": [
+        1,
+        93
+      ],
+      "shift_support": [
+        0,
+        92
+      ]
+    },
+    "non_claims": [
+      "No search over whole N=465 grids",
+      "No verification of the underlying Golomb optimality computations",
+      "Universal reductions are proved in the route documents, not inferred from bounded tests"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-09T13:15:25.914318+00:00",
+    "runtime_seconds": 0.225511,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research_20260909/checks/cross_diagonal_verify.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research_20260909/checks/cross_diagonal_verify.py",
+      "sha256": "f3421ebb719a40f22e83599e7997666b5b19e27aa7e159b4fd27bc82831957d8",
+      "sha256_after": "f3421ebb719a40f22e83599e7997666b5b19e27aa7e159b4fd27bc82831957d8"
+    }
+  ],
+  "output_directory": "research_20260909/checks/cross_diagonal_run001",
+  "declared_results": [
+    "research_20260909/checks/cross_diagonal_run001/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "research_20260909/checks/cross_diagonal_run001/stdout.txt",
+      "sha256": "95fe423f3689ca3bd8590ebca9472513d7cfbbe81fc85da8a18284bbd15b340a",
+      "kind": "log"
+    },
+    {
+      "path": "research_20260909/checks/cross_diagonal_run001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research_20260909/checks/cross_diagonal_run001/result.json",
+      "sha256": "95fe423f3689ca3bd8590ebca9472513d7cfbbe81fc85da8a18284bbd15b340a",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

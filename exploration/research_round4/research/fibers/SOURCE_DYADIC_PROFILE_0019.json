@@ -1,0 +1,7123 @@
+{
+  "purpose": "bounded dyadic-band discovery on stored proper-source candidates; no color solving or verification",
+  "definition": "T_H=sum_d sum_{H<=h<2H}|F_d intersect (F_d-h)|; h is translation step between starts",
+  "source_cap": 100,
+  "examined_count": 100,
+  "records": [
+    {
+      "A": [
+        0,
+        18,
+        24,
+        26,
+        72,
+        78,
+        80,
+        96,
+        98,
+        104,
+        234,
+        240,
+        242,
+        258,
+        260,
+        266,
+        312,
+        314,
+        320,
+        338
+      ],
+      "size": 20,
+      "span": 338,
+      "M": 190,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round4\\research\\constant_weight_probe.json",
+        "case_index": 0,
+        "stored_status": "answer=true with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 0,
+          "T_H_over_M_numerator": 0,
+          "T_H_over_M_denominator": 1,
+          "by_translation_h": {}
+        },
+        {
+          "H": 2,
+          "T_H": 15,
+          "T_H_over_M_numerator": 3,
+          "T_H_over_M_denominator": 38,
+          "by_translation_h": {
+            "2": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 3,
+          "T_H_over_M_denominator": 38,
+          "by_translation_h": {
+            "6": 15
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 15,
+          "T_H_over_M_numerator": 3,
+          "T_H_over_M_denominator": 38,
+          "by_translation_h": {
+            "8": 15
+          }
+        },
+        {
+          "H": 16,
+          "T_H": 47,
+          "T_H_over_M_numerator": 47,
+          "T_H_over_M_denominator": 190,
+          "by_translation_h": {
+            "16": 1,
+            "18": 15,
+            "20": 1,
+            "24": 15,
+            "26": 15
+          }
+        },
+        {
+          "H": 32,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 95,
+          "by_translation_h": {
+            "32": 1,
+            "46": 1,
+            "48": 1,
+            "52": 1,
+            "54": 15,
+            "56": 1,
+            "60": 1,
+            "62": 1
+          }
+        },
+        {
+          "H": 64,
+          "T_H": 51,
+          "T_H_over_M_numerator": 51,
+          "T_H_over_M_denominator": 190,
+          "by_translation_h": {
+            "70": 1,
+            "72": 15,
+            "74": 1,
+            "78": 15,
+            "80": 15,
+            "86": 1,
+            "96": 1,
+            "98": 1,
+            "104": 1
+          }
+        },
+        {
+          "H": 128,
+          "T_H": 96,
+          "T_H_over_M_numerator": 48,
+          "T_H_over_M_denominator": 95,
+          "by_translation_h": {
+            "136": 1,
+            "138": 1,
+            "144": 1,
+            "154": 1,
+            "156": 1,
+            "160": 1,
+            "162": 15,
+            "164": 1,
+            "168": 1,
+            "170": 1,
+            "180": 1,
+            "186": 1,
+            "188": 1,
+            "208": 1,
+            "210": 1,
+            "214": 1,
+            "216": 15,
+            "218": 1,
+            "222": 1,
+            "224": 1,
+            "232": 1,
+            "234": 15,
+            "236": 1,
+            "240": 15,
+            "242": 15,
+            "248": 1
+          }
+        },
+        {
+          "H": 256,
+          "T_H": 9,
+          "T_H_over_M_numerator": 9,
+          "T_H_over_M_denominator": 190,
+          "by_translation_h": {
+            "258": 1,
+            "260": 1,
+            "266": 1,
+            "288": 1,
+            "294": 1,
+            "296": 1,
+            "312": 1,
+            "314": 1,
+            "320": 1
+          }
+        }
+      ],
+      "peak_H": 128,
+      "peak_T_H": 96,
+      "peak_ratio_numerator": 48,
+      "peak_ratio_denominator": 95,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 10,
+      "span": 12,
+      "M": 45,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7007,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 30,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 15,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 15,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 11,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 45,
+          "by_translation_h": {
+            "8": 6,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 30,
+      "peak_ratio_numerator": 2,
+      "peak_ratio_denominator": 3,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "size": 10,
+      "span": 12,
+      "M": 45,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7599,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 15,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "size": 10,
+      "span": 12,
+      "M": 45,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7607,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 28,
+          "T_H_over_M_numerator": 28,
+          "T_H_over_M_denominator": 45,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 6,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 8,
+          "T_H_over_M_denominator": 45,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 28,
+      "peak_ratio_numerator": 28,
+      "peak_ratio_denominator": 45,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 10,
+      "span": 12,
+      "M": 45,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7863,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 15,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 10,
+      "span": 12,
+      "M": 45,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 8027,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 30,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 15,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 15,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 11,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 45,
+          "by_translation_h": {
+            "8": 6,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 30,
+      "peak_ratio_numerator": 2,
+      "peak_ratio_denominator": 3,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "size": 9,
+      "span": 10,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 1759,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4831,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3295,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5343,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6367,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3679,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5727,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 11,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7263,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 2975,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5023,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3487,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 1,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5535,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6559,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 3,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 17,
+          "T_H_over_M_numerator": 17,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 1,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 17,
+      "peak_ratio_numerator": 17,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5791,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 1,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6815,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7327,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 1,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5919,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 6,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4847,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 1,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3311,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 24,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 10,
+            "5": 10,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 24,
+      "peak_ratio_numerator": 2,
+      "peak_ratio_denominator": 3,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5359,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6383,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 23,
+          "T_H_over_M_numerator": 23,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 23,
+      "peak_ratio_numerator": 23,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "size": 9,
+      "span": 10,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 1903,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 2927,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4975,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "2": 6,
+            "3": 15
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3439,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 17,
+          "T_H_over_M_numerator": 17,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 10,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5487,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "1": 6
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "2": 15,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6511,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3695,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5743,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6767,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7279,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5039,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5807,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "1": 6
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "2": 15,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5935,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6959,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3535,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5583,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6607,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "2": 3,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 23,
+          "T_H_over_M_numerator": 23,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 23,
+      "peak_ratio_numerator": 23,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3791,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5839,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6863,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7375,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "2": 3,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5967,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7503,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 13,
+      "peak_ratio_numerator": 13,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7055,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4855,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 1,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3319,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 27,
+          "T_H_over_M_numerator": 3,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "4": 10,
+            "5": 10,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 27,
+      "peak_ratio_numerator": 3,
+      "peak_ratio_denominator": 4,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5367,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 23,
+          "T_H_over_M_numerator": 23,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 23,
+      "peak_ratio_numerator": 23,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6391,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 2935,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4983,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 24,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 15,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 3
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 24,
+      "peak_ratio_numerator": 2,
+      "peak_ratio_denominator": 3,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6519,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5751,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6775,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7287,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 6,
+            "3": 1
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "size": 9,
+      "span": 10,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 1975,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 2999,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5047,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 23,
+          "T_H_over_M_numerator": 23,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 3
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 23,
+      "peak_ratio_numerator": 23,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3895,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5943,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 17,
+          "T_H_over_M_numerator": 17,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 1,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 6,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 17,
+      "peak_ratio_numerator": 17,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6967,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 3,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 10,
+            "5": 1,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3031,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "2": 15,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5079,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 3
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6615,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3799,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5847,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "1": 6
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 20,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6871,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "1": 6
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 10,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7383,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7767,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 13,
+      "peak_ratio_numerator": 13,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6039,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 6,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7063,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3047,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5095,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 24,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 1,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 24,
+      "peak_ratio_numerator": 2,
+      "peak_ratio_denominator": 3,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3559,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 23,
+          "T_H_over_M_numerator": 23,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 23,
+      "peak_ratio_numerator": 23,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5607,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6631,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "2": 3,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 29,
+          "T_H_over_M_numerator": 29,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 10,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 2,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 29,
+      "peak_ratio_numerator": 29,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5863,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 22,
+          "T_H_over_M_numerator": 11,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 22,
+      "peak_ratio_numerator": 11,
+      "peak_ratio_denominator": 18,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6887,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 10,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 3,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3943,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5991,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7015,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 3,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7527,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7783,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "2": 3,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 4007,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 3,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6055,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 1,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 2,
+      "peak_T_H": 16,
+      "peak_ratio_numerator": 4,
+      "peak_ratio_denominator": 9,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7079,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 6,
+            "5": 3,
+            "6": 3,
+            "7": 6
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7975,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 12,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 3,
+          "by_translation_h": {
+            "2": 6,
+            "3": 6
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 1,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 6087,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 3,
+            "5": 3,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 5,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "8": 3,
+            "9": 1,
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7111,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 18,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 2,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 4,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 18,
+      "peak_ratio_numerator": 1,
+      "peak_ratio_denominator": 2,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7623,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 7,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 6,
+            "3": 1
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 19,
+          "T_H_over_M_numerator": 19,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 6,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 6,
+          "by_translation_h": {
+            "8": 1,
+            "9": 1,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 19,
+      "peak_ratio_numerator": 19,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 7879,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 9,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 4,
+          "by_translation_h": {
+            "2": 6,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 3,
+            "5": 6,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "8": 1,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        2,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 8007,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 13,
+          "T_H_over_M_numerator": 13,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "2": 10,
+            "3": 3
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 8,
+          "T_H_over_M_numerator": 2,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "4": 3,
+            "5": 1,
+            "6": 3,
+            "7": 1
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "8": 3,
+            "9": 3,
+            "10": 3,
+            "11": 1
+          }
+        }
+      ],
+      "peak_H": 1,
+      "peak_T_H": 15,
+      "peak_ratio_numerator": 5,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "size": 9,
+      "span": 11,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 3323,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 15,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "1": 15
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 16,
+          "T_H_over_M_numerator": 4,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 6,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 25,
+          "T_H_over_M_numerator": 25,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "4": 10,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 1,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "10": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 25,
+      "peak_ratio_numerator": 25,
+      "peak_ratio_denominator": 36,
+      "candidate_T_H_gt_M": false
+    },
+    {
+      "A": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12
+      ],
+      "size": 9,
+      "span": 12,
+      "M": 36,
+      "provenance": {
+        "file": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+        "mask": 5371,
+        "stored_status": "maximal_good with color array"
+      },
+      "bands": [
+        {
+          "H": 1,
+          "T_H": 10,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 18,
+          "by_translation_h": {
+            "1": 10
+          }
+        },
+        {
+          "H": 2,
+          "T_H": 20,
+          "T_H_over_M_numerator": 5,
+          "T_H_over_M_denominator": 9,
+          "by_translation_h": {
+            "2": 10,
+            "3": 10
+          }
+        },
+        {
+          "H": 4,
+          "T_H": 21,
+          "T_H_over_M_numerator": 7,
+          "T_H_over_M_denominator": 12,
+          "by_translation_h": {
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 3
+          }
+        },
+        {
+          "H": 8,
+          "T_H": 1,
+          "T_H_over_M_numerator": 1,
+          "T_H_over_M_denominator": 36,
+          "by_translation_h": {
+            "9": 1
+          }
+        }
+      ],
+      "peak_H": 4,
+      "peak_T_H": 21,
+      "peak_ratio_numerator": 7,
+      "peak_ratio_denominator": 12,
+      "candidate_T_H_gt_M": false
+    }
+  ],
+  "counterexample_candidate_T_H_gt_M": null,
+  "inherited_analytic_calibration": {
+    "source": "A_H={0,H,2H,3H,4H} from DYADIC_CHARGING_0016.md section 5",
+    "T_H": 6,
+    "M": 10,
+    "ratio_numerator": 3,
+    "ratio_denominator": 5,
+    "note": "recorded from the existing derivation; its coloring was not checked here"
+  },
+  "scope": "A bounded absence cannot establish a universal per-band constant. Stored statuses are provenance only."
+}

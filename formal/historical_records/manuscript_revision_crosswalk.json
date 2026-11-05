@@ -1,0 +1,15 @@
+{
+  "old_source_sha256": "edfd42329af59aa8419fa1eed18fa6cb0c31ba693df434d57bb98964c8ef6158",
+  "new_source_sha256": "10ddf995cb8e45b0bc3525df8139fb50662d54a886b39b716aad3b1f8c4280bd",
+  "unchanged_statement_count": 46,
+  "changed_statements": [
+    "lem:small"
+  ],
+  "change": "Replaced six-mark nonprogression classification with universal T<=choose(n,3)-(n-2) and E<=e_n-4(n-2), kernel-proved by endpoint induction. Removed obsolete appendix classification/table; retained all47result labels.",
+  "review": "Root and round2_formal independently read the revised lemma and matched its statements and proof to compiled SharpSmallFactors/SmallFactorCompletion. Existing reviews of the46unchanged statements carry through this exact textual crosswalk.",
+  "new_proof_modules": [
+    "SharpSmallFactors.lean",
+    "SmallFactorCompletion.lean",
+    "ProgressionSix.lean"
+  ]
+}

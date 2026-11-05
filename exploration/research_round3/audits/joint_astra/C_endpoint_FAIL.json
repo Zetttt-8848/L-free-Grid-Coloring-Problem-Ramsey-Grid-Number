@@ -1,0 +1,8 @@
+{
+  "status": "HALTED",
+  "error": "AssertionError(('unknown profile', '46'))",
+  "input_sha256": {
+    "cap/endpoint_exact.json": "6a363d3283c7ec1e0f7f46b099ab8ada3077f40dbef57487ce4de7ea7285d634",
+    "cap/conditional_descent.json": "46cf46fe5ce057fe035e736cbd34eaae79ce181552cfafa4a4ac118d64404a47"
+  }
+}

@@ -1,0 +1,700 @@
+{
+  "verdict": "PASS",
+  "family": "(x+h*{0,1,2,4}) union (x+b+h*{0,1,2,3,4})",
+  "domain": "integer x; integer h>=1; integer b>4h",
+  "marks": 9,
+  "cells": 36,
+  "corners": 46,
+  "rup_additions": 157,
+  "coefficient_checks": [
+    {
+      "corner": [
+        2,
+        1,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        1,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        1,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        1,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        13,
+        1,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        2,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        2,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        2,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        13,
+        2,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        10,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        10,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        13,
+        10,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        11,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        13,
+        11,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        13,
+        12,
+        1
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        1,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        1,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        1,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        1,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        3,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        3,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        3,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        10,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        10,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        12,
+        11,
+        2
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        2,
+        3
+      ],
+      "step_h_coefficient": 3,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        2,
+        3
+      ],
+      "step_h_coefficient": 3,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        11,
+        10,
+        3
+      ],
+      "step_h_coefficient": 3,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        10,
+        1,
+        4
+      ],
+      "step_h_coefficient": 4,
+      "step_b_coefficient": 0,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        3,
+        7
+      ],
+      "step_h_coefficient": -2,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        2,
+        8
+      ],
+      "step_h_coefficient": -1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        2,
+        8
+      ],
+      "step_h_coefficient": -1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        3,
+        8
+      ],
+      "step_h_coefficient": -1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        2,
+        1,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        1,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        1,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        2,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        2,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        5,
+        3,
+        9
+      ],
+      "step_h_coefficient": 0,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        2,
+        1,
+        10
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        1,
+        10
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        2,
+        10
+      ],
+      "step_h_coefficient": 1,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        2,
+        1,
+        11
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        1,
+        11
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        3,
+        2,
+        11
+      ],
+      "step_h_coefficient": 2,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "corner": [
+        2,
+        1,
+        12
+      ],
+      "step_h_coefficient": 3,
+      "step_b_coefficient": 1,
+      "identity": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "boundary_checks": [
+    {
+      "x": 0,
+      "h": 0,
+      "b": 0,
+      "identities": "PASS",
+      "positive_order_domain": false
+    },
+    {
+      "x": 1,
+      "h": 1,
+      "b": 1,
+      "identities": "PASS",
+      "positive_order_domain": false
+    },
+    {
+      "x": 1,
+      "h": 1,
+      "b": 5,
+      "identities": "PASS",
+      "positive_order_domain": true
+    },
+    {
+      "x": 1,
+      "h": 1,
+      "b": 9,
+      "identities": "PASS",
+      "positive_order_domain": true
+    },
+    {
+      "x": 2,
+      "h": 2,
+      "b": 9,
+      "identities": "PASS",
+      "positive_order_domain": true
+    },
+    {
+      "x": 1000,
+      "h": 99,
+      "b": 100000,
+      "identities": "PASS",
+      "positive_order_domain": true
+    }
+  ],
+  "scope": "Uniform two-parameter forbidden family from the same verified RUP clauses; no new feasibility search with this premise has been performed"
+}

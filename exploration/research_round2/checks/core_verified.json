@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "R4_upper_bound": 22006246,
+  "R3_interval": [
+    21,
+    465
+  ],
+  "general_bound": "k^(2^k) for k>=3; universal proof required",
+  "dual_normalized_upper_bound": -16,
+  "exact_R3": "UNRESOLVED",
+  "scope": "Finite integer certificates and finite supplemental identity checks; not global search exhaustion."
+}

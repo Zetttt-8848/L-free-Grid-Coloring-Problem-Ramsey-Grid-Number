@@ -1,0 +1,17 @@
+{
+  "all_assumption_literals_exact": true,
+  "audit_pass": true,
+  "clause_multiset_exact_match": true,
+  "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+  "coverage_argument": "restriction of any total coloring to the four split cells is one tuple in {0,1,2}^4; exact tuple-set equality gives one and only one cube",
+  "cube_record_count": 81,
+  "cube_tuple_set_exact_match": true,
+  "cube_unique_count": 81,
+  "declared_clauses": 10815,
+  "declared_variables": 1323,
+  "expected_clauses": 10815,
+  "expected_geometric_triples": 2870,
+  "expected_variables": 1323,
+  "n": 21,
+  "schema": "round3_lower_independent_instance_audit_v1"
+}

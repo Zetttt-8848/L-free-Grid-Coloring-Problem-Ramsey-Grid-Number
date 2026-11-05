@@ -1,0 +1,243 @@
+{
+  "schema": "round3-final-independent-review-matrix-v1",
+  "release_status": "PASS",
+  "recorded_at_utc": "2026-09-10T06:23:20.491014+00:00",
+  "integration_basis": "Root read all four final reviews and the manuscript addendum; all scoped verdicts PASS.",
+  "unresolved_issues": [],
+  "cores": {
+    "G": [
+      {
+        "reviewer": "fresh_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/fresh_astra/REVIEW.md",
+            "sha256": "87e76eba8ed7f663d62bf84b464c6a47187cac13ccac61a3f26663d0ad70377d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/seal.json",
+            "sha256": "8adcee012fa89942b99c754b765e83198d14e72924571d186677fc592bdf9b6d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/manifest.json",
+            "sha256": "8e0703ce3daef656f255278845056d4dc543967a74b06a9e8534536de7afbe40"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/ADDENDUM.md",
+            "sha256": "eff6eb253edd6ead57d6bfb77a5c5161e7f8e9c0cc2a368df78db2f8d9e842a1"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/addendum_seal.json",
+            "sha256": "5d6d17cebaa88b83b8e7a9975cd3d2a3ed248db7a5989438e5567f81139e5335"
+          }
+        ]
+      },
+      {
+        "reviewer": "joint_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/joint_astra/REPORT.md",
+            "sha256": "a7fa07b31e7cc3cfeb35e45a5d2b6121cfeccc48a32df486a74087e6a5d8eff0"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/verdicts.json",
+            "sha256": "0b1e4c9da1a99154ce6515038673d4b07542b8fadc984f10df448449a125d6ff"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/manifest.json",
+            "sha256": "4d1401c33a3886610015502a5da1af643f20101c4ef7352602bfe0220bbef002"
+          }
+        ]
+      }
+    ],
+    "C": [
+      {
+        "reviewer": "joint_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/joint_astra/REPORT.md",
+            "sha256": "a7fa07b31e7cc3cfeb35e45a5d2b6121cfeccc48a32df486a74087e6a5d8eff0"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/verdicts.json",
+            "sha256": "0b1e4c9da1a99154ce6515038673d4b07542b8fadc984f10df448449a125d6ff"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/manifest.json",
+            "sha256": "4d1401c33a3886610015502a5da1af643f20101c4ef7352602bfe0220bbef002"
+          }
+        ]
+      },
+      {
+        "reviewer": "setup_sol",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/setup_sol/C_L_INDEPENDENT_REVIEW.md",
+            "sha256": "885c3f8b8d9e3930352a60c389d04ec1462fc64d0f9972700819e044491ced60"
+          },
+          {
+            "path": "research_round3/audits/setup_sol/independent_audit_results.json",
+            "sha256": "142aef77f12f65e780d51c52cd1162fff02e4674f7f6e37bc87d1dbb145c66f0"
+          },
+          {
+            "path": "research_round3/audits/setup_sol/computation_manifest.json",
+            "sha256": "d43810813620e9cb9c4a8a71397825421202e486bf3f584abbffdc539c2858f4"
+          }
+        ]
+      }
+    ],
+    "J": [
+      {
+        "reviewer": "fresh_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/fresh_astra/REVIEW.md",
+            "sha256": "87e76eba8ed7f663d62bf84b464c6a47187cac13ccac61a3f26663d0ad70377d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/seal.json",
+            "sha256": "8adcee012fa89942b99c754b765e83198d14e72924571d186677fc592bdf9b6d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/manifest.json",
+            "sha256": "8e0703ce3daef656f255278845056d4dc543967a74b06a9e8534536de7afbe40"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/ADDENDUM.md",
+            "sha256": "eff6eb253edd6ead57d6bfb77a5c5161e7f8e9c0cc2a368df78db2f8d9e842a1"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/addendum_seal.json",
+            "sha256": "5d6d17cebaa88b83b8e7a9975cd3d2a3ed248db7a5989438e5567f81139e5335"
+          }
+        ]
+      },
+      {
+        "reviewer": "lower_sol",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/lower_sol/REPORT.md",
+            "sha256": "f6d7cd062dfc98021fe6d51c43719a45bc515d14698de7e3b44fcfa8a19f29dd"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/joint_audit.json",
+            "sha256": "c1a28e8455f6fc0e40558864926e6cb185097dffd318103485714a9dc2b14cfd"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/four_audit.json",
+            "sha256": "7165386e93f429129978b9a8d302878a5a253365d2acadacccd7fa92f77d9ee5"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/manifest.json",
+            "sha256": "29ace51d52405edb9270ba5a5c5f802ef12e39b357524baeb9dbb83fa3de897f"
+          }
+        ]
+      }
+    ],
+    "F": [
+      {
+        "reviewer": "fresh_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/fresh_astra/REVIEW.md",
+            "sha256": "87e76eba8ed7f663d62bf84b464c6a47187cac13ccac61a3f26663d0ad70377d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/seal.json",
+            "sha256": "8adcee012fa89942b99c754b765e83198d14e72924571d186677fc592bdf9b6d"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/manifest.json",
+            "sha256": "8e0703ce3daef656f255278845056d4dc543967a74b06a9e8534536de7afbe40"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/ADDENDUM.md",
+            "sha256": "eff6eb253edd6ead57d6bfb77a5c5161e7f8e9c0cc2a368df78db2f8d9e842a1"
+          },
+          {
+            "path": "research_round3/audits/fresh_astra/addendum_seal.json",
+            "sha256": "5d6d17cebaa88b83b8e7a9975cd3d2a3ed248db7a5989438e5567f81139e5335"
+          }
+        ]
+      },
+      {
+        "reviewer": "lower_sol",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/lower_sol/REPORT.md",
+            "sha256": "f6d7cd062dfc98021fe6d51c43719a45bc515d14698de7e3b44fcfa8a19f29dd"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/joint_audit.json",
+            "sha256": "c1a28e8455f6fc0e40558864926e6cb185097dffd318103485714a9dc2b14cfd"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/four_audit.json",
+            "sha256": "7165386e93f429129978b9a8d302878a5a253365d2acadacccd7fa92f77d9ee5"
+          },
+          {
+            "path": "research_round3/audits/lower_sol/manifest.json",
+            "sha256": "29ace51d52405edb9270ba5a5c5f802ef12e39b357524baeb9dbb83fa3de897f"
+          }
+        ]
+      }
+    ],
+    "L": [
+      {
+        "reviewer": "joint_astra",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/joint_astra/REPORT.md",
+            "sha256": "a7fa07b31e7cc3cfeb35e45a5d2b6121cfeccc48a32df486a74087e6a5d8eff0"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/verdicts.json",
+            "sha256": "0b1e4c9da1a99154ce6515038673d4b07542b8fadc984f10df448449a125d6ff"
+          },
+          {
+            "path": "research_round3/audits/joint_astra/manifest.json",
+            "sha256": "4d1401c33a3886610015502a5da1af643f20101c4ef7352602bfe0220bbef002"
+          }
+        ]
+      },
+      {
+        "reviewer": "setup_sol",
+        "verdict": "PASS",
+        "evidence": [
+          {
+            "path": "research_round3/audits/setup_sol/C_L_INDEPENDENT_REVIEW.md",
+            "sha256": "885c3f8b8d9e3930352a60c389d04ec1462fc64d0f9972700819e044491ced60"
+          },
+          {
+            "path": "research_round3/audits/setup_sol/independent_audit_results.json",
+            "sha256": "142aef77f12f65e780d51c52cd1162fff02e4674f7f6e37bc87d1dbb145c66f0"
+          },
+          {
+            "path": "research_round3/audits/setup_sol/computation_manifest.json",
+            "sha256": "d43810813620e9cb9c4a8a71397825421202e486bf3f584abbffdc539c2858f4"
+          }
+        ]
+      }
+    ]
+  },
+  "resolved_review_events": [
+    "joint_astra A1/A2: reviewer profile parser and exact symmetry-CNF convention corrected before PASS.",
+    "setup_sol E1: reviewer cube collection key corrected before PASS.",
+    "R3-E6: integrated TeX hash changes separately re-reviewed and addendum-sealed; original seal preserved.",
+    "Positive-shift ruler-family scope explicit; author-stage NTT checker attribution corrected."
+  ],
+  "scientific_open_questions": [
+    "R3 remains between 21 and 465.",
+    "48 side-21 cubes remain undecided.",
+    "The one-class system including the final hook/AP5 premise is not yet decided.",
+    "No 45-cap theorem, reduced tower height, or global research exhaustion is claimed."
+  ]
+}

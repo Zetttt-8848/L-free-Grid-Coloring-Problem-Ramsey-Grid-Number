@@ -1,0 +1,32 @@
+[
+  {
+    "n": 22,
+    "coefficient": 2,
+    "status": "FEASIBLE",
+    "seconds": 15.143591799977003,
+    "scope": "Search outcome only; no negative or optimum is a theorem.",
+    "marks": [
+      0
+    ],
+    "objective": 0,
+    "best_bound": 327.0,
+    "rows": {
+      "0": {}
+    }
+  },
+  {
+    "n": 30,
+    "coefficient": 2,
+    "status": "FEASIBLE",
+    "seconds": 20.134805299981963,
+    "scope": "Search outcome only; no negative or optimum is a theorem.",
+    "marks": [
+      0
+    ],
+    "objective": 0,
+    "best_bound": 1790.0,
+    "rows": {
+      "0": {}
+    }
+  }
+]

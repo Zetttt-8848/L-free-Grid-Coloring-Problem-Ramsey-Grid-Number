@@ -1,0 +1,672 @@
+{
+  "source_file": "Energy_and_forcing_complete.tex",
+  "source_sha256": "10ddf995cb8e45b0bc3525df8139fb50662d54a886b39b716aad3b1f8c4280bd",
+  "acceptance_status": "ALL_MANUSCRIPT_STATEMENTS_KERNEL_CHECKED_WITH_EXPLICIT_INPUTS",
+  "all_statements_represented": true,
+  "current_aggregate_kernel_audit_passed": true,
+  "meaning": "Full means the stated result is represented by the identified Lean statements. Partial identifies an exact component or finite witness, not proof of the full manuscript claim.",
+  "counts": {
+    "full": 47,
+    "partial": 0,
+    "not_formalized": 0
+  },
+  "entries": [
+    {
+      "label": "lem:transpose",
+      "environment": "lemma",
+      "title": "Transposition",
+      "source_line": 119,
+      "status": "full",
+      "lean_declarations": [
+        "Geometry.lean:transpose_proper",
+        "Geometry.lean:transpose_involution",
+        "Geometry.lean:ramsey_transpose",
+        "Geometry.lean:least_threshold_equal"
+      ],
+      "scope": "Exact proper-coloring equivalence, equivalence of excluded side lengths and equality of the least positive thresholds are checked for all natural k and side lengths."
+    },
+    {
+      "label": "prop:counts",
+      "environment": "proposition",
+      "title": "Exact source counts",
+      "source_line": 144,
+      "status": "full",
+      "lean_declarations": [
+        "SourceCounting.lean:sourceCells_card",
+        "SourceCounting.lean:sum_r",
+        "SourceCounting.lean:corner_count",
+        "SourceCounting.lean:sum_r_sq",
+        "SourceCounting.lean:energy_corner_identity"
+      ],
+      "scope": "All identities count actual finite integer cells, fibers, corners and ordered equal-difference quadruples. The equal-sum energy convention is separately bridged."
+    },
+    {
+      "label": "lem:restriction",
+      "environment": "lemma",
+      "title": "Diagonal exclusion and weak restriction",
+      "source_line": 178,
+      "status": "full",
+      "lean_declarations": [
+        "Geometry.lean:square_diagonal_restriction",
+        "Geometry.lean:weak_restriction_complete"
+      ],
+      "scope": "The exact stated lemma is formalized: square-to-source domain restriction, properness, diagonal-color avoidance, and the inherited weak-source map with its diagonal values. The manuscript lemma does not assert a separate palette cardinality formula."
+    },
+    {
+      "label": "lem:golomb",
+      "environment": "lemma",
+      "title": "Golomb classes and pair sums",
+      "source_line": 204,
+      "status": "full",
+      "lean_declarations": [
+        "Geometry.lean:diagonal_class_golomb",
+        "Geometry.lean:fiber_class_golomb",
+        "Geometry.lean:golomb_pair_sum_unique"
+      ],
+      "scope": "Both weak-source diagonal and inherited fiber classes are Golomb. Ordered representatives of unordered pair sums are unique, including repeated endpoints. All integer sets and coordinates are quantified."
+    },
+    {
+      "label": "cor:span",
+      "environment": "corollary",
+      "title": "Energy to span",
+      "source_line": 229,
+      "status": "full",
+      "lean_declarations": [
+        "SourceCounting.lean:span_pair_bound",
+        "SourceCounting.lean:span_card_bound",
+        "SourceCounting.lean:span_card_bound_simple"
+      ],
+      "scope": "Actual difference support, intrinsic integer span and Cauchy inequality give the pair bound and both cardinality bounds for every real nonnegative kappa."
+    },
+    {
+      "label": "thm:energy",
+      "environment": "theorem",
+      "title": "Two-Golomb accounting",
+      "source_line": 262,
+      "status": "full",
+      "lean_declarations": [
+        "TwoGolomb.lean:two_golomb_corner_identity",
+        "TwoGolomb.lean:Q_le_U",
+        "TwoGolomb.lean:Q_le_B_sq",
+        "TwoGolomb.lean:Q_le_C_sq",
+        "TwoGolomb.lean:two_golomb_T_le_twice_M",
+        "TwoGolomb.lean:two_golomb_T_le_M_add_rho",
+        "TwoGolomb.lean:two_golomb_energy_bound"
+      ],
+      "scope": "Actual same-orientation collision bijections and opposing incidences prove all resource bounds, both corner branches and the energy bound for arbitrary disjoint Golomb classes."
+    },
+    {
+      "label": "cor:imbalance",
+      "environment": "corollary",
+      "title": "Unequal class sizes",
+      "source_line": 342,
+      "status": "full",
+      "lean_declarations": [
+        "TwoGolombImbalance.lean:imbalance_T_bound",
+        "TwoGolombImbalance.lean:imbalance_energy_bound",
+        "TwoGolombImbalance.lean:imbalance_stability"
+      ],
+      "scope": "Both eta-corrected corner branches, energy and both stability conclusions follow from actual Q and common-difference deficits, including empty-class cases."
+    },
+    {
+      "label": "cor:moments",
+      "environment": "corollary",
+      "title": "Fibers and cube moments",
+      "source_line": 373,
+      "status": "full",
+      "lean_declarations": [
+        "CubeMoments.lean:K_succ",
+        "CubeMoments.lean:K_one",
+        "CubeMoments.lean:K_two",
+        "CubeMoments.lean:K_three",
+        "CubeMoments.lean:Ccube_three",
+        "CubeMoments.lean:K_three_bound",
+        "CubeMoments.lean:Ccube_three_bound",
+        "EnergyMomentLower.lean:fourth_moment_bound",
+        "EnergyMomentLower.lean:zero_separated_moment_bound"
+      ],
+      "scope": "Actual ordered positive and signed cube parameters, vertex membership, recurrences, all moment identities and deficit bounds, and both Cauchy moment inequalities on the exact finite ranges. D/P/R agree with the common fiber definitions."
+    },
+    {
+      "label": "prop:small-class-deficit-dominance",
+      "environment": "proposition",
+      "title": "When the shared-difference bound is stronger",
+      "source_line": 447,
+      "status": "full",
+      "lean_declarations": [
+        "FiberDominance.lean:small_class_dominance",
+        "FiberDominance.lean:small_class_of_fiber_seven"
+      ],
+      "scope": "The actual common-difference count is bounded by each class pair count; the scalar inequality and its full fiber sum prove the stated branch comparison. Properness is unnecessary for this comparison."
+    },
+    {
+      "label": "prop:74",
+      "environment": "proposition",
+      "title": "A weak-source sharpness limit",
+      "source_line": 481,
+      "status": "full",
+      "lean_declarations": [
+        "SourceCertificates.lean:weakSharpness",
+        "SourceCertificates.lean:weakProperInteger",
+        "SourceCertificates.lean:mem_sourceCorners"
+      ],
+      "scope": "A bundled existential certificate gives a proper binary weak source, 6+6 diagonal split and exactly 74 distinct strict corners. The same literal nonnegative integer witness is proved proper over all integer coordinate triples."
+    },
+    {
+      "label": "prop:29",
+      "environment": "proposition",
+      "title": "Failure of a separate linear deficit",
+      "source_line": 505,
+      "status": "full",
+      "lean_declarations": [
+        "SourceCertificates.lean:deficitCertificate",
+        "SourceCertificates.lean:deficit_tail_zero"
+      ],
+      "scope": "Both difference lists are repetition-free, N=29, and the proposed upper bound is 28. Every term for h>8 is proved zero, closing the finite-sum bridge to the full positive-difference count."
+    },
+    {
+      "label": "lem:capacity",
+      "environment": "lemma",
+      "title": "Pair capacities",
+      "source_line": 532,
+      "status": "full",
+      "lean_declarations": [
+        "CubeCapacity.lean:real_cube_pair_capacity",
+        "CubeCapacity.lean:real_cube_pair_sum_bound",
+        "CubeCapacity.lean:real_four_cube_golomb_bound"
+      ],
+      "scope": "Actual unordered two-label subsets and support sets have both binary capacity injections. The arbitrary injective real weighted cube and real Golomb set are bridged; positivity is not needed for this lemma."
+    },
+    {
+      "label": "cor:occupancy",
+      "environment": "corollary",
+      "title": "Cube occupancy",
+      "source_line": 580,
+      "status": "full",
+      "lean_declarations": [
+        "CubeOccupancy.lean:weak_four_cube_occupancy",
+        "CubeOccupancy.lean:strict_five_cube_occupancy",
+        "CubeOccupancy.lean:no_full_five_cube"
+      ],
+      "scope": "Actual intersections with real weighted cubes satisfy14 and30 bounds. The noninteger-generator and integer inherited-fiber cases are both included."
+    },
+    {
+      "label": "thm:fourcube",
+      "environment": "theorem",
+      "title": "A separated four-cube coloring",
+      "source_line": 600,
+      "status": "full",
+      "lean_declarations": [
+        "CubeTransfer.lean:pair_sum_transfer",
+        "CubeTransfer.lean:separated_four_cube",
+        "CubeTransfer.lean:cube_card",
+        "CubeTransfer.lean:mem_cube_iff_binary"
+      ],
+      "scope": "The complete literal four-cube coloring transfers to every positive separated generator sequence and every integer translate through a proved coefficient-relation argument."
+    },
+    {
+      "label": "cor:cube-threshold",
+      "environment": "corollary",
+      "title": "Exact attainable cube dimension",
+      "source_line": 656,
+      "status": "full",
+      "lean_declarations": [
+        "CubeOccupancy.lean:integer_cube_dimension_bound",
+        "CubeOccupancy.lean:integer_four_cube_attainable",
+        "CubeOccupancy.lean:exact_cube_dimension"
+      ],
+      "scope": "Every higher-dimensional full cube has an actual injective five-face, while the actual four-cube source is properly colorable. The maximal dimension is exactly four."
+    },
+    {
+      "label": "prop:cube-free-energy",
+      "environment": "proposition",
+      "title": "A limit of cube exclusion",
+      "source_line": 671,
+      "status": "full",
+      "lean_declarations": [
+        "FiniteAlteration.lean:finite_alteration",
+        "CubeAlteration.lean:cube_free_alteration",
+        "CubeFreeEnergy.lean:cube_free_high_energy_sequence",
+        "CubeFreeEnergy.lean:cube_exclusion_no_uniform_bound"
+      ],
+      "scope": "Complete finite Bernoulli weights, cube enumeration by six-point paths, deletion of actual vertices, and a growing sequence with the exact energy exponent73/26 and factor1/2. The subsequence N=s^31 gives the same existence result. No uniform quadratic energy or linear corner bound survives even a minimum-size cutoff."
+    },
+    {
+      "label": "thm:nine",
+      "environment": "theorem",
+      "title": "The sharp three-cube cost",
+      "source_line": 718,
+      "status": "full",
+      "lean_declarations": [
+        "ThreeCubeNine.lean:injective_three_cube_nine",
+        "ThreeCubeMixedCollisions.lean:ordered_mixed_fourfold",
+        "ThreeCubeAttainment.lean:three_cube_attainment"
+      ],
+      "scope": "Every injective positive integer three-cube and proper coloring has at least9 mixed corners. Every positive two-dissociated triple admits an actual coloring attaining M28,T24,mixed9,forcing15, with no generator-order restriction."
+    },
+    {
+      "label": "thm:forcing",
+      "environment": "theorem",
+      "title": "Signed completion and physical forcing",
+      "source_line": 770,
+      "status": "full",
+      "lean_declarations": [
+        "ForcingCounting.lean:edge_count",
+        "ForcingCounting.lean:edges_bipartite",
+        "ForcingCounting.lean:forcing_count",
+        "ForcingCounting.lean:forcing_identity",
+        "ForcingCounting.lean:pointwise_forcing",
+        "ForcingCounting.lean:forcing_count_fraction",
+        "ForcingCounting.lean:completionOperator_add",
+        "ForcingCounting.lean:completionOperator_smul",
+        "ForcingCounting.lean:K_eq_completionOperator",
+        "ForcingDegree.lean:forcing_degree"
+      ],
+      "scope": "The graph uses actual unordered physical edges. Edge injectivity, exact edge count, bipartiteness, fiber identity, signed imbalance, H/K completion identity and linearity, and the exact degree formula are proved from the geometric coloring."
+    },
+    {
+      "label": "prop:g9",
+      "environment": "proposition",
+      "title": "Conditional consequence of G9",
+      "source_line": 839,
+      "status": "full",
+      "lean_declarations": [
+        "G9Consequences.lean:g9_consequences",
+        "G9Consequences.lean:g9_s21"
+      ],
+      "scope": "The stated forcing-edge bound remains a hypothesis. The actual forcing identity gives 2T<=19M and the Cauchy span consequence M<=20L, hence the weaker S21 bound on its required range."
+    },
+    {
+      "label": "prop:g9-exists",
+      "environment": "proposition",
+      "title": "Consequences of selecting a coloring",
+      "source_line": 861,
+      "status": "full",
+      "lean_declarations": [
+        "G9Consequences.lean:g9_exists_consequences",
+        "G9Consequences.lean:g9_exists_on_consequences"
+      ],
+      "scope": "The selected proper coloring and its actual graph-edge bound remain existential hypotheses; the source-invariant corner and span bounds follow."
+    },
+    {
+      "label": "thm:progression",
+      "environment": "theorem",
+      "title": "Complete progression products",
+      "source_line": 907,
+      "status": "full",
+      "lean_declarations": [
+        "SeparatedProducts.lean:separated_energy_product",
+        "ProgressionProducts.lean:progression_bounds_of_partition",
+        "ProgressionProducts.lean:progression_bounds"
+      ],
+      "scope": "Actual separated-product cardinality, energy factorization and fibers prove all energy, corner and span conclusions, including the weaker two-Golomb assumption and every integer parameter case."
+    },
+    {
+      "label": "thm:direct",
+      "environment": "theorem",
+      "title": "Complete direct sums",
+      "source_line": 936,
+      "status": "full",
+      "lean_declarations": [
+        "DirectSums.lean:direct_sum_energy_bound",
+        "DirectSums.lean:direct_sum_bounds"
+      ],
+      "scope": "The actual separated sum, product energy, proper factor embeddings and universal overlap restrictions give all three exact bounds for every allowed pair of factor sizes. Small exceptional sizes and six-mark AP exclusion are proved."
+    },
+    {
+      "label": "lem:rectangles",
+      "environment": "lemma",
+      "title": "Complete overlap restrictions",
+      "source_line": 944,
+      "status": "full",
+      "lean_declarations": [
+        "OverlapRestrictions.lean:complete_overlap_restrictions"
+      ],
+      "scope": "Actual product fibers yield both factor Golomb partitions. Universal7-by3 and5-by5 two-color rectangle obstructions prove both multiplicity caps on either factor."
+    },
+    {
+      "label": "lem:small",
+      "environment": "lemma",
+      "title": "Small factors",
+      "source_line": 960,
+      "status": "full",
+      "lean_declarations": [
+        "SmallFactorBounds.lean:corner_le_choose_three",
+        "SmallFactorBounds.lean:energy_le_interval_energy",
+        "SmallFactorBounds.lean:four_mark_cap_two",
+        "SharpSmallFactors.lean:maximal_corner_AP",
+        "SharpSmallFactors.lean:nonAP_corner_deficit",
+        "SharpSmallFactors.lean:nonAP_energy_deficit",
+        "SharpSmallFactors.lean:six_mark_nonAP_bounds",
+        "SmallFactorCompletion.lean:six_mark_factor_bounds",
+        "SmallFactorCompletion.lean:six_mark_proper_bounds"
+      ],
+      "scope": "Every general-size bound, AP equality implication, four-mark cap bound and six-mark proper-factor consequence is proved. The manuscript now includes the stronger universal nonprogression deficit T<=choose(n,3)-(n-2), proved by actual endpoint deletion, replacing the six-mark classification."
+    },
+    {
+      "label": "thm:matching",
+      "environment": "theorem",
+      "title": "Translation matchings",
+      "source_line": 1028,
+      "status": "full",
+      "lean_declarations": [
+        "TranslationMatching.lean:translation_matching_energy",
+        "TranslationMatching.lean:translation_matching_corners",
+        "TranslationMatching.lean:translation_matching_span"
+      ],
+      "scope": "Actual disjoint translates and inherited Golomb classes give every stated energy, corner and radical span bound, including empty and singleton cases. The alternate proof uses a weaker sufficient intermediate correlation bound and an algebraic fourth-root estimate, rather than the manuscript derivative calculation."
+    },
+    {
+      "label": "thm:two_distance",
+      "environment": "theorem",
+      "title": "Two-distance representations",
+      "source_line": 1087,
+      "status": "full",
+      "lean_declarations": [
+        "TwoDistanceDomains.lean:subtype_embedding_hypotheses",
+        "TwoDistanceGeometry.lean:no_progression",
+        "TwoDistanceGeometry.lean:parallelogram_square",
+        "MidpointBlocks.lean:midpoint_block",
+        "TwoDistanceProjection.lean:nine_radius_orthogonal",
+        "TwoDistanceCode.lean:sign_code_card_le",
+        "TwoDistanceExceptional.lean:exceptional_eight_outside_card",
+        "TwoDistanceIncidence.lean:eight_midpoint_incidence",
+        "TwoDistanceRemoval.lean:geomT_six_bound",
+        "TwoDistanceRemoval.lean:two_distance_bounds"
+      ],
+      "scope": "The full actual-source theorem T<=6M, M<=13L and proper squared-distance coloring is proved. Finite midpoint pairs are extracted into actual orthogonal blocks; large-block isolation, the exceptional8-pair code bound37,112q8 incidence and strong induction removal are all derived. Source-only maps extend to global maps without additional assumptions. The target may be any real inner-product space."
+    },
+    {
+      "label": "thm:midpoint-three",
+      "environment": "theorem",
+      "title": "Midpoint multiplicity at most three",
+      "source_line": 1152,
+      "status": "full",
+      "lean_declarations": [
+        "MidpointThree.lean:midpoint_three_bounds",
+        "GraphMidpointBridge.lean:graph_midpoint_cap",
+        "MidpointSharpness.lean:complete_midpoint_family",
+        "MidpointSharpness.lean:midpoint_three_coefficient_sharp"
+      ],
+      "scope": "The actual geometric midpoint cap implies T<=2M, M<=5L and the squared-distance proper coloring. The complete graph family satisfies this literal geometric cap and has T/M tending to2; every uniform coefficient is at least2. Both numerical conclusions and optimality are included."
+    },
+    {
+      "label": "thm:graph-source",
+      "environment": "theorem",
+      "title": "Sources encoded by graph edges",
+      "source_line": 1167,
+      "status": "full",
+      "lean_declarations": [
+        "GraphSourceDigits.lean:mark_pair",
+        "GraphSourceDigits.lean:graphSource_card",
+        "GraphSourceEuclidean.lean:graphEmbedding_pair_fidelity",
+        "GraphSourceEuclidean.lean:graphEmbedding_two_distances",
+        "GraphMidpointBridge.lean:graph_embedding_hypotheses",
+        "GraphMidpointBridge.lean:graph_midpoint_cap",
+        "TwoDistanceGeometry.lean:squared_distance_coloring_proper",
+        "GraphCycleFidelity.lean:mem_simpleFourCycles_iff",
+        "GraphCycleFidelity.lean:graph_source_four_cycles",
+        "GraphMatchings.lean:graphSource_corner_bound",
+        "GraphMatchings.lean:graphSource_span_bound"
+      ],
+      "scope": "Actual arbitrary finite simple edge families are encoded by base-five marks and actual Euclidean edge indicators. Pair sums are equivalent in both directions, including repetitions. The exact4cycle count uses literal four-edge cycle sets, proved equivalent to alternating-matching encodings. Midpoint cap, properness, all cardinality/energy/corner/span claims and degenerate graphs are included."
+    },
+    {
+      "label": "prop:weight-two-family",
+      "environment": "corollary",
+      "title": "Corner density approaching two",
+      "source_line": 1192,
+      "status": "full",
+      "lean_declarations": [
+        "CompleteGraphCounts.lean:complete_source_card",
+        "CompleteGraphCounts.lean:complete_source_corners",
+        "CompleteGraphCounts.lean:complete_source_energy",
+        "WeightTwoFamily.lean:complete_source_pairs",
+        "WeightTwoFamily.lean:complete_source_ratio",
+        "WeightTwoFamily.lean:complete_source_ratio_limit",
+        "WeightTwoFamily.lean:graph_coefficient_sharp",
+        "WeightTwoFamily.lean:complete_source_proper",
+        "MidpointSharpness.lean:complete_midpoint_family"
+      ],
+      "scope": "The literal complete-graph family has every stated M,T,E formula, proper coloring, the exact ratio for every r>=3 and a proved limit2. Its actual midpoint cap is proved, and every uniform coefficient is at least2."
+    },
+    {
+      "label": "prop:span-r3",
+      "environment": "proposition",
+      "title": "From span to three colors",
+      "source_line": 1215,
+      "status": "full",
+      "lean_declarations": [
+        "UniversalCounting.lean:three_color_span_reduction",
+        "UniversalCounting.lean:span_estimate_iff_interval",
+        "UniversalCounting.lean:proper_after_remove_color"
+      ],
+      "scope": "For every integer q>=1, the exact source span hypothesis implies exclusion of every proper three-coloring at 18q+1. Attained finite extrema, equivalence of actual-span and interval formulations, diagonal pigeonhole, color removal, and the numerical contradiction are all formalized."
+    },
+    {
+      "label": "cor:g9-three",
+      "environment": "corollary",
+      "title": "Three colors under G9",
+      "source_line": 1226,
+      "status": "full",
+      "lean_declarations": [
+        "G9Consequences.lean:g9_three",
+        "G9Consequences.lean:g9_three_universal"
+      ],
+      "scope": "The actual finite existential G9 hypothesis through span360 implies the complete three-color Ramsey statement at361. G9 itself is not proved."
+    },
+    {
+      "label": "thm:s21three",
+      "environment": "theorem",
+      "title": "Three colors under S21",
+      "source_line": 1233,
+      "status": "full",
+      "lean_declarations": [
+        "UniversalCounting.lean:S21_three",
+        "UniversalCounting.lean:three_color_span_reduction"
+      ],
+      "scope": "The full conditional reduction is proved with S21 as an explicit hypothesis on arbitrary finite integer sources. No proof of S21 itself is claimed or assumed as a new axiom."
+    },
+    {
+      "label": "lem:shift",
+      "environment": "lemma",
+      "title": "Finite shift count",
+      "source_line": 1241,
+      "status": "full",
+      "lean_declarations": [
+        "ShiftCounting.lean:finite_shift_profile",
+        "ShiftCounting.lean:finite_shift_count"
+      ],
+      "scope": "Actual mixed energy, shift intervals and triangular weights prove both inequalities for arbitrary finite integer sets, positive t and real nonnegative caps."
+    },
+    {
+      "label": "thm:s21four",
+      "environment": "theorem",
+      "title": "Four colors under S21",
+      "source_line": 1260,
+      "status": "full",
+      "lean_declarations": [
+        "S21Four.lean:S21_four",
+        "S21Four.lean:S21_four_full"
+      ],
+      "scope": "The full98777 reduction uses actual diagonal marks, removal of one color, inherited binary fiber classes, S21 widths ell-h, integer tangents and the actual t600 shift profile. S21 remains an explicit assumption."
+    },
+    {
+      "label": "prop:weights",
+      "environment": "proposition",
+      "title": "Integer weight certificates",
+      "source_line": 1563,
+      "status": "full",
+      "lean_declarations": [
+        "WeightCertificates.lean:weight_certificate11",
+        "WeightCertificates.lean:weight_certificate12",
+        "WeightCertificates.lean:load_tail",
+        "WeightCertificates.lean:recurrence_unique"
+      ],
+      "scope": "Both 42-entry weight lists satisfy the signed integer-floor recurrence and nonnegative bound, have the exact copy totals, and satisfy all positive-integer load bounds. Recurrence uniqueness identifies the printed weights with the recursive definition. Finite kernel computation checks loads through 420; a universal support/divisibility proof makes every later load zero."
+    },
+    {
+      "label": "thm:weighted",
+      "environment": "proposition",
+      "title": "Arithmetic of a rejected numerical route",
+      "source_line": 1601,
+      "status": "full",
+      "lean_declarations": [
+        "WeightedCertificateConsequences.lean:conditional_weighted_459",
+        "WeightedCertificateConsequences.lean:conditional_weighted_455"
+      ],
+      "scope": "The exact integer weight/load tables are cast into actual real geometric counts, with all tails proved zero. The complete conditional459/455 implications are proved. Their local premises are refuted elsewhere, so no unconditional improvement is claimed."
+    },
+    {
+      "label": "lem:variance",
+      "environment": "lemma",
+      "title": "Three-color line identity",
+      "source_line": 1820,
+      "status": "full",
+      "lean_declarations": [
+        "LineCounting.lean:variance_identity",
+        "LineCounting.lean:totalVariance_lower",
+        "LineCounting.lean:proper_variance_identity",
+        "LineCounting.lean:rainbowCount_upper",
+        "LineCounting.lean:cornerSum_source_bridge"
+      ],
+      "scope": "Explicit row, column and diagonal pair bijections give the exact variance identity. Integer minima give the literal floor correction in U_N, and the actual source-corner bridge is proved."
+    },
+    {
+      "label": "lem:weighted",
+      "environment": "lemma",
+      "title": "Weighted embedding implication",
+      "source_line": 1860,
+      "status": "full",
+      "lean_declarations": [
+        "WeightedEmbedding.lean:weighted_embedding_implication",
+        "WeightedEmbedding.lean:weighted_embedding_ramsey"
+      ],
+      "scope": "Actual affine embeddings, exact step counts and fixed-corner parameter injectivity prove rho*J<=K*R<=K*U for arbitrary nonnegative real weights. The local rainbow assumption remains explicit."
+    },
+    {
+      "label": "prop:local-rainbows",
+      "environment": "proposition",
+      "title": "Refutation of the two local rainbow bounds",
+      "source_line": 1880,
+      "status": "full",
+      "lean_declarations": [
+        "FiniteCertificates.lean:not_F11_5",
+        "FiniteCertificates.lean:not_F12_7",
+        "FiniteCertificates.lean:mem_corners",
+        "FiniteCertificates.lean:corners11_nodup",
+        "FiniteCertificates.lean:corners12_nodup"
+      ],
+      "scope": "Literal complete three-colorings are valid and proper for all natural coordinates, with 3 and 6 rainbow corners; both universal local assertions are refuted."
+    },
+    {
+      "label": "prop:t13",
+      "environment": "proposition",
+      "title": "Refutation of $\\F_{13}(17)$",
+      "source_line": 1890,
+      "status": "full",
+      "lean_declarations": [
+        "FiniteCertificates.lean:not_F13_17",
+        "FiniteCertificates.lean:mem_corners",
+        "FiniteCertificates.lean:corners13_nodup"
+      ],
+      "scope": "Literal complete coloring is valid and proper for all natural coordinates, with 14 rainbow corners; the proposed 17-rainbow lower bound is refuted."
+    },
+    {
+      "label": "lem:H",
+      "environment": "lemma",
+      "title": "First-coordinate reflection",
+      "source_line": 1950,
+      "status": "full",
+      "lean_declarations": [
+        "Geometry.lean:reflection_proper",
+        "Geometry.lean:H_square",
+        "Geometry.lean:H_involution"
+      ],
+      "scope": "Proper positive directed-L coloring iff its first-coordinate-reflected coloring is positive-standard-corner-free, with square domains explicit."
+    },
+    {
+      "label": "lem:J",
+      "environment": "lemma",
+      "title": "Half-turn and paired colors",
+      "source_line": 1957,
+      "status": "full",
+      "lean_declarations": [
+        "UniversalCounting.lean:paired_color_class_complete",
+        "UniversalCounting.lean:mem_squareList",
+        "UniversalCounting.lean:squareList_nodup",
+        "UniversalCounting.lean:largest_color_class"
+      ],
+      "scope": "All N,k with k positive: paired colors use at most k^2 labels; a duplicate-free enumeration of the full square has N^2 cells; a class satisfies N^2 <= k^2 times its cardinality and excludes every nonzero signed corner."
+    },
+    {
+      "label": "lem:embed",
+      "environment": "lemma",
+      "title": "Cyclic embedding without wraparound",
+      "source_line": 1964,
+      "status": "full",
+      "lean_declarations": [
+        "Geometry.lean:cyclic_embedding_injective",
+        "Geometry.lean:cyclic_embedding_no_corner",
+        "Geometry.lean:image_eq_source"
+      ],
+      "scope": "Complete injection and corner-free image are proved for every positive N and every eligible subset of the square. The cyclic group is represented by canonical integer residues, with addition and nonzero steps modulo 2N."
+    },
+    {
+      "label": "thm:general",
+      "environment": "theorem",
+      "title": "General bound from the external corners theorem",
+      "source_line": 1983,
+      "status": "full",
+      "lean_declarations": [
+        "GeneralBound.lean:general_ramsey_bound",
+        "GeneralBound.lean:quasipolynomial_ceiling_bound"
+      ],
+      "scope": "The full conditional transfer from the cited external cyclic corners estimate uses actual paired-color classes, canonical cyclic representatives, the exact exponent600, constants and ceilings. ExternalCyclicCornersBound is a named hypothesis corresponding to JLLOS25v2 Theorem1.1; that external theorem is not formalized here."
+    },
+    {
+      "label": "lem:deletion",
+      "environment": "lemma",
+      "title": "Exact endpoint deletion",
+      "source_line": 2030,
+      "status": "full",
+      "lean_declarations": [
+        "EndpointCounting.lean:exact_endpoint_deletion",
+        "EndpointCounting.lean:exact_maximum_deletion"
+      ],
+      "scope": "Actual removed-corner and arc bijections prove T(A)-T(B)=e0=2D0+P0. Reflection and the maximum-endpoint counterpart are included."
+    },
+    {
+      "label": "lem:anchor",
+      "environment": "lemma",
+      "title": "A sharp restricted endpoint bound",
+      "source_line": 2041,
+      "status": "full",
+      "lean_declarations": [
+        "EndpointAnchor.lean:uniform_anchor_zero",
+        "EndpointAnchor.lean:exceptional_anchor_bound",
+        "EndpointSharpness.lean:endpoint_anchor_sharp"
+      ],
+      "scope": "Both anchor bounds and arbitrarily large equality examples are proved. Sharpness uses an alternative greedy Sidon construction, rather than certifying the literal base-R example in the paper proof."
+    },
+    {
+      "label": "prop:peel",
+      "environment": "proposition",
+      "title": "Conditional endpoint reduction",
+      "source_line": 2082,
+      "status": "full",
+      "lean_declarations": [
+        "EndpointPeeling.lean:endpoint_reduction",
+        "EndpointPeeling.lean:endpoint_reduction_bounded_span",
+        "EndpointPeeling.lean:endpoint_span_bound",
+        "EndpointPeeling.lean:endpoint_s21"
+      ],
+      "scope": "Actual finite-set induction proves EP10 implies H10 and the stated span/S21 consequences. EP10 is retained as an explicit assumption, including its finite-range form."
+    }
+  ],
+  "additional_unformalized_inputs": [
+    "The cited external quantitative corners theorem is not formalized here. The general bound explicitly takes its valid constant and estimate as hypotheses.",
+    "S21, G9, G9-exists, EP10 and H10 remain open mathematical assumptions. A conditional Lean theorem accepting one of these as a hypothesis is not a proof of that assumption."
+  ],
+  "scope_boundary": "Acceptance concerns the47named manuscript statements with their stated inputs. It does not prove external cited theorems or open assertions. Standard logical axioms are disclosed in the compiler output."
+}

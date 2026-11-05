@@ -1,0 +1,35 @@
+{
+  "base": "R3-CP0",
+  "arithmetic": "Python unbounded integers only",
+  "honesty_label": "Exact finite scout scores; only n=21991300 has the separate full independent certificate check",
+  "endpoint_profile_descent": {
+    "negative_test": {
+      "n": 21991200,
+      "outer_c_range": [650, 760],
+      "doubled_margin": -959596049982389043035428416,
+      "positive": false
+    },
+    "certified_positive": {
+      "n": 21991300,
+      "outer_c_range": [650, 760],
+      "doubled_margin": 551211731377452489346057152,
+      "positive": true,
+      "independent_checker": "PASS"
+    },
+    "tested_step": 100
+  },
+  "alternate_profile": {
+    "n": 21991500,
+    "description": "distance-dependent profile with endpoint correction removed from both Golomb and outer capacities",
+    "outer_c_range": [650, 760],
+    "doubled_margin": -11890396232887423924221142080,
+    "positive": false
+  },
+  "fixed_outer_c_sensitivity_at_final_n": {
+    "n": 21991300,
+    "c": 662,
+    "doubled_margin": -9977307308410619136074470080,
+    "positive": false
+  },
+  "claim_boundary": "The tested sign bracket is not a global minimum claim; capacity cliffs can be nonmonotone."
+}

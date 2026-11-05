@@ -1,0 +1,10 @@
+{
+  "seconds": 0.2038853999983985,
+  "statistics": {
+    "sampled": 1000,
+    "coloring_calls": 338,
+    "raw_negative": 338
+  },
+  "witness": null,
+  "scope": "Bounded sampling only; absence of a witness is not a theorem."
+}

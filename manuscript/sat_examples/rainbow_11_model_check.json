@@ -1,0 +1,39 @@
+{
+  "size": 11,
+  "rainbow_cap": 4,
+  "variables": 986,
+  "clauses": 3672,
+  "no_unsat_or_minimality_claim": true,
+  "cells": 55,
+  "corners": 165,
+  "monochromatic_count": 0,
+  "rainbow_count": 3,
+  "monochromatic_corners": [],
+  "rainbow_corners": [
+    [
+      2,
+      1,
+      8
+    ],
+    [
+      6,
+      3,
+      2
+    ],
+    [
+      7,
+      3,
+      2
+    ]
+  ],
+  "proper": true,
+  "within_cap": true,
+  "geometrically_valid": true,
+  "complete_assignment": true,
+  "missing_variable_count": 0,
+  "false_clause_count": 0,
+  "unresolved_clause_count": 0,
+  "first_false_clauses": [],
+  "cnf_satisfied": true,
+  "valid": true
+}

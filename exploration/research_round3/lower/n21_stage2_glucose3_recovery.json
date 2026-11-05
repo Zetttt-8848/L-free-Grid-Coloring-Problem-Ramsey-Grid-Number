@@ -1,0 +1,540 @@
+{
+  "all_shard_targets_attempted": true,
+  "attempted": 19,
+  "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+  "cube_manifest_sha256": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+  "cube_semantics": "base CNF conjoined with the four logged assumption literals as unit clauses",
+  "full_shard_target_count": 24,
+  "hard_cube_count_global": 48,
+  "mathematical_status": "UNDECIDED",
+  "per_cube_cap_seconds": 60,
+  "phase_checkpoint_sha256": "245a980b54aee99219c336cc60fc87aecee12a467f6c21f1ff5290192a493d30",
+  "python_sat_version": "1.9.dev15",
+  "records": [
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "order": 15,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1081118,
+        "decisions": 1628558,
+        "propagations": 50924593,
+        "restarts": 3075
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.13554699999804
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "order": 17,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1170760,
+        "decisions": 1745858,
+        "propagations": 55254407,
+        "restarts": 3180
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.40465459999905
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "order": 20,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1065121,
+        "decisions": 1573308,
+        "propagations": 50818589,
+        "restarts": 2641
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.007279099998414
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "order": 23,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1026032,
+        "decisions": 1519790,
+        "propagations": 48995223,
+        "restarts": 2610
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.028222600001754
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "order": 28,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1056106,
+        "decisions": 1574030,
+        "propagations": 50150362,
+        "restarts": 2854
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.06273220000003
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "order": 32,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1056225,
+        "decisions": 1571501,
+        "propagations": 50394815,
+        "restarts": 2733
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.031561200001306
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "order": 36,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1061321,
+        "decisions": 1573877,
+        "propagations": 50430469,
+        "restarts": 2692
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.027918700001464
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "order": 39,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1147943,
+        "decisions": 1681796,
+        "propagations": 54714552,
+        "restarts": 2607
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.063954600002035
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 41,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1316530,
+        "decisions": 1951303,
+        "propagations": 62212051,
+        "restarts": 3395
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.05198329999985
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "order": 51,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1416987,
+        "decisions": 2082621,
+        "propagations": 66728716,
+        "restarts": 3424
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.045671899999434
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "order": 54,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1353217,
+        "decisions": 1983306,
+        "propagations": 64752904,
+        "restarts": 3167
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.02412009999898
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "order": 57,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1512254,
+        "decisions": 2233964,
+        "propagations": 71363658,
+        "restarts": 3789
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.004153199999564
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "order": 60,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1331461,
+        "decisions": 1962560,
+        "propagations": 63299150,
+        "restarts": 3219
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.06480670000019
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "order": 63,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1267287,
+        "decisions": 1861007,
+        "propagations": 59815848,
+        "restarts": 2948
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.069312499999796
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "order": 66,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1222940,
+        "decisions": 1796051,
+        "propagations": 58222058,
+        "restarts": 2900
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.25866269999824
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "order": 70,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1266589,
+        "decisions": 1872951,
+        "propagations": 60511074,
+        "restarts": 3268
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.01001059999908
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "order": 72,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1291610,
+        "decisions": 1902550,
+        "propagations": 61367545,
+        "restarts": 3127
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.01607209999929
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "order": 74,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1238760,
+        "decisions": 1818944,
+        "propagations": 58682064,
+        "restarts": 2902
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.01894509999693
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "order": 78,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1231870,
+        "decisions": 1821490,
+        "propagations": 58660456,
+        "restarts": 3075
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.05107029999999
+    }
+  ],
+  "schema": "round3_lower_hard_cube_worker_v1",
+  "shard_count": 2,
+  "shard_index": 1,
+  "solver": "glucose3",
+  "start_target_index": 5,
+  "statuses": {
+    "INTERRUPTED_UNDECIDED": 19
+  },
+  "target_count": 19,
+  "wall_seconds": 1142.763520200002,
+  "wall_seconds_so_far": 1142.7619639000004,
+  "worker_wall_cap_seconds": 1800
+}

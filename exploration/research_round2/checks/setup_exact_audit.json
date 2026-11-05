@@ -1,0 +1,52 @@
+{
+  "status": "PROVED: finite arithmetic identities only",
+  "arithmetic": "Python unbounded integers and fractions.Fraction",
+  "tent": {
+    "a0": 69231,
+    "P": 2038439,
+    "Q": 366786,
+    "D": 53496528,
+    "score": 285630,
+    "score_over_a0": "95210/23077"
+  },
+  "reviewer_A8": {
+    "scores": {
+      "462": -5167602,
+      "463": -3375316,
+      "464": -1557434,
+      "465": 285630,
+      "466": 2153426,
+      "467": 4045468
+    },
+    "a39": 27384,
+    "a92": 1,
+    "465_to_464": {
+      "mass_term": -2335994,
+      "cap_recovery": 492930,
+      "total": -1843064
+    },
+    "sign_map": {
+      "zeros": [
+        33,
+        51
+      ],
+      "negative_distances": "34..39, 52..92",
+      "positive_contribution": 34324365,
+      "negative_contribution": -1846320,
+      "n_a0": 32192415
+    }
+  },
+  "four_color": {
+    "N": 68574961,
+    "s": 17143741,
+    "twice_binomial_lhs": 293907838331340,
+    "six_sum_H3_upper_numerator_over_5": 1458476683234116,
+    "five_times_lhs_minus_rhs": 11062508422584,
+    "correct_binomial_factor": 3
+  },
+  "route1": {
+    "normalization": "a0(w)=1 (equivalently score/a0 for nonzero w)",
+    "tent_quotient": "95210/23077",
+    "unrestricted_maximum_at_465": "unbounded_above"
+  }
+}

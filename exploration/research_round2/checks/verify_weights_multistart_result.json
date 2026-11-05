@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "arithmetic": "integers and fractions.Fraction only",
+  "source_sha256": "51cf27a802f2fcf6786e3d84b80b0b8c5b7d38b51603b6d0647406bb0bedc9e3",
+  "candidates_recomputed": 166,
+  "summaries": [
+    {
+      "n": 464,
+      "t": 68,
+      "candidate_count": 20,
+      "best_index": 2,
+      "best_score": -989648205777105682839930090,
+      "best_norm2": 42688160341064777651014146,
+      "best_quotient_numerator": -164941367629517613806655015,
+      "best_quotient_denominator": 7114693390177462941835691,
+      "best_sign": -1
+    },
+    {
+      "n": 464,
+      "t": 93,
+      "candidate_count": 21,
+      "best_index": 4,
+      "best_score": -776557326416151340066683520,
+      "best_norm2": 44916621094572852979834126,
+      "best_quotient_numerator": -388278663208075670033341760,
+      "best_quotient_denominator": 22458310547286426489917063,
+      "best_sign": -1
+    },
+    {
+      "n": 464,
+      "t": 120,
+      "candidate_count": 21,
+      "best_index": 4,
+      "best_score": -776557326230064705465606052,
+      "best_norm2": 44916621083809474608978027,
+      "best_quotient_numerator": -776557326230064705465606052,
+      "best_quotient_denominator": 44916621083809474608978027,
+      "best_sign": -1
+    },
+    {
+      "n": 464,
+      "t": 150,
+      "candidate_count": 21,
+      "best_index": 4,
+      "best_score": -776557326230064705465606052,
+      "best_norm2": 44916621083809474608978027,
+      "best_quotient_numerator": -776557326230064705465606052,
+      "best_quotient_denominator": 44916621083809474608978027,
+      "best_sign": -1
+    },
+    {
+      "n": 465,
+      "t": 68,
+      "candidate_count": 20,
+      "best_index": 0,
+      "best_score": 45354431163738239518234775,
+      "best_norm2": 42846553222613660810460901,
+      "best_quotient_numerator": 45354431163738239518234775,
+      "best_quotient_denominator": 42846553222613660810460901,
+      "best_sign": 1
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "candidate_count": 21,
+      "best_index": 16,
+      "best_score": 413493634107716739735081991,
+      "best_norm2": 45735270125457885765600809,
+      "best_quotient_numerator": 413493634107716739735081991,
+      "best_quotient_denominator": 45735270125457885765600809,
+      "best_sign": 1
+    },
+    {
+      "n": 465,
+      "t": 120,
+      "candidate_count": 21,
+      "best_index": 4,
+      "best_score": 413493634107716739735081991,
+      "best_norm2": 45735270125457885765600809,
+      "best_quotient_numerator": 413493634107716739735081991,
+      "best_quotient_denominator": 45735270125457885765600809,
+      "best_sign": 1
+    },
+    {
+      "n": 465,
+      "t": 150,
+      "candidate_count": 21,
+      "best_index": 4,
+      "best_score": 413493634107716739735081991,
+      "best_norm2": 45735270125457885765600809,
+      "best_quotient_numerator": 413493634107716739735081991,
+      "best_quotient_denominator": 45735270125457885765600809,
+      "best_sign": 1
+    }
+  ],
+  "nonclaim": "This verifies saved candidates, not global optimality."
+}

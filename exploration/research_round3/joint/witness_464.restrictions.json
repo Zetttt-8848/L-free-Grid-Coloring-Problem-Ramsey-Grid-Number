@@ -1,0 +1,21 @@
+[
+  {
+    "n": 463,
+    "required_size": 155,
+    "intersection_size": 154,
+    "deleted_marks": [
+      464
+    ],
+    "verdict": "not a candidate: insufficient cardinality"
+  },
+  {
+    "n": 462,
+    "required_size": 154,
+    "intersection_size": 153,
+    "deleted_marks": [
+      463,
+      464
+    ],
+    "verdict": "not a candidate: insufficient cardinality"
+  }
+]

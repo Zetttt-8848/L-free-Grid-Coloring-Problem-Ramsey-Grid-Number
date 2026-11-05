@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "claim_id": "R3-root-author-core-finite-checks",
+  "repository": {
+    "commit": "not a Git repository; pinned BASE.json",
+    "dirty": true
+  },
+  "command": "python research_round3/audits/root_checks.py",
+  "environment": {
+    "software": [
+      "Python 3.13.5"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite arithmetic, enumeration and literal forcing/witness checks supporting separately written AP5, endpoint, overlap and general-k claims",
+    "coefficient_domain": "integers, rational fractions and Boolean values",
+    "conventions": "positive-step fixed-orientation corners; H table counts positions; Python zero-based arrays mapped explicitly",
+    "inputs": [
+      {
+        "path": "research_round3/BASE.json",
+        "sha256": "073815f23236edec07bf22e22abcfc46b5445315fbaaf139bd67450eb81bf513"
+      }
+    ],
+    "bounds": {
+      "weak_triangles_max_order": 5,
+      "endpoint_mark_universe_max_n": 10,
+      "overlap_source_n": [
+        1,
+        7
+      ],
+      "ruler_pair_cases": 60,
+      "general_scalar_k": [
+        6,
+        12
+      ]
+    },
+    "non_claims": [
+      "No R3 improvement",
+      "No n21 decision",
+      "No universal theorem from a finite scan",
+      "No all-ruler impossibility",
+      "No global coefficient optimum"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-10T05:33:55.425040+00:00",
+    "runtime_seconds": 1.0696086000025389,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "research_round3/cap/ap5_exact_checks.py",
+      "sha256": "a05bcd84bc6f2120ca74cd141b38311c235ef30d3d3306b49fc77919f4b53a37"
+    },
+    {
+      "path": "research_round3/cap/endpoint_audit.py",
+      "sha256": "a7a40139c316da60980ea5818472c2899e10da35e2dd0d54ff8a2afddbb854e1"
+    },
+    {
+      "path": "research_round3/cap/verify_pair_forcing.py",
+      "sha256": "9c560c24e3af615e5f97c04c1a57837b4890827f37670a0b05be3796ccd8d2c3"
+    },
+    {
+      "path": "research_round3/overlap/exact_overlap.py",
+      "sha256": "0a5787a7e8041cc3c7658c2858b0658bdae5457e7c7e12098a55c935e559a734"
+    },
+    {
+      "path": "research_round3/general/exact_scalars.py",
+      "sha256": "855caa4d57df4f2f74aa0715236a7687082ae2bb3df57ada266986576453e182"
+    },
+    {
+      "path": "research_round3/audits/verify_joint_root.py",
+      "sha256": "5ed7ed8e9f8b589edae855f9c536fe36d363fba335ff5264b2289cbaed28d716"
+    },
+    {
+      "path": "research_round3/cap/ap5_exact_results.json",
+      "sha256": "e2bc51fa7c5997bfc524ecebcc6c2c3904a3a453063616ac9c8f04bcd3166333"
+    },
+    {
+      "path": "research_round3/cap/endpoint_exact.json",
+      "sha256": "6a363d3283c7ec1e0f7f46b099ab8ada3077f40dbef57487ce4de7ea7285d634"
+    },
+    {
+      "path": "research_round3/cap/pair_forcing_certificate.json",
+      "sha256": "a87d9297d934c3fe8bbcd0a1d4c3ad5da94d247718d076a2ca357f887efd36fc"
+    },
+    {
+      "path": "research_round3/cap/pair_forcing_checked.json",
+      "sha256": "156b375765e82731dc0989994a4a519ff91d3cf9ced1de25f2258d7bb52e2f08"
+    },
+    {
+      "path": "research_round3/cap/conditional_descent.json",
+      "sha256": "46cf46fe5ce057fe035e736cbd34eaae79ce181552cfafa4a4ac118d64404a47"
+    },
+    {
+      "path": "research_round3/overlap/exact_overlap.json",
+      "sha256": "be2960929d928bd6ddb8e44c7db85ebb24ed50de6afba932122f9db017fd0955"
+    },
+    {
+      "path": "research_round3/general/scalar_reproduction.json",
+      "sha256": "ad6d3bdd42267c8c94ef9a36d9a4245ab528643cc1baab0e64eda47fabbcfa60"
+    },
+    {
+      "path": "research_round3/audits/joint_root_verified.json",
+      "sha256": "036ec3212ae8992fb5d2130d2278ecca14f83ed6d84ad2b6e24fd124999b8fe2"
+    },
+    {
+      "path": "research_round3/general/refined_constants_proof.md",
+      "sha256": "55d1856b571af4ca5aa9fe5f22e60364396e0959fc87eed6acc8bc176db268b7"
+    },
+    {
+      "path": "research_round3/general/refined_minus_one.md",
+      "sha256": "907d3d62d9807cd513e7ce1f62c64028ccf812b2bfabad0e17209142a4fcc858"
+    },
+    {
+      "path": "research_round3/general/square_root_barrier.md",
+      "sha256": "d73893e82624bac8ec601270fc1d5d2f24a9a606fc57ea7eba098295a710a9d8"
+    },
+    {
+      "path": "research_round3/cap/ap5_uniqueness.md",
+      "sha256": "cf6d6862faf8d556115e28f90462f22ca790ab573a519d5c56491f4ef5ba831c"
+    },
+    {
+      "path": "research_round3/cap/endpoint_neighbor.md",
+      "sha256": "222c53487db8fa27888f070df30dc4e4f63fbbfa5da3ea96960512dce01b440f"
+    },
+    {
+      "path": "research_round3/overlap/ordered_overlap.md",
+      "sha256": "5f7ca804e4b6fe3e6761767145c14f69e0250f818696d844210322ba0140a6f1"
+    },
+    {
+      "path": "research_round3/audits/root_check_outputs.json",
+      "sha256": "3325d203fc66b1a79a585630ddcf96b13d17a296c8bf625e88bd818ecbdadcca"
+    }
+  ],
+  "checks": [
+    "All six commands completed with exit0",
+    "Independent literal bitset reconstruction for base155-set",
+    "Geometry-only forcing trace checker imports no solver",
+    "Direct identity and overlap exhaustive tests",
+    "Exact Fraction comparisons"
+  ],
+  "result": "Finite checks PASS; final author-independent agent reviews pending",
+  "residual_risks": [
+    "Version1 reproduction provenance; universal claims require written reductions and independent reviews",
+    "Conditionally assumed45/46 caps are not proved"
+  ]
+}

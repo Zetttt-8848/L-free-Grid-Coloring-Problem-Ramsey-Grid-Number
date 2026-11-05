@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "n": 464,
+  "size": 155,
+  "pair_count": 11935,
+  "copy_counts": [
+    21298,
+    9555,
+    9555
+  ],
+  "all_pattern_copies_checked": 40408,
+  "badcaps": [],
+  "badpatterns": [],
+  "exact_score": 0,
+  "recorded_score": 0,
+  "recorded_score_matches": true
+}

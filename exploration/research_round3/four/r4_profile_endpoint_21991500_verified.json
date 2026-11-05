@@ -1,0 +1,18 @@
+{
+  "arithmetic": "three-prime integer NTT, exact CRT, exhaustive integer c and threshold scans",
+  "capacity_runs_checked": 561,
+  "correlations_checked": 36000,
+  "distances_checked": 35999,
+  "doubled_lhs": 136564724698526305876510234176,
+  "doubled_margin": 3572064084430380575832634176,
+  "doubled_rhs": 132992660614095925300677600000,
+  "global_optimality": "not claimed over n, t, weights, or c outside 650..760",
+  "golomb_target_sizes_checked": 301,
+  "lower_bound_implication": "none",
+  "n": 21991500,
+  "outer_c_values_checked_per_distance": 111,
+  "proved_implication": "Inherited FM1/FM2-4/FM3 plus the endpoint lemma imply R_4(L)<=21991500.",
+  "source_sha256": "30c83c6223338c3d2ab0ac2b9b3bed5207192d4d0dd552e0e21a725eb484d0d4",
+  "status": "PASS",
+  "t": 36000
+}

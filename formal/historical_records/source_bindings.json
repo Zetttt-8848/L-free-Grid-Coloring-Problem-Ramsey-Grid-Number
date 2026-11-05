@@ -1,0 +1,30 @@
+{
+  "source_sha256": "10ddf995cb8e45b0bc3525df8139fb50662d54a886b39b716aad3b1f8c4280bd",
+  "represented_result_count": 47,
+  "source_crosswalk": "manuscript_revision_crosswalk.json",
+  "mathematical_scope": "Exact statement mapping in coverage.json; fresh aggregate kernel audit is separate. External quantitative corners estimate and open assertions remain explicit inputs.",
+  "review_files": {
+    "GraphIndependentReview.json": "3cb354f58c9ec39adc88d942a435c3f6b80160751ac09b41516cbd8c4688725a",
+    "GraphMidpointIndependentReview.json": "490ab58e4b33d62cc3c4e525233721ae4425bd18e164a0336e673cd59b60e37e",
+    "TwoDistanceIndependentReview.json": "12d8614b3e9b8fd0a82db3590e565fde4cdf05e7c0e60203c2d94ecfbf55d4e4",
+    "TwoDistanceGeometricAudit.json": "39e7c81f2ef7bd29f9284a8002367b6955ea605e170700eb3855555b6f3c5553",
+    "TwoDistanceIncidenceIndependentReview.json": "79391e0dbd896b0b001e3a339952a0d90c8d869d92e3bbe082be1aa8a86e75fc",
+    "TwoDistanceRemovalIndependentReview.json": "e7784f61348e291d648d15a953bc179a0d2202a46b188a9838b3c627f78cbedc",
+    "DirectSmallIndependentReview.json": "be9d3ef4f3b5cb014d79c2446c6b0f7b9658fa858da238bef91e383ccbba79f4",
+    "RunnerIndependentReview.json": "244cba27e6d6a3a6141a0e0cfc52f595aa68e977db3da41192dcdbecd5767cf8",
+    "GeneralBoundIndependentReview.json": "1da7a905a656745533d0588e7d6c8c5c5e52fb5d41b43471747454a0b63bdca9",
+    "ThreeCubeIndependentReview.json": "eda2bf4e9e3d3fb40bdeedcba925bd6ad40f66a8cff07dab0a14a25f8e8d005b",
+    "ShiftWeightedIndependentReview.json": "565fbccddfc744d48a2067e53b3942b9dc7670dec63bb1db0b62bba1b782734a",
+    "WeightedCertificateAudit.json": "f89bf5281f07cd542a7a0befc59b6e7f8466f6a3024ee4f75116caa2068905e0",
+    "MatchingAudit.json": "fe4a5352f4d3ec083788446d999289a7010ad84c4e5640f8d0093abdc54bb4c3",
+    "manuscript_revision_crosswalk.json": "e9fc97a2a0e10d620dc172041b42d976e7e16ec483dc1f3eba56c80ff96bfb77"
+  },
+  "literal_data_binding": "The weight and coloring tables are unchanged from the historical round2 source; the full normalized manuscript diff contains only the strengthened small-factor lemma, removal of its obsolete classification appendix and the corresponding provenance sentence. Historical literal bindings are preserved in formal_verification_round2/source_bindings.json.",
+  "new_result_binding": [
+    "SharpSmallFactors.lean:EnergyForcing.Counting.nonAP_corner_deficit",
+    "SharpSmallFactors.lean:EnergyForcing.Counting.nonAP_energy_deficit"
+  ],
+  "reviewer": "root with independent subagent reviews recorded in the linked files",
+  "timestamp_utc": "2026-11-03T05:52:50.869075+00:00",
+  "serial_runner_review": "RunnerSerialReview.json"
+}

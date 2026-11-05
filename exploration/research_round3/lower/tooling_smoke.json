@@ -1,0 +1,87 @@
+{
+  "bounded_interface": {
+    "constructed": true,
+    "expected_unsat_observed": true,
+    "solve_limited_return": false,
+    "solver": "maplechrono",
+    "stats": {
+      "conflicts": 0,
+      "decisions": 0,
+      "propagations": 1,
+      "restarts": 0
+    },
+    "wall_seconds": 6.0900001699337736e-05
+  },
+  "interpretation": "A nontrivial tiny proof object establishes only interface availability. It is not a proof of the n=21 instance and has not been independently checked.",
+  "proof_emission": [
+    {
+      "constructed_with_proof": true,
+      "first_proof_lines": [],
+      "input_clauses": 81,
+      "input_variables": 30,
+      "proof_line_count": 0,
+      "proof_nonempty": false,
+      "proof_object_type": "list",
+      "solve_return": false,
+      "solver": "cadical195"
+    },
+    {
+      "constructed_with_proof": true,
+      "first_proof_lines": [],
+      "input_clauses": 81,
+      "input_variables": 30,
+      "proof_line_count": 0,
+      "proof_nonempty": false,
+      "proof_object_type": "list",
+      "solve_return": false,
+      "solver": "cadical300"
+    },
+    {
+      "constructed_with_proof": true,
+      "first_proof_lines": [
+        "-14 8 7 6 1 2 3 0",
+        "-18 7 6 1 2 11 12 0",
+        "-4 12 11 6 7 16 17 18 0"
+      ],
+      "input_clauses": 81,
+      "input_variables": 30,
+      "proof_line_count": 199,
+      "proof_nonempty": true,
+      "proof_object_type": "list",
+      "solve_return": false,
+      "solver": "glucose3"
+    },
+    {
+      "constructed_with_proof": true,
+      "first_proof_lines": [
+        "-14 8 7 6 1 2 3 0",
+        "-18 7 6 1 2 11 12 0",
+        "-4 12 11 6 7 16 17 18 0"
+      ],
+      "input_clauses": 81,
+      "input_variables": 30,
+      "proof_line_count": 199,
+      "proof_nonempty": true,
+      "proof_object_type": "list",
+      "solve_return": false,
+      "solver": "glucose4"
+    },
+    {
+      "constructed_with_proof": true,
+      "first_proof_lines": [
+        "-14 1 6 2 7 3 8 0",
+        "-18 1 6 11 2 7 12 0",
+        "-9 1 11 16 2 12 17 18 0"
+      ],
+      "input_clauses": 81,
+      "input_variables": 30,
+      "proof_line_count": 166,
+      "proof_nonempty": true,
+      "proof_object_type": "list",
+      "solve_return": false,
+      "solver": "lingeling"
+    }
+  ],
+  "python_sat_version": "1.9.dev15",
+  "schema": "round3_lower_solver_tooling_smoke_v1"
+}

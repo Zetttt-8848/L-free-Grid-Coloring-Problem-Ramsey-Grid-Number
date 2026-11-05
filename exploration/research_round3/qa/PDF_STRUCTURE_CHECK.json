@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "a440bde8decf254656a154cddb2e9c2db8f8a14171dd41273db6f669b671c354",
+  "pages": 22,
+  "main_sections": 10,
+  "all_pages_nonempty": true,
+  "tex_log_clean": true,
+  "review_placeholders_absent": true,
+  "contact_sheets": [
+    "qa/preview/contact-1.png",
+    "qa/preview/contact-2.png",
+    "qa/preview/contact-3.png",
+    "qa/preview/contact-4.png"
+  ],
+  "visual_inspection_status": "manual review recorded separately"
+}

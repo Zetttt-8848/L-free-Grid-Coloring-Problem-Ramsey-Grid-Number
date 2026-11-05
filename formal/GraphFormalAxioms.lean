@@ -1,0 +1,29 @@
+import GraphCycleFidelity
+import WeightTwoFamily
+
+set_option autoImplicit false
+
+#print axioms EnergyForcing.PairCollisions.corner_count_no_progression
+#print axioms EnergyForcing.PairCollisions.pair_sum_cap_bound
+#print axioms EnergyForcing.GraphSources.code_injective
+#print axioms EnergyForcing.GraphSources.graphSource_card
+#print axioms EnergyForcing.GraphSources.graphEmbedding_pair_fidelity
+#print axioms EnergyForcing.GraphSources.graphEmbedding_two_distances
+#print axioms EnergyForcing.GraphSources.graphSource_proper
+#print axioms EnergyForcing.GraphSources.graph_sumPairs_card_le_three
+#print axioms EnergyForcing.GraphSources.graphSource_corner_bound
+#print axioms EnergyForcing.GraphSources.graphSource_span_bound
+#print axioms EnergyForcing.GraphSources.graphCycles_shape
+#print axioms EnergyForcing.GraphSources.cycleShape_mem
+#print axioms EnergyForcing.GraphSources.graphCycles_union_injective
+#print axioms EnergyForcing.GraphSources.mem_simpleFourCycles_iff
+#print axioms EnergyForcing.GraphSources.graph_source_four_cycles
+#print axioms EnergyForcing.GraphSources.complete_cycles_card
+#print axioms EnergyForcing.GraphSources.complete_source_card
+#print axioms EnergyForcing.GraphSources.complete_source_corners
+#print axioms EnergyForcing.GraphSources.complete_source_energy
+#print axioms EnergyForcing.GraphSources.complete_source_pairs
+#print axioms EnergyForcing.GraphSources.complete_source_ratio
+#print axioms EnergyForcing.GraphSources.complete_source_ratio_limit
+#print axioms EnergyForcing.GraphSources.graph_coefficient_sharp
+#print axioms EnergyForcing.GraphSources.complete_source_proper

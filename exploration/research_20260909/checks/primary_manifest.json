@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "claim_id": "CP1-R3-weighted465-and-route-benchmarks",
+  "repository": {
+    "commit": "unavailable: CP0 source hashes, workspace is not a Git repository",
+    "dirty": true
+  },
+  "command": [
+    "LOCAL_RESEARCH_ROOT\\anaconda3\\python.exe",
+    "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_20260909\\checks\\record_primary.py"
+  ],
+  "environment": {
+    "software": [
+      "Python 3.13.5",
+      "Windows-11-10.0.26200-SP0"
+    ],
+    "hardware": "AMD64; Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "465 integer certificate, independent convolution expansion, small-word and triangle enumeration, 490/466 arithmetic, bounded reconstruction of493.",
+    "coefficient_domain": "arbitrary-precision integers",
+    "conventions": "fixed positive-step corner; scripts explicitly document zero-based enumeration and one-based weights",
+    "inputs": [
+      {
+        "path": "research_20260909/checks/verify_primary.py",
+        "sha256": "48441200b7c9a32276440c3aea1a575a6e12143b0df70e3851f16d564ec97b48"
+      },
+      {
+        "path": "research_20260909/checks/verify_relaxations.py",
+        "sha256": "892a1bf6657e39cc51d601c800653721b884d4692242fbaa5b7713e07a462ce5"
+      }
+    ],
+    "bounds": {
+      "word_lengths": [
+        1,
+        7
+      ],
+      "word_colors": 3,
+      "profiles_per_word": 4,
+      "triangle_mark_counts": [
+        2,
+        6
+      ],
+      "benchmark_n": [
+        100,
+        493
+      ],
+      "benchmark_c": "1..min(49,ceil(n/3)-1)",
+      "wall_timeout_per_script_seconds": 30
+    },
+    "non_claims": [
+      "Golomb optimality is accepted from supplied sources, not recomputed.",
+      "No global novelty or optimality of465 is certified.",
+      "Finite checks do not substitute for the written universal proof."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-09T13:27:36.885802+00:00",
+    "runtime_seconds": 0.5559503000695258,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "research_20260909/checks/primary_result.json",
+      "sha256": "a850f91358e2d5acdf303a4038a500b3e50bf02f94e2c135d5b1ba2a422c1dac"
+    },
+    {
+      "path": "research_20260909/checks/relaxations_result.json",
+      "sha256": "295310eb98370023dc34a92040e48702d91f968c57bff1f8391044cfd7781c17"
+    }
+  ],
+  "checks": [
+    "All exact assertions passed.",
+    "Input hashes unchanged across both subprocesses.",
+    "Each subprocess exited zero within its 30-second timeout."
+  ],
+  "result": "Verified exact score285630, energy gap190420, unweighted gap442, independent structural gap48, and benchmark first493 in stated scan.",
+  "residual_risks": [
+    "Version1 manifest has no operating-system memory cap.",
+    "Universal validity depends on the report proof and the two accepted Golomb bounds."
+  ]
+}

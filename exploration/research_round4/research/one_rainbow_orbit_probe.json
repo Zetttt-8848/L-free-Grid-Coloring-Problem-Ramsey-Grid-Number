@@ -1,0 +1,104 @@
+[
+  {
+    "base": [
+      0,
+      0,
+      6
+    ],
+    "step": 2,
+    "orbit_size": 3,
+    "status": "raw negative",
+    "seconds": 1.8977402000164147
+  },
+  {
+    "base": [
+      0,
+      1,
+      5
+    ],
+    "step": 2,
+    "orbit_size": 6,
+    "status": "raw negative",
+    "seconds": 0.5705389999784529
+  },
+  {
+    "base": [
+      0,
+      2,
+      4
+    ],
+    "step": 2,
+    "orbit_size": 6,
+    "status": "raw negative",
+    "seconds": 1.2545248999958858
+  },
+  {
+    "base": [
+      0,
+      3,
+      3
+    ],
+    "step": 2,
+    "orbit_size": 3,
+    "status": "raw negative",
+    "seconds": 0.8284548000083305
+  },
+  {
+    "base": [
+      1,
+      1,
+      4
+    ],
+    "step": 2,
+    "orbit_size": 3,
+    "status": "raw negative",
+    "seconds": 1.63725900001009
+  },
+  {
+    "base": [
+      1,
+      2,
+      3
+    ],
+    "step": 2,
+    "orbit_size": 6,
+    "status": "literal coloring",
+    "seconds": 0.049065600003814325,
+    "rows": [
+      "0",
+      "11",
+      "210",
+      "1120",
+      "01202",
+      "222012",
+      "1112220",
+      "01220002",
+      "010210202"
+    ],
+    "rainbow": [
+      [
+        4,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        3
+      ]
+    ]
+  },
+  {
+    "base": [
+      2,
+      2,
+      2
+    ],
+    "step": 2,
+    "orbit_size": 1,
+    "status": "raw negative",
+    "seconds": 0.9730982999899425
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "arithmetic": "three-prime integer NTT, exact CRT, and Python integers",
+  "source_sha256": "23f2fadcbdd0b26d31e15ed3cbcd5d39bd6b3aa75705764019e6cf8ae411dcb1",
+  "n": 22006246,
+  "t": 36000,
+  "profile": "w_i=i(36001-i), 1<=i<=36000",
+  "correlations_checked": 36000,
+  "capacity_runs_checked": 380,
+  "distances_checked": 35999,
+  "a0": 2015819151552432004800,
+  "doubled_lhs": 133088683635976942314364072128,
+  "doubled_rhs": 133081836421722301787705942400,
+  "doubled_margin": 6847214254640526658129728,
+  "proved_implication": "FM1+FM2-4+FM3 imply R_4(L)<=22006246.",
+  "lower_bound_implication": "none",
+  "claim_boundary": "No optimality or exact-value claim."
+}

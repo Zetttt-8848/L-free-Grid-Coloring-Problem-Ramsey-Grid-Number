@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "claim_id": "R2-W4-polynomial-weight-R4-at-most-22006246",
+  "repository": {"commit": "not-a-git-repository", "dirty": true},
+  "command": "1) python research_round2\\checks\\weights_four_final_generate.py; 2) python research_round2\\checks\\verify_weights_four_final.py",
+  "environment": {
+    "software": ["Python 3.13.5", "exact Python integers", "independent three-prime NTT and CRT"],
+    "hardware": "Windows x86_64 local CPU; hardware is not load-bearing"
+  },
+  "mathematics": {
+    "assertion_tested": "FM1+FM2-4+FM3 with dynamic capacities, n=22006246, t=36000, and w_i=i(36001-i) has strict positive exact doubled margin",
+    "coefficient_domain": "integers",
+    "conventions": "fixed positive-step corner; dynamic spans n-d-1; cq=62; c=662; coefficient n-d-48K_d",
+    "inputs": ["research_round2/routes/four_multi_core.md", "research_round2/checks/four_multi_certify.py", "research_round2/checks/weights_four_bracket_scan_result.json"],
+    "bounds": {"n": 22006246, "t": 36000, "distances": 35999, "capacity_runs": 380},
+    "non_claims": ["No optimality over side length, window, weight, or capacity parameters", "No R3 or lower-bound implication"]
+  },
+  "randomness": {"used": false, "generator": "none", "seed": 0},
+  "run": {"started_at": "2026-09-09T13:46:00-03:00", "runtime_seconds": 7.2, "exit_status": 0},
+  "outputs": [
+    {"path": "research_round2/certificates/weights_four_22006246.json", "sha256": "23f2fadcbdd0b26d31e15ed3cbcd5d39bd6b3aa75705764019e6cf8ae411dcb1"},
+    {"path": "research_round2/checks/weights_four_final_verified.json", "sha256": "35f39d69142936b5a2004ef77f3838a96f9c87c994854982c683f459c3763196"}
+  ],
+  "checks": ["All 36000 correlations independently reconstructed with three NTT primes and exact CRT", "All 380 cap runs and 35999 distances checked", "Exact doubled LHS, RHS, and positive margin checked"],
+  "result": "PROVED implication: R_4(L)<=22006246, pending campaign cross-review of FM1/FM2-4/FM3",
+  "residual_risks": ["Universal combinatorial lemmas are dependencies external to this finite arithmetic manifest", "Bounded discovery scan does not establish minimality"]
+}

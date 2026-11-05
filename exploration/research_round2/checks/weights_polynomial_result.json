@@ -1,0 +1,329 @@
+{
+  "honesty_label": "PROVED finite exact arithmetic",
+  "nonclaim": "This finite family does not bound the global relaxation optimum.",
+  "scale_erratum": "Raw scores depend quadratically on arbitrary scaling; only score/a0 is comparable across profiles.",
+  "inherited_H_0_through_28": [
+    0,
+    0,
+    1,
+    3,
+    6,
+    11,
+    17,
+    25,
+    34,
+    44,
+    55,
+    72,
+    85,
+    106,
+    127,
+    151,
+    177,
+    199,
+    216,
+    246,
+    283,
+    333,
+    356,
+    372,
+    425,
+    480,
+    492,
+    553,
+    585
+  ],
+  "tent_benchmark_465": {
+    "a0": 69231,
+    "score": 285630,
+    "quotient_numerator": 95210,
+    "quotient_denominator": 23077
+  },
+  "records": [
+    {
+      "n": 464,
+      "t": 93,
+      "p": 0,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 93,
+      "score": -13552,
+      "normalized_score": {
+        "numerator": -13552,
+        "denominator": 93
+      },
+      "minimum_weight": 1,
+      "maximum_weight": 1,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 38,
+          "q_d": 24
+        },
+        {
+          "d_first": 39,
+          "d_last": 91,
+          "q_d": 23
+        },
+        {
+          "d_first": 92,
+          "d_last": 92,
+          "q_d": 22
+        }
+      ]
+    },
+    {
+      "n": 464,
+      "t": 93,
+      "p": 1,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 244634671,
+      "score": -6290081978,
+      "normalized_score": {
+        "numerator": -6290081978,
+        "denominator": 244634671
+      },
+      "minimum_weight": 93,
+      "maximum_weight": 2209,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 38,
+          "q_d": 24
+        },
+        {
+          "d_first": 39,
+          "d_last": 91,
+          "q_d": 23
+        },
+        {
+          "d_first": 92,
+          "d_last": 92,
+          "q_d": 22
+        }
+      ]
+    },
+    {
+      "n": 464,
+      "t": 93,
+      "p": 2,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 909515559119407,
+      "score": -17967729580745066,
+      "normalized_score": {
+        "numerator": -17967729580745066,
+        "denominator": 909515559119407
+      },
+      "minimum_weight": 8649,
+      "maximum_weight": 4879681,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 38,
+          "q_d": 24
+        },
+        {
+          "d_first": 39,
+          "d_last": 91,
+          "q_d": 23
+        },
+        {
+          "d_first": 92,
+          "d_last": 92,
+          "q_d": 22
+        }
+      ]
+    },
+    {
+      "n": 464,
+      "t": 93,
+      "p": 3,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 3724318147896720994351,
+      "score": -115816651977612505599290,
+      "normalized_score": {
+        "numerator": -115816651977612505599290,
+        "denominator": 3724318147896720994351
+      },
+      "minimum_weight": 804357,
+      "maximum_weight": 10779215329,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 38,
+          "q_d": 24
+        },
+        {
+          "d_first": 39,
+          "d_last": 91,
+          "q_d": 23
+        },
+        {
+          "d_first": 92,
+          "d_last": 92,
+          "q_d": 22
+        }
+      ]
+    },
+    {
+      "n": 464,
+      "t": 93,
+      "p": 4,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 15964158937065452417614146607,
+      "score": -715820303589185623649860943690,
+      "normalized_score": {
+        "numerator": -715820303589185623649860943690,
+        "denominator": 15964158937065452417614146607
+      },
+      "minimum_weight": 74805201,
+      "maximum_weight": 23811286661761,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 38,
+          "q_d": 24
+        },
+        {
+          "d_first": 39,
+          "d_last": 91,
+          "q_d": 23
+        },
+        {
+          "d_first": 92,
+          "d_last": 92,
+          "q_d": 22
+        }
+      ]
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "p": 0,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 93,
+      "score": -10357,
+      "normalized_score": {
+        "numerator": -10357,
+        "denominator": 93
+      },
+      "minimum_weight": 1,
+      "maximum_weight": 1,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 39,
+          "q_d": 24
+        },
+        {
+          "d_first": 40,
+          "d_last": 92,
+          "q_d": 23
+        }
+      ]
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "p": 1,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 244634671,
+      "score": 791008494,
+      "normalized_score": {
+        "numerator": 41632026,
+        "denominator": 12875509
+      },
+      "minimum_weight": 93,
+      "maximum_weight": 2209,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 39,
+          "q_d": 24
+        },
+        {
+          "d_first": 40,
+          "d_last": 92,
+          "q_d": 23
+        }
+      ]
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "p": 2,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 909515559119407,
+      "score": 4965945965533422,
+      "normalized_score": {
+        "numerator": 261365577133338,
+        "denominator": 47869239953653
+      },
+      "minimum_weight": 8649,
+      "maximum_weight": 4879681,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 39,
+          "q_d": 24
+        },
+        {
+          "d_first": 40,
+          "d_last": 92,
+          "q_d": 23
+        }
+      ]
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "p": 3,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 3724318147896720994351,
+      "score": -30134142501784785329202,
+      "normalized_score": {
+        "numerator": -1586007500093936069958,
+        "denominator": 196016744626143210229
+      },
+      "minimum_weight": 804357,
+      "maximum_weight": 10779215329,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 39,
+          "q_d": 24
+        },
+        {
+          "d_first": 40,
+          "d_last": 92,
+          "q_d": 23
+        }
+      ]
+    },
+    {
+      "n": 465,
+      "t": 93,
+      "p": 4,
+      "weight_formula": "w_i=(i(94-i))^p, 1<=i<=93",
+      "a0": 15964158937065452417614146607,
+      "score": -373529537864763022718948115090,
+      "normalized_score": {
+        "numerator": -7947436975846021759977619470,
+        "denominator": 339662956107775583353492481
+      },
+      "minimum_weight": 74805201,
+      "maximum_weight": 23811286661761,
+      "q_ranges": [
+        {
+          "d_first": 1,
+          "d_last": 39,
+          "q_d": 24
+        },
+        {
+          "d_first": 40,
+          "d_last": 92,
+          "q_d": 23
+        }
+      ]
+    }
+  ]
+}

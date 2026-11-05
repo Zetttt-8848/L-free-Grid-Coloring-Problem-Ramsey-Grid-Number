@@ -1,0 +1,79 @@
+{
+  "colors": 3,
+  "counts": {
+    "cell_clauses": 100,
+    "forbidden_color_clauses": 90,
+    "geometric_triples": 30,
+    "symmetry_clauses": 25,
+    "total_clauses": 215,
+    "variables": 75
+  },
+  "cube_partition": {
+    "all_color_tuples": "{0,1,2}^4",
+    "cells_0_based": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "coverage": "Every total coloring assigns exactly one of the 81 tuples to these four cells",
+    "cube_count": 81,
+    "order_seed": 62005
+  },
+  "cube_records": [
+    {
+      "assumption_literals": [
+        5,
+        16,
+        21,
+        73
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "order": 0,
+      "status": "SAT",
+      "wall_seconds": 0.0007009999826550484
+    }
+  ],
+  "cubes_attempted": 1,
+  "epoch_wall_cap_seconds": 1.0,
+  "mathematical_status": "SAT_WITNESS_PENDING_INDEPENDENT_VERIFICATION",
+  "n": 5,
+  "non_claims": [
+    "UNDECIDED cubes are not UNSAT",
+    "Even all internal UNSAT answers would require proof artifacts before an UNSAT claim"
+  ],
+  "orientation": "(x,y),(x+d,y),(x+d,y+d)",
+  "phase_matrix": null,
+  "phase_matrix_transposed": false,
+  "schema": "round2_lower_cube_search_v1",
+  "solver": "maplechrono",
+  "statuses": {
+    "SAT": 1,
+    "UNDECIDED": 0,
+    "UNSAT": 0
+  },
+  "symmetry_breaking": {
+    "cell_0_color": 0,
+    "justification": "permute color at cell 0 to 0, then swap residual colors 1 and 2 so their first occurrence is 1",
+    "restricted_growth": "color 2 cannot precede color 1 in row-major order"
+  },
+  "total_wall_seconds": 0.003456000005826354,
+  "witness_path": "research_round2\\certificates\\lower\\cube_n5_regression_r_matrix.txt"
+}

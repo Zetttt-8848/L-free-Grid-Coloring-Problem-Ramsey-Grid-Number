@@ -1,0 +1,9 @@
+{
+  "arithmetic": "Python unbounded integers only",
+  "checked_ladder_rows": 16,
+  "checked_sensitivity_boundaries": 4,
+  "checked_uniform_caps": [45, 46, 48],
+  "checker": "explicit expanded distance multiset; no claimant imports",
+  "errors": [],
+  "status": "PASS"
+}

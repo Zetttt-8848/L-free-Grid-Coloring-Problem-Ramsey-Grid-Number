@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "cases": 60,
+  "verified_forcing_steps": 16425,
+  "five_ap_free_unions": 59,
+  "first_order24_AP5_free": [
+    24,
+    true,
+    2
+  ],
+  "coverage": "every specified disjoint translation/reflection, no solver used"
+}

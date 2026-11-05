@@ -1,0 +1,16 @@
+[
+  {
+    "m": 4,
+    "points": 10,
+    "corners": 10,
+    "raw_colorings": 1024,
+    "valid": 36
+  },
+  {
+    "m": 5,
+    "points": 15,
+    "corners": 20,
+    "raw_colorings": 32768,
+    "valid": 0
+  }
+]

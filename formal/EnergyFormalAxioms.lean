@@ -1,0 +1,21 @@
+import LineCounting
+import S21Four
+import WeightedEmbedding
+set_option autoImplicit false
+
+#print axioms EnergyForcing.ShiftCounting.interval_energy_profile
+#print axioms EnergyForcing.ShiftCounting.finite_shift_profile
+#print axioms EnergyForcing.ShiftCounting.finite_shift_count
+#print axioms EnergyForcing.LineCounting.variance_identity
+#print axioms EnergyForcing.LineCounting.rainbowCount_upper
+#print axioms EnergyForcing.LineCounting.cornerSum_source_bridge
+#print axioms EnergyForcing.LineCounting.properOn_triangle_bridge
+#print axioms EnergyForcing.S21Four.S21_fiber_profile
+#print axioms EnergyForcing.S21Four.S21_four
+#print axioms EnergyForcing.S21Four.S21_four_full
+#print axioms EnergyForcing.WeightedEmbedding.embedCorner_parameters_injective
+#print axioms EnergyForcing.WeightedEmbedding.rainbows_card_eq
+#print axioms EnergyForcing.WeightedEmbedding.weighted_incidence_count
+#print axioms EnergyForcing.WeightedEmbedding.totalCharge_bound
+#print axioms EnergyForcing.WeightedEmbedding.weighted_embedding_implication
+#print axioms EnergyForcing.WeightedEmbedding.weighted_embedding_ramsey

@@ -1,0 +1,9 @@
+{
+  "label": "PROVED finite identity checks",
+  "cases": 480,
+  "n_range": [
+    1,
+    4
+  ],
+  "scope": "Supports the independently proved multinomial expansion; not a grid theorem."
+}

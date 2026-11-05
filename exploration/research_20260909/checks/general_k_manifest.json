@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "claim_id": "general-k-G3-G6-bounded-checks",
+  "repository": {
+    "commit": "unavailable: supplied CP0 workspace; no git revision used",
+    "dirty": true
+  },
+  "command": "python research_20260909/checks/general_k_check.py",
+  "environment": {
+    "software": [
+      "Python 3.13.5",
+      "Windows-11-10.0.26200-SP0"
+    ],
+    "hardware": "AMD64; Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact recurrence expansion for k=1..8, exact R4 certificate at N=91^4, and exhaustive small-grid instances of nesting, Golomb equivalence, and diagonal capacity bounds.",
+    "coefficient_domain": "arbitrary-precision integers and rational Fractions; integer square roots only",
+    "conventions": "grid rows downward; corner {(x,y),(x+d,y),(x+d,y+d)}, d>0; script uses zero-based coordinates and proof uses one-based coordinates",
+    "inputs": [
+      {
+        "path": "research_20260909/checks/general_k_check.py",
+        "sha256": "97a48dd2dae76d45ce3de14179d3a79fb1aed476ace0a30a95fe338e711ba928"
+      },
+      {
+        "path": "research_20260909/routes/general_k.md",
+        "sha256": "0d9f618c850d39aa41e2e59fd542b25b8eab9185053947173737b3f270a85d12"
+      }
+    ],
+    "bounds": {
+      "diagonal_subsets": "all subsets for N=1..8",
+      "all_colorings": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "general_recurrence_k": [
+        1,
+        8
+      ],
+      "R4_N": 68574961,
+      "timeout_seconds": 30
+    },
+    "non_claims": [
+      "Bounded color enumeration is not a universal proof.",
+      "No unconditional tower-height reduction is asserted.",
+      "No global novelty claim is asserted."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-09T13:19:22.795180+00:00",
+    "runtime_seconds": 0.1801414000801742,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "research_20260909/checks/general_k_output.json",
+      "sha256": "b6f1bf6f4add74febc2dfa5fd087b8ff175239dceefc54ddf1584c98a486d695"
+    }
+  ],
+  "checks": [
+    "510 diagonal subsets; 1579 nested pair completions",
+    "All listed colorings exhaustively enumerated",
+    "Integer recurrence formula checked independently against rational recurrence",
+    "R4 certificate evaluated by exact Fraction arithmetic",
+    "Every rational coefficient comparison checked by squaring positive sides"
+  ],
+  "result": "All exact arithmetic and bounded finite checks passed; universal claims depend on the written proofs.",
+  "residual_risks": [
+    "Version 1 manifest has no machine-enforced memory cap; the wrapper enforces a 30-second wall timeout.",
+    "No git revision exists in the supplied CP0 provenance; input and output content hashes are recorded.",
+    "Universal theorem validity still requires the written proof audit."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "witness_count": 32,
+  "orbit_count": 31,
+  "status": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is Infeasible)",
+  "success": false
+}

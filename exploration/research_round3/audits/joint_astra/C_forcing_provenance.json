@@ -1,0 +1,9 @@
+{
+  "python": "3.13.5",
+  "input_sha256": {
+    "cap/PREDICTIONS.md": "f9e2036c1f7b876615139c2794a8ef4ca3acde01682def56ad7d98a053c6fa4e",
+    "cap/pair_forcing_certificate.json": "a87d9297d934c3fe8bbcd0a1d4c3ad5da94d247718d076a2ca357f887efd36fc"
+  },
+  "script_sha256": "ba380a39f670576c068423dc257be5280db201a926a6dbff043f1409f7bcb044",
+  "independence": "No project module imported or executed."
+}

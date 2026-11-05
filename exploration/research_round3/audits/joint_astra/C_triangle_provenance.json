@@ -1,0 +1,8 @@
+{
+  "python": "3.13.5",
+  "input_sha256": {
+    "cap/ap5_uniqueness.md": "cf6d6862faf8d556115e28f90462f22ca790ab573a519d5c56491f4ef5ba831c"
+  },
+  "script_sha256": "ba380a39f670576c068423dc257be5280db201a926a6dbff043f1409f7bcb044",
+  "independence": "No project module imported or executed."
+}

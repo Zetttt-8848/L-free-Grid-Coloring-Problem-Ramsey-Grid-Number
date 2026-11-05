@@ -1,0 +1,14 @@
+{
+  "claim_id": "CD1_CD3_AUDIT_R3_465",
+  "mathematics": {
+    "assertion_tested": "The displayed T6 forcing certificate covers every binary assignment; T6 has zero and T5 has 36 corner-free binary colorings; six-AP-free subsets of [11] have size at most 9; direct convolution identities hold for every ternary word of length 6 with weights (1,2,3,2,1); the explicitly stated weight and Golomb caps give score 285630 at N=465.",
+    "coefficient_domain": "Z, exact integers",
+    "conventions": "T_m={(i,j):0<=j<i<=m-1}; fixed corner is ((i,j),(i+d,j),(i+d,j+d)), d>0; binary colors are 0 and 1; energy words use colors 0,1,2; Golomb span is max-min.",
+    "inputs": ["research_20260909/checks/cross_diagonal_verify.py", "Supplied Golomb length lower bounds G(24)>=425, G(25)>=480"],
+    "bounds": {"triangle_sizes": [2, 3, 4, 5, 6], "max_triangle_binary_assignments": 32768, "proof_branch_assignments": 16384, "AP_interval_size": 11, "energy_word_length": 6, "energy_word_color_count": 3, "N": 465, "weight_support": [1, 93], "shift_support": [0, 92]},
+    "non_claims": ["No search over whole N=465 grids", "No verification of the underlying Golomb optimality computations", "Universal reductions are proved in the route documents, not inferred from bounded tests"]
+  },
+  "execution_artifacts": ["research_20260909/checks/cross_diagonal_verify.py"],
+  "software": [{"name": "Python", "version": "3.13.5, Anaconda distribution; Python standard library only"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

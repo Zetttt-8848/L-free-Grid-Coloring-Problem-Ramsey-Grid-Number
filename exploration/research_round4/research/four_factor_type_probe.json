@@ -1,0 +1,32 @@
+{
+  "scope": "Bounded construction discriminator; raw negatives are not mathematical obstructions.",
+  "cases": [
+    {
+      "m": 2,
+      "typed": true,
+      "variables": 92,
+      "cells": 120,
+      "corners": 200,
+      "answer": false,
+      "seconds": 0.0020188000053167343
+    },
+    {
+      "m": 3,
+      "typed": false,
+      "variables": 276,
+      "cells": 276,
+      "corners": 528,
+      "answer": false,
+      "seconds": 0.0010507999977562577
+    },
+    {
+      "m": 4,
+      "typed": false,
+      "variables": 496,
+      "cells": 496,
+      "corners": 1008,
+      "answer": false,
+      "seconds": 0.0014115000085439533
+    }
+  ]
+}

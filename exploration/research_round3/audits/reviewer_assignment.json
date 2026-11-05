@@ -1,0 +1,48 @@
+{
+  "phase": "all four author bundles complete before dispatch; randomized author-independent review",
+  "seed": "13451688144711766889",
+  "generator": "Python random.Random; rejection sampling balanced eligible pair assignments",
+  "core_labels": {
+    "G": "root general proofs and exact constants",
+    "C": "root AP5, endpoint, ruler-pair and overlap proofs/certificates",
+    "J": "joint witnesses, window13, four RUP cores and two uniform families",
+    "F": "four-color structural transfer and integer certificate",
+    "L": "lower cube encoding, 33 UP refutations, unresolved coverage and circulant ceiling"
+  },
+  "authors": {
+    "G": "root",
+    "C": "root",
+    "J": "joint_astra",
+    "F": "setup_sol",
+    "L": "lower_sol"
+  },
+  "assignments": {
+    "G": [
+      "fresh_astra",
+      "joint_astra"
+    ],
+    "C": [
+      "joint_astra",
+      "setup_sol"
+    ],
+    "J": [
+      "fresh_astra",
+      "lower_sol"
+    ],
+    "F": [
+      "fresh_astra",
+      "lower_sol"
+    ],
+    "L": [
+      "joint_astra",
+      "setup_sol"
+    ]
+  },
+  "loads": {
+    "fresh_astra": 3,
+    "joint_astra": 3,
+    "setup_sol": 2,
+    "lower_sol": 2
+  },
+  "required_verdict": "PASS per item or documented Major/Minor; no release while any issue unresolved"
+}

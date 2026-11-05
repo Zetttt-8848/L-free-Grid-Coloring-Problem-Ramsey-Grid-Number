@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "arithmetic": "integer and Fraction only",
+  "source_sha256": "b35a6ed52b836177d85b16b3d943eacc4d96b01a1bd0fc5fdff76807f0341b4b",
+  "finite_dual": {
+    "rows": 68,
+    "minimum_twice_row_margin": 7483207248238,
+    "sos_coefficients": 2346
+  },
+  "restricted_failures": [
+    {
+      "t": 93,
+      "positive_obstruction_gap": 1681589645662318670471561794
+    },
+    {
+      "t": 120,
+      "positive_obstruction_gap": 3670585135302251749404188817
+    },
+    {
+      "t": 150,
+      "positive_obstruction_gap": 5678276467840257963527770415
+    }
+  ],
+  "proved_conclusion": "At n=464,t=68, every nonnegative real w satisfies score(w)<=-sum_i w_i^2.",
+  "scope_limit": "The longer-window witnesses only reject the positive-part SDD ansatz."
+}

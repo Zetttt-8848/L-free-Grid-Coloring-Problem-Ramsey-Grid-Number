@@ -1,0 +1,124 @@
+[
+  {
+    "dimension": 1,
+    "period": 5,
+    "status": "raw negative",
+    "seconds": 6.900000153109431e-05
+  },
+  {
+    "dimension": 1,
+    "period": 6,
+    "status": "raw negative",
+    "seconds": 5.810000584460795e-05
+  },
+  {
+    "dimension": 1,
+    "period": 7,
+    "status": "raw negative",
+    "seconds": 8.689999231137335e-05
+  },
+  {
+    "dimension": 1,
+    "period": 8,
+    "status": "raw negative",
+    "seconds": 5.979998968541622e-05
+  },
+  {
+    "dimension": 1,
+    "period": 9,
+    "status": "raw negative",
+    "seconds": 5.7600002037361264e-05
+  },
+  {
+    "dimension": 1,
+    "period": 10,
+    "status": "raw negative",
+    "seconds": 4.839999019168317e-05
+  },
+  {
+    "dimension": 1,
+    "period": 11,
+    "status": "raw negative",
+    "seconds": 5.020000389777124e-05
+  },
+  {
+    "dimension": 1,
+    "period": 12,
+    "status": "raw negative",
+    "seconds": 6.25999819021672e-05
+  },
+  {
+    "dimension": 1,
+    "period": 13,
+    "status": "raw negative",
+    "seconds": 5.9900019550696015e-05
+  },
+  {
+    "dimension": 1,
+    "period": 14,
+    "status": "raw negative",
+    "seconds": 5.6899996707215905e-05
+  },
+  {
+    "dimension": 1,
+    "period": 15,
+    "status": "raw negative",
+    "seconds": 6.280001252889633e-05
+  },
+  {
+    "dimension": 1,
+    "period": 16,
+    "status": "raw negative",
+    "seconds": 5.859998054802418e-05
+  },
+  {
+    "dimension": 2,
+    "period": 5,
+    "status": "raw negative",
+    "seconds": 0.0002998999843839556
+  },
+  {
+    "dimension": 2,
+    "period": 6,
+    "status": "literal coloring",
+    "seconds": 0.0001340000017080456,
+    "colors": [
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      2,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  }
+]

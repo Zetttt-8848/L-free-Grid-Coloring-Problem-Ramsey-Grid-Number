@@ -1,0 +1,313 @@
+{
+  "purpose": "bounded discovery for an ordered-routing dual; raw solver status only",
+  "catalog": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\window13.json",
+  "candidate_limit": 100,
+  "candidate_pool": 46,
+  "candidates_examined": 12,
+  "seconds": 0.032336800009943545,
+  "examined": [
+    {
+      "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "span": 5,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "span": 10,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "span": 10,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "span": 10,
+      "cells": 15,
+      "corners": 20,
+      "diagonal_tau": 7,
+      "row_tau": 7,
+      "column_tau": 7,
+      "independent_line_budget": 21,
+      "budget_minus_corners": 1
+    },
+    {
+      "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "span": 8,
+      "cells": 28,
+      "corners": 44,
+      "diagonal_tau": 16,
+      "row_tau": 12,
+      "column_tau": 13,
+      "independent_line_budget": 41,
+      "budget_minus_corners": -3,
+      "sat_status": "UNSAT"
+    }
+  ],
+  "found": {
+    "marks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "span": 8,
+    "cells": 28,
+    "corners": 44,
+    "diagonal_tau": 16,
+    "row_tau": 12,
+    "column_tau": 13,
+    "independent_line_budget": 41,
+    "budget_minus_corners": -3,
+    "sat_status": "UNSAT",
+    "row_lines": {
+      "2": [
+        0,
+        2
+      ],
+      "3": [
+        1,
+        3
+      ],
+      "4": [
+        2,
+        4
+      ],
+      "7": [
+        3,
+        6
+      ],
+      "8": [
+        5,
+        7
+      ],
+      "6": [
+        1,
+        5
+      ]
+    },
+    "column_lines": {
+      "0": [
+        6,
+        7
+      ],
+      "1": [
+        4,
+        6
+      ],
+      "2": [
+        2,
+        5
+      ],
+      "3": [
+        1,
+        4
+      ],
+      "6": [
+        0,
+        2
+      ],
+      "4": [
+        0,
+        2
+      ]
+    },
+    "difference_fibers": {
+      "1": 6,
+      "2": 5,
+      "3": 4,
+      "4": 4,
+      "5": 3,
+      "6": 3,
+      "7": 2,
+      "8": 1
+    }
+  },
+  "scope": "No claim of completeness beyond the listed prefix, and no proof claim from SAT UNSAT."
+}

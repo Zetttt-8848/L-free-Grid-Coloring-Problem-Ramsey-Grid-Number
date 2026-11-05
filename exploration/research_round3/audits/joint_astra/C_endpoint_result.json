@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "rows_recomputed": 684,
+  "small_identity_checks": 7181,
+  "ell": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31,
+    33,
+    34,
+    36,
+    37,
+    38,
+    39
+  ],
+  "n464_inherited_boundary": [
+    {
+      "s": 158,
+      "c": 11,
+      "H": 1672,
+      "minimum": 29960,
+      "upper": 30050,
+      "margin": -90,
+      "last_distance": 35,
+      "correction": 508
+    },
+    {
+      "s": 159,
+      "c": 15,
+      "H": 2265,
+      "minimum": 54666,
+      "upper": 54214,
+      "margin": 452,
+      "last_distance": 48,
+      "correction": 1346
+    }
+  ],
+  "n464_inherited_no_window_boundary": [
+    {
+      "s": 158,
+      "c": 1,
+      "H": 157,
+      "minimum": 340,
+      "upper": 463,
+      "margin": -123,
+      "last_distance": 4,
+      "correction": 0
+    },
+    {
+      "s": 159,
+      "c": 13,
+      "H": 1976,
+      "minimum": 41676,
+      "upper": 41405,
+      "margin": 271,
+      "last_distance": 42,
+      "correction": 728
+    }
+  ],
+  "selected": [
+    {
+      "n": 454,
+      "s": 152,
+      "profile": "45",
+      "window": true,
+      "excluded": true,
+      "best": {
+        "c": 11,
+        "H": 1606,
+        "minimum": 29414,
+        "upper": 29390,
+        "margin": 24,
+        "last_distance": 36,
+        "correction": 508
+      }
+    },
+    {
+      "n": 464,
+      "s": 155,
+      "profile": "46+3",
+      "window": true,
+      "excluded": true,
+      "best": {
+        "c": 10,
+        "H": 1495,
+        "minimum": 25110,
+        "upper": 25091,
+        "margin": 19,
+        "last_distance": 33,
+        "correction": 374
+      }
+    },
+    {
+      "n": 454,
+      "s": 152,
+      "profile": "45",
+      "window": true,
+      "excluded": true,
+      "best": {
+        "c": 11,
+        "H": 1606,
+        "minimum": 29414,
+        "upper": 29390,
+        "margin": 24,
+        "last_distance": 36,
+        "correction": 508
+      }
+    }
+  ],
+  "external_dependency": "WINDOW values are J author input; this reviewer does not independently certify J."
+}

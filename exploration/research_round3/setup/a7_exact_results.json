@@ -1,0 +1,96 @@
+{
+  "base": "R3-CP0",
+  "status": "PROVED: finite exact arithmetic; conditional capacity consequences only",
+  "arithmetic": "Python unbounded integers only",
+  "H_table_literal": [0, 1, 2, 4, 7, 12, 18, 26, 35, 45, 56, 73, 86, 107, 128, 152, 178, 200, 217, 247, 284, 334, 357, 373, 426, 481, 493, 554, 586],
+  "index_convention": "q(n-d) for n-d positions; corresponding span n-d-1",
+  "source_index_check": {
+    "literal_mandate_at_n465_d39": {"argument": 425, "q": 23, "cap": 46},
+    "accepted_position_count_at_n465_d39": {"positions": 426, "span": 425, "q": 24, "cap": 48}
+  },
+  "uniform_L463": {
+    "45": {"L": 463, "best_bound": 154, "best_c": [8, 9, 10, 11, 12]},
+    "46": {"L": 463, "best_bound": 156, "best_c": [7, 8, 9, 10, 11, 12, 13, 14]},
+    "48": {"L": 463, "best_bound": 159, "best_c": [7, 8, 9, 10, 11, 12, 13]}
+  },
+  "n464_inherited_profile": {
+    "best_bound": 159,
+    "best_c": [7, 8, 9, 10, 11, 12, 13],
+    "first_forbidden_at_c7": {"target_size": 160, "H": 1092, "minsum": 12972, "twice_minsum": 25944, "rhs": 25928, "margin": 16},
+    "last_unexcluded_at_c7": {"target_size": 159, "H": 1085, "minsum": 12811, "twice_minsum": 25622, "rhs": 25928, "margin": -306}
+  },
+  "n464_partial_profiles": {
+    "cap45_through27": {
+      "best_bound": 154,
+      "best_c": [8, 9, 10],
+      "target": {"H": 1204, "minsum": 16713, "twice_minsum": 33426, "rhs": 33336, "margin": 90, "strict_contradiction": true}
+    },
+    "cap46_through27": {
+      "best_bound": 156,
+      "best_c": [7, 8, 9, 10, 11, 12],
+      "target": {"H": 1204, "minsum": 16362, "twice_minsum": 32724, "rhs": 33336, "margin": -612, "strict_contradiction": false}
+    },
+    "cap45_through26_only": {"H": 1204, "minsum": 16713, "twice_minsum": 33426, "rhs": 33336, "margin": 90, "strict_contradiction": true}
+  },
+  "distance_sensitivity_n464": {
+    "required_one_sided_minsum": 16669,
+    "cap45_prefix_from_inherited": {
+      "boundary_rows": [
+        {"through": 21, "minsum": 16668, "margin": 0, "best_bound": 155, "best_c": [6, 7, 8, 9, 10, 11, 12]},
+        {"through": 22, "minsum": 16683, "margin": 30, "best_bound": 154, "best_c": [8, 9]}
+      ],
+      "first_closing_prefix": {"through": 22, "minsum": 16683, "margin": 30, "best_bound": 154, "best_c": [8, 9]}
+    },
+    "cap46_to45_prefix": {
+      "boundary_rows": [
+        {"through": 16, "minsum": 16658, "margin": -20, "best_bound": 155, "best_c": [6, 7, 8, 9, 10, 11, 12]},
+        {"through": 17, "minsum": 16668, "margin": 0, "best_bound": 154, "best_c": [9]}
+      ],
+      "first_closing_prefix": {"through": 17, "minsum": 16668, "margin": 0, "best_bound": 154, "best_c": [9]},
+      "global_closing_witness": {"c": 9, "H": 1350, "minsum": 20841, "twice_minsum": 41682, "rhs": 41670, "margin": 12, "strict_contradiction": true}
+    },
+    "concentrated_reductions_from_cap46_profile": {
+      "previous": {"reduction_units": 11, "new_cap_d1": 35, "minsum": 16648, "margin": -40, "best_bound": 155, "best_c": [6, 7, 8, 9, 10, 11, 12]},
+      "first_closing": {"reduction_units": 12, "new_cap_d1": 34, "minsum": 16674, "margin": 12, "best_bound": 154, "best_c": [8]}
+    },
+    "concentrated_reductions_from_inherited_profile": {
+      "previous": {"reduction_units": 34, "new_cap_d1": 14, "minsum": 16554, "margin": -228, "best_bound": 155, "best_c": [3, 4, 5, 6, 7, 8, 9]},
+      "first_closing": {"reduction_units": 35, "new_cap_d1": 13, "minsum": 16579, "margin": -178, "best_bound": 154, "best_c": [5, 6]},
+      "global_closing_witness": {"c": 5, "H": 760, "minsum": 6952, "twice_minsum": 13904, "rhs": 13890, "margin": 14, "strict_contradiction": true}
+    },
+    "fixed_c8_note": {
+      "cap46_to45_first_17": {"minsum": 16668, "twice_minsum": 33336, "rhs": 33336, "strict_contradiction": false},
+      "cap46_to45_first_18": {"minsum": 16677, "twice_minsum": 33354, "rhs": 33336, "margin": 18, "strict_contradiction": true}
+    }
+  },
+  "ladder_n450_465_cap45_through27": [
+    {"n": 450, "required_ceil_n_over_3": 150, "best_bound": 152, "best_c": [7, 8, 9, 10, 11, 12, 13], "closes_required_size": false},
+    {"n": 451, "required_ceil_n_over_3": 151, "best_bound": 152, "best_c": [7, 8, 9, 10, 11, 12], "closes_required_size": false},
+    {"n": 452, "required_ceil_n_over_3": 151, "best_bound": 152, "best_c": [8, 9, 10, 11], "closes_required_size": false},
+    {"n": 453, "required_ceil_n_over_3": 151, "best_bound": 152, "best_c": [8, 9, 10], "closes_required_size": false},
+    {"n": 454, "required_ceil_n_over_3": 152, "best_bound": 153, "best_c": [7, 8, 9, 10, 11, 12, 13], "closes_required_size": false},
+    {"n": 455, "required_ceil_n_over_3": 152, "best_bound": 153, "best_c": [7, 8, 9, 10, 11, 12, 13], "closes_required_size": false},
+    {"n": 456, "required_ceil_n_over_3": 152, "best_bound": 153, "best_c": [7, 8, 9, 10, 11, 12], "closes_required_size": false},
+    {"n": 457, "required_ceil_n_over_3": 153, "best_bound": 153, "best_c": [7, 8, 9, 10, 11], "closes_required_size": false},
+    {"n": 458, "required_ceil_n_over_3": 153, "best_bound": 153, "best_c": [8, 9, 10], "closes_required_size": false},
+    {"n": 459, "required_ceil_n_over_3": 153, "best_bound": 153, "best_c": [8, 9, 10], "closes_required_size": false},
+    {"n": 460, "required_ceil_n_over_3": 154, "best_bound": 154, "best_c": [7, 8, 9, 10, 11, 12, 13], "closes_required_size": false},
+    {"n": 461, "required_ceil_n_over_3": 154, "best_bound": 154, "best_c": [7, 8, 9, 10, 11, 12], "closes_required_size": false},
+    {"n": 462, "required_ceil_n_over_3": 154, "best_bound": 154, "best_c": [7, 8, 9, 10, 11, 12], "closes_required_size": false},
+    {"n": 463, "required_ceil_n_over_3": 155, "best_bound": 154, "best_c": [7, 8, 9, 10, 11], "closes_required_size": true},
+    {"n": 464, "required_ceil_n_over_3": 155, "best_bound": 154, "best_c": [8, 9, 10], "closes_required_size": true},
+    {"n": 465, "required_ceil_n_over_3": 155, "best_bound": 154, "best_c": [8, 9, 10], "closes_required_size": true}
+  ],
+  "ladder_boundary_witnesses": {
+    "n462_failure": {"target_size": 154, "c": 7, "H": 1050, "minsum": 12780, "twice_minsum": 25560, "rhs": 25816, "margin": -256},
+    "n463_closure": {"target_size": 155, "c": 7, "H": 1057, "minsum": 12948, "twice_minsum": 25896, "rhs": 25872, "margin": 24},
+    "n464_closure": {"target_size": 155, "c": 8, "H": 1204, "minsum": 16713, "twice_minsum": 33426, "rhs": 33336, "margin": 90},
+    "n465_closure": {"target_size": 155, "c": 8, "H": 1204, "minsum": 16713, "twice_minsum": 33426, "rhs": 33408, "margin": 18}
+  },
+  "dual_bracket_audit": {
+    "exact_certified_statement": "sup(S_464/a0) <= -16 on the inherited domain",
+    "decimal_lower_endpoint": "-17.29",
+    "lower_endpoint_status": "HEURISTIC_ONLY: no literal exact candidate/score supplied in the mandate",
+    "rigorous_bracket_status": "UNDECIDED"
+  }
+}

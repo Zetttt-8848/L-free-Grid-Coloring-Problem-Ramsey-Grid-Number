@@ -1,0 +1,1439 @@
+{
+  "colors": 3,
+  "counts": {
+    "cell_clauses": 2116,
+    "forbidden_color_clauses": 11385,
+    "geometric_triples": 3795,
+    "symmetry_clauses": 529,
+    "total_clauses": 14030,
+    "variables": 1587
+  },
+  "cube_partition": {
+    "all_color_tuples": "{0,1,2}^4",
+    "cells_0_based": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        22,
+        22
+      ]
+    ],
+    "coverage": "Every total coloring assigns exactly one of the 81 tuples to these four cells",
+    "cube_count": 81,
+    "order_seed": 62301
+  },
+  "cube_records": [
+    {
+      "assumption_literals": [
+        5,
+        72,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "order": 0,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2631250999402255
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "order": 1,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26499900000635535
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "order": 2,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002226000651717186
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        2
+      ],
+      "order": 3,
+      "status": "UNSAT",
+      "wall_seconds": 0.00015630002599209547
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "order": 4,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2588270000414923
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "order": 5,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26282230007927865
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "order": 6,
+      "status": "UNSAT",
+      "wall_seconds": 0.00032549991738051176
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "order": 7,
+      "status": "UNSAT",
+      "wall_seconds": 0.0006512000691145658
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "order": 8,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26165719993878156
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "order": 9,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2631787999998778
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "order": 10,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2643726000096649
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "order": 11,
+      "status": "UNSAT",
+      "wall_seconds": 0.0004039999330416322
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "order": 12,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002847999567165971
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        2
+      ],
+      "order": 13,
+      "status": "UNSAT",
+      "wall_seconds": 0.00020070001482963562
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "order": 14,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26185719994828105
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "order": 15,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002847999567165971
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "order": 16,
+      "status": "UNSAT",
+      "wall_seconds": 0.00011660007294267416
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 17,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2618377999169752
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "order": 18,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26222999999299645
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "order": 19,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2627671000082046
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "order": 20,
+      "status": "UNSAT",
+      "wall_seconds": 0.00034689996391534805
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "order": 21,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26268719998188317
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "order": 22,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2637807000428438
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        2
+      ],
+      "order": 23,
+      "status": "UNSAT",
+      "wall_seconds": 0.0637661999789998
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "order": 24,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2590236000251025
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "order": 25,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2608449999243021
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "order": 26,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26072579994797707
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "order": 27,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2624951999168843
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "order": 28,
+      "status": "UNSAT",
+      "wall_seconds": 0.00023720005992799997
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "order": 29,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.28644019993953407
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "order": 30,
+      "status": "UNSAT",
+      "wall_seconds": 0.0004064000677317381
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "order": 31,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2543819999555126
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "order": 32,
+      "status": "UNSAT",
+      "wall_seconds": 0.0003361999988555908
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "order": 33,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2595354999648407
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "order": 34,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2614948999835178
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "order": 35,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2637489000335336
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "order": 36,
+      "status": "UNSAT",
+      "wall_seconds": 0.00023829995188862085
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "order": 37,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2617333000525832
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "order": 38,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26468719996046275
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "order": 39,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2501685000024736
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "order": 40,
+      "status": "UNSAT",
+      "wall_seconds": 0.00023490004241466522
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "order": 41,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2621410998981446
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "order": 42,
+      "status": "UNSAT",
+      "wall_seconds": 0.00029910006560385227
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "order": 43,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2609449999872595
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "order": 44,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26323969999793917
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        1
+      ],
+      "order": 45,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26060119993053377
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "order": 46,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2500558999599889
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "order": 47,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26368690002709627
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "order": 48,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2638457000721246
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "order": 49,
+      "status": "UNSAT",
+      "wall_seconds": 0.00022499996703118086
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "order": 50,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26164939999580383
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "order": 51,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26357039995491505
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "order": 52,
+      "status": "UNSAT",
+      "wall_seconds": 0.00022259994875639677
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "order": 53,
+      "status": "UNSAT",
+      "wall_seconds": 0.00010259996633976698
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 54,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2633358999155462
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "order": 55,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26172950002364814
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "order": 56,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2621231999946758
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "order": 57,
+      "status": "UNSAT",
+      "wall_seconds": 0.11010399996303022
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "order": 58,
+      "status": "UNSAT",
+      "wall_seconds": 0.000255799968726933
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "order": 59,
+      "status": "UNSAT",
+      "wall_seconds": 0.0001476999605074525
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "order": 60,
+      "status": "UNSAT",
+      "wall_seconds": 0.00012089998926967382
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "order": 61,
+      "status": "UNSAT",
+      "wall_seconds": 9.639991912990808e-05
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "order": 62,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.25977259990759194
+    },
+    {
+      "assumption_literals": [
+        5,
+        72,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "order": 63,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26305289997253567
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 64,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002250999677926302
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "order": 65,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.3096355999587104
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "order": 66,
+      "status": "UNSAT",
+      "wall_seconds": 0.00028279994148761034
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "order": 67,
+      "status": "UNSAT",
+      "wall_seconds": 0.00013149995356798172
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "order": 68,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26327969995327294
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        73,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "order": 69,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002886999864131212
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        75,
+        1585
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "order": 70,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2646363000385463
+    },
+    {
+      "assumption_literals": [
+        4,
+        72,
+        74,
+        1585
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "order": 71,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.250346599961631
+    },
+    {
+      "assumption_literals": [
+        4,
+        71,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "order": 72,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.32097300002351403
+    },
+    {
+      "assumption_literals": [
+        6,
+        71,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "order": 73,
+      "status": "UNSAT",
+      "wall_seconds": 0.00022639997769147158
+    },
+    {
+      "assumption_literals": [
+        5,
+        71,
+        73,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "order": 74,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2510820000898093
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        74,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 75,
+      "status": "UNSAT",
+      "wall_seconds": 0.0002747999969869852
+    },
+    {
+      "assumption_literals": [
+        4,
+        70,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "order": 76,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.263421899988316
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        74,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "order": 77,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.2633632000070065
+    },
+    {
+      "assumption_literals": [
+        5,
+        70,
+        75,
+        1587
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "order": 78,
+      "status": "UNDECIDED",
+      "wall_seconds": 0.26394830003846437
+    },
+    {
+      "assumption_literals": [
+        6,
+        70,
+        73,
+        1585
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "order": 79,
+      "status": "UNSAT",
+      "wall_seconds": 0.00023020000662654638
+    },
+    {
+      "assumption_literals": [
+        6,
+        72,
+        75,
+        1586
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 80,
+      "status": "UNSAT",
+      "wall_seconds": 0.00017030001617968082
+    }
+  ],
+  "cubes_attempted": 81,
+  "epoch_wall_cap_seconds": 0.25,
+  "mathematical_status": "UNDECIDED",
+  "n": 23,
+  "non_claims": [
+    "UNDECIDED cubes are not UNSAT",
+    "Even all internal UNSAT answers would require proof artifacts before an UNSAT claim"
+  ],
+  "orientation": "(x,y),(x+d,y),(x+d,y+d)",
+  "phase_matrix": "LOCAL_RESEARCH_ROOT\\Desktop\\L-free coloring Ramsey Number\\Kimi_Agent_\u6838\u5fc3\u63a8\u5bfcPDF\\lgrid_sat\\witnesses_n20_k3.txt",
+  "phase_matrix_transposed": true,
+  "schema": "round2_lower_cube_search_v1",
+  "solver": "maplechrono",
+  "statuses": {
+    "SAT": 0,
+    "UNDECIDED": 48,
+    "UNSAT": 33
+  },
+  "symmetry_breaking": {
+    "cell_0_color": 0,
+    "justification": "permute color at cell 0 to 0, then swap residual colors 1 and 2 so their first occurrence is 1",
+    "restricted_growth": "color 2 cannot precede color 1 in row-major order"
+  },
+  "total_wall_seconds": 12.86788160004653,
+  "witness_path": null
+}

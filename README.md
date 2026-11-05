@@ -2,6 +2,8 @@
 
 用于协作研究正向 L 网格拉姆齐数的数学资料库。当前论文的完整证明、构造和有限证书在 [manuscript/main.tex](manuscript/main.tex)，参考文献单独保存在 [references.bib](manuscript/references.bib)。
 
+先读 [命题与证明索引](docs/RESULTS_INDEX.md)、[开放问题与失效路线](docs/OPEN_PROBLEMS.md) 和 [协作约定](docs/CONTRIBUTING.md)。
+
 ## 问题
 
 正向 L 是 $(x,y),(x+d,y),(x+d,y+d)$，其中 $d>0$。
@@ -48,4 +50,3 @@ LaTeX需要TeX Live、BibTeX、latexmk及正文所用宏包。Lean构建见 `for
 目录：`manuscript/` 当前证明与证书；`formal/` 形式化源码及历史覆盖记录；`exploration/` 历史探索、反例和失败路线；`docs/` 协作与状态说明。
 
 完整论文中的个人信息、封面、致谢、辅助披露和答辩材料未导入。保留数学来源归属不等于宣称所有结果为新。此仓库不替第三方文献授予版权许可。
-

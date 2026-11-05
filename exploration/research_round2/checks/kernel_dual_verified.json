@@ -1,0 +1,14 @@
+{
+  "label": "PROVED exact certificate inequalities",
+  "source_sha256": "be80508aecfdd15c35d67256d98ec5b69b7124ba350634f1e7b1e1a110afd9d1",
+  "n": 464,
+  "max_weight_length": 464,
+  "nodes": 156,
+  "mass": "11176889261931/25000000000",
+  "mass_upper_bound": 448,
+  "score_upper_bound_normalized": -16,
+  "coefficient_checks": 463,
+  "coefficient_margin": "1/1000",
+  "scope": "Every real weight vector of length<=464 with all positive-distance autocorrelations nonnegative.",
+  "non_claim": "Not an exact optimum value; no claim about longer windows or improved caps."
+}

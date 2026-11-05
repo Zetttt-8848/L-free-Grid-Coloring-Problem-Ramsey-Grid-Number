@@ -1,0 +1,48 @@
+{
+  "weighted_certificate": {
+    "n": 465,
+    "length": 93,
+    "sum_weights": 2209,
+    "a0": 69231,
+    "total_positive_correlations": 2405225,
+    "distance_moment": 53496528,
+    "short_correlations": 2038439,
+    "score": 285630
+  },
+  "energy_lower": 720686203,
+  "energy_upper": 720495783,
+  "energy_gap": 190420,
+  "exhaustive_word_count": 3279,
+  "weights_per_word": 4,
+  "triangles": {
+    "2": {
+      "points": 1,
+      "corners": 0,
+      "free": 2
+    },
+    "3": {
+      "points": 3,
+      "corners": 1,
+      "free": 6
+    },
+    "4": {
+      "points": 6,
+      "corners": 4,
+      "free": 18
+    },
+    "5": {
+      "points": 10,
+      "corners": 10,
+      "free": 36
+    },
+    "6": {
+      "points": 15,
+      "corners": 20,
+      "free": 0
+    }
+  },
+  "external_inputs": {
+    "G(24) lower bound": 425,
+    "G(25) lower bound": 480
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "claim": "R_3(L) <= 465, conditional only on the two supplied exact Golomb minima",
+  "arithmetic": "Python arbitrary-precision integers; no numerical solver",
+  "external_inputs": {
+    "G(24)_lower_bound": 425,
+    "G(25)_lower_bound": 480
+  },
+  "n": 465,
+  "h": 47,
+  "weight_formula": "w_i = min(i, 94-i), 1 <= i <= 93",
+  "a0": 69231,
+  "P_sum_d1_to39": 2038439,
+  "Q_sum_d40_to92": 366786,
+  "D_sum_d_times_a_d": 53496528,
+  "required": 1064933097,
+  "permitted": 1064647467,
+  "contradiction_margin": 285630,
+  "geometry_witnesses_n2_to10": 4643,
+  "all_3_color_words_lengths1_to7": 3279,
+  "checks": "All assertions passed; bounded tests supplement the written universal proof."
+}

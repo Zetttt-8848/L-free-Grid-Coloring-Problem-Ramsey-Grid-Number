@@ -1,0 +1,30 @@
+{
+  "addendum_sha256": "eff6eb253edd6ead57d6bfb77a5c5161e7f8e9c0cc2a368df78db2f8d9e842a1",
+  "environment_self_test": "ENVIRONMENT OK",
+  "heavy_checks_rerun": false,
+  "issues": {
+    "major": [],
+    "minor": []
+  },
+  "new_manuscript_sha256": {
+    "research_round3/report_four_final.tex": "3dba066fc81acb2255d0760c806cfeb0c63c38fb34cbe7355646b5687f18914b",
+    "research_round3/round3_report.tex": "a8a4c97d366daf4e04ce3c22b47d49d31ecb1f7e7dba1466aeff59fd0b5f9fe7"
+  },
+  "no_new_proof_premise": true,
+  "old_manuscript_sha256": {
+    "research_round3/report_four_final.tex": "8d2fae3af24504ba6da497da2ffb33bde34cde52830cd10115f79c79f93b3e07",
+    "research_round3/round3_report.tex": "7ea31e5b2927d41ebd9483f38fb9b54ea5260b79ef42cf1ce0d467856db56b28"
+  },
+  "original_artifacts_unchanged": true,
+  "original_manifest_sha256": "8e0703ce3daef656f255278845056d4dc543967a74b06a9e8534536de7afbe40",
+  "original_review_sha256": "87e76eba8ed7f663d62bf84b464c6a47187cac13ccac61a3f26663d0ad70377d",
+  "original_seal_sha256": "8adcee012fa89942b99c754b765e83198d14e72924571d186677fc592bdf9b6d",
+  "other_reviewer_code_or_results_read": false,
+  "review_level": "Level 3 Astra addendum",
+  "reviewed_source_count": 253,
+  "reviewer": "fresh_astra",
+  "scope": "Final integrated G/J/F mathematics in exactly the two identified manuscript revisions; review-status include file excluded",
+  "sealed_at": "2026-09-10T06:16:49.500841+00:00",
+  "unchanged_other_source_count": 251,
+  "verdict": "PASS"
+}

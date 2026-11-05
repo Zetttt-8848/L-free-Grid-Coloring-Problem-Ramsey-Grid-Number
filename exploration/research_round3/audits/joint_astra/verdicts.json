@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "reviewer": "joint_astra",
+  "model": "GPT-6 Astra",
+  "assignment": ["G", "C", "L"],
+  "overall": "PASS_WITH_EXPLICIT_SCOPE_AND_DEPENDENCIES",
+  "major_issues": [],
+  "minor_notes": [
+    {
+      "id": "C-SCOPE-1",
+      "status": "RESOLVED_BY_FROZEN_SPECIFICATION",
+      "text": "The 60 ruler-pair cases cover CAP-P1 positive shifts only. The JSON family description abbreviates this restriction; the final report must preserve it. No universal ruler-pair or 45-cap claim follows."
+    }
+  ],
+  "lemmas": {
+    "G1_fixed_scale_capacities": "PASS",
+    "G2_partition_bound": "PASS",
+    "G3_uniform_bound": "PASS",
+    "G4a_refined_capacities": "PASS",
+    "G4b_minus_one_base": "PASS",
+    "G5a_Golomb_construction": "PASS",
+    "G5b_first_level_barrier": "PASS_FOR_STATED_REGION_CLASS",
+    "G5_conditional_density_implication": "PASS_CONDITIONAL",
+    "C_AP5_uniqueness": "PASS",
+    "C_AP5_existential_encoding": "PASS",
+    "C_endpoint_telescope": "PASS",
+    "C_window_to_spacing_transfer": "PASS_WITH_EXTERNAL_WINDOW_TABLE",
+    "C_conditional_profile_arithmetic": "PASS_CONDITIONAL",
+    "C_ruler_forcing": "PASS_FROZEN_POSITIVE_SHIFT_FAMILY",
+    "C_ordered_overlap_bijection": "PASS",
+    "C_coarse_overlap_cap": "PASS",
+    "C_union_Cauchy_bound": "PASS",
+    "C_local_saturation_witness": "PASS",
+    "L_CNF_semantics": "PASS",
+    "L_color_symmetry": "PASS",
+    "L_cube_cover": "PASS",
+    "L_33_UP_refutations": "PASS",
+    "L_48_hard_record_reconciliation": "PASS_UNDECIDED_STATUS",
+    "L_circulant_ceiling_and_witness": "PASS",
+    "L_affine_scan_accounting": "PASS_RAW_TELEMETRY_ONLY"
+  },
+  "external_dependencies": [
+    "Inherited completion-closed transfer, generalized Golomb estimate, and accepted small-color bounds.",
+    "Window13 capacities are J author data. This reviewer authored J and does not independently certify them. Separate assigned reviews are required."
+  ],
+  "global_n21_mathematical_status": "UNDECIDED",
+  "author_files_edited": false,
+  "producer_or_existing_checker_executed_or_imported": false,
+  "audit_report": "REPORT.md",
+  "fresh_audit_program": "independent_audit.py",
+  "audit_local_corrections": "ERRATA.md"
+}

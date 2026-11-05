@@ -1,0 +1,16 @@
+{
+  "canonical_matrix_sha256": "808a2ca85c7a04a52324c5ee20a61bb9d207ed79a82b4551738d9eaafcb906c4",
+  "color_counts": {
+    "1": 11,
+    "2": 8,
+    "3": 6
+  },
+  "color_specific_forbidden_clauses": 90,
+  "expected_geometric_triples_formula": "sum_{m=1}^{4} m^2 = 30",
+  "first_violations": [],
+  "geometric_triples": 30,
+  "input_transposed": false,
+  "n": 5,
+  "verified_corner_free": true,
+  "violations": 0
+}

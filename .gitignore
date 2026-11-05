@@ -1,0 +1,14 @@
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.olean
+*.ilean
+.lake/
+.build/
+__pycache__/

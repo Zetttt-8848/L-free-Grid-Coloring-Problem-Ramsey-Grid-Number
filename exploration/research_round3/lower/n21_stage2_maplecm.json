@@ -1,0 +1,155 @@
+{
+  "attempted": 5,
+  "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+  "cube_manifest_sha256": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+  "cube_semantics": "base CNF conjoined with the four logged assumption literals as unit clauses",
+  "hard_cube_count_global": 48,
+  "mathematical_status": "RUNNING",
+  "per_cube_cap_seconds": 60,
+  "phase_checkpoint_sha256": "245a980b54aee99219c336cc60fc87aecee12a467f6c21f1ff5290192a493d30",
+  "python_sat_version": "1.9.dev15",
+  "records": [
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "order": 3,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 1149174,
+        "decisions": 1539113,
+        "propagations": 0,
+        "restarts": 2134
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.00476179999896
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "order": 5,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 914177,
+        "decisions": 1216493,
+        "propagations": 0,
+        "restarts": 2015
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.009250399998564
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "order": 7,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 940994,
+        "decisions": 1254925,
+        "propagations": 0,
+        "restarts": 2100
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.0018467000009
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "order": 11,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 978430,
+        "decisions": 1311462,
+        "propagations": 0,
+        "restarts": 2087
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.00705569999991
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "order": 13,
+      "proof_lines": null,
+      "proof_path": null,
+      "proof_sha256": null,
+      "stats": {
+        "conflicts": 927670,
+        "decisions": 1236672,
+        "propagations": 0,
+        "restarts": 2068
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 60.0,
+      "wall_seconds": 60.00036479999835
+    }
+  ],
+  "schema": "round3_lower_hard_cube_worker_v1",
+  "shard_count": 2,
+  "shard_index": 1,
+  "solver": "maplecm",
+  "target_count": 24,
+  "wall_seconds_so_far": 300.49469260000114,
+  "worker_wall_cap_seconds": 1800
+}

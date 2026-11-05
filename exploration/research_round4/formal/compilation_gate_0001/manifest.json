@@ -1,0 +1,26 @@
+{
+  "checkpoint": "R4-GATE-0001",
+  "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
+  "lean_executable_sha256": "f59b0c515f65dbf96526279d77fb43152f76bdd77f5fb94f387b75139fafe68c",
+  "host": "Windows-11-10.0.26200-SP0",
+  "records": [
+    {
+      "source": "research_round4/formal/geometry/Geometry.lean",
+      "sha256": "5d6e04997fd34a9fc8785d69e944d6582c11d04b530ff12d385d80b291893503",
+      "exit_code": 0,
+      "has_sorry_axiom": false,
+      "stdout": "Geometry.stdout.txt",
+      "stderr": "Geometry.stderr.txt"
+    },
+    {
+      "source": "research_round4/formal/small_cases/SmallCases.lean",
+      "sha256": "5f91ec4aa3f049f6ea16fa4c956d57bba527f770fc24cfaca7afd715be3cc65b",
+      "exit_code": 0,
+      "has_sorry_axiom": false,
+      "stdout": "SmallCases.stdout.txt",
+      "stderr": "SmallCases.stderr.txt"
+    }
+  ],
+  "trust_boundary": "Native-decide and bv_decide lemmas depend on Lean.ofReduceBool and trust the Lean compiler. All listed axioms are captured in stdout. No sorryAx is permitted.",
+  "scope": "Only named theorems in the two sources are formalized; the main general-k and four-color bound proofs remain written proofs with separate exact arithmetic."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "arithmetic": "integer convolution and fractions.Fraction only",
+  "source_sha256": "440a3f7b7b18e8fb34b06f10d3177290b9081d7cbff64161fc95a8bda6cfa82b",
+  "feasible_profiles_reenumerated": 111840,
+  "summaries": [
+    {
+      "n": 464,
+      "defect_index_zero_based": 1,
+      "negative_defect_weight": -28,
+      "score": -52270592,
+      "a0": 377616,
+      "minimum_autocorrelation": 2304,
+      "quotient_numerator": -3266912,
+      "quotient_denominator": 23601
+    },
+    {
+      "n": 465,
+      "defect_index_zero_based": 1,
+      "negative_defect_weight": -19,
+      "score": -39543417,
+      "a0": 377193,
+      "minimum_autocorrelation": 2880,
+      "quotient_numerator": -13181139,
+      "quotient_denominator": 125731
+    }
+  ],
+  "scope_limit": "Finite one-defect family only."
+}

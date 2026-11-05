@@ -1,0 +1,12 @@
+{
+  "issue": "CV-MINOR-004",
+  "raw_record": "breakout_n21.json",
+  "raw_record_is_immutable": true,
+  "current_status": "REJECTED_INVALID_COLOR_DOMAIN",
+  "mathematical_status": "NO_LOWER_BOUND_CLAIM",
+  "reason": "The preserved candidate uses four symbols; the task allows only three. The raw historical pending-verification status was superseded by the independent rejection recorded in R10-LB-E4.",
+  "preserved_negative_evidence": "r10_invalid_breakout_n21_four_symbol_matrix.txt",
+  "forbidden_certificate_path": "certificates/lower/breakout_n21_matrix.txt",
+  "replacement_valid_search": "breakout_n21_corrected.json",
+  "replacement_outcome": "UNDECIDED"
+}

@@ -1,0 +1,34 @@
+{
+  "assigned_cores": [
+    "G",
+    "J",
+    "F"
+  ],
+  "issues": {
+    "major": [],
+    "minor": []
+  },
+  "reviewer": "fresh_astra",
+  "reviewer_artifact_sha256": {
+    "F_exact_arrays.json": "0889d5aa92ba7c6ea754af77476b83b9a727aeb2dd49015219d592b6dc88489b",
+    "F_results.json": "cd98cfe30d75633a5f27b9ba0223a1146b062f760737358c2cdc47c2c491bf3b",
+    "G_results.json": "2c27261d087aa89fff811eacb87c873a3cbf481f72796a15ca008f1ce0fbc1ad",
+    "J_results.json": "95518a3373c50995279bc58e92c6944f2252dc4f5d7bd79c65d70ce6bc21cb37",
+    "REVIEW.md": "87e76eba8ed7f663d62bf84b464c6a47187cac13ccac61a3f26663d0ad70377d",
+    "audit_f.log": "c341edebdecc244abbd1418f7bd5b04291f2151ae301d7a55d5a964fcea215fd",
+    "audit_f.py": "53483b7e34aa84551245de893c55bbd3a65ff54718e2bceb1f9413da1b43a466",
+    "audit_g.log": "810ddadd76de8c19d5b70324c52991a1f78b574af114e00efebe2ac288b5aeba",
+    "audit_g.py": "81b4b5d5ec81ca6d861fcca857fe1e6fd1e429ef140c1df98e186cd2e02155fe",
+    "audit_j.log": "7a94771ecc5c144f5e5e0257f6ad83e51533d3bb644d23c9cfb5280119a1dd2b",
+    "audit_j.py": "2b47c17a98f556d90d09aec6fc471f28745f2267593125724ab911d37bff783c",
+    "execution.json": "fe0c78522a31d48f256aef9526f5e22da5ccd81335eace890445a0f342cc7a33",
+    "manifest.json": "8e0703ce3daef656f255278845056d4dc543967a74b06a9e8534536de7afbe40",
+    "reviewed_sources.json": "03c9cc9056e3d0368f7bd50fa0258d40bf7815e1b7037bd46a3b268e5d647b85",
+    "run_review.py": "e0c3e1cc8cc2d8e52551b98c75c3347b79fdef1514ec8327f46b69931e708c15",
+    "seal_review.py": "c1d889e01270f37f6f12820ef3619cc2c430d1d69744f0451657ca01ed0ac253",
+    "self_test.log": "8455acab7c16eed743138a195bb261e51b1286b3e2a96a4221322eb6ae4cdbf4"
+  },
+  "sealed_at": "2026-09-10T05:56:38.076366+00:00",
+  "source_hashes_unchanged": true,
+  "verdict": "PASS"
+}

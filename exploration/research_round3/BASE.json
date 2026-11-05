@@ -1,0 +1,23 @@
+{
+  "checkpoint": "R3-CP0",
+  "parent": "Round2 final reviewed release",
+  "git": "not present",
+  "inputs": [
+    {
+      "path": "research_round2/RELEASE_MANIFEST.json",
+      "sha256": "6e3d2439b5d940bffbd1e2d359d45b63cce38fd0ba47bdf8e7a3bbab1efb5b70"
+    },
+    {
+      "path": "research_round2/round2_report.tex",
+      "sha256": "af121d57dd864ac05445d1ca4675b8a77a7cb6afe4d54609d50c2ec352216fee"
+    },
+    {
+      "path": "research_round2/audits/FINAL_REPORT_RELEASE.json",
+      "sha256": "73d519738915caa6d3605ec0a73471fb688965b2e49dd66f85db9070e4e2a300"
+    },
+    {
+      "path": "research_round3/MANDATE.txt",
+      "sha256": "5f9e958690c1d56aedb11881b6c3fda71891e3b45950964ee6baccef0efbd157"
+    }
+  ]
+}

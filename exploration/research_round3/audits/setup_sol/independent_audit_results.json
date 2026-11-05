@@ -1,0 +1,351 @@
+{
+  "ap5": {
+    "ap5_occurrences_at_n464": 26680,
+    "assignments_exhausted": 32768,
+    "corner_free_assignments": 0,
+    "minimum_monochromatic_corners": 1,
+    "translation_to_strict_T6_exact": true,
+    "weak_triangle_corners": 20,
+    "weak_triangle_points": 15
+  },
+  "endpoint": {
+    "actual_inherited_bound_158": {
+      "H": 1976,
+      "c": 13,
+      "correction": 728,
+      "last_distance": 42,
+      "margin": 271,
+      "minimum": 41676,
+      "n": 464,
+      "profile": "inherited",
+      "s": 159,
+      "upper": 41405
+    },
+    "conditional_45_profile_n454": {
+      "H": 1606,
+      "c": 11,
+      "correction": 508,
+      "last_distance": 36,
+      "margin": 24,
+      "minimum": 29414,
+      "n": 454,
+      "profile": "45",
+      "s": 152,
+      "upper": 29390
+    },
+    "conditional_46_plus_first3to45_n464": {
+      "H": 1495,
+      "c": 10,
+      "correction": 374,
+      "last_distance": 33,
+      "margin": 19,
+      "minimum": 25110,
+      "n": 464,
+      "profile": "46+3",
+      "s": 155,
+      "upper": 25091
+    },
+    "conditional_profiles_are_not_cap_theorems": true,
+    "direct_identity_checks": 4097,
+    "source_position_transition_n464": {
+      "d38": 48,
+      "d39": 46
+    },
+    "window_ell_dependency": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      33,
+      34,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "independence": "fresh implementation; no author code imported or executed",
+  "input_sha256": {
+    "research_round3/cap/pair_forcing_certificate.json": "a87d9297d934c3fe8bbcd0a1d4c3ad5da94d247718d076a2ca357f887efd36fc",
+    "research_round3/lower/difference_circulant_n3.txt": "6c6f355fb14605b05d54e4dace6590a8d7dbd00e4ea34fd578d1400c1dc528cb",
+    "research_round3/lower/n21_cubes.json": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+    "research_round3/lower/n21_exact.cnf": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+    "research_round3/lower/n21_global_checkpoint_audit.json": "473131ca09193c4547b46c3b5327cbdb7ccff28abe145437e921a538f5daafbe",
+    "research_round3/lower/n21_quick_cube_proofs.json": "37e7a782b9ffcc48c28299bd334273db0f69cb278ff12252cd531403a12de9f2",
+    "research_round3/lower/n21_stage2_portfolio_merged.json": "9feba3f3fbf574c32ff1bd73b7513338e8229d3c00a2e963a3d3884dc3acea03"
+  },
+  "lower": {
+    "all_clauses_unique": true,
+    "clause_multiset_exact_match": true,
+    "cnf_counts": {
+      "cell_clauses": 1764,
+      "clauses_before_symmetry": 10374,
+      "corner_clauses": 8610,
+      "geometric_corners": 2870,
+      "symmetry_clauses": 441,
+      "total_clauses": 10815,
+      "variables": 1323
+    },
+    "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+    "color_symmetry_normalization": {
+      "fixed_first_cell_clause": [
+        1
+      ],
+      "restricted_growth_clauses": 440,
+      "sound_by_residual_color_swap": true
+    },
+    "cubes": {
+      "count": 81,
+      "cover_all_3_power_4": true,
+      "pairwise_disjoint_under_one_hot": true,
+      "unique_color_tuples": 81
+    },
+    "difference_circulant_n3": {
+      "corners_checked": 5,
+      "formula_exact": true,
+      "matrix": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "violations": 0
+    },
+    "difference_circulant_universal_ceiling": {
+      "equality_witness_checked": true,
+      "maximum_side": 3,
+      "proof_basis": "for every i<j, corner (i,0),(j,0),(j,j-i) forces f(-i)!=f(-j)"
+    },
+    "hard_portfolio": {
+      "all_statuses": "INTERRUPTED_UNDECIDED",
+      "exact_complement_of_easy": true,
+      "proofs_or_witnesses": 0,
+      "records": 48
+    },
+    "side21_status": "UNDECIDED",
+    "unit_propagation": {
+      "all_cubes_checked": 81,
+      "assigned_variable_counts_by_order": {
+        "0": 16,
+        "1": 2,
+        "10": 15,
+        "11": 17,
+        "12": 17,
+        "13": 17,
+        "14": 17,
+        "15": 16,
+        "16": 16,
+        "17": 17,
+        "18": 2,
+        "19": 16,
+        "2": 2,
+        "20": 17,
+        "21": 5,
+        "22": 17,
+        "23": 17,
+        "24": 2,
+        "25": 2,
+        "26": 17,
+        "27": 2,
+        "28": 17,
+        "29": 5,
+        "3": 16,
+        "30": 2,
+        "31": 17,
+        "32": 15,
+        "33": 17,
+        "34": 5,
+        "35": 2,
+        "36": 15,
+        "37": 2,
+        "38": 17,
+        "39": 16,
+        "4": 16,
+        "40": 17,
+        "41": 19,
+        "42": 2,
+        "43": 2,
+        "44": 2,
+        "45": 5,
+        "46": 2,
+        "47": 2,
+        "48": 2,
+        "49": 2,
+        "5": 17,
+        "50": 17,
+        "51": 16,
+        "52": 16,
+        "53": 2,
+        "54": 15,
+        "55": 2,
+        "56": 16,
+        "57": 17,
+        "58": 15,
+        "59": 2,
+        "6": 16,
+        "60": 16,
+        "61": 15,
+        "62": 2,
+        "63": 16,
+        "64": 17,
+        "65": 2,
+        "66": 16,
+        "67": 17,
+        "68": 2,
+        "69": 2,
+        "7": 19,
+        "70": 17,
+        "71": 17,
+        "72": 17,
+        "73": 16,
+        "74": 17,
+        "75": 5,
+        "76": 17,
+        "77": 2,
+        "78": 15,
+        "79": 2,
+        "8": 5,
+        "80": 2,
+        "9": 2
+      },
+      "contradictory": 33,
+      "contradictory_orders": [
+        1,
+        2,
+        8,
+        9,
+        18,
+        21,
+        24,
+        25,
+        27,
+        29,
+        30,
+        34,
+        35,
+        37,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        53,
+        55,
+        59,
+        62,
+        65,
+        68,
+        69,
+        75,
+        77,
+        79,
+        80
+      ],
+      "unresolved_by_unit_propagation": 48
+    }
+  },
+  "overlap": {
+    "direct_cases_n1_through_n7": 26104,
+    "ordered_bijection_and_bounds_pass": true,
+    "saturation_witness": {
+      "Bd_subset_Fd": true,
+      "Be_subset_Fe": true,
+      "C": [
+        1
+      ],
+      "D": [
+        14
+      ],
+      "M": 2,
+      "O": 1,
+      "Qd": [
+        [
+          21,
+          1
+        ]
+      ],
+      "Qe": [
+        [
+          21,
+          1
+        ]
+      ],
+      "cauchy_lower": 1,
+      "union": 1
+    },
+    "sum_intersection_sizes": 3491
+  },
+  "pair_forcing": {
+    "configuration_count": 60,
+    "configuration_orders": {
+      "23": 42,
+      "24": 18
+    },
+    "configuration_reflections": {
+      "false": 4,
+      "true": 56
+    },
+    "coverage_reconstructed_from_literal_family": true,
+    "five_ap_free_unions": 59,
+    "forcing_steps_checked": 16425,
+    "ruler_difference_counts": {
+      "23": 253,
+      "24": 276
+    },
+    "special_R24_reflection_shift2": {
+      "five_ap_count": 0,
+      "points": 48,
+      "span": 427,
+      "steps": 192
+    }
+  },
+  "reviewer": "setup_sol / GPT-5.6 Sol xhigh",
+  "runtime_seconds": 1.702646800000366,
+  "schema": "round3_independent_core_C_L_audit_v1",
+  "verdicts": {
+    "C_AP5": "PASS",
+    "C_endpoint": "PASS",
+    "C_overlap": "PASS",
+    "C_pair_forcing_finite_family": "PASS",
+    "L_33_easy_cube_UP": "PASS",
+    "L_48_hard_cube_accounting": "PASS_UNDECIDED",
+    "L_difference_circulant": "PASS",
+    "L_encoding_and_cube_cover": "PASS",
+    "L_side21_decision": "UNDECIDED"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "checks": [
+    "literal geometry reconstruction",
+    "complete finite enumeration",
+    "exact integer arithmetic",
+    "fresh DIMACS reconstruction",
+    "fresh direct unit propagation",
+    "certificate coverage and complement checks"
+  ],
+  "claim_id": "R3-C-L-independent-review-setup-sol",
+  "command": "python research_round3/audits/setup_sol/independent_audit.py",
+  "environment": {
+    "hardware": "Windows AMD64",
+    "software": [
+      "Python 3.13.5"
+    ]
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite assertions and arithmetic in Round-3 cores C and L",
+    "bounds": {
+      "W5_assignments": 32768,
+      "forcing_steps": 16425,
+      "n21_cubes": 81,
+      "overlap_n_max": 7,
+      "pair_configurations": 60
+    },
+    "coefficient_domain": "integers, finite Boolean assignments, and exact rational arithmetic",
+    "conventions": "zero-based CNF cells; corner (x,y),(x+d,y),(x+d,y+d); source cap q(n-d)",
+    "inputs": [
+      {
+        "path": "research_round3/cap/pair_forcing_certificate.json",
+        "sha256": "a87d9297d934c3fe8bbcd0a1d4c3ad5da94d247718d076a2ca357f887efd36fc"
+      },
+      {
+        "path": "research_round3/lower/n21_exact.cnf",
+        "sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5"
+      },
+      {
+        "path": "research_round3/lower/n21_cubes.json",
+        "sha256": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a"
+      },
+      {
+        "path": "research_round3/lower/n21_quick_cube_proofs.json",
+        "sha256": "37e7a782b9ffcc48c28299bd334273db0f69cb278ff12252cd531403a12de9f2"
+      },
+      {
+        "path": "research_round3/lower/n21_stage2_portfolio_merged.json",
+        "sha256": "9feba3f3fbf574c32ff1bd73b7513338e8229d3c00a2e963a3d3884dc3acea03"
+      },
+      {
+        "path": "research_round3/lower/n21_global_checkpoint_audit.json",
+        "sha256": "473131ca09193c4547b46c3b5327cbdb7ccff28abe145437e921a538f5daafbe"
+      },
+      {
+        "path": "research_round3/lower/difference_circulant_n3.txt",
+        "sha256": "6c6f355fb14605b05d54e4dace6590a8d7dbd00e4ea34fd578d1400c1dc528cb"
+      }
+    ],
+    "non_claims": [
+      "No 45- or 46-profile cap theorem is proved.",
+      "The side-21 Ramsey instance is not decided.",
+      "The finite ruler family does not cover all Golomb rulers.",
+      "The window-13 ell table is used as a named external project dependency."
+    ]
+  },
+  "outputs": [
+    {
+      "path": "research_round3/audits/setup_sol/independent_audit_results.json",
+      "sha256": "142aef77f12f65e780d51c52cd1162fff02e4674f7f6e37bc87d1dbb145c66f0"
+    }
+  ],
+  "randomness": {
+    "generator": "none",
+    "seed": null,
+    "used": false
+  },
+  "repository": {
+    "commit": "unavailable",
+    "dirty": true
+  },
+  "residual_risks": [
+    "The accepted window-13 spacing profile was not independently re-enumerated in this assignment.",
+    "Interrupted hard-cube telemetry cannot prove SAT or UNSAT."
+  ],
+  "result": "PASS for all scoped C/L claims; side-21 remains UNDECIDED",
+  "run": {
+    "exit_status": 0,
+    "runtime_seconds": 1.702646800000366,
+    "started_at": "2026-09-10T06:20:38.987803+00:00"
+  },
+  "schema_version": 1
+}

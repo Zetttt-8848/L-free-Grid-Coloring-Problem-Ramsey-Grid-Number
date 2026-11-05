@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "arithmetic": "integers and fractions.Fraction only",
+  "source_sha256": "3dd2e30e2dbd3f90856b0af7dc6d175e0ee069ebc13fa9ffbb34a52233a5bd72",
+  "records_recomputed": 10,
+  "summaries": [
+    {
+      "n": 464,
+      "best_p": 2,
+      "best_score": -17967729580745066,
+      "best_a0": 909515559119407,
+      "best_quotient_numerator": -17967729580745066,
+      "best_quotient_denominator": 909515559119407,
+      "best_sign": -1
+    },
+    {
+      "n": 465,
+      "best_p": 2,
+      "best_score": 4965945965533422,
+      "best_a0": 909515559119407,
+      "best_quotient_numerator": 261365577133338,
+      "best_quotient_denominator": 47869239953653,
+      "best_sign": 1
+    }
+  ],
+  "nonclaim": "The five-profile grid is not a global optimization."
+}

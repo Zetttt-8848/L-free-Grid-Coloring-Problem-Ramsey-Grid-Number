@@ -1,0 +1,30 @@
+{
+  "witness": "research_round3\\joint\\stochastic_464_anneal600.best.json",
+  "sha256": "de05300d517e56412048c584a13aa67a42fa6656a0447416d358965374536610",
+  "n": 464,
+  "size": 155,
+  "pairs_checked": 11935,
+  "distances_checked": 463,
+  "aps_checked": 21298,
+  "bad_caps": [
+    {
+      "d": 6,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "d": 18,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    }
+  ],
+  "bad_aps": [],
+  "cap_excess_sum": 2,
+  "cap_excess_square_sum": 2,
+  "weight": 8,
+  "exact_score": 2,
+  "verdict": "FAIL",
+  "recorded_score_matches": true
+}

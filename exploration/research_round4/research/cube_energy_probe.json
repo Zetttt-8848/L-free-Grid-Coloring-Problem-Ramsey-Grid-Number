@@ -1,0 +1,10 @@
+{
+  "seconds": 4.856881300016539,
+  "statistics": {
+    "sampled": 1500,
+    "calls": 832,
+    "raw_negative": 832
+  },
+  "witness": null,
+  "scope": "Finite discovery; negatives and absence of witnesses are not proofs."
+}

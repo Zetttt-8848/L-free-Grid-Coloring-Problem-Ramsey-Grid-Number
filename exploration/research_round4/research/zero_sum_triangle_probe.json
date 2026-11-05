@@ -1,0 +1,136 @@
+{
+  "scope": "Literal discovery with monochromatic corners allowed. No proper-coloring bound.",
+  "side": 13,
+  "steps": 31179,
+  "restarts": 3,
+  "seconds": 0.08614520000992343,
+  "rows": [
+    "1",
+    "21",
+    "122",
+    "2202",
+    "12012",
+    "220102",
+    "2210112",
+    "12101012",
+    "220011012",
+    "1201101002",
+    "22110010102",
+    "112222222220"
+  ],
+  "zero_sum_count": 14,
+  "zero_corners": [
+    {
+      "base": [
+        2,
+        0
+      ],
+      "step": 8,
+      "kind": "rainbow"
+    },
+    {
+      "base": [
+        3,
+        0
+      ],
+      "step": 6,
+      "kind": "rainbow"
+    },
+    {
+      "base": [
+        4,
+        2
+      ],
+      "step": 2,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        4,
+        2
+      ],
+      "step": 6,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        5,
+        2
+      ],
+      "step": 4,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        5,
+        2
+      ],
+      "step": 5,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        6,
+        0
+      ],
+      "step": 1,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        6,
+        3
+      ],
+      "step": 5,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        6,
+        4
+      ],
+      "step": 5,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        7,
+        2
+      ],
+      "step": 4,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        7,
+        5
+      ],
+      "step": 2,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        8,
+        4
+      ],
+      "step": 1,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        8,
+        4
+      ],
+      "step": 2,
+      "kind": "monochromatic"
+    },
+    {
+      "base": [
+        8,
+        5
+      ],
+      "step": 2,
+      "kind": "monochromatic"
+    }
+  ]
+}

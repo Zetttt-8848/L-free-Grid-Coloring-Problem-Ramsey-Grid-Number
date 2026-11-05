@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "claim_id": "R2-R1-polynomial-grid-p0-through-p4",
+  "repository": {"commit": "not-a-git-repository", "dirty": true},
+  "command": "1) python research_round2\\checks\\weights_polynomial.py; 2) python research_round2\\checks\\verify_weights_polynomial.py",
+  "environment": {
+    "software": ["Python 3.13.5", "fractions.Fraction and Python integers"],
+    "hardware": "Windows x86_64 local CPU; hardware is not load-bearing"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact score and score/a0 for w_i=(i(94-i))^p, p=0,1,2,3,4, t=93, n=464,465",
+    "coefficient_domain": "integers and exact rationals",
+    "conventions": "c_d=n-d-18q_d; q_d is derived from inherited H_0..H_28 using n-d start positions",
+    "inputs": ["research_round2/MANDATE.txt", "research_20260909/checks/shifted_sets_scan.py"],
+    "bounds": {"n": [464, 465], "t": 93, "p": [0, 4]},
+    "non_claims": ["The five-profile grid does not bound the global relaxation optimum", "Raw scores are not comparable across arbitrary rescalings"]
+  },
+  "randomness": {"used": false, "generator": "none", "seed": 0},
+  "run": {"started_at": "2026-09-09T13:11:13-03:00", "runtime_seconds": 2.3, "exit_status": 0},
+  "outputs": [
+    {"path": "research_round2/checks/weights_polynomial_result.json", "sha256": "3dd2e30e2dbd3f90856b0af7dc6d175e0ee069ebc13fa9ffbb34a52233a5bd72"},
+    {"path": "research_round2/checks/verify_weights_polynomial_result.json", "sha256": "cf9dc8f3a1c2ea0ff233087548c04252bb483e3024ac68e7c87c6b7d5282fe2f"}
+  ],
+  "checks": ["Ten records recomputed independently", "Cap cliffs at d=39/40 and d=91/92 checked", "Tent benchmark 285630 checked in producer"],
+  "result": "PASS: p=2 is best on the exact five-point grid; negative at n=464 and positive at n=465",
+  "residual_risks": ["Finite family only"]
+}

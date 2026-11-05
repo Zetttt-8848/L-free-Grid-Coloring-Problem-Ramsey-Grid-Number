@@ -1,0 +1,61 @@
+{
+  "audit_pass": true,
+  "canonical_zero_based_matrix_sha256": "c5b7be71cf32d629c5519c1656459c63570407c419471963aa21405a6493401d",
+  "cell_count": 441,
+  "conflict_records_0_based": [
+    [
+      2,
+      9,
+      9,
+      1
+    ],
+    [
+      2,
+      11,
+      2,
+      2
+    ],
+    [
+      5,
+      11,
+      7,
+      1
+    ],
+    [
+      7,
+      4,
+      3,
+      1
+    ],
+    [
+      7,
+      4,
+      6,
+      1
+    ],
+    [
+      7,
+      14,
+      4,
+      1
+    ],
+    [
+      18,
+      2,
+      2,
+      2
+    ],
+    [
+      18,
+      11,
+      1,
+      0
+    ]
+  ],
+  "conflicts": 8,
+  "corners_inspected": 2870,
+  "domain_exactly_subset_0_1_2": true,
+  "n": 21,
+  "schema": "round3_lower_independent_phase_hint_audit_v1",
+  "source_file_sha256": "245a980b54aee99219c336cc60fc87aecee12a467f6c21f1ff5290192a493d30"
+}

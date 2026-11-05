@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "claim_id": "R2-R1-exact-sdd-sos-dual-t68",
+  "repository": {"commit": "not-a-git-repository", "dirty": true},
+  "command": "1) python research_round2\\checks\\weights_sdd_dual.py; 2) python research_round2\\checks\\verify_weights_sdd_dual.py",
+  "environment": {
+    "software": ["Python 3.13.5", "NumPy 2.1.0", "exact verification with fractions.Fraction and Python integers"],
+    "hardware": "Windows x86_64 local CPU; hardware is not load-bearing"
+  },
+  "mathematics": {
+    "assertion_tested": "At n=464,t=68, -B-I=P+N with P an exact rational SOS/scaled-diagonally-dominant matrix and N entrywise nonnegative",
+    "coefficient_domain": "floating proposal; integer/rational certificate",
+    "conventions": "c_d=n-d-18q_d; q_d uses H_0..H_28 and n-d start positions",
+    "inputs": ["research_round2/MANDATE.txt", "inherited H_0..H_28 table"],
+    "bounds": {"n": 464, "certified_t": 68, "restricted_obstruction_t": [93, 120, 150]},
+    "non_claims": ["Longer-window witnesses reject only the positive-part SDD ansatz", "This is not the exact copositive optimum"]
+  },
+  "randomness": {"used": false, "generator": "none", "seed": 0},
+  "run": {"started_at": "2026-09-09T13:22:40-03:00", "runtime_seconds": 2.7, "exit_status": 0},
+  "outputs": [
+    {"path": "research_round2/checks/weights_sdd_dual_certificate.json", "sha256": "b35a6ed52b836177d85b16b3d943eacc4d96b01a1bd0fc5fdff76807f0341b4b"},
+    {"path": "research_round2/checks/verify_weights_sdd_dual_result.json", "sha256": "5d1cdbd80273e0706c5ef99ca6bbb487aee56b60586c57f58ee14d6742b92c42"}
+  ],
+  "checks": ["68 strict row inequalities checked", "2346 rational SOS coefficients checked", "Three exact restricted-ansatz obstruction gaps checked"],
+  "result": "PROVED: score(w)<=-a0 for every nonnegative real w at n=464,t=68",
+  "residual_risks": ["The local certificate alone does not cover t=93,120,150"]
+}

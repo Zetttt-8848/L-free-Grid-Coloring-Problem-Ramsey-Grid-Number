@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "claim_id": "R2-R1-nonnegative-multistart-eight-cases",
+  "repository": {"commit": "not-a-git-repository", "dirty": true},
+  "command": "1) python research_round2\\checks\\weights_multistart.py; 2) python research_round2\\checks\\verify_weights_multistart.py",
+  "environment": {
+    "software": ["Python 3.13.5", "NumPy 2.1.0", "SciPy 1.16.3", "fractions.Fraction and Python integers"],
+    "hardware": "Windows x86_64 local CPU; hardware affects runtime, not exact candidate reevaluation"
+  },
+  "mathematics": {
+    "assertion_tested": "Deterministic SLSQP multistart candidates for normalized nonnegative score at n=464,465 and t=68,93,120,150, with exact integer reevaluation",
+    "coefficient_domain": "floating search followed by integers and exact rationals",
+    "conventions": "c_d=n-d-18q_d; B_ii=-n; B_ij=c_|i-j|/2; unit l2 during search",
+    "inputs": ["research_round2/MANDATE.txt", "inherited H_0..H_28 table"],
+    "bounds": {"n": [464, 465], "t": [68, 93, 120, 150], "candidates": 166, "max_iterations_per_start": 2000},
+    "non_claims": ["Negative candidates do not prove a negative global optimum", "Floating solver termination is not a certificate"]
+  },
+  "randomness": {"used": true, "generator": "NumPy default_rng (PCG64)", "seed": 2026090901},
+  "run": {"started_at": "2026-09-09T13:14:03-03:00", "runtime_seconds": 73.4, "exit_status": 0},
+  "outputs": [
+    {"path": "research_round2/checks/weights_multistart_result.json", "sha256": "51cf27a802f2fcf6786e3d84b80b0b8c5b7d38b51603b6d0647406bb0bedc9e3"},
+    {"path": "research_round2/checks/verify_weights_multistart_result.json", "sha256": "528acaa9a67a681b0c2066d59f5691cc9b46b90a2aff27c6d0bb624d402f6116"}
+  ],
+  "checks": ["All 166 saved integer candidates independently recomputed", "Exact casewise maxima and signs checked", "Nondecreasing exact found values under nested windows checked"],
+  "result": "UNVERIFIED optimization; PASS exact reevaluation of all saved candidates",
+  "residual_risks": ["Local optimization", "Integerization approximates floating candidates", "No global upper bound follows"]
+}

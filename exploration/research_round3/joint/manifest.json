@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "claim_id": "R3-JOINT-certified-checkpoint",
+  "repository": {
+    "commit": "unavailable: unversioned research workspace",
+    "dirty": true
+  },
+  "command": "python research_round3/joint/verify_set.py research_round3/joint/witness_464.json; python research_round3/joint/verify_triangle_rup.py; python research_round3/joint/verify_triangle_rup.py --tag triangle_core_v2; python research_round3/joint/verify_window.py --width 13; python research_round3/joint/verify_pattern_set.py research_round3/joint/ap5_600.json; python research_round3/joint/verify_partition.py; python research_round3/joint/verify_parametric_core.py; python research_round3/joint/verify_pattern_set.py research_round3/joint/witness_464_parametric.json; python research_round3/joint/verify_triangle_rup.py --tag triangle_core_v4; python research_round3/joint/verify_parametric_ap5_core.py",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      },
+      {
+        "name": "OR-Tools",
+        "version": "9.15.6755"
+      },
+      {
+        "name": "NumPy",
+        "version": "2.1.0"
+      },
+      {
+        "name": "Numba",
+        "version": "0.61.0"
+      },
+      {
+        "name": "python-sat",
+        "version": "1.9.dev15"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0; Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "Literal155-set feasibility; two affine triangle obstructions; complete width13 support classification; strengthened literal set feasibility; partition candidate score audit; strongest all-window-pattern/AP5 surrogate YES; uniform two-block corner obstruction; full two-parameter-family/reflection joint surrogate YES; final nonliftability and uniform four-mark-hook plus five-AP obstruction",
+    "coefficient_domain": "Exact integers and Boolean values for all verdicts",
+    "conventions": "H counts positions; n-d positions at lag d; marks1-based; window support masks0-based; strict lower completion triangle C(x,y;d)",
+    "inputs": [
+      "Pinned H tuple in property.md",
+      "Literal witnesses and proof files listed in outputs"
+    ],
+    "bounds": {
+      "n": 464,
+      "size": 155,
+      "distances": 463,
+      "six_aps": 21298,
+      "window_width": 13,
+      "window_supports": 8192,
+      "ap5_occurrences": 26680,
+      "all_window_affine_copies": 543170,
+      "parametric_steps": 42
+    },
+    "non_claims": [
+      "No grid coloring or Ramsey lower-bound improvement",
+      "No full464 negative theorem",
+      "No global completion of the research program",
+      "No negative conclusion from interrupted CP or heuristic scores"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "NumPy default_rng initialization and Numba NumPy random swap proposals; exact checkers deterministic",
+    "seed": [
+      20260910,
+      20260911,
+      20260912,
+      20260913,
+      20260914,
+      20260915,
+      20260916
+    ]
+  },
+  "run": {
+    "started_at": "2026-09-10; individual process-start instants were not retained in this legacy summary",
+    "runtime_seconds": 8.29932713508606,
+    "runtime_scope": "Runtime is the last independent complete-window check only; separate producer runtimes remain in hashed outputs",
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "research_round3/joint/PREDICTIONS.md",
+      "sha256": "28588c71233236c1218352d791cca81833f98f788258695c9a779a7718cef8d6"
+    },
+    {
+      "path": "research_round3/joint/property.md",
+      "sha256": "a94f5a6f753ea47abae0c280f6c680365fcdacfee9b5e1c6898bc556938b337a"
+    },
+    {
+      "path": "research_round3/joint/joint_cp.py",
+      "sha256": "36f75b44e1f70ebf7684f8e4bf91d0a2e137bad4f54534d8aa28c96ab14ed521"
+    },
+    {
+      "path": "research_round3/joint/cp_464_rank600.pbtxt",
+      "sha256": "bfa2b411301c818cb8d8bdb0438fec4d4fad8b6a7719b051c0219223d05cd4b0"
+    },
+    {
+      "path": "research_round3/joint/cp_464_rank600.setup.json",
+      "sha256": "bbbf8414c1955694c3152a8cecdffeb7615b5369848dcbf78e8fbaead4dbe448"
+    },
+    {
+      "path": "research_round3/joint/cp_464_rank600.log",
+      "sha256": "b466340fda047a0ba317a2121340bef17538b1339b60c667273d6937d01958d6"
+    },
+    {
+      "path": "research_round3/joint/stochastic.py",
+      "sha256": "56724c31a05d1d06f2fe2f38fe13f5be32cf991f1c8b31c96ec6e8c08260c2ca"
+    },
+    {
+      "path": "research_round3/joint/stochastic_464_anneal600.json",
+      "sha256": "4d38ce6ac7bb64c46014105d8728656152c854ef1fe68ac5770fb65eb347ae8b"
+    },
+    {
+      "path": "research_round3/joint/witness_464.json",
+      "sha256": "68b49802651fea2c1e0a2b9c2086a581db62abff400c6a4fd736b5531ca36132"
+    },
+    {
+      "path": "research_round3/joint/verify_set.py",
+      "sha256": "bd7ea2021a8c9ef8b641730a684c5685d694a6270546c6227d1735883deecac1"
+    },
+    {
+      "path": "research_round3/joint/witness_464.canonical.check.json",
+      "sha256": "fdeaa9563fb5f622670ba4c2a6be6d76543a620b818a2f972cd0f686163b378d"
+    },
+    {
+      "path": "research_round3/joint/witness_464.profile.json",
+      "sha256": "36b2b8f8ed7895d68113fa4486488baade604ebe3b69c838959db40035789af9"
+    },
+    {
+      "path": "research_round3/joint/triangle_core.json",
+      "sha256": "5c1320ca6f675dbeb25c22b9af00374c1fa7539c2da55fac44031eb0c09c26ac"
+    },
+    {
+      "path": "research_round3/joint/triangle_core.cnf",
+      "sha256": "2efa535a96583da4a4f57ba913dfb4c38f0c18285245c72d7a017e9a0b46e47d"
+    },
+    {
+      "path": "research_round3/joint/triangle_core.rup",
+      "sha256": "5af3ae872fbc257eae79b54ac16d0da16e9af67951314f9b0c066cb77bfde636"
+    },
+    {
+      "path": "research_round3/joint/triangle_core.check.json",
+      "sha256": "531ed0a03d66a31840b85c6b91b34f0ed3d15e84b2765d6e42c11d9679ba0210"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v2.json",
+      "sha256": "e7e56a19439f73613de832eedb57be546eed0033455b871d8bd3faaf0e2a7d30"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v2.cnf",
+      "sha256": "e96cef21a6d8bd726f9739c2e73c7b765d3c66b3b2d1ef021e47abca5235cfda"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v2.rup",
+      "sha256": "864e70a6527f29b998917ecedf777eae5cb447c2b420012e1e836f0a8c014456"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v2.check.json",
+      "sha256": "9db1470bcbbc8ddb66cedbc812f425e70ed10ec408d0361b5b025cbbfb57aad8"
+    },
+    {
+      "path": "research_round3/joint/rup_generate.py",
+      "sha256": "91bc84e8f78bcae78d8a39c9b156a1307bfb04a02ee7f2cd3a40e5799bc84f61"
+    },
+    {
+      "path": "research_round3/joint/verify_triangle_rup.py",
+      "sha256": "77b3f4f69641389d8297ef25394602d9e21db542e970d926f933e4436fea490d"
+    },
+    {
+      "path": "research_round3/joint/window_classify.py",
+      "sha256": "57bfe160fd5964927cd6041151fdc06c6377602e26f805eca498f4c1f376d5b4"
+    },
+    {
+      "path": "research_round3/joint/window13.json",
+      "sha256": "c31b0260e0a02026f29abaa6cf47cef813db8a1ef6937dcae6f4f326637a5fae"
+    },
+    {
+      "path": "research_round3/joint/window13.check.json",
+      "sha256": "fcd8e93137eb9c9b0198b7c55605ab2ebf314c0f380d00f5a02e55bd46c9a5fc"
+    },
+    {
+      "path": "research_round3/joint/window13.verified.log",
+      "sha256": "3463dcf0f764ad23d4c980a8aadf9eb524b621df096d4d9b3f1305cf710d93ba"
+    },
+    {
+      "path": "research_round3/joint/verify_window.py",
+      "sha256": "a8bfc7f4798363526ec612a08e014d44107ea8d01963baa3d0865fff363727f2"
+    },
+    {
+      "path": "research_round3/joint/patterns_v1.json",
+      "sha256": "f91e0ad105d863a008516f12a2c651a3e9cb953218328e1fce5fb52e00fe0a68"
+    },
+    {
+      "path": "research_round3/joint/patterns_v2.json",
+      "sha256": "ccd0f383f3b1650733f20a7290b32d86ceb13b52f4dbc8ef0ec4ce6997eee04c"
+    },
+    {
+      "path": "research_round3/joint/patterns_window13.json",
+      "sha256": "294bedbe795550864e119d81c181179d47a650c34ef6d49003e0b049201bacbb"
+    },
+    {
+      "path": "research_round3/joint/pattern_search.py",
+      "sha256": "399cf8284951f387dab47dc63f812cce3bafd8f238c44efc41d189a732a5a84c"
+    },
+    {
+      "path": "research_round3/joint/pattern_v1_600.json",
+      "sha256": "0721ce59d82eedd64115ba3789e45a98bdbad9eb147459a6fa213a4dde018664"
+    },
+    {
+      "path": "research_round3/joint/ap5_search.py",
+      "sha256": "60f3150d9100a446384d0d0e64302f7d66d2fc8e3e8626b52f464c9d0620d019"
+    },
+    {
+      "path": "research_round3/joint/ap5_600.json",
+      "sha256": "6a273fe7fd8ae3bb6e9830644baacedd65aa328cd8383a453e9699aea9baad44"
+    },
+    {
+      "path": "research_round3/joint/ap5_600.best.check.json",
+      "sha256": "111441e9cd13fb784b03323db6d23fa0f83930c8a74fefa8de4119e1c2697baf"
+    },
+    {
+      "path": "research_round3/joint/verify_pattern_set.py",
+      "sha256": "6748071fe97ad4e6e4295a0ee7f44d5253568e917b0f93038f94db55ed4646f7"
+    },
+    {
+      "path": "research_round3/joint/partition_stochastic.py",
+      "sha256": "643680f4ba5dcbb6cc7e1e7af0540c47247ec21637607feab640118340a756ae"
+    },
+    {
+      "path": "research_round3/joint/partition600.json",
+      "sha256": "fe12d9d7bcfd3eced6dbbc006ce7d4c354486f2df29569b0430e41c59e7dc349"
+    },
+    {
+      "path": "research_round3/joint/partition600.check.json",
+      "sha256": "36d5405d780da6ee3717a23c3281eec8eb3b36529d967bfdf1cc5562438bfa21"
+    },
+    {
+      "path": "research_round3/joint/verify_partition.py",
+      "sha256": "74d4a3c4823b63991fe4f1cbe8263ad8a85e0196ae5a7e2a0b594d9fb4ccbc75"
+    },
+    {
+      "path": "research_round3/joint/spec_463.json",
+      "sha256": "74f6e48e40d4a2bef07fae462fcf028e386aae952afb7c67446a7fe2a42304a7"
+    },
+    {
+      "path": "research_round3/joint/spec_462.json",
+      "sha256": "921b73ee16f0c059a58a6ef259b4ba502ecfb93b64742aa0a1b752767086e53c"
+    },
+    {
+      "path": "research_round3/joint/REPORT.md",
+      "sha256": "1e83e19152716b7dc8a36fbed860b1691d9cafd7ce271ada9959b0d4284cad16"
+    },
+    {
+      "path": "research_round3/joint/EXACT_VERIFICATION.md",
+      "sha256": "7f23a796effc6ffb53a7ba04d8f4eb0b29b499929941d3af1eee6fa80e88cd4e"
+    },
+    {
+      "path": "research_round3/joint/ITERATION_LOG.md",
+      "sha256": "38c66cd0d0c1d344d456142e9b8828d295e4bbb0fd36ecd64a3c4b1bff8b6b73"
+    },
+    {
+      "path": "research_round3/joint/ERRATA.md",
+      "sha256": "275250b08eb7f6689fc09ee35f31b6614289dee70b36a9fa3f0e128779e1a312"
+    },
+    {
+      "path": "research_round3/joint/cp_464_rank600.interruption.json",
+      "sha256": "2d2aff5ae3a412aa994eea756ab8450e0836bddb87a3c07fb4da5e905448a036"
+    },
+    {
+      "path": "research_round3/joint/window_ap5_fast600.json",
+      "sha256": "ea3bbc6e01594b3b6c526f818e479ac1fdbe759277b6657090eb8c5919e84597"
+    },
+    {
+      "path": "research_round3/joint/window_ap5_fast600.check.json",
+      "sha256": "c04eb9a32910ca0e46b12d4be0ada3a917c45fd824498fdcc6dc56418ec9c638"
+    },
+    {
+      "path": "research_round3/joint/ap5_search_fast.py",
+      "sha256": "929a4b64b2cb2eb0432dbdfb331461b3b1b76a4f390ff6f2bcc30b8294907470"
+    },
+    {
+      "path": "research_round3/joint/window_ap5_600.json",
+      "sha256": "82a8ffb1c076f85c6f620231accb3266892d470983268bccb796b0c7c39e7e2a"
+    },
+    {
+      "path": "research_round3/joint/witness_464_window_ap5.json",
+      "sha256": "2090175fb09d5c341ddf2bc8545833b36f3f9aec160124498fd7e862c8a4d727"
+    },
+    {
+      "path": "research_round3/joint/witness_464_window_ap5.check.json",
+      "sha256": "c04eb9a32910ca0e46b12d4be0ada3a917c45fd824498fdcc6dc56418ec9c638"
+    },
+    {
+      "path": "research_round3/joint/patterns_window13.check.json",
+      "sha256": "ed70c14e1223269cac17c47eb05c56af0526f3438b8b2715944eba78fc1ef259"
+    },
+    {
+      "path": "research_round3/joint/verify_catalog.py",
+      "sha256": "0510234a22cd9cd16988b6a1ce1d66f71b6310332dd8959a55d809261fc38a74"
+    },
+    {
+      "path": "research_round3/joint/triangle_core.py",
+      "sha256": "775c522a0bcce54d2825a5e4da87f72799521eed611d0bbe2cbb4a97603d743e"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v3.json",
+      "sha256": "4c7b14eaba3356cfaf43a8aa6e8fa22801469181b4fd5114c4801397d2ad6918"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v3.cnf",
+      "sha256": "b83bf85ce661d9b3c7fad69a264ec64eff9cc8dca60a879664ac84019a3aa05f"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v3.rup",
+      "sha256": "1b19231cb9de7b0c2f478fc43947bfc04a97ff2ac3c05846cec0bce973cd7900"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v3.check.json",
+      "sha256": "1074f9dad03c76679554ddb3448c925681af5fb947feb5e46c963939d2d91688"
+    },
+    {
+      "path": "research_round3/joint/verify_parametric_core.py",
+      "sha256": "a20e6c314a2a3e0388984e08f32bd67ae9f8c9e649ccfd37111dd4203359374f"
+    },
+    {
+      "path": "research_round3/joint/parametric_core.check.json",
+      "sha256": "3c204029e0d9010482cf8a17e5512a266d3a9759abf0e8c34762fd0b5707f8d8"
+    },
+    {
+      "path": "research_round3/joint/PROOFREAD.md",
+      "sha256": "28f38a00a38ff9817585396aa341f6b7570c92921682a275da04043dcd34dd2a"
+    },
+    {
+      "path": "research_round3/joint/PARAMETRIC_MODEL.md",
+      "sha256": "4e55241f648803ffc4573d1daad3e532f55de4484ab4ce263149499d880c4fa5"
+    },
+    {
+      "path": "research_round3/joint/parametric_initial.json",
+      "sha256": "4a7f165404af6f46e7dd7da0b9c048cd4e58d2cc01f6a95c9a5e9a2b57cdf47e"
+    },
+    {
+      "path": "research_round3/joint/parametric_initial.check.json",
+      "sha256": "e49ee24899728c37767f0b42f26fe8800baa5c58afbbff65494c1babf9286b73"
+    },
+    {
+      "path": "research_round3/joint/parametric_search.py",
+      "sha256": "bcf30f6c12c7f9b547e72326b625a4fb57b1e778f363d325b0a3c62b764ff7d3"
+    },
+    {
+      "path": "research_round3/joint/parametric600.setup.json",
+      "sha256": "3ccbe187433bacfe543f6e7b25aadb8c605782a1e30db43906a5ecfdadbc27c3"
+    },
+    {
+      "path": "research_round3/joint/parametric600.json",
+      "sha256": "e25ca40945ef510f7e6f8793bdc0641c876eb0220de99ed6adbc3391e30a8d1a"
+    },
+    {
+      "path": "research_round3/joint/parametric600.check.json",
+      "sha256": "5e6b26e2ec3d9fc65eb59ab687e88e22f2d208b0ca2cb5a226fe67f80d7a6f3f"
+    },
+    {
+      "path": "research_round3/joint/parametric600.log",
+      "sha256": "014c6166c9efa855198b24dbffa458d0764b31bb1e6d0c1a01debfba927e70c5"
+    },
+    {
+      "path": "research_round3/joint/witness_464_parametric.json",
+      "sha256": "3293f51d27140145b41dbde4100e8cd518c658249d884c28c808b446676a3c63"
+    },
+    {
+      "path": "research_round3/joint/witness_464_parametric.check.json",
+      "sha256": "5e6b26e2ec3d9fc65eb59ab687e88e22f2d208b0ca2cb5a226fe67f80d7a6f3f"
+    },
+    {
+      "path": "research_round3/joint/witness_464_parametric.profile.json",
+      "sha256": "f182817d40e1eeceaaeeb5d20cd1c63e89023098d9746c4d0a95905e7ccf3fdd"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v4.json",
+      "sha256": "504681ad5ad514e97ca8bda159ba6e0634b08fac53a0c27274d1405aa33eca03"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v4.cnf",
+      "sha256": "484e661ada1d358040626a97dceda6fa967ec340e5e0bca704c99e6d8afabbba"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v4.rup",
+      "sha256": "850cd92b6efc566904652ae5bf0c4ca53c9b1636eeeced0254c6bbb1b813a7ba"
+    },
+    {
+      "path": "research_round3/joint/triangle_core_v4.check.json",
+      "sha256": "e9992119459ab9bc7aa852745aeabdb0b6d741a1f0d61809051da8f165ea4514"
+    },
+    {
+      "path": "research_round3/joint/verify_parametric_ap5_core.py",
+      "sha256": "91dd8331e58ee09b087b8761d9ef6534f55cf42df8669457c2242aeb14dff6e0"
+    },
+    {
+      "path": "research_round3/joint/parametric_ap5_core.check.json",
+      "sha256": "08688381e633fd03a2bb7adbd8cf85920b961fbaa080d8a241bcbeb83a7ac293"
+    }
+  ],
+  "checks": [
+    "exact-verify self-test: ENVIRONMENT OK",
+    "small-case-enumerator sanity suite: SANITY OK",
+    "base literal set PASS",
+    "both independently reconstructed triangle RUP proofs PASS",
+    "all8192 width13 masks covered exclusively; all31605 RUP additions and334 good colorings PASS",
+    "AP5 strengthened set PASS",
+    "partition candidate FAIL feasibility with exact recorded-score agreement227",
+    "Strongest543170-pattern/AP5 literal155-set PASS",
+    "All56 normalized patterns independently bound to complete window certificate",
+    "Third core1297 RUP additions PASS",
+    "Uniform two-block family: all51 coefficient identities and strict-order inequalities PASS",
+    "Fenwick500-update selfcheck matched direct relation counts",
+    "Canonicalparametric155-set PASS for allcaps,543170 fixedpatterncopies,26680 AP5occurrences andallparametric/reflectedrelations",
+    "Final saved155-set contains core_v4: all157 RUP additions PASS",
+    "Four-mark-hook plus five-AP uniform family: all46 coefficient identities and strict-order inequalities PASS"
+  ],
+  "result": "Finite positive surrogate and negative local-pattern certificates verified; global Ramsey bounds unchanged",
+  "residual_risks": [
+    "Version1 retrospective summary: does not retain a process-start instant or enforce whole-run resource accounting",
+    "Independent-agent reviews are tracked separately by root",
+    "The root AP5 geometric lemma is an external dependency for interpreting its cuts as necessary grid conditions",
+    "The last hook/AP5 lifting lemma was not added to another feasibility search; the saved YES is only for its explicitly listed earlier predicates"
+  ]
+}

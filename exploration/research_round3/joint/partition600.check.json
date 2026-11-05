@@ -1,0 +1,692 @@
+{
+  "verdict": "FAIL",
+  "sizes": [
+    155,
+    155,
+    154
+  ],
+  "distance_caps_checked": 1389,
+  "aps_checked": 21298,
+  "bad_caps": [
+    {
+      "color": 0,
+      "d": 2,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 3,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 5,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 7,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 9,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 10,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 11,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 14,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 16,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 17,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 18,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 19,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 20,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 21,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 22,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 23,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 24,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 27,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 32,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 33,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 36,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 41,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 42,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 45,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 47,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 52,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 59,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 0,
+      "d": 74,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 85,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 115,
+      "count": 43,
+      "cap": 42,
+      "excess": 1
+    },
+    {
+      "color": 0,
+      "d": 131,
+      "count": 41,
+      "cap": 40,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 1,
+      "count": 51,
+      "cap": 48,
+      "excess": 3
+    },
+    {
+      "color": 1,
+      "d": 2,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 3,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 4,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 7,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 8,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 9,
+      "count": 51,
+      "cap": 48,
+      "excess": 3
+    },
+    {
+      "color": 1,
+      "d": 10,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 11,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 13,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 15,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 17,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 19,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 22,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 24,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 26,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 27,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 29,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 32,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 34,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 38,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 39,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 40,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 41,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 43,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 48,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 53,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 56,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 63,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 64,
+      "count": 49,
+      "cap": 46,
+      "excess": 3
+    },
+    {
+      "color": 1,
+      "d": 72,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 1,
+      "d": 80,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 81,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 86,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 92,
+      "count": 45,
+      "cap": 44,
+      "excess": 1
+    },
+    {
+      "color": 1,
+      "d": 94,
+      "count": 45,
+      "cap": 44,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 1,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 4,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 5,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 6,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 7,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 13,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 14,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 16,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 17,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 18,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 19,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 20,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 21,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 22,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 24,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 27,
+      "count": 50,
+      "cap": 48,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 28,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 29,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 35,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 37,
+      "count": 49,
+      "cap": 48,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 39,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 40,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 43,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 44,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 62,
+      "count": 48,
+      "cap": 46,
+      "excess": 2
+    },
+    {
+      "color": 2,
+      "d": 66,
+      "count": 47,
+      "cap": 46,
+      "excess": 1
+    },
+    {
+      "color": 2,
+      "d": 106,
+      "count": 45,
+      "cap": 44,
+      "excess": 1
+    }
+  ],
+  "bad_aps": [
+    [
+      64,
+      113,
+      162,
+      211,
+      260,
+      309
+    ],
+    [
+      232,
+      273,
+      314,
+      355,
+      396,
+      437
+    ]
+  ],
+  "cap_excess_square_sum": 211,
+  "exact_score": 227,
+  "recorded_score": 227,
+  "recorded_score_matches": true
+}

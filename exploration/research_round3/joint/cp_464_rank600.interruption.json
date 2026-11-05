@@ -1,0 +1,11 @@
+{
+  "run": "cp_464_rank600",
+  "status": "INTERRUPTED_BEFORE_RESPONSE",
+  "mathematical_status": "UNDECIDED from this solver run alone",
+  "declared_solver_limit_seconds": 600,
+  "reason": "Root directed stop after independent literal witness settled the same one-class feasibility question positively.",
+  "response_statistics": null,
+  "actual_elapsed_seconds": null,
+  "telemetry": "cp_464_rank600.log",
+  "positive_certificate": "witness_464.json"
+}

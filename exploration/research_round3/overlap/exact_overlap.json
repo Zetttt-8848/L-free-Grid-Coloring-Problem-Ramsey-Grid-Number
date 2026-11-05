@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "range_n": [
+    1,
+    7
+  ],
+  "universe": "all source subsets, all positive d<e<n, all independent subsets B_d of F_d and B_e of F_e; no quotient or pruning",
+  "cases": 26104,
+  "sum_overlap": 3491,
+  "literal_saturation": {
+    "Bd": [
+      1,
+      18
+    ],
+    "Be": [
+      1,
+      14
+    ],
+    "M": 2,
+    "O": 1,
+    "union": 1
+  }
+}

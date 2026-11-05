@@ -1,0 +1,219 @@
+{
+  "non_claims": [
+    "The retained cells need not contain a full Cartesian subgrid",
+    "Deleting cells does not yield a coloring of [m]^2",
+    "No Ramsey lower bound follows from this partial-domain alteration"
+  ],
+  "probability_one_triple_monochromatic": "1/9",
+  "reason": "3*(1/3)^3=1/9",
+  "rows": [
+    {
+      "expected_monochromatic_corners": "0/9",
+      "expected_numerator_mod_9": 0,
+      "floor_expected": 0,
+      "geometric_triples": 0,
+      "lower_bound_implication": null,
+      "n": 1,
+      "partial_domain_cells_retained": 1
+    },
+    {
+      "expected_monochromatic_corners": "1/9",
+      "expected_numerator_mod_9": 1,
+      "floor_expected": 0,
+      "geometric_triples": 1,
+      "lower_bound_implication": null,
+      "n": 2,
+      "partial_domain_cells_retained": 4
+    },
+    {
+      "expected_monochromatic_corners": "5/9",
+      "expected_numerator_mod_9": 5,
+      "floor_expected": 0,
+      "geometric_triples": 5,
+      "lower_bound_implication": null,
+      "n": 3,
+      "partial_domain_cells_retained": 9
+    },
+    {
+      "expected_monochromatic_corners": "14/9",
+      "expected_numerator_mod_9": 5,
+      "floor_expected": 1,
+      "geometric_triples": 14,
+      "lower_bound_implication": null,
+      "n": 4,
+      "partial_domain_cells_retained": 15
+    },
+    {
+      "expected_monochromatic_corners": "30/9",
+      "expected_numerator_mod_9": 3,
+      "floor_expected": 3,
+      "geometric_triples": 30,
+      "lower_bound_implication": null,
+      "n": 5,
+      "partial_domain_cells_retained": 22
+    },
+    {
+      "expected_monochromatic_corners": "55/9",
+      "expected_numerator_mod_9": 1,
+      "floor_expected": 6,
+      "geometric_triples": 55,
+      "lower_bound_implication": null,
+      "n": 6,
+      "partial_domain_cells_retained": 30
+    },
+    {
+      "expected_monochromatic_corners": "91/9",
+      "expected_numerator_mod_9": 1,
+      "floor_expected": 10,
+      "geometric_triples": 91,
+      "lower_bound_implication": null,
+      "n": 7,
+      "partial_domain_cells_retained": 39
+    },
+    {
+      "expected_monochromatic_corners": "140/9",
+      "expected_numerator_mod_9": 5,
+      "floor_expected": 15,
+      "geometric_triples": 140,
+      "lower_bound_implication": null,
+      "n": 8,
+      "partial_domain_cells_retained": 49
+    },
+    {
+      "expected_monochromatic_corners": "204/9",
+      "expected_numerator_mod_9": 6,
+      "floor_expected": 22,
+      "geometric_triples": 204,
+      "lower_bound_implication": null,
+      "n": 9,
+      "partial_domain_cells_retained": 59
+    },
+    {
+      "expected_monochromatic_corners": "285/9",
+      "expected_numerator_mod_9": 6,
+      "floor_expected": 31,
+      "geometric_triples": 285,
+      "lower_bound_implication": null,
+      "n": 10,
+      "partial_domain_cells_retained": 69
+    },
+    {
+      "expected_monochromatic_corners": "385/9",
+      "expected_numerator_mod_9": 7,
+      "floor_expected": 42,
+      "geometric_triples": 385,
+      "lower_bound_implication": null,
+      "n": 11,
+      "partial_domain_cells_retained": 79
+    },
+    {
+      "expected_monochromatic_corners": "506/9",
+      "expected_numerator_mod_9": 2,
+      "floor_expected": 56,
+      "geometric_triples": 506,
+      "lower_bound_implication": null,
+      "n": 12,
+      "partial_domain_cells_retained": 88
+    },
+    {
+      "expected_monochromatic_corners": "650/9",
+      "expected_numerator_mod_9": 2,
+      "floor_expected": 72,
+      "geometric_triples": 650,
+      "lower_bound_implication": null,
+      "n": 13,
+      "partial_domain_cells_retained": 97
+    },
+    {
+      "expected_monochromatic_corners": "819/9",
+      "expected_numerator_mod_9": 0,
+      "floor_expected": 91,
+      "geometric_triples": 819,
+      "lower_bound_implication": null,
+      "n": 14,
+      "partial_domain_cells_retained": 105
+    },
+    {
+      "expected_monochromatic_corners": "1015/9",
+      "expected_numerator_mod_9": 7,
+      "floor_expected": 112,
+      "geometric_triples": 1015,
+      "lower_bound_implication": null,
+      "n": 15,
+      "partial_domain_cells_retained": 113
+    },
+    {
+      "expected_monochromatic_corners": "1240/9",
+      "expected_numerator_mod_9": 7,
+      "floor_expected": 137,
+      "geometric_triples": 1240,
+      "lower_bound_implication": null,
+      "n": 16,
+      "partial_domain_cells_retained": 119
+    },
+    {
+      "expected_monochromatic_corners": "1496/9",
+      "expected_numerator_mod_9": 2,
+      "floor_expected": 166,
+      "geometric_triples": 1496,
+      "lower_bound_implication": null,
+      "n": 17,
+      "partial_domain_cells_retained": 123
+    },
+    {
+      "expected_monochromatic_corners": "1785/9",
+      "expected_numerator_mod_9": 3,
+      "floor_expected": 198,
+      "geometric_triples": 1785,
+      "lower_bound_implication": null,
+      "n": 18,
+      "partial_domain_cells_retained": 126
+    },
+    {
+      "expected_monochromatic_corners": "2109/9",
+      "expected_numerator_mod_9": 3,
+      "floor_expected": 234,
+      "geometric_triples": 2109,
+      "lower_bound_implication": null,
+      "n": 19,
+      "partial_domain_cells_retained": 127
+    },
+    {
+      "expected_monochromatic_corners": "2470/9",
+      "expected_numerator_mod_9": 4,
+      "floor_expected": 274,
+      "geometric_triples": 2470,
+      "lower_bound_implication": null,
+      "n": 20,
+      "partial_domain_cells_retained": 126
+    },
+    {
+      "expected_monochromatic_corners": "2870/9",
+      "expected_numerator_mod_9": 8,
+      "floor_expected": 318,
+      "geometric_triples": 2870,
+      "lower_bound_implication": null,
+      "n": 21,
+      "partial_domain_cells_retained": 123
+    },
+    {
+      "expected_monochromatic_corners": "3311/9",
+      "expected_numerator_mod_9": 8,
+      "floor_expected": 367,
+      "geometric_triples": 3311,
+      "lower_bound_implication": null,
+      "n": 22,
+      "partial_domain_cells_retained": 117
+    },
+    {
+      "expected_monochromatic_corners": "3795/9",
+      "expected_numerator_mod_9": 6,
+      "floor_expected": 421,
+      "geometric_triples": 3795,
+      "lower_bound_implication": null,
+      "n": 23,
+      "partial_domain_cells_retained": 108
+    }
+  ],
+  "schema": "round2_lower_alteration_v1"
+}

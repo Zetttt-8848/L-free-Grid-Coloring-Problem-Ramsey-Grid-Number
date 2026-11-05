@@ -1,0 +1,17 @@
+{
+  "checker": "verify_coloring.py",
+  "claim_scope": "difference-circulant family has attainable side n=3",
+  "exact_size": 3,
+  "hashes_sha256": {
+    "PROPERTY.md": "2eefa61209b316b0b0bf12aed77bccefc0f794984d98cab650189a9cd18cc567",
+    "difference_circulant_n3.txt": "6c6f355fb14605b05d54e4dace6590a8d7dbd00e4ea34fd578d1400c1dc528cb",
+    "difference_circulant_n3_verify.json": "c2b17f34c679d4b5a725c45febf674af99fb1e47262cb202065d3debc54f2c2f",
+    "verify_coloring.py": "d34ba012ecdd6f41edb39210d20da53f41de5ed5410e6056b3494c25dafc4d66"
+  },
+  "property": "PROPERTY.md",
+  "schema": "round3_lower_concrete_witness_manifest_v1",
+  "verification_command": "python verify_coloring.py difference_circulant_n3.txt --n 3 --output difference_circulant_n3_verify.json",
+  "verification_log": "difference_circulant_n3_verify.json",
+  "verifier_result": "PASS: 5 corners inspected, 0 violations, symbols exactly {1,2,3}",
+  "witness": "difference_circulant_n3.txt"
+}

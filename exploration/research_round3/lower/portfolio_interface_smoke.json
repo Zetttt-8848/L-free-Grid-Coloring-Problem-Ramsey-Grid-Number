@@ -1,0 +1,80 @@
+{
+  "pass": true,
+  "passing_solvers": [
+    "glucose4",
+    "glucose3"
+  ],
+  "schema": "round3_lower_portfolio_interface_smoke_v1",
+  "solvers": [
+    {
+      "pass": true,
+      "proof_lines": 199,
+      "proof_nonempty": true,
+      "solve_limited_return": false,
+      "solver": "glucose4",
+      "stats": {
+        "conflicts": 157,
+        "decisions": 209,
+        "propagations": 917,
+        "restarts": 1
+      }
+    },
+    {
+      "pass": true,
+      "proof_lines": 199,
+      "proof_nonempty": true,
+      "solve_limited_return": false,
+      "solver": "glucose3",
+      "stats": {
+        "conflicts": 157,
+        "decisions": 209,
+        "propagations": 917,
+        "restarts": 1
+      }
+    },
+    {
+      "pass": false,
+      "proof_lines": 0,
+      "proof_nonempty": false,
+      "solve_limited_return": false,
+      "solver": "maplesat",
+      "stats": {
+        "conflicts": 145,
+        "decisions": 182,
+        "propagations": 0,
+        "restarts": 1
+      }
+    },
+    {
+      "pass": false,
+      "proof_lines": 0,
+      "proof_nonempty": false,
+      "solve_limited_return": false,
+      "solver": "maplecm",
+      "stats": {
+        "conflicts": 137,
+        "decisions": 186,
+        "propagations": 0,
+        "restarts": 1
+      }
+    },
+    {
+      "error": "Proof tracing is currently unsupported by Mergesat3.",
+      "error_type": "NotImplementedError",
+      "pass": false,
+      "solver": "mergesat3"
+    },
+    {
+      "error": "Proof logging is not supported by Minisat22.",
+      "error_type": "NotImplementedError",
+      "pass": false,
+      "solver": "minisat22"
+    },
+    {
+      "error": "Limited solve is currently unsupported by Lingeling.",
+      "error_type": "NotImplementedError",
+      "pass": false,
+      "solver": "lingeling"
+    }
+  ]
+}

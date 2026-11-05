@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "claim_id": "weighted-three-color-diagonal-R3-at-most-465",
+  "repository": {
+    "commit": "not a Git repository",
+    "dirty": true
+  },
+  "command": "python research_20260909/checks/shifted_sets_certificate.py",
+  "environment": {
+    "software": [
+      "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+      "Python standard library only"
+    ],
+    "hardware": "Windows-11-10.0.26200-SP0; AMD64; Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "The explicit tent-weight certificate at n=465 has positive exact contradiction margin 285630; the geometric incidences and moment identities pass all stated bounded enumerations.",
+    "coefficient_domain": "Arbitrary-precision integers",
+    "conventions": "Rows increase downwards; columns rightwards; corner ((x,y),(x+d,y),(x+d,y+d)); positive d; Golomb length=max-min; ternary colors 0,1,2.",
+    "inputs": [
+      "G(24)>=425 and G(25)>=480, copied from supplied 2502.05162v1.pdf Algorithm 3, PDF page 12",
+      "w_i=min(i,94-i), 1<=i<=93",
+      "certificate_sha256=6b5265813616f6de6b153f015f0ef0717abe18dcd85c9200f92d77371b6108f1"
+    ],
+    "bounds": {
+      "n": 465,
+      "weight_count": 93,
+      "fiber_geometry_n_min": 2,
+      "fiber_geometry_n_max": 10,
+      "word_n_min": 1,
+      "word_n_max": 7,
+      "wall_timeout_seconds": 30
+    },
+    "non_claims": [
+      "The code does not prove the external optimal-Golomb lower bounds.",
+      "Finite small-case tests alone do not imply the universal forcing lemma or weighted inequality.",
+      "No claim of global novelty or optimality of the constant 465."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-09-09T13:15:18.549181+00:00",
+    "runtime_seconds": 0.11056409997399896,
+    "exit_status": 0
+  },
+  "outputs": [
+    {
+      "path": "research_20260909/checks/shifted_sets_certificate_output.json",
+      "sha256": "2cfe5e03d4e0d98a85d70d2b753e7bd52ec5c1a020d4c8f7e0d7d1e3429cfe90"
+    },
+    {
+      "path": "research_20260909/checks/shifted_sets_certificate.py",
+      "sha256": "6b5265813616f6de6b153f015f0ef0717abe18dcd85c9200f92d77371b6108f1"
+    }
+  ],
+  "checks": [
+    "Direct finite autocorrelation sums equal the displayed closed forms.",
+    "All 4643 repeated-difference witnesses in the declared range satisfy the seven corner incidences.",
+    "All 3279 ternary words of lengths 1..7 satisfy both weighted moment identities.",
+    "Exact contradiction arithmetic gives 1064933097 > 1064647467."
+  ],
+  "result": "implementation and finite assertion verified in the stated range",
+  "residual_risks": [
+    "The two supplied Golomb lower bounds are accepted external mathematical inputs.",
+    "The accompanying universal proof requires independent mathematical review."
+  ]
+}

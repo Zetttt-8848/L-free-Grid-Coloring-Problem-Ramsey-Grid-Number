@@ -1,0 +1,16 @@
+{
+  "witness": "research_round3\\joint\\witness_464.json",
+  "sha256": "68b49802651fea2c1e0a2b9c2086a581db62abff400c6a4fd736b5531ca36132",
+  "n": 464,
+  "size": 155,
+  "pairs_checked": 11935,
+  "distances_checked": 463,
+  "aps_checked": 21298,
+  "bad_caps": [],
+  "bad_aps": [],
+  "cap_excess_sum": 0,
+  "cap_excess_square_sum": 0,
+  "weight": 8,
+  "exact_score": 0,
+  "verdict": "PASS"
+}

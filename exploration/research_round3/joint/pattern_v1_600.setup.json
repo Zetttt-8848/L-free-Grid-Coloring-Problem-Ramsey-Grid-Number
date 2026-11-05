@@ -1,0 +1,52 @@
+{
+  "n": 464,
+  "size": 155,
+  "patterns": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      9,
+      11
+    ],
+    [
+      0,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  ],
+  "pattern_copy_counts": [
+    21298,
+    9555,
+    9555
+  ],
+  "total_hyperedges": 40408,
+  "arguments": {
+    "n": 464,
+    "seconds": 600,
+    "seed": 20260912,
+    "weight": 8,
+    "patterns": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3\\joint\\patterns_v1.json",
+    "tag": "pattern_v1_600",
+    "hint": null
+  },
+  "initial_score": 1407
+}

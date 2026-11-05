@@ -1,0 +1,1327 @@
+{
+  "scope": "specified literal pairs only; not all Golomb rulers",
+  "cases": 60,
+  "detected": 60,
+  "records": [
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 62,
+      "obstruction": {
+        "orientation": "B_then_C",
+        "h": 4,
+        "p": 365,
+        "u": 368,
+        "q": 427,
+        "left_marks": [
+          365,
+          369,
+          372
+        ],
+        "right_marks": [
+          368,
+          427,
+          431
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 65,
+      "obstruction": {
+        "orientation": "B_then_C",
+        "h": 15,
+        "p": 258,
+        "u": 266,
+        "q": 323,
+        "left_marks": [
+          258,
+          273,
+          281
+        ],
+        "right_marks": [
+          266,
+          323,
+          338
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 69,
+      "obstruction": {
+        "orientation": "B_then_C",
+        "h": 5,
+        "p": 306,
+        "u": 350,
+        "q": 375,
+        "left_marks": [
+          306,
+          311,
+          355
+        ],
+        "right_marks": [
+          350,
+          375,
+          380
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 79,
+      "obstruction": {
+        "orientation": "B_then_C",
+        "h": 5,
+        "p": 306,
+        "u": 360,
+        "q": 385,
+        "left_marks": [
+          306,
+          311,
+          365
+        ],
+        "right_marks": [
+          360,
+          385,
+          390
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 8,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 8,
+        "u": 22,
+        "q": 369,
+        "left_marks": [
+          8,
+          11,
+          25
+        ],
+        "right_marks": [
+          22,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 9,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 12,
+        "u": 22,
+        "q": 365,
+        "left_marks": [
+          12,
+          16,
+          26
+        ],
+        "right_marks": [
+          22,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 10,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 10,
+        "u": 24,
+        "q": 369,
+        "left_marks": [
+          10,
+          13,
+          27
+        ],
+        "right_marks": [
+          24,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 11,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 14,
+        "u": 24,
+        "q": 365,
+        "left_marks": [
+          14,
+          18,
+          28
+        ],
+        "right_marks": [
+          24,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 16,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 16,
+        "u": 172,
+        "q": 369,
+        "left_marks": [
+          16,
+          19,
+          175
+        ],
+        "right_marks": [
+          172,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 18,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 18,
+        "u": 22,
+        "q": 369,
+        "left_marks": [
+          18,
+          21,
+          25
+        ],
+        "right_marks": [
+          22,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 20,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 20,
+        "u": 24,
+        "q": 369,
+        "left_marks": [
+          20,
+          23,
+          27
+        ],
+        "right_marks": [
+          24,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 25,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 23,
+        "p": 116,
+        "u": 173,
+        "q": 258,
+        "left_marks": [
+          116,
+          139,
+          196
+        ],
+        "right_marks": [
+          173,
+          258,
+          281
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 28,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 5,
+        "p": 89,
+        "u": 137,
+        "q": 306,
+        "left_marks": [
+          89,
+          94,
+          142
+        ],
+        "right_marks": [
+          137,
+          306,
+          311
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 31,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 34,
+        "u": 126,
+        "q": 365,
+        "left_marks": [
+          34,
+          38,
+          130
+        ],
+        "right_marks": [
+          126,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 33,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 33,
+        "u": 201,
+        "q": 369,
+        "left_marks": [
+          33,
+          36,
+          204
+        ],
+        "right_marks": [
+          201,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 37,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 37,
+        "u": 95,
+        "q": 369,
+        "left_marks": [
+          37,
+          40,
+          98
+        ],
+        "right_marks": [
+          95,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 41,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 41,
+        "u": 137,
+        "q": 369,
+        "left_marks": [
+          41,
+          44,
+          140
+        ],
+        "right_marks": [
+          137,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 44,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 10,
+        "p": 51,
+        "u": 95,
+        "q": 355,
+        "left_marks": [
+          51,
+          61,
+          105
+        ],
+        "right_marks": [
+          95,
+          355,
+          365
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 45,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 45,
+        "u": 201,
+        "q": 369,
+        "left_marks": [
+          45,
+          48,
+          204
+        ],
+        "right_marks": [
+          201,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 48,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 10,
+        "p": 55,
+        "u": 137,
+        "q": 355,
+        "left_marks": [
+          55,
+          65,
+          147
+        ],
+        "right_marks": [
+          137,
+          355,
+          365
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 50,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 50,
+        "u": 146,
+        "q": 369,
+        "left_marks": [
+          50,
+          53,
+          149
+        ],
+        "right_marks": [
+          146,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 51,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 54,
+        "u": 146,
+        "q": 365,
+        "left_marks": [
+          54,
+          58,
+          150
+        ],
+        "right_marks": [
+          146,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 52,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 52,
+        "u": 56,
+        "q": 369,
+        "left_marks": [
+          52,
+          55,
+          59
+        ],
+        "right_marks": [
+          56,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 57,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 57,
+        "u": 213,
+        "q": 369,
+        "left_marks": [
+          57,
+          60,
+          216
+        ],
+        "right_marks": [
+          213,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 61,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 61,
+        "u": 172,
+        "q": 369,
+        "left_marks": [
+          61,
+          64,
+          175
+        ],
+        "right_marks": [
+          172,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 62,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 62,
+        "u": 173,
+        "q": 369,
+        "left_marks": [
+          62,
+          65,
+          176
+        ],
+        "right_marks": [
+          173,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 63,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 63,
+        "u": 126,
+        "q": 369,
+        "left_marks": [
+          63,
+          66,
+          129
+        ],
+        "right_marks": [
+          126,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 64,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 67,
+        "u": 126,
+        "q": 365,
+        "left_marks": [
+          67,
+          71,
+          130
+        ],
+        "right_marks": [
+          126,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 66,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 7,
+        "p": 66,
+        "u": 173,
+        "q": 365,
+        "left_marks": [
+          66,
+          73,
+          180
+        ],
+        "right_marks": [
+          173,
+          365,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 67,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 7,
+        "p": 67,
+        "u": 126,
+        "q": 365,
+        "left_marks": [
+          67,
+          74,
+          133
+        ],
+        "right_marks": [
+          126,
+          365,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 68,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 68,
+        "u": 126,
+        "q": 369,
+        "left_marks": [
+          68,
+          71,
+          129
+        ],
+        "right_marks": [
+          126,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 69,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 72,
+        "u": 126,
+        "q": 365,
+        "left_marks": [
+          72,
+          76,
+          130
+        ],
+        "right_marks": [
+          126,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 70,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 10,
+        "p": 77,
+        "u": 126,
+        "q": 355,
+        "left_marks": [
+          77,
+          87,
+          136
+        ],
+        "right_marks": [
+          126,
+          355,
+          365
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 72,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 7,
+        "p": 72,
+        "u": 126,
+        "q": 365,
+        "left_marks": [
+          72,
+          79,
+          133
+        ],
+        "right_marks": [
+          126,
+          365,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 75,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 78,
+        "u": 137,
+        "q": 365,
+        "left_marks": [
+          78,
+          82,
+          141
+        ],
+        "right_marks": [
+          137,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 77,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 77,
+        "u": 173,
+        "q": 369,
+        "left_marks": [
+          77,
+          80,
+          176
+        ],
+        "right_marks": [
+          173,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 79,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 79,
+        "u": 137,
+        "q": 369,
+        "left_marks": [
+          79,
+          82,
+          140
+        ],
+        "right_marks": [
+          137,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 83,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 83,
+        "u": 146,
+        "q": 369,
+        "left_marks": [
+          83,
+          86,
+          149
+        ],
+        "right_marks": [
+          146,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 84,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 84,
+        "u": 172,
+        "q": 369,
+        "left_marks": [
+          84,
+          87,
+          175
+        ],
+        "right_marks": [
+          172,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 86,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 89,
+        "u": 173,
+        "q": 365,
+        "left_marks": [
+          89,
+          93,
+          177
+        ],
+        "right_marks": [
+          173,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 89,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 4,
+        "p": 92,
+        "u": 146,
+        "q": 365,
+        "left_marks": [
+          92,
+          96,
+          150
+        ],
+        "right_marks": [
+          146,
+          365,
+          369
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 90,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 3,
+        "p": 90,
+        "u": 201,
+        "q": 369,
+        "left_marks": [
+          90,
+          93,
+          204
+        ],
+        "right_marks": [
+          201,
+          369,
+          372
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 2,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 19,
+        "p": 24,
+        "u": 122,
+        "q": 384,
+        "left_marks": [
+          24,
+          43,
+          141
+        ],
+        "right_marks": [
+          122,
+          384,
+          403
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 6,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 15,
+        "p": 63,
+        "u": 208,
+        "q": 353,
+        "left_marks": [
+          63,
+          78,
+          223
+        ],
+        "right_marks": [
+          208,
+          353,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 7,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 6,
+        "p": 100,
+        "u": 140,
+        "q": 326,
+        "left_marks": [
+          100,
+          106,
+          146
+        ],
+        "right_marks": [
+          140,
+          326,
+          332
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 8,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 15,
+        "p": 65,
+        "u": 140,
+        "q": 353,
+        "left_marks": [
+          65,
+          80,
+          155
+        ],
+        "right_marks": [
+          140,
+          353,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 10,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 15,
+        "p": 67,
+        "u": 142,
+        "q": 353,
+        "left_marks": [
+          67,
+          82,
+          157
+        ],
+        "right_marks": [
+          142,
+          353,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 12,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 19,
+        "p": 34,
+        "u": 140,
+        "q": 384,
+        "left_marks": [
+          34,
+          53,
+          159
+        ],
+        "right_marks": [
+          140,
+          384,
+          403
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 14,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 16,
+        "p": 55,
+        "u": 97,
+        "q": 368,
+        "left_marks": [
+          55,
+          71,
+          113
+        ],
+        "right_marks": [
+          97,
+          368,
+          384
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 17,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 16,
+        "p": 58,
+        "u": 140,
+        "q": 368,
+        "left_marks": [
+          58,
+          74,
+          156
+        ],
+        "right_marks": [
+          140,
+          368,
+          384
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 19,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 6,
+        "p": 112,
+        "u": 152,
+        "q": 326,
+        "left_marks": [
+          112,
+          118,
+          158
+        ],
+        "right_marks": [
+          152,
+          326,
+          332
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 20,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 15,
+        "p": 77,
+        "u": 152,
+        "q": 353,
+        "left_marks": [
+          77,
+          92,
+          167
+        ],
+        "right_marks": [
+          152,
+          353,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 21,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 16,
+        "p": 62,
+        "u": 152,
+        "q": 368,
+        "left_marks": [
+          62,
+          78,
+          168
+        ],
+        "right_marks": [
+          152,
+          368,
+          384
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 22,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 19,
+        "p": 44,
+        "u": 142,
+        "q": 384,
+        "left_marks": [
+          44,
+          63,
+          161
+        ],
+        "right_marks": [
+          142,
+          384,
+          403
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 24,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 6,
+        "p": 117,
+        "u": 191,
+        "q": 326,
+        "left_marks": [
+          117,
+          123,
+          197
+        ],
+        "right_marks": [
+          191,
+          326,
+          332
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 26,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 8,
+        "p": 165,
+        "u": 191,
+        "q": 278,
+        "left_marks": [
+          165,
+          173,
+          199
+        ],
+        "right_marks": [
+          191,
+          278,
+          286
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 27,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 22,
+        "p": 27,
+        "u": 152,
+        "q": 403,
+        "left_marks": [
+          27,
+          49,
+          174
+        ],
+        "right_marks": [
+          152,
+          403,
+          425
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 28,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 15,
+        "p": 85,
+        "u": 152,
+        "q": 353,
+        "left_marks": [
+          85,
+          100,
+          167
+        ],
+        "right_marks": [
+          152,
+          353,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 31,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 36,
+        "p": 88,
+        "u": 142,
+        "q": 332,
+        "left_marks": [
+          88,
+          124,
+          178
+        ],
+        "right_marks": [
+          142,
+          332,
+          368
+        ]
+      }
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 34,
+      "obstruction": {
+        "orientation": "C_then_B",
+        "h": 16,
+        "p": 75,
+        "u": 191,
+        "q": 368,
+        "left_marks": [
+          75,
+          91,
+          207
+        ],
+        "right_marks": [
+          191,
+          368,
+          384
+        ]
+      }
+    }
+  ]
+}

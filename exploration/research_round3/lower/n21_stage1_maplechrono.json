@@ -1,0 +1,2053 @@
+{
+  "all_81_attempted": true,
+  "cnf_sha256": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5",
+  "cube_manifest_sha256": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+  "cubes_attempted": 81,
+  "mathematical_status": "UNDECIDED",
+  "n": 21,
+  "non_claims": [
+    "raw internal UNSAT without an independently checked proof is not mathematical UNSAT",
+    "interrupted cubes are UNDECIDED",
+    "solver counters are telemetry rather than proof"
+  ],
+  "overall_cap_seconds": 600.0,
+  "phase_checkpoint_sha256": "245a980b54aee99219c336cc60fc87aecee12a467f6c21f1ff5290192a493d30",
+  "python_sat_version": "1.9.dev15",
+  "records": [
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "order": 0,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 232788,
+        "decisions": 499825,
+        "propagations": 14706684,
+        "restarts": 688
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.001735900001222
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "order": 1,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00037620000148308463
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        2
+      ],
+      "order": 2,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00024620000112918206
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "order": 3,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 207959,
+        "decisions": 287981,
+        "propagations": 10932609,
+        "restarts": 512
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00773499999923
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "order": 4,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 163027,
+        "decisions": 213913,
+        "propagations": 9610033,
+        "restarts": 384
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.000560000000405
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "order": 5,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 176362,
+        "decisions": 234902,
+        "propagations": 9472867,
+        "restarts": 448
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.006475500002125
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 6,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 215005,
+        "decisions": 281860,
+        "propagations": 11172286,
+        "restarts": 512
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.006211300002178
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "order": 7,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 220972,
+        "decisions": 295276,
+        "propagations": 10813892,
+        "restarts": 514
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.010616699997627
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "order": 8,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 6,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00023599999985890463
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "order": 9,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00018050000289804302
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "order": 10,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 196375,
+        "decisions": 254681,
+        "propagations": 10854466,
+        "restarts": 510
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.014572500000213
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "order": 11,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 186812,
+        "decisions": 241095,
+        "propagations": 10208929,
+        "restarts": 472
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.01397999999972
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "order": 12,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 207338,
+        "decisions": 280588,
+        "propagations": 10613935,
+        "restarts": 511
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.01415199999974
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "order": 13,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 185802,
+        "decisions": 253212,
+        "propagations": 9211725,
+        "restarts": 487
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004410000001371
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "order": 14,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 189765,
+        "decisions": 252889,
+        "propagations": 9716903,
+        "restarts": 484
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.003811400001723
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "order": 15,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 180907,
+        "decisions": 244717,
+        "propagations": 9087389,
+        "restarts": 470
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00655949999782
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "order": 16,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 157323,
+        "decisions": 212569,
+        "propagations": 7689485,
+        "restarts": 382
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.001480599999923
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "order": 17,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 156661,
+        "decisions": 209113,
+        "propagations": 7838055,
+        "restarts": 385
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004659599999286
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "order": 18,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00027570000020205043
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "order": 19,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 165573,
+        "decisions": 223595,
+        "propagations": 8299676,
+        "restarts": 418
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.009904700000334
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "order": 20,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 165998,
+        "decisions": 219478,
+        "propagations": 8653494,
+        "restarts": 419
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004975300002116
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "order": 21,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 7,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0005325000020093285
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "order": 22,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 183745,
+        "decisions": 244090,
+        "propagations": 9255876,
+        "restarts": 481
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00875310000265
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "order": 23,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 183860,
+        "decisions": 244191,
+        "propagations": 9055450,
+        "restarts": 473
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004640800001653
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "order": 24,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00026870000147027895
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "order": 25,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00019859999883919954
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "order": 26,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 174433,
+        "decisions": 232334,
+        "propagations": 8901837,
+        "restarts": 446
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004850599998463
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "order": 27,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00028620000011869706
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "order": 28,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 148819,
+        "decisions": 198124,
+        "propagations": 7348431,
+        "restarts": 385
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00573080000322
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "order": 29,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 7,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0003223000021534972
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "order": 30,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00022679999892716296
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "order": 31,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 153741,
+        "decisions": 201837,
+        "propagations": 8150112,
+        "restarts": 384
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.007342899996729
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "order": 32,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 157480,
+        "decisions": 206135,
+        "propagations": 8272531,
+        "restarts": 392
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004838200002268
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "order": 33,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 140658,
+        "decisions": 180605,
+        "propagations": 7660841,
+        "restarts": 354
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.005293400001392
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "order": 34,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 6,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00036779999936698005
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "order": 35,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00022360000002663583
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "order": 36,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 151444,
+        "decisions": 206528,
+        "propagations": 7254395,
+        "restarts": 390
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.013424199998553
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "order": 37,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00040810000064084306
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "order": 38,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 164878,
+        "decisions": 222332,
+        "propagations": 8194736,
+        "restarts": 420
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.015728999998828
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "order": 39,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 148489,
+        "decisions": 199762,
+        "propagations": 7314179,
+        "restarts": 387
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.002910299997893
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "order": 40,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 139776,
+        "decisions": 187232,
+        "propagations": 6755399,
+        "restarts": 355
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.001930299997184
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 41,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 129536,
+        "decisions": 172757,
+        "propagations": 6498738,
+        "restarts": 326
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00662299999749
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "order": 42,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0002993000016431324
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 43,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0002859999985957984
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "order": 44,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00027070000214735046
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "order": 45,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 7,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00027240000054007396
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        2
+      ],
+      "order": 46,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00019869999960064888
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "order": 47,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00020360000053187832
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        2
+      ],
+      "order": 48,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00021719999858760275
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "order": 49,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00025689999893074855
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "order": 50,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 140837,
+        "decisions": 187214,
+        "propagations": 6679006,
+        "restarts": 358
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004930399998557
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "order": 51,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 144584,
+        "decisions": 192775,
+        "propagations": 7194930,
+        "restarts": 353
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.013872100000299
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "order": 52,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 114011,
+        "decisions": 149005,
+        "propagations": 5928934,
+        "restarts": 270
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004009600001154
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "order": 53,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00030780000088270754
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "order": 54,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 135126,
+        "decisions": 179723,
+        "propagations": 6579246,
+        "restarts": 342
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.006261200000154
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "order": 55,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0002522999966458883
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        1
+      ],
+      "order": 56,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 130161,
+        "decisions": 171932,
+        "propagations": 6631084,
+        "restarts": 326
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.007849300000089
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "order": 57,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 118656,
+        "decisions": 158092,
+        "propagations": 5794189,
+        "restarts": 272
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.001636699998926
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "order": 58,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 121440,
+        "decisions": 160214,
+        "propagations": 5827422,
+        "restarts": 298
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.007471900000382
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "order": 59,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0003521999969962053
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "order": 60,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 138416,
+        "decisions": 179611,
+        "propagations": 7295334,
+        "restarts": 347
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.005774400000519
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "order": 61,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 152988,
+        "decisions": 204834,
+        "propagations": 7545454,
+        "restarts": 392
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.004256899999746
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "order": 62,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00030359999800566584
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "order": 63,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 126418,
+        "decisions": 166207,
+        "propagations": 6328973,
+        "restarts": 325
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.011195999999472
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "order": 64,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 125913,
+        "decisions": 168728,
+        "propagations": 6202028,
+        "restarts": 321
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00010950000069
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "order": 65,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.000250899996899534
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "order": 66,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 145973,
+        "decisions": 196841,
+        "propagations": 7062692,
+        "restarts": 386
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.523340200001257
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "order": 67,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 143297,
+        "decisions": 187892,
+        "propagations": 7243324,
+        "restarts": 374
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.012087600000086
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 68,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0002789999998640269
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "order": 69,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00017320000188192353
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "order": 70,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 140973,
+        "decisions": 187715,
+        "propagations": 6881774,
+        "restarts": 360
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.011250800002017
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "order": 71,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 151783,
+        "decisions": 204628,
+        "propagations": 7406409,
+        "restarts": 393
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.015131999996811
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "order": 72,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 146008,
+        "decisions": 193381,
+        "propagations": 7496346,
+        "restarts": 388
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.013309899997694
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "order": 73,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 144020,
+        "decisions": 196961,
+        "propagations": 6921501,
+        "restarts": 377
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.002176199999667
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "order": 74,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 131455,
+        "decisions": 171400,
+        "propagations": 6580254,
+        "restarts": 326
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.005678600002284
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "order": 75,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 6,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00027939999927184545
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "order": 76,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 144434,
+        "decisions": 194052,
+        "propagations": 7280762,
+        "restarts": 382
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.071544500002346
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 77,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0003622999975050334
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "order": 78,
+      "round2_raw_status": "UNDECIDED",
+      "stats_delta": {
+        "conflicts": 148832,
+        "decisions": 197907,
+        "propagations": 7419896,
+        "restarts": 385
+      },
+      "status": "INTERRUPTED_UNDECIDED",
+      "wall_cap_seconds": 10.0,
+      "wall_seconds": 10.00388600000224
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "order": 79,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.0003570000008039642
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "order": 80,
+      "round2_raw_status": "UNSAT",
+      "stats_delta": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 0,
+        "restarts": 1
+      },
+      "status": "RAW_UNSAT_UNVERIFIED",
+      "wall_cap_seconds": 2.0,
+      "wall_seconds": 0.00028029999884893186
+    }
+  ],
+  "schema": "round3_lower_cube_telemetry_v1",
+  "solver": "maplechrono",
+  "statuses": {
+    "INTERRUPTED_UNDECIDED": 48,
+    "RAW_UNSAT_UNVERIFIED": 33,
+    "SAT": 0
+  },
+  "total_wall_seconds": 481.0631857999979,
+  "total_wall_seconds_so_far": 481.05241699999897,
+  "witness_path": null
+}

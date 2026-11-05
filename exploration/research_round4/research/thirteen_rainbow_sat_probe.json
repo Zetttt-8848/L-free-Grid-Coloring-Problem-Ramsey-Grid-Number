@@ -1,0 +1,17 @@
+{
+  "scope": "Bounded construction search; negative output is not a theorem.",
+  "side": 13,
+  "target": 16,
+  "cases": [
+    {
+      "solver": "g4",
+      "answer": null,
+      "seconds": 20.027005400013877
+    },
+    {
+      "solver": "mcb",
+      "answer": null,
+      "seconds": 20.01241540000774
+    }
+  ]
+}

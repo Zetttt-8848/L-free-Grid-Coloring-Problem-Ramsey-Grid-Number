@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "archive": "LOCAL_RESEARCH_ROOT\\Desktop\\GPT_L-free grid Research\\research_round3_package.zip",
+  "archive_bytes": 14618512,
+  "archive_sha256": "326c55d1a9d48160613bd0219a850656ce13794968e330b47ad2d7aedabde659",
+  "manifest_files": 846,
+  "archive_entries": 847,
+  "crc_and_every_file_hash_verified": true
+}

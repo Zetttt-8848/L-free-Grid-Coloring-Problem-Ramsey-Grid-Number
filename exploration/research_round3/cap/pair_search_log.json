@@ -1,0 +1,1078 @@
+{
+  "rulers": {
+    "23": [
+      0,
+      6,
+      22,
+      24,
+      43,
+      56,
+      95,
+      126,
+      137,
+      146,
+      172,
+      173,
+      201,
+      213,
+      258,
+      273,
+      281,
+      306,
+      311,
+      355,
+      365,
+      369,
+      372
+    ],
+    "24": [
+      0,
+      9,
+      33,
+      37,
+      38,
+      97,
+      122,
+      129,
+      140,
+      142,
+      152,
+      191,
+      205,
+      208,
+      252,
+      278,
+      286,
+      326,
+      332,
+      353,
+      368,
+      384,
+      403,
+      425
+    ]
+  },
+  "attempts": [
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 62,
+      "marks": 46,
+      "span": 434,
+      "variables": 1081,
+      "corners": 2467,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 135
+      },
+      "elapsed_seconds_telemetry": "2.0099996618228033e-05"
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 65,
+      "marks": 46,
+      "span": 437,
+      "variables": 1081,
+      "corners": 2465,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 126
+      },
+      "elapsed_seconds_telemetry": "1.3699998817173764e-05"
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 69,
+      "marks": 46,
+      "span": 441,
+      "variables": 1081,
+      "corners": 2454,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 119
+      },
+      "elapsed_seconds_telemetry": "1.7300000763498247e-05"
+    },
+    {
+      "order": 23,
+      "reflected": false,
+      "shift": 79,
+      "marks": 46,
+      "span": 451,
+      "variables": 1081,
+      "corners": 2451,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 108
+      },
+      "elapsed_seconds_telemetry": "2.0299998141126707e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 8,
+      "marks": 46,
+      "span": 380,
+      "variables": 1081,
+      "corners": 2573,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 78
+      },
+      "elapsed_seconds_telemetry": "1.680000059423037e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 9,
+      "marks": 46,
+      "span": 381,
+      "variables": 1081,
+      "corners": 2539,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 106
+      },
+      "elapsed_seconds_telemetry": "1.790000169421546e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 10,
+      "marks": 46,
+      "span": 382,
+      "variables": 1081,
+      "corners": 2565,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 233
+      },
+      "elapsed_seconds_telemetry": "2.0200001017656177e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 11,
+      "marks": 46,
+      "span": 383,
+      "variables": 1081,
+      "corners": 2527,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 59
+      },
+      "elapsed_seconds_telemetry": "1.6499998309882358e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 16,
+      "marks": 46,
+      "span": 388,
+      "variables": 1081,
+      "corners": 2537,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 98
+      },
+      "elapsed_seconds_telemetry": "1.8500002624932677e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 18,
+      "marks": 46,
+      "span": 390,
+      "variables": 1081,
+      "corners": 2563,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 191
+      },
+      "elapsed_seconds_telemetry": "1.7000002117129043e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 20,
+      "marks": 46,
+      "span": 392,
+      "variables": 1081,
+      "corners": 2513,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 226
+      },
+      "elapsed_seconds_telemetry": "1.7800000932766125e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 25,
+      "marks": 46,
+      "span": 397,
+      "variables": 1081,
+      "corners": 2525,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 147
+      },
+      "elapsed_seconds_telemetry": "1.7000002117129043e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 28,
+      "marks": 46,
+      "span": 400,
+      "variables": 1081,
+      "corners": 2551,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 87
+      },
+      "elapsed_seconds_telemetry": "2.9200000426499173e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 31,
+      "marks": 46,
+      "span": 403,
+      "variables": 1081,
+      "corners": 2549,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 125
+      },
+      "elapsed_seconds_telemetry": "1.7400001524947584e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 33,
+      "marks": 46,
+      "span": 405,
+      "variables": 1081,
+      "corners": 2561,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 154
+      },
+      "elapsed_seconds_telemetry": "2.0800001948373392e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 37,
+      "marks": 46,
+      "span": 409,
+      "variables": 1081,
+      "corners": 2521,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 113
+      },
+      "elapsed_seconds_telemetry": "2.5099998310906813e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 41,
+      "marks": 46,
+      "span": 413,
+      "variables": 1081,
+      "corners": 2555,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 109
+      },
+      "elapsed_seconds_telemetry": "1.930000144056976e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 44,
+      "marks": 46,
+      "span": 416,
+      "variables": 1081,
+      "corners": 2509,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 146
+      },
+      "elapsed_seconds_telemetry": "1.880000127130188e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 45,
+      "marks": 46,
+      "span": 417,
+      "variables": 1081,
+      "corners": 2483,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 83
+      },
+      "elapsed_seconds_telemetry": "3.2899999496294186e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 48,
+      "marks": 46,
+      "span": 420,
+      "variables": 1081,
+      "corners": 2527,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 154
+      },
+      "elapsed_seconds_telemetry": "2.2000000171829015e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 50,
+      "marks": 46,
+      "span": 422,
+      "variables": 1081,
+      "corners": 2501,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 261
+      },
+      "elapsed_seconds_telemetry": "2.4600001779617742e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 51,
+      "marks": 46,
+      "span": 423,
+      "variables": 1081,
+      "corners": 2537,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 137
+      },
+      "elapsed_seconds_telemetry": "1.5800000255694613e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 52,
+      "marks": 46,
+      "span": 424,
+      "variables": 1081,
+      "corners": 2527,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 80
+      },
+      "elapsed_seconds_telemetry": "1.720000000204891e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 57,
+      "marks": 46,
+      "span": 429,
+      "variables": 1081,
+      "corners": 2519,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 157
+      },
+      "elapsed_seconds_telemetry": "1.680000059423037e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 61,
+      "marks": 46,
+      "span": 433,
+      "variables": 1081,
+      "corners": 2477,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 231
+      },
+      "elapsed_seconds_telemetry": "1.750000228639692e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 62,
+      "marks": 46,
+      "span": 434,
+      "variables": 1081,
+      "corners": 2507,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 207
+      },
+      "elapsed_seconds_telemetry": "2.2099997295299545e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 63,
+      "marks": 46,
+      "span": 435,
+      "variables": 1081,
+      "corners": 2519,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 110
+      },
+      "elapsed_seconds_telemetry": "2.510000194888562e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 64,
+      "marks": 46,
+      "span": 436,
+      "variables": 1081,
+      "corners": 2507,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 113
+      },
+      "elapsed_seconds_telemetry": "1.840000186348334e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 66,
+      "marks": 46,
+      "span": 438,
+      "variables": 1081,
+      "corners": 2483,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 223
+      },
+      "elapsed_seconds_telemetry": "2.0899999071843922e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 67,
+      "marks": 46,
+      "span": 439,
+      "variables": 1081,
+      "corners": 2507,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 145
+      },
+      "elapsed_seconds_telemetry": "1.819999670260586e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 68,
+      "marks": 46,
+      "span": 440,
+      "variables": 1081,
+      "corners": 2507,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 192
+      },
+      "elapsed_seconds_telemetry": "2.0299998141126707e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 69,
+      "marks": 46,
+      "span": 441,
+      "variables": 1081,
+      "corners": 2501,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 246
+      },
+      "elapsed_seconds_telemetry": "2.1899999410379678e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 70,
+      "marks": 46,
+      "span": 442,
+      "variables": 1081,
+      "corners": 2481,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 158
+      },
+      "elapsed_seconds_telemetry": "1.840000186348334e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 72,
+      "marks": 46,
+      "span": 444,
+      "variables": 1081,
+      "corners": 2457,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 280
+      },
+      "elapsed_seconds_telemetry": "2.1899999410379678e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 75,
+      "marks": 46,
+      "span": 447,
+      "variables": 1081,
+      "corners": 2485,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 232
+      },
+      "elapsed_seconds_telemetry": "1.720000000204891e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 77,
+      "marks": 46,
+      "span": 449,
+      "variables": 1081,
+      "corners": 2477,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 198
+      },
+      "elapsed_seconds_telemetry": "1.9600000086938962e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 79,
+      "marks": 46,
+      "span": 451,
+      "variables": 1081,
+      "corners": 2507,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 84
+      },
+      "elapsed_seconds_telemetry": "2.2000000171829015e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 83,
+      "marks": 46,
+      "span": 455,
+      "variables": 1081,
+      "corners": 2501,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 239
+      },
+      "elapsed_seconds_telemetry": "1.8599999748403206e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 84,
+      "marks": 46,
+      "span": 456,
+      "variables": 1081,
+      "corners": 2449,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 148
+      },
+      "elapsed_seconds_telemetry": "1.9600000086938962e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 86,
+      "marks": 46,
+      "span": 458,
+      "variables": 1081,
+      "corners": 2453,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 250
+      },
+      "elapsed_seconds_telemetry": "2.179999864893034e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 89,
+      "marks": 46,
+      "span": 461,
+      "variables": 1081,
+      "corners": 2471,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 164
+      },
+      "elapsed_seconds_telemetry": "2.179999864893034e-05"
+    },
+    {
+      "order": 23,
+      "reflected": true,
+      "shift": 90,
+      "marks": 46,
+      "span": 462,
+      "variables": 1081,
+      "corners": 2455,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 116
+      },
+      "elapsed_seconds_telemetry": "1.639999754843302e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 2,
+      "marks": 48,
+      "span": 427,
+      "variables": 1176,
+      "corners": 2808,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 96
+      },
+      "elapsed_seconds_telemetry": "1.7700000171316788e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 6,
+      "marks": 48,
+      "span": 431,
+      "variables": 1176,
+      "corners": 2806,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 255
+      },
+      "elapsed_seconds_telemetry": "1.5699999494245276e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 7,
+      "marks": 48,
+      "span": 432,
+      "variables": 1176,
+      "corners": 2796,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 156
+      },
+      "elapsed_seconds_telemetry": "1.720000000204891e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 8,
+      "marks": 48,
+      "span": 433,
+      "variables": 1176,
+      "corners": 2808,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 128
+      },
+      "elapsed_seconds_telemetry": "1.9600000086938962e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 10,
+      "marks": 48,
+      "span": 435,
+      "variables": 1176,
+      "corners": 2838,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 232
+      },
+      "elapsed_seconds_telemetry": "2.1600000764010474e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 12,
+      "marks": 48,
+      "span": 437,
+      "variables": 1176,
+      "corners": 2820,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 210
+      },
+      "elapsed_seconds_telemetry": "1.759999940986745e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 14,
+      "marks": 48,
+      "span": 439,
+      "variables": 1176,
+      "corners": 2798,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 155
+      },
+      "elapsed_seconds_telemetry": "1.7099999240599573e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 17,
+      "marks": 48,
+      "span": 442,
+      "variables": 1176,
+      "corners": 2826,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 132
+      },
+      "elapsed_seconds_telemetry": "1.720000000204891e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 19,
+      "marks": 48,
+      "span": 444,
+      "variables": 1176,
+      "corners": 2804,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 59
+      },
+      "elapsed_seconds_telemetry": "2.1400002879090607e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 20,
+      "marks": 48,
+      "span": 445,
+      "variables": 1176,
+      "corners": 2814,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 125
+      },
+      "elapsed_seconds_telemetry": "1.6999998479150236e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 21,
+      "marks": 48,
+      "span": 446,
+      "variables": 1176,
+      "corners": 2778,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 151
+      },
+      "elapsed_seconds_telemetry": "2.2399999579647556e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 22,
+      "marks": 48,
+      "span": 447,
+      "variables": 1176,
+      "corners": 2810,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 170
+      },
+      "elapsed_seconds_telemetry": "1.8300001102034003e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 24,
+      "marks": 48,
+      "span": 449,
+      "variables": 1176,
+      "corners": 2798,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 235
+      },
+      "elapsed_seconds_telemetry": "1.6400001186411828e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 26,
+      "marks": 48,
+      "span": 451,
+      "variables": 1176,
+      "corners": 2770,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 183
+      },
+      "elapsed_seconds_telemetry": "1.7800000932766125e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 27,
+      "marks": 48,
+      "span": 452,
+      "variables": 1176,
+      "corners": 2772,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 198
+      },
+      "elapsed_seconds_telemetry": "2.3399999918183312e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 28,
+      "marks": 48,
+      "span": 453,
+      "variables": 1176,
+      "corners": 2820,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 263
+      },
+      "elapsed_seconds_telemetry": "1.8200000340584666e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 31,
+      "marks": 48,
+      "span": 456,
+      "variables": 1176,
+      "corners": 2792,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 145
+      },
+      "elapsed_seconds_telemetry": "2.6900001103058457e-05"
+    },
+    {
+      "order": 24,
+      "reflected": true,
+      "shift": 34,
+      "marks": 48,
+      "span": 459,
+      "variables": 1176,
+      "corners": 2820,
+      "status": "INTERNAL_UNSAT_UNVERIFIED",
+      "stats": {
+        "restarts": 0,
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 264
+      },
+      "elapsed_seconds_telemetry": "1.8200000340584666e-05"
+    }
+  ],
+  "positive_candidate": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "n": 6,
+    "words": 726,
+    "correlation_vectors": 53,
+    "min_total_pairs": 3,
+    "max_total_pairs": 10,
+    "max_adjacent_pairs": 4
+  },
+  {
+    "n": 7,
+    "words": 2172,
+    "correlation_vectors": 161,
+    "min_total_pairs": 5,
+    "max_total_pairs": 15,
+    "max_adjacent_pairs": 5
+  },
+  {
+    "n": 8,
+    "words": 6498,
+    "correlation_vectors": 441,
+    "min_total_pairs": 7,
+    "max_total_pairs": 21,
+    "max_adjacent_pairs": 6
+  }
+]

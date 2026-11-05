@@ -1,0 +1,1405 @@
+{
+  "coverage_claim": "all assignments in {0,1,2}^4, exactly once",
+  "cube_count": 81,
+  "n": 21,
+  "nominal_solver_cap_seconds": 546,
+  "records": [
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "order": 0,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "order": 1,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        2
+      ],
+      "order": 2,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "order": 3,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "order": 4,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "order": 5,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "order": 6,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "order": 7,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "order": 8,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "order": 9,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "order": 10,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "order": 11,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "order": 12,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        0
+      ],
+      "order": 13,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "order": 14,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        0
+      ],
+      "order": 15,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "order": 16,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "order": 17,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        0
+      ],
+      "order": 18,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "order": 19,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "order": 20,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "order": 21,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "order": 22,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "order": 23,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "order": 24,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "order": 25,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "order": 26,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "order": 27,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "order": 28,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "order": 29,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        1
+      ],
+      "order": 30,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "order": 31,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "order": 32,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "order": 33,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        2
+      ],
+      "order": 34,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        2
+      ],
+      "order": 35,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "order": 36,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "order": 37,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "order": 38,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "order": 39,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "order": 40,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "order": 41,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "order": 42,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "order": 43,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "order": 44,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "order": 45,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        2
+      ],
+      "order": 46,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        2,
+        0
+      ],
+      "order": 47,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        2,
+        2
+      ],
+      "order": 48,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "order": 49,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "order": 50,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "order": 51,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "order": 52,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "order": 53,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "order": 54,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "order": 55,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        1
+      ],
+      "order": 56,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "order": 57,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        0,
+        2
+      ],
+      "order": 58,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "order": 59,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "order": 60,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        1
+      ],
+      "order": 61,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        0,
+        1,
+        0
+      ],
+      "order": 62,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "order": 63,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "order": 64,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "order": 65,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "order": 66,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "order": 67,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "order": 68,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "order": 69,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        4,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "order": 70,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "order": 71,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        65,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "order": 72,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        2,
+        0
+      ],
+      "order": 73,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        4,
+        66,
+        69,
+        1321
+      ],
+      "cube_colors_0_based": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "order": 74,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        67,
+        1322
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "order": 75,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        64,
+        68,
+        1321
+      ],
+      "cube_colors_0_based": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "order": 76,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1322
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "order": 77,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        5,
+        66,
+        67,
+        1323
+      ],
+      "cube_colors_0_based": [
+        1,
+        2,
+        0,
+        2
+      ],
+      "order": 78,
+      "round2_raw_status": "UNDECIDED",
+      "stage1_cap_seconds": 10
+    },
+    {
+      "assumption_literals": [
+        6,
+        65,
+        67,
+        1321
+      ],
+      "cube_colors_0_based": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "order": 79,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    },
+    {
+      "assumption_literals": [
+        6,
+        66,
+        69,
+        1323
+      ],
+      "cube_colors_0_based": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "order": 80,
+      "round2_raw_status": "UNSAT",
+      "stage1_cap_seconds": 2
+    }
+  ],
+  "schema": "round3_lower_cubes_v1",
+  "seed": 62101,
+  "split_cells_0_based": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      20,
+      20
+    ]
+  ]
+}

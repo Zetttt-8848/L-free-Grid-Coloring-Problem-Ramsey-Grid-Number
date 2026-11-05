@@ -1,0 +1,27 @@
+{
+  "branches": 134,
+  "canonical_expanded_hint_sha256": null,
+  "colors": 3,
+  "conflicts": 0,
+  "constraints": 32,
+  "geometric_triples": 30,
+  "hint_path": null,
+  "hint_transposed": false,
+  "measured_wall_seconds": 0.02419460006058216,
+  "n": 5,
+  "non_claims": [
+    "UNKNOWN and unproved INFEASIBLE statuses are not UNSAT certificates"
+  ],
+  "orientation": "(x,y),(x+d,y),(x+d,y+d)",
+  "ortools_version": "9.15.6755",
+  "random_seed": 805,
+  "raw_solver_status": "OPTIMAL",
+  "schema": "round2_lower_cp_sat_v1",
+  "solver_wall_cap_seconds": 5.0,
+  "solver_wall_time_seconds": 0.0229367,
+  "status": "SAT_WITNESS_PENDING_INDEPENDENT_VERIFICATION",
+  "symmetry_breaking": "cell 0 = 0 and cell 1 <= 1; sound residual color permutation",
+  "variables": 25,
+  "witness": "research_round2\\certificates\\lower\\cpsat_n5_matrix.txt",
+  "workers": 2
+}

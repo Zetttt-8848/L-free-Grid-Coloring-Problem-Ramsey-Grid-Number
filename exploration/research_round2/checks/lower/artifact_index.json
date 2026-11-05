@@ -1,0 +1,412 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2566,
+      "path": "research_round2/routes/lower/ALGEBRAIC_PRODUCT_AND_ALTERATION.md",
+      "sha256": "8fcd6050e94f9a4dffdb4fa0b9b557df83bef91388bb71228a16f7c33b65c361"
+    },
+    {
+      "bytes": 21721,
+      "path": "research_round2/routes/lower/PREDICTIONS.md",
+      "sha256": "b152523786eb9f69e34e42919aa422f7c8a9575da3dbc3f8f55f6e0ff078b15c"
+    },
+    {
+      "bytes": 6015,
+      "path": "research_round2/routes/lower/ROUTE6_LOG.md",
+      "sha256": "40a7c111e33f3788217a161c7b5b9111f061b773210ea82623c87befc8293379"
+    },
+    {
+      "bytes": 8157,
+      "path": "research_round2/routes/lower/SUBTASK_REPORT.md",
+      "sha256": "79ec71a9bc7067b4bd57841fcf52397bf5dddc4cfb8be0f1fa45d587c8432321"
+    },
+    {
+      "bytes": 1463,
+      "path": "research_round2/checks/lower/alteration_audit.py",
+      "sha256": "4c7458f9522703d154441fc3e5b1d3700f0fefd452db8230bd7f4b6372043ff4"
+    },
+    {
+      "bytes": 6442,
+      "path": "research_round2/checks/lower/alteration_exact.json",
+      "sha256": "39f77b34e033776459194c20baac7865329b0069c198d17d5076db644fbee4c5"
+    },
+    {
+      "bytes": 5658,
+      "path": "research_round2/checks/lower/artifact_audit.py",
+      "sha256": "022d2649bde36368b098df85d0a833663c69eae67df4f7083e1bfb61bedbbdeb"
+    },
+    {
+      "bytes": 440,
+      "path": "research_round2/checks/lower/benchmark20_transposed_verify.json",
+      "sha256": "9f11f38dc2928e96105707fdd1644eb4f1d4a9b9eacb4e5d5748ad03bdc79794"
+    },
+    {
+      "bytes": 2626,
+      "path": "research_round2/checks/lower/benchmark20_verify.json",
+      "sha256": "9c90de5816190b3913e7022bd508df4d3369810d23c7ec1ab4c8a9f719a9a3d5"
+    },
+    {
+      "bytes": 5297,
+      "path": "research_round2/checks/lower/breakout_n21.json",
+      "sha256": "a4d8cec32526538388dd9220159a87b8cecf64cdf3d67ffc4afb34bd616404b3"
+    },
+    {
+      "bytes": 4406,
+      "path": "research_round2/checks/lower/breakout_n21_corrected.json",
+      "sha256": "245a980b54aee99219c336cc60fc87aecee12a467f6c21f1ff5290192a493d30"
+    },
+    {
+      "bytes": 665,
+      "path": "research_round2/checks/lower/breakout_n21_rejection_disposition.json",
+      "sha256": "3ef739f49b2876e30ba54f6b56fc2b046d20d6ba0102c5f7c058d2c3af64a3a0"
+    },
+    {
+      "bytes": 10445,
+      "path": "research_round2/checks/lower/breakout_n22.json",
+      "sha256": "6e33c23e7c7e697fc11169fe97a40fb2f892a3e9c5e7608d08a82bea16702ac9"
+    },
+    {
+      "bytes": 12451,
+      "path": "research_round2/checks/lower/breakout_n23.json",
+      "sha256": "a91537f41662a479855868b6fa5c3305b9716923eaeb9ca76a01619105ce0ae9"
+    },
+    {
+      "bytes": 10660,
+      "path": "research_round2/checks/lower/breakout_search.py",
+      "sha256": "89d0d21e2e97743d3d12470e4ded4d373bc067042de743303b68bc46e56fc80c"
+    },
+    {
+      "bytes": 6559,
+      "path": "research_round2/checks/lower/cp_sat_search.py",
+      "sha256": "66a0839e16c3a9f1a0ce79aeed1e1a05e92efe0fb5edfb4852779ec4eb6e2818"
+    },
+    {
+      "bytes": 932,
+      "path": "research_round2/checks/lower/cpsat_n21.json",
+      "sha256": "99b5a4f23ecbf69950c687f05f83ff184bc106c2f71872670802fd47a9fdf479"
+    },
+    {
+      "bytes": 984,
+      "path": "research_round2/checks/lower/cpsat_n21_hamming12.json",
+      "sha256": "280388a66d35c9f969daa571d230066d3d386b3725fdb439aca2f62a7cef8493"
+    },
+    {
+      "bytes": 935,
+      "path": "research_round2/checks/lower/cpsat_n21_hamming12_nosym.json",
+      "sha256": "bfde053b2e9229151da2751c1eba6e3093f146eeec64f4503b8837dd49da6d03"
+    },
+    {
+      "bytes": 923,
+      "path": "research_round2/checks/lower/cpsat_n22.json",
+      "sha256": "1d81f4db2763e59409b2fe9a9fdcfdd3e25ae635c015a8c7d09d4ba76d1f1d4b"
+    },
+    {
+      "bytes": 932,
+      "path": "research_round2/checks/lower/cpsat_n23.json",
+      "sha256": "12fd135d3cd90805c393fddefe3a17a8fa950006aa41c8f3f39afe80bcc4d9a0"
+    },
+    {
+      "bytes": 879,
+      "path": "research_round2/checks/lower/cpsat_n5.json",
+      "sha256": "600c028449598e4fddb73ce8914f514d6cc5c33613f8e6a8a613539eda5e3ac5"
+    },
+    {
+      "bytes": 428,
+      "path": "research_round2/checks/lower/cpsat_n5_verify.json",
+      "sha256": "d49b127b9b8f5bb6c0768a82bc3941355720fc4c3fc6c6188985f052d97cc2ac"
+    },
+    {
+      "bytes": 25088,
+      "path": "research_round2/checks/lower/cube_n21_maplechrono.json",
+      "sha256": "7202421417d03d714114c18f2f7b340bfaaafedc292acd380b3150644ba7a8a3"
+    },
+    {
+      "bytes": 25102,
+      "path": "research_round2/checks/lower/cube_n22_maplechrono.json",
+      "sha256": "7c593c92aa50f612938a815fcc81fec290dc119d1c32854a8e474f095b92acf1"
+    },
+    {
+      "bytes": 25111,
+      "path": "research_round2/checks/lower/cube_n23_maplechrono.json",
+      "sha256": "3f1af4af646457d77c7f0b1599271766b228fe80885476c7b182d47dbc75da0b"
+    },
+    {
+      "bytes": 1878,
+      "path": "research_round2/checks/lower/cube_n5_regression_r.json",
+      "sha256": "35b915b19f4e63c4cf362d98ec572be5f5c686b2ec812f742260badbd4c919fb"
+    },
+    {
+      "bytes": 428,
+      "path": "research_round2/checks/lower/cube_n5_regression_r_verify.json",
+      "sha256": "86ada792c3013413f106fddc3732aed8c50a8e0022ba64e66f2ca8b56c201218"
+    },
+    {
+      "bytes": 597,
+      "path": "research_round2/checks/lower/product_construct.py",
+      "sha256": "ef7f0cbc9b93828369b3d7b8cd6126f44db2184be67028338fea9843288bf0bf"
+    },
+    {
+      "bytes": 433,
+      "path": "research_round2/checks/lower/product_n9_verify.json",
+      "sha256": "2bc9c07a6258963cc447b559575e2f38a74dd1464e438f6426c2084e974bb0e3"
+    },
+    {
+      "bytes": 903,
+      "path": "research_round2/checks/lower/r10_invalid_breakout_n21_four_symbol_matrix.txt",
+      "sha256": "163e37c4da294d11c1248488045f124d9d2cfa47a879e6b983d4a61f9217b76f"
+    },
+    {
+      "bytes": 8748,
+      "path": "research_round2/checks/lower/sat_cube_search.py",
+      "sha256": "d39963b5d5f4c6656914452e8a4c054eb596a5c3523edbfc0838e6b377942fd1"
+    },
+    {
+      "bytes": 3221,
+      "path": "research_round2/checks/lower/verify_coloring.py",
+      "sha256": "b697544e8cd96405da5607dfc5a2988067397e081db168cb08e6a494137c27ec"
+    },
+    {
+      "bytes": 55,
+      "path": "research_round2/certificates/lower/cpsat_n5_matrix.txt",
+      "sha256": "0c4b1a1580aec410cdb8071332ccf879620d67269193eeecf17a2cf7783bd15f"
+    },
+    {
+      "bytes": 55,
+      "path": "research_round2/certificates/lower/cube_n5_regression_r_matrix.txt",
+      "sha256": "153b9e9e57c492cad47d12a90ac30d22e259330382fc4a16e9b9c6babb57303d"
+    },
+    {
+      "bytes": 171,
+      "path": "research_round2/certificates/lower/product_n9_matrix.txt",
+      "sha256": "8b1752afed464ba9af706809015da8df3af3093e9fafa349b367a2cb100fea99"
+    }
+  ],
+  "assertions": [
+    {
+      "detail": 204,
+      "label": "raw benchmark records R10 mismatch",
+      "pass": true
+    },
+    {
+      "detail": {
+        "canonical_matrix_sha256": "a2008d366873eb21df85479a63a4e6e5a0ed0a594200370ee623f8b08cb11f83",
+        "color_counts": {
+          "1": 130,
+          "2": 128,
+          "3": 142
+        },
+        "color_specific_forbidden_clauses": 7410,
+        "expected_geometric_triples_formula": "sum_{m=1}^{19} m^2 = 2470",
+        "first_violations": [],
+        "geometric_triples": 2470,
+        "input_transposed": true,
+        "n": 20,
+        "verified_corner_free": true,
+        "violations": 0
+      },
+      "label": "transposed benchmark verifies",
+      "pass": true
+    },
+    {
+      "detail": {
+        "counts": {
+          "cell_clauses": 1764,
+          "forbidden_color_clauses": 8610,
+          "geometric_triples": 2870,
+          "symmetry_clauses": 441,
+          "total_clauses": 10815,
+          "variables": 1323
+        },
+        "statuses": {
+          "SAT": 0,
+          "UNDECIDED": 48,
+          "UNSAT": 33
+        }
+      },
+      "label": "cube n=21",
+      "pass": true
+    },
+    {
+      "detail": {
+        "counts": {
+          "cell_clauses": 1936,
+          "forbidden_color_clauses": 9933,
+          "geometric_triples": 3311,
+          "symmetry_clauses": 484,
+          "total_clauses": 12353,
+          "variables": 1452
+        },
+        "statuses": {
+          "SAT": 0,
+          "UNDECIDED": 48,
+          "UNSAT": 33
+        }
+      },
+      "label": "cube n=22",
+      "pass": true
+    },
+    {
+      "detail": {
+        "counts": {
+          "cell_clauses": 2116,
+          "forbidden_color_clauses": 11385,
+          "geometric_triples": 3795,
+          "symmetry_clauses": 529,
+          "total_clauses": 14030,
+          "variables": 1587
+        },
+        "statuses": {
+          "SAT": 0,
+          "UNDECIDED": 48,
+          "UNSAT": 33
+        }
+      },
+      "label": "cube n=23",
+      "pass": true
+    },
+    {
+      "detail": {
+        "best_conflicts": 8,
+        "initial_conflicts": 9,
+        "moves": 359256,
+        "wall_seconds": 50.00007479998749
+      },
+      "label": "breakout n=21",
+      "pass": true
+    },
+    {
+      "detail": {
+        "best_conflicts": 18,
+        "initial_conflicts": 108,
+        "moves": 181931,
+        "wall_seconds": 25.000048200017773
+      },
+      "label": "breakout n=22",
+      "pass": true
+    },
+    {
+      "detail": {
+        "best_conflicts": 53,
+        "initial_conflicts": 148,
+        "moves": 175415,
+        "wall_seconds": 25.00000550004188
+      },
+      "label": "breakout n=23",
+      "pass": true
+    },
+    {
+      "detail": {
+        "raw": "UNKNOWN",
+        "wall": 30.006718600000003
+      },
+      "label": "CP-SAT n=21",
+      "pass": true
+    },
+    {
+      "detail": {
+        "raw": "UNKNOWN",
+        "wall": 20.0097229
+      },
+      "label": "CP-SAT n=22",
+      "pass": true
+    },
+    {
+      "detail": {
+        "raw": "UNKNOWN",
+        "wall": 20.027634300000003
+      },
+      "label": "CP-SAT n=23",
+      "pass": true
+    },
+    {
+      "detail": "UNKNOWN",
+      "label": "symmetry-free Hamming radius 12",
+      "pass": true
+    },
+    {
+      "detail": {
+        "canonical_matrix_sha256": "73d937e151139e2d6e5a1664f5484eb6001c4d50906b34cc6973b837e85836b0",
+        "color_counts": {
+          "1": 27,
+          "2": 27,
+          "3": 27
+        },
+        "color_specific_forbidden_clauses": 612,
+        "expected_geometric_triples_formula": "sum_{m=1}^{8} m^2 = 204",
+        "first_violations": [],
+        "geometric_triples": 204,
+        "input_transposed": false,
+        "n": 9,
+        "verified_corner_free": true,
+        "violations": 0
+      },
+      "label": "product certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "21": {
+          "expected_monochromatic_corners": "2870/9",
+          "expected_numerator_mod_9": 8,
+          "floor_expected": 318,
+          "geometric_triples": 2870,
+          "lower_bound_implication": null,
+          "n": 21,
+          "partial_domain_cells_retained": 123
+        },
+        "22": {
+          "expected_monochromatic_corners": "3311/9",
+          "expected_numerator_mod_9": 8,
+          "floor_expected": 367,
+          "geometric_triples": 3311,
+          "lower_bound_implication": null,
+          "n": 22,
+          "partial_domain_cells_retained": 117
+        },
+        "23": {
+          "expected_monochromatic_corners": "3795/9",
+          "expected_numerator_mod_9": 6,
+          "floor_expected": 421,
+          "geometric_triples": 3795,
+          "lower_bound_implication": null,
+          "n": 23,
+          "partial_domain_cells_retained": 108
+        }
+      },
+      "label": "alteration exact values",
+      "pass": true
+    },
+    {
+      "detail": [
+        "breakout_n21_matrix.txt",
+        "breakout_n21_corrected_matrix.txt",
+        "breakout_n22_matrix.txt",
+        "breakout_n23_matrix.txt",
+        "cpsat_n21_matrix.txt",
+        "cpsat_n22_matrix.txt",
+        "cpsat_n23_matrix.txt",
+        "cpsat_n21_hamming12_nosym_matrix.txt"
+      ],
+      "label": "no claimed certificate at n=21..23",
+      "pass": true
+    },
+    {
+      "detail": {
+        "current_status": "REJECTED_INVALID_COLOR_DOMAIN",
+        "symbols": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "label": "R10 invalid candidate preserved and explicitly rejected",
+      "pass": true
+    }
+  ],
+  "non_claims": [
+    "Artifact integrity is not an independent mathematical proof"
+  ],
+  "schema": "round2_lower_artifact_audit_v1",
+  "status": "PASS"
+}

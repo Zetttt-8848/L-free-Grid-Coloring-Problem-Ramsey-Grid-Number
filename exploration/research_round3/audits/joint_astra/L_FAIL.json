@@ -1,0 +1,11 @@
+{
+  "status": "HALTED",
+  "error": "AssertionError('independent CNF reconstruction')",
+  "input_sha256": {
+    "lower/ENCODING.md": "db88b456eb869fd8d77829ecec131a1a4201f21b4cf8b74e03dc06b8516664c8",
+    "lower/AFFINE_CONSTRUCTIONS.md": "3e04c410ec445d3bfeff16c570363135d1a37cc26ec580b8eaac01b645031e00",
+    "lower/SUBTASK_REPORT.md": "0899a07537f900ae9f6611aa90f4139fa5adb294afd91c19a7a763779242008b",
+    "lower/MAPLECM_DISPOSITION.md": "932215a414df9e58da9aa60bd123f0599d79fdeeebb4872fc34f64454a787788",
+    "lower/n21_exact.cnf": "49a989044d4255e7aba75a0b45256a7b480172b8f121545eeaf350164177f8e5"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "verdict": "PASS",
+  "scope": "The two-color completion triangle of the literal mark set is impossible; color-pin is complete by color interchange",
+  "marks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13
+  ],
+  "mark_count": 10,
+  "cells": 45,
+  "corners": 79,
+  "base_clauses": 159,
+  "rup_additions_checked": 427,
+  "six_APs_in_pattern": [],
+  "sha256": {
+    "triangle_core_v2.json": "e7e56a19439f73613de832eedb57be546eed0033455b871d8bd3faaf0e2a7d30",
+    "triangle_core_v2.cnf": "e96cef21a6d8bd726f9739c2e73c7b765d3c66b3b2d1ef021e47abca5235cfda",
+    "triangle_core_v2.rup": "864e70a6527f29b998917ecedf777eae5cb447c2b420012e1e836f0a8c014456"
+  }
+}

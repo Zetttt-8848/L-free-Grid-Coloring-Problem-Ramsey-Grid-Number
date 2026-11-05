@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "cases": 26104,
+  "sum_overlap": 3491,
+  "saturation": {
+    "M": 2,
+    "O": 1,
+    "union": 1,
+    "output": [
+      21,
+      1
+    ],
+    "region_points": 21,
+    "region_corners": 21,
+    "completion_closed": true,
+    "monochromatic_corners": 0
+  },
+  "scope": "Sharpness holds in the literal completion-closed region; no full-grid coloring conclusion."
+}

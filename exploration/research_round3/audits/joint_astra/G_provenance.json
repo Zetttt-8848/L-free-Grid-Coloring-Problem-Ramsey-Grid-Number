@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5",
+  "input_sha256": {
+    "general/refined_constants_proof.md": "55d1856b571af4ca5aa9fe5f22e60364396e0959fc87eed6acc8bc176db268b7",
+    "general/refined_minus_one.md": "907d3d62d9807cd513e7ce1f62c64028ccf812b2bfabad0e17209142a4fcc858",
+    "general/square_root_barrier.md": "d73893e82624bac8ec601270fc1d5d2f24a9a606fc57ea7eba098295a710a9d8",
+    "general/minus_one_exact.json": "be2a4cf5a03987814b1f135eba83608af09b57ab3236e792013a2e2e4d943444",
+    "general/scalar_reproduction.json": "ad6d3bdd42267c8c94ef9a36d9a4245ab528643cc1baab0e64eda47fabbcfa60",
+    "general/exact_candidate.json": "b7938a07311add408bf991bb8154e82c041bd653165c6f5c8cf29992b2653ae3"
+  },
+  "script_sha256": "ba380a39f670576c068423dc257be5280db201a926a6dbff043f1409f7bcb044",
+  "independence": "No project module imported or executed."
+}

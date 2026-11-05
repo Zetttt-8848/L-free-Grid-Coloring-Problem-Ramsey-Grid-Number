@@ -1,0 +1,13 @@
+{
+  "honesty_label": "PROVED exact single-profile score",
+  "n": 22007051,
+  "t": 36000,
+  "profile": "w_i=i(36001-i), 1<=i<=36000",
+  "a0": 2015819151552432004800,
+  "doubled_margin": 10724649678704403968768814912,
+  "normalized_margin_numerator": 55857550409918770670670911,
+  "normalized_margin_denominator": 10499058081002250025,
+  "positive": true,
+  "correlation_sha256": "c98c8ec699fa87351b874d6adef57bd1d1249279d79696d7988c46d1f8b4dd13",
+  "scope_limit": "One profile at one n; no relaxation optimum claim."
+}

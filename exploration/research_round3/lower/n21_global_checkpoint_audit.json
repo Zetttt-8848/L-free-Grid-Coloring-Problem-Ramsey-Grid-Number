@@ -1,0 +1,23 @@
+{
+  "audit_pass": true,
+  "certified_unit_unsat_cubes": 33,
+  "easy_certified_orders": 33,
+  "easy_hard_disjoint": true,
+  "easy_hard_union_is_all_81": true,
+  "easy_order_set_exact_match": true,
+  "hard_merge_audit_pass": true,
+  "hard_order_set_exact_match": true,
+  "hard_record_orders": 48,
+  "input_hashes": {
+    "research_round3\\lower\\n21_cubes.json": "48a87ce5b30304c16088297eacdfa3cda6c4d7867a78807db6c9f34e6ea4cb0a",
+    "research_round3\\lower\\n21_quick_cube_rup_audit.json": "33c89ffb62458f4d386b0014f74ba915df8c6b4bb9f393aa1f9641ce6dfe704f",
+    "research_round3\\lower\\n21_stage1_maplechrono.json": "4c86483efec20e6794501678adfcb273913fbae0e45bdab3aff0e21c612545b0",
+    "research_round3\\lower\\n21_stage2_portfolio_merged.json": "9feba3f3fbf574c32ff1bd73b7513338e8229d3c00a2e963a3d3884dc3acea03"
+  },
+  "mathematical_status": "UNDECIDED",
+  "reason": "48 disjoint cubes remain interrupted; no SAT witness and no certified UNSAT result covers them",
+  "sat_witnesses": 0,
+  "schema": "round3_lower_global_checkpoint_audit_v1",
+  "stage1_all_81_exact_manifest_match": true,
+  "unresolved_hard_cubes": 48
+}

@@ -1,0 +1,56 @@
+{
+  "assignment": [
+    "J",
+    "F"
+  ],
+  "commands": [
+    "LOCAL_RESEARCH_ROOT\\anaconda3\\python.exe research_round3\\audits\\lower_sol\\selftest.py",
+    "LOCAL_RESEARCH_ROOT\\anaconda3\\python.exe research_round3\\audits\\lower_sol\\audit_joint.py",
+    "LOCAL_RESEARCH_ROOT\\anaconda3\\python.exe research_round3\\audits\\lower_sol\\audit_four.py"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "principal_input_sha256": {
+    "four\\R3_R4_OBJECTIVE.md": "7baffb2a66d58d5c99cc03cc2a1f681951e0448856d70d5a2ae7772364a6c46a",
+    "four\\R3_R4_REPORT.md": "4918a38080cee06fd1cbbbeefae23f9cf739a33f8950e0b303a9c4023373a461",
+    "four\\r4_profile_endpoint_21991300.json": "7adbd5d660f735997213fbbef6c6d214e3b802cec4611259de600e7e42bd9562",
+    "joint\\PARAMETRIC_MODEL.md": "4e55241f648803ffc4573d1daad3e532f55de4484ab4ce263149499d880c4fa5",
+    "joint\\REPORT.md": "1e83e19152716b7dc8a36fbed860b1691d9cafd7ce271ada9959b0d4284cad16",
+    "joint\\patterns_window13.json": "294bedbe795550864e119d81c181179d47a650c34ef6d49003e0b049201bacbb",
+    "joint\\property.md": "a94f5a6f753ea47abae0c280f6c680365fcdacfee9b5e1c6898bc556938b337a",
+    "joint\\triangle_core.cnf": "2efa535a96583da4a4f57ba913dfb4c38f0c18285245c72d7a017e9a0b46e47d",
+    "joint\\triangle_core.json": "5c1320ca6f675dbeb25c22b9af00374c1fa7539c2da55fac44031eb0c09c26ac",
+    "joint\\triangle_core.rup": "5af3ae872fbc257eae79b54ac16d0da16e9af67951314f9b0c066cb77bfde636",
+    "joint\\triangle_core_v2.cnf": "e96cef21a6d8bd726f9739c2e73c7b765d3c66b3b2d1ef021e47abca5235cfda",
+    "joint\\triangle_core_v2.json": "e7e56a19439f73613de832eedb57be546eed0033455b871d8bd3faaf0e2a7d30",
+    "joint\\triangle_core_v2.rup": "864e70a6527f29b998917ecedf777eae5cb447c2b420012e1e836f0a8c014456",
+    "joint\\triangle_core_v3.cnf": "b83bf85ce661d9b3c7fad69a264ec64eff9cc8dca60a879664ac84019a3aa05f",
+    "joint\\triangle_core_v3.json": "4c7b14eaba3356cfaf43a8aa6e8fa22801469181b4fd5114c4801397d2ad6918",
+    "joint\\triangle_core_v3.rup": "1b19231cb9de7b0c2f478fc43947bfc04a97ff2ac3c05846cec0bce973cd7900",
+    "joint\\triangle_core_v4.cnf": "484e661ada1d358040626a97dceda6fa967ec340e5e0bca704c99e6d8afabbba",
+    "joint\\triangle_core_v4.json": "504681ad5ad514e97ca8bda159ba6e0634b08fac53a0c27274d1405aa33eca03",
+    "joint\\triangle_core_v4.rup": "850cd92b6efc566904652ae5bf0c4ca53c9b1636eeeced0254c6bbb1b813a7ba",
+    "joint\\window13.json": "c31b0260e0a02026f29abaa6cf47cef813db8a1ef6937dcae6f4f326637a5fae",
+    "joint\\witness_464.json": "68b49802651fea2c1e0a2b9c2086a581db62abff400c6a4fd736b5531ca36132",
+    "joint\\witness_464_parametric.json": "3293f51d27140145b41dbde4100e8cd518c658249d884c28c808b446676a3c63",
+    "joint\\witness_464_window_ap5.json": "2090175fb09d5c341ddf2bc8545833b36f3f9aec160124498fd7e862c8a4d727"
+  },
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "review_file_sha256": {
+    "audits\\lower_sol\\REPORT.md": "f6d7cd062dfc98021fe6d51c43719a45bc515d14698de7e3b44fcfa8a19f29dd",
+    "audits\\lower_sol\\audit_four.py": "a67ec02966d60eec5184cbf7c51ee640a5e83a90878547dc48dceb95c52bc379",
+    "audits\\lower_sol\\audit_joint.py": "c0a0df5aa09ea2d3246b7f8e3e6175256aec34b74cc9111be462c9335219edc3",
+    "audits\\lower_sol\\four_audit.json": "7165386e93f429129978b9a8d302878a5a253365d2acadacccd7fa92f77d9ee5",
+    "audits\\lower_sol\\joint_audit.json": "c1a28e8455f6fc0e40558864926e6cb185097dffd318103485714a9dc2b14cfd",
+    "audits\\lower_sol\\make_manifest.py": "233c0af51cf4adc837eb28ee7739379766e17961d5bce778c5661b107eee2324",
+    "audits\\lower_sol\\selftest.py": "d610bee93f1c3935e9bdb04851e3c98be373db11eac912762a146a28206f3d94"
+  },
+  "reviewer": "lower_sol",
+  "verdicts": {
+    "F": "PASS",
+    "J": "PASS"
+  },
+  "window13_external_files": {
+    "count": 218,
+    "tree_sha256": "d9620e8f8fedc5ebad5390245ea4787304bcb9c4861f945676c8b4218ad54e27"
+  }
+}
