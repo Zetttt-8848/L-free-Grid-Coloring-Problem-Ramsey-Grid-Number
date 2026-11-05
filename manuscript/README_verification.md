@@ -8,7 +8,7 @@ SAT solver, or third-party Python package is required. Use Python 3.10 or newer.
 Run from the directory containing the delivered files:
 
 ```bash
-python verify_directed_L_manuscript.py --source Energy_and_forcing_semifinal_revised.tex --bib references.bib --output verification_results.json
+python verify_directed_L_manuscript.py --source main.tex --bib references.bib --output verification_results.json
 ```
 
 The source may also be supplied positionally. The `--bib` option is optional;

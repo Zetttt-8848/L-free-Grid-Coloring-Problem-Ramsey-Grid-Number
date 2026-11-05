@@ -3,7 +3,7 @@ import argparse, hashlib, itertools, json, re
 from pathlib import Path
 
 parser=argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--source',type=Path,default=Path('Energy_and_forcing_semifinal_revised.tex'))
+parser.add_argument('--source',type=Path,default=Path(__file__).with_name('main.tex'))
 parser.add_argument('--output',type=Path,default=Path('energy_example_checks.json'))
 args=parser.parse_args()
 source=args.source
