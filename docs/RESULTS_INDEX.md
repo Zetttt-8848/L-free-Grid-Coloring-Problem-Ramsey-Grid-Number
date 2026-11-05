@@ -48,7 +48,7 @@
 | lemma | Three-color line identity | [lem:variance](../manuscript/main.tex#L2198) |
 | lemma | Weighted embedding implication | [lem:weighted](../manuscript/main.tex#L2238) |
 | proposition | Refutation of the two local rainbow bounds | [prop:local-rainbows](../manuscript/main.tex#L2258) |
-| proposition | Refutation of $\F_{13}(17)$ | [prop:t13](../manuscript/main.tex#L2268) |
+| proposition | Refutation of $`\mathsf{F}_{13}(17)`$ | [prop:t13](../manuscript/main.tex#L2268) |
 | proposition | Integer weight certificates | [prop:weights](../manuscript/main.tex#L2407) |
 | proposition | Arithmetic of a rejected numerical route | [thm:weighted](../manuscript/main.tex#L2446) |
 | lemma | First-coordinate reflection | [lem:H](../manuscript/main.tex#L2560) |

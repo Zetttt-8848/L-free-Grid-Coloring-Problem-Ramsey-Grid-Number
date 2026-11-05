@@ -2,8 +2,10 @@
   ".gitignore": "653a6c0a90102af3c9dfc3ea2794c873599f7c2fd490e5b0fe93c1fe99603ab8",
   "docs/CONTRIBUTING.md": "141046a0f1c16b11158ddc48ab22dedf8a5d82d512784f14a0d6916118a186b2",
   "docs/IMPORT_SCOPE.md": "670a13774b7a6f2205c657d34cb9b34df1dc9329d8592971858286a8b3eebf02",
-  "docs/OPEN_PROBLEMS.md": "63ee4d32e2eb8f677b7153d367b8b1edf23c016becd3c89ceccd0394ab9b4aa1",
-  "docs/RESULTS_INDEX.md": "a7dfc517fbe768422579575b1804a0a672145d8e01906cc1f3535bb63d160f08",
+  "docs/MATH_RENDERING.md": "defcd6010513874fe80e57f81d0f45fda1030fac45e157c791178373f22043d3",
+  "docs/OPEN_PROBLEMS.md": "95a3d6d03625a2208cffd00f027e805a898749cdb56dffc86091703ab246dfd6",
+  "docs/RESULTS_INDEX.md": "8f1e4d9d80f14abd2d41c723455749fd00315c8dcc64c2d3a4009c5a87947f0d",
+  "docs/ROADMAP.md": "954eff5582c5cda3ccdba9b7e8bbda29412537b274e671dcbef249f5b9b13589",
   "exploration/README.md": "bb0a40caaf5ec317add64fe4cd9e2754487413049b6d390cadc67e7f11c6ab77",
   "exploration/research_20260909/checks/cross_diagonal_contract.json": "4973815569de4dd3c969f8e442c02ebcbffa00aa9ed6f68d428537f0721b2ff6",
   "exploration/research_20260909/checks/cross_diagonal_run001/manifest.json": "ffa7965314b412e4313eb89c3d52be9df6545d751eea67607e785887c6d3fcc3",
@@ -1053,6 +1055,8 @@
   "formal/WeightedEmbeddingCounts.lean": "c04681b8879f84a16165c1b743ce25e362bea43fe247024ac475866cd10de4b2",
   "formal/WeightedEmbeddingGeometry.lean": "be7ede38302a6f027cab214d11b56f893e3f1b7bb149d2fe69256212c2508a19",
   "formal/WeightTwoFamily.lean": "ed621a85c3d7c335c4703001e7613f40bc599a00aa2b604865b7e56064788f58",
+  "literature/KNOWN_RESULTS.md": "07aaf2b23cb53967ddaa2836a0d581cf0eb14eb0f0209dff07f108cc1c418c08",
+  "literature/references.bib": "a7c073bb6a4b126c3cf13cbe66d784036a6ed7b9c810b21b92943915c6554d6e",
   "manuscript/.latexmkrc": "ec10d35c0e36c089f9f15d008f8c5843304d193b2cdfdd91338c040d4e12ade6",
   "manuscript/check_energy_examples.py": "13e90515ff7249fdfb96315a971ff7cc33493daaac30634bf0568b299d715299",
   "manuscript/encode_rainbow_sat.py": "fef78da3c63b2cf2e0ab34c32df1c970cd42fbbb02f4fa8971028a51be2271f3",
@@ -1075,5 +1079,5 @@
   "manuscript/SAT_USAGE.md": "908b47d55ce616958db39acba0d1421395fc62615ce01c607bbb1a8b39cc4333",
   "manuscript/verification_results.json": "51f690243aeb0ab4456a030af79db85f69261c5423598b02288c56aedc934af6",
   "manuscript/verify_directed_L_manuscript.py": "2c3a01fa06babb4dc52c94350ea44e9de3a750f54734c9b1e5fadc47abe27e07",
-  "README.md": "5b022ea5fd3a515e2d57caeee57ccf9a502faeecda018cf26dc15470947dc2f5"
+  "README.md": "25f2acb5bc2d754dcab121641b651801927900b5a9bece84a0e3ccccbf6bcc76"
 }
