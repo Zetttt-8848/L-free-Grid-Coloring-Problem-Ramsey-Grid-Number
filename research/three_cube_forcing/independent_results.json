@@ -1,0 +1,18 @@
+{
+  "scope": "All proper binary colorings of the fixed source; no symmetry quotient",
+  "marks": [0, 1, 5, 6, 25, 26, 30, 31],
+  "state_encoding": "Bit i is the color of cells[i]; cells ordered by v then u",
+  "cells": [[1, 0], [5, 0], [5, 1], [6, 0], [6, 1], [6, 5], [25, 0], [25, 1], [25, 5], [25, 6], [26, 0], [26, 1], [26, 5], [26, 6], [26, 25], [30, 0], [30, 1], [30, 5], [30, 6], [30, 25], [30, 26], [31, 0], [31, 1], [31, 5], [31, 6], [31, 25], [31, 26], [31, 30]],
+  "cell_count": 28,
+  "corner_count": 24,
+  "fiber_count": 13,
+  "proper_coloring_count": 258228,
+  "minimum_phi": 4,
+  "maximum_phi": 40,
+  "phi_histogram": {"4": 16640, "8": 53760, "12": 74944, "16": 60672, "20": 32880, "24": 13280, "28": 4436, "32": 1296, "36": 288, "40": 32},
+  "no_strictly_decreasing_legal_single_flip_histogram": {"4": 16640},
+  "nonoptimal_states_without_decreasing_flip": 0,
+  "state_sum": 34658775336870,
+  "state_xor": 0,
+  "checksum_scope": "Sum and xor are auxiliary comparisons, not cryptographic hashes"
+}
