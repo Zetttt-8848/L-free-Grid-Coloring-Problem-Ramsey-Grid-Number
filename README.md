@@ -38,6 +38,8 @@ $`R_k(\mathcal L)`$ 是使每个 $`k`$ 色 $`[n]^2`$ 着色都有单色 L 的最
 
 详细分期、上下界两条路线及验收标准见 [研究路线图](docs/ROADMAP.md)。
 
+新研究记录：[三维立方体源的最少强迫边与九步平衡](research/three_cube_forcing/README.md)。给出正的 2-dissociated 三维源族内的完整证明、独立枚举和最多九次合法单格改色的规则；尚不推出一般源界或新的 Ramsey 数值界。
+
 ## 学界成果与项目成果分开查阅
 
 - [学界已有成果与原始出处](literature/KNOWN_RESULTS.md)：两色精确值、三色已知界、密度定理和相关输入。

@@ -1,0 +1,1109 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-11-06T02:21:37.808267+00:00",
+  "python": "3.14.0",
+  "verifier_sha256": "a7bf681e5375d30664feb3ff58b47b54e09a7fb9038dd93f171868488a7041b2",
+  "marks": [
+    0,
+    1,
+    5,
+    6,
+    25,
+    26,
+    30,
+    31
+  ],
+  "cells": [
+    [
+      1,
+      0
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      25,
+      5
+    ],
+    [
+      25,
+      6
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      26,
+      5
+    ],
+    [
+      26,
+      6
+    ],
+    [
+      26,
+      25
+    ],
+    [
+      30,
+      0
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      30,
+      6
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      30,
+      26
+    ],
+    [
+      31,
+      0
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      31,
+      5
+    ],
+    [
+      31,
+      6
+    ],
+    [
+      31,
+      25
+    ],
+    [
+      31,
+      26
+    ],
+    [
+      31,
+      30
+    ]
+  ],
+  "corners": [
+    [
+      0,
+      3,
+      5
+    ],
+    [
+      0,
+      10,
+      14
+    ],
+    [
+      0,
+      21,
+      27
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      15,
+      19
+    ],
+    [
+      1,
+      21,
+      26
+    ],
+    [
+      2,
+      16,
+      20
+    ],
+    [
+      3,
+      21,
+      25
+    ],
+    [
+      4,
+      16,
+      19
+    ],
+    [
+      4,
+      22,
+      26
+    ],
+    [
+      5,
+      12,
+      14
+    ],
+    [
+      5,
+      23,
+      27
+    ],
+    [
+      6,
+      10,
+      11
+    ],
+    [
+      6,
+      15,
+      17
+    ],
+    [
+      6,
+      21,
+      24
+    ],
+    [
+      7,
+      16,
+      18
+    ],
+    [
+      8,
+      12,
+      13
+    ],
+    [
+      10,
+      21,
+      23
+    ],
+    [
+      11,
+      16,
+      17
+    ],
+    [
+      11,
+      22,
+      24
+    ],
+    [
+      14,
+      25,
+      27
+    ],
+    [
+      15,
+      21,
+      22
+    ],
+    [
+      17,
+      23,
+      24
+    ],
+    [
+      19,
+      25,
+      26
+    ]
+  ],
+  "M": 28,
+  "T": 24,
+  "optimal_symbolic_coloring": {
+    "word": 50227248,
+    "rows": [
+      "0",
+      "00",
+      "011",
+      "0000",
+      "01011",
+      "001111",
+      "1110100"
+    ],
+    "colors": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "phi": 4,
+    "forcing_corners": 6,
+    "mixed_corners": 18,
+    "forcing_edges": 12,
+    "fiber_details": [
+      {
+        "offset": 1,
+        "indices": [
+          0,
+          5,
+          14,
+          27
+        ],
+        "size": 4,
+        "ones": 2,
+        "signed_sum": 0
+      },
+      {
+        "offset": 4,
+        "indices": [
+          2,
+          20
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 5,
+        "indices": [
+          1,
+          4,
+          19,
+          26
+        ],
+        "size": 4,
+        "ones": 2,
+        "signed_sum": 0
+      },
+      {
+        "offset": 6,
+        "indices": [
+          3,
+          25
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 19,
+        "indices": [
+          9
+        ],
+        "size": 1,
+        "ones": 0,
+        "signed_sum": 1
+      },
+      {
+        "offset": 20,
+        "indices": [
+          8,
+          13
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 21,
+        "indices": [
+          12
+        ],
+        "size": 1,
+        "ones": 0,
+        "signed_sum": 1
+      },
+      {
+        "offset": 24,
+        "indices": [
+          7,
+          18
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 25,
+        "indices": [
+          6,
+          11,
+          17,
+          24
+        ],
+        "size": 4,
+        "ones": 2,
+        "signed_sum": 0
+      },
+      {
+        "offset": 26,
+        "indices": [
+          10,
+          23
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 29,
+        "indices": [
+          16
+        ],
+        "size": 1,
+        "ones": 0,
+        "signed_sum": 1
+      },
+      {
+        "offset": 30,
+        "indices": [
+          15,
+          22
+        ],
+        "size": 2,
+        "ones": 1,
+        "signed_sum": 0
+      },
+      {
+        "offset": 31,
+        "indices": [
+          21
+        ],
+        "size": 1,
+        "ones": 1,
+        "signed_sum": -1
+      }
+    ],
+    "forcing_corner_indices": [
+      [
+        0,
+        21,
+        27
+      ],
+      [
+        1,
+        21,
+        26
+      ],
+      [
+        4,
+        16,
+        19
+      ],
+      [
+        5,
+        12,
+        14
+      ],
+      [
+        6,
+        21,
+        24
+      ],
+      [
+        11,
+        16,
+        17
+      ]
+    ]
+  },
+  "manuscript_coloring": {
+    "word": 46241355,
+    "rows": [
+      "1",
+      "10",
+      "100",
+      "1001",
+      "10100",
+      "110000",
+      "0110100"
+    ],
+    "colors": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "phi": 40,
+    "forcing_corners": 15,
+    "mixed_corners": 9,
+    "forcing_edges": 30,
+    "fiber_details": [
+      {
+        "offset": 1,
+        "indices": [
+          0,
+          5,
+          14,
+          27
+        ],
+        "size": 4,
+        "ones": 1,
+        "signed_sum": 2
+      },
+      {
+        "offset": 4,
+        "indices": [
+          2,
+          20
+        ],
+        "size": 2,
+        "ones": 0,
+        "signed_sum": 2
+      },
+      {
+        "offset": 5,
+        "indices": [
+          1,
+          4,
+          19,
+          26
+        ],
+        "size": 4,
+        "ones": 1,
+        "signed_sum": 2
+      },
+      {
+        "offset": 6,
+        "indices": [
+          3,
+          25
+        ],
+        "size": 2,
+        "ones": 2,
+        "signed_sum": -2
+      },
+      {
+        "offset": 19,
+        "indices": [
+          9
+        ],
+        "size": 1,
+        "ones": 1,
+        "signed_sum": -1
+      },
+      {
+        "offset": 20,
+        "indices": [
+          8,
+          13
+        ],
+        "size": 2,
+        "ones": 0,
+        "signed_sum": 2
+      },
+      {
+        "offset": 21,
+        "indices": [
+          12
+        ],
+        "size": 1,
+        "ones": 1,
+        "signed_sum": -1
+      },
+      {
+        "offset": 24,
+        "indices": [
+          7,
+          18
+        ],
+        "size": 2,
+        "ones": 0,
+        "signed_sum": 2
+      },
+      {
+        "offset": 25,
+        "indices": [
+          6,
+          11,
+          17,
+          24
+        ],
+        "size": 4,
+        "ones": 1,
+        "signed_sum": 2
+      },
+      {
+        "offset": 26,
+        "indices": [
+          10,
+          23
+        ],
+        "size": 2,
+        "ones": 2,
+        "signed_sum": -2
+      },
+      {
+        "offset": 29,
+        "indices": [
+          16
+        ],
+        "size": 1,
+        "ones": 1,
+        "signed_sum": -1
+      },
+      {
+        "offset": 30,
+        "indices": [
+          15,
+          22
+        ],
+        "size": 2,
+        "ones": 2,
+        "signed_sum": -2
+      },
+      {
+        "offset": 31,
+        "indices": [
+          21
+        ],
+        "size": 1,
+        "ones": 0,
+        "signed_sum": 1
+      }
+    ],
+    "forcing_corner_indices": [
+      [
+        2,
+        16,
+        20
+      ],
+      [
+        3,
+        21,
+        25
+      ],
+      [
+        4,
+        16,
+        19
+      ],
+      [
+        4,
+        22,
+        26
+      ],
+      [
+        5,
+        12,
+        14
+      ],
+      [
+        5,
+        23,
+        27
+      ],
+      [
+        7,
+        16,
+        18
+      ],
+      [
+        8,
+        12,
+        13
+      ],
+      [
+        10,
+        21,
+        23
+      ],
+      [
+        11,
+        16,
+        17
+      ],
+      [
+        11,
+        22,
+        24
+      ],
+      [
+        14,
+        25,
+        27
+      ],
+      [
+        15,
+        21,
+        22
+      ],
+      [
+        17,
+        23,
+        24
+      ],
+      [
+        19,
+        25,
+        26
+      ]
+    ]
+  },
+  "enumeration": {
+    "proper_colorings": 258228,
+    "phi_histogram": {
+      "4": 16640,
+      "8": 53760,
+      "12": 74944,
+      "16": 60672,
+      "20": 32880,
+      "24": 13280,
+      "28": 4436,
+      "32": 1296,
+      "36": 288,
+      "40": 32
+    },
+    "single_flip_local_minimum_histogram": {
+      "4": 16640
+    },
+    "improving_directed_move_delta_histogram": {
+      "-4": 1218456
+    },
+    "visited_partial_assignments": 1890055,
+    "rejected_branches": 1373600,
+    "proper_word_sum": 34658775336870,
+    "proper_word_xor": 0
+  },
+  "greedy_descent_from_manuscript": [
+    {
+      "word": 46241355,
+      "phi": 40,
+      "rows": [
+        "1",
+        "10",
+        "100",
+        "1001",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 30,
+      "next_flip_index": 2,
+      "next_flip_cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "word": 46241359,
+      "phi": 36,
+      "rows": [
+        "1",
+        "11",
+        "100",
+        "1001",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 28,
+      "next_flip_index": 3,
+      "next_flip_cell": [
+        6,
+        0
+      ]
+    },
+    {
+      "word": 46241351,
+      "phi": 32,
+      "rows": [
+        "1",
+        "11",
+        "000",
+        "1001",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 26,
+      "next_flip_index": 4,
+      "next_flip_cell": [
+        6,
+        1
+      ]
+    },
+    {
+      "word": 46241367,
+      "phi": 28,
+      "rows": [
+        "1",
+        "11",
+        "010",
+        "1001",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 24,
+      "next_flip_index": 5,
+      "next_flip_cell": [
+        6,
+        5
+      ]
+    },
+    {
+      "word": 46241399,
+      "phi": 24,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1001",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 22,
+      "next_flip_index": 7,
+      "next_flip_cell": [
+        25,
+        1
+      ]
+    },
+    {
+      "word": 46241527,
+      "phi": 20,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1101",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 20,
+      "next_flip_index": 8,
+      "next_flip_cell": [
+        25,
+        5
+      ]
+    },
+    {
+      "word": 46241783,
+      "phi": 16,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1111",
+        "10100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 18,
+      "next_flip_index": 10,
+      "next_flip_cell": [
+        26,
+        0
+      ]
+    },
+    {
+      "word": 46240759,
+      "phi": 12,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1111",
+        "00100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 16,
+      "next_flip_index": 11,
+      "next_flip_cell": [
+        26,
+        1
+      ]
+    },
+    {
+      "word": 46242807,
+      "phi": 8,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1111",
+        "01100",
+        "110000",
+        "0110100"
+      ],
+      "forcing_edges": 14,
+      "next_flip_index": 15,
+      "next_flip_cell": [
+        30,
+        0
+      ]
+    },
+    {
+      "word": 46210039,
+      "phi": 4,
+      "rows": [
+        "1",
+        "11",
+        "011",
+        "1111",
+        "01100",
+        "010000",
+        "0110100"
+      ],
+      "forcing_edges": 12,
+      "next_flip_index": null,
+      "next_flip_cell": null
+    }
+  ],
+  "blocked_improving_flips_at_manuscript": [
+    {
+      "cell": [
+        6,
+        1
+      ],
+      "index": 4,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          1,
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "cell": [
+        6,
+        5
+      ],
+      "index": 5,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          0,
+          3,
+          5
+        ]
+      ]
+    },
+    {
+      "cell": [
+        26,
+        1
+      ],
+      "index": 11,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          6,
+          10,
+          11
+        ]
+      ]
+    },
+    {
+      "cell": [
+        26,
+        25
+      ],
+      "index": 14,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          0,
+          10,
+          14
+        ]
+      ]
+    },
+    {
+      "cell": [
+        30,
+        5
+      ],
+      "index": 17,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          6,
+          15,
+          17
+        ]
+      ]
+    },
+    {
+      "cell": [
+        30,
+        25
+      ],
+      "index": 19,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          1,
+          15,
+          19
+        ]
+      ]
+    },
+    {
+      "cell": [
+        31,
+        1
+      ],
+      "index": 22,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          4,
+          22,
+          26
+        ],
+        [
+          11,
+          22,
+          24
+        ]
+      ]
+    },
+    {
+      "cell": [
+        31,
+        5
+      ],
+      "index": 23,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          5,
+          23,
+          27
+        ],
+        [
+          17,
+          23,
+          24
+        ]
+      ]
+    },
+    {
+      "cell": [
+        31,
+        25
+      ],
+      "index": 25,
+      "delta_phi": -4,
+      "monochromatic_corner_indices_after_flip": [
+        [
+          14,
+          25,
+          27
+        ],
+        [
+          19,
+          25,
+          26
+        ]
+      ]
+    }
+  ],
+  "weight_variants": {
+    "positive_weights_at_most": 15,
+    "ordered_triples_checked": 1146,
+    "condition": "2-dissociated",
+    "sorted_weight_constraint_systems_equal": true
+  },
+  "scope": "Exact representative enumeration; general optimum and transfer proved separately in README.md. No global source bound or Ramsey improvement.",
+  "independent_cross_check": {
+    "status": "PASS",
+    "fields": [
+      "count",
+      "histogram",
+      "local minima",
+      "word sum",
+      "word xor"
+    ],
+    "report_sha256": "a1dad9d95c1a3927cf3d1dbbfa5c466640ecf946be583df086eea8e9e3a58ccc",
+    "checker_sha256": "52f0850b9f5f1afbbd05fa47ce6c6cf51ffbcc4d569410f35fe85318ccad9048"
+  },
+  "elapsed_seconds": 2.149
+}
