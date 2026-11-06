@@ -1,0 +1,592 @@
+{
+  "status": "FINITE-CHECKED",
+  "scope": "This complete finite witness; no claim that arbitrary frozen boundaries admit a balanced extension",
+  "marks": [
+    0,
+    1,
+    2,
+    5,
+    6,
+    25,
+    26,
+    30,
+    31
+  ],
+  "Q": [
+    0,
+    1,
+    5,
+    6,
+    25,
+    26,
+    30,
+    31
+  ],
+  "cells": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      25,
+      5
+    ],
+    [
+      25,
+      6
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      26,
+      5
+    ],
+    [
+      26,
+      6
+    ],
+    [
+      26,
+      25
+    ],
+    [
+      30,
+      0
+    ],
+    [
+      30,
+      1
+    ],
+    [
+      30,
+      2
+    ],
+    [
+      30,
+      5
+    ],
+    [
+      30,
+      6
+    ],
+    [
+      30,
+      25
+    ],
+    [
+      30,
+      26
+    ],
+    [
+      31,
+      0
+    ],
+    [
+      31,
+      1
+    ],
+    [
+      31,
+      2
+    ],
+    [
+      31,
+      5
+    ],
+    [
+      31,
+      6
+    ],
+    [
+      31,
+      25
+    ],
+    [
+      31,
+      26
+    ],
+    [
+      31,
+      30
+    ]
+  ],
+  "state_encoding": "Bit i is the color of cells[i], ordered by v then u",
+  "counts": {
+    "source_cells": 36,
+    "source_corners": 33,
+    "cube_cells": 28,
+    "cube_corners": 24,
+    "trap_phi_Q": 8,
+    "balanced_phi_Q": 4,
+    "energy_decreasing_internal_flip_count": 3,
+    "internally_legal_decreasing_flip_count": 2,
+    "nonincreasing_internal_closure_size": 8,
+    "minimum_internal_hamming_distance_to_balance": 3,
+    "unlocked_legal_decreasing_flip_count": 2
+  },
+  "cube_fiber_parity_lower_bound": 4,
+  "trap": {
+    "word": 57163809602,
+    "rows": [
+      "0",
+      "10",
+      "000",
+      "1011",
+      "00000",
+      "101011",
+      "1001111",
+      "00101011"
+    ],
+    "phi_Q": 8
+  },
+  "fixed_boundary_colors": [
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      5,
+      2,
+      0
+    ],
+    [
+      6,
+      2,
+      1
+    ],
+    [
+      25,
+      2,
+      0
+    ],
+    [
+      26,
+      2,
+      1
+    ],
+    [
+      30,
+      2,
+      0
+    ],
+    [
+      31,
+      2,
+      1
+    ]
+  ],
+  "candidate_definition": "I_Q consists only of internal single-cell flips that strictly lower Phi_Q and preserve properness on V(Q)",
+  "energy_decreasing_internal_flips": [
+    {
+      "cell": [
+        6,
+        5
+      ],
+      "delta_phi_Q": -4,
+      "belongs_to_I_Q": true,
+      "internal_blocking_corners": [],
+      "boundary_blocking_corners": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "cell": [
+        26,
+        25
+      ],
+      "delta_phi_Q": -4,
+      "belongs_to_I_Q": true,
+      "internal_blocking_corners": [],
+      "boundary_blocking_corners": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            26,
+            1
+          ],
+          [
+            26,
+            25
+          ]
+        ]
+      ]
+    },
+    {
+      "cell": [
+        31,
+        30
+      ],
+      "delta_phi_Q": -4,
+      "belongs_to_I_Q": false,
+      "internal_blocking_corners": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            31,
+            0
+          ],
+          [
+            31,
+            30
+          ]
+        ]
+      ],
+      "boundary_blocking_corners": [
+        [
+          [
+            2,
+            1
+          ],
+          [
+            31,
+            1
+          ],
+          [
+            31,
+            30
+          ]
+        ]
+      ]
+    }
+  ],
+  "I_Q": [
+    [
+      6,
+      5
+    ],
+    [
+      26,
+      25
+    ]
+  ],
+  "all_I_Q_blocked_by_boundary": true,
+  "balanced_same_boundary": {
+    "word": 57146049346,
+    "rows": [
+      "0",
+      "10",
+      "000",
+      "1011",
+      "00000",
+      "111010",
+      "1000111",
+      "00101011"
+    ],
+    "phi_Q": 4
+  },
+  "nonincreasing_internal_closure": [
+    {
+      "word": 57163809602,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "101011",
+        "1001111",
+        "00101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57163825986,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00001",
+        "101011",
+        "1001111",
+        "00101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57168003906,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "101011",
+        "1101111",
+        "00101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57168020290,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00001",
+        "101011",
+        "1101111",
+        "00101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57432245058,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "101011",
+        "1001111",
+        "10101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57432261442,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00001",
+        "101011",
+        "1001111",
+        "10101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57436439362,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "101011",
+        "1101111",
+        "10101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "word": 57436455746,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00001",
+        "101011",
+        "1101111",
+        "10101011"
+      ],
+      "phi_Q": 8
+    }
+  ],
+  "nonincreasing_internal_path_to_balance": false,
+  "block_repair": [
+    {
+      "simultaneously_flipped_cells": [
+        [
+          26,
+          1
+        ],
+        [
+          30,
+          5
+        ]
+      ],
+      "word": 57147097922,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "111011",
+        "1000111",
+        "00101011"
+      ],
+      "phi_Q": 8
+    },
+    {
+      "simultaneously_flipped_cells": [
+        [
+          26,
+          25
+        ]
+      ],
+      "word": 57146049346,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1011",
+        "00000",
+        "111010",
+        "1000111",
+        "00101011"
+      ],
+      "phi_Q": 4
+    }
+  ],
+  "minimum_hamming_distance": {
+    "distance": 3,
+    "candidates_checked_by_distance": {
+      "1": 28,
+      "2": 378,
+      "3": 1266
+    },
+    "coverage": "Every smaller distance was exhausted; the first successful distance needs only the displayed witness",
+    "changed_cells": [
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        30,
+        25
+      ]
+    ],
+    "balanced_witness": {
+      "word": 57096700354,
+      "rows": [
+        "0",
+        "10",
+        "000",
+        "1110",
+        "00000",
+        "101011",
+        "1001101",
+        "00101011"
+      ],
+      "phi_Q": 4
+    }
+  },
+  "external_unlock": {
+    "flipped_cell": [
+      2,
+      1
+    ],
+    "new_color": 1,
+    "unlocked_legal_decreasing_flips": [
+      [
+        6,
+        5
+      ],
+      [
+        26,
+        25
+      ]
+    ],
+    "word": 57163809606,
+    "rows": [
+      "0",
+      "11",
+      "000",
+      "1011",
+      "00000",
+      "101011",
+      "1001111",
+      "00101011"
+    ],
+    "phi_Q": 8
+  },
+  "provenance": {
+    "python": "3.14.0",
+    "witness_sha256": "13c49a6f1a23814c316c21d1d6139b9d814004fa14bc6051a1261e36c801dcc4",
+    "verifier_sha256": "5a1560b2bd4f6cba609418df13a7c8a3ea6bfd122f14e620a7fed26915651dd5"
+  }
+}
