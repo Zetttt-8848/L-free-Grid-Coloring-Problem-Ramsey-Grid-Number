@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "Selected boundary only; all-boundary search is not rerun by this cross-check",
+  "boundary_word": 11,
+  "checks": {
+    "selected_group_proper_count": 1314,
+    "selected_group_balanced_count": 64,
+    "entire_initial_witness_matches": true,
+    "both_balanced_witnesses_valid_for_same_boundary": true,
+    "balanced_witnesses_identical": false,
+    "search_balanced_q_word": 218467630,
+    "verification_balanced_q_word": 221089068,
+    "all_listed_selected_group_colorings_are_proper": true,
+    "entire_monotone_two_cell_closure_matches": true,
+    "monotone_two_cell_closure_size": 72,
+    "unrestricted_two_cell_component_size": 750,
+    "cut_complement_size": 564,
+    "balanced_targets_on_component": 0,
+    "all_cross_cut_pairs_rechecked": 423000,
+    "minimum_cross_cut_hamming": 8,
+    "one_minimum_cross_cut_q_word_pair": [
+      91112876,
+      221089068
+    ],
+    "every_reported_unrestricted_radius_below_cut_matches_component": true
+  },
+  "coverage_note": "The selected state list contains exactly the number of distinct proper states reported independently by the C++ search. The 423000 cross-cut distances and both selected closures are recomputed here.",
+  "provenance": {
+    "timestamp_utc": "2026-11-06T03:16:38.627461+00:00",
+    "python": "3.14.0",
+    "sha256": {
+      "search.cpp": "17ac0a3636567326d43441418910969cb08c22d8cba19b8dbc6962b9026b17d9",
+      "search_results.json": "71a20f9baf63bf262ac040c0f35ace40998549641dfe9129fed9b965fb81f71f",
+      "verify.py": "033a96d9b7728f3d59eb149f5316398876df6fad3bf224d6fd827db423a5cfe7",
+      "verification_results.json": "f361dc126f87d7ccf4d44ede21943f292384d4ada311f3b7002cff5260d37d29",
+      "witness.json": "21ac9b57ca2647a7c6b8db600e14e98549e254211c337448659b35b658483189",
+      "discovered_witness.json": "dd4a3c11c411b8984471e3137dad1f4caa1021e824271e03983988f3424d21bb",
+      "crosscheck.py": "ad8f2e8298c62c7362f075123b75777a9436b260f807c0a3e5f5cac00d4f0478"
+    },
+    "python_report_embedded_hashes_verified": [
+      "witness_sha256",
+      "verifier_sha256"
+    ],
+    "search_report_has_embedded_source_hash": false,
+    "search_binding_note": "Hashes bind the current search source and stored search report as cross-checked artifacts. This invocation does not rebuild or rerun the C++ search.",
+    "compiler_probe_at_crosscheck_time": {
+      "command": [
+        "clang++",
+        "--version"
+      ],
+      "observed_version_lines": [
+        "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+        "Target: arm64-apple-darwin27.3.0",
+        "Thread model: posix"
+      ]
+    },
+    "compiler_probe_scope": "Identifies the currently available compiler, not a reconstruction of prior binary provenance.",
+    "search_reproduction_commands": [
+      "clang++ -O3 -std=c++17 -Wall -Wextra -pedantic search.cpp -o /tmp/cube_pair_search",
+      "/tmp/cube_pair_search --mark 2 --output search_results.json"
+    ]
+  }
+}
