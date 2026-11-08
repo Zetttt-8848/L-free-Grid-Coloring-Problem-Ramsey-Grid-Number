@@ -1,0 +1,83 @@
+[
+  {
+    "positions": 425,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 61696,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 426,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 61972,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 430,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 63076,
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 431,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 63352,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 435,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 64456,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 440,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 65836,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 450,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 68596,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 460,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 71356,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  },
+  {
+    "positions": 463,
+    "classes": 6,
+    "class_size": 24,
+    "variables": 72184,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "scope": "floating relaxation only; no theorem from feasibility/infeasibility"
+  }
+]

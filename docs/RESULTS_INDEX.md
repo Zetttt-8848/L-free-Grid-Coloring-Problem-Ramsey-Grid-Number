@@ -2,7 +2,16 @@
 
 本索引指向当前数学稿。Open assertion 是未解决的假设，External theorem 是文献输入。历史 Lean 覆盖记录不能代替当前稿的逐项对应。
 
-最新研究目录结果：[六类完成格共同计数](../research/kernel_compatibility_20261108/README.md)，尚未并入主稿。
+最新研究目录结果：[全局计数](../research/global_counting_20261108/README.md)，尚未并入主稿。区间仍为21至464。
+
+| 状态 | 结果 | 证明 |
+|---|---|---|
+| PROVED | 跨原始颜色源的六格请求冲突计数；给出任意延拓必有的单色L数量下估计 | [跨源计数](../research/global_counting_20261108/completion/COUNTING.md) |
+| PROVED | 所有大小层级的带颜色回归恒等式与双端匹配上限 | [全层级计数](../research/global_counting_20261108/multilayer/THEOREM.md) |
+| PROVED，使用外部OGR唯一性及跨度输入 | 极端形状跨度代价，将p=428至431的六类容量各减1；跨步长平移重叠预算 | [跨度及重叠计数](../research/global_counting_20261108/multiscale/THEOREM.md) |
+| UNDECIDED | 从上述全局计数推出比464更小的Ramsey上界 | [独立审阅与范围](../research/global_counting_20261108/review/REVIEW.md) |
+
+此前已证明的[六类完成格共同计数](../research/kernel_compatibility_20261108/README.md)：
 
 | 状态 | 结果 | 证明 |
 |---|---|---|

@@ -1,0 +1,289 @@
+{
+  "schema_version": 2,
+  "claim_id": "global_counting_checkpoint_exact_checks",
+  "repository": {
+    "commit": "5b5db22c3c65123193cb31f2aa5bd949b3075e1a",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research/global_counting_20261108/verify_release.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "CPython",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "AMD64; Windows-11-10.0.26300-SP0",
+    "note": "Observed interpreter version recorded; absolute host path omitted."
+  },
+  "mathematics": {
+    "assertion_tested": "Exact reconstruction of endpoint, source-conflict, rigidity and occurrence-budget claims in the stated finite audit domains.",
+    "coefficient_domain": "Z and Q, exact integers",
+    "conventions": "zero-based coordinates; positive directed equal-leg L; Golomb length is span",
+    "inputs": [
+      "all binary sources on subsets of0..5",
+      "all ternary words lengths1..8",
+      "explicit n10 partial coloring",
+      "published24-mark ruler",
+      "n463,464 integer weights"
+    ],
+    "bounds": {
+      "source_ambient_max": 6,
+      "word_length_max": 8,
+      "Golomb_capacity_audit_positions_max": 14,
+      "rigidity_positions_max": 480,
+      "main_finite_groups": 13
+    },
+    "non_claims": [
+      "No new Ramsey bound below464 is established.",
+      "Finite checks supplement the displayed universal proofs.",
+      "External OGR uniqueness and span searches were not replayed.",
+      "No new Lean compilation or formalization. Floating scouts are not proof inputs."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T12:01:12.257107+00:00",
+    "runtime_seconds": 6.179107099998873,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "note": "Each subprocess has a60second wall limit; no aggregate memory or CPU cap requested."
+  },
+  "outputs": [
+    {
+      "path": "research/global_counting_20261108/release_validation.json",
+      "sha256": "fd71b718628aeb71205c6a0b4192a249aab8cb5920698d3e0e97aeae0b85617c",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "All seven exact-check commands exit0",
+    "Before/after hashes of original inputs identical",
+    "Independent proof reviewer and independent physical-triple reconstructions pass"
+  ],
+  "result": "PASS within stated finite audit domains; mathematical research target remains open.",
+  "residual_risks": [
+    "No new Ramsey bound below464 is established.",
+    "Finite checks supplement the displayed universal proofs.",
+    "External OGR uniqueness and span searches were not replayed.",
+    "No new Lean compilation or formalization. Floating scouts are not proof inputs."
+  ],
+  "input_artifacts": [
+    {
+      "path": ".agents/skills/directed-l-grid-research/references/repository-map.md",
+      "sha256": "be7783993ccd97c6bfda2e998e2e5fb857a69acc93dc3a62a7a2c6164500204e",
+      "sha256_after": "be7783993ccd97c6bfda2e998e2e5fb857a69acc93dc3a62a7a2c6164500204e"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "3995ff6973ed4d87532f8fa09b8bfaf38a7a66ea7fb55b2be45dff7ee71acaa9",
+      "sha256_after": "3995ff6973ed4d87532f8fa09b8bfaf38a7a66ea7fb55b2be45dff7ee71acaa9"
+    },
+    {
+      "path": "docs/OPEN_PROBLEMS.md",
+      "sha256": "2b2b6a6a1308c30dd335cfa14c005d09e59547bc3efe23b25191e5c25d984bb3",
+      "sha256_after": "2b2b6a6a1308c30dd335cfa14c005d09e59547bc3efe23b25191e5c25d984bb3"
+    },
+    {
+      "path": "docs/RESULTS_INDEX.md",
+      "sha256": "3f45d294964d115953c9b29e660613fb7fb651292b5683493f1748058c4dcd9d",
+      "sha256_after": "3f45d294964d115953c9b29e660613fb7fb651292b5683493f1748058c4dcd9d"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "1e74bf90fa950d9a7df7a46f7612fc7eb826bc1b8410a6445dca77f9a52648cb",
+      "sha256_after": "1e74bf90fa950d9a7df7a46f7612fc7eb826bc1b8410a6445dca77f9a52648cb"
+    },
+    {
+      "path": "manuscript/main.tex",
+      "sha256": "449b28c63e3875dd046bca2d37849efca95959ced12360ddae6a5e8ef29d7523",
+      "sha256_after": "449b28c63e3875dd046bca2d37849efca95959ced12360ddae6a5e8ef29d7523"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "sha256": "34dddeaaedd480a963c7fcc325621e362b20789cf49bb09c846662fa8ba35233",
+      "sha256_after": "34dddeaaedd480a963c7fcc325621e362b20789cf49bb09c846662fa8ba35233"
+    },
+    {
+      "path": "manuscript/verify_directed_L_manuscript.py",
+      "sha256": "3ba8e2b2c05a8754cf43eb323c24413df653305dc3e696641342b983b7adac46",
+      "sha256_after": "3ba8e2b2c05a8754cf43eb323c24413df653305dc3e696641342b983b7adac46"
+    },
+    {
+      "path": "README.md",
+      "sha256": "289410394b2fd29b32486e601e9cd507bb671dc47e988675d9a98676c8fa8245",
+      "sha256_after": "289410394b2fd29b32486e601e9cd507bb671dc47e988675d9a98676c8fa8245"
+    },
+    {
+      "path": "research/global_counting_20261108/completion/CONTRACT.md",
+      "sha256": "51d6caaf21ace48e6298fad33c1d6cffdadbae9b55bda00d505ed6920792dc30",
+      "sha256_after": "51d6caaf21ace48e6298fad33c1d6cffdadbae9b55bda00d505ed6920792dc30"
+    },
+    {
+      "path": "research/global_counting_20261108/completion/COUNTING.md",
+      "sha256": "3f13e92a0b74b1a9a6fa75749e53d5104429f8f24c7292839406bef9e621f2ac",
+      "sha256_after": "3f13e92a0b74b1a9a6fa75749e53d5104429f8f24c7292839406bef9e621f2ac"
+    },
+    {
+      "path": "research/global_counting_20261108/completion/verification.json",
+      "sha256": "e6de268db610b5aca753be0e9a929b060437d3d84f9f35d84ae17830e0d0bf32",
+      "sha256_after": "e6de268db610b5aca753be0e9a929b060437d3d84f9f35d84ae17830e0d0bf32"
+    },
+    {
+      "path": "research/global_counting_20261108/completion/verify.py",
+      "sha256": "8d454b34378f2430e0312ac672651c9be8c588340867ea8ac449acc768aa315a",
+      "sha256_after": "8d454b34378f2430e0312ac672651c9be8c588340867ea8ac449acc768aa315a"
+    },
+    {
+      "path": "research/global_counting_20261108/CONTRACT.md",
+      "sha256": "4c651cbac0b9c25fd45a4566c38b8962e961f73066e394c71cf9dc59500100c6",
+      "sha256_after": "4c651cbac0b9c25fd45a4566c38b8962e961f73066e394c71cf9dc59500100c6"
+    },
+    {
+      "path": "research/global_counting_20261108/COUNTING_COMPARISON.md",
+      "sha256": "5f5281b90041a1388228c7c536bf12d6eab9278163db8d34d1ea69839502bf84",
+      "sha256_after": "5f5281b90041a1388228c7c536bf12d6eab9278163db8d34d1ea69839502bf84"
+    },
+    {
+      "path": "research/global_counting_20261108/information_gap.json",
+      "sha256": "99411c6b8d82a7b36bd0c4b2807667105b3fac368de2550b72c2fab122c1330c",
+      "sha256_after": "99411c6b8d82a7b36bd0c4b2807667105b3fac368de2550b72c2fab122c1330c"
+    },
+    {
+      "path": "research/global_counting_20261108/information_gap.py",
+      "sha256": "60dd558f981b7fb4d2b8a2ce8e9735d5dbe87cd502fa293996e39ab1489cb594",
+      "sha256_after": "60dd558f981b7fb4d2b8a2ce8e9735d5dbe87cd502fa293996e39ab1489cb594"
+    },
+    {
+      "path": "research/global_counting_20261108/main_regression.json",
+      "sha256": "2dff21e22c24f8509702675db7cbb0ca061cf122a560d1e4fec2cbe5a4192550",
+      "sha256_after": "2dff21e22c24f8509702675db7cbb0ca061cf122a560d1e4fec2cbe5a4192550"
+    },
+    {
+      "path": "research/global_counting_20261108/multilayer/CONTRACT.md",
+      "sha256": "dab3cae74e147fc4c25c335f63f73683b948167f34e0d1108c1391968d5d2682",
+      "sha256_after": "dab3cae74e147fc4c25c335f63f73683b948167f34e0d1108c1391968d5d2682"
+    },
+    {
+      "path": "research/global_counting_20261108/multilayer/README.md",
+      "sha256": "62fa8e8de8e9c4c025b0e5b2c046c754224ad305f72ba746a5fcec20348fb013",
+      "sha256_after": "62fa8e8de8e9c4c025b0e5b2c046c754224ad305f72ba746a5fcec20348fb013"
+    },
+    {
+      "path": "research/global_counting_20261108/multilayer/results.json",
+      "sha256": "3ac47b66d6285a8c6e5efa597c5454e79379d79b3f781114365af171ddd78053",
+      "sha256_after": "3ac47b66d6285a8c6e5efa597c5454e79379d79b3f781114365af171ddd78053"
+    },
+    {
+      "path": "research/global_counting_20261108/multilayer/THEOREM.md",
+      "sha256": "a5cfa53386a307103365b5df3218aa01fe2cbb7ba0a3674a6886c057c2ebafff",
+      "sha256_after": "a5cfa53386a307103365b5df3218aa01fe2cbb7ba0a3674a6886c057c2ebafff"
+    },
+    {
+      "path": "research/global_counting_20261108/multilayer/verify.py",
+      "sha256": "46854c655f2d4b12302575b312f7a5227f72912d47983e21ee864e50dc50207d",
+      "sha256_after": "46854c655f2d4b12302575b312f7a5227f72912d47983e21ee864e50dc50207d"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/CONTRACT.md",
+      "sha256": "74cfd7e35c42d3aba25cda5fef81f2f29f7604a3148802a39a3b56582d152ab9",
+      "sha256_after": "74cfd7e35c42d3aba25cda5fef81f2f29f7604a3148802a39a3b56582d152ab9"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/rank_probe.json",
+      "sha256": "a508975c993649f90cf17efdf313e945edd627020d83722b5ac07c3081e561ed",
+      "sha256_after": "a508975c993649f90cf17efdf313e945edd627020d83722b5ac07c3081e561ed"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/rank_probe.py",
+      "sha256": "1c3dde8f188ccd05c9c9ad1e702064ce56164ccae2ff64f943178f70d85c3046",
+      "sha256_after": "1c3dde8f188ccd05c9c9ad1e702064ce56164ccae2ff64f943178f70d85c3046"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/README.md",
+      "sha256": "965a6c0efeec74a4af7f015fb7aa1c16f8e014eda57c7a0ea5f00f0fb781dc86",
+      "sha256_after": "965a6c0efeec74a4af7f015fb7aa1c16f8e014eda57c7a0ea5f00f0fb781dc86"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/THEOREM.md",
+      "sha256": "808d1114069c55079831b264a9616c1aa79f29459ed87a7c7a95f05df3e818d9",
+      "sha256_after": "808d1114069c55079831b264a9616c1aa79f29459ed87a7c7a95f05df3e818d9"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/verification.json",
+      "sha256": "09a0701b9876097b0f4ec937b1298e87c7d4112872fb1b6a819b1df99fe2c60a",
+      "sha256_after": "09a0701b9876097b0f4ec937b1298e87c7d4112872fb1b6a819b1df99fe2c60a"
+    },
+    {
+      "path": "research/global_counting_20261108/multiscale/verify.py",
+      "sha256": "9868d221a26302a5b6fdfe19701a30e0c581b9a3dee779e68adb6b3cfaf76c58",
+      "sha256_after": "9868d221a26302a5b6fdfe19701a30e0c581b9a3dee779e68adb6b3cfaf76c58"
+    },
+    {
+      "path": "research/global_counting_20261108/README.md",
+      "sha256": "dfea32aa556f3fecd4383fcbcbdf047f7d7d23fde7d78085dca0431d455f808a",
+      "sha256_after": "dfea32aa556f3fecd4383fcbcbdf047f7d7d23fde7d78085dca0431d455f808a"
+    },
+    {
+      "path": "research/global_counting_20261108/review/independent_check.py",
+      "sha256": "d88f111dde84136eaa15ccf7c737a59a7d96157d767fd9f0801833e659f1a488",
+      "sha256_after": "d88f111dde84136eaa15ccf7c737a59a7d96157d767fd9f0801833e659f1a488"
+    },
+    {
+      "path": "research/global_counting_20261108/review/independent_results.json",
+      "sha256": "0c3a7702aced01e8aa9da5c3371e8f4bf16839f648d13bbe5f45ae374865f219",
+      "sha256_after": "0c3a7702aced01e8aa9da5c3371e8f4bf16839f648d13bbe5f45ae374865f219"
+    },
+    {
+      "path": "research/global_counting_20261108/review/REVIEW.md",
+      "sha256": "97a6f6bbaf6a0c6e35228e1031efc027422ef61e51573729049970475f8cb911",
+      "sha256_after": "97a6f6bbaf6a0c6e35228e1031efc027422ef61e51573729049970475f8cb911"
+    },
+    {
+      "path": "research/global_counting_20261108/review/supplemental_check.py",
+      "sha256": "22a5d8bcda87ba5ea03e7d791a61569826daa1b812e7ee636cd1558df2bc6543",
+      "sha256_after": "22a5d8bcda87ba5ea03e7d791a61569826daa1b812e7ee636cd1558df2bc6543"
+    },
+    {
+      "path": "research/global_counting_20261108/review/supplemental_results.json",
+      "sha256": "e44575fffb01546720f17c9209600c85f06bb485292ef065cb8c45d2286f0ac4",
+      "sha256_after": "e44575fffb01546720f17c9209600c85f06bb485292ef065cb8c45d2286f0ac4"
+    },
+    {
+      "path": "research/global_counting_20261108/threshold_scan.json",
+      "sha256": "ca8c2899284ed46c4e08939140637e0345e6ce3caac8916050e2d770b155832d",
+      "sha256_after": "ca8c2899284ed46c4e08939140637e0345e6ce3caac8916050e2d770b155832d"
+    },
+    {
+      "path": "research/global_counting_20261108/threshold_scan.py",
+      "sha256": "f6a333411ef765bd7b774ee6d8ec111bdd57b93cbf5332b13c64a1d71443ecfb",
+      "sha256_after": "f6a333411ef765bd7b774ee6d8ec111bdd57b93cbf5332b13c64a1d71443ecfb"
+    },
+    {
+      "path": "research/global_counting_20261108/verify_release.py",
+      "sha256": "087b425bf8c7e1315294baabb8a6512e48d56383e456a6b17a46d25c236691bd",
+      "sha256_after": "087b425bf8c7e1315294baabb8a6512e48d56383e456a6b17a46d25c236691bd"
+    },
+    {
+      "path": "research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md",
+      "sha256": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075",
+      "sha256_after": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075"
+    }
+  ],
+  "declared_results": [
+    "research/global_counting_20261108/release_validation.json"
+  ]
+}

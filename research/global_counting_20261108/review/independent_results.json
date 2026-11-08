@@ -1,0 +1,342 @@
+{
+  "status": "PASS",
+  "scope_findings_resolved_in_review": true,
+  "capacities": [
+    0,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5
+  ],
+  "shortest_spans": {
+    "1": 0,
+    "2": 1,
+    "3": 3,
+    "4": 6,
+    "5": 11
+  },
+  "ruler_witnesses": {
+    "1": [
+      0
+    ],
+    "2": [
+      0,
+      1
+    ],
+    "3": [
+      0,
+      1,
+      3
+    ],
+    "4": [
+      0,
+      1,
+      4,
+      6
+    ],
+    "5": [
+      0,
+      1,
+      4,
+      9,
+      11
+    ]
+  },
+  "partitions_checked_including_empty_domain": 27335,
+  "word_count_including_empty_word": 9841,
+  "layer_identities": 191916,
+  "rejected_set": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12
+  ],
+  "separation_capacities": [
+    10,
+    10,
+    10,
+    9
+  ],
+  "valid_partitions": 0,
+  "source_sets": 64,
+  "source_assignments": 40069,
+  "source_proper": 1367,
+  "by_size": {
+    "0": {
+      "sets": 1,
+      "colorings": 1,
+      "proper": 1
+    },
+    "1": {
+      "sets": 6,
+      "colorings": 6,
+      "proper": 6
+    },
+    "2": {
+      "sets": 15,
+      "colorings": 30,
+      "proper": 30
+    },
+    "3": {
+      "sets": 20,
+      "colorings": 160,
+      "proper": 148
+    },
+    "4": {
+      "sets": 15,
+      "colorings": 960,
+      "proper": 534
+    },
+    "5": {
+      "sets": 6,
+      "colorings": 6144,
+      "proper": 648
+    },
+    "6": {
+      "sets": 1,
+      "colorings": 32768,
+      "proper": 0
+    }
+  },
+  "six_interval_minimum": 1,
+  "six_interval_witness": [
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    1,
+    -1,
+    -1,
+    1,
+    1
+  ],
+  "improper_rectangle": {
+    "marks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cells": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "signs": [
+      1,
+      -1,
+      1,
+      1,
+      -1,
+      1
+    ],
+    "cycle": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "monochromatic_L": 1,
+    "collisions": 1
+  },
+  "information_gap": {
+    "words": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "statistics": [
+      {
+        "correlations": [
+          5,
+          5,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "first": [
+          8,
+          8,
+          6,
+          6,
+          3,
+          0,
+          0,
+          0
+        ],
+        "last": [
+          6,
+          9,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "both": [
+          6,
+          6,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "transport": [
+          6,
+          6,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "correlations": [
+          5,
+          5,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "first": [
+          11,
+          10,
+          8,
+          4,
+          3,
+          0,
+          0,
+          0
+        ],
+        "last": [
+          12,
+          12,
+          6,
+          5,
+          1,
+          0,
+          0,
+          0
+        ],
+        "both": [
+          7,
+          8,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "transport": [
+          6,
+          6,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "transport_also_distinguished": true
+  },
+  "source_sha256": {
+    "CONTRACT.md": "4c651cbac0b9c25fd45a4566c38b8962e961f73066e394c71cf9dc59500100c6",
+    "multilayer/THEOREM.md": "a5cfa53386a307103365b5df3218aa01fe2cbb7ba0a3674a6886c057c2ebafff",
+    "multilayer/verify.py": "46854c655f2d4b12302575b312f7a5227f72912d47983e21ee864e50dc50207d",
+    "multilayer/results.json": "3ac47b66d6285a8c6e5efa597c5454e79379d79b3f781114365af171ddd78053",
+    "completion/COUNTING.md": "3f13e92a0b74b1a9a6fa75749e53d5104429f8f24c7292839406bef9e621f2ac",
+    "completion/verify.py": "8d454b34378f2430e0312ac672651c9be8c588340867ea8ac449acc768aa315a",
+    "completion/verification.json": "e6de268db610b5aca753be0e9a929b060437d3d84f9f35d84ae17830e0d0bf32",
+    "information_gap.py": "60dd558f981b7fb4d2b8a2ce8e9735d5dbe87cd502fa293996e39ab1489cb594",
+    "information_gap.json": "99411c6b8d82a7b36bd0c4b2807667105b3fac368de2550b72c2fab122c1330c"
+  },
+  "checker_sha256": "d88f111dde84136eaa15ccf7c737a59a7d96157d767fd9f0801833e659f1a488"
+}

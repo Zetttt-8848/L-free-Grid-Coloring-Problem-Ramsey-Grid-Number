@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite formula audit, not a new Ramsey bound.",
+  "python": "3.13.5",
+  "golomb_positions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "exhaustively_computed_g": [
+    0,
+    1,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5
+  ],
+  "tested_span_thresholds": [
+    0,
+    1,
+    3,
+    6,
+    11
+  ],
+  "actual_two_class_partitions_checked": 27334,
+  "partition_interval_lengths": [
+    1,
+    10
+  ],
+  "transport_strict_examples": [
+    {
+      "p": 6,
+      "classes": [
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          3
+        ]
+      ],
+      "marks": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "first_return": 6,
+      "last_return": 6,
+      "endpoint_transport": 5
+    },
+    {
+      "p": 6,
+      "classes": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "marks": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "first_return": 6,
+      "last_return": 6,
+      "endpoint_transport": 5
+    },
+    {
+      "p": 6,
+      "classes": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          3
+        ]
+      ],
+      "marks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "first_return": 6,
+      "last_return": 6,
+      "endpoint_transport": 5
+    },
+    {
+      "p": 6,
+      "classes": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "marks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "first_return": 6,
+      "last_return": 6,
+      "endpoint_transport": 5
+    },
+    {
+      "p": 6,
+      "classes": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "marks": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "first_return": 6,
+      "last_return": 6,
+      "endpoint_transport": 5
+    }
+  ],
+  "rejected_by_transport_only": {
+    "ambient_positions": 14,
+    "marks": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "first_return_bound": 10,
+    "last_return_bound": 10,
+    "two_independent_span_capacities": 10,
+    "transport_bound": 9,
+    "two_class_assignments_checked": 1024,
+    "valid_two_golomb_partitions": 0,
+    "scope": "A set of lag starts, not a square coloring or Ramsey bound."
+  },
+  "all_three_color_words_lengths": [
+    1,
+    8
+  ],
+  "words_checked": 9840,
+  "literal_layercake_identities_checked": 191916,
+  "external_optimal_ruler_exhaustions_replayed": false,
+  "command": [
+    "python",
+    "research/global_counting_20261108/multilayer/verify.py"
+  ],
+  "sources_sha256": {
+    "CONTRACT.md": "dab3cae74e147fc4c25c335f63f73683b948167f34e0d1108c1391968d5d2682",
+    "THEOREM.md": "a5cfa53386a307103365b5df3218aa01fe2cbb7ba0a3674a6886c057c2ebafff",
+    "README.md": "62fa8e8de8e9c4c025b0e5b2c046c754224ad305f72ba746a5fcec20348fb013",
+    "verify.py": "46854c655f2d4b12302575b312f7a5227f72912d47983e21ee864e50dc50207d"
+  }
+}

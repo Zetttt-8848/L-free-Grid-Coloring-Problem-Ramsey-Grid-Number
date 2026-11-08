@@ -1,0 +1,194 @@
+{
+  "status": "PASS",
+  "mixed": {
+    "classes": [
+      [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      [
+        3,
+        4,
+        9
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "source_L_counts": [
+      5,
+      0,
+      0
+    ],
+    "prescribed_L_count": 19,
+    "mixed_conflict_count": 1,
+    "conflicts": [
+      {
+        "cell": [
+          8,
+          3
+        ],
+        "count": 1,
+        "requests": {
+          "0": [
+            [
+              0,
+              [
+                [
+                  9,
+                  3
+                ],
+                [
+                  9,
+                  4
+                ]
+              ]
+            ]
+          ],
+          "1": [
+            [
+              2,
+              [
+                [
+                  7,
+                  2
+                ],
+                [
+                  8,
+                  2
+                ]
+              ]
+            ]
+          ],
+          "2": [
+            [
+              2,
+              [
+                [
+                  6,
+                  1
+                ],
+                [
+                  8,
+                  1
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "listed_request_family_minimum": 1,
+    "listed_request_count": 9,
+    "parallel_request_count_excluded_from_C_mix": 1
+  },
+  "span": {
+    "ruler": [
+      0,
+      9,
+      33,
+      37,
+      38,
+      97,
+      122,
+      129,
+      140,
+      142,
+      152,
+      191,
+      205,
+      208,
+      252,
+      278,
+      286,
+      326,
+      332,
+      353,
+      368,
+      384,
+      403,
+      425
+    ],
+    "positive_differences": 276,
+    "first_missing_difference": 128,
+    "changed_capacities": [
+      [
+        428,
+        141,
+        140
+      ],
+      [
+        429,
+        142,
+        141
+      ],
+      [
+        430,
+        143,
+        142
+      ],
+      [
+        431,
+        144,
+        143
+      ]
+    ],
+    "margins": [
+      {
+        "n": 463,
+        "old": -3527580772,
+        "new": -2534488525,
+        "gain": 993092247
+      },
+      {
+        "n": 464,
+        "old": 477965143,
+        "new": 1433217328,
+        "gain": 955252185
+      }
+    ],
+    "global_occurrences": [
+      {
+        "n": 463,
+        "W": 105995,
+        "a0": 156809003,
+        "S": 527721881456,
+        "max_color_class": 164,
+        "max_occurrences_per_orientation": 8,
+        "max_extremal_completion_classes_both_orientations": 56,
+        "residual_at_164": -555944285156,
+        "residual_at_165": 3054576458428,
+        "minimum_bonferroni_for_t9_to_possible_max": 180
+      },
+      {
+        "n": 464,
+        "W": 105995,
+        "a0": 156809003,
+        "S": 527996693840,
+        "max_color_class": 164,
+        "max_occurrences_per_orientation": 8,
+        "max_extremal_completion_classes_both_orientations": 56,
+        "residual_at_164": -1259980029536,
+        "residual_at_165": 2350383905045,
+        "minimum_bonferroni_for_t9_to_possible_max": 180
+      }
+    ],
+    "external_theorems_not_reproved": [
+      "G(24)=425 and unique normalized ruler up to reflection",
+      "G(25)>=480"
+    ]
+  },
+  "source_sha256": {
+    "completion/COUNTING.md": "3f13e92a0b74b1a9a6fa75749e53d5104429f8f24c7292839406bef9e621f2ac",
+    "completion/verify.py": "8d454b34378f2430e0312ac672651c9be8c588340867ea8ac449acc768aa315a",
+    "completion/verification.json": "e6de268db610b5aca753be0e9a929b060437d3d84f9f35d84ae17830e0d0bf32",
+    "multiscale/THEOREM.md": "808d1114069c55079831b264a9616c1aa79f29459ed87a7c7a95f05df3e818d9",
+    "multiscale/verify.py": "9868d221a26302a5b6fdfe19701a30e0c581b9a3dee779e68adb6b3cfaf76c58",
+    "multiscale/verification.json": "09a0701b9876097b0f4ec937b1298e87c7d4112872fb1b6a819b1df99fe2c60a"
+  },
+  "checker_sha256": "22a5d8bcda87ba5ea03e7d791a61569826daa1b812e7ee636cd1558df2bc6543"
+}
