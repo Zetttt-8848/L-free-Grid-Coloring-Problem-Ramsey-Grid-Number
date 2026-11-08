@@ -1,0 +1,327 @@
+{
+  "exhaustive_binary_squares_through_side3": 530,
+  "orientation_guard": {
+    "domain": "square",
+    "k": 2,
+    "cells": 4,
+    "corners": 1,
+    "monochromatic": 0,
+    "rainbows": 0,
+    "mixed_parallel_inputs": 0,
+    "proper": true,
+    "first_monochromatic_corners": [],
+    "n": 2,
+    "implied_Rk_lower_bound": 3
+  },
+  "triangle11": {
+    "domain": "strict-source",
+    "k": 3,
+    "cells": 55,
+    "corners": 165,
+    "monochromatic": 0,
+    "rainbows": 3,
+    "mixed_parallel_inputs": 109,
+    "proper": true,
+    "first_monochromatic_corners": [],
+    "mark_count": 11,
+    "M": 55,
+    "T": 165,
+    "E": 891,
+    "span": 10
+  },
+  "triangle12": {
+    "domain": "strict-source",
+    "k": 3,
+    "cells": 66,
+    "corners": 220,
+    "monochromatic": 0,
+    "rainbows": 6,
+    "mixed_parallel_inputs": 150,
+    "proper": true,
+    "first_monochromatic_corners": [],
+    "mark_count": 12,
+    "M": 66,
+    "T": 220,
+    "E": 1156,
+    "span": 11
+  },
+  "six_mark_witness": {
+    "domain": "strict-source",
+    "k": 2,
+    "cells": 15,
+    "corners": 16,
+    "monochromatic": 0,
+    "rainbows": 0,
+    "mixed_parallel_inputs": 9,
+    "proper": true,
+    "first_monochromatic_corners": [],
+    "mark_count": 6,
+    "M": 15,
+    "T": 16,
+    "E": 130,
+    "span": 6,
+    "Phi": 11,
+    "forcing_corners": 7,
+    "forcing_edges": 14
+  },
+  "degenerate_and_weak_domains": "PASS",
+  "malformed_inputs_rejected": 5,
+  "conditional_q20": {
+    "n": 361,
+    "m": 121,
+    "gap": 60,
+    "hypothesis_unproved": true
+  },
+  "conditional_q21": {
+    "n": 379,
+    "m": 127,
+    "gap": 63,
+    "hypothesis_unproved": true
+  },
+  "conditional_q27": {
+    "n": 487,
+    "m": 163,
+    "gap": 81,
+    "hypothesis_unproved": true
+  },
+  "potential_bookkeeping_identity": "Exact polynomial identity; checked also at 0,1,1000000,2/3",
+  "checker_sha256": "d8a12772c97a8321d93f228c665a12ad960db5c9021954261cb9c2beb561d3aa",
+  "local_supplement_paper20": {
+    "source_sha256": "ca23e0e0866b3e09e3536261b10ca920ab7b7458dd10935feee4b160f0ad4f53",
+    "triple_subset_crosscheck": {
+      "corners": 2470,
+      "monochromatic": 0,
+      "rainbows": 319
+    },
+    "result": {
+      "domain": "square",
+      "k": 3,
+      "cells": 400,
+      "corners": 2470,
+      "monochromatic": 0,
+      "rainbows": 319,
+      "mixed_parallel_inputs": 1754,
+      "proper": true,
+      "first_monochromatic_corners": [],
+      "n": 20,
+      "implied_Rk_lower_bound": 21
+    }
+  },
+  "published_matrix_authentication": {
+    "source": "https://arxiv.org/html/2502.05162v1",
+    "rows_matched": 20,
+    "entries_matched": 400,
+    "source_html_sha256": "8559712e34e2619b27a0e2fa7e75822fcfb00a01f74c3bda745d1c2aff66d4cb",
+    "normalized_sha256": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd"
+  },
+  "manuscript": {
+    "status": "passed",
+    "check_count": 13,
+    "source_sha256": "449b28c63e3875dd046bca2d37849efca95959ced12360ddae6a5e8ef29d7523",
+    "bibliography_sha256": "34dddeaaedd480a963c7fcc325621e362b20789cf49bb09c846662fa8ba35233",
+    "verifier_sha256": "3ba8e2b2c05a8754cf43eb323c24413df653305dc3e696641342b983b7adac46",
+    "checklist": [
+      {
+        "check": "seven_mark_witness",
+        "status": "passed"
+      },
+      {
+        "check": "four_cube",
+        "status": "passed"
+      },
+      {
+        "check": "four_by_four_crop",
+        "status": "passed"
+      },
+      {
+        "check": "six_point_attainment_witness",
+        "status": "passed"
+      },
+      {
+        "check": "three_cube",
+        "status": "passed"
+      },
+      {
+        "check": "weak_twelve_mark_coloring",
+        "status": "passed"
+      },
+      {
+        "check": "concentrated_deficit",
+        "status": "passed"
+      },
+      {
+        "check": "rainbow_counterexamples",
+        "status": "passed"
+      },
+      {
+        "check": "structured_examples",
+        "status": "passed"
+      },
+      {
+        "check": "divisor_weights",
+        "status": "passed"
+      },
+      {
+        "check": "conditional_bound_arithmetic",
+        "status": "passed"
+      },
+      {
+        "check": "graph_encoded_sources",
+        "status": "passed"
+      },
+      {
+        "check": "source_reference_keys",
+        "status": "passed"
+      }
+    ],
+    "scope": [
+      "Finite enumerations do not certify proofs for arbitrary sets or generators.",
+      "This newly written verifier is not an unavailable original SAT pipeline.",
+      "No open assertion is proved and no unconditional Ramsey bound is claimed.",
+      "New B_r examples are tested at r=4,6,8,10; the all-r statement uses its proof.",
+      "No literature priority or external citation audit is performed.",
+      "Graph enumeration covers all labeled graphs through five vertices and seven six-vertex examples; arbitrary graphs use their proof.",
+      "The six-point certificate verifies attainment and bounded equality cases, not the universal maximum or full equality classification.",
+      "Bibliography checks concern key integrity, not literature accuracy or priority."
+    ]
+  },
+  "selected_pr3_boundary": {
+    "status": "FINITE-CHECKED",
+    "counts": {
+      "source_cells": 36,
+      "source_corners": 33,
+      "same_boundary_legal_count": 1314,
+      "balanced_count": 64,
+      "trap_phi_Q": 8,
+      "two_flip_nonincreasing_closure": 72,
+      "two_flip_unrestricted_component": 750,
+      "nearest_balance_hamming": 12,
+      "minimum_monotone_block_size": 8,
+      "minimum_unrestricted_block_size": 8,
+      "minimum_peak_at_unrestricted_minimum_radius": 8
+    },
+    "witness_sha256": "eb6b5db055d4a896b5bd846728b6899aa10198aa4501e272e9a82b03151f866b",
+    "verifier_sha256": "d4d1334da28a60a7815af6633f17312e8de9a671a488d3c047c3c5fd4f4403ff",
+    "cut": {
+      "side_count": 750,
+      "complement_count": 564,
+      "balanced_targets_on_side": 0,
+      "minimum_cross_cut_hamming": 8,
+      "all_cross_cut_pairs_checked": 423000
+    },
+    "scope": "Complete displayed frozen-boundary group only. This refutes universal two-cell repair; the radii and peak values are exact for this witness, not universal bounds."
+  },
+  "total_sat_model_11": {
+    "size": 11,
+    "rainbow_cap": 4,
+    "variables": 986,
+    "clauses": 3672,
+    "no_unsat_or_minimality_claim": true,
+    "cells": 55,
+    "corners": 165,
+    "monochromatic_count": 0,
+    "rainbow_count": 3,
+    "monochromatic_corners": [],
+    "rainbow_corners": [
+      [
+        2,
+        1,
+        8
+      ],
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        7,
+        3,
+        2
+      ]
+    ],
+    "proper": true,
+    "within_cap": true,
+    "geometrically_valid": true,
+    "complete_assignment": true,
+    "missing_variable_count": 0,
+    "false_clause_count": 0,
+    "unresolved_clause_count": 0,
+    "first_false_clauses": [],
+    "cnf_satisfied": true,
+    "valid": true
+  },
+  "total_sat_model_12": {
+    "size": 12,
+    "rainbow_cap": 6,
+    "variables": 1732,
+    "clauses": 5745,
+    "no_unsat_or_minimality_claim": true,
+    "cells": 66,
+    "corners": 220,
+    "monochromatic_count": 0,
+    "rainbow_count": 6,
+    "monochromatic_corners": [],
+    "rainbow_corners": [
+      [
+        3,
+        2,
+        6
+      ],
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        7,
+        3,
+        2
+      ],
+      [
+        8,
+        4,
+        3
+      ],
+      [
+        9,
+        8,
+        1
+      ],
+      [
+        10,
+        1,
+        1
+      ]
+    ],
+    "proper": true,
+    "within_cap": true,
+    "geometrically_valid": true,
+    "complete_assignment": true,
+    "missing_variable_count": 0,
+    "false_clause_count": 0,
+    "unresolved_clause_count": 0,
+    "first_false_clauses": [],
+    "cnf_satisfied": true,
+    "valid": true
+  },
+  "validation_scope": "Skill structure, source indexing, finite certificates and local self-review only; no new Ramsey bound, fresh Lean build, full historical rerun, whole-manuscript proof audit, or independent-agent behavioral evaluation.",
+  "package_validation": {
+    "skill_structure": "PASS",
+    "all_local_document_links": "PASS",
+    "python_compilation": "PASS",
+    "git_diff_whitespace": "PASS",
+    "source_inventory_matches_git_trees": "PASS",
+    "normalized_baseline_hash_matches": "PASS",
+    "review_mode": "self-review; no independent-agent behavioral evaluation"
+  },
+  "package_sha256": {
+    ".agents/skills/directed-l-grid-research/agents/openai.yaml": "f7d239673fd8bcf4106da671c9395362f4d70d2127cca19f9b06309d13132301",
+    ".agents/skills/directed-l-grid-research/assets/paper20.json": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    ".agents/skills/directed-l-grid-research/references/evidence.md": "cbc822ea3861e985cbba3f7f06c10d7e8a46a79dcb67a4fc8902b6c29014e209",
+    ".agents/skills/directed-l-grid-research/references/repository-map.md": "6d9eade81ebc32716ad9bdf45b349454d0f1562fca98d457c5a5dc9c81a2670a",
+    ".agents/skills/directed-l-grid-research/references/routes.md": "277d7891af9581719af20f70d0bfe5bee4ec45655b22cf12fdaddb61b088a379",
+    ".agents/skills/directed-l-grid-research/scripts/check_coloring.py": "d8a12772c97a8321d93f228c665a12ad960db5c9021954261cb9c2beb561d3aa",
+    ".agents/skills/directed-l-grid-research/scripts/index_repository.py": "6856ced89c93a75f9b49f8ece22674d8203dc2a81b01c4db66a78b25ae4ad045",
+    ".agents/skills/directed-l-grid-research/SKILL.md": "c16360f3657d8152abbc04659f6e08899940596d8f64a478642cdb5eef574ba8"
+  }
+}

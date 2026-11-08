@@ -1,0 +1,96 @@
+{
+  "task_date": "2026-11-08",
+  "note": "Hashes identify retrieved response bytes; dynamic HTML hashes may change. No source full text was saved in this repository. Reading scope is documented separately in README.md.",
+  "sources": [
+    {
+      "source_id": "C23",
+      "url": "https://arxiv.org/html/2312.01159v1",
+      "resolved_url": "https://arxiv.org/html/2312.01159v1",
+      "sha256_response_bytes": "f683fe5cfee02044dabb0db66b731967f7d07cb57722efa2906834b378a931a3",
+      "response_bytes": 142374,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:24.495556+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "M25-preprint",
+      "url": "https://arxiv.org/html/2502.05162v1",
+      "resolved_url": "https://arxiv.org/html/2502.05162v1",
+      "sha256_response_bytes": "8559712e34e2619b27a0e2fa7e75822fcfb00a01f74c3bda745d1c2aff66d4cb",
+      "response_bytes": 429556,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:24.795755+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "M25-journal",
+      "url": "https://math.colgate.edu/~integers/z21/z21.pdf",
+      "resolved_url": "https://math.colgate.edu/~integers/z21/z21.pdf",
+      "sha256_response_bytes": "ddec7b342c9679ad0ebd10a59938526d836a62b39382717d18f890d39a81b1af",
+      "response_bytes": 369127,
+      "content_type": "application/pdf",
+      "retrieved_utc": "2026-11-08T09:25:24.935725+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "J25",
+      "url": "https://arxiv.org/html/2504.07006v2",
+      "resolved_url": "https://arxiv.org/html/2504.07006v2",
+      "sha256_response_bytes": "6985299924c490e624e7597326bb07d8b9d67701c07b5f40708c171e1b0b345e",
+      "response_bytes": 2916392,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:25.195222+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "S25-26",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/stability-corners-and-other-twodimensional-shapes/AFAAEA5F0DDEFAB81AE205BA6AD9CAA1",
+      "resolved_url": "https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/stability-corners-and-other-twodimensional-shapes/AFAAEA5F0DDEFAB81AE205BA6AD9CAA1",
+      "sha256_response_bytes": "e1e63a10bd07e9c7f2b80e2287944474d1218f9c0aca7cf1456eccd519545ae7",
+      "response_bytes": 3268687,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:26.548322+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "W26",
+      "url": "https://arxiv.org/html/2606.08890v1",
+      "resolved_url": "https://arxiv.org/html/2606.08890v1",
+      "sha256_response_bytes": "fdacd3f0582531b00e45b57c6978180dc02814ed857c154102a29842781e139b",
+      "response_bytes": 268472,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:26.099518+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "L26",
+      "url": "https://arxiv.org/html/2609.13891v1",
+      "resolved_url": "https://arxiv.org/html/2609.13891v1",
+      "sha256_response_bytes": "9302d845a95c911c2e3ed0951a47bd3a9d81a1f5840c366fe86832b878c1b746",
+      "response_bytes": 881750,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:27.142077+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "B26-screened",
+      "url": "https://arxiv.org/abs/2605.30033v1",
+      "resolved_url": "https://arxiv.org/abs/2605.30033v1",
+      "sha256_response_bytes": "5f872998cda8a28c2de4dd99f6c5512069875c1824eafd7eef2414dea6317f19",
+      "response_bytes": 40173,
+      "content_type": "text/html; charset=utf-8",
+      "retrieved_utc": "2026-11-08T09:25:26.094513+00:00",
+      "fulltext_retained": false
+    },
+    {
+      "source_id": "W26-PDF-crosscheck",
+      "url": "https://arxiv.org/pdf/2606.08890v1",
+      "resolved_url": "https://arxiv.org/pdf/2606.08890v1",
+      "sha256_response_bytes": "19d1e2867042bdf398c4abb291ec2a90c52b639cd725d14b8d6c9d07349c2f6a",
+      "response_bytes": 361844,
+      "content_type": "application/pdf",
+      "retrieved_utc": "2026-11-08T09:26:35.455084+00:00",
+      "fulltext_retained": false
+    }
+  ]
+}

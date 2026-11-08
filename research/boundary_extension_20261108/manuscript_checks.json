@@ -1,0 +1,1525 @@
+{
+  "verifier_description": "New independent finite-certificate validator",
+  "source_file": "main.tex",
+  "source_sha256": "449b28c63e3875dd046bca2d37849efca95959ced12360ddae6a5e8ef29d7523",
+  "bibliography_file": "references.bib",
+  "bibliography_sha256": "34dddeaaedd480a963c7fcc325621e362b20789cf49bb09c846662fa8ba35233",
+  "verifier_sha256": "3ba8e2b2c05a8754cf43eb323c24413df653305dc3e696641342b983b7adac46",
+  "timestamp_utc": "2026-11-08T09:19:24.537143+00:00",
+  "environment": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "dependencies": "Python standard library only"
+  },
+  "limitations": [
+    "Finite enumerations do not certify proofs for arbitrary sets or generators.",
+    "This newly written verifier is not an unavailable original SAT pipeline.",
+    "No open assertion is proved and no unconditional Ramsey bound is claimed.",
+    "New B_r examples are tested at r=4,6,8,10; the all-r statement uses its proof.",
+    "No literature priority or external citation audit is performed.",
+    "Graph enumeration covers all labeled graphs through five vertices and seven six-vertex examples; arbitrary graphs use their proof.",
+    "The six-point certificate verifies attainment and bounded equality cases, not the universal maximum or full equality classification.",
+    "Bibliography checks concern key integrity, not literature accuracy or priority."
+  ],
+  "results": {
+    "seven_mark_witness": {
+      "marks": [
+        0,
+        1,
+        4,
+        13,
+        28,
+        30,
+        36
+      ],
+      "positive_differences": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12,
+        13,
+        15,
+        17,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36
+      ],
+      "unique_sums_with_repetition": true
+    },
+    "four_cube": {
+      "n": 16,
+      "M": 120,
+      "span": 40,
+      "cells": 120,
+      "weak_domain": false,
+      "strict_corner_count_T": 200,
+      "enumerated_corners": 200,
+      "additive_energy_E": 1296,
+      "monochromatic": 0,
+      "mixed_parallel_endpoints": 125,
+      "rainbow": 0,
+      "positive_difference_histogram": {
+        "1": 8,
+        "2": 16,
+        "4": 12,
+        "8": 4
+      },
+      "forcing_corners": 75,
+      "forcing_graph_edges": 150,
+      "sum_fiber_imbalance_squared": 20,
+      "forcing_identity_checked": true,
+      "pointwise_identity_checked": true,
+      "degree_identity_checked": true,
+      "D_z": 26,
+      "R_z": 25,
+      "P_z": 8,
+      "K3_by_fiber_corner_count": 120,
+      "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+      "cube_moment_first_bound": 379,
+      "cube_moment_second_bound": 317,
+      "cube_moment_combined_bound": 317,
+      "printed_word_multiplicity_rows_checked": 10,
+      "family_corner_totals": {
+        "L": 24,
+        "U": 24,
+        "X": 76,
+        "Bridge": 76
+      },
+      "printed_actual_K3_and_old_new_bounds_checked": true
+    },
+    "four_by_four_crop": {
+      "cells": 16,
+      "directed_corners": 14,
+      "monochromatic": 0,
+      "printed_fiber_lists_checked": 3,
+      "shared_completion_example": {
+        "marks": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "cells": 6,
+        "corners": 4,
+        "completion": [
+          3,
+          0
+        ],
+        "corners_at_completion": 2,
+        "local_Golomb_conditions_for_both_choices": true,
+        "monochromatic_counts_for_q_colors_0_and_1": [
+          1,
+          1
+        ]
+      }
+    },
+    "six_point_attainment_witness": {
+      "n": 6,
+      "M": 15,
+      "span": 6,
+      "cells": 15,
+      "weak_domain": false,
+      "strict_corner_count_T": 16,
+      "enumerated_corners": 16,
+      "additive_energy_E": 130,
+      "monochromatic": 0,
+      "mixed_parallel_endpoints": 9,
+      "rainbow": 0,
+      "positive_difference_histogram": {
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "4": 2
+      },
+      "forcing_corners": 7,
+      "forcing_graph_edges": 14,
+      "sum_fiber_imbalance_squared": 11,
+      "forcing_identity_checked": true,
+      "pointwise_identity_checked": true,
+      "degree_identity_checked": true,
+      "D_z": 10,
+      "R_z": 1,
+      "P_z": 3,
+      "K3_by_fiber_corner_count": 6,
+      "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+      "cube_moment_first_bound": 24,
+      "cube_moment_second_bound": 18,
+      "cube_moment_combined_bound": 18,
+      "all_printed_step_color_words_checked": true,
+      "equality_classification_support": {
+        "printed_equality_forms_checked": true,
+        "finite_enumeration": {
+          "4": {
+            "sets_checked": 1140,
+            "equality_sets": 94,
+            "minimum": 0,
+            "maximum_span": 20,
+            "endpoint_loss_identity_checked": true,
+            "classification_checked_only_on_this_finite_domain": true
+          },
+          "5": {
+            "sets_checked": 4845,
+            "equality_sets": 8,
+            "minimum": 0,
+            "maximum_span": 20,
+            "endpoint_loss_identity_checked": true,
+            "classification_checked_only_on_this_finite_domain": true
+          },
+          "6": {
+            "sets_checked": 15504,
+            "equality_sets": 6,
+            "minimum": 0,
+            "maximum_span": 20,
+            "endpoint_loss_identity_checked": true,
+            "classification_checked_only_on_this_finite_domain": true
+          }
+        },
+        "affine_and_reflected_colorings_checked": 18,
+        "scope": "Bounded checks and transported witnesses; the complete classification relies on the printed endpoint proof, not this enumeration."
+      },
+      "interpretation": "Attainment and bounded classification checks; the universal maximum and complete equality classification use their proofs."
+    },
+    "three_cube": {
+      "n": 8,
+      "M": 28,
+      "span": 13,
+      "cells": 28,
+      "weak_domain": false,
+      "strict_corner_count_T": 24,
+      "enumerated_corners": 24,
+      "additive_energy_E": 216,
+      "monochromatic": 0,
+      "mixed_parallel_endpoints": 9,
+      "rainbow": 0,
+      "positive_difference_histogram": {
+        "1": 4,
+        "2": 6,
+        "4": 3
+      },
+      "forcing_corners": 15,
+      "forcing_graph_edges": 30,
+      "sum_fiber_imbalance_squared": 40,
+      "forcing_identity_checked": true,
+      "pointwise_identity_checked": true,
+      "degree_identity_checked": true,
+      "D_z": 30,
+      "R_z": 0,
+      "P_z": 12,
+      "K3_by_fiber_corner_count": 6,
+      "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+      "cube_moment_first_bound": 21,
+      "cube_moment_second_bound": 12,
+      "cube_moment_combined_bound": 12,
+      "printed_corner_records_checked": 24
+    },
+    "weak_twelve_mark_coloring": {
+      "n": 12,
+      "M": 66,
+      "span": 24,
+      "cells": 78,
+      "weak_domain": true,
+      "strict_corner_count_T": 74,
+      "enumerated_corners": 140,
+      "additive_energy_E": 572,
+      "monochromatic": 0,
+      "mixed_parallel_endpoints": 85,
+      "rainbow": 0,
+      "positive_difference_histogram": {
+        "1": 1,
+        "2": 11,
+        "3": 8,
+        "4": 3,
+        "7": 1
+      },
+      "positive_offset_equal_color_groups_checked": 14,
+      "printed_fiber_count_records_checked": 24
+    },
+    "concentrated_deficit": {
+      "rho": 5,
+      "N": 29,
+      "Q": 11,
+      "T": 50,
+      "deficit": 3,
+      "all_printed_distance_and_incidence_entries_checked": true,
+      "worked_incidence_arithmetic_checked": true,
+      "worked_examples_already_covered_by_complete_incidence_table": true
+    },
+    "rainbow_counterexamples": {
+      "11": {
+        "n": 11,
+        "M": 55,
+        "span": 10,
+        "cells": 55,
+        "weak_domain": false,
+        "strict_corner_count_T": 165,
+        "enumerated_corners": 165,
+        "additive_energy_E": 891,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 109,
+        "rainbow": 3,
+        "positive_difference_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1
+        },
+        "rainbow_bases_v_u_step": [
+          [
+            2,
+            1,
+            8
+          ],
+          [
+            6,
+            3,
+            2
+          ],
+          [
+            7,
+            3,
+            2
+          ]
+        ],
+        "three_color_line_identity_checked": true,
+        "line_variance_D_exact": "104"
+      },
+      "12": {
+        "n": 12,
+        "M": 66,
+        "span": 11,
+        "cells": 66,
+        "weak_domain": false,
+        "strict_corner_count_T": 220,
+        "enumerated_corners": 220,
+        "additive_energy_E": 1156,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 150,
+        "rainbow": 6,
+        "positive_difference_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1
+        },
+        "rainbow_bases_v_u_step": [
+          [
+            3,
+            2,
+            6
+          ],
+          [
+            6,
+            3,
+            2
+          ],
+          [
+            7,
+            3,
+            2
+          ],
+          [
+            8,
+            4,
+            3
+          ],
+          [
+            9,
+            8,
+            1
+          ],
+          [
+            10,
+            1,
+            1
+          ]
+        ],
+        "three_color_line_identity_checked": true,
+        "line_variance_D_exact": "120"
+      },
+      "13": {
+        "n": 13,
+        "M": 78,
+        "span": 12,
+        "cells": 78,
+        "weak_domain": false,
+        "strict_corner_count_T": 286,
+        "enumerated_corners": 286,
+        "additive_energy_E": 1469,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 193,
+        "rainbow": 14,
+        "positive_difference_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1
+        },
+        "rainbow_bases_v_u_step": [
+          [
+            3,
+            0,
+            6
+          ],
+          [
+            4,
+            2,
+            2
+          ],
+          [
+            5,
+            2,
+            4
+          ],
+          [
+            5,
+            2,
+            5
+          ],
+          [
+            5,
+            3,
+            5
+          ],
+          [
+            6,
+            0,
+            1
+          ],
+          [
+            6,
+            3,
+            5
+          ],
+          [
+            6,
+            4,
+            5
+          ],
+          [
+            7,
+            2,
+            4
+          ],
+          [
+            7,
+            5,
+            2
+          ],
+          [
+            8,
+            4,
+            1
+          ],
+          [
+            8,
+            4,
+            2
+          ],
+          [
+            8,
+            5,
+            2
+          ],
+          [
+            8,
+            6,
+            2
+          ]
+        ],
+        "three_color_line_identity_checked": true,
+        "line_variance_D_exact": "128",
+        "all_286_printed_modular_sums_checked": true
+      }
+    },
+    "structured_examples": {
+      "progression_product": {
+        "n": 16,
+        "M": 120,
+        "span": 40,
+        "cells": 120,
+        "weak_domain": false,
+        "strict_corner_count_T": 200,
+        "enumerated_corners": 200,
+        "additive_energy_E": 1296,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 125,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 8,
+          "2": 16,
+          "4": 12,
+          "8": 4
+        },
+        "forcing_corners": 75,
+        "forcing_graph_edges": 150,
+        "sum_fiber_imbalance_squared": 20,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 26,
+        "R_z": 25,
+        "P_z": 8,
+        "K3_by_fiber_corner_count": 120,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 379,
+        "cube_moment_second_bound": 317,
+        "cube_moment_combined_bound": 317,
+        "printed_word_multiplicity_rows_checked": 10,
+        "family_corner_totals": {
+          "L": 24,
+          "U": 24,
+          "X": 76,
+          "Bridge": 76
+        },
+        "printed_actual_K3_and_old_new_bounds_checked": true
+      },
+      "complete_direct_sum": {
+        "n": 16,
+        "M": 120,
+        "span": 40,
+        "cells": 120,
+        "weak_domain": false,
+        "strict_corner_count_T": 200,
+        "enumerated_corners": 200,
+        "additive_energy_E": 1296,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 125,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 8,
+          "2": 16,
+          "4": 12,
+          "8": 4
+        },
+        "forcing_corners": 75,
+        "forcing_graph_edges": 150,
+        "sum_fiber_imbalance_squared": 20,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 26,
+        "R_z": 25,
+        "P_z": 8,
+        "K3_by_fiber_corner_count": 120,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 379,
+        "cube_moment_second_bound": 317,
+        "cube_moment_combined_bound": 317,
+        "printed_word_multiplicity_rows_checked": 10,
+        "family_corner_totals": {
+          "L": 24,
+          "U": 24,
+          "X": 76,
+          "Bridge": 76
+        },
+        "printed_actual_K3_and_old_new_bounds_checked": true
+      },
+      "translation_matching": {
+        "n": 4,
+        "M": 6,
+        "span": 3,
+        "cells": 6,
+        "weak_domain": false,
+        "strict_corner_count_T": 4,
+        "enumerated_corners": 4,
+        "additive_energy_E": 44,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 2,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        },
+        "forcing_corners": 2,
+        "forcing_graph_edges": 4,
+        "sum_fiber_imbalance_squared": 6,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 4,
+        "R_z": 0,
+        "P_z": 1,
+        "K3_by_fiber_corner_count": 1,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 5,
+        "cube_moment_second_bound": 3,
+        "cube_moment_combined_bound": 3
+      },
+      "two_distance_A_4": {
+        "n": 8,
+        "M": 28,
+        "span": 250,
+        "cells": 28,
+        "weak_domain": false,
+        "strict_corner_count_T": 12,
+        "enumerated_corners": 12,
+        "additive_energy_E": 168,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 4,
+          "2": 12
+        },
+        "forcing_corners": 12,
+        "forcing_graph_edges": 24,
+        "sum_fiber_imbalance_squared": 52,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 24,
+        "R_z": 0,
+        "P_z": 12,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "3/7"
+      },
+      "two_distance_A_6": {
+        "n": 12,
+        "M": 66,
+        "span": 6250,
+        "cells": 66,
+        "weak_domain": false,
+        "strict_corner_count_T": 30,
+        "enumerated_corners": 30,
+        "additive_energy_E": 396,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 6,
+          "2": 30
+        },
+        "forcing_corners": 30,
+        "forcing_graph_edges": 60,
+        "sum_fiber_imbalance_squared": 126,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 60,
+        "R_z": 0,
+        "P_z": 30,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "5/11"
+      },
+      "two_distance_A_8": {
+        "n": 16,
+        "M": 120,
+        "span": 156250,
+        "cells": 120,
+        "weak_domain": false,
+        "strict_corner_count_T": 56,
+        "enumerated_corners": 56,
+        "additive_energy_E": 720,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 8,
+          "2": 56
+        },
+        "forcing_corners": 56,
+        "forcing_graph_edges": 112,
+        "sum_fiber_imbalance_squared": 232,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 112,
+        "R_z": 0,
+        "P_z": 56,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "7/15"
+      },
+      "two_distance_A_10": {
+        "n": 20,
+        "M": 190,
+        "span": 3906250,
+        "cells": 190,
+        "weak_domain": false,
+        "strict_corner_count_T": 90,
+        "enumerated_corners": 90,
+        "additive_energy_E": 1140,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 10,
+          "2": 90
+        },
+        "forcing_corners": 90,
+        "forcing_graph_edges": 180,
+        "sum_fiber_imbalance_squared": 370,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 180,
+        "R_z": 0,
+        "P_z": 90,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "9/19"
+      },
+      "two_subset_B_4": {
+        "n": 6,
+        "M": 15,
+        "span": 144,
+        "cells": 15,
+        "weak_domain": false,
+        "strict_corner_count_T": 6,
+        "enumerated_corners": 6,
+        "additive_energy_E": 90,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 3,
+          "2": 6
+        },
+        "forcing_corners": 6,
+        "forcing_graph_edges": 12,
+        "sum_fiber_imbalance_squared": 27,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 12,
+        "R_z": 0,
+        "P_z": 6,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "2/5",
+        "definition": "B_r={5^i+5^j:0<=i<j<r}; color is 1 iff index pairs intersect"
+      },
+      "two_subset_B_6": {
+        "n": 15,
+        "M": 105,
+        "span": 3744,
+        "cells": 105,
+        "weak_domain": false,
+        "strict_corner_count_T": 90,
+        "enumerated_corners": 90,
+        "additive_energy_E": 795,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 45,
+          "4": 15
+        },
+        "forcing_corners": 90,
+        "forcing_graph_edges": 180,
+        "sum_fiber_imbalance_squared": 285,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 180,
+        "R_z": 0,
+        "P_z": 90,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "6/7",
+        "definition": "B_r={5^i+5^j:0<=i<j<r}; color is 1 iff index pairs intersect"
+      },
+      "two_subset_B_8": {
+        "n": 28,
+        "M": 378,
+        "span": 93744,
+        "cells": 378,
+        "weak_domain": false,
+        "strict_corner_count_T": 420,
+        "enumerated_corners": 420,
+        "additive_energy_E": 3220,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 210,
+          "6": 28
+        },
+        "forcing_corners": 420,
+        "forcing_graph_edges": 840,
+        "sum_fiber_imbalance_squared": 1218,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 840,
+        "R_z": 0,
+        "P_z": 420,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "10/9",
+        "definition": "B_r={5^i+5^j:0<=i<j<r}; color is 1 iff index pairs intersect"
+      },
+      "two_subset_B_10": {
+        "n": 45,
+        "M": 990,
+        "span": 2343744,
+        "cells": 990,
+        "weak_domain": false,
+        "strict_corner_count_T": 1260,
+        "enumerated_corners": 1260,
+        "additive_energy_E": 9045,
+        "monochromatic": 0,
+        "mixed_parallel_endpoints": 0,
+        "rainbow": 0,
+        "positive_difference_histogram": {
+          "1": 630,
+          "8": 45
+        },
+        "forcing_corners": 1260,
+        "forcing_graph_edges": 2520,
+        "sum_fiber_imbalance_squared": 3510,
+        "forcing_identity_checked": true,
+        "pointwise_identity_checked": true,
+        "degree_identity_checked": true,
+        "D_z": 2520,
+        "R_z": 0,
+        "P_z": 1260,
+        "K3_by_fiber_corner_count": 0,
+        "new_Q_and_eta_bounds_checked_on_tested_fibers": true,
+        "cube_moment_first_bound": 0,
+        "cube_moment_second_bound": 0,
+        "cube_moment_combined_bound": 0,
+        "T_over_M_exact": "14/11",
+        "definition": "B_r={5^i+5^j:0<=i<j<r}; color is 1 iff index pairs intersect"
+      },
+      "printed_four_example_rows_checked": 4,
+      "new_B_r_proposition_present_in_input_source": true
+    },
+    "divisor_weights": {
+      "11": {
+        "status": "passed",
+        "host_N": 459,
+        "local_rainbow_premise": 5,
+        "local_premise_is_refuted_elsewhere": true,
+        "weights_read_and_recomputed": 42,
+        "source_table_format": "compact weights only",
+        "copy_factors_and_summands_recomputed": true,
+        "individual_copy_factors_and_summands_printed_and_compared": false,
+        "weights": [
+          1000,
+          200,
+          377,
+          373,
+          666,
+          351,
+          866,
+          541,
+          743,
+          400,
+          1000,
+          266,
+          1000,
+          280,
+          459,
+          379,
+          1000,
+          98,
+          1000,
+          244,
+          410,
+          200,
+          1000,
+          178,
+          778,
+          200,
+          529,
+          322,
+          1000,
+          118,
+          1000,
+          419,
+          377,
+          200,
+          622,
+          323,
+          1000,
+          200,
+          377,
+          393,
+          1000,
+          258
+        ],
+        "budget_K": 45000,
+        "weighted_copy_total_J": 944436978,
+        "load_limit": 378,
+        "all_loads_through_limit_checked": true,
+        "loads_above_limit_are_zero_by_finite_support": true,
+        "maximum_load": 45000,
+        "maximum_load_steps": [
+          1,
+          2,
+          11,
+          13,
+          17,
+          19,
+          22,
+          23,
+          25,
+          26,
+          29,
+          31,
+          34,
+          37,
+          38,
+          41
+        ],
+        "printed_smooth_loads_checked": 34,
+        "rainbow_cap_U": 104805,
+        "conditional_gap": 5959890,
+        "coarser_host_N": 460,
+        "coarser_gap": 1575945
+      },
+      "12": {
+        "status": "passed",
+        "host_N": 455,
+        "local_rainbow_premise": 7,
+        "local_premise_is_refuted_elsewhere": true,
+        "weights_read_and_recomputed": 42,
+        "source_table_format": "compact weights only",
+        "copy_factors_and_summands_recomputed": true,
+        "individual_copy_factors_and_summands_printed_and_compared": false,
+        "weights": [
+          1000,
+          181,
+          345,
+          342,
+          618,
+          326,
+          818,
+          518,
+          719,
+          407,
+          1000,
+          284,
+          1000,
+          297,
+          463,
+          382,
+          1000,
+          94,
+          1000,
+          218,
+          401,
+          181,
+          1000,
+          131,
+          764,
+          181,
+          510,
+          278,
+          1000,
+          55,
+          1000,
+          386,
+          345,
+          181,
+          575,
+          263,
+          1000,
+          181,
+          345,
+          343,
+          1000,
+          195
+        ],
+        "budget_K": 55000,
+        "weighted_copy_total_J": 809226900,
+        "load_limit": 420,
+        "all_loads_through_limit_checked": true,
+        "loads_above_limit_are_zero_by_finite_support": true,
+        "maximum_load": 55000,
+        "maximum_load_steps": [
+          1,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41
+        ],
+        "printed_smooth_loads_checked": 41,
+        "rainbow_cap_U": 102982,
+        "conditional_gap": 578300,
+        "coarser_host_N": 457,
+        "coarser_gap": 8045239
+      }
+    },
+    "conditional_bound_arithmetic": {
+      "361": {
+        "conditional_span_factor": 20,
+        "diagonal_marks": 121,
+        "lhs_pairs": 7260,
+        "rhs_span_budget": 7200,
+        "strict_gap": 60,
+        "is_conditional_only": true
+      },
+      "379": {
+        "conditional_span_factor": 21,
+        "diagonal_marks": 127,
+        "lhs_pairs": 8001,
+        "rhs_span_budget": 7938,
+        "strict_gap": 63,
+        "is_conditional_only": true
+      },
+      "98777": {
+        "conditional_on": "S21",
+        "diagonal_marks": 24695,
+        "span_ell": 98776,
+        "shift_count_t": 600,
+        "profile_constant": 24850314,
+        "lhs_shift_mass": 1489236667050000,
+        "rhs_shift_budget": 1489233505236736,
+        "strict_gap": 3161813264,
+        "is_conditional_only": true
+      }
+    },
+    "graph_encoded_sources": {
+      "status": "passed",
+      "construction": "A_G={5^i+5^j:{i,j} in E(G)}",
+      "color_rule": "1 for index-edge intersection size 1; 0 for disjoint index edges",
+      "cycle_convention": "simple unoriented 4-cycles, not required to be induced; K4 contains 3",
+      "independent_cycle_formula": "C4=(1/2)*sum_{i<j} binom(|N(i) intersect N(j)|,2)",
+      "midpoint_convention": "k counts long unordered pairs, whose two index edges are disjoint",
+      "all_graphs_up_to_five_vertices": {
+        "0": {
+          "graphs_checked": 1,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 0,
+          "maximum_T_over_M_exact": "0",
+          "maximum_ratio_witness_edge_mask": 0,
+          "maximum_long_midpoint_multiplicity": 0
+        },
+        "1": {
+          "graphs_checked": 1,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 0,
+          "maximum_T_over_M_exact": "0",
+          "maximum_ratio_witness_edge_mask": 0,
+          "maximum_long_midpoint_multiplicity": 0
+        },
+        "2": {
+          "graphs_checked": 2,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 0,
+          "maximum_T_over_M_exact": "0",
+          "maximum_ratio_witness_edge_mask": 0,
+          "maximum_long_midpoint_multiplicity": 0
+        },
+        "3": {
+          "graphs_checked": 8,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 0,
+          "maximum_T_over_M_exact": "0",
+          "maximum_ratio_witness_edge_mask": 0,
+          "maximum_long_midpoint_multiplicity": 0
+        },
+        "4": {
+          "graphs_checked": 64,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 6,
+          "maximum_T_over_M_exact": "2/5",
+          "maximum_ratio_witness_edge_mask": 63,
+          "maximum_long_midpoint_multiplicity": 3
+        },
+        "5": {
+          "graphs_checked": 1024,
+          "all_labeled_simple_graphs_checked": true,
+          "maximum_T": 30,
+          "maximum_T_over_M_exact": "2/3",
+          "maximum_ratio_witness_edge_mask": 1023,
+          "maximum_long_midpoint_multiplicity": 3
+        }
+      },
+      "total_exhaustive_graphs_checked": 1100,
+      "deterministic_exhaustive_record_sha256": "9edf7ca9d9c2932e9dcfceceace3f9ab842157375b0c86bd09fb7facaa6f8606",
+      "six_vertex_representatives": {
+        "complete_K6": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "n": 15,
+          "span": 3744,
+          "M": 105,
+          "T": 90,
+          "C4_unoriented_not_necessarily_induced": 45,
+          "T_over_M_exact": "6/7",
+          "additive_energy_E": 795,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 90,
+          "corner_color_words": {
+            "101": 90
+          },
+          "long_pair_midpoint_groups": 15,
+          "maximum_long_pair_midpoint_multiplicity": 3,
+          "maximum_pair_sum_multiplicity_including_repetitions": 3
+        },
+        "cycle_C6": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "n": 6,
+          "span": 3744,
+          "M": 15,
+          "T": 0,
+          "C4_unoriented_not_necessarily_induced": 0,
+          "T_over_M_exact": "0",
+          "additive_energy_E": 66,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 0,
+          "corner_color_words": {},
+          "long_pair_midpoint_groups": 9,
+          "maximum_long_pair_midpoint_multiplicity": 1,
+          "maximum_pair_sum_multiplicity_including_repetitions": 1
+        },
+        "complete_bipartite_K3_3": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "n": 9,
+          "span": 3024,
+          "M": 36,
+          "T": 18,
+          "C4_unoriented_not_necessarily_induced": 9,
+          "T_over_M_exact": "1/2",
+          "additive_energy_E": 225,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 18,
+          "corner_color_words": {
+            "101": 18
+          },
+          "long_pair_midpoint_groups": 9,
+          "maximum_long_pair_midpoint_multiplicity": 2,
+          "maximum_pair_sum_multiplicity_including_repetitions": 2
+        },
+        "path_P6": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "n": 5,
+          "span": 3744,
+          "M": 10,
+          "T": 0,
+          "C4_unoriented_not_necessarily_induced": 0,
+          "T_over_M_exact": "0",
+          "additive_energy_E": 45,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 0,
+          "corner_color_words": {},
+          "long_pair_midpoint_groups": 6,
+          "maximum_long_pair_midpoint_multiplicity": 1,
+          "maximum_pair_sum_multiplicity_including_repetitions": 1
+        },
+        "star_K1_5": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "n": 5,
+          "span": 3120,
+          "M": 10,
+          "T": 0,
+          "C4_unoriented_not_necessarily_induced": 0,
+          "T_over_M_exact": "0",
+          "additive_energy_E": 45,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 0,
+          "corner_color_words": {},
+          "long_pair_midpoint_groups": 0,
+          "maximum_long_pair_midpoint_multiplicity": 0,
+          "maximum_pair_sum_multiplicity_including_repetitions": 1
+        },
+        "empty": {
+          "graph_vertices": 6,
+          "graph_edges": [],
+          "n": 0,
+          "span": 0,
+          "M": 0,
+          "T": 0,
+          "C4_unoriented_not_necessarily_induced": 0,
+          "T_over_M_exact": null,
+          "additive_energy_E": 0,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 0,
+          "corner_color_words": {},
+          "long_pair_midpoint_groups": 0,
+          "maximum_long_pair_midpoint_multiplicity": 0,
+          "maximum_pair_sum_multiplicity_including_repetitions": 0
+        },
+        "perfect_matching_3K2": {
+          "graph_vertices": 6,
+          "graph_edges": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "n": 3,
+          "span": 3744,
+          "M": 3,
+          "T": 0,
+          "C4_unoriented_not_necessarily_induced": 0,
+          "T_over_M_exact": "0",
+          "additive_energy_E": 15,
+          "proper_coloring": true,
+          "enumerated_geometric_corners": 0,
+          "corner_color_words": {},
+          "long_pair_midpoint_groups": 3,
+          "maximum_long_pair_midpoint_multiplicity": 1,
+          "maximum_pair_sum_multiplicity_including_repetitions": 1
+        }
+      },
+      "identities_checked": [
+        "T=2*C4",
+        "direct corner enumeration equals difference count",
+        "no monochromatic corner",
+        "long midpoint k<=3",
+        "T<=2M",
+        "C4=sum_midpoints binom(k,2)",
+        "E=2*n^2-n+8*C4",
+        "M<=5L",
+        "pair sums preserved in both directions including repetitions"
+      ],
+      "limitation": "Finite coverage only; the theorem for arbitrary simple graphs uses its proof.",
+      "printed_K4_worked_example": {
+        "marks_read_from_source": [
+          6,
+          26,
+          30,
+          126,
+          130,
+          150
+        ],
+        "source_matchings_checked": 3,
+        "all_unordered_pairs_summing_to_156": [
+          [
+            6,
+            150
+          ],
+          [
+            26,
+            130
+          ],
+          [
+            30,
+            126
+          ]
+        ],
+        "C4": 3,
+        "M": 15,
+        "T": 6,
+        "E": 90,
+        "proper_coloring": true,
+        "T_over_M_exact": "2/5",
+        "moment_bound_attainment": {
+          "K3": 0,
+          "D_z": 12,
+          "R_z": 0,
+          "P_z": 6,
+          "old_first": 6,
+          "old_second": 6,
+          "old_combined": 6,
+          "new_first": 0,
+          "new_second": 0,
+          "new_combined": 0,
+          "printed_source_values_checked": true,
+          "strict_D_branch_switch": false
+        },
+        "scope": "Worked counting example already covered by exhaustive graph enumeration; sharpness uses the infinite family."
+      },
+      "graph_theorem_present_in_input_source": true,
+      "midpoint_theorem_present_in_input_source": true
+    },
+    "source_reference_keys": {
+      "labels_checked": 186,
+      "references_checked": 242,
+      "duplicate_labels": [],
+      "undefined_references": [],
+      "citation_keys_used": 21,
+      "bibliography_kind": "external BibTeX file",
+      "bibliography_keys": 21,
+      "undefined_citation_keys": [],
+      "scope": "Key integrity only; no external literature-content or priority audit."
+    }
+  },
+  "status": "passed",
+  "checklist": [
+    {
+      "check": "seven_mark_witness",
+      "status": "passed"
+    },
+    {
+      "check": "four_cube",
+      "status": "passed"
+    },
+    {
+      "check": "four_by_four_crop",
+      "status": "passed"
+    },
+    {
+      "check": "six_point_attainment_witness",
+      "status": "passed"
+    },
+    {
+      "check": "three_cube",
+      "status": "passed"
+    },
+    {
+      "check": "weak_twelve_mark_coloring",
+      "status": "passed"
+    },
+    {
+      "check": "concentrated_deficit",
+      "status": "passed"
+    },
+    {
+      "check": "rainbow_counterexamples",
+      "status": "passed"
+    },
+    {
+      "check": "structured_examples",
+      "status": "passed"
+    },
+    {
+      "check": "divisor_weights",
+      "status": "passed"
+    },
+    {
+      "check": "conditional_bound_arithmetic",
+      "status": "passed"
+    },
+    {
+      "check": "graph_encoded_sources",
+      "status": "passed"
+    },
+    {
+      "check": "source_reference_keys",
+      "status": "passed"
+    }
+  ]
+}

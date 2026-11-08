@@ -47,4 +47,6 @@ Every finite integer set $A$ admitting a proper two-coloring of $V(A)$ satisfies
 
 ## 合作时提交什么
 
+2026-11-08 补充：[全源最优与局部平衡不兼容的反例](../research/boundary_extension_20261108/upper/README.md)表明全源势最小不能直接消掉各块局部不平衡；固定外部的两个精确最优值为9与13。[文献20×20样本的扩展障碍](../research/boundary_extension_20261108/lower/README.md)给出必要内部修改数，不能解释为一般21×21不可能性。G9、S21及三色精确值仍开放。
+
 写明命题及范围，给出完整证明或可独立重算的反例。计算结果记录输入、命令、依赖版本和输出。新结果先在独立分支讨论，并在改动当前数学稿后重跑有限核验。

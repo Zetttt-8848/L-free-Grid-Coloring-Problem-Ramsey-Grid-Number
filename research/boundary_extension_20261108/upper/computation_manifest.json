@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "claim_id": "U-field-20261108",
+  "repository": {
+    "commit": "080822bb1d434b164a1f42ea159d0bf148396b71",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research/boundary_extension_20261108/upper/verify.py"
+  ],
+  "command_note": "Executed with the running Python interpreter; its absolute executable path is omitted for portability and privacy. The actual Python version is recorded below.",
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "AMD64 Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+  },
+  "mathematics": {
+    "assertion_tested": "All explicit before/after source colorings are proper; the attained parity and field bounds prove the two exact minima.",
+    "coefficient_domain": "integers",
+    "conventions": "Full strict source; directed equal-leg L with positive step; signs 1-2c.",
+    "inputs": [
+      "research/boundary_extension_20261108/upper/verify.py",
+      "research/boundary_extension_20261108/upper/witnesses.json"
+    ],
+    "bounds": {
+      "marks": 10,
+      "cells": 45,
+      "corners": 46,
+      "colorings": 2
+    },
+    "non_claims": [
+      "No R3 bound improvement.",
+      "No exhaustive enumeration of all colorings.",
+      "No global novelty claim."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T09:25:45.088532+00:00",
+    "runtime_seconds": 0.09906319999981861,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "wall_seconds": 30,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/boundary_extension_20261108/upper/verification.json",
+      "sha256": "4437bf4325b6194e1c1c773bf8b2256b59b3ae680d64dbc52856018988de3d71",
+      "kind": "result"
+    },
+    {
+      "path": "research/boundary_extension_20261108/upper/verification_stdout.txt",
+      "sha256": "e936bb5d0be73047558db3e687a2d9a5e54e389ab074c06c5bc07d80340e9065",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    "Independent unordered-triple geometry",
+    "All colors and all L constraints",
+    "Parity and field bounds attain equality"
+  ],
+  "result": "Two proper source colorings certify exact minima 9 and 13, with local potential 8 to 4.",
+  "residual_risks": [
+    "Python runtime trusted; no formal proof checker used."
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/boundary_extension_20261108/upper/verify.py",
+      "sha256": "ce8497662c15c31ca8309150a52029da9704aacb648adddc61b358aa2ef0b9ba",
+      "sha256_after": "ce8497662c15c31ca8309150a52029da9704aacb648adddc61b358aa2ef0b9ba"
+    },
+    {
+      "path": "research/boundary_extension_20261108/upper/witnesses.json",
+      "sha256": "dc7710d2e2bf4624b4da6a3360710d80f677fde7eb2222104034f97e036f670f",
+      "sha256_after": "dc7710d2e2bf4624b4da6a3360710d80f677fde7eb2222104034f97e036f670f"
+    }
+  ],
+  "declared_results": [
+    "research/boundary_extension_20261108/upper/verification.json"
+  ]
+}
