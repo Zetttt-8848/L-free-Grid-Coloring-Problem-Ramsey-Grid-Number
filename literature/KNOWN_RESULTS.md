@@ -2,6 +2,8 @@
 
 核查日期：2026-11-05。以下是已核查的核心原始文献地图，不是对全部文献的穷尽调查。数值界更新必须有可核查原始出处、版本和证明位置。
 
+项目最新结果为 [六类共同计数的464上界](../research/kernel_compatibility_20261108/README.md)，区别于本页的已发表493比较基准。[新计数与既有文献的关系](../research/kernel_compatibility_20261108/COUNTING_COMPARISON.md)核对了不交Golomb尺研究及2026差值装填论文；标记不交不等于差值集不交，后者的定理不能直接移植。没有全球优先权或穷尽文献声明。
+
 2026-11-08 的增量检索与精读见 [新文献及适用性报告](../research/boundary_extension_20261108/literature/README.md)。检索到2026年多项式 corners 预印本及较新的稳定性论文；未核实可直接替换下述三色数值基准的后续结果。报告明确区分已读章节、未审计证明及不适用的等臂/有限域假设。
 
 同日后续：[本项目重新核实的465上界](../research/coupled_budget_20261108/numeric_upper/THEOREM.md)是项目历史卷积证明，区别于下列已发表493基准。它仅需 Golomb 跨度下界 G(24)≥425、G(25)≥480；原始输入分别核对了 [OGR-24完成公告](https://blogs.distributed.net/2004/11/) 和 [OGR-25完成公告](https://blogs.distributed.net/2008/10/)。本轮未本地重跑这些外部穷尽计算，也不主张465的全球优先权。
