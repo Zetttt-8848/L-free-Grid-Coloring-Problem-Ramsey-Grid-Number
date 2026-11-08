@@ -1,0 +1,332 @@
+{
+  "n": 21,
+  "base_cores": 34,
+  "unique_cut_count": 22680,
+  "literal_count": 157068,
+  "length_distribution": {
+    "64": 12,
+    "58": 24,
+    "6": 19308,
+    "41": 180,
+    "7": 1536,
+    "55": 96,
+    "51": 24,
+    "67": 36,
+    "8": 1164,
+    "9": 300
+  },
+  "cuts_sha256": "c5b811611893bac7aa297d6cdcd476d1a26fd563b35f2bb32581c3fa9ce58f0f",
+  "orbits": [
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 0,
+      "generated_candidates": 2700,
+      "new_unique": 2700
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 1,
+      "generated_candidates": 108,
+      "new_unique": 108
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 2,
+      "generated_candidates": 1728,
+      "new_unique": 1728
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 3,
+      "generated_candidates": 2352,
+      "new_unique": 2352
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 4,
+      "generated_candidates": 300,
+      "new_unique": 300
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 5,
+      "generated_candidates": 972,
+      "new_unique": 972
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 6,
+      "generated_candidates": 972,
+      "new_unique": 972
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 7,
+      "generated_candidates": 1452,
+      "new_unique": 1452
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 8,
+      "generated_candidates": 24,
+      "new_unique": 24
+    },
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "core": 9,
+      "generated_candidates": 36,
+      "new_unique": 36
+    },
+    {
+      "offset": [
+        0,
+        1
+      ],
+      "core": 0,
+      "generated_candidates": 180,
+      "new_unique": 180
+    },
+    {
+      "offset": [
+        0,
+        1
+      ],
+      "core": 1,
+      "generated_candidates": 96,
+      "new_unique": 96
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 0,
+      "generated_candidates": 1728,
+      "new_unique": 1728
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 1,
+      "generated_candidates": 432,
+      "new_unique": 432
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 2,
+      "generated_candidates": 768,
+      "new_unique": 768
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 3,
+      "generated_candidates": 1200,
+      "new_unique": 1200
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 4,
+      "generated_candidates": 972,
+      "new_unique": 972
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 5,
+      "generated_candidates": 2028,
+      "new_unique": 2028
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 6,
+      "generated_candidates": 2700,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 7,
+      "generated_candidates": 300,
+      "new_unique": 300
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 8,
+      "generated_candidates": 3072,
+      "new_unique": 1536
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 9,
+      "generated_candidates": 972,
+      "new_unique": 972
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 10,
+      "generated_candidates": 192,
+      "new_unique": 192
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 11,
+      "generated_candidates": 192,
+      "new_unique": 192
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 12,
+      "generated_candidates": 432,
+      "new_unique": 432
+    },
+    {
+      "offset": [
+        1,
+        0
+      ],
+      "core": 13,
+      "generated_candidates": 972,
+      "new_unique": 972
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 0,
+      "generated_candidates": 1728,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 1,
+      "generated_candidates": 432,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 2,
+      "generated_candidates": 768,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 3,
+      "generated_candidates": 1200,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 4,
+      "generated_candidates": 972,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 5,
+      "generated_candidates": 2028,
+      "new_unique": 0
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 6,
+      "generated_candidates": 24,
+      "new_unique": 24
+    },
+    {
+      "offset": [
+        1,
+        1
+      ],
+      "core": 7,
+      "generated_candidates": 12,
+      "new_unique": 12
+    }
+  ],
+  "source_inputs": {
+    "paper20.json": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    "packing_results.json": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493"
+  },
+  "claim": "Every generated clause is redundant for the complete directed L-free 3-color square formula, by the stored core proof and a shape-preserving injective map."
+}

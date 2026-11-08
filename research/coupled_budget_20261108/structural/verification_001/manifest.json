@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "claim_id": "COUPLED_STRUCTURAL_AND_INDEPENDENT_UPPER_AUDIT_20261108",
+  "repository": {
+    "commit": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "replay_checks.py",
+    "verification_001"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.13.5"
+      },
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "The listed 9-mark complete source has exactly four proper binary colorings, all Phi=8>P=4; its stated 10-mark extension has a proper parity-optimal coloring; the invalid seven-mark discovery has parity-optimal states; the 465 and 466 integer certificates have the reported margins.",
+    "coefficient_domain": "Exact integers and finite Boolean assignments",
+    "conventions": "Directed L=(x,y),(x+h,y),(x+h,y+h), h>0; complete strict source V(A); z=1-2c. Golomb table uses occupied positions, one more than span.",
+    "inputs": [
+      "All 2^36 assignments of the specified 9-mark source, covered by a checked branch certificate and complement symmetry",
+      "All 2^21 assignments of the seven-mark regression source",
+      "The explicit 45-cell extension witness",
+      "Published Golomb occupied-position table; external G(24)>=425 and G(25)>=480"
+    ],
+    "bounds": {
+      "nine_mark_source_span": 10,
+      "extension_span": 14,
+      "seven_mark_assignments": 2097152,
+      "nine_mark_assignment_domain": 68719476736,
+      "n_values": [
+        465,
+        466
+      ],
+      "rank_parameter": 22,
+      "convolution_weight_length": 93
+    },
+    "non_claims": [
+      "No universal source energy budget",
+      "No local exhaustive proof of external Golomb ruler bounds",
+      "No Lean formalization",
+      "The restored 465 argument is historical, not a new discovery"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T10:39:45.393677+00:00",
+    "runtime_seconds": 2.199257,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "replay_checks.py",
+    "enumerate_frustration.py",
+    "certify_balance.py",
+    "check_branch_proof.py",
+    "verify_extension.py",
+    "audit_joint_bound.py",
+    "audit_convolution.py",
+    "extension_discovery.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "replay_checks.py",
+      "sha256": "e9249e092569b82679b264683dcd6d337e5eed04e53bdb56a81dc2ee99372b36",
+      "sha256_after": "e9249e092569b82679b264683dcd6d337e5eed04e53bdb56a81dc2ee99372b36"
+    },
+    {
+      "path": "enumerate_frustration.py",
+      "sha256": "db9215edf93a2b2890d0feb188b783556582a2269e15006ba7245ff5509b3a5f",
+      "sha256_after": "db9215edf93a2b2890d0feb188b783556582a2269e15006ba7245ff5509b3a5f"
+    },
+    {
+      "path": "certify_balance.py",
+      "sha256": "144d4d2de5ca133047bf070e5c33a0bf68a39fe1336286503b2ec37598793c3b",
+      "sha256_after": "144d4d2de5ca133047bf070e5c33a0bf68a39fe1336286503b2ec37598793c3b"
+    },
+    {
+      "path": "check_branch_proof.py",
+      "sha256": "864d2f5ac83bf1628336591aa3e0b176beb59e3445d970ac0243963b4a7c9d70",
+      "sha256_after": "864d2f5ac83bf1628336591aa3e0b176beb59e3445d970ac0243963b4a7c9d70"
+    },
+    {
+      "path": "verify_extension.py",
+      "sha256": "66b064be104467a7a938ee9fd973b5a8c8df8d71031699dc392f802db9d6062c",
+      "sha256_after": "66b064be104467a7a938ee9fd973b5a8c8df8d71031699dc392f802db9d6062c"
+    },
+    {
+      "path": "audit_joint_bound.py",
+      "sha256": "af4bb893e7061c9e97b0a36e287ba7e7ff99099b266a4307dcedfaaacc6d816e",
+      "sha256_after": "af4bb893e7061c9e97b0a36e287ba7e7ff99099b266a4307dcedfaaacc6d816e"
+    },
+    {
+      "path": "audit_convolution.py",
+      "sha256": "ab48fe3c31608f74609a0343ffdb6459ff2fd42cded6afdf264022518e06feae",
+      "sha256_after": "ab48fe3c31608f74609a0343ffdb6459ff2fd42cded6afdf264022518e06feae"
+    },
+    {
+      "path": "extension_discovery.json",
+      "sha256": "7c97e47d472e96151c9f92e17ca54a1e861976f1af1fadae0cbf0e44b51b77c5",
+      "sha256_after": "7c97e47d472e96151c9f92e17ca54a1e861976f1af1fadae0cbf0e44b51b77c5"
+    }
+  ],
+  "output_directory": "verification_001",
+  "declared_results": [
+    "verification_001/result.json",
+    "verification_001/frustration_results.json",
+    "verification_001/balance_certificate.json",
+    "verification_001/balance_branch_proof.json",
+    "verification_001/balance_proof_check.json",
+    "verification_001/extension_verification.json",
+    "verification_001/joint_bound_audit.json",
+    "verification_001/convolution_audit.json"
+  ],
+  "outputs": [
+    {
+      "path": "verification_001/stdout.txt",
+      "sha256": "3b1172531dad863ae6bd7c5aeb5472ef72d03c4c7bac875087f7f2bea8c27686",
+      "kind": "log"
+    },
+    {
+      "path": "verification_001/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "verification_001/result.json",
+      "sha256": "bb72e7952da9c4fff6f91692e2f0346e6fe54a98fcbfb6e27eb875b0b8f4518f",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/frustration_results.json",
+      "sha256": "2d38f20c2519b6813116e0173b97bcb9922a2af534526fc43ff4ebeef689d9d0",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/balance_certificate.json",
+      "sha256": "c7bb9b0f7892807a27653e6097af4074f27ce145fb3f710e76685853cb08a384",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/balance_branch_proof.json",
+      "sha256": "086ac9bf5a32f3838191ffc18002c0eb1a929c80548b99a286310a251c47e8e4",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/balance_proof_check.json",
+      "sha256": "d7675f6f96d937864ec2974623a90ac67342e08e22055cdffd7c7c0df734d7ba",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/extension_verification.json",
+      "sha256": "49c1089139e7e3e8f8b87640a868c3404c71fb32a7ffda0c8db2936d94bd1df4",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/joint_bound_audit.json",
+      "sha256": "463408f343fb8e984be230951841b46d00743aa014da2878e133c16020c340be",
+      "kind": "result"
+    },
+    {
+      "path": "verification_001/convolution_audit.json",
+      "sha256": "5353995c721c3a3bf58563ed8330c35bbcfc6a2e3ca6e69b7f1f6fdbd93db013",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

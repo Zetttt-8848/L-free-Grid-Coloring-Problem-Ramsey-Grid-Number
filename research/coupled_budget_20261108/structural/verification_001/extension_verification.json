@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "cells": 45,
+  "physical_corners": 73,
+  "potentials": [
+    {
+      "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "phi": 8,
+      "parity": 4,
+      "signed_fiber_sums": {
+        "1": 0,
+        "2": -1,
+        "3": 0,
+        "4": 0,
+        "6": 0,
+        "5": 1,
+        "7": -1,
+        "9": 0,
+        "8": 2,
+        "10": -1
+      }
+    },
+    {
+      "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14
+      ],
+      "phi": 7,
+      "parity": 7,
+      "signed_fiber_sums": {
+        "1": 0,
+        "2": -1,
+        "3": 0,
+        "4": -1,
+        "6": 0,
+        "5": 0,
+        "7": 0,
+        "9": 0,
+        "8": 1,
+        "10": 0,
+        "14": -1,
+        "13": 1,
+        "12": 1,
+        "11": 1
+      }
+    }
+  ],
+  "cancelled_difference": 8,
+  "witness_sha256": "7c97e47d472e96151c9f92e17ca54a1e861976f1af1fadae0cbf0e44b51b77c5",
+  "verifier_sha256": "66b064be104467a7a938ee9fd973b5a8c8df8d71031699dc392f802db9d6062c",
+  "scope": "One full 45-cell source witness. Global minimum 7 follows from parity and its attainment."
+}

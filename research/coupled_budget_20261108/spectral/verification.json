@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Exact identity and artifact integrity only; no bound improvement",
+  "identity_cases": 88533,
+  "runs": [
+    {
+      "path": "scout492.json",
+      "sha256": "22566293e5a1bcbfb2f1382c0cbe9be62443ece5e5b2cfdea16a5843bb6cc247",
+      "source_sha256": "037bcf769a01c15ec558b9fa2cadc0f33d7574d15030c369110a21ea3e56b65d",
+      "n": 492,
+      "integer_cuts": 752,
+      "elapsed_seconds": 90.84537730000011,
+      "status": "UNDECIDED"
+    },
+    {
+      "path": "joint464.json",
+      "sha256": "59f62ec47f6e3dab25bb7eb40cc321a2bfe916b933f56f36bf0704b1353145ad",
+      "source_sha256": "2b6434d92d1a34cefd5b96a7e09780f1c2b157f5613e8f41b566879d25d065fe",
+      "n": 464,
+      "integer_cuts": 1164,
+      "elapsed_seconds": 120.03603360000034,
+      "status": "UNDECIDED"
+    }
+  ],
+  "python": "3.13.5",
+  "checker_sha256": "b67994ad40d8c12a197f90d1a6fec66b4584fe372a0e4c3ce2f95f711f7f2a09"
+}

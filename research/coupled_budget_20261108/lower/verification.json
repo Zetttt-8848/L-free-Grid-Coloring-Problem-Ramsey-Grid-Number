@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "base_cores": 34,
+  "checked_base_tree_nodes": 194,
+  "unique_cuts": 22680,
+  "cuts_sha256": "c5b811611893bac7aa297d6cdcd476d1a26fd563b35f2bb32581c3fa9ce58f0f",
+  "matrices": [
+    {
+      "file": "local71.json",
+      "monochromatic_L": 1,
+      "violations": [
+        [
+          [
+            14,
+            6
+          ],
+          [
+            17,
+            6
+          ],
+          [
+            17,
+            9
+          ]
+        ]
+      ],
+      "sha256": "4bfc729a4d2a06a601a2b3f0f8b17153a4564f821219eab2b49aec7d99462557"
+    }
+  ],
+  "scope": "Finite cut closure and complete saved candidates. A nonzero violation count is not a construction.",
+  "inputs": {
+    "research/boundary_extension_20261108/lower/verify.py": "70088c82400223424ef14728e5d467e6128ca4afbd56c8c99c8cd2dddd2fc8d9",
+    "research/boundary_extension_20261108/lower/paper20.json": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    "research/boundary_extension_20261108/lower/packing_results.json": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493",
+    "research/coupled_budget_20261108/lower/cut_catalog.json": "05f668158ca98b1a16d53a8a3a757e6d62f89207d851d5d2f7f26d5228a7fb53",
+    "research/coupled_budget_20261108/lower/verify.py": "1840866cc7eaac27cffca01d8aca9cd23042efe940e916bc09173fa10e420640"
+  }
+}

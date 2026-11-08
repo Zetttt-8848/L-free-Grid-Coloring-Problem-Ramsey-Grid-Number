@@ -2,6 +2,18 @@
 
 本索引指向当前数学稿。Open assertion 是未解决的假设，External theorem 是文献输入。历史 Lean 覆盖记录不能代替当前稿的逐项对应。
 
+2026-11-08 新检查点尚未并入下列主稿索引：[完整报告](../research/coupled_budget_20261108/README.md)。
+
+| 状态 | 结果 | 证明及证据 |
+|---|---|---|
+| PROVED，使用已认证外部计算定理 | 恢复历史上界 R3≤465；不依赖 G9/S21/彩虹前提 | [完整推导及来源](../research/coupled_budget_20261108/numeric_upper/THEOREM.md)，[独立审阅](../research/coupled_budget_20261108/structural/UPPER_PROOF_REVIEW.md) |
+| PROVED | 一般 k 类联合端点引理；三色应用 R3≤466 | 同上；优先权未作全球检索结论 |
+| FINITE-CHECKED | 单缺陷21×21候选的半径10修复不可能，任意正常修复至少改变11格 | [完整候选和分支证书](../research/coupled_budget_20261108/lower/README.md)；不提高下界 |
+| FINITE-CHECKED | 局部强制失衡可被外部同纤维格抵消 | [结构证书与安全计费条件](../research/coupled_budget_20261108/structural/README.md) |
+| UNDECIDED | n=464联合自相关正半定约束探索 | [实际运行范围](../research/coupled_budget_20261108/spectral/README.md)；没有精确矛盾证书 |
+
+以下为原主稿索引，保留原有命题范围。
+
 | 类型 | 标题 | 标签与正文位置 |
 |---|---|---|
 | lemma | Transposition | [lem:transpose](../manuscript/main.tex#L179) |

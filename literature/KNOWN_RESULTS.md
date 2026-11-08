@@ -4,6 +4,8 @@
 
 2026-11-08 的增量检索与精读见 [新文献及适用性报告](../research/boundary_extension_20261108/literature/README.md)。检索到2026年多项式 corners 预印本及较新的稳定性论文；未核实可直接替换下述三色数值基准的后续结果。报告明确区分已读章节、未审计证明及不适用的等臂/有限域假设。
 
+同日后续：[本项目重新核实的465上界](../research/coupled_budget_20261108/numeric_upper/THEOREM.md)是项目历史卷积证明，区别于下列已发表493基准。它仅需 Golomb 跨度下界 G(24)≥425、G(25)≥480；原始输入分别核对了 [OGR-24完成公告](https://blogs.distributed.net/2004/11/) 和 [OGR-25完成公告](https://blogs.distributed.net/2008/10/)。本轮未本地重跑这些外部穷尽计算，也不主张465的全球优先权。
+
 ## 先统一问题约定
 
 本项目固定正步长、等长两条腿的定向 L：

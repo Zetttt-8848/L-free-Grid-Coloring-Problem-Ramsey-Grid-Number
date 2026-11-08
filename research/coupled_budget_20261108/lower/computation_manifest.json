@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "claim_id": "L-CUT-DISCREPANCY-20261108",
+  "repository": {
+    "commit": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research/coupled_budget_20261108/lower/run_audit.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "All 22,680 lifted clauses follow from checked seed cores; the complete candidate has one bad L; proof streams exclude repairs at radii1 through10.",
+    "coefficient_domain": "Exact integer geometry, finite three-color domains, lossless integer proof stream",
+    "conventions": "Full21 square; only positive-step directed equal-leg L; Hamming changes relative to one fixed complete candidate",
+    "inputs": [
+      "research/coupled_budget_20261108/lower/run_audit.py",
+      "research/coupled_budget_20261108/lower/verify.py",
+      "research/coupled_budget_20261108/lower/verify_defect.py",
+      "research/coupled_budget_20261108/lower/defect_certified.json",
+      "research/coupled_budget_20261108/lower/cut_catalog.json",
+      "research/boundary_extension_20261108/lower/verify.py",
+      "research/boundary_extension_20261108/lower/paper20.json",
+      "research/boundary_extension_20261108/lower/packing_results.json",
+      "research/coupled_budget_20261108/lower/runs/cuts120.json",
+      "research/coupled_budget_20261108/lower/runs/guided17.json",
+      "research/coupled_budget_20261108/lower/runs/initial_defect_summary.json",
+      "research/coupled_budget_20261108/lower/runs/local71.json",
+      "research/coupled_budget_20261108/lower/runs/plain120.json",
+      "research/coupled_budget_20261108/lower/runs/random17.json",
+      "research/coupled_budget_20261108/lower/runs/repair91.json"
+    ],
+    "bounds": {
+      "base_cores": 34,
+      "lifted_cuts": 22680,
+      "max_radius": 10,
+      "radius10_nodes": 1235525
+    },
+    "non_claims": [
+      "No new Ramsey lower bound",
+      "No globally impossible21 square",
+      "No proof that11 changes suffice",
+      "No SAT speedup"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T10:40:59.554452+00:00",
+    "runtime_seconds": 2.023300300000301,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "wall_seconds": 60,
+      "cpu_seconds": null,
+      "memory_bytes": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "input_artifacts": [
+    {
+      "path": "research/coupled_budget_20261108/lower/run_audit.py",
+      "sha256": "7a187b2a73f4058655f862acfc863ecb15fe003bafa649bb565dd09241563c92",
+      "sha256_after": "7a187b2a73f4058655f862acfc863ecb15fe003bafa649bb565dd09241563c92"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/verify.py",
+      "sha256": "1840866cc7eaac27cffca01d8aca9cd23042efe940e916bc09173fa10e420640",
+      "sha256_after": "1840866cc7eaac27cffca01d8aca9cd23042efe940e916bc09173fa10e420640"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/verify_defect.py",
+      "sha256": "a436543bea7fb7a7f46eb49cc14cec0cf47bcf9ee824ec6ff590e92f2d6bef92",
+      "sha256_after": "a436543bea7fb7a7f46eb49cc14cec0cf47bcf9ee824ec6ff590e92f2d6bef92"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/defect_certified.json",
+      "sha256": "908989b6126609dbc708473fee6038ea1c840249ebce1b44b2872b3e33ec7b2c",
+      "sha256_after": "908989b6126609dbc708473fee6038ea1c840249ebce1b44b2872b3e33ec7b2c"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/cut_catalog.json",
+      "sha256": "05f668158ca98b1a16d53a8a3a757e6d62f89207d851d5d2f7f26d5228a7fb53",
+      "sha256_after": "05f668158ca98b1a16d53a8a3a757e6d62f89207d851d5d2f7f26d5228a7fb53"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/verify.py",
+      "sha256": "70088c82400223424ef14728e5d467e6128ca4afbd56c8c99c8cd2dddd2fc8d9",
+      "sha256_after": "70088c82400223424ef14728e5d467e6128ca4afbd56c8c99c8cd2dddd2fc8d9"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/paper20.json",
+      "sha256": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+      "sha256_after": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/packing_results.json",
+      "sha256": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493",
+      "sha256_after": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/cuts120.json",
+      "sha256": "d04ba4852120ea6c0f9bfabb4fa7c63e8b5300f2da6934c4e4a3f61b08202867",
+      "sha256_after": "d04ba4852120ea6c0f9bfabb4fa7c63e8b5300f2da6934c4e4a3f61b08202867"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/guided17.json",
+      "sha256": "37d3fb58fc71aededf4702fc5fa80ccecb74c2f3cfa3f40de93bfe2882265f48",
+      "sha256_after": "37d3fb58fc71aededf4702fc5fa80ccecb74c2f3cfa3f40de93bfe2882265f48"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/initial_defect_summary.json",
+      "sha256": "b27c4786fa9bdd33941ed1ca2ff2781c0dc59e400ad8caaf4fbacccd391bb995",
+      "sha256_after": "b27c4786fa9bdd33941ed1ca2ff2781c0dc59e400ad8caaf4fbacccd391bb995"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/local71.json",
+      "sha256": "4bfc729a4d2a06a601a2b3f0f8b17153a4564f821219eab2b49aec7d99462557",
+      "sha256_after": "4bfc729a4d2a06a601a2b3f0f8b17153a4564f821219eab2b49aec7d99462557"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/plain120.json",
+      "sha256": "b48f9b2b72e7d892fd2735ddcb9e6aa7ebd98fb86c30dbf1e8af58b2d71e819f",
+      "sha256_after": "b48f9b2b72e7d892fd2735ddcb9e6aa7ebd98fb86c30dbf1e8af58b2d71e819f"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/random17.json",
+      "sha256": "87989f6fe230fbc40e50ba03fad970d8bd770c44a7de8ff5a5909e5bc71d1806",
+      "sha256_after": "87989f6fe230fbc40e50ba03fad970d8bd770c44a7de8ff5a5909e5bc71d1806"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/runs/repair91.json",
+      "sha256": "73c03cdced476be8067c1287dd4742ef801a34425f220dc9b8f53d9d3b46180c",
+      "sha256_after": "73c03cdced476be8067c1287dd4742ef801a34425f220dc9b8f53d9d3b46180c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "research/coupled_budget_20261108/lower/verification.json",
+      "sha256": "4483fd3604bc21ad286b9ac091d1cd717cf24f0adc2c7835cb87270d58954b85",
+      "kind": "result"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/defect_verification.json",
+      "sha256": "8509c59a9ba6c565056f4b209992bdb1d531e15c8cb31209badb3dd6298521b8",
+      "kind": "result"
+    },
+    {
+      "path": "research/coupled_budget_20261108/lower/audit_stdout.txt",
+      "sha256": "294f6c3326d1e4df2868b1c5a5fa3658c2e0e7a52469c0007df58f79021a6d4a",
+      "kind": "log"
+    }
+  ],
+  "declared_results": [
+    "research/coupled_budget_20261108/lower/verification.json",
+    "research/coupled_budget_20261108/lower/defect_verification.json"
+  ],
+  "checks": [
+    "Rechecked prior complete proof trees",
+    "Independently reconstructed all geometric lifts",
+    "All2,870 candidate corners",
+    "Complete discrepancy branch coverage, no discovery or solver imports"
+  ],
+  "result": "Certified lifted clauses and radius10 barrier; all construction attempts remain undecided.",
+  "residual_risks": [
+    "Python runtime trusted",
+    "Search runs are heuristic or interrupted; only finite certificates are mathematical negative evidence"
+  ],
+  "portability_note": "Actual interpreter absolute path omitted; actual version recorded."
+}
