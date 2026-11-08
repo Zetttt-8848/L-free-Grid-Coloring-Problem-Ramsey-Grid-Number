@@ -1,0 +1,86 @@
+{
+  "spectral_range": {
+    "n": [
+      460,
+      465
+    ],
+    "length": [
+      50,
+      120
+    ]
+  },
+  "spectral": [
+    {
+      "n": 460,
+      "length": 78,
+      "score": -93.04979949857668,
+      "status": "FLOATING_DISCOVERY"
+    },
+    {
+      "n": 461,
+      "length": 80,
+      "score": -70.26161030978886,
+      "status": "FLOATING_DISCOVERY"
+    },
+    {
+      "n": 462,
+      "length": 82,
+      "score": -46.63694512980207,
+      "status": "FLOATING_DISCOVERY"
+    },
+    {
+      "n": 463,
+      "length": 84,
+      "score": -22.178019608513427,
+      "status": "FLOATING_DISCOVERY"
+    },
+    {
+      "n": 464,
+      "length": 86,
+      "score": 3.11315005916472,
+      "status": "FLOATING_DISCOVERY"
+    },
+    {
+      "n": 465,
+      "length": 88,
+      "score": 29.234732948645384,
+      "status": "FLOATING_DISCOVERY"
+    }
+  ],
+  "family_range": {
+    "n": 464,
+    "length": [
+      60,
+      110
+    ],
+    "shift_q": [
+      0,
+      10
+    ]
+  },
+  "families": [
+    {
+      "family": "tent",
+      "length": 93,
+      "q": 0,
+      "gap": -176681,
+      "a0": 69231
+    },
+    {
+      "family": "parabola",
+      "length": 85,
+      "q": 0,
+      "gap": 477965143,
+      "a0": 156809003
+    },
+    {
+      "family": "shiftparabola",
+      "length": 86,
+      "q": 5,
+      "gap": 47851696900,
+      "a0": 15686202200
+    }
+  ],
+  "non_claim": "No optimality claim outside these finite families; floating rows are discovery only.",
+  "source_sha256": "ee18e27c0e8262e2ee871dbfbd26d5a101282e68d91e7c0b47d1a88816fffc5b"
+}

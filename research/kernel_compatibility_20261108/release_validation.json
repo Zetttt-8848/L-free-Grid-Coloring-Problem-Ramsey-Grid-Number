@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "research/kernel_compatibility_20261108/kernel_upper/certificate.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08640039999954752,
+      "stdout": "{\"status\": \"PASS\", \"n\": 464, \"gap\": 477965143, \"old_separate_cap_gap\": -2799639872, \"closed_formula_product_checks\": 520}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/kernel_compatibility_20261108/geometry/audit_464.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08221650000086811,
+      "stdout": "{\"status\": \"PASS\", \"a0\": 156809003, \"joint_margin\": 477965143, \"literal_cauchy_margin\": 955930286, \"independent_cap_margin\": -2799639872, \"improvement_terms\": [{\"d\": 34, \"p\": 430, \"old_cap\": 144, \"joint_cap\": 143, \"added_margin\": 243513270}, {\"d\": 35, \"p\": 429, \"old_cap\": 144, \"joint_cap\": 142, \"added_margin\": 468131040}, {\"d\": 36, \"p\": 428, \"old_cap\": 144, \"joint_cap\": 141, \"added_margin\": 674017785}, {\"d\": 37, \"p\": 427, \"old_cap\": 144, \"joint_cap\": 140, \"added_margin\": 861396480}, {\"d\": 38, \"p\": 426, \"old_cap\": 144, \"joint_cap\": 139, \"added_margin\": 1030546440}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/kernel_compatibility_20261108/geometry/verify_geometry.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.4517755999986548,
+      "stdout": "{\"status\": \"PASS\", \"paper20_corners\": 2470, \"small_geometry\": {\"positions\": 10, \"physical_Ls\": 10, \"assignments\": 59049, \"proper_colorings_checked\": 17316, \"domain\": \"full weak4 triangle; no symmetry quotient\"}, \"small_packing\": {\"positions\": 12, \"classes\": 2, \"subsets_checked\": 4096, \"golomb_subsets\": 463, \"separate_capacity\": 10, \"joint_capacity\": 9, \"exact_optimum\": 9, \"witness\": [[0, 2, 7, 10, 11], [1, 6, 8, 9]]}}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/kernel_compatibility_20261108/combinatorial_upper/verify.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3619312999999238,
+      "stdout": "{\"status\": \"PASS\", \"n464_gap\": 1199151808, \"q6_maximum\": 14, \"q6_pairs\": 177147}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/kernel_compatibility_20261108/review/independent_counting_check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6004909999992378,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"gap\": 477965143,\n  \"direct_cauchy_deficit\": 955930286,\n  \"full_convolution_energy\": 4964649096992,\n  \"upper_color_energy\": 1654564388902,\n  \"checks\": {\n    \"symbolic_autocorrelation\": {\n      \"symbolic_residual\": \"zero polynomial over Q[m,d]\",\n      \"rational_points\": [\n        [\n          \"0\",\n          \"0\"\n        ],\n        [\n          \"1\",\n          \"1\"\n        ],\n        [\n          \"1/2\",\n          \"3/2\"\n        ],\n        [\n          \"1000\",\n          \"37\"\n        ]\n      ],\n      \"literal_cases\": 7259,\n      \"N_range\": [\n        2,\n        120\n      ],\n      \"d_range\": \"0 <= d < N\"\n    },\n    \"packing_exhaustion\": {\n      \"visited_families\": 97733,\n      \"golomb_families\": 58411,\n      \"p_range\": [\n        0,\n        8\n      ],\n      \"q_values\": [\n        1,\n        2,\n        3\n      ],\n      \"g\": [\n        0,\n        1,\n        2,\n        2,\n        3,\n        3,\n        3,\n        4,\n        4\n      ]\n    },\n    \"physical_geometry_indices\": {\n      \"cases\": 864,\n      \"a_range\": [\n        0,\n        3\n      ],\n      \"d_h_t_range\": [\n        1,\n        6\n      ]\n    },\n    \"cauchy_expansion_exhaustion\": {\n      \"cases\": 4368,\n      \"n_range\": [\n        1,\n        6\n      ],\n      \"kernels\": [\n        [\n          1\n        ],\n        [\n          0,\n          1,\n          0\n        ],\n        [\n          1,\n          3,\n          1\n        ],\n        [\n          2,\n          0,\n          1,\n          4\n        ]\n      ]\n    },\n    \"adjacent_path_extension\": {\n      \"bounds\": {\n        \"2\": 3,\n        \"3\": 4,\n        \"4\": 6,\n        \"5\": 8,\n        \"6\": 9,\n        \"7\": 11,\n        \"8\": 12\n      },\n      \"k7_sharp_witness\": {\n        \"X\": [\n          0,\n          0,\n          1,\n          1,\n          1,\n          2,\n          2\n        ],\n        \"Y\": [\n          0,\n          0,\n          0,\n          1,\n          1,\n          2,\n          2\n        ],\n        \"t6_t7\": [\n          5,\n          6\n        ]\n      },\n      \"path_topology_k_range\": [\n        2,\n        64\n      ],\n      \"applications\": {\n        \"464\": {\n          \"b\": 39,\n          \"q\": 7,\n          \"v\": [\n            68703096,\n            71783040,\n            74890865,\n            78021840,\n            81171090,\n            84333600,\n            87504219\n          ],\n          \"boundary_weighted_deficit\": 240395555,\n          \"new_gap\": 1199151808\n        },\n        \"463\": {\n          \"b\": 38,\n          \"q\": 7,\n          \"v\": [\n            71783040,\n            74890865,\n            78021840,\n            81171090,\n            84333600,\n            87504219,\n            90677664\n          ],\n          \"boundary_weighted_deficit\": 249859659,\n          \"new_gap\": -2778001795\n        }\n      },\n      \"excluded\": \"The separate length-six enumeration was not audited.\"\n    },\n    \"threshold_boundaries\": {\n      \"1\": 1,\n      \"138\": 138,\n      \"425\": 138,\n      \"426\": 139,\n      \"430\": 143,\n      \"431\": 144,\n      \"480\": 144\n    }\n  },\n  \"runtime_seconds\": 0.39764829999876383\n}\n",
+      "stderr": ""
+    }
+  ],
+  "source_inventory_sha256": {
+    ".agents/skills/directed-l-grid-research/assets/paper20.json": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    "research/kernel_compatibility_20261108/combinatorial_upper/CONTRACT.md": "3f3dcbe33ff7f321094779efcf2f5f819303a26a7f6a409597c5e3fbb071a360",
+    "research/kernel_compatibility_20261108/combinatorial_upper/README.md": "ecb4bea028f94a4a7a9249ca22504ec03dc0ffc5b261cef9bb349aaef8cbf4b8",
+    "research/kernel_compatibility_20261108/combinatorial_upper/results.json": "0bf9a6e5d38df2651b8633cbcb48d4cca04f39cced9e1d2e8e72e36f22ce3521",
+    "research/kernel_compatibility_20261108/combinatorial_upper/THEOREM.md": "7a4ecdc2dd9cd6504f955d851c241ac6b30d9d53d96193905d62b83dc10de740",
+    "research/kernel_compatibility_20261108/combinatorial_upper/verify.py": "6314130df8fb1fe7d4979f12f8aab0b001ad88d47c6b3fbe5ce38ec850c9c938",
+    "research/kernel_compatibility_20261108/CONTRACT.md": "9c5908147adc998a6d1cb1906b5f4a0e793246bb983502ec028e3f4046cbabd8",
+    "research/kernel_compatibility_20261108/COUNTING_COMPARISON.md": "d29f70315abf20089e6ef606441bcab55f8ab89c40cf06c1193b19d57cb27754",
+    "research/kernel_compatibility_20261108/geometry/audit_464.json": "730d28dd9ddc61c1106fcd9fd0c027336f2166e7b13659b37a999e354c72f810",
+    "research/kernel_compatibility_20261108/geometry/audit_464.py": "b557a4bf685f02c755a4ff57b0ece18a4d75d13ffbac925128f521d13dd4c3d5",
+    "research/kernel_compatibility_20261108/geometry/CONTRACT.md": "2c11da3fc81336f0b07cec8cb3f94ef229f2bea400a4a29f10d608eef73aa758",
+    "research/kernel_compatibility_20261108/geometry/geometry_verification.json": "bb475e529737782acb3b1a6020174167e9e7ca9a08a562274c8c04e6b947d3df",
+    "research/kernel_compatibility_20261108/geometry/README.md": "5e0319bc4a73d3f41a8d66a46cd43648a86932e651a994105b92e7d22ea8e826",
+    "research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075",
+    "research/kernel_compatibility_20261108/geometry/verify_geometry.py": "abe3a5d9e8fc15a934e2e01ca53935ea25cbb98f01ab01e24feabc559a514add",
+    "research/kernel_compatibility_20261108/kernel_upper/boundary_word_results.json": "c1177a8e4e8018d73e720ede5eef40e22c747663fcd81bc34a702d1955aa83d2",
+    "research/kernel_compatibility_20261108/kernel_upper/boundary_word_scout.py": "fd1f07caf2b619b8e142fd18c8017d2b22bff3582c2e987a94e538170edecc73",
+    "research/kernel_compatibility_20261108/kernel_upper/certificate.json": "2c09108b41ae9e68f1dcc517f074006d01e2c10ce70f289bb83b4443d63f9750",
+    "research/kernel_compatibility_20261108/kernel_upper/certificate.py": "3d2c53a701d7e73babec8dc82e3feb26a9416aa16c3f8676374af6b486d74f2e",
+    "research/kernel_compatibility_20261108/kernel_upper/CONTRACT.md": "3093e7c0933b2ca2ea5b00b4920c341493e3a4dbb3b7d5ea263a29c601e744ee",
+    "research/kernel_compatibility_20261108/kernel_upper/fourier_results.json": "f23602ba49a2386ff9a614c9126edbc2fd293e45a768ed4bbd20eaaf8899a673",
+    "research/kernel_compatibility_20261108/kernel_upper/fourier_scout.py": "3cae89c2c5d808cba7d3098204343396a3f78ce52dcd4085b9e56d805cc2d27f",
+    "research/kernel_compatibility_20261108/kernel_upper/kernel_scan.json": "13cf8e58d64d4226d0a41079889fe68a2da6d26cc50a52275b1e40b8651a3f38",
+    "research/kernel_compatibility_20261108/kernel_upper/kernel_scout.py": "ee18e27c0e8262e2ee871dbfbd26d5a101282e68d91e7c0b47d1a88816fffc5b",
+    "research/kernel_compatibility_20261108/kernel_upper/PROVENANCE.md": "445b42bb3e7674310838673d0b1768c45e99858b5e3c403d6407989da95ec2ae",
+    "research/kernel_compatibility_20261108/kernel_upper/README.md": "58101e7dcd9a97d2598ab3a2c552880594811bcba0558c49a4efb887919595dc",
+    "research/kernel_compatibility_20261108/README.md": "c48a66ae5231478f282fb222122e3c1ed30f1d1ce45d0ea52a5fb571d44381bc",
+    "research/kernel_compatibility_20261108/review/independent_counting_check.py": "cecd601fedfb71a77d02eba1d9b3f4ff09abf5856889fe9b3984dd834ffb32bb",
+    "research/kernel_compatibility_20261108/review/independent_counting_manifest.json": "33505b198b6b320b0019ca0a84e23a0981f087797d4297beb3648aa12373def5",
+    "research/kernel_compatibility_20261108/review/independent_counting_results.json": "f4b9d75362c244f5c8cb7588939f234ab3e199e315430b70954e13acaaa55c11",
+    "research/kernel_compatibility_20261108/review/REVIEW.md": "6fdb97ffd4c5f95b8caa0030841a89f831b903f1d666010c959c41208fbe9b66",
+    "research/kernel_compatibility_20261108/verify_release.py": "e7e33ecdee4e65e9380a3521ec7f2daf63d45dbc388d7704b356e62f3f4b7c66"
+  },
+  "scope": "Exact arithmetic, geometry, and local diagnostics; discovery scouts and external OGR searches not rerun. Originals unchanged."
+}

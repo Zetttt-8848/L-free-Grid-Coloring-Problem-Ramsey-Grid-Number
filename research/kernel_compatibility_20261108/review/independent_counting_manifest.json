@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "claim_id": "six_class_disjoint_minima_R3_le_464",
+  "repository": {
+    "commit": "654cc044cad3d8ca6079a1931565a6ec44dcf2b5",
+    "dirty": true,
+    "note": "Base supplied by the coordinator; no Git command was run by this reviewer. Audited working-file revisions are pinned by content hashes."
+  },
+  "command": [
+    "python",
+    "research/kernel_compatibility_20261108/review/independent_counting_check.py"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "CPython",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "AMD64; Windows-11-10.0.26300-SP0",
+    "note": "Actual absolute interpreter path is omitted for portability; its observed version is recorded."
+  },
+  "mathematics": {
+    "assertion_tested": "Exact 464 contradiction from the stated six-class capacities and parabolic weights",
+    "coefficient_domain": "Z and Q, exact Python integers and Fraction",
+    "conventions": "zero-based square; positive equal-leg L; Golomb lengths are spans",
+    "inputs": [
+      "n=464",
+      "N=86",
+      "G(24)>=425",
+      "G(25)>=480"
+    ],
+    "bounds": {
+      "d_min": 1,
+      "d_max": 84,
+      "p_min": 380,
+      "p_max": 463
+    },
+    "non_claims": [
+      "OGR exhaustive searches were not rerun",
+      "No formal proof assistant was used",
+      "Small-case enumerations supplement the written universal proof",
+      "No optimality of 464 or of the weight sequence is claimed"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T11:22:12.201749+00:00",
+    "runtime_seconds": 0.39847550000013143,
+    "exit_status": 0,
+    "status": "completed",
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/kernel_compatibility_20261108/review/independent_counting_results.json",
+      "sha256": "f4b9d75362c244f5c8cb7588939f234ab3e199e315430b70954e13acaaa55c11",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    "Independent distance histogram and literal convolution agree",
+    "Autocorrelation identity reduced to the zero polynomial over Q",
+    "All claimed integer totals match independent outputs"
+  ],
+  "result": "PASS: weighted gap 477965143; direct Cauchy deficit 955930286",
+  "residual_risks": [
+    "OGR exhaustive searches were not rerun",
+    "No formal proof assistant was used",
+    "Small-case enumerations supplement the written universal proof",
+    "No optimality of 464 or of the weight sequence is claimed"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/kernel_compatibility_20261108/review/independent_counting_check.py",
+      "sha256": "cecd601fedfb71a77d02eba1d9b3f4ff09abf5856889fe9b3984dd834ffb32bb",
+      "sha256_after": "cecd601fedfb71a77d02eba1d9b3f4ff09abf5856889fe9b3984dd834ffb32bb"
+    },
+    {
+      "path": "research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md",
+      "sha256": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075",
+      "sha256_after": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075"
+    },
+    {
+      "path": "research/kernel_compatibility_20261108/kernel_upper/README.md",
+      "sha256": "58101e7dcd9a97d2598ab3a2c552880594811bcba0558c49a4efb887919595dc",
+      "sha256_after": "58101e7dcd9a97d2598ab3a2c552880594811bcba0558c49a4efb887919595dc"
+    },
+    {
+      "path": "research/kernel_compatibility_20261108/combinatorial_upper/THEOREM.md",
+      "sha256": "7a4ecdc2dd9cd6504f955d851c241ac6b30d9d53d96193905d62b83dc10de740",
+      "sha256_after": "7a4ecdc2dd9cd6504f955d851c241ac6b30d9d53d96193905d62b83dc10de740"
+    }
+  ],
+  "declared_results": [
+    "research/kernel_compatibility_20261108/review/independent_counting_results.json"
+  ]
+}

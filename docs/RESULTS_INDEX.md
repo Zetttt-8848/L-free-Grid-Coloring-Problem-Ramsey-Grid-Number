@@ -2,7 +2,15 @@
 
 本索引指向当前数学稿。Open assertion 是未解决的假设，External theorem 是文献输入。历史 Lean 覆盖记录不能代替当前稿的逐项对应。
 
-2026-11-08 新检查点尚未并入下列主稿索引：[完整报告](../research/coupled_budget_20261108/README.md)。
+最新研究目录结果：[六类完成格共同计数](../research/kernel_compatibility_20261108/README.md)，尚未并入主稿。
+
+| 状态 | 结果 | 证明 |
+|---|---|---|
+| PROVED，使用两项已认证外部Golomb输入 | R3≤464；新计数的矛盾量477965143 | [六类几何与共同占位](../research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md)、[独立审阅](../research/kernel_compatibility_20261108/review/REVIEW.md) |
+| PROVED | 带颜色的最小点计费及相邻比较层路径上限；增强464矛盾量至1199151808 | [组合证明](../research/kernel_compatibility_20261108/combinatorial_upper/THEOREM.md) |
+| FINITE-CHECKED | 两个六字颜色词的受限比较计数最高14 | 同上与独立标准库枚举；不是任意长度公式，也未证明463 |
+
+2026-11-08 上一检查点尚未并入下列主稿索引：[完整报告](../research/coupled_budget_20261108/README.md)。
 
 | 状态 | 结果 | 证明及证据 |
 |---|---|---|

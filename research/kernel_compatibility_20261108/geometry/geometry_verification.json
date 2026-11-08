@@ -1,0 +1,830 @@
+{
+  "status": "PASS",
+  "paper20_corners": 2470,
+  "paper20_six_classes": [
+    {
+      "d": 1,
+      "R_d": 1,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            2
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "R_d": 3,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            14,
+            16
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            17
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "R_d": 10,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": [
+            3,
+            12
+          ]
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            6,
+            9
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            8,
+            11
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            5
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            7
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            4,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "R_d": 5,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            2
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            1,
+            14
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            13
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "d": 5,
+      "R_d": 1,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            11
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 6,
+      "R_d": 8,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": [
+            6,
+            9
+          ]
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            3
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            5,
+            8
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            4,
+            13
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "d": 7,
+      "R_d": 5,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            2
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            1
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            11
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            0,
+            10
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 8,
+      "R_d": 1,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            8
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 9,
+      "R_d": 5,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": [
+            3
+          ]
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            6
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            5
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            4,
+            10
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 10,
+      "R_d": 5,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            2
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            1
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            8
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            7
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "d": 11,
+      "R_d": 1,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            5
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 12,
+      "R_d": 2,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            3
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "d": 13,
+      "R_d": 5,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": [
+            2
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            1
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            5
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": [
+            4
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "d": 14,
+      "R_d": 0,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 15,
+      "R_d": 2,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": [
+            1
+          ]
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "d": 16,
+      "R_d": 0,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 17,
+      "R_d": 2,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": [
+            1
+          ]
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "d": 18,
+      "R_d": 0,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": []
+        }
+      ]
+    },
+    {
+      "d": 19,
+      "R_d": 1,
+      "classes": [
+        {
+          "diagonal_color": 0,
+          "completion_color": 1,
+          "marks": []
+        },
+        {
+          "diagonal_color": 0,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 1,
+          "completion_color": 2,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 0,
+          "marks": []
+        },
+        {
+          "diagonal_color": 2,
+          "completion_color": 1,
+          "marks": [
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "small_geometry": {
+    "positions": 10,
+    "physical_Ls": 10,
+    "assignments": 59049,
+    "proper_colorings_checked": 17316,
+    "domain": "full weak4 triangle; no symmetry quotient"
+  },
+  "small_packing": {
+    "positions": 12,
+    "classes": 2,
+    "subsets_checked": 4096,
+    "golomb_subsets": 463,
+    "separate_capacity": 10,
+    "joint_capacity": 9,
+    "exact_optimum": 9,
+    "witness": [
+      [
+        0,
+        2,
+        7,
+        10,
+        11
+      ],
+      [
+        1,
+        6,
+        8,
+        9
+      ]
+    ]
+  },
+  "scope": "Finite formula audits; universal claims use the written proof",
+  "sha256": {
+    ".agents/skills/directed-l-grid-research/assets/paper20.json": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    "research/kernel_compatibility_20261108/geometry/verify_geometry.py": "abe3a5d9e8fc15a934e2e01ca53935ea25cbb98f01ab01e24feabc559a514add",
+    "research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md": "2624636ed2f6aa7cb7586b09c839b1d9b1ebc5cc02e6d095cc41713320aae075"
+  }
+}
