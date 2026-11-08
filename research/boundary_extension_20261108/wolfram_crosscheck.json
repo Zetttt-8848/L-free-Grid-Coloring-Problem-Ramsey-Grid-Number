@@ -1,0 +1,10 @@
+{
+  "tool": "Wolfram Language evaluator",
+  "purpose": "Independent exact arithmetic of the explicit 45-cell source witness; not a proof of source legality",
+  "code": "a={0,1,2,3,5,6,25,26,30,31};q={0,1,5,6,25,26,30,31}; colors={{0,1,1,0,0,1,1,1,1,0,1,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0},{0,1,1,0,0,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0}}; cells=Flatten[Table[{a[[i]],a[[j]]},{i,2,Length[a]},{j,1,i-1}],1]; ds=Subtract@@#& /@ cells; masks=Map[MemberQ[q,#[[1]]]&&MemberQ[q,#[[2]]]&,cells]; phi[c_,mask_]:=Module[{pairs=Pick[Transpose[{ds,1-2 c}],mask]},Total[(Total[#[[All,2]]]^2)& /@ GatherBy[pairs,First]]]; {Length[cells],Total[Mod[Values[Counts[ds]],2]],Map[phi[#,masks]&,colors],Map[phi[#,ConstantArray[True,Length[cells]]]&,colors]}",
+  "output": [
+    "Out[1]= {45, 9, {8, 4}, {9, 13}}"
+  ],
+  "claim": "45 cells; parity bound 9; block potentials 8,4; full-source potentials 9,13",
+  "verification_date": "2026-11-08"
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": "LIT_WEIGHT_20261108",
+  "mathematics": {
+    "assertion_tested": "For P=z^2 over F_5 and F_101, and P=z^3 over F_103, parameter-pushforward and normalized-image weights differ, including the displayed Fourier identity in Proposition 4.1 of arXiv:2606.08890v1.",
+    "coefficient_domain": "Exact integers, rational numbers, and Q[X]/Phi_p(X)",
+    "conventions": "Averages normalized by p; nonzero frequency r=1; test step 1",
+    "inputs": ["(p,degree)=(5,2),(101,2),(103,3)"],
+    "bounds": {"cases": 3, "largest_prime": 103},
+    "non_claims": ["No refutation of the main theorem or its norm inequality", "No new Ramsey bound"]
+  },
+  "execution_artifacts": ["research/boundary_extension_20261108/literature/check_polynomial_weight.py"],
+  "software": [{"name": "Python", "version": "3.13.5"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

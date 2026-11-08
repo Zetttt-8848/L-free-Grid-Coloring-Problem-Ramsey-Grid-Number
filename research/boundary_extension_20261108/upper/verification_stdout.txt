@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "summaries": [
+    {
+      "cells": 45,
+      "corners": 46,
+      "phi_Q": [
+        8,
+        4
+      ],
+      "phi_A": [
+        9,
+        13
+      ],
+      "parity_lower_bound_A": 9,
+      "balanced_fixed_exterior_lower_bound": 13
+    }
+  ]
+}

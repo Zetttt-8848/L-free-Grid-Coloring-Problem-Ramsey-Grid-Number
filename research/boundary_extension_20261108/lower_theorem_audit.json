@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "Five explicit (n,k) pairs; all proper old matrices and every new-layer assignment; does not replace general proof.",
+  "results": [
+    {
+      "n": 1,
+      "k": 2,
+      "proper_old_matrices": 2,
+      "complete_assignments_checked": {
+        "bottom_right": 16,
+        "single_bottom": 4,
+        "single_left": 4
+      }
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "proper_old_matrices": 12,
+      "complete_assignments_checked": {
+        "bottom_right": 384,
+        "single_bottom": 48,
+        "single_left": 48
+      }
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "proper_old_matrices": 108,
+      "complete_assignments_checked": {
+        "bottom_right": 13824,
+        "single_bottom": 864,
+        "single_left": 864
+      }
+    },
+    {
+      "n": 1,
+      "k": 3,
+      "proper_old_matrices": 3,
+      "complete_assignments_checked": {
+        "bottom_right": 81,
+        "single_bottom": 9,
+        "single_left": 9
+      }
+    },
+    {
+      "n": 2,
+      "k": 3,
+      "proper_old_matrices": 72,
+      "complete_assignments_checked": {
+        "bottom_right": 17496,
+        "single_bottom": 648,
+        "single_left": 648
+      }
+    }
+  ]
+}

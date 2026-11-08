@@ -4,6 +4,10 @@
 
 先读 [命题与证明索引](docs/RESULTS_INDEX.md)、[开放问题与失效路线](docs/OPEN_PROBLEMS.md) 和 [协作约定](docs/CONTRIBUTING.md)。
 
+项目专用工作流：[directed-l-grid-research](.agents/skills/directed-l-grid-research/SKILL.md)。其创建时的资料与检查快照见 [整理报告](docs/RESEARCH_SKILL_REVIEW.md)；这些历史记录不代替当前结果核验。
+
+2026-11-08 研究续接：[边界兼容性、冻结扩展障碍与文献复核](research/boundary_extension_20261108/README.md)。包括全源最优与局部平衡不兼容的完整反例、文献 20×20 染色的单边扩展障碍、独立核验代码与文献阅读记录；不改变无条件三色区间。
+
 ## 问题
 
 正向 L 是 $`(x,y),(x+d,y),(x+d,y+d)`$，其中 $`d>0`$。

@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "claim_id": "LOWER_BOUNDARY_20261108",
+  "repository": {
+    "commit": "080822bb1d434b164a1f42ea159d0bf148396b71",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "research/boundary_extension_20261108/lower/verify.py",
+    "--output",
+    "research/boundary_extension_20261108/lower/checked_run/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.13.5"
+      },
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Frozen published 20-square cannot extend on any side; four placements have necessary interior repair bounds 10,2,14,8 from disjoint certified cores.",
+    "coefficient_domain": "Exact finite colors and integer coordinates",
+    "conventions": "positive-step directed equal-leg L; complete square; colors 0,1,2",
+    "inputs": [
+      "one full 20-square and four offsets; stored negative proof trees and deletion witnesses"
+    ],
+    "bounds": {
+      "old_cells": 400,
+      "placements": 4,
+      "proof_tree_nodes": 239
+    },
+    "non_claims": [
+      "No global 21-square nonexistence",
+      "No new Ramsey bound",
+      "No maximum packing or sharp repair distance"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T09:28:02.909403+00:00",
+    "runtime_seconds": 0.135853,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/boundary_extension_20261108/lower/verify.py",
+    "research/boundary_extension_20261108/lower/paper20.json",
+    "research/boundary_extension_20261108/lower/extension_results.json",
+    "research/boundary_extension_20261108/lower/packing_results.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/boundary_extension_20261108/lower/verify.py",
+      "sha256": "70088c82400223424ef14728e5d467e6128ca4afbd56c8c99c8cd2dddd2fc8d9",
+      "sha256_after": "70088c82400223424ef14728e5d467e6128ca4afbd56c8c99c8cd2dddd2fc8d9"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/paper20.json",
+      "sha256": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+      "sha256_after": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/extension_results.json",
+      "sha256": "1590b2c3660c911a701b227271de59b6dbaa4725a45a02d56ff0f7e5357dcf20",
+      "sha256_after": "1590b2c3660c911a701b227271de59b6dbaa4725a45a02d56ff0f7e5357dcf20"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/packing_results.json",
+      "sha256": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493",
+      "sha256_after": "5c0cd510f79bf39c70415a6d421a4d9b9341fe72e5964befea7a7301d72ff493"
+    }
+  ],
+  "output_directory": "research/boundary_extension_20261108/lower/checked_run",
+  "declared_results": [
+    "research/boundary_extension_20261108/lower/checked_run/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/boundary_extension_20261108/lower/checked_run/stdout.txt",
+      "sha256": "2d77abc81a08b556734927d721109172427f5b59b2bff8ba2bc2cd64bd42a387",
+      "kind": "log"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/checked_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/boundary_extension_20261108/lower/checked_run/results.json",
+      "sha256": "058eef8764787136c6f0f44e3b414aa879201d5b0f54d62bd99db62fff075b90",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

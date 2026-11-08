@@ -1,0 +1,5 @@
+# Preserve certificate and verifier bytes: recorded SHA-256 values must survive
+# Windows/Linux checkout without automatic line-ending conversion.
+/.agents/skills/directed-l-grid-research/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/docs/RESEARCH_SKILL_* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/research/boundary_extension_20261108/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

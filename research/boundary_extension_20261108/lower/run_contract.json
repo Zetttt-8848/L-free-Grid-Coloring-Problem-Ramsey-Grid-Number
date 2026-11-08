@@ -1,0 +1,38 @@
+{
+  "claim_id": "LOWER_BOUNDARY_20261108",
+  "mathematics": {
+    "assertion_tested": "Frozen published 20-square cannot extend on any side; four placements have necessary interior repair bounds 10,2,14,8 from disjoint certified cores.",
+    "coefficient_domain": "Exact finite colors and integer coordinates",
+    "conventions": "positive-step directed equal-leg L; complete square; colors 0,1,2",
+    "inputs": [
+      "one full 20-square and four offsets; stored negative proof trees and deletion witnesses"
+    ],
+    "bounds": {
+      "old_cells": 400,
+      "placements": 4,
+      "proof_tree_nodes": 239
+    },
+    "non_claims": [
+      "No global 21-square nonexistence",
+      "No new Ramsey bound",
+      "No maximum packing or sharp repair distance"
+    ]
+  },
+  "execution_artifacts": [
+    "research/boundary_extension_20261108/lower/verify.py",
+    "research/boundary_extension_20261108/lower/paper20.json",
+    "research/boundary_extension_20261108/lower/extension_results.json",
+    "research/boundary_extension_20261108/lower/packing_results.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.13.5"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "none",
+    "seed": null
+  }
+}

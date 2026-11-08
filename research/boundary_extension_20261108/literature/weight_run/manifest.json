@@ -1,0 +1,116 @@
+{
+  "schema_version": 2,
+  "claim_id": "LIT_WEIGHT_20261108",
+  "repository": {
+    "commit": "080822bb1d434b164a1f42ea159d0bf148396b71",
+    "dirty": true
+  },
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "research/boundary_extension_20261108/literature/check_polynomial_weight.py",
+    "--output",
+    "research/boundary_extension_20261108/literature/weight_run/results.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.13.5"
+      },
+      {
+        "name": "Python",
+        "version": "3.13.5"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "For P=z^2 over F_5 and F_101, and P=z^3 over F_103, parameter-pushforward and normalized-image weights differ, including the displayed Fourier identity in Proposition 4.1 of arXiv:2606.08890v1.",
+    "coefficient_domain": "Exact integers, rational numbers, and Q[X]/Phi_p(X)",
+    "conventions": "Averages normalized by p; nonzero frequency r=1; test step 1",
+    "inputs": [
+      "(p,degree)=(5,2),(101,2),(103,3)"
+    ],
+    "bounds": {
+      "cases": 3,
+      "largest_prime": 103
+    },
+    "non_claims": [
+      "No refutation of the main theorem or its norm inequality",
+      "No new Ramsey bound"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-08T09:22:39.118547+00:00",
+    "runtime_seconds": 0.100777,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/boundary_extension_20261108/literature/check_polynomial_weight.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/boundary_extension_20261108/literature/check_polynomial_weight.py",
+      "sha256": "1b3e97a25ed25b389c024c720849092950819729e19aab53053676339b6c10c3",
+      "sha256_after": "1b3e97a25ed25b389c024c720849092950819729e19aab53053676339b6c10c3"
+    }
+  ],
+  "output_directory": "research/boundary_extension_20261108/literature/weight_run",
+  "declared_results": [
+    "research/boundary_extension_20261108/literature/weight_run/results.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/boundary_extension_20261108/literature/weight_run/stdout.txt",
+      "sha256": "9534e141aca378bd2fb4681d1edfd2e04b31e2d464b69b0fda53d28fdf16b3ee",
+      "kind": "log"
+    },
+    {
+      "path": "research/boundary_extension_20261108/literature/weight_run/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/boundary_extension_20261108/literature/weight_run/results.json",
+      "sha256": "1320cec9cf494b8974bd2abcbb9f8f3a8e782abbc6f2c65e25562588b40e787d",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}
