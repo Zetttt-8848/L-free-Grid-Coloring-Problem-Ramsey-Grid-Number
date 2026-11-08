@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-08",
+  "base_commit": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
+  "definition": "G(m) is the minimum max(B)-min(B) over m-mark integer Golomb sets",
+  "external_lower_bounds": {"24": 425, "25": 480},
+  "sources": [
+    {"url": "https://blogs.distributed.net/2004/11/", "locator": "2004-11-01 completion announcement and accompanying explanation", "supports": "Exhaustive OGR-24 completion; minimum span 425; final verified stub 2004-10-13"},
+    {"url": "https://blogs.distributed.net/2008/10/", "locator": "2008-10-25 23:14 completion announcement", "supports": "Exhaustive OGR-25 completion; minimum span 480; final verified stub 2008-10-24"},
+    {"url": "https://arxiv.org/html/2502.05162v1", "locator": "Theorem 6 and Algorithm 3", "supports": "Golomb fiber mechanism and entries 426, 481 in occupied-position convention"},
+    {"url": "https://math.colgate.edu/~integers/z21/z21.pdf", "locator": "INTEGERS 25 (2025), A21, Theorem 6 and Algorithm 3", "supports": "Published version of the 493 bound and the Golomb mechanism"}
+  ],
+  "old_465_locator": "exploration/research_round4/checks/build_verification_report.py, Direct conditional proof of the inherited three-color bound",
+  "old_465_inputs": {"n": 465, "weight": "w_i=min(i,94-i), i=1,...,93"},
+  "joint_endpoint_inputs": {"n": 466, "rank_cutoff": 22},
+  "external_search_replayed": false
+}

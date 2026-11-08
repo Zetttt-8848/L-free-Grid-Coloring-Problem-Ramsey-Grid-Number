@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "nodes_checked": 93,
+  "conflict_leaves": 45,
+  "propagations_checked": 406,
+  "corners_checked": 60,
+  "full_binary_domain": 68719476736,
+  "proper_count": 4,
+  "phi_distribution": {
+    "8": 4
+  },
+  "parity_floor": 4,
+  "forced_equal_cells": [
+    [
+      9,
+      1
+    ],
+    [
+      10,
+      2
+    ]
+  ],
+  "rigid_cells_up_to_global_complement": 35,
+  "only_free_cell_up_to_global_complement": [
+    3,
+    1
+  ],
+  "proof_sha256": "086ac9bf5a32f3838191ffc18002c0eb1a929c80548b99a286310a251c47e8e4",
+  "checker_sha256": "864d2f5ac83bf1628336591aa3e0b176beb59e3445d970ac0243963b4a7c9d70",
+  "scope": "Complete finite branching certificate for this one full strict source; no SAT library."
+}

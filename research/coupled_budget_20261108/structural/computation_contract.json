@@ -1,0 +1,14 @@
+{
+  "claim_id": "COUPLED_STRUCTURAL_AND_INDEPENDENT_UPPER_AUDIT_20261108",
+  "mathematics": {
+    "assertion_tested": "The listed 9-mark complete source has exactly four proper binary colorings, all Phi=8>P=4; its stated 10-mark extension has a proper parity-optimal coloring; the invalid seven-mark discovery has parity-optimal states; the 465 and 466 integer certificates have the reported margins.",
+    "coefficient_domain": "Exact integers and finite Boolean assignments",
+    "conventions": "Directed L=(x,y),(x+h,y),(x+h,y+h), h>0; complete strict source V(A); z=1-2c. Golomb table uses occupied positions, one more than span.",
+    "inputs": ["All 2^36 assignments of the specified 9-mark source, covered by a checked branch certificate and complement symmetry", "All 2^21 assignments of the seven-mark regression source", "The explicit 45-cell extension witness", "Published Golomb occupied-position table; external G(24)>=425 and G(25)>=480"],
+    "bounds": {"nine_mark_source_span": 10, "extension_span": 14, "seven_mark_assignments": 2097152, "nine_mark_assignment_domain": 68719476736, "n_values": [465, 466], "rank_parameter": 22, "convolution_weight_length": 93},
+    "non_claims": ["No universal source energy budget", "No local exhaustive proof of external Golomb ruler bounds", "No Lean formalization", "The restored 465 argument is historical, not a new discovery"]
+  },
+  "execution_artifacts": ["replay_checks.py", "enumerate_frustration.py", "certify_balance.py", "check_branch_proof.py", "verify_extension.py", "audit_joint_bound.py", "audit_convolution.py", "extension_discovery.json"],
+  "software": [{"name": "Python", "version": "3.13.5"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}
