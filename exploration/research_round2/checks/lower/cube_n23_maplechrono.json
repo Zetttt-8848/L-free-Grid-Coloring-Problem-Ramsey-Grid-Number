@@ -1420,7 +1420,7 @@
     "Even all internal UNSAT answers would require proof artifacts before an UNSAT claim"
   ],
   "orientation": "(x,y),(x+d,y),(x+d,y+d)",
-  "phase_matrix": "LOCAL_RESEARCH_ROOT\\Desktop\\L-free coloring Ramsey Number\\Kimi_Agent_\u6838\u5fc3\u63a8\u5bfcPDF\\lgrid_sat\\witnesses_n20_k3.txt",
+  "phase_matrix": "LOCAL_RESEARCH_ROOT/legacy-inputs/witnesses_n20_k3.txt",
   "phase_matrix_transposed": true,
   "schema": "round2_lower_cube_search_v1",
   "solver": "maplechrono",
@@ -1435,5 +1435,6 @@
     "restricted_growth": "color 2 cannot precede color 1 in row-major order"
   },
   "total_wall_seconds": 12.86788160004653,
-  "witness_path": null
+  "witness_path": null,
+  "phase_matrix_path_note": "Historical machine-specific path normalized to English; original location is preserved in the parent Git revision."
 }

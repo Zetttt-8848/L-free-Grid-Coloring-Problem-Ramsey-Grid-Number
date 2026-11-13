@@ -1,8 +1,8 @@
-# 协作约定
+# Collaboration agreement
 
-每次贡献写清楚：精确命题、全部假设、证明或反例、与已有结果的依赖关系、检查命令和实际覆盖范围。
-将工作明确标为 PROVED、CONDITIONAL、CONJECTURE、COUNTEREXAMPLE 或 FINITE-CHECKED。
-有限枚举不证明任意规模结论；超时或UNKNOWN不是不可满足。SAT与Lean的结论必须绑定输入版本与日志。
-新推导先开分支，避免覆盖共享主稿；提交前运行主有限核验器。
-不要上传个人信息、聊天记录、API密钥、工具安装目录、付费文献全文或编译缓存。
-旧笔记中的结果必须先对照当前正文，尤其不要重新使用已被证书否定的局部彩虹下界。
+Write clearly for each contribution: precise proposition, all assumptions, proofs or counterexamples, dependencies on existing results, checking commands, and actual coverage.
+Clearly mark the job as PROVED, CONDITIONAL, CONJECTURE, COUNTEREXAMPLE, or FINITE-CHECKED.
+Finite enumeration does not prove arbitrary scale conclusions; timeout or UNKNOWN are not unsatisfiable. The conclusions of SAT and Lean must be bound to the input version and log.
+New derivation is branched first to avoid overwriting the shared main draft; the main finite verifier is run before submission.
+Do not upload personal information, chat history, API keys, tool installation directories, full text of paid literature or compilation cache.
+The results in the old notes must be compared with the current text first, especially do not reuse the partial rainbow lower bound that has been rejected by the certificate.

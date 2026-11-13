@@ -1,8 +1,8 @@
-# 开放问题与失效路线
+# Open issues and failed routes
 
-优先级见 [短期与长期路线图](ROADMAP.md)：先推进并解决R3，再系统研究R4。这些源界是候选路线，不是必须全部证明的终点。
+Prioritization see [Short-term vs. Long-term Roadmap](ROADMAP.md): Advance and solve R3 first, and then systematically study R4. These source realms are candidate routes, not destinations that must all be proven.
 
-当前一般性源界仍未解决。以下断言逐字摘自当前正文，全部为开放假设。不要以有条件的推论作为这些假设的证明。
+The general source world is currently unresolved. The following assertions are taken verbatim from the current text and are all open hypotheses. Do not rely on qualified inferences as proof of these assumptions.
 
 ```latex
 \begin{assertion}[G9]\label{open:g9}
@@ -38,13 +38,13 @@ Every finite integer set $A$ admitting a proper two-coloring of $V(A)$ satisfies
 \end{assertion}
 ```
 
-## 已排除的捷径
+## Excluded shortcuts
 
-- 仅排除五维立方体不足以推出统一线性能量或角数界。
-- 将各纤维分别拆成 Golomb 类，不保证共享完成格的颜色兼容。
-- F11(5)、F12(7)、F13(17) 已有完整反例，旧加权路线的这些前提不能使用。
-- 当前有限证书给出彩虹数的可达上界，不自动证明最小值。
+- The mere exclusion of the five-dimensional cube is not sufficient to derive a unified linear energy or angular number bound.
+- Split each fiber into Golomb categories, and the color compatibility of the shared completion grid is not guaranteed.
+- F11(5), F12(7), F13(17) already have complete counterexamples, and these premises of the old weighted route cannot be used.
+- The current finite certificate gives a reachable upper bound on rainbow numbers and does not automatically prove the minimum.
 
-## 合作时提交什么
+## What to submit when collaborating?
 
-写明命题及范围，给出完整证明或可独立重算的反例。计算结果记录输入、命令、依赖版本和输出。新结果先在独立分支讨论，并在改动当前数学稿后重跑有限核验。
+State the proposition and scope, and give a complete proof or a counterexample that can be independently recalculated. Calculation results record input, commands, dependency versions, and output. The new results will be discussed in the independent branch first, and the limited verification will be rerun after the current mathematical draft is modified.
