@@ -1,0 +1,103 @@
+{
+  "status": "EXACT_WITNESS",
+  "scope": "two diagonal words only; neither is asserted to extend to a proper square",
+  "search_domain": "length9 ternary words with firstcolor0; terminated at first witness",
+  "examined": 95,
+  "word1": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1
+  ],
+  "word2": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "correlations": [
+    5,
+    5,
+    3,
+    2,
+    1,
+    0,
+    0,
+    0
+  ],
+  "word1_caps": [
+    [
+      8,
+      8,
+      6,
+      6,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      9,
+      4,
+      3,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      6,
+      4,
+      2,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "word2_caps": [
+    [
+      11,
+      10,
+      8,
+      4,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      12,
+      6,
+      5,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      6,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "source_sha256": "60dd558f981b7fb4d2b8a2ce8e9735d5dbe87cd502fa293996e39ab1489cb594"
+}
