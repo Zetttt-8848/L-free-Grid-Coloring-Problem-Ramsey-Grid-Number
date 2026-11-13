@@ -1,14 +1,14 @@
-# 开放问题与失效路线
+# Open issues and failed routes
 
-优先级见 [短期与长期路线图](ROADMAP.md)：先推进并解决R3，再系统研究R4。这些源界是候选路线，不是必须全部证明的终点。
+Prioritization see [Short-term vs. Long-term Roadmap](ROADMAP.md): Advance and solve R3 first, and then systematically study R4. These source realms are candidate routes, not destinations that must all be proven.
 
-当前一般性源界仍未解决。以下断言逐字摘自当前正文，全部为开放假设。不要以有条件的推论作为这些假设的证明。
+The general source world is currently unresolved. The following assertions are taken verbatim from the current text and are all open hypotheses. Do not rely on qualified inferences as proof of these assumptions.
 
-最新项目区间为 `21≤R3≤464`，见 [六类共同计数检查点](../research/kernel_compatibility_20261108/README.md)。464由新的共同起点计数推出，不使用以下开放假设。当前按用户要求集中发明上界计数方式，下一数值目标为463或更小；下界保持21。
+The latest project range is`21≤R3≤464`, see [Six categories of common counting checkpoints](../research/kernel_compatibility_20261108/README.md). 464 is derived from the new common starting point count without using the following open assumptions. Currently, we are focusing on inventing the upper bound counting method according to user requirements. The next numerical target is 463 or less; the lower bound remains 21.
 
-新的未决计数问题：对同一边界颜色词产生的多层比较，严格控制“每色每层至多两个贡献”的联合总量。相邻层路径计数已有组合证明，但仍不足以排除463。长度5至9的有限词对极值只在其实际枚举范围成立，不能当作任意长度公式。
+New pending counting problem: multi-level comparisons generated for the same boundary color word, strictly controlling the joint total of "at most two contributions per color per level". Adjacent layer path counts have been combined proven, but still not enough to rule out 463. The extreme values ​​of finite word pairs with lengths 5 to 9 are only valid within their actual enumeration range and cannot be used as arbitrary length formulas.
 
-续接应优先区分三项缺口：将联合自相关约束转成精确矛盾证书；在候选构造中同时修复跨块约束；对完整纤维的失衡与强迫边给出独立总预算。某个单缺陷21×21候选已证明半径10内不可修复，不能继续把单色角数当作修复距离。局部源的强制失衡也可能被同纤维外部格抵消，不能直接累加为全源代价。
+Continuations should prioritize distinguishing three gaps: converting joint autocorrelation constraints into exact contradiction certificates; simultaneously repairing cross-block constraints in candidate structures; and giving independent total budgets for imbalances and forcing edges of intact fibers. A certain single defect 21×21 candidate has been proven to be irreparable within a radius of 10, and the number of single-color corners cannot be continued to be regarded as the repair distance. The forced imbalance of local sources may also be offset by the external lattice of the same fiber and cannot be directly added to the total source cost.
 
 ```latex
 \begin{assertion}[G9]\label{open:g9}
@@ -44,23 +44,23 @@ Every finite integer set $A$ admitting a proper two-coloring of $V(A)$ satisfies
 \end{assertion}
 ```
 
-## 已排除的捷径
+## Excluded shortcuts
 
-- 仅排除五维立方体不足以推出统一线性能量或角数界。
-- 将各纤维分别拆成 Golomb 类，不保证共享完成格的颜色兼容。
-- F11(5)、F12(7)、F13(17) 已有完整反例，旧加权路线的这些前提不能使用。
-- 当前有限证书给出彩虹数的可达上界，不自动证明最小值。
+- The mere exclusion of the five-dimensional cube is not sufficient to derive a unified linear energy or angular number bound.
+- Split each fiber into Golomb categories, and the color compatibility of the shared completion grid is not guaranteed.
+- F11(5), F12(7), F13(17) already have complete counterexamples, and these premises of the old weighted route cannot be used.
+- The current finite certificate gives a reachable upper bound on rainbow numbers and does not automatically prove the minimum.
 
-## 合作时提交什么
+## What to submit when collaborating?
 
-2026-11-08 [全局计数检查点](../research/global_counting_20261108/README.md)新增三个具体开放桥梁：
+2026-11-08 [Global Count Checkpoint](../research/global_counting_20261108/README.md)Three new specific open bridges have been added:
 
-- 对三个实际对角颜色源，证明跨源请求代价 `sum_q min(V^a,H^b,H^e+V^e)` 的统一正下界；目前只证明该代价是任意延拓的必有单色L数量下界，并给出严格区分见证。
-- 对同一个长对角词，统一控制所有层级的截断自相关及首尾匹配容量；不能把各层分别最大化后当作相容状态。
-- 极端尺出现次数的全局上限已降至56（假设正常463阶方形）；还须把近极端跨度的代价与足够强的出现次数下估计联系起来。四个局部容量下降不能直接变成新的Ramsey数值界。
+- Prove the cross-source request cost for three real diagonal color sources`sum_q min(V^a,H^b,H^e+V^e)`The unified positive lower bound of ; at present, it is only proved that this cost must have a lower bound of monochromatic L quantity for any extension, and a strict distinction witness is given.
+- For the same long diagonal word, the truncated autocorrelation and head-to-tail matching capacity of all levels are uniformly controlled; each level cannot be maximized separately and regarded as a compatible state.
+- The global upper limit on the number of occurrences of extreme rulers has been reduced to 56 (assuming a normal square of order 463); the cost of near-extreme spans must also be related to a sufficiently strong lower estimate of the number of occurrences. The four local capacity drops cannot directly become new Ramsey numerical bounds.
 
-这些计数与原有边界亏损可能重叠，合并时须保留共同对象，不能直接相加各自的数值收益。
+These counts may overlap with the original boundary losses, and common objects must be retained when merging, and the respective numerical gains cannot be directly added.
 
-2026-11-08 补充：[全源最优与局部平衡不兼容的反例](../research/boundary_extension_20261108/upper/README.md)表明全源势最小不能直接消掉各块局部不平衡；固定外部的两个精确最优值为9与13。[文献20×20样本的扩展障碍](../research/boundary_extension_20261108/lower/README.md)给出必要内部修改数，不能解释为一般21×21不可能性。G9、S21及三色精确值仍开放。
+2026-11-08 Supplement: [Counterexample of incompatibility between global optimality and local equilibrium](../research/boundary_extension_20261108/upper/README.md)It shows that the minimum global source potential cannot directly eliminate the local imbalance of each block; the two precise optimal values ​​of the fixed exterior are 9 and 13. [Literature Scaling Barriers to 20×20 Samples](../research/boundary_extension_20261108/lower/README.md)Given the necessary internal modification numbers, it cannot be interpreted as a general 21×21 impossibility. The exact values ​​for G9, S21 and three colors are still open.
 
-写明命题及范围，给出完整证明或可独立重算的反例。计算结果记录输入、命令、依赖版本和输出。新结果先在独立分支讨论，并在改动当前数学稿后重跑有限核验。
+State the proposition and scope, and give a complete proof or a counterexample that can be independently recalculated. Calculation results record input, commands, dependency versions, and output. The new results will be discussed in the independent branch first, and the limited verification will be rerun after the current mathematical draft is modified.

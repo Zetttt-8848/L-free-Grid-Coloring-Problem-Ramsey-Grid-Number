@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "lean_version": "Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)",
-  "lean_path": "LOCAL_RESEARCH_ROOT\\Desktop\\数学研究\\L构型拉姆齐研究\\研究项目\\GPT_L-free grid Research\\research_round4\\tools\\lean-4.19.0-windows\\bin\\lean.exe",
+  "lean_path": "LOCAL_RESEARCH_ROOT/tools/lean-4.19.0-windows/bin/lean.exe",
   "lean_executable_sha256": "f59b0c515f65dbf96526279d77fb43152f76bdd77f5fb94f387b75139fafe68c",
   "timestamp_utc": "2026-11-03T08:06:28.860783+00:00",
   "platform": "Windows-11-10.0.26300-SP0",
@@ -2540,5 +2540,6 @@
     ],
     "unexpected_axioms": []
   },
-  "scope": "Only the exact declarations listed here. See coverage.json for manuscript mapping. Standard logical axioms propext, Quot.sound and Classical.choice may occur. No paper-specific axioms or proof stubs are used."
+  "scope": "Only the exact declarations listed here. See coverage.json for manuscript mapping. Standard logical axioms propext, Quot.sound and Classical.choice may occur. No paper-specific axioms or proof stubs are used.",
+  "lean_path_note": "Historical location normalized to English; this is not a new Lean build. Original location remains in the parent Git revision."
 }

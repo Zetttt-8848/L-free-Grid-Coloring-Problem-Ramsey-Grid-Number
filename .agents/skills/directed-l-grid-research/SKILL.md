@@ -1,94 +1,94 @@
 ---
 name: directed-l-grid-research
-description: 研究本项目的有向等臂 L 网格拉姆齐染色；用于三色上下界并行推进、结构新方法、反例搜索及证据整理，并追踪向四色和一般 k 色推广的条件。
+description: Study the directed equal-leg L grid Ramsey coloring of this project; used for parallel advancement of three-color upper and lower bounds, new structural methods, counterexample search and evidence sorting, and tracking conditions for promotion to four-color and general k-color.
 ---
 
-# 有向 L 网格拉姆齐研究
+# Directed L-grid Ramsey study
 
-服务仓库 `Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number`。
-研究的主目标是同时提高三色下界、降低三色上界，最终以相匹配的构造和不可能性证明确定精确值；方法创新与数值推进分别记录。四色和一般 k 色作为方法的推广检验，三色未解决前不自动扩展为独立的大规模攻关。
+Repository: `Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number`.
+The main goal of the research is to simultaneously improve the three-color lower bound and lower the three-color upper bound, and finally determine the precise value with a matching structure and impossibility proof; method innovation and numerical advancement are recorded separately. Four-color and general k-color are used as generalization tests of the method, and the three-color problem will not be automatically expanded to an independent large-scale research before it is solved.
 
-## 固定问题，不让量词或方向漂移
+## Fixed problem, don't let quantifier or direction drift
 
 ```math
 \mathcal L(x,y;d)=\{(x,y),(x+d,y),(x+d,y+d)\},\qquad d\in\mathbb Z_{>0}.
 ```
 
-禁止的是**三个点同色**。允许使用至多 k 色，即 `χ:[n]²→[k]`，不另要求每种颜色都出现。等臂、轴平行、正步长和指定朝向都是问题的一部分。
+What is prohibited is **three dots of the same color**. It is allowed to use up to k colors, i.e.`χ:[n]²→[k]`, without additional requirements for each color to appear. Equal arms, parallel axes, positive steps, and specified orientation are all part of the problem.
 
-- `R_k`：每个 k 色染色都含单色 L 的最小边长。
-- `N_k`：存在无单色 L 的 k 色染色的最大边长，`N_k=R_k−1`。
-- 正常 `[n]²` 染色证明 `R_k≥n+1`；所有 `[n]²` 染色不可能正常才证明 `R_k≤n`。
-- “无论如何染色都不出现 L”不是这里的极值问题。发现这种措辞时，按上述两个量明确重述，不沿用错误量词。
-- 代码默认从 0 编号；正文 `[n]` 从 1 编号。源码的第一坐标可能显示为行，先写坐标字典。
+- `R_k`: the least n for which every coloring of the n by n square with at most k colors contains a monochromatic L.
+- `N_k`: the largest side admitting an L-free k-coloring; `N_k=R_k-1`.
+- A proper coloring of the n by n square proves `R_k>=n+1`. An upper bound `R_k<=n` requires excluding every allowed coloring of that square.
+- Keep the quantifiers explicit; do not replace this problem with finding a domain that avoids L under every coloring.
+- Code coordinates start at zero unless stated otherwise. State the coordinate dictionary before translating row and column conventions.
 
-`V(A)={(v,u):u<v,u,v∈A}` 是严格源；`W(A)` 允许 `u=v`。方形、完整三角形、稀疏源、单个纤维和抽象约束图是不同对象。源可染色不自动延拓为方形可染色。符号定义、精确恒等式和有效结果见 [研究地图](references/repository-map.md)。
+`V(A)={(v,u):u<v,u,v in A}` is the strict source; `W(A)` also allows equal endpoints. Full squares, complete triangles, sparse sources, individual fibers, and abstract graphs are different domains. A proper source coloring need not extend to a square. See the [research map](references/repository-map.md).
 
-## 开始一项工作时
+## When starting a job
 
-1. 定位仓库根目录，读取适用的项目约定，记录分支、完整提交号及工作区改动。读取 `README.md`、`docs/ROADMAP.md`、`docs/OPEN_PROBLEMS.md`、`docs/RESULTS_INDEX.md` 和相关正文；已有上下文仍有效时只读变更。
-2. 需要远程状态时优先用 GitHub 连接器读取默认分支、相关 PR 的状态、base/head 和差异。PR 未合并不代表没有数学价值；已合并也不代表完成独立审计。精确提交和证据范围必须保留。
-3. 本 skill 的创建快照见研究地图。它是导航缓存；后续源码、证书或文献版本改变后，重新核查受影响依赖。历史日志中的“current”“PASS”“accepted”和旧数值界不自动成为当前事实。
-4. 在新研究目录写一个目标契约：对象、量词、假设、欲证结论、上/下界方向、成功所需证据、最先不确定的一步。先查 [路线与障碍](references/routes.md) 的相邻失败机制，再决定实验。
+1. Locate the repository root directory, read applicable project conventions, and record branches, complete commit numbers, and workspace changes. read`README.md`,`docs/ROADMAP.md`,`docs/OPEN_PROBLEMS.md`,`docs/RESULTS_INDEX.md`and related text; read-only changes while existing context is still valid.
+2. When remote status is required, first use the GitHub connector to read the status of the default branch, related PR, base/head and differences. The fact that PR is not consolidated does not mean that it has no mathematical value; the fact that it is consolidated does not mean that an independent audit has been completed. Precise submissions and scope of evidence must be preserved.
+3. The creation snapshot of this skill can be found on the research map. It is a navigation cache; after subsequent source code, certificate or document version changes, affected dependencies are rechecked. "current", "PASS", "accepted" and old numerical bounds in the history log do not automatically become the current facts.
+4. Write a goal contract in the new research directory: object, quantifier, hypothesis, conclusion to be proved, upper/lower bound direction, evidence required for success, and the first uncertain step. Check first [route and obstacles](references/routes.md)of adjacent failure mechanisms before deciding to experiment.
 
-不在每轮重读全部历史。全文件索引 `docs/RESEARCH_SKILL_SOURCE_INDEX.json` 可按路径、声明或标题定位；它只证明完成了清点与结构扫描，不是逐行审阅、全库重跑或证明正确性证书。
+No longer rereading the entire history each round. Full file index`docs/RESEARCH_SKILL_SOURCE_INDEX.json`Can be located by path, statement, or title; it only certifies that inventory and structure scanning have been completed, not a line-by-line review, a full database rerun, or a certificate of correctness.
 
-## 上下界并行，机制保持多样
+## The upper and lower bounds are parallel, and the mechanism remains diverse.
 
-对“继续研究／压缩三色区间”这类广泛请求，同时维护下界工作包和上界工作包；不要把全部资源长期耗在单侧。逻辑并行不要求同时占满处理器。环境支持且已获委派授权时，可分别分配构造、全局结构和独立核验任务；否则交错推进。
+For broad requests such as "continue research/compress the three-color interval", maintain both the lower bound work package and the upper bound work package; do not consume all resources on one side for a long time. Logical parallelism does not require that the processors be occupied at the same time. When the environment supports it and authorization has been delegated, the structure, global structure and independent verification tasks can be assigned separately; otherwise, they can be promoted in a staggered manner.
 
-每个工作包有明确的目标、基础提交、写入目录和输出证据。并行作者不共同改写同一主稿或状态文件，由协调者整合。证明作者与核验者分别从定义和原始证书起步；另一实现不自动等于独立审阅。
+Each work package has a clear goal, basic commit, write directory and output evidence. Concurrent authors do not jointly rewrite the same master draft or status document, and are consolidated by the coordinator. Certification authors and verifiers start with definitions and original certificates respectively; another implementation does not automatically equal independent review.
 
-从 [路线与障碍](references/routes.md) 选择当前有信息价值的组合：
+From [Routes and Obstacles](references/routes.md)Select currently informative combinations:
 
-| 方向 | 优先研究对象 | 必须跨过的缺口 |
+| Direction | Priority research objects | Gaps that must be bridged |
 |---|---|---|
-| 下界 | 完整方形染色、边界签名、递归拼接、搜索所得模式 | 每个跨块、跨尺度 L 都受到控制；输出全部格点颜色 |
-| 上界 | 共享完成格、边界约束、资源重数、源结构分解 | 对所有允许源成立，或完整覆盖目标方形；推出实际数值矛盾 |
-| 桥接 | 极端样本、不可满足小核、FF/FM/MM 关系、结构反例 | 明确样本揭示的必要条件，以及局部条件不能保证的全局性质 |
+| Lower bound | Complete square coloring, boundary signature, recursive splicing, search resulting pattern | Each cross-block, cross-scale L is controlled; output all grid point colors |
+| Upper bound | Shared completion lattice, boundary constraints, resource multiplicity, source structure decomposition | Established for all allowed sources, or completely covering the target square; deduce actual numerical contradictions |
+| Bridging | Extreme samples, unsatisfiable small kernels, FF/FM/MM relations, structural counterexamples | Clear necessary conditions for sample revelation, and global properties that cannot be guaranteed by local conditions |
 
-候选路线先写：**新控制的相互作用 → 关键引理 → 最便宜的判别实验 → 到 R₃ 的推导**。没有这条链时，先补链或降级为探索性观察。
+The candidate route is written first: **Interaction of new controls → Key lemma → Cheapest discriminant experiment → Derivation to R₃**. If this link does not exist, the link should be supplemented first or downgraded to exploratory observation.
 
-方法选择综合比较数学信息增益、未证依赖、证据成本、是否触及旧障碍、参数敏感性和推广价值。不编造成功概率，不称未经比较的方法为“最优”。保留一个不依赖主路线核心猜想的替代方向；具体数量和预算随问题调整。
+Method selection comprehensively compares mathematical information gain, unproven dependence, evidence cost, whether old barriers are touched, parameter sensitivity and generalization value. Don’t make up the probability of success, don’t call an uncompared method “optimal”. Maintain an alternative direction that does not rely on the core conjecture of the main route; the specific amount and budget will be adjusted according to the problem.
 
-新方法的验收需要一个新对象、表示或可复用引理，证明它处理了旧方法遗漏的约束，并展示可核查的后果。参数微调可有价值，但不单独算方法创新。方法创新、条件改进、无条件数值改进、精确值和已知结果的新证明分开记录。
+Acceptance of a new method requires a new object, representation, or reusable lemma, proof that it handles constraints missed by the old method, and demonstration of verifiable consequences. Parameter fine-tuning can be valuable, but it does not alone count method innovation. Methodological innovations, conditional improvements, unconditional numerical improvements, exact values, and new proofs of known results are recorded separately.
 
-## 新路线必须面对的反例
+## Counterexamples that the new route must face
 
-- 两 Golomb 类的联合估计应用于实际纤维时，控制的是 `T(F_d)`；求和得到高阶立方体计数，不能直接写成整体 `T(A)≤2M(A)`。
-- 五维立方体排除只是必要条件；已有无五维立方体的高能量集合，不能靠立方体排除单独证明一般线性源界。
-- F11(5)、F12(7)、F13(17) 已被完整正常染色否定；其权重算术仍可能正确，依赖它们的 Ramsey 改进无效。
-- 三维完整源内部的九步平衡定理不保证嵌入更大源后可修复。固定边界的单格、双格修复都有反例；特定实例的八格阈值不是所有边界的通用上界。
-- 局部缺格、混色角或边界角可以被很多块重复使用。任何求和必须给出真实重数，不能将角数换成外部格数，或将带标签单射去掉标签。
-- 对固定 A，`2|E(Γ_z)|−Σ_ds_d(z)²=2T(A)−M(A)` 与着色 z 无关。优化着色能减少强迫边或失衡，却不能改变 A 的角数；需要进一步得到独立的全局预算。
+- The joint estimate of the two Golomb classes, when applied to real fibers, controls`T(F_d)`;The summation results in a higher-order cube count, which cannot be directly written as a whole`T(A)≤2M(A)`.
+- The exclusion of five-dimensional cubes is only a necessary condition; there are already high-energy collections without five-dimensional cubes, and the general linear source boundary cannot be proven solely by cube exclusion.
+- F11(5), F12(7), F13(17) have been negated by full normal coloring; their weight arithmetic may still be correct, and Ramsey improvements that rely on them have no effect.
+- The nine-step equilibrium theorem inside a three-dimensional complete source does not guarantee repairability when embedded in a larger source. There are counterexamples to fixed-boundary single-cell and double-cell repair; the eight-cell threshold for a specific instance is not a universal upper bound for all borders.
+- Local gaps, mixed color corners or boundary corners can be reused by many blocks. Any summation must give a true multiplicity and cannot replace angle numbers with external grid numbers or unlabel a labeled injective.
+- For fixed A,`2|E(Γ_z)|−Σ_ds_d(z)²=2T(A)−M(A)`Nothing to do with coloring z. Optimizing shading can reduce forced edges or imbalances, but cannot change the number of corners of A; further independent global budgeting is required.
 
-反例只否定其确切命题。带附加假设、可改边界、加权摊销或不同不变量的路线仍可继续。重新尝试失败机制时，说明新条件如何处理已知反例；扩大同一搜索或改名不算解决障碍。
+Counterexamples only deny the exact proposition. Routes with additional assumptions, changeable boundaries, weighted amortization, or different invariants can still be continued. When retrying a failed mechanism, explain how the new condition handles known counterexamples; expanding the same search or changing the name does not count as a barrier to resolution.
 
-## 把探索变成可用证据
+## Turn exploration into usable evidence
 
-执行和交付细节见 [证据与复现](references/evidence.md)。
+Implementation and delivery details are provided in [Evidence and Reproduction](references/evidence.md).
 
-- `PROVED`：完整证明，所有外部输入可定位，假设与对象匹配。
-- `CONDITIONAL`：结论明确依赖尚未建立的命题；列出依赖，不能升级为无条件界。
-- `CONJECTURE`：有限样本、启发式或猜测；写出反例搜索范围。
-- `COUNTEREXAMPLE`：完整对象和逐约束核验，说明否定的量词与范围。
-- `FINITE-CHECKED`：精确有限域、编码、覆盖和证书均已核查；不外推为任意规模定理。
-- `UNDECIDED`：超时、UNKNOWN、裸 UNSAT 状态、缺证书或输入不清。已反驳和已被替代的记录另标 `REFUTED`、`SUPERSEDED`，保留原证据。
+- `PROVED`: Complete proof that all external inputs are locatable, assuming they match the object.
+- `CONDITIONAL`: The conclusion clearly depends on a proposition that has not yet been established; the dependencies are listed and cannot be upgraded to an unconditional bound.
+- `CONJECTURE`: Limited samples, heuristics or guesses; write the counterexample search range.
+- `COUNTEREXAMPLE`: Complete object and constraint-by-constraint verification, indicating negative quantifiers and scope.
+- `FINITE-CHECKED`: Exact finite fields, encodings, coverages, and certificates checked; no extrapolation to arbitrary scale theorems.
+- `UNDECIDED`: Timeout, UNKNOWN, naked UNSAT status, missing certificate or unclear input. Rebutted and superseded records are labeled separately`REFUTED`,`SUPERSEDED`, retain the original evidence.
 
-构造用独立的物理格点核验器检查全部颜色和所有正步长 L。可用 `scripts/check_coloring.py` 读取显式方形或源证书；输入格式见证据文件。核验器不求解 SAT，不证明彩虹最小值，也不把源证书变为方形下界。
+The construct checks all colors and all positive steps L with independent physical grid verifiers. Available`scripts/check_coloring.py`Read explicit square or source certificates; see evidence file for input format. The verifier does not solve the SAT, prove the rainbow minimum, or turn the source certificate into a square lower bound.
 
-计算不可能性需验证编码双向等价、所有对称约束的保解性、完整分支覆盖及每份不可满足证明。优先 DRAT/LRAT 等可独立检查的证书。一次未找到解、所有已跑分支失败或拒绝一份模型都不证明上界。
+Computing impossibility requires verification of bidirectional equivalence of codes, solutionability of all symmetry constraints, complete branch coverage, and every unsatisfiable proof. Independently checkable certificates such as DRAT/LRAT are preferred. Not finding a solution once, failing all branches taken, or rejecting a model do not prove an upper bound.
 
-只有需要作受影响的数学修改时才更新正文；先在独立目录完成证明或反例。主稿有限证书发生相关改动后，重跑主核验器。Lean 的历史覆盖、当前源码、当前编译及逐命题对应分别陈述；条件命题不会因 Lean 接受其推论而变成已证。
+Update the text only if necessary to make affected mathematical changes; complete proofs or counterexamples in a separate directory first. After relevant changes are made to the main manuscript finite certificates, rerun the main verifier. Lean's historical coverage, current source code, current compilation, and proposition-by-proposition correspondence are stated separately; conditional propositions will not become proven because Lean accepts their inferences.
 
-文献新颖性判断需读原始来源并限定检索范围。没有搜到同类方法不等于原创性已证。未知绝对常数的渐近界不能直接给出三色数值界。
+To determine the novelty of a document, you need to read the original source and limit the scope of the search. The failure to find similar methods does not mean that the originality has been proven. The asymptotic bounds of unknown absolute constants cannot directly give three-color numerical bounds.
 
-## 续接、推广与交付
+## Continuation, promotion and delivery
 
-每个有意义的检查点保存：精确命题、当前状态、原始输入与 SHA-256、命令和实际运行范围、证明或反例文件、第一处未解决推导、下一次能区分路线的检查。沿用仓库已有状态机制；没有必要就不新增另一套台账。
+Each meaningful checkpoint saves: the exact proposition, the current state, the original input and SHA-256, the command and actual run range, a proof or counterexample file, the first unresolved derivation, and the next distinguishable check. Use the existing state mechanism of the warehouse; do not add another set of ledgers if it is not necessary.
 
-停止一条路线前区分“命题被否定”“特定方法失效”“实现错误”“预算用尽”“尚未尝试的延续”。未完成的可行续路保留重启条件。一次路线失败不结束获授权的整体研究；用户只要求编写工作流或有明确资源边界时，也不要擅自启动无限期求解。
+Before stopping a route, differentiate between "proposition is denied", "specific method fails", "implementation error", "budget exhausted" and "continuation that has not yet been attempted". Unfinished feasible continuation paths retain restart conditions. One route failure does not end the authorized overall research; when the user only requires writing a workflow or has clear resource boundaries, do not initiate indefinite solving without authorization.
 
-对有效新机制，维护推广表：所需源颜色数、是否本质用到二色互补、状态数或常数对 k 的依赖、缺少的三色源引理、预期适用范围。四色只作必要的小型检验或按用户明确要求推进；不把三维/四维立方体维数与三色/四色混为一谈。
+For effective new mechanisms, maintain a generalization table: the number of required source colors, whether the two-color complementarity is essentially used, the dependence of the state number or constant on k, the missing three-color source lemma, and the expected scope of application. Four-color only performs necessary small-scale inspections or advances according to clear user requirements; do not confuse three-dimensional/four-dimensional cube dimensions with three-color/four-color.
 
-报告先回答原目标是否达成，再给出确切结果、方法、证据和限制；上界与下界分别报当前变化。若只得到局部引理、反例或证书，准确陈述其价值，不把研究活动量折算成“接近证明”的百分比。
+The report first answers whether the original goal has been achieved, and then gives the exact results, methods, evidence, and limitations; the upper and lower bounds report the current changes respectively. If only partial lemmas, counterexamples or certificates are obtained, state their value accurately and do not convert the amount of research activities into a percentage of "close to proof".

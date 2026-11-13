@@ -1,62 +1,68 @@
+<!-- Repository language policy: English only. -->
 # Directed L-grid Ramsey numbers
 
-用于协作研究正向 L 网格拉姆齐数的数学资料库。当前论文的完整证明、构造和有限证书在 [manuscript/main.tex](manuscript/main.tex)，参考文献单独保存在 [references.bib](manuscript/references.bib)。
+A mathematical repository for collaborative research on forward L-grid Ramsey numbers. The complete proof, construction, and finite certificates of the current paper are at [manuscript/main.tex](manuscript/main.tex), references are saved separately in [references.bib](manuscript/references.bib).
 
-先读 [命题与证明索引](docs/RESULTS_INDEX.md)、[开放问题与失效路线](docs/OPEN_PROBLEMS.md) 和 [协作约定](docs/CONTRIBUTING.md)。
+Start with [Index of Propositions and Proofs](docs/RESULTS_INDEX.md), [Open issues and failure routes](docs/OPEN_PROBLEMS.md) and [collaboration agreement](docs/CONTRIBUTING.md).
 
-项目专用工作流：[directed-l-grid-research](.agents/skills/directed-l-grid-research/SKILL.md)。其创建时的资料与检查快照见 [整理报告](docs/RESEARCH_SKILL_REVIEW.md)；这些历史记录不代替当前结果核验。
+Project-specific workflow: [directed-l-grid-research](.agents/skills/directed-l-grid-research/SKILL.md). For the information and inspection snapshots when it was created, see [Compilation Report](docs/RESEARCH_SKILL_REVIEW.md); These historical records do not replace the current result verification.
 
-最新检查点：[跨源冲突、双端资源与极端形状计数](research/global_counting_20261108/README.md)。并行发展可求和的跨颜色请求冲突、全层级双端匹配与共同跨度代价，已证明严格的新容量限制；尚未推出更小的 Ramsey 上界，当前区间仍为 $`21\le R_3\le464`$。本轮优先发明纯数学上界计数，未开展下界SAT搜索。
+Latest checkpoints: [Cross-source conflicts, double-ended resources, and extreme shape counting](research/global_counting_20261108/README.md). Parallel development of summable cross-color request conflicts, full-level double-ended matching, and common span costs has proven strict new capacity limits; smaller Ramsey upper bounds have not yet been introduced, and the current interval is still$`21\le R_3\le464`$. This round gave priority to the invention of pure mathematical upper bound counting, and did not carry out lower bound SAT search.
 
-464证明：[六类完成格共同计数](research/kernel_compatibility_20261108/README.md)。共同占位计数将项目上界从465推进到464，带颜色边界计数进一步联系相邻步长。
+464 Proof: [Six types of completion cells count together](research/kernel_compatibility_20261108/README.md). The common occupancy count advances the item upper bound from 465 to 464, and the colored boundary count further connects adjacent steps.
 
-上一轮：[三色联合约束与修复距离](research/coupled_budget_20261108/README.md)恢复并核实历史465证明，另有独立466证明和修复障碍。新证明与审阅均在研究目录；尚未并入主稿。
+Previous round: [Three-color joint constraints and repair distance](research/coupled_budget_20261108/README.md)Restore and verify historical 465 proofs, as well as independent 466 proofs and repair obstacles. New proofs and reviews are in the research catalog; not yet incorporated into the main manuscript.
 
-2026-11-08 研究续接：[边界兼容性、冻结扩展障碍与文献复核](research/boundary_extension_20261108/README.md)。包括全源最优与局部平衡不兼容的完整反例、文献 20×20 染色的单边扩展障碍、独立核验代码与文献阅读记录；不改变无条件三色区间。
+2026-11-08 Research continuation: [Boundary compatibility, frozen expansion barriers and literature review](research/boundary_extension_20261108/README.md). Includes complete counterexamples of incompatibility between full-source optimality and local equilibrium, unilateral expansion barriers of literature 20×20 coloring, independent verification code and literature reading records; does not change the unconditional three-color interval.
 
-## 问题
+## Problem
 
-正向 L 是 $`(x,y),(x+d,y),(x+d,y+d)`$，其中 $`d>0`$。
-$`R_k(\mathcal L)`$ 是使每个 $`k`$ 色 $`[n]^2`$ 着色都有单色 L 的最小 $`n`$。
-对有限整数集 $`A`$，严格源为 $`V(A)=\{(v,u):u<v,\ u,v\in A\}`$。
-本次核查的核心原始文献给出 $`21\le R_3(\mathcal L)\le493`$。文献版本、证明位置和适用范围见 [学界已有成果](literature/KNOWN_RESULTS.md)。这是文献比较基准；项目新计数的464证明见上方最新检查点，不声称已穷尽后续文献或完成优先权审查。
+The forbidden directed equal-leg L consists of $`(x,y),(x+d,y),(x+d,y+d)`$ with $`d>0`$.
+$`R_k(\mathcal L)`$ is the smallest side n such that every coloring of the n by n
+square with at most k colors contains a monochromatic L. For a finite integer
+set A, the strict source is $`V(A)=\{(v,u):u<v,\ u,v\in A\}`$.
+The verified literature comparison is $`21\le R_3\le493`$; see
+[known results](literature/KNOWN_RESULTS.md) for versions and hypotheses.
+Research-checkpoint improvements must be read with their explicit dependencies.
 
-## 本项目当前数学结果
+## Current mathematical results
 
-以下概括不省略正文中各定理的假设，引用时请查看原定理和证明。
+Each statement retains the hypotheses in its linked theorem. Consult the
+proof before applying a result to a different source or domain.
 
-- 新增研究目录中的上界 $`R_3\le464`$ 将六种“对角颜色—完成颜色”类别的最小起点联合计数，再以带颜色的边界路径计数增强。数值应用使用 $`G(24)\ge425,G(25)\ge480`$ 两项外部计算定理，本地未重跑其穷尽搜索。[完整证明](research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md)与独立审阅见最新检查点。
-- 精确计数：$`T=\sum_{d>0}\binom{r_d}{2}`$，$`E=2n^2-n+4T`$；$`T\le CM`$ 蕴含 $`M\le(2C+1)L`$。
-- 两个不交 Golomb 类的联合碰撞计数：$`T\le\min(2M,M+5\rho)`$，以及类大小不平衡的显式亏损与纤维矩估计。局部纤维界不能直接当作整体源界。
-- 任意可正常二染色的严格源不含完整单射五维立方体；分离四维立方体的完整120格着色达到维数四。
-- 单射三维立方体至少九个 mixed corners；在2-dissociation下取到等号。
-- 物理源格构成的强迫图恒等式：$`2T=M+2|E(\Gamma)|-\sum_d s_d^2`$。
-- 六标记可二染色严格源的极值为 $`T=16,E=130`$；全部等号类型是 $`\{0,1,2,3,4,6\}`$ 的平移、正整数伸缩及反射。
-- 非等差 $`n\ge3`$ 标记集：$`T\le\binom{n}{3}-(n-2)`$，相应能量亏损为 $`4(n-2)`$。
-- 完整等差积、完整直和、配对平移的能量界分别为 $`9n^2-15n`$、$`(27n^2-25n)/2`$、$`22n^2-41n`$，须满足各自定理的完整性、分离或不交及可染色条件。
-- 双距离表示给出 $`T\le6M,M\le13L`$；每个中点最多三条长点对时为 $`T\le2M,M\le5L`$，系数二渐近最优。
-- 图编码 $`A_G=\{5^i+5^j:ij\in E(G)\}`$ 满足 $`T(A_G)=2C_4(G)`$，四环允许有弦；完全图族迫使普适系数至少二。
-- 无单射五维立方体的高能量构造满足 $`E\ge\tfrac12n^{73/26}`$。该构造没有声称具有正常源二染色。
-- S21下的条件界为 $`R_3\le379,R_4\le98777`$；适当跨度范围的存在型G9可推出 $`R_3\le361`$。这些都不是已证明的无条件改进。
+- Exact counts: $`T=\sum_{d>0}\binom{r_d}{2}`$ and $`E=2n^2-n+4T`$. A bound $`T\le CM`$ implies $`M\le(2C+1)L`$.
+- Two disjoint Golomb classes satisfy $`T\le\min(2M,M+5\rho)`$, with explicit imbalance and fiber-moment refinements. A bound on individual fibers is not a bound on the entire source.
+- A properly two-colored strict source contains no complete injective five-dimensional cube. A complete 120-cell coloring of a separated four-dimensional cube attains dimension four.
+- An injective three-dimensional cube has at least nine mixed corners; equality is attained under 2-dissociation.
+- The physical forcing graph satisfies $`2T=M+2|E(\Gamma)|-\sum_d s_d^2`$.
+- For properly two-colorable six-mark strict sources, the maximum is $`T=16,E=130`$. Equality types are translations, positive integer dilations, and reflections of $`\{0,1,2,3,4,6\}`$.
+- A non-arithmetic set of $`n\ge3`$ marks satisfies $`T\le\binom{n}{3}-(n-2)`$, with energy deficit $`4(n-2)`$.
+- Complete arithmetic products, complete direct sums, and paired translates have energy bounds $`9n^2-15n`$, $`(27n^2-25n)/2`$, and $`22n^2-41n`$, subject to their stated completeness, separation, disjointness, and colorability hypotheses.
+- The two-distance representation gives $`T\le6M,M\le13L`$. If each midpoint has at most three long pairs, $`T\le2M,M\le5L`$; the coefficient two is asymptotically optimal.
+- The graph encoding $`A_G=\{5^i+5^j:ij\in E(G)\}`$ satisfies $`T(A_G)=2C_4(G)`$, counting four-cycles with chords allowed. Complete graphs force any universal coefficient to be at least two.
+- A construction containing no injective five-dimensional cube has $`E\ge\tfrac12n^{73/26}`$. No proper binary source coloring is claimed for this construction.
+- Under the open S21 assumption, the conditional bounds are $`R_3\le379,R_4\le98777`$. The appropriate finite-span existence version of G9 would imply $`R_3\le361`$. These are open-premise implications, not established unconditional bounds.
 
-## 研究目标：先 R3，后 R4
+The separately reviewed research checkpoints prove $`R_3\le464`$ using the six joint completion classes and cited Golomb inputs. See the checkpoint links above for the complete proof and its scope.
 
-长期主线是同时提高 R3(L) 的下界、降低其上界，最终以匹配的构造和不可能性证明确定精确值。完成 R3(L) 后，再启动 R4(L) 的系统攻关。现有 R4 条件推论保留为背景，不作为当前主攻任务。
+## Research goal: R3 first, then R4
 
-当前优先发明能够统一计算跨颜色、跨步长与跨层级约束的新计数方式，追求更大幅度的上界压缩。每个阶段明确记录新计数已证明的后果及尚缺的全局估计；方法推进与数值界推进分别报告。
+The long-term main line is to simultaneously raise the lower bound on R3(L), ​​lower its upper bound, and ultimately determine the exact value with matching construction and impossibility proofs. After completing R3(L), ​​start the system research of R4(L). The existing R4 conditional corollary remains as background and is not used as the current main task.
 
-原创方法是核心目标。已有对角线、区间和 Golomb 方法作为比较基准；SAT、枚举和 Lean 用于发现、反驳和核验。仅调整旧方法的参数或扩大暴力搜索，不单独作为原创机制的完成标准。
+The current priority is to invent a new counting method that can uniformly calculate cross-color, span-length, and cross-level constraints, and pursue greater upper bound compression. The proven consequences of new counts and the missing global estimates are clearly documented at each stage; methodological advancement and numerical boundary advancement are reported separately.
 
-详细分期、上下界两条路线及验收标准见 [研究路线图](docs/ROADMAP.md)。
+Original approach is the core goal. There are diagonal, interval, and Golomb methods as benchmarks; SAT, enumeration, and Lean for discovery, refutation, and verification. Merely adjusting the parameters of the old method or expanding the brute force search does not alone serve as the completion standard for the original mechanism.
 
-## 学界成果与项目成果分开查阅
+For detailed staging, upper and lower bound routes and acceptance criteria, please see [Research Roadmap](docs/ROADMAP.md).
 
-- [学界已有成果与原始出处](literature/KNOWN_RESULTS.md)：两色精确值、三色已知界、密度定理和相关输入。
-- [文献数据库](literature/references.bib)：相关文献条目，含本轮补充的两色结果来源。
-- [本项目命题与证明索引](docs/RESULTS_INDEX.md)：论文中的结果与证明，不能据此自动认定优先权。
-- [开放假设与失效路线](docs/OPEN_PROBLEMS.md)：避免把条件界或已被否定的前提当作现有上界。
+## Academic achievements and project achievements can be viewed separately
 
-## 复现
+- [Academic achievements and original sources](literature/KNOWN_RESULTS.md): Exact values ​​of two colors, known bounds of three colors, density theorem and related inputs.
+- [Literature database](literature/references.bib): Relevant literature entries, including sources of two-color results supplemented in this round.
+- [Index of propositions and proofs of this project](docs/RESULTS_INDEX.md): The results and proofs in the paper cannot be used to automatically determine priority.
+- [Open Assumptions and Failure Routes](docs/OPEN_PROBLEMS.md): Avoid treating conditional bounds or negated premises as existing upper bounds.
+
+## Recurrence
 
 ```sh
 cd manuscript
@@ -64,9 +70,9 @@ python verify_directed_L_manuscript.py --source main.tex --bib references.bib --
 latexmk -pdf main.tex
 ```
 
-Python 3.10+，主核验器仅使用标准库。SAT生成与模型检查见 `manuscript/SAT_USAGE.md`。
-LaTeX需要TeX Live、BibTeX、latexmk及正文所用宏包。Lean构建见 `formal/README.md`。
+Python 3.10+, the main verifier only uses the standard library. SAT generation and model checking see`manuscript/SAT_USAGE.md`.
+LaTeX requires TeX Live, BibTeX, latexmk and the macro packages used in the text. Lean construction ideas`formal/README.md`.
 
-目录：`manuscript/` 当前证明与证书；`formal/` 形式化源码及历史覆盖记录；`exploration/` 历史探索、反例和失败路线；`docs/` 协作与状态说明。
+Table of contents:`manuscript/`Current certifications and certificates;`formal/`Formal source code and historical coverage records;`exploration/`Historical exploration, counterexamples, and failed routes;`docs/`Collaboration and status notes.
 
-完整论文中的个人信息、封面、致谢、辅助披露和答辩材料未导入。保留数学来源归属不等于宣称所有结果为新。此仓库不替第三方文献授予版权许可。
+Personal information, cover page, acknowledgments, supporting disclosures, and defense materials from the complete paper are not imported. Preserving mathematical source attribution does not amount to claiming that all results are new. This repository does not grant copyright licenses to third-party documents.

@@ -1,148 +1,148 @@
-# 多路线研究与决策
+#Multi-route research and decision-making
 
-本文件是可选择的研究组合，不是已证明的新理论。每条路线都有第一个待证环节和判别办法。开启工作包时选择当前有新信息的路线，不机械地遍历清单，也不把 G9/S21 当成唯一通道。
+This paper is a portfolio of alternative studies, not a proven new theory. Each route has its first verification link and judgment method. When opening a work package, select the route that currently has new information, do not traverse the list mechanically, and do not treat G9/S21 as the only channel.
 
-## 1. 从真正需要的结论反推
+## 1. Deduct from the really needed conclusion
 
-主稿 `prop:span-r3` 的现成桥梁是：若每个可正常二染色且 `L(A)≤18q` 的严格源满足 `M(A)≤qL(A)`，则 `R₃≤18q+1`。无需为了改进三色数值而一开始就证明所有跨度或 S21 的全部范围。
+Main article`prop:span-r3`The ready-made bridge is: if each can be dyed normally and`L(A)≤18q`The strict source satisfies`M(A)≤qL(A)`,but`R₃≤18q+1`. There is no need to prove all spans or the full range of S21 at the outset in order to improve trichromatic values.
 
-例如 q=27、跨度至多 486 的源预算若被证明，就能给出 487；q=21、跨度至多 378 对应 379；q=20、跨度至多 360 对应 361。**这些都是待证源预算的条件后果，不是已得新界。** 先尝试足以跨过有效基准的最弱版本，再评估更强结论的成本。
+For example, a source budget with q=27 and a span of at most 486, if proved, gives 487; q=21 with a span of at most 378 corresponds to 379; q=20 and a span of at most 360 corresponds to 361. **These are the conditional consequences of the source budget to be certified, not the acquired New Territories. ** Try the weakest version that crosses a valid benchmark first, then evaluate the cost of a stronger conclusion.
 
-也可直接排除某个目标方形，而不经过统一线性源界。对下界，首先要恢复并核验完整既有方形见证，再探索更大方形或可扩展构造。两条链的证据类型始终分开。
+It is also possible to exclude a target square directly without going through the unified linear source boundary. For the lower bound, it is first necessary to restore and verify the complete existing square witness, and then explore larger squares or expandable structures. The evidence types for the two strands are always separate.
 
-## 2. 上界路线
+## 2. Upper bound route
 
-### U1：共享完成格的全局资源分配
+### U1: Global resource allocation of shared completion grids
 
-**对象。** 构造关联结构，左侧为真实 forcing 角或伴随 FF 配置，右侧为缺失标记、mixed 角、完成格或带标签的缺边；保留颜色、偏移、支撑和方向。
+**Object. ** Constructs an associative structure with true forcing corners or accompanying FF configurations on the left and missing markers, mixed corners, completion grids, or labeled missing edges on the right; preserves color, offset, supports, and orientation.
 
-**想得到的引理。** 以可控重数把 dense forcing 的代价分配给数量受限的资源，最终控制 `2|E(Γ)|−Φ` 或直接控制 `T/M`、`M/L`。
+**The lemma you want to get. ** Allocate the cost of dense forcing to a limited number of resources with a controllable multiplicity, and ultimately control`2|E(Γ)|−Φ`or direct control`T/M`,`M/L`.
 
-**第一处缺口。** 一份资源可被不同标签或不同块复用。已有部分块恒等式
-`Σ_c binom(m_c,2)=Σ_f r_f` 只在固定标签内给单射；跨标签的 `r_f` 可无界。半诱导匹配条件加标签数约束也已有稠密抽象反例。
+**The first gap. ** A resource can be reused by different tags or different blocks. There are already partial block identities
+`Σ_c binom(m_c,2)=Σ_f r_f`Only give injectables within fixed tags; across tags`r_f`But there are no boundaries. There are also dense abstract counterexamples for semi-induced matching conditions plus label number constraints.
 
-**便宜判别。** 在已知完整合法源上生成真实关联图，输出最大复用资源及其邻域；同时检验抽象反例是否能延拓为完整正常源。若不能，提取阻止延拓的实际角核，并将该约束加入候选引理。
+**Cheap judgment. ** Generate a real correlation graph on the known complete legal source and output the maximum reuse resource and its neighborhood; at the same time, test whether the abstract counterexample can be extended to a complete normal source. If not, extract the actual angular kernel that prevents the continuation and add this constraint to the candidate lemma.
 
-**可推进方向。** 尝试分数匹配／充放电、依赖度加权、方向敏感的截面预算、跨方向冲突，或把资源从“裸缺边”细化为“标签＋缺边”。LP 只负责发现权重；发布时需要精确有理证书或通用组合证明。
+**Advance direction available. ** Try fractional matching/charge and discharge, dependency weighting, direction-sensitive cross-section budgeting, cross-direction conflicts, or refine resources from "bare missing edges" to "labels + missing edges". The LP is only responsible for discovering the weights; publishing requires an exact rational certificate or a universal combinatorial proof.
 
-**成功条件。** 写出全局可求和不等式与明确重数；完成从它到三色有限跨度矛盾的推导。不能以单块边数好看代替这一桥梁。
+**Success conditions. ** Write a globally summable inequality and an explicit multiplicity; complete the derivation from it to a three-color finite-span contradiction. This bridge cannot be replaced by a single piece of beautiful sides.
 
-### U2：边界签名、修复分量与全局势
+### U2: Boundary signature, repair weight and overall situation
 
-**对象。** 对三维源块 Q，记录所有真实跨界角决定的边界签名、合法内部状态，以及给定移动规则下的连通分量。把“能否平衡”与“能否从当前状态修复到平衡”分别编码。
+**Object. ** For a three-dimensional source block Q, record all boundary signatures determined by true crossing angles, legal internal states, and connected components under given movement rules. "Can it be balanced" and "can it be restored from the current state to balance" are coded separately.
 
-**现有障碍。** PR 3 的选中边界虽有平衡延拓，仍存在小步修复不可跨越的分量。换成三格、七格或允许临时升势都不能消除这个已展示的障碍。固定半径 8 也没有通用定理。
+**Existing barriers. ** Although the selected boundary of PR 3 has a balanced extension, there are still components that cannot be crossed by small-step repair. Changing to three squares, seven squares, or allowing a temporary uptrend will not remove this demonstrated obstacle. There is also no universal theorem for fixed radius 8.
 
-**第一处缺口。** 调整一个块的边界可能破坏邻块；块内 Φ_Q 下降不代表整个 A 的 Φ_A 下降。若 `s_A(d)=s_Q(d)+s_ext(d)`，固定外部颜色后有精确记账式：
+**The first gap. ** Adjusting the boundaries of a block may break neighboring blocks; a drop in Φ_Q within a block does not represent a drop in Φ_A for the entire A. like`s_A(d)=s_Q(d)+s_ext(d)`, after fixing the external color, there is an accurate accounting formula:
 
 ```math
 \Delta\Phi_A=\Delta\Phi_Q+
 2\sum_{d>0}s_{\rm ext}(d)\,\Delta s_Q(d).
 ```
 
-该式只是平方展开。外部项可使局部下降在全局变成上升；选择 Φ_A 最小的全局着色，也不能自动把局部预算中的 J_Q 设为空。
+This formula is just a square expansion. External terms can cause a local drop to rise globally; choosing a global shading with minimum Φ_A does not automatically set J_Q in the local budget to empty.
 
-**便宜判别。** 以 PR 2、PR 3 的完整边界证书为强制回归样本，枚举一次边界解锁对邻块的影响；记录上式中的交叉项、分量连接所需改色和新增阻塞。不要仅比较块内终点势。
+**Cheap judgment. ** Use the complete boundary certificates of PR 2 and PR 3 as forced regression samples to enumerate the impact of a boundary unlock on adjacent blocks; record the cross terms, required color changes for component connections and new blocking in the above formula. Don't just compare endpoint potentials within blocks.
 
-**可推进方向。** 尝试保留分量标签的状态转移、兼容边界签名的动态规划、沿分离器的有限态拼接、带外部场的势函数，或允许边界改变但可摊销其代价的修复引理。状态压缩必须保留每个跨界角需要的信息。
+**Advance direction available. ** Try state transitions that preserve component labels, dynamic programming compatible with boundary signatures, finite state splicing along splitters, potential functions with external fields, or repair lemmas that allow boundary changes but amortize their cost. State compression must preserve the information required for each crossing corner.
 
-**成功条件。** 给出任意适用源上的完备覆盖／分解，证明转移保解或证明全球摊销，避免预设所有源都有小分离器。选中实例的状态图本身只是工具与反例。
+**Success conditions. ** Give complete coverage/decomposition on any applicable source, prove transfer protection or prove global amortization, avoid assuming that all sources have small splitters. The state diagram of the selected instance is itself just a tool and a counterexample.
 
-### U3：实际合法源的结构分解与稳定性
+### U3: Structural decomposition and stability of actual legal sources
 
-**对象。** 在高重复差或高能量的可染源中，寻找完整积、配对平移、图编码／二距离片段，或与其有定量接近关系的片段。
+**Object. ** In colorable sources with high repeat difference or high energy, look for complete products, paired translations, graph encoding/two-distance fragments, or fragments that are quantitatively close to them.
 
-**想得到的引理。** “存在可控制的结构块，删除该块后剩余仍可染，跨块角的损失可计费”，或“若离所有结构族都远，则能量已低于所需阈值”。
+**The lemma you want to get. ** "There is a controllable structural block, and after deleting the block, the remainder can still be dyed, and the loss across block corners can be billed", or "If it is far away from all structural families, the energy is already below the required threshold."
 
-**第一处缺口。** 一般加性结构定理不保证完整积，也不保证所需分离、Freiman 关系方向或包括重复标记的等式保持。局部 Golomb 划分、无大立方体、抽象 forcing 图都不足以替代完整正常染色。
+**The first gap. ** The general additive structure theorem does not guarantee complete products, nor the preservation of required separations, directions of Freiman relations, or equations including repeated markers. Local Golomb partitioning, no large cubes, and abstract forcing graphs are not sufficient substitutes for full normal coloring.
 
-**便宜判别。** 对已有极端源及反例测量同一结构距离和跨块角数；构造“几乎完整但缺关键格”的对抗样本，检验误差是否真的由缺格数或边界负担控制。
+**Cheap judgment. ** Measure the same structural distance and cross-block angle number for existing extreme sources and counterexamples; construct an adversarial sample of "almost complete but missing key cells" to test whether the error is really controlled by the number of missing cells or boundary burden.
 
-**可推进方向。** 研究保留实际颜色的结构—低能量二分、稳定性到递归删除、或多尺度能量增量。引用外部结构定理前写清参数、常数及到整数正步长对象的字典。
+**Advance direction available. ** Investigate structures that preserve actual color—low energy bisections, stability to recursive deletion, or multiscale energy increments. Before referencing the external structure theorem, write the dictionary of parameters, constants, and integer positive step objects.
 
-**成功条件。** 参数显式到足以改善小色数，或得到可独立使用的新结构定理。未知巨大常数的渐近分解不能冒充三色数值突破。
+**Success conditions. ** The parameters are explicit enough to improve small color numbers, or to obtain new structural theorems that can be used independently. The asymptotic decomposition of unknown giant constants cannot pass off as a three-color numerical breakthrough.
 
-### U4：端点删除与可望远镜求和的预算
+### U4: Endpoint Removal vs. Telescopeable Summation Budget
 
-**对象。** 精确端点损失 `T(A)−T(A\{a})`，以及删除后仍能继承的状态量。
+**Object. ** Exact endpoint loss`T(A)−T(A\{a})`, and the state quantity that can still be inherited after deletion.
 
-**第一处缺口。** 单异常锚点的 sharp bound 有附加条件；删除后新最小点的锚色条件可能失效。不能逐次套用而不检查继承性。
+**The first gap. ** The sharp bound of a single abnormal anchor point has additional conditions; the anchor color condition of the new minimum point may become invalid after deletion. Cannot be applied one after another without checking inheritance.
 
-**便宜判别。** 在实际正常源上沿候选删除序列逐步输出损失、锚点条件及残余势，主动找首个不继承步骤。反例要给完整着色，不能只给抽象度序列。
+**Cheap judgment. ** On the actual normal source, gradually output the loss, anchor point condition and residual potential along the candidate deletion sequence, and actively find the first non-inherited step. Counterexamples must be given complete coloring, not just abstraction degree sequences.
 
-**可推进方向。** 用含边界状态的归纳不变量；或证明总损失预算 `Σ loss≤CΣ remaining-size`，允许少数高损失步骤由其他步骤补偿。摊销版本可能比每步 EP10 更弱、更可行。
+**Advance direction available. ** Use inductive invariants with boundary states; or prove the total loss budget`Σ loss≤CΣ remaining-size`, allowing a few high-loss steps to be compensated by other steps. The amortized version is probably weaker and more feasible than EP10 per step.
 
-**成功条件。** 每次删除都有可继承假设或有封闭的总预算，继而得到 H 型／跨度型定理。若只证明特殊锚点情形，保持限定范围。
+**Success conditions. ** Each deletion has an inheritable assumption or a closed total budget, which leads to the H-type/span-type theorem. If you are only proving special anchor point cases, keep the scope limited.
 
-### U5：有证明输出的有限不可满足性与自动引理发现
+### U5: Finite unsatisfiability with proof output and automatic lemma discovery
 
-**对象。** 完整目标方形、稀疏源的小不可满足核，以及覆盖全部情况的符号模式目录。
+**Object. ** Complete target squares, small unsatisfiable kernels for sparse sources, and a catalog of symbolic patterns covering all cases.
 
-**历史起点。** round3 的 side-21 编码采用 one-hot 颜色变量和完整分支覆盖。已核验的 easy cubes 之外仍有未决分支。新的调查可换编码、分支或求解器，但先明确新信息和证明输出路径。
+**Historical starting point. ** Side-21 encoding of round3 with one-hot color variables and full branch coverage. There are still pending branches outside of verified easy cubes. New investigations can change encodings, branches, or solvers, but first identify new information and proof output paths.
 
-**便宜判别。** 先在已知小实例验证 SAT 及 UNSAT 证书流程；给最困难的小核心生成并检查短 refutation，再决定是否扩展。自定义 RUP 检查器不能自动检查包含一般 RAT 步骤的 DRAT 证明。
+**Cheap judgment. ** First verify the SAT and UNSAT certificate processes on known small instances; generate and check short refutations for the most difficult small core, and then decide whether to expand. Custom RUP checkers cannot automatically check DRAT proofs that contain general RAT steps.
 
-**可推进方向。** 从完整几何小核提炼可量化禁型；把经过证明的禁型转为通用 cut；比较另一编码或带证明的 cube-and-conquer。完整 UNSAT 可给有限上界，但方法创新需进一步解释其中的结构机制。
+**Advance direction available. ** Extract quantifiable forbidden forms from complete geometric kernels; convert proven forbidden forms into universal cuts; compare to another encoding or cube-and-conquer with proof. The complete UNSAT can give a limited upper bound, but method innovation requires further explanation of the structural mechanism.
 
-**成功条件。** 所有分支与对称约束有覆盖证明，全部 refutation 可检查，并与无对称原问题等价。裸 UNSAT、启发式 cut、部分 cube 或不可染的一维样本都不足以证明方形上界。
+**Success conditions. ** All branches and symmetry constraints have coverage proofs, all refutations can be checked, and are equivalent to the original problem without symmetry. Naked UNSAT, heuristic cut, partial cubes, or uncolorable 1D samples are not sufficient to prove a square upper bound.
 
-## 3. 下界路线
+## 3. Nether route
 
-### L1：从完整染色样本提炼可扩展结构
+### L1: Extracting scalable structures from intact stained samples
 
-以本 skill 的 `assets/paper20.json` 为可复核起点；比较多个合法样本的行词、差值、边界签名、颜色替换与局部可改区域。寻找能说明“为什么无 L”的规则，再检验其第一次扩展。
+With this skill`assets/paper20.json`It is a reviewable starting point; compare the line words, differences, boundary signatures, color replacement and local changeable areas of multiple legal samples. Look for the rule that explains "why there is no L" and then test its first extension.
 
-先问能否在保持大部分已有结构时插入一行／列或修复外壳；也允许彻底重构。冻结旧内部是一个受限子问题，冻结后的不可满足不排除所有新方形染色。
+Ask first if you can insert a row/column or repair the shell while keeping most of the existing structure; complete refactoring is also allowed. Freezing the old interior is a restricted subproblem, and the insatisfiability after freezing does not exclude all new square colorings.
 
-随机局部搜索、SAT、约束规划和大邻域搜索都可用作发现。只把精确核验后的完整矩阵作为下界证书；随机种子与运行轨迹便于复现，但不能替代矩阵。
+Stochastic local search, SAT, constraint programming, and large neighborhood search can all be used for discovery. Only the complete matrix after accurate verification is used as the lower bound certificate; random seeds and running trajectories are easy to reproduce, but they cannot replace the matrix.
 
-先与 [Mammel 等 v1 第 3 节](https://arxiv.org/html/2502.05162v1#S3) 比较：完整 SAT、先解三角形再延拓、固定右列、固定部分颜色、反对角分层都已有尝试；更早 Canakci 等也已使用保持每格恰一色的局部搜索。再次使用它们可以作为基线，但创新点需要落在新的兼容状态、可证明剪枝、构造定理或经同输入同总预算验证的策略上。少量样本更快不证明普遍加速或全局最优。
+First with [Mammel et al. v1 Section 3](https://arxiv.org/html/2502.05162v1#S3)Comparison: Complete SAT, solving triangles first and then extending, fixing the right column, fixing partial colors, and anti-angle layering have all been attempted; earlier, Canakci and others also used local search that kept each grid exactly the same color. Again they can be used as baselines, but the innovation needs to lie in new compatible states, provable pruning, construction theorems, or strategies verified with the same inputs and total budget. Being faster with a small number of samples does not prove universal speedup or global optimality.
 
-### L2：边界受控的块拼接、替换和递归构造
+### L2: Boundary-controlled block splicing, substitution and recursive construction
 
-尝试为块指定输入／输出签名，证明替换后所有相交 L 都受控，建立组合规则。L 可能跨越多个块并有任意正步长；检查块内部与相邻块边缘并不完备。
+Try to specify input/output signatures for blocks, prove that all intersections L are controlled after replacement, and establish combination rules. L may span multiple blocks and have arbitrary positive steps; checking block interiors versus adjacent block edges is incomplete.
 
-将步长分为块内、跨块、与块尺度有关的余数和进位类型，证明这些类别穷尽。若用无进位乘积，必须验证颜色数、实际尺寸、最高非零位和等臂条件；不能直接宣布染色乘积可行。
+Classify steps into intra-block, cross-block, block-scale-dependent remainder and carry types and prove that these categories are exhaustive. If a carry-free product is used, the number of colors, actual size, highest non-zero digit, and equal-leg conditions must be verified; the dye product cannot be directly declared feasible.
 
-最便宜判别是枚举两个小块的所有跨块 L，寻找最小失败步长；再决定保留什么签名。可复用交付物是完整拼接定理或一个精确阻碍，而不只是更大的随机样本。
+The cheapest judgment is to enumerate all the cross-blocks L of the two small blocks, find the minimum failure step size, and then decide which signatures to retain. The reusable deliverable is a complete splicing theorem or an exact obstacle, not just a larger random sample.
 
-### L3：代数、周期、自动机与受约束随机化
+### L3: Algebra, Periods, Automata and Constrained Randomization
 
-候选包括多尺度数字规则、有限状态行生成、非线性模着色、分层颜色置换和带修复的概率构造。先检查受限族的覆盖能力，不把一家族失败说成原问题不可行。
+Candidates include multiscale numerical rules, finite-state row generation, nonlinear modal shading, hierarchical color displacement, and probabilistic construction with repair. It is not feasible to first check the coverage capabilities of restricted families without citing the failure of one family as the original problem.
 
-已有差值循环族 `χ(x,y)=f((y−x) mod m)` 的受限障碍，以及普通模仿射扫描的未决记录，应先读 `round3/lower/SUBTASK_REPORT.md`。不要只增大模数重跑已知无法承载大方形的同一机制。
+There is already a family of difference loops`χ(x,y)=f((y−x) mod m)`of restricted obstacles, as well as pending records of general imitation radiography scans, should be read first`round3/lower/SUBTASK_REPORT.md`. Don't just increase the modulus and rerun the same mechanism that is known to be unable to handle large squares.
 
-对 Lovász local lemma、alteration 等概率路线，先明确相关事件和依赖图，检查常数是否覆盖目标规模。删除坏点通常只得到稀疏域；必须另证可恢复完整方形及其全部颜色，才能提高本问题下界。
+For probabilistic routes such as Lovász local lemma and alteration, first clarify the relevant events and dependency graphs, and check whether the constants cover the target scale. Removing bad pixels usually only results in sparse domains; it must be proven that the complete square and all its colors can be recovered to improve the lower bound of this problem.
 
-### L4：上界小核反向指导构造
+### L4: Upper bound small core reverse guidance structure
 
-把实际不可满足核或共享完成格冲突当作待避禁型，用它指导构造，而不是把启发式禁型加入声称完备的原问题。比较构造是否真的避开全部核、还是把冲突移到更大尺度。
+Treat actual unsatisfiable cores or shared perfective conflicts as forbidden types to be avoided and use them to guide construction, rather than adding heuristic forbidden types to the original problem that claims to be complete. Compare whether the structure actually avoids all cores or moves the conflict to a larger scale.
 
-对称约束尽量从颜色重命名开始。单独的转置、四个旋转、周期性或“美观对称”可能缩小问题；除非有保解证明，否则标记为受限构造族。
+Symmetry constraints try to start with color renaming. Transpositions, four rotations, periodicity, or "beautiful symmetry" alone may narrow the problem; marked as a restricted family of constructions unless justified.
 
-## 4. 路线选择、终止与下一轮
+## 4. Route selection, termination and next round
 
-用一张小表比较正在考虑的路线，不虚构数值评分或成功概率：
+Use a small table to compare the routes you are considering, without making up numerical ratings or success probabilities:
 
-| 路线 | 旧方法遗漏的约束 | 最先待证步骤 | 判别实验与实际成本 | 失败后保留的数学信息 | 下一轮动作 |
+| Route | Constraints missed by the old method | First steps to be verified | Distinguish between experiments and actual costs | Mathematical information retained after failure | Next round of actions |
 |---|---|---|---|---|---|
-| 逐项填写 | 具体几何或颜色相互作用 | 可反驳的精确命题 | 明确输入及停止条件 | 定理、反例、小核或实现问题 | 继续、改假设、转向或待资源 |
+| Fill in item by item | Specific geometric or color interactions | Refutable precise propositions | Clear input and stopping conditions | Theorems, counterexamples, small kernels or implementation problems | Continue, change assumptions, switch or wait for resources |
 
-一条候选定理在新实例中失败时，缩小其准确失效范围。一个计算超时则保留 UNDECIDED；换机制、缩小关键子问题或在授权资源内增加预算，不能把它改称不可能。新增样本应能区分候选解释，而不只扩大“测试了很多”的数字。
+When a candidate theorem fails in a new instance, narrow down the exact scope of its failure. A calculation timeout remains UNDECIDED; it cannot be renamed impossible by changing the mechanism, narrowing the key sub-problem, or increasing the budget within authorized resources. The additional samples should distinguish candidate explanations, not just expand the "tested a lot" number.
 
-如果上界的全部新点仍依赖同一个未证 G9 型预算，主动开一条直接方形路线或不同不变量的替代路线。如果下界只做随机种子重复，至少分析一个稳定结构或相同失败核。保持上下界之间的信息流，不机械分配固定比例。
+If all new points in the upper bound still depend on the same unproven G9-type budget, proactively open a direct square route or an alternative route with different invariants. If the lower bound only does random seed repetition, analyze at least one stable structure or the same failure kernel. Maintain information flow between upper and lower bounds without mechanical allocation of fixed ratios.
 
-## 5. 向四色与一般 k 色提炼
+## 5. Refining the four colors and general K colors
 
-每个有效机制记录下面的推广条件；三色未解决时只做成本可控且有判别价值的检查：
+Each effective mechanism records the following promotion conditions; when the three colors are not resolved, only cost-controllable and discriminating value checks are done:
 
-| 机制要素 | 二色源 → 三色源时的问题 |
+| Mechanism elements | Problems when two-color source → three-color source |
 |---|---|
-| 同色输入强迫唯一反色 | 三色源只排除一个颜色，完成格还有两个选择 |
-| 符号 ±1 与平方失衡 | 可尝试颜色向量、协方差矩阵或单纯形编码，但要重新推导恒等式 |
-| 二部 forcing 图 | 可能需有色超图／列表约束，不能直接沿用二部图预算 |
-| 局部平衡与修复图 | “平衡”及最优值需重定义，边界分量可能更复杂 |
-| 同色对角类消色 | k 色方形导向 k−1 色严格源；严格源与继承弱源仍需区分 |
-| 递归构造与边界签名 | 追踪颜色数、状态数、拼接损失随 k 的增长 |
+| The same color input forces the only opposite color | The three-color source only excludes one color, and there are two options to complete the grid |
+| Signs ±1 are out of balance with squares | Try color vectors, covariance matrices, or simplex encoding, but re-derive the identity |
+| Bipartite forcing graph | Colored hypergraph/list constraints may be required, bipartite graph budget cannot be used directly |
+| Local balance and repair diagram | "Balance" and optimal values ​​need to be redefined, and the boundary components may be more complex |
+| Isochromatic diagonal achromatic | k-color square-oriented k-1 color strict source; strict source and inherited weak source still need to be distinguished |
+| Recursive construction and boundary signatures | Tracking the number of colors, states, and splicing loss as k grows |
 
-目标是把新机制表达为颜色参数可见的定理或明确待证引理。三色常数更优与可推广机制更强可以是两个不同结果，不因其中一项未完成而夸大另一项。
+The goal is to express the new mechanism as a theorem whose color parameters are visible or as a lemma explicitly to be proved. Better three-color constants and stronger generalizable mechanisms can be two different results, and one should not be exaggerated because the other is not completed.

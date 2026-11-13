@@ -1,24 +1,24 @@
-# 全源最优与三维块平衡不兼容：外场反例及精确预算
+# Full-source optimality is incompatible with three-dimensional block balancing: external field counterexamples and precise budgeting
 
-日期：2026-11-08。基础提交 `080822bb1d434b164a1f42ea159d0bf148396b71`。
+Date: 2026-11-08. Basic submission`080822bb1d434b164a1f42ea159d0bf148396b71`.
 
-**本轮结果：** 存在一个正常二染色的完整严格源，已经达到全源势函数的绝对最小值，但其三维块不平衡。一次合法的块内单格改色即可使该块平衡，却严格增加全源势。固定该外部着色时，全源最小势为 **9**，要求该块平衡后的最小势为 **13**；这两个精确值由奇偶下界、完整见证和逐角核验共同证明，不依赖遍历全部着色。
+**Results of this round:** There exists a complete strict source of normal dichromatism, which has reached the absolute minimum of the total source potential function, but its three-dimensional block is unbalanced. A legal color change of a single cell within a block can balance the block, but strictly increases the total source potential. When the external coloring is fixed, the minimum potential of the whole source is **9**, and the minimum potential after the block is required to be balanced is **13**; these two precise values ​​are jointly proved by the parity lower bound, the complete witness and the corner-by-corner verification, and do not rely on traversing all the colorings.
 
-这排除了“选取全局势最小的正常着色，就能把每个三维块的局部不平衡消掉”的一步推理。本例没有路径阻塞：平衡终态一步就能到达；障碍是局部目标与全局目标冲突。它补充了 [PR 3](https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/pull/3) 的固定边界路径障碍，没有替代那里的结果。
+This eliminates the one-step reasoning of "selecting the normal coloring with the smallest global size can eliminate the local imbalance of each three-dimensional block." There is no path blocking in this example: the equilibrium final state can be reached in one step; the obstacle is the conflict between the local goal and the global goal. It complements [PR 3](https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/pull/3)Fixed border path obstacles, no override results there.
 
-无条件上下界仍未改变；不证明 G9、S21 或任意源的线性预算。本轮是项目内新的明确反例与配套表示，不宣称已经确立文献优先权。
+The unconditional upper and lower bounds remain unchanged; no linear budgets are proven for G9, S21, or arbitrary sources. This round is a new clear counterexample and supporting expression within the project, and does not claim to have established document priority.
 
-## 1. 定义与完整见证
+## 1. Definition and complete testimony
 
-取
+Pick
 
 ```math
 Q=\{0,1,5,6,25,26,30,31\},\qquad A=Q\cup\{2,3\}.
 ```
 
-Q 是权重 1、5、25 的分离三维立方体。V(A) 是全部 (v,u)，u<v，含 45 格；正向等臂 L 是 ((x,y),(x+h,y),(x+h,y+h))，h>0，本例共 46 个。
+Q is a separated three-dimensional cube with weights 1, 5, and 25. V(A) is all (v,u), u<v, including 45 cells; forward equal-leg L is ((x,y),(x+h,y),(x+h,y+h)), h>0, a total of 46 in this example.
 
-每行按 A 中小于 v 的标记升序列出颜色。z=1−2c。
+Each row lists the colors in ascending order of tokens in A that are less than v. z=1−2c.
 
 | v | c₀ | c₁ |
 |---:|:---|:---|
@@ -32,35 +32,35 @@ Q 是权重 1、5、25 的分离三维立方体。V(A) 是全部 (v,u)，u<v，�
 | 30 | `00101010` | `00101010` |
 | 31 | `111010000` | `111010000` |
 
-唯一改色是内部格 (6,5)，0→1。两份完整着色均无单色 L；外部 17 格完全相同。原始数据在 [witnesses.json](witnesses.json)，独立物理几何核验在 [verification.json](verification.json)。
+The only color change is the inner cell (6,5), 0→1. Both complete colorations have no solid L; the outer 17 panels are identical. The original data is in [witnesses.json](witnesses.json), independent physical geometry verification in [verification.json](verification.json).
 
-对 B⊆A，令 r_B(d)=|{u:u,u+d∈B}|，
+For B⊆A, let r_B(d)=|{u:u,u+d∈B}|,
 
 ```math
 s_B(d)=\sum_{u,u+d\in B}(1-2c(u+d,u)),\qquad
 \Phi_B(c)=\sum_{d>0}s_B(d)^2.
 ```
 
-| 势 | c₀ | c₁ |
+| Potential | c₀ | c₁ |
 |---|---:|---:|
 | Φ_Q | 8 | 4 |
 | Φ_A | 9 | 13 |
 
-## 2. 精确最优性的解析证明
+## 2. Analytical proof of exact optimality
 
-**奇偶引理。** r 个 ±1 的和与 r 同奇偶，所以平方至少为 r mod 2。因此每种着色（无论正常与否）满足
+**Odd-Even Lemma. ** The sum of r ±1's has the same parity as r, so the square is at least r mod 2. Therefore every coloring (whether normal or not) satisfies
 
 ```math
 \Phi_B\ge P_B:=\sum_{d>0}(r_B(d)\bmod2).
 ```
 
-本例 Q 的奇数纤维恰在 d=19、21、29、31，所以 P_Q=4。A 的奇数纤维恰在 d=2、3、4、19、21、22、24、27、31，所以 P_A=9。c₀ 达到 Φ_A=9，故它是全部正常着色中的全局最小者，当然也是固定其外部颜色后的最小者。
+The odd fibers of Q in this example are exactly at d=19, 21, 29, 31, so P_Q=4. The odd fibers of A are exactly at d=2, 3, 4, 19, 21, 22, 24, 27, 31, so P_A=9. c₀ reaches Φ_A=9, so it is the global minimum among all normal colorings, and of course the minimum after fixing its external color.
 
-Q 在 d=1 的四个格是 (1,0)、(6,5)、(26,25)、(31,30)。c₀ 上颜色为 0、0、1、0，故 s_Q(1)=2。外部同差格是 (2,1)、(3,2)，均为颜色 1，故外场 e(1)=−2。因此 c₀ 的全源差值 1 纤维已经完全平衡，s_A(1)=0。
+The four cells of Q at d=1 are (1,0), (6,5), (26,25), and (31,30). The colors on c₀ are 0, 0, 1, 0, so s_Q(1)=2. The external homodyne lattices are (2,1) and (3,2), both of which are color 1, so the external field e(1)=−2. Therefore the total source difference of c₀ 1 fiber is already fully balanced, s_A(1)=0.
 
-任何 Q 平衡态，即 Φ_Q=4，必须让每个偶数大小内部纤维的和为零，特别是 s_Q(1)=0。在同一外部着色下，这迫使 s_A(1)=−2，贡献 4。差值 1 的全源纤维为偶数，其奇偶下界本为 0；其余纤维仍至少贡献 P_A=9。因此任何同外部、Q 平衡的正常态都满足 Φ_A≥13。c₁ 达到13，并且 Φ_Q=4，故受限最优值恰为13。
+Any Q equilibrium, i.e. Φ_Q=4, must have the sum of every even-sized internal fiber equal to zero, in particular s_Q(1)=0. With the same external coloring, this forces s_A(1)=−2, contributing 4. All source fibers with a difference of 1 are even, and their parity lower bound is 0; the remaining fibers still contribute at least P_A=9. Therefore, any normal state in equilibrium with the external Q satisfies Φ_A≥13. c₁ reaches 13, and Φ_Q=4, so the restricted optimal value is exactly 13.
 
-综上：
+To sum up:
 
 ```math
 \min_{c\text{ proper, fixed exterior}}\Phi_A(c)=9,
@@ -68,18 +68,18 @@ Q 在 d=1 的四个格是 (1,0)、(6,5)、(26,25)、(31,30)。c₀ 上颜色为 
 \min_{c\text{ proper, fixed exterior},\ \Phi_Q(c)=4}\Phi_A(c)=13.
 ```
 
-因而在该外部着色下，**不存在同时达到全源最优与 Q 平衡的着色**。该断言仅针对所示固定外部；没有声称改变外部后仍不能两者兼得。
+Therefore, under this external coloring, there is no coloring that simultaneously achieves all-source optimality and Q equilibrium. This assertion is only for the fixed exterior shown; there is no claim that changing the exterior still fails to achieve both.
 
-## 3. 一般外场下界与精确替换表示
+## 3. General outfield lower bound and exact replacement representation
 
-以下表示适用于任意有限 A、Q⊆A，未限定为立方体。固定外部正常着色，在每个差值上令 e_d 为外部格的符号和。内部为 z，内部纤维和为 s_d。
+The following representation applies to any finite A, Q⊆A, not restricted to cubes. Fixed outer normal coloring, let e_d be the signed sum of the outer lattice at each difference. The interior is z and the interior fiber sum is s_d.
 
 ```math
 \Phi_A(z)=\sum_d(s_d+e_d)^2
 =\Phi_Q(z)+2\sum_de_ds_d+\sum_de_d^2.
 ```
 
-若 Q 达到其奇偶下界 P_Q，则 r_Q(d) 偶数时 s_d=0，奇数时 s_d∈{−1,1}。r_Q(d)=0 也计作偶数。因此对所有这样的内部平衡态都有
+If Q reaches its odd-even lower bound P_Q, then s_d=0 when r_Q(d) is even and s_d∈{−1,1} when it is odd. r_Q(d)=0 also counts as an even number. Therefore for all such internal equilibrium states we have
 
 ```math
 \Phi_A\ge
@@ -88,15 +88,15 @@ K_Q(e):=
 +\sum_{r_Q(d)\text{ odd}} (|e_d|-1)^2.
 ```
 
-求和只需覆盖 A 的差值。证明逐纤维最小化平方即可；不假设这些逐纤维最优选择能同时构成正常着色，所以这里只给下界。本例 K_Q(e)=13，且 c₁ 取到。
+The sum simply covers the differences in A. It is proved that minimizing the square fiber-by-fiber is sufficient; it is not assumed that these fiber-by-fiber optimal choices can simultaneously constitute normal coloring, so only the lower bound is given here. In this example, K_Q(e)=13, and c₁ is obtained.
 
-**完整替换签名。** 固定外部时，除内部所有三元 NAE（非全等）约束外，把每个跨界 L 按内部格数处理：
+**Complete replacement signature. ** When fixing the outside, in addition to all internal ternary NAE (non-congruent) constraints, each cross-boundary L is processed according to the internal grid number:
 
-- 一个内部格、两个同色 c 的外部格：内部格不能取 c；两外部格异色则无约束。
-- 两个内部格、一个颜色 c 的外部格：两个内部格不能同时取 c。
-- 零个内部格：必须已正常；三个内部格：由原内部 NAE 约束覆盖。
+- One internal grid and two external grids of the same color c: the internal grid cannot take c; there is no constraint for the two external grids of different colors.
+- Two internal cells, one external cell of color c: two internal cells cannot take c at the same time.
+- Zero internal cells: must be normal; three internal cells: covered by original internal NAE constraints.
 
-这是按全部几何 L 的穷尽分类，故内部着色满足这些约束，当且仅当替换后全源正常。若将跨界单元、二元禁色约束的集合记为 Σ，令 Z(Σ) 为满足内部与残余约束的着色集合，则
+This is an exhaustive classification of all geometries L, so the internal shading satisfies these constraints if and only if all sources are normal after replacement. If the set of cross-boundary units and binary forbidden color constraints is recorded as Σ, and let Z(Σ) be the coloring set that satisfies the internal and residual constraints, then
 
 ```math
 \min_{z\in Z(\Sigma)}\Phi_A(z)
@@ -104,36 +104,36 @@ K_Q(e):=
 \min_{z\in Z(\Sigma)}\left[\Phi_Q(z)+2\langle e,s(z)\rangle\right].
 ```
 
-空可行集的最小值定义为 +∞。因此“完整残余约束 Σ＋外场 e”足以精确计算合法性与全源势变化。对于固定非空 Z(Σ)，减去 ||e||² 后的最优值是有限个仿射函数的逐点最小值，因而为分段线性凹函数。这里将 e 视为形式参数；没有声称任意参数都能由实际外部正常着色实现。
+The minimum value of the empty feasible set is defined as +∞. Therefore, the "complete residual constraint Σ+external field e" is sufficient to accurately calculate the legality and full source potential changes. For a fixed non-empty Z(Σ), the optimal value minus ||e||² is the pointwise minimum of a finite number of affine functions and is therefore a piecewise linear concave function. e is treated here as a formal parameter; there is no claim that any parameter can be implemented by actual external normal shading.
 
-这部分是标准约束消元与平方展开在本问题的明确应用，不单独宣称原创。实际反例说明只优化 Φ_Q 即使有完整合法性检查，仍会选错全局方向。
+This part is an explicit application of standard constrained elimination and square expansion to this problem, and no separate claims of originality are made. The actual counterexample shows that only optimizing Φ_Q will still choose the wrong global direction even with complete legality checks.
 
-## 4. 复现、核验与证据范围
+## 4. Reproduction, verification and scope of evidence
 
-发现命令（需要 `python-sat`；本轮为 1.9.dev15，Glucose4）：
+discovery command (requires`python-sat`;This round is 1.9.dev15, Glucose4):
 
 ```sh
 python research/boundary_extension_20261108/upper/discover.py
 ```
 
-发现程序同时编码单格改色前后全部真实 L 的非全等约束，并在一条差值纤维上枚举颜色签名。试验两个明列的 (Q,A)，第一个没有找到反例；这个否定没有附 UNSAT 证书，因此不作为不存在结论。
+The discovery program simultaneously encodes non-congruent constraints for all real L's before and after a single cell changes color, and enumerates color signatures on a difference fiber. Experimenting with two stated (Q,A), no counterexample was found for the first one; this negation does not have a UNSAT certificate attached, so there is no conclusion by inaction.
 
-独立验证命令（Python 3.10+ 标准库）：
+Standalone verification command (Python 3.10+ standard library):
 
 ```sh
 python research/boundary_extension_20261108/upper/verify.py
 ```
 
-验证器不调用发现程序，不导入 SAT。它枚举全部无序格点三元组，再直接识别正向等臂 L；重算全部45格、46角、两态正常性、外部不变、单格改色、纤维和、奇偶界与平衡外场界。输出 PASS。实际执行环境 Python 3.13.5；输入与脚本 SHA-256 随结果保存。
+The validator does not call the discovery program and does not import SAT. It enumerates all disordered grid point triples, and then directly identifies the forward equi-arm L; recalculates all 45 grids, 46 angles, two-state normality, external invariance, single grid color change, fiber sum, odd-even bounds and balanced external field bounds. Output PASS. Actual execution environment Python 3.13.5; input and script SHA-256 are saved with the results.
 
-证明的有限叶是这两个完整着色的逐角合法性；最优性来自上节对任意着色成立的奇偶论证，而不是“求解器没有找到更小者”。父任务另外从原始见证进行了独立无序三点核验，其记录在本目录上一级。
+The finite leaf of the proof is the corner-by-corner legality of these two complete colorings; optimality comes from the parity argument from the previous section that holds for arbitrary colorings, not "the solver didn't find the smaller". The parent task additionally performs an independent unordered three-point verification from the original witness, which is recorded one level above this directory.
 
-## 5. 对下一轮的具体约束
+## 5. Specific constraints on the next round
 
-1. 全局极小着色的局部预算必须保留外场或等价交叉项。不能因为 Φ_A 最小便令所有块内改善项自动消失。
-2. 研究可修复块时应同时记录残余约束 Σ、外场 e、实现各纤维和的合法状态；仅记录局部势或路径半径不足。
-3. 可尝试对 K_Q(e)−P_A 的超额收费，但外部同差格会被多个块复用。当前尚缺可全局求和的重数控制；本例本身不提供它。
-4. 最便宜的下一次判别是构造两个重叠块，共享同一批外部差值格，测试分开计算的外场代价能否被重复收费；然后寻找带标签或分数权重的可证明摊销。
-5. 三色源不能直接使用 ±1 奇偶平方界；可换成颜色计数向量，但约束与最优目标必须重新推导。
+1. The local budget of global minimum shading must preserve external fields or equivalent cross terms. All improvement items within the block cannot automatically disappear just because Φ_A is minimal.
+2. When studying repairable blocks, the residual constraints Σ, external fields e, and the legal status of each fiber sum should be recorded at the same time; only the local potential or insufficient path radius should be recorded.
+3. Overcharging K_Q(e)−P_A can be attempted, but the outer homodyne lattice will be reused by multiple blocks. Multiplicity control for global summation is currently lacking; this example does not provide it natively.
+4. The cheapest next judgment is to construct two overlapping blocks that share the same batch of external difference grids and test whether the separately calculated outfield costs can be charged repeatedly; then look for provable amortization with labels or fractional weights.
+5. The three-color source cannot directly use the ±1 odd-even square bound; it can be replaced by a color count vector, but the constraints and optimal goals must be re-derived.
 
-状态：反例及上述精确最优值 **PROVED（含完整有限证书）**；通用替换表示 **PROVED**；全局摊销、G9/S21 与 R₃ 数值改进仍开放。审阅范围：作者自审及父任务独立见证重算；不声称 Lean 形式化或全稿审计。
+Status: Counterexamples and exact optimal values ​​above **PROVED (with full finite certificates)**; universal replacement representation **PROVED**; global amortization, G9/S21 and R₃ numerical improvements still open. Scope of review: Author's self-review and parent task independent witness recalculation; does not claim Lean formalization or full manuscript audit.

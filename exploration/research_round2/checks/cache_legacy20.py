@@ -1,7 +1,10 @@
 from pathlib import Path
 from hashlib import sha256
 import json
-src=Path('C:/Users/ZhuanZ/Desktop/L-free coloring Ramsey Number/Kimi_Agent_核心推导PDF/lgrid_sat/witnesses_n20_k3.txt')
+import sys
+if len(sys.argv) != 2:
+ raise SystemExit('Usage: python cache_legacy20.py PATH_TO_ORIGINAL_WITNESS')
+src=Path(sys.argv[1])
 rows=[[int(v) for v in row.split()] for row in src.read_text().splitlines() if row.strip()]
 assert len(rows)==20 and all(len(row)==20 and all(v in (1,2,3) for v in row) for row in rows)
 grid=list(map(list,zip(*rows)))

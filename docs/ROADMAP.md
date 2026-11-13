@@ -1,61 +1,61 @@
-# 研究路线：原创结构方法，先解决 R3
+# Research route: Original structural method, solve R3 first
 
-## 总目标与先后顺序
+## Overall goal and sequence
 
-长期第一目标：不断提高 R3(L) 的下界并降低上界，最终确定精确值，给出相匹配的构造和不可能性证明。只有完成这一目标后，再启动 R4(L) 的系统性上下界攻关。R3尚未解决时，R4只保留已有背景和条件性推论。
+The long-term first goal: continuously improve the lower bound and lower the upper bound of R3(L), ​​finally determine the precise value, and provide matching construction and impossibility proof. Only after completing this goal can we start the systematic upper and lower bound research on R4(L). When R3 has not yet been solved, R4 only retains the existing background and conditional inferences.
 
-当前已核查的数值基准和文献见 [学界成果](../literature/KNOWN_RESULTS.md)。下述路线是研究计划，不表示任何开放引理已经成立。
+The current verified numerical benchmarks and literature can be found in [Academic Results](../literature/KNOWN_RESULTS.md). The following route is a research plan and does not mean that any open lemma has been established.
 
-2026-11-08 [六类完成格共同计数](../research/kernel_compatibility_20261108/README.md)已将项目上界从恢复的465推进到464，当前项目区间为21至464。文献493保留作比较基准。[最新全局计数](../research/global_counting_20261108/README.md)并行探索跨源颜色请求、全层级双端匹配和极端形状的共同跨度代价。按用户最新优先级，主攻有较大压缩潜力的新上界计数；不以逐次减一或扩大SAT下界搜索作为本阶段主线。
+2026-11-08 [Six types of completed grids are counted together](../research/kernel_compatibility_20261108/README.md)The project upper bound has been advanced from the restored 465 to 464, and the current project range is 21 to 464. Document 493 is retained as a baseline for comparison. [Latest global count](../research/global_counting_20261108/README.md)Parallel exploration of cross-source color requests, full-level double-ended matching, and common span costs for extreme shapes. According to the user's latest priority, we will focus on new upper bound counts with greater compression potential; we will not reduce the count by one or expand the SAT lower bound search as the main line of this stage.
 
-当前优先级由用户明确指定：发明新的上界计数方式。重新选择计数对象、保留旧计数丢失的共同限制，并完成数值推导；不能把证明整理、旧参数优化或扩大SAT搜索视为这一目标的完成。本轮的六类最小起点计数和跨步长颜色比较是两层具体机制。下界路线保留为长期背景，不自动占用本轮工作资源。
+Current priorities are explicitly specified by the user: invent new ways of counting with upper bounds. Re-select counting objects, retain the common constraints of old counting losses, and complete numerical derivation; proof collation, old parameter optimization, or expanded SAT search cannot be considered completion of this goal. The six categories of minimum starting point count and stride length color comparison of this round are two layers of specific mechanisms. The lower bound route is retained as a long-term background and does not automatically occupy the current round of work resources.
 
-## 短期目标
+## Short term goals
 
-### S1：把比较基准做实
+### S1: Make the comparison baseline concrete
 
-- 阅读并核对20×20着色证书及493证明的具体输入。
-- 建立“学界定理 / 项目已证明 / 有条件 / 猜想 / 已反驳”台账，记录方向、参数范围和文献版本。
-- 复现当前有限证书，列清现有Lean覆盖与当前正文之间尚缺的映射。
+- Read and verify the specific input of the 20×20 Coloring Certificate and 493 Certificate.
+- Establish a ledger of "academic theorem/project proven/conditional/conjecture/refuted" and record the direction, parameter range and literature version.
+- Reproduce the current finite certificates and list the missing mapping between the existing Lean coverage and the current body.
 
-完成标准：每个基准可定位到原始证明或完整证书，不靠摘要、搜索失败或软件显示绿色来代替证明。
+Completion Criteria: Each benchmark can be directed to the original attestation or the full certificate, with no summary, search failure, or software showing green in lieu of attestation.
 
-### S2：把主要障碍变成精确命题
+### S2: Turn major obstacles into precise propositions
 
-- 分析为何逐纤维Golomb约束不能控制共享完成格。
-- 区分“每种正常着色都满足”的预算与“存在一种正常着色满足”的预算。
-- 为候选全局源界、端点删除界和跨尺度计数写出精确假设，先用已有反例排除过强版本。
+- Analyze why the fiber-by-fiber Golomb constraint cannot control the shared completion grid.
+- Distinguish between a budget that is satisfied by every normal coloring and a budget that is satisfied by one normal coloring.
+- Write precise hypotheses for candidate global source bounds, endpoint deletion bounds and cross-scale counts, first using existing counterexamples to eliminate overly strong versions.
 
-完成标准：至少一个有完整证明的结构引理，或一个能解释失败原因的明确反例。小规模测试通过只能支持猜想。
+Completion criteria: At least one structural lemma with a complete proof, or a clear counterexample that explains the failure. Passing small-scale tests can only support conjecture.
 
-### S3：提出可推广的新机制
+### S3: Propose new mechanisms that can be promoted
 
-优先探索但不预设成立：共享完成格的全局资源分配、可望远镜求和的势函数、结构—随机性分解、跨纤维稳定性及极端着色的递归描述。每条路线必须回答：新控制了哪个旧方法遗漏的相互作用？是否对任意规模有效？如何推出具体的三色上下界？
+Prioritized exploration but not presupposition: global resource allocation of shared completion lattices, telescope-summable potential functions, structure-stochastic decomposition, cross-fiber stability, and recursive description of extreme coloration. Each route must answer: Which interaction does the new control miss that the old method missed? Does it work at any scale? How to derive the specific upper and lower bounds of three colors?
 
-完成标准：给出新对象或不变量、核心引理及其到R3的完整推导。若仅在旧区间式中换参数，则记录为技术改进，不标作原创方法完成。
+Completion criteria: Give new objects or invariants, core lemmas and their complete derivation to R3. If the parameters are only changed in the old interval formula, it will be recorded as a technical improvement and will not be marked as an original method.
 
-## 长期目标
+## Long term goals
 
-### L1：双向压缩 R3 的区间
+### L1: Bidirectional compression range of R3
 
-上界路线：发明能控制共同几何限制的计数，继续突破464。当前优先研究不同步长的带颜色最小点如何共存，以及多层比较中的共同亏损。需要完整普遍推导和精确矛盾；条件性源界只有在其假设也被证明后，才能转为新的无条件数值上界。
+Upper bound route: Invent a count that can control the common geometric limit and continue to break through 464. The current priority is to study how colored minimum points of different step sizes coexist, and the common loss in multi-layer comparisons. A complete universal derivation and an exact contradiction are required; the conditional source bound can only be transformed into a new unconditional numerical upper bound after its assumptions are also proved.
 
-下界路线：寻找可解释、可验证、最好能参数化或递归扩展的正常三染色构造。
+Lower bound route: Search for normal three-color constructions that are interpretable, verifiable, and preferably parameterizable or recursively extendable.
 
 ```math
-\text{存在正常三染色 }[n]^2\quad\Longrightarrow\quad R_3(\mathcal L)\ge n+1.
+\text{There is normal triple coloring}[n]^2\quad\Longrightarrow\quad R_3(\mathcal L)\ge n+1.
 ```
 
-SAT可用于找样本和反例。一次有限搜索失败不是上界证明；若上界依赖SAT不可满足性，则需要独立可核查的证明证书，并仍须说明对称约束和编码等价性。
+SAT can be used to find samples and counterexamples. Failure of a finite search is not an upper bound proof; if the upper bound relies on SAT unsatisfiability, an independently verifiable proof certificate is required, and symmetry constraints and coding equivalence must still be stated.
 
-### L2：确定 R3 的精确值并提炼方法
+### L2: Determine the precise value of R3 and refine the method
 
-构造与不可能性界重合后，交付完整证明、独立证书、边界与方向核查，以及解释方法为何优于已有路线的对照。新方法应揭示结构并有可推广性，不能只留下更大的一次性枚举。
+Once the construction and impossibility bounds are aligned, complete proofs, independent certificates, boundary and direction checks, and comparisons explaining why the method is superior to existing routes are delivered. New methods should reveal structure and be generalizable, not just leave larger one-off enumerations.
 
-### L3：在 R3 完成后推进 R4
+### L3: Advance R4 after R3 is completed
 
-再研究三色严格源的额外困难，检验R3的新机制哪些部分可以迁移。不能把二色源引理直接用于三色源。已有R4条件界只能作为基线材料，未证前提必须保留。
+Then study the additional difficulties of the three-color strict source and examine which parts of R3's new mechanism can be transferred. The two-color source lemma cannot be directly applied to three-color sources. The existing R4 conditional bounds can only be used as baseline materials, and unproven premises must be retained.
 
-## 工具的职责
+## Tool Responsibilities
 
-理论推导负责发现并证明机制；计算用于产生证据、寻找反例和检查证书；Lean检验其编码范围内的证明。三者配合，但不以工具运行量作为数学进展。每轮讨论记录一个精确问题、证明或反例、当前障碍与下一步能区分路线的实验。
+Theoretical derivation is responsible for discovering and proving mechanisms; calculations are used to generate evidence, find counterexamples, and check certificates; Lean tests proofs within the scope of its coding. The three cooperate, but the amount of tool runs is not used as mathematical progress. Each round of discussion records a precise question, a proof or counterexample, current obstacles, and next experiments that would differentiate the path.
