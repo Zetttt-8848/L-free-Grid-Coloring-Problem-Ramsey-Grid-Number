@@ -1,28 +1,28 @@
-# 2026-11-08：边界兼容性研究契约
+#2026-11-08: Boundary Compatibility Research Contract
 
-基础提交：`080822bb1d434b164a1f42ea159d0bf148396b71`。本轮在独立工作树、独立 `codex/boundary-extension-research-20261108` 分支执行，原工作区的未提交内容保留。
+Basic submission:`080822bb1d434b164a1f42ea159d0bf148396b71`. This round is in the independent work tree, independent`codex/boundary-extension-research-20261108`Branch execution, the uncommitted content of the original workspace is retained.
 
-## 固定对象
+## Fixed object
 
-只禁止同色的 `(x,y),(x+d,y),(x+d,y+d)`，`d>0`。坐标从零开始，方形必须完整；严格源为 `V(A)={(v,u):u<v;u,v∈A}`。方形三色与源二色分开陈述。
+Only the same color is prohibited`(x,y),(x+d,y),(x+d,y+d)`,`d>0`. Coordinates start at zero and the square must be complete; the strict source is`V(A)={(v,u):u<v;u,v∈A}`. The square tricolor and the source dichromatic are stated separately.
 
-研究目标：沿现有路线推进三色上下界，提炼新的全局兼容机制，完成原始文献复核，并将有证据的部分成果和可复现代码交付 GitHub。确定 R3 是长期开放目标，不作为本轮预先保证。采用仓库已核查的比较区间 `21<=R3<=493`；任何更新必须有完整构造或有效不可能性证明。
+Research goals: Promote the three-color upper and lower bounds along the existing route, refine the new global compatibility mechanism, complete the original literature review, and deliver some evidence-based results and reproducible code to GitHub. Determining R3 is a long-term open target and does not serve as a pre-guarantee for this round. Use the warehouse's verified comparison interval`21<=R3<=493`; Any update must have a complete construction or a valid impossibility proof.
 
-## 并行工作包
+## Parallel work package
 
-| 所有者 | 写入范围 | 第一个不确定步骤 | 成功证据 |
+| Owner | Write Scope | First Uncertain Step | Evidence of Success |
 |---|---|---|---|
-| literature | `literature/` | 新文献是否改变数值或提供可用机制 | 原文版本、逐项假设、实际阅读范围与转换缺口 |
-| upper | `upper/` | 边界解锁或局部势下降是否兼容完整源 | 完整证明或逐角可核验反例，限定全局推论 |
-| lower | `lower/` | 完整方形扩展的跨界约束能否精确压缩 | 等价性证明、完整构造或受限扩展障碍 |
-| coordinator | 本目录入口、审阅、整合 | 两侧机制是否真的到达 R3 | 独立检查关键推导，分别报告未解决桥梁 |
+| literature | `literature/`| Whether new literature changes values ​​or provides usable mechanisms | Original text version, itemized assumptions, actual reading range and conversion gaps |
+| upper | `upper/`| Is boundary unlocking or local potential reduction compatible with the complete source | Complete proof or corner-by-corner verifiable counterexamples to limit global inference |
+| lower | `lower/`| Can cross-boundary constraints on complete square extensions be compressed exactly | Equivalence proofs, complete constructions, or restricted extension barriers |
+| coordinator | Entry, review, and integration of this directory | Whether the mechanisms on both sides have really reached R3 | Independently check key derivation and report unresolved bridges separately |
 
-备用机制：直接由完整几何约束提取禁型，不依赖 G9/S21。局部禁型不自动给出完整方形不可满足性。
+Alternate mechanism: extract forbidden shapes directly from complete geometric constraints, without relying on G9/S21. Local forbidden forms do not automatically give complete square unsatisfiability.
 
-## 证据与边界
+## Evidence and Boundaries
 
-每个计算写清输入、精确域、停止条件、代码、实际输出和 SHA-256。对 timeout/UNKNOWN 保留 UNDECIDED。受限构造族失败只否定该族；局部源不能当成方形构造。条件结果保留未证依赖。独立审阅与另一实现分开标注。
+Each calculation writes out the input, exact domain, stopping conditions, code, actual output, and SHA-256. Reserve UNDECIDED for timeout/UNKNOWN. Failure of a restricted structural family only negates the family; local sources cannot be treated as square structures. Conditional results retain unproven dependencies. Independent review and annotation separately from another implementation.
 
-新研究不自动合并尚未合并的 PR 1–3，也不改变主稿的定理。PR3 参考提交为 `a53970c49472813ac65d37428074e5c530134e76`，使用其原始证书时重新记录范围。
+New research does not automatically merge PRs 1–3 that have not yet been merged, nor does it change the theorem of the main manuscript. PR3 reference submission is`a53970c49472813ac65d37428074e5c530134e76`, re-document the scope when using its original certificate.
 
-Wiley Scholar Gateway 本轮返回 UNAUTHORIZED、需要重新认证；其检索覆盖缺失必须披露。公开原文不整篇加入 Git。Wolfram 用于精确小计算交叉检查，不用普通图顶点染色代替三元超边约束。
+Wiley Scholar Gateway returned UNAUTHORIZED this round and needs to be re-certified; its lack of search coverage must be disclosed. The original text is published and the entire article is not added to Git. Wolfram for exact small computational cross-checking without ordinary graph vertex coloring instead of ternary hyperedge constraints.

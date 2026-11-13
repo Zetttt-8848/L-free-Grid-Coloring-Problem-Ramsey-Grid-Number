@@ -1,41 +1,41 @@
-# 三色联合约束、历史465复核与构造修复障碍
+# Three-color joint constraints, historical 465 review and structural repair obstacles
 
-日期：2026-11-08。基础提交：`df6e35cfff68580dc78aa91bc35d4c6399a6464a`，承接PR4。固定正步长等臂有向L：`(x,y),(x+d,y),(x+d,y+d)`，`d>0`，代码坐标从0开始。
+Date: 2026-11-08. Basic submission:`df6e35cfff68580dc78aa91bc35d4c6399a6464a`, undertake PR4. Fixed positive step length equi-arm directed L:`(x,y),(x+d,y),(x+d,y+d)`,`d>0`, the code coordinates start from 0.
 
-本轮把项目采用的区间由 `21≤R3≤493` 更新为 **`21≤R3≤465`**。465来自重新核实的历史直接卷积证明：其外部 Golomb 输入现已核对到原始计算完成公告，完整推导和整数计算经独立复核。它不是本轮新发现，也不依赖G9、S21或失效彩虹假设。下界仍为21；未找到正常21×21方形，精确值仍未确定。
+In this round, the range adopted for the project is:`21≤R3≤493`updated to **`21≤R3≤465`**. 465 from a re-verified historical direct convolution proof: its external Golomb input is now verified to the original calculation completion announcement, and the full derivation and integer calculations are independently reviewed. It is not a new discovery this round, nor does it rely on G9, S21 or the failed rainbow hypothesis. The lower bound is still 21; no normal 21×21 square has been found, and the exact value is still undetermined.
 
-## 结果与证据范围
+## Results and scope of evidence
 
-| 结果 | 状态 | 位置 |
+| Results | Status | Location |
 |---|---|---|
-| 恢复历史上界465；卷积矛盾量285630 | PROVED，使用已认证的外部计算定理 | [证明和来源](numeric_upper/THEOREM.md)、[独立审阅](structural/UPPER_PROOF_REVIEW.md) |
-| 一般k类联合端点引理，三色给出466；矛盾量221 | PROVED，本轮新推导的表示；未主张全球优先权 | [引理及完整应用](numeric_upper/THEOREM.md) |
-| 34个已证边界核生成22680条全21方形有效冗余约束 | PROVED机制和FINITE-CHECKED实例；未证明提速 | [构造路线](lower/README.md)、[严格命题](lower/THEOREMS.md) |
-| 完整21方形只有一个单色L，但半径10内无正常修复 | FINITE-CHECKED；候选本身不合法，任意修复至少改11格 | [完整证书](lower/defect_certified.json)、[独立核验器](lower/verify_defect.py) |
-| 九标记源的强制局部失衡在十标记扩展中被抵消 | FINITE-CHECKED反例；安全的全纤维计费引理另列 | [结构证明与证书](structural/README.md) |
-| n=464三色联合自相关约束，n=492单类约束探索 | UNDECIDED；无精确不可行证书或有效构造 | [运行范围和恒等式](spectral/README.md) |
+| Restore historical upper bound 465; convolution contradiction 285630 | PROVED, using certified external computation theorem | [Proof and source](numeric_upper/THEOREM.md),[Independent review](structural/UPPER_PROOF_REVIEW.md) |
+| General k-type joint endpoint lemma, three colors give 466; contradiction amount 221 | PROVED, the expression of new derivation in this round; no global priority is claimed | [Lemma and complete application](numeric_upper/THEOREM.md) |
+| 34 proven boundary kernels generate 22680 full 21 square valid redundant constraints | PROVED mechanism and FINITE-CHECKED instances; no speedup demonstrated | [Construction route](lower/README.md), [strict proposition](lower/THEOREMS.md) |
+| The complete 21 square has only one single color L, but there is no normal repair within a radius of 10 | FINITE-CHECKED; the candidate itself is illegal, any repair will change at least 11 squares | [Full certificate](lower/defect_certified.json),[independent verifier](lower/verify_defect.py) |
+| Forced local imbalances in nine-mark sources are canceled in ten-mark extensions | FINITE-CHECKED counterexample; secure full-fiber billing lemma to be listed separately | [Structural Proofs and Certificates](structural/README.md) |
+| n=464 three-color joint autocorrelation constraints, n=492 single-class constraint exploration | UNDECIDED; no exact infeasibility certificate or valid construction | [Operating ranges and identities](spectral/README.md) |
 
-## 上界：让三种颜色共享同一套端点和窗口
+## Upper bound: let three colors share the same set of endpoints and windows
 
-旧单类区间估计分别使用对角线两端。新端点引理把三类看作同一条对角线的分割：端点位置只能被占用一次。每类选取秩差不超过c的点对，所有点对长度和的最大值由三份相同的正负系数共同重排得到；这控制了逐类估计遗漏的竞争。取n=466、c=22，长度和至少319760、至多319539，产生矛盾。类大小下界由容量约束推出，没有假设三色均分。
+The old single-class interval estimation uses the two ends of the diagonal separately. The new endpoint lemma treats the three categories as divisions of the same diagonal: the endpoint position can only be occupied once. Each class selects point pairs whose rank difference does not exceed c, and the maximum value of the sum of the lengths of all point pairs is obtained by rearranging three identical positive and negative coefficients; this controls competition missed by class-by-class estimation. Taking n=466 and c=22, the sum of the lengths is at least 319760 and at most 319539, resulting in a contradiction. The class size lower bound is derived from the capacity constraint without assuming equal distribution of the three colors.
 
-联合卷积同样利用三色指示函数之和等于完整对角线。历史三角权重 `w_i=min(i,94-i)`，`1≤i≤93`，在n=465已经给出正矛盾量。复核发现，这条证明与失效彩虹路线独立；先前把所有历史小上界一概搁置的分类过于宽泛。此次只恢复这条已逐项复核的465，不连带恢复459、455、454等其他旧数字。
+Joint convolution also utilizes the sum of three color indicator functions equal to the complete diagonal. historical triangle weight`w_i=min(i,94-i)`,`1≤i≤93`, the positive contradiction quantity has been given at n=465. A review found that this proof is independent of the failed rainbow route; the previous classification that dismissed all historical small upper bounds was too broad. This time, only 465, which has been reviewed item by item, will be restored, and other old numbers such as 459, 455, 454, etc. will not be restored.
 
-两条证明只需外部跨度下界 `G(24)≥425`、`G(25)≥480`，分别由 [OGR-24](https://blogs.distributed.net/2004/11/) 与 [OGR-25](https://blogs.distributed.net/2008/10/) 原始完成公告支持，并与2025论文中的位置数表交叉核对。使用已确立的外部定理不使结论成为依赖开放猜想的条件界；但本轮没有本地重跑其巨量穷尽搜索。完整论文与独立审阅都保留这一证据边界。
+Both proofs require only outer span lower bounds`G(24)≥425`,`G(25)≥480`, respectively by [OGR-24](https://blogs.distributed.net/2004/11/)With [OGR-25](https://blogs.distributed.net/2008/10/)The original completion announcement is supported and cross-checked with the position number table in the 2025 paper. Using established external theorems does not make the conclusion a conditional bound that relies on open conjectures; but there is no local rerun of its massive exhaustive search this round. This evidence boundary was retained for both the full paper and the independent review.
 
-作者实现、独立复核实现与Wolfram整数复算一致。Wolfram返回的七项值依次为 `69231,2038439,366786,53496528,285630,319760,319539`；这只是算术交叉核验，不代替几何证明或外部Golomb最优性证明。
+The author's implementation and independent review of the implementation are consistent with Wolfram's integer complex calculations. The seven values ​​returned by Wolfram are, in order`69231,2038439,366786,53496528,285630,319760,319539`;This is just an arithmetic cross-check and does not replace the geometric proof or the proof of external Golomb optimality.
 
-## 下界与结构：把失败转成可复用约束
+## Lower bound and structure: convert failure into reusable constraints
 
-下界工作释放了旧20方形的内部格，运行适应性修复、全21方形SAT和整方形局部搜索。一个完整候选只在 `((14,6),(17,6),(17,9))` 产生单色L。然而完整分支证书证明半径10内没有正常染色，最大证书覆盖1235525个分支节点。单色角数量和修复距离因此必须分别衡量。该结论针对一个固定候选，不是21方形的普遍不可能性。
+The lower bound work freed up the old 20-square internal grid, running adaptive repairs, full 21-square SAT, and full-square local searches. A complete candidate is only in`((14,6),(17,6),(17,9))`Produces a single color L. However, the complete branch certificate proves that there is no normal coloring within a radius of 10, and the maximum certificate covers 1235525 branch nodes. The number of monochromatic angles and the repair distance must therefore be measured separately. This conclusion is for a fixed candidate, not the general impossibility of the 21-square.
 
-结构路线找到 `B={0,1,2,3,4,6,7,9,10}`：其36格完整严格源恰有四个正常二染色，都有势8，高于奇偶下限4。但加入标记14后，完整45格源有势7，恰等于全源奇偶下限7；外部同纤维格抵消了局部强制失衡。这再次否定直接累加局部代价，同时给出应在完整纤维上使用的等色分量约束和分数装填引理。要推出一般源界，仍须独立控制强迫边总量。
+Structure route found`B={0,1,2,3,4,6,7,9,10}`: Its 36-grid complete strict source has exactly four normal two-colors, all with a potential of 8, which is higher than the odd-even lower limit of 4. However, after adding the mark 14, the complete 45-grid source has a potential of 7, which is exactly equal to the lower parity limit of 7 for all sources; the external same-fiber grid offsets the local forced imbalance. This again denies direct accumulation of local costs, while giving the metachromatic component constraint and fractional packing lemma that should be used on intact fibers. To deduce the general source boundary, the total amount of forced edges must still be controlled independently.
 
-发现阶段的辅助变量编号错误已明确标为实现错误，不能当作反例。修正后的有限分类使用独立完整分支证书。所有超时、未完成求解及浮点探索保留实际范围，不升级为不可能性证明。
+The auxiliary variable numbering error in the discovery phase is clearly marked as an implementation error and cannot be used as a counterexample. Modified limited classification uses independent full branch certificate. All timeouts, incomplete solutions, and floating point explorations retain the actual scope and are not upgraded to impossibility proofs.
 
-## 复现与核查
+## Reproduction and verification
 
-精确核验使用Python标准库。发现阶段的可选依赖和命令见各子目录；不要求安装求解器来检查主证书。
+Exact verification uses the Python standard library. Optional dependencies and commands for the discovery phase are found in the respective subdirectories; there is no requirement to install a solver to check the master certificate.
 
 ```sh
 python research/coupled_budget_20261108/numeric_upper/verify.py
@@ -48,12 +48,12 @@ python research/coupled_budget_20261108/structural/audit_convolution.py
 python research/coupled_budget_20261108/spectral/verify.py
 ```
 
-下界与结构子目录另有Mathbox有界运行清单。端点实现精确检查15168个小分割/截断实例；自相关实现检查88533个小序列/核实例。有限检查验证实现，普遍命题由书面证明承担。没有声称本轮完成Lean形式化、完整主稿重审或全球文献优先权审查。主稿保留原样，新增证明在此研究目录供审阅。
+There are also Mathbox bounded run lists in the Nether and Structure subdirectories. The endpoint implementation checks 15168 small split/truncation instances for precision; the autocorrelation implementation checks 88533 small sequence/kernel instances. Realization is verified by limited inspection, and universal propositions are undertaken by written proofs. There is no claim to have completed Lean formalization, complete main manuscript review, or global literature priority review in this round. The main manuscript remains as is, and new proofs are available for review in this research directory.
 
-## 下一步的判别任务
+## Next step of identification task
 
-1. **上界464：**对三色联合差分变量保留带符号自相关约束，寻找可导出的有理对偶证书；必须逐系数精确验证。若有限松弛仍可行，分析它违背的高阶相关性或共享完成格条件。
-2. **下界22：**从结构不同的完整21候选或至少11格的联合改色继续，利用已认证核筛选邻域；只有完整格点核验通过才能写 `R3≥22`。当前证书不说明11格足够。
-3. **源结构：**只对包含外部贡献的完整纤维计费，并寻找与之同时成立的强迫边上预算；局部失衡下界单独不能压缩R3。
+1. **Upper bound 464:** Retain signed autocorrelation constraints on three-color joint difference variables and find derivable rational dual certificates; must be accurately verified coefficient by coefficient. If finite relaxation is still feasible, analyze the higher-order dependencies or shared completion conditions it violates.
+2. **Lower bound 22:** Continue from the complete 21 candidates with different structures or the joint color change of at least 11 grids, and use the certified kernel to screen the neighborhood; only the complete grid points that pass the verification can be written`R3≥22`. The current certificate does not indicate that 11 squares are sufficient.
+3. **Source structure: **Only charge the complete fiber including external contributions, and find the forced edge budget that is established at the same time; the local imbalance lower bound alone cannot compress R3.
 
-一般k类的端点引理可直接推广；三色数值应用中的两Golomb分解本质使用二色弱源。四色不能直接套用这一容量结论，本轮没有启动独立四色大规模搜索。
+Generally, the endpoint lemma of the k class can be directly generalized; the two-Golomb decomposition in three-color numerical applications essentially uses two-color weak sources. This capacity conclusion cannot be directly applied to the four colors, and no independent four-color large-scale search was launched in this round.

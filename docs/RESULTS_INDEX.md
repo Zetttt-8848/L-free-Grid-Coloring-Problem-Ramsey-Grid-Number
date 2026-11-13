@@ -1,37 +1,37 @@
-# 当前命题与证明索引
+# Current proposition and proof index
 
-本索引指向当前数学稿。Open assertion 是未解决的假设，External theorem 是文献输入。历史 Lean 覆盖记录不能代替当前稿的逐项对应。
+This index points to the current mathematical manuscript. Open assertions are unresolved hypotheses and External theorem are literature inputs. Historical Lean coverage records are not a substitute for item-by-item correspondence of the current draft.
 
-最新研究目录结果：[全局计数](../research/global_counting_20261108/README.md)，尚未并入主稿。区间仍为21至464。
+Latest Research Catalog Results: [Global Count](../research/global_counting_20261108/README.md), has not yet been incorporated into the main manuscript. The range is still 21 to 464.
 
-| 状态 | 结果 | 证明 |
+| Status | Result | Certification |
 |---|---|---|
-| PROVED | 跨原始颜色源的六格请求冲突计数；给出任意延拓必有的单色L数量下估计 | [跨源计数](../research/global_counting_20261108/completion/COUNTING.md) |
-| PROVED | 所有大小层级的带颜色回归恒等式与双端匹配上限 | [全层级计数](../research/global_counting_20261108/multilayer/THEOREM.md) |
-| PROVED，使用外部OGR唯一性及跨度输入 | 极端形状跨度代价，将p=428至431的六类容量各减1；跨步长平移重叠预算 | [跨度及重叠计数](../research/global_counting_20261108/multiscale/THEOREM.md) |
-| UNDECIDED | 从上述全局计数推出比464更小的Ramsey上界 | [独立审阅与范围](../research/global_counting_20261108/review/REVIEW.md) |
+| PROVED | Six-block request conflict count across the original color source; estimated given the number of single-color Ls that must be present in any continuation | [Cross-source count](../research/global_counting_20261108/completion/COUNTING.md) |
+| PROVED | Colored regression identities and two-ended matching upper bounds for all size levels | [Full level count](../research/global_counting_20261108/multilayer/THEOREM.md) |
+| PROVED, using external OGR uniqueness and span input | Extreme shape span cost, reducing each of the six types of capacity from p=428 to 431 by 1; stride length translation overlap budget | [Span and overlap count](../research/global_counting_20261108/multiscale/THEOREM.md) |
+| UNDECIDED | A smaller Ramsey upper bound than 464 deduced from the above global count | [Independent review and scope](../research/global_counting_20261108/review/REVIEW.md) |
 
-此前已证明的[六类完成格共同计数](../research/kernel_compatibility_20261108/README.md)：
+It has been proved previously that [the six types of perfective cases count together](../research/kernel_compatibility_20261108/README.md):
 
-| 状态 | 结果 | 证明 |
+| Status | Result | Certification |
 |---|---|---|
-| PROVED，使用两项已认证外部Golomb输入 | R3≤464；新计数的矛盾量477965143 | [六类几何与共同占位](../research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md)、[独立审阅](../research/kernel_compatibility_20261108/review/REVIEW.md) |
-| PROVED | 带颜色的最小点计费及相邻比较层路径上限；增强464矛盾量至1199151808 | [组合证明](../research/kernel_compatibility_20261108/combinatorial_upper/THEOREM.md) |
-| FINITE-CHECKED | 两个六字颜色词的受限比较计数最高14 | 同上与独立标准库枚举；不是任意长度公式，也未证明463 |
+| PROVED, using two certified external Golomb inputs | R3 ≤ 464; new count of contradictions 477965143 | [Six types of geometry with common occupancy](../research/kernel_compatibility_20261108/geometry/SIX_CLASS_LEMMA.md),[Independent review](../research/kernel_compatibility_20261108/review/REVIEW.md) |
+| PROVED | Colored minimum point charging and adjacent comparison layer path upper limit; enhance 464 contradiction amount to 1199151808 | [Combination Proof](../research/kernel_compatibility_20261108/combinatorial_upper/THEOREM.md) |
+| FINITE-CHECKED | Restricted comparison of two six-letter color words with count up to 14 | Same as above with independent standard library enumeration; not an arbitrary length formula, nor proven463 |
 
-2026-11-08 上一检查点尚未并入下列主稿索引：[完整报告](../research/coupled_budget_20261108/README.md)。
+2026-11-08 The previous checkpoint has not been merged into the following main manuscript index: [Full report](../research/coupled_budget_20261108/README.md).
 
-| 状态 | 结果 | 证明及证据 |
+| Status | Results | Certifications and Evidence |
 |---|---|---|
-| PROVED，使用已认证外部计算定理 | 恢复历史上界 R3≤465；不依赖 G9/S21/彩虹前提 | [完整推导及来源](../research/coupled_budget_20261108/numeric_upper/THEOREM.md)，[独立审阅](../research/coupled_budget_20261108/structural/UPPER_PROOF_REVIEW.md) |
-| PROVED | 一般 k 类联合端点引理；三色应用 R3≤466 | 同上；优先权未作全球检索结论 |
-| FINITE-CHECKED | 单缺陷21×21候选的半径10修复不可能，任意正常修复至少改变11格 | [完整候选和分支证书](../research/coupled_budget_20261108/lower/README.md)；不提高下界 |
-| FINITE-CHECKED | 局部强制失衡可被外部同纤维格抵消 | [结构证书与安全计费条件](../research/coupled_budget_20261108/structural/README.md) |
-| UNDECIDED | n=464联合自相关正半定约束探索 | [实际运行范围](../research/coupled_budget_20261108/spectral/README.md)；没有精确矛盾证书 |
+| PROVED, uses certified external calculation theorem | Restores historical upper bound R3≤465; does not rely on G9/S21/rainbow premise | [Full derivation and sources](../research/coupled_budget_20261108/numeric_upper/THEOREM.md), [Independent review](../research/coupled_budget_20261108/structural/UPPER_PROOF_REVIEW.md) |
+| PROVED | General k-type joint endpoint lemma; three-color application R3≤466 | Same as above; priority has not been determined by global search |
+| FINITE-CHECKED | Radius 10 repair of single defect 21×21 candidate is impossible, any normal repair changes at least 11 squares | [Full candidate and branch certificate](../research/coupled_budget_20261108/lower/README.md);Does not raise lower bound |
+| FINITE-CHECKED | Local forced imbalances can be offset by external same-fiber grids | [Structural Certificates and Security Billing Conditions](../research/coupled_budget_20261108/structural/README.md) |
+| UNDECIDED | n=464 joint autocorrelation positive semidefinite constraint exploration | [Actual operating range](../research/coupled_budget_20261108/spectral/README.md);No exact conflicting certificate |
 
-以下为原主稿索引，保留原有命题范围。
+The following is an index of the original main manuscript, retaining the original scope of propositions.
 
-| 类型 | 标题 | 标签与正文位置 |
+| Type | Title | Tags and text position |
 |---|---|---|
 | lemma | Transposition | [lem:transpose](../manuscript/main.tex#L179) |
 | proposition | Exact source counts | [prop:counts](../manuscript/main.tex#L226) |

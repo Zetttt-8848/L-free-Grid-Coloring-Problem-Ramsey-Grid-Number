@@ -1,68 +1,68 @@
-# 有向 L 研究 skill：来源与检查范围
+# Directed L research skill: source and inspection scope
 
-整理日期：2026-11-08。交付目标是形成可持续使用的项目研究工作流；本次没有声称解决 R₃、获得新的无条件界或完成全仓库证明的独立审计。
+Compilation date: 2026-11-08. The delivery goal is to develop a project research workflow for sustainable use; there are no claims to address R₃, obtain new unconditional bounds, or complete an independent audit of full warehouse certification.
 
-## 交付文件
+## Delivery files
 
-- [SKILL.md](../.agents/skills/directed-l-grid-research/SKILL.md)：精确问题、上下界并行、方法筛选、反例约束、证据状态和推广条件。
-- [研究地图](../.agents/skills/directed-l-grid-research/references/repository-map.md)：主稿、文献、开放依赖、研究 PR 与历史代码的定位。
-- [路线与障碍](../.agents/skills/directed-l-grid-research/references/routes.md)：上界五组路线、下界四组路线，各有首个缺口、判别实验及成功条件；这些分组是候选菜单，不要求逐一穷尽。
-- [证据与复现](../.agents/skills/directed-l-grid-research/references/evidence.md)：证书格式、核验命令、SAT／Lean 范围、跨会话记录。
-- [文献完整基准](../.agents/skills/directed-l-grid-research/assets/paper20.json)：带原始出处的正常 20×20 三染色。
-- [构造核验器](../.agents/skills/directed-l-grid-research/scripts/check_coloring.py) 与 [源码索引器](../.agents/skills/directed-l-grid-research/scripts/index_repository.py)：均仅依赖 Python 标准库。
-- [全源码索引](RESEARCH_SKILL_SOURCE_INDEX.json) 与 [本次检查记录](RESEARCH_SKILL_CHECKS.json)。
+- [SKILL.md](../.agents/skills/directed-l-grid-research/SKILL.md): Exact problems, upper and lower bound parallelism, method screening, counterexample constraints, evidence status and generalization conditions.
+- [Study Map](../.agents/skills/directed-l-grid-research/references/repository-map.md): Positioning of main manuscript, documentation, open dependencies, research PR and historical code.
+- [Routes and Obstacles](../.agents/skills/directed-l-grid-research/references/routes.md): There are five groups of routes in the upper bound and four groups in the lower bound, each with its first gap, judgment experiment and success conditions; these groups are candidate menus and are not required to be exhausted one by one.
+- [Evidence and Reproduction](../.agents/skills/directed-l-grid-research/references/evidence.md): Certificate format, verification command, SAT/Lean range, cross-session recording.
+- [Complete literature benchmark](../.agents/skills/directed-l-grid-research/assets/paper20.json): Normal 20×20 tri-stain with original source.
+- [Construct Verifier](../.agents/skills/directed-l-grid-research/scripts/check_coloring.py)with [source code indexer](../.agents/skills/directed-l-grid-research/scripts/index_repository.py): Both rely only on the Python standard library.
+- [Full source code index](RESEARCH_SKILL_SOURCE_INDEX.json)With [this inspection record](RESEARCH_SKILL_CHECKS.json).
 
-skill 按项目目录放在 `.agents/skills/directed-l-grid-research/`，可在项目会话中以 `$directed-l-grid-research` 调用；发现行为及目录约定参见 [OpenAI 官方说明](https://developers.openai.com/api/reference/cli)。当前会话的预加载技能列表不一定热更新，必要时在本项目新会话调用。
+Skills are placed in project directories`.agents/skills/directed-l-grid-research/`, available in a project session as`$directed-l-grid-research`Call; for discovery behavior and directory conventions, please refer to [OpenAI official description](https://developers.openai.com/api/reference/cli). The preloaded skill list of the current session may not be hot updated and will be called in a new session of this project when necessary.
 
-## GitHub 范围
+## GitHub scope
 
-通过 GitHub 连接器取得仓库元数据、根目录、Issue／PR 查询与 PR 状态；随后本地克隆以支持全文件索引和有限核验。创建工作分支 `codex/directed-l-research-skill`。未提交、推送、合并或修改任何远程 PR。
+Obtain repository metadata, root directories, Issue/PR queries, and PR status via the GitHub connector; then clone locally to support full file indexing and limited validation. Create a working branch`codex/directed-l-research-skill`. No remote PRs have been committed, pushed, merged, or modified.
 
-| 固定输入 | 提交 | 树内文件数 |
+| Fixed input | Submit | Number of files in the tree |
 |---|---|---:|
 | main | `080822bb1d434b164a1f42ea159d0bf148396b71` | 1,082 |
 | PR 1 head | `d6755b48f1fb6e786cc9b480b0d40139f3da2140` | 1,091 |
 | PR 2 head | `7f8e8bfc4d5c8d46664764c6ca0a534bd6a90962` | 1,102 |
 | PR 3 head | `a53970c49472813ac65d37428074e5c530134e76` | 1,114 |
 
-创建时 PR 1–3 均未合并，呈串联依赖。索引保留每棵树的所有路径并按相同 blob 去重；同一路径不同版本分别记录。它不是只按文件名列目录：读取了所有原始 blob 字节，对 Python／JSON 作语法解析，抽取 Lean 声明、Markdown 标题、LaTeX 标签和 CNF 头，未发现相应的解析错误。语法通过不说明程序逻辑或数学证明正确。
+When created, PR 1–3 were not merged and were in series dependence. The index retains all paths of each tree and deduplicates the same blob; different versions of the same path are recorded separately. It doesn't just list directories by file name: it reads all raw blob bytes, parses Python/JSON syntax, extracts Lean declarations, Markdown headers, LaTeX tags and CNF headers, and no corresponding parsing errors are found. Grammar is proven correct by not stating program logic or mathematics.
 
-## 阅读深度
+## Reading depth
 
-精读范围包括项目 README、全部协作／目标／开放问题／文献说明，主数学稿的定义与主要证明链、条件数值传递、失败彩虹前提及证书说明，当前核验／编码的几何与约束逻辑，形式化范围和版本记录，以及三个 PR 的完整研究说明、证明与反例。历史阅读重点是下界编码与未决记录、局部可行集不能延拓的障碍、全局计费的重数问题、源跨度压缩反例、能量方法及有限域转化的失效边界。
+The scope of intensive reading includes the project README, all collaborations/goals/open issues/documentation descriptions, the definition and main proof chain of the main mathematical draft, conditional numerical transfer, failure rainbow premise and certificate description, the geometry and constraint logic of the current verification/encoding, the formal scope and version record, as well as the complete research description, proof and counterexamples of the three PRs. The historical reading focuses on lower bound encoding and pending records, obstacles to the non-continuation of local feasible sets, the multiplicity problem of global accounting, source span compression counterexamples, energy methods and failure boundaries of finite domain transformations.
 
-其余历史文档和代码完成全文件结构索引，并按研究机制定位；**未逐行人工审阅全部历史程序和全部历史证明**。本次也未重跑所有历史搜索、重新构建 Lean 或证明当前全文与历史形式化逐项一致。后续使用 skill 时按工作包读取原证明与实现，不能将本报告当作全库正确性证书。
+The remaining historical documents and codes have completed the full file structure index and are positioned according to the research mechanism; **all historical programs and all historical proofs have not been manually reviewed line by line**. This time, we did not re-run all historical searches, reconstruct Lean, or prove that the current full text is consistent with the historical formalization item by item. When using the skill later, the original proof and implementation will be read according to the work package. This report cannot be regarded as a certificate of correctness of the entire database.
 
-工作区还存在不属于固定 GitHub 提交的未跟踪目录 `lfree_sat/`。本次只作相关只读定位，从中找到文献矩阵，随后独立与原始论文重新匹配。该目录保持原样，不属于本次新增文件或全库 Git 索引的覆盖对象。
+The workspace also has untracked directories that are not part of the pinned GitHub commit`lfree_sat/`. This time, we only perform relevant read-only positioning, find the literature matrix from it, and then independently re-match it with the original paper. This directory remains intact and is not covered by this new file or the full database Git index.
 
-## 实际验证
+## Actual verification
 
-1. 主稿核验器重新运行通过全部 13 组有限检查。它验证列明的表格、构造、部分等号情形与数值算术，不认证任意规模的全部定理。
-2. 11、12 标记的两个完整 SAT 模型通过 CNF 和独立几何检查；仍只证明指定染色可行，不证明彩虹数最小。
-3. PR 3 的选中固定边界从原始见证重新穷尽，复现合法状态、平衡状态、修复闭包及精确八格阈值。没有重跑全外部边界 C++ 搜索。
-4. 新构造检查器与“遍历所有无序三点组后判定几何”的另一实现比较，覆盖边长至多 3 的全部二色方形，并检查方向区分、弱源／空源、非法输入和既有三角形证书。
-5. 文献 20×20 矩阵与 arXiv:2502.05162v1 HTML 的 Figure 3 全部值匹配，再由两种几何枚举检查；完整基准已写入本 skill。
-6. 条件 q=20、21、27 的整数阈值算术已重算；全局势与局部势的交叉项记账式作精确多项式展开及有理取值核对。未证源预算仍未证。
-7. skill 结构校验通过，配套链接、文件、说明与脚本接口作自审；没有声称进行了独立代理的行为评测。
+1. Master Verifier rerun passes all 13 sets of limited checks. It verifies specified tables, structures, partial equal sign cases, and numerical arithmetic, but does not verify all theorems of any scale.
+2. The two complete SAT models marked by 11 and 12 pass CNF and independent geometry checks; it still only proves that the specified coloring is feasible, but does not prove that the rainbow number is minimum.
+3. The selected fixed boundary of PR 3 is re-exhausted from the original witness to reproduce the legal state, equilibrium state, repair closure and accurate eight-square threshold. No rerun of full outer bounds C++ search.
+4. The new construction checker is compared to another implementation of "Determine geometry after traversing all unordered triads", covering all dichromatic squares with side lengths up to 3, and checking for orientation discrimination, weak/null sources, illegal input and existing triangle certificates.
+5. The literature 20×20 matrix matches all values ​​of Figure 3 of arXiv:2502.05162v1 HTML, and is checked by two geometric enumerations; the complete benchmark has been written into this skill.
+6. The integer threshold arithmetic for the conditions q=20, 21, and 27 has been recalculated; the cross-term accounting formulas of the global situation and the local situation have been expanded with accurate polynomials and checked with rational values. The unverified source budget remains unverified.
+7. The skill structure has passed the verification, and the supporting links, files, instructions and script interfaces have been self-reviewed; there is no claim to have conducted independent agent behavior evaluation.
 
-完整主稿复现报告和 PR 3 复现报告保留在此次会话的工作成果目录；便于随仓库使用的摘要、输入／检查器摘要及实际范围记录在 [RESEARCH_SKILL_CHECKS.json](RESEARCH_SKILL_CHECKS.json)。Git blob 哈希使用仓库原字节；运行核验器的 SHA-256 使用实际输入文件，Windows 换行可能使两者不同，不能混用。
+The full master copy reproduced report and the PR 3 reproduced report are kept in the work results directory for this session; a summary for use with the repository, input/checker summary and actual scope are recorded in [RESEARCH_SKILL_CHECKS.json](RESEARCH_SKILL_CHECKS.json). The Git blob hash uses the raw bytes of the repository; the SHA-256 running the verifier uses the actual input file, and Windows newlines may make the two different and cannot be mixed.
 
-## 独立精确复核的核心条目
+## Core items for independent and accurate review
 
-下列 PASS 只覆盖写明的有限证书与算术，不覆盖普遍最优性、开放前提或文献优先权。独立检查前已运行精确计算环境自检并得到 `ENVIRONMENT OK`。
+The following PASS only covers the finite certificatess and arithmetic specified, and does not cover universal optimality, open premises, or document priority. Accurate computing environment self-test has been run before independent inspection and obtained`ENVIRONMENT OK`.
 
-CLAIM: 20×20 文献矩阵的几何角数与单色角数 | MY VALUE: (2470,0) | THEIR VALUE: (2470,0) | VERDICT: PASS | METHOD: 从完整矩阵枚举无序三点组并判定指定方向和等臂条件，与按水平点对检查交叉比较
+CLAIM: Geometric angle number and monochromatic angle number of 20×20 literature matrix | MY VALUE: (2470,0) | THEIR VALUE: (2470,0) | VERDICT: PASS | METHOD: Enumerate unordered three-point groups from the complete matrix and determine the specified direction and equal-leg conditions, and check cross comparison by horizontal point pairs
 
-CLAIM: 十一标记给定三角形的单色角数与彩虹角数 | MY VALUE: (0,3) | THEIR VALUE: (0,3) | VERDICT: PASS | METHOD: 从原始行词重建所有格点，遍历三点组判定几何与颜色
+CLAIM: Eleven marks the number of monochrome angles and rainbow angles of a given triangle | MY VALUE: (0,3) | THEIR VALUE: (0,3) | VERDICT: PASS | METHOD: Reconstruct all grid points from the original line words, traverse the three-point group to determine geometry and color
 
-CLAIM: 十二标记给定三角形的单色角数与彩虹角数 | MY VALUE: (0,6) | THEIR VALUE: (0,6) | VERDICT: PASS | METHOD: 从原始行词重建所有格点，遍历三点组判定几何与颜色
+CLAIM: Twelve marks the number of monochrome angles and rainbow angles of a given triangle | MY VALUE: (0,6) | THEIR VALUE: (0,6) | VERDICT: PASS | METHOD: Reconstruct all grid points from the original line words, traverse the three-point group to determine geometry and color
 
-CLAIM: 六标记给定源的角数与加性能量 | MY VALUE: (16,130) | THEIR VALUE: (16,130) | VERDICT: PASS | METHOD: 从完整格点逐角计数，并由所有有序标记和的表示数平方和重算能量
+CLAIM: Angular and additive energy for a given six-labeled source | MY VALUE: (16,130) | THEIR VALUE: (16,130) | VERDICT: PASS | METHOD: Corner-by-corner counting from the complete grid points and recalculating the energy from the sum of the squares of the sum of all ordered labels
 
-CLAIM: q=20、21、27 的对角矛盾严格余量 | MY VALUE: (60,63,81) | THEIR VALUE: (60,63,81) | VERDICT: PASS | METHOD: 直接重算 ceil((18q+1)/3) 个标记的点对数减 q(18q)；仅算术，不证明源预算
+CLAIM: Strict margin of diagonal contradictions for q=20, 21, 27 | MY VALUE: (60,63,81) | THEIR VALUE: (60,63,81) | VERDICT: PASS | METHOD: Direct recalculation of the point logarithm of ceil((18q+1)/3) markers minus q(18q); arithmetic only, no proof of source budget
 
-CLAIM: 局部势展开中的交叉项为 2eΔs | MY VALUE: 0 | THEIR VALUE: 0 | VERDICT: PASS | METHOD: 对两边差作精确多项式展开，并在 0、1、1000000、2/3 参数处精确比较
+CLAIM: The cross term in the local potential expansion is 2eΔs | MY VALUE: 0 | THEIR VALUE: 0 | VERDICT: PASS | METHOD: Exact polynomial expansion of the difference on both sides and exact comparison at 0, 1, 1000000, 2/3 parameters
 
-## 数学编辑自审
+## Mathematics editor self-review
 
-检查范围仅为新写的 skill、三个参考文件和本报告中的数学记号与交叉引用。正文 `manuscript/main.tex`、原有数学证明、历史状态与证书均未修改。没有对旧稿作数学 token 改动；新写的条件例子仍显式保留条件，未将其记为新的数值成果。
+The scope of the review is only for newly written skills, three reference files, and mathematical notations and cross-references in this report. text`manuscript/main.tex`, the original mathematical proofs, historical status and certificates have not been modified. No mathematical token changes have been made to the old manuscript; the newly written conditional examples still explicitly retain the conditions and do not record them as new numerical results.

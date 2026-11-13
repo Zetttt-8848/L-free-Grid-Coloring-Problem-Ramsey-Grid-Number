@@ -1,4 +1,4 @@
 interface:
-  display_name: "有向 L 网格拉姆齐研究"
-  short_description: "研究有向等臂 L 染色：三色上下界并行探索、全局结构方法与可复核证据"
-  default_prompt: "使用 $directed-l-grid-research，先核对当前证据，再并行推进三色构造与上界证明，并检验新机制的推广条件。"
+  display_name: "Directed L-grid Ramsey research"
+  short_description: "Research directed equal-leg L colorings, global upper counts, constructions, and reproducible evidence"
+  default_prompt: "Use $directed-l-grid-research to check current evidence and pursue the requested research priorities with auditable proofs and computations."

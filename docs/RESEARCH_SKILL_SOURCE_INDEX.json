@@ -3332,7 +3332,7 @@
           "blob": "1c2848fcf5f3154afdcff2a75a6fcffbab28b28a"
         },
         {
-          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md",
+          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md",
           "blob": "0aa1bb8359a489f6395d908cbcc6ec90966abce4"
         },
         {
@@ -7667,7 +7667,7 @@
           "blob": "1c2848fcf5f3154afdcff2a75a6fcffbab28b28a"
         },
         {
-          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md",
+          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md",
           "blob": "0aa1bb8359a489f6395d908cbcc6ec90966abce4"
         },
         {
@@ -12038,7 +12038,7 @@
           "blob": "1c2848fcf5f3154afdcff2a75a6fcffbab28b28a"
         },
         {
-          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md",
+          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md",
           "blob": "0aa1bb8359a489f6395d908cbcc6ec90966abce4"
         },
         {
@@ -16453,7 +16453,7 @@
           "blob": "1c2848fcf5f3154afdcff2a75a6fcffbab28b28a"
         },
         {
-          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md",
+          "path": "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md",
           "blob": "0aa1bb8359a489f6395d908cbcc6ec90966abce4"
         },
         {
@@ -17625,23 +17625,23 @@
         },
         {
           "line": 7,
-          "text": "## 问题"
+          "text": "## question"
         },
         {
           "line": 14,
-          "text": "## 本项目当前数学结果"
+          "text": "## Current mathematical results of this project"
         },
         {
           "line": 31,
-          "text": "## 研究目标：先 R3，后 R4"
+          "text": "## Research goal: R3 first, then R4"
         },
         {
           "line": 41,
-          "text": "## 学界成果与项目成果分开查阅"
+          "text": "## Academic achievements and project achievements can be viewed separately"
         },
         {
           "line": 48,
-          "text": "## 复现"
+          "text": "## Recurrence"
         }
       ]
     },
@@ -17656,7 +17656,7 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 协作约定"
+          "text": "# Collaboration agreement"
         }
       ]
     },
@@ -18434,7 +18434,7 @@
         "exploration/research_round4/research/fibers/SQUARE_ROOT_COLOR_MECHANISM_0037.md",
         "exploration/research_round4/research/fibers/SQUARE_SOURCE_PROBE.md",
         "exploration/research_round4/research/fibers/T11_FIVE_RAINBOW_LEMMA_0043.md",
-        "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md",
+        "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md",
         "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043.md",
         "exploration/research_round4/research/fibers/THREE_ANCHOR_JOINT_DEFECT_REDUCTION_0045.md",
         "exploration/research_round4/research/fibers/THREE_AXIS_BINARY_FIBER_0027.md",
@@ -18778,7 +18778,7 @@
       "headings": [
         {
           "line": 1,
-          "text": "# GitHub 数学排版约定"
+          "text": "# GitHub Math Typesetting Conventions"
         }
       ]
     },
@@ -18793,15 +18793,15 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 开放问题与失效路线"
+          "text": "# Open issues and failed routes"
         },
         {
           "line": 41,
-          "text": "## 已排除的捷径"
+          "text": "## Excluded shortcuts"
         },
         {
           "line": 48,
-          "text": "## 合作时提交什么"
+          "text": "## What to submit when collaborating?"
         }
       ]
     },
@@ -18816,7 +18816,7 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 当前命题与证明索引"
+          "text": "# Current proposition and proof index"
         }
       ]
     },
@@ -18831,47 +18831,47 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 研究路线：原创结构方法，先解决 R3"
+          "text": "# Research route: Original structural method, solve R3 first"
         },
         {
           "line": 3,
-          "text": "## 总目标与先后顺序"
+          "text": "## Overall goal and sequence"
         },
         {
           "line": 9,
-          "text": "## 短期目标"
+          "text": "## Short term goals"
         },
         {
           "line": 11,
-          "text": "### S1：把比较基准做实"
+          "text": "### S1: Make the comparison baseline concrete"
         },
         {
           "line": 19,
-          "text": "### S2：把主要障碍变成精确命题"
+          "text": "### S2: Turn major obstacles into precise propositions"
         },
         {
           "line": 27,
-          "text": "### S3：提出可推广的新机制"
+          "text": "### S3: Propose new mechanisms that can be promoted"
         },
         {
           "line": 33,
-          "text": "## 长期目标"
+          "text": "## Long term goals"
         },
         {
           "line": 35,
-          "text": "### L1：双向压缩 R3 的区间"
+          "text": "### L1: Bidirectional compression range of R3"
         },
         {
           "line": 47,
-          "text": "### L2：确定 R3 的精确值并提炼方法"
+          "text": "### L2: Determine the precise value of R3 and refine the method"
         },
         {
           "line": 51,
-          "text": "### L3：在 R3 完成后推进 R4"
+          "text": "### L3: Advance R4 after R3 is completed"
         },
         {
           "line": 55,
-          "text": "## 工具的职责"
+          "text": "## Tool Responsibilities"
         }
       ]
     },
@@ -39268,7 +39268,7 @@
     },
     "0aa1bb8359a489f6395d908cbcc6ec90966abce4": {
       "paths": [
-        "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md"
+        "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-Copy 20260913000350.md"
       ],
       "bytes": 5944,
       "sha256": "074438090acc9e89ebbf57b12c69daf6e3b13d55befddc20aa2588c1130642fe",
@@ -50334,35 +50334,35 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 学界已有成果与本项目的关系"
+          "text": "# The relationship between existing achievements in academia and this project"
         },
         {
           "line": 5,
-          "text": "## 先统一问题约定"
+          "text": "## First unify the problem agreement"
         },
         {
           "line": 15,
-          "text": "## 1. 两色精确值：已解决的基准"
+          "text": "## 1. Two-Color Exact Value: Solved Benchmark"
         },
         {
           "line": 25,
-          "text": "## 2. 三色下界与早期上界"
+          "text": "## 2. Three-color lower bound and early upper bound"
         },
         {
           "line": 35,
-          "text": "## 3. 三色已核查的更强上界"
+          "text": "## 3. Three-color verified stronger upper bound"
         },
         {
           "line": 53,
-          "text": "## 4. 一般密度工具：准多项式 corners 定理"
+          "text": "## 4. General density tools: quasi-polynomial corners theorem"
         },
         {
           "line": 63,
-          "text": "## 5. 相关数学输入与阅读顺序"
+          "text": "## 5. Related math input and reading order"
         },
         {
           "line": 71,
-          "text": "## 6. 不得混入学界数值基准的项目结论"
+          "text": "## 6. Project conclusions that must not be mixed into industry numerical benchmarks"
         }
       ]
     },
@@ -51218,23 +51218,23 @@
         },
         {
           "line": 7,
-          "text": "## 问题"
+          "text": "## question"
         },
         {
           "line": 14,
-          "text": "## 本项目当前数学结果"
+          "text": "## Current mathematical results of this project"
         },
         {
           "line": 31,
-          "text": "## 研究目标：先 R3，后 R4"
+          "text": "## Research goal: R3 first, then R4"
         },
         {
           "line": 43,
-          "text": "## 学界成果与项目成果分开查阅"
+          "text": "## Academic achievements and project achievements can be viewed separately"
         },
         {
           "line": 50,
-          "text": "## 复现"
+          "text": "## Recurrence"
         }
       ]
     },
@@ -51249,51 +51249,51 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 三维立方体源：最少强迫边与九步平衡"
+          "text": "# 3D cube source: minimum forced edges and nine-step equilibrium"
         },
         {
           "line": 11,
-          "text": "## 1. 对象与记号"
+          "text": "## 1. Objects and tokens"
         },
         {
           "line": 38,
-          "text": "## 2. 最优值及统一构造的证明"
+          "text": "## 2. Proof of optimal value and unified construction"
         },
         {
           "line": 71,
-          "text": "## 3. 九步平衡定理的解析证明"
+          "text": "## 3. Analytical proof of the nine-step equilibrium theorem"
         },
         {
           "line": 73,
-          "text": "### 哪些格子能够充当完成格"
+          "text": "### Which grids can serve as completion grids?"
         },
         {
           "line": 81,
-          "text": "### 第一步：平衡三条四格纤维"
+          "text": "### Step 1: Balance three four-grid fibers"
         },
         {
           "line": 97,
-          "text": "### 第二步：平衡六条双格纤维"
+          "text": "### Step 2: Balance the six double-lattice fibers"
         },
         {
           "line": 107,
-          "text": "### 每步下降量与局部极小"
+          "text": "### The amount of descent per step and the local minimum"
         },
         {
           "line": 121,
-          "text": "## 4. 全枚举与改色证书"
+          "text": "## 4. Full enumeration and color change certificate"
         },
         {
           "line": 159,
-          "text": "## 5. 枚举计数在三维源族内的转移"
+          "text": "## 5. Transfer of enumeration counts within the three-dimensional source family"
         },
         {
           "line": 171,
-          "text": "## 6. 限制与下一步"
+          "text": "## 6. Limitations and next steps"
         },
         {
           "line": 183,
-          "text": "## 7. 复现"
+          "text": "## 7. Recurrence"
         }
       ]
     },
@@ -51540,23 +51540,23 @@
         },
         {
           "line": 7,
-          "text": "## 问题"
+          "text": "## question"
         },
         {
           "line": 14,
-          "text": "## 本项目当前数学结果"
+          "text": "## Current mathematical results of this project"
         },
         {
           "line": 31,
-          "text": "## 研究目标：先 R3，后 R4"
+          "text": "## Research goal: R3 first, then R4"
         },
         {
           "line": 45,
-          "text": "## 学界成果与项目成果分开查阅"
+          "text": "## Academic achievements and project achievements can be viewed separately"
         },
         {
           "line": 52,
-          "text": "## 复现"
+          "text": "## Recurrence"
         }
       ]
     },
@@ -51571,35 +51571,35 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 三维块的外部阻塞：单格陷阱、成组修复与边界预算"
+          "text": "# External blocking of 3D blocks: single cell traps, group repairs and boundary budgeting"
         },
         {
           "line": 14,
-          "text": "## 1. 一个外部标记即可阻止内部下降"
+          "text": "## 1. An external marker can prevent internal descent"
         },
         {
           "line": 47,
-          "text": "## 2. 平台单格移动也不能逃出，但成组改色可以"
+          "text": "## 2. You cannot escape from the platform by moving in a single frame, but you can change the color in groups."
         },
         {
           "line": 64,
-          "text": "## 3. 一般边界覆盖不等式"
+          "text": "## 3. General boundary covering inequality"
         },
         {
           "line": 81,
-          "text": "## 4. 内部失衡如何按边界角计费"
+          "text": "## 4. How to charge internal imbalance according to boundary angle"
         },
         {
           "line": 109,
-          "text": "## 5. 穷尽计算加强系数与精确阈值"
+          "text": "## 5. Exhaustively calculate the enhancement coefficient and precise threshold"
         },
         {
           "line": 132,
-          "text": "## 6. 新增单标记的候选范围"
+          "text": "## 6. Add candidate range for single mark"
         },
         {
           "line": 146,
-          "text": "## 7. 核验、范围与后续问题"
+          "text": "## 7. Verification, scope and follow-up questions"
         }
       ]
     },
@@ -51968,23 +51968,23 @@
         },
         {
           "line": 7,
-          "text": "## 问题"
+          "text": "## question"
         },
         {
           "line": 14,
-          "text": "## 本项目当前数学结果"
+          "text": "## Current mathematical results of this project"
         },
         {
           "line": 31,
-          "text": "## 研究目标：先 R3，后 R4"
+          "text": "## Research goal: R3 first, then R4"
         },
         {
           "line": 47,
-          "text": "## 学界成果与项目成果分开查阅"
+          "text": "## Academic achievements and project achievements can be viewed separately"
         },
         {
           "line": 54,
-          "text": "## 复现"
+          "text": "## Recurrence"
         }
       ]
     },
@@ -51999,35 +51999,35 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 三维块的外部阻塞：单格陷阱、成组修复与边界预算"
+          "text": "# External blocking of 3D blocks: single cell traps, group repairs and boundary budgeting"
         },
         {
           "line": 14,
-          "text": "## 1. 一个外部标记即可阻止内部下降"
+          "text": "## 1. An external marker can prevent internal descent"
         },
         {
           "line": 47,
-          "text": "## 2. 平台单格移动也不能逃出，但成组改色可以"
+          "text": "## 2. You cannot escape from the platform by moving in a single frame, but you can change the color in groups."
         },
         {
           "line": 64,
-          "text": "## 3. 一般边界覆盖不等式"
+          "text": "## 3. General boundary covering inequality"
         },
         {
           "line": 81,
-          "text": "## 4. 内部失衡如何按边界角计费"
+          "text": "## 4. How to charge internal imbalance according to boundary angle"
         },
         {
           "line": 109,
-          "text": "## 5. 穷尽计算加强系数与精确阈值"
+          "text": "## 5. Exhaustively calculate the enhancement coefficient and precise threshold"
         },
         {
           "line": 132,
-          "text": "## 6. 新增单标记的候选范围"
+          "text": "## 6. Add candidate range for single mark"
         },
         {
           "line": 146,
-          "text": "## 7. 核验、范围与后续问题"
+          "text": "## 7. Verification, scope and follow-up questions"
         }
       ]
     },
@@ -52042,39 +52042,39 @@
       "headings": [
         {
           "line": 1,
-          "text": "# 固定边界下的修复障碍：双格猜想的反例与精确八格阈值"
+          "text": "# Repair obstacles under fixed boundaries: Counterexamples to the double-lattice conjecture and the exact eight-lattice threshold"
         },
         {
           "line": 13,
-          "text": "## 1. 定义与完整证书"
+          "text": "## 1. Definition and complete certificate"
         },
         {
           "line": 54,
-          "text": "## 2. 双格不增势修复失败的人工证明"
+          "text": "## 2. Manual proof of failure to repair double grids without increasing potential"
         },
         {
           "line": 93,
-          "text": "## 3. 完整状态图与精确八格阈值"
+          "text": "## 3. Complete state diagram and precise eight-cell threshold"
         },
         {
           "line": 121,
-          "text": "## 4. 发现、独立核验与复现范围"
+          "text": "## 4. Discovery, independent verification and scope of recurrence"
         },
         {
           "line": 130,
-          "text": "# 独立数学核验：Python 3.10+ 标准库"
+          "text": "# Independent mathematical verification: Python 3.10+ standard library"
         },
         {
           "line": 133,
-          "text": "# 发现程序：C++17；只把可复现源码和 JSON 报告入库"
+          "text": "# Discovery program: C++17; only reproducible source code and JSON reports are stored in the library"
         },
         {
           "line": 138,
-          "text": "# 图表另需 Matplotlib，直接读取核验报告"
+          "text": "# Charts require Matplotlib to directly read the verification report"
         },
         {
           "line": 144,
-          "text": "## 5. 对下一步路线的影响"
+          "text": "## 5. Impact on the next route"
         }
       ]
     },

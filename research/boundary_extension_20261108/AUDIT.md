@@ -1,27 +1,27 @@
-# 本轮审查范围
+#Scope of this round of review
 
-审查目标是本目录的两个具体成果，不是全仓库证明正确性或新颖性认证。
+The review objectives are two specific outcomes of this catalogue, not warehouse-wide certification of correctness or novelty certification.
 
-## 上界工作包
+## Upper bound work package
 
-**结论：按文中范围成立。** 协调者从完整45格输入重新生成全部无序三点组合，识别46个指定方向的L，确认两态均正常且仅内部格(6,5)改变。没有导入发现程序或其约束生成器。[独立结果](upper_witness_audit.json)
+**Conclusion: It is established according to the scope of the article. ** The coordinator regenerates all disordered three-point combinations from the complete 45-lattice input, identifies 46 L in the specified direction, and confirms that both states are normal and only the internal grid (6,5) changes. The discoverer or its constraint generator is not imported. [Independent results](upper_witness_audit.json)
 
-精确最优性的证明无需穷尽染色：每条±1纤维和的平方至少为纤维大小的奇偶数；A有9条奇数纤维，初态达到9。固定外部时差值1的外场为−2，Q平衡强制该内部纤维和为0，导致该偶数全源纤维额外贡献4。其余奇数纤维至少贡献9，总计至少13；终态达到13。全部推导不假设局部改色具有全局下降性。通用K_Q(e)是对每个允许符号和逐项最小化得到的下界，未假定最优符号可同时实现。
+The proof of exact optimality does not require exhaustive coloring: the square of the sum of each ±1 fiber is at least an odd and even number of fiber sizes; A has 9 odd fibers, and the initial state reaches 9. With an external field of −2 fixing an external moveout value of 1, the Q balance forces the sum of this internal fiber to 0, resulting in an additional contribution of 4 from this even-numbered all-source fiber. The remaining odd-numbered fibers contribute at least 9, for a total of at least 13; the final state reaches 13. All derivation does not assume global degradation of local color changes. The universal K_Q(e) is a lower bound obtained by minimizing each allowed symbol and term by term, without assuming that the optimal symbols can be realized simultaneously.
 
-Wolfram独立算术结果为 `{45,9,{8,4},{9,13}}`，分别是格数、奇偶下界、局部势和全源势。它只核对这些数，不负责着色合法性。
+The result of Wolfram independent arithmetic is`{45,9,{8,4},{9,13}}`, respectively, are the grid number, odd-even lower bound, local potential and total source potential. It only checks these numbers and is not responsible for coloring legality.
 
-## 下界工作包
+## Nether work package
 
-**结论：通用几何分解证明成立，具体障碍在所示矩阵范围内已认证。** 另一研究者从定义重新推导底/右分解及单侧公式，记录于 [lower_proof_review.md](lower_proof_review.md)；五组小参数穷尽是附加交叉检查，不代替通用证明。
+**Conclusion: The general geometric decomposition is proved and the specific obstacles are certified within the range of the matrix shown. ** Another researcher re-deduce the bottom/right decomposition and one-sided formula from the definition, recorded in [lower_proof_review.md](lower_proof_review.md); The five groups of small parameter exhaustions are additional cross-checks and do not replace the general proof.
 
-协调者另写 [audit_lower_cores.py](audit_lower_cores.py)，逐条核对物理L、固定颜色与残余变量，以集合域传播验证每个证明树叶的矛盾及每个分支的完整覆盖；逐一检查约束删除后的可行见证，并检查冲突核原有格点支撑的准确性和两两不交。四个必要修改数10、2、14、8通过。[结果](lower_cores_audit.json)
+The coordinator writes [audit_lower_cores.py](audit_lower_cores.py), check the physical L, fixed colors and residual variables one by one, use set domain propagation to verify the contradiction of each proof leaf and the complete coverage of each branch; check the feasible witnesses after the constraints are deleted one by one, and check the accuracy and pairwise disjointness of the original grid support of the conflict kernel. The four necessary amendments 10, 2, 14, and 8 were passed. [result](lower_cores_audit.json)
 
-这些检查不依赖求解器的UNSAT状态；删除极小性仅由核心不可满足与各单边删除见证共同推出，未声称最小基数。原有颜色变化必须击中每个互不相交支撑，故得到必要修改数；并不保证修改后可以保持所有旧L正常或完成新边界。
+These checks do not rely on the UNSAT state of the solver; deletion minimality is derived only from core unsatisfiability together with each one-sided deletion witness, and no minimum cardinality is claimed. The original color change must hit each mutually disjoint support, so the necessary modification number is obtained; there is no guarantee that all old Ls can be kept normal or the new boundaries can be completed after modification.
 
-## 外部来源与计算
+## External sources and calculations
 
-协调者另读2026两篇多项式论文的原始定理条件及所指权重步骤。像集权重与参数重数的区别可以直接从计数定义重推；文献工作包还认证了原始PDF中该公式。这里只接受 [WEIGHT_AUDIT](literature/WEIGHT_AUDIT.md) 所述等式反例，不扩大为最终密度定理错误。
+The coordinator also read the original theorem conditions and the weighting steps of the two polynomial papers in 2026. Like the difference between set weight and parameter multiplicity, it can be directly recalculated from the count definition; the literature work package also authenticated this formula in the original PDF. Only [WEIGHT_AUDIT is accepted here](literature/WEIGHT_AUDIT.md)The counterexample to the equation does not extend to an error in the final density theorem.
 
-上界、下界和文献精确算术各有Mathbox v2清单；状态completed及哈希有效表示相应有限运行可追溯，不表示普遍定理自动被证明。主稿13项检查通过；未新编译Lean，未审计全部主稿，未穷尽检索所有后续论文。
+Upper bounds, lower bounds, and literature exact arithmetic each have Mathbox v2 lists; the status completed and hashed valid indicate that the corresponding limited run can be traced, but do not mean that universal theorems are automatically proven. The main manuscript passed 13 inspections; Lean has not been newly compiled, all main manuscripts have not been audited, and all subsequent papers have not been searched exhaustively.
 
-独立性说明：工作包作者、另一个研究者与协调者分别进行了所述检查，但均为AI辅助工作；不同实现/角色不能排除共同错误。原始完整证书和小型标准库核验器保留供外部复核。
+Note on independence: The author of the work package, another researcher and the coordinator conducted the above inspections respectively, but they were all AI-assisted work; different implementations/roles cannot rule out common errors. The original full certificate and small standard library verifier are retained for external review.

@@ -1,97 +1,97 @@
-# 全局计数：跨源冲突、双端资源与极端形状的代价
+# Global count: cross-source conflicts, double-ended resources and the cost of extreme shapes
 
-本轮按用户要求并行探索纯数学上界计数，未开展下界 SAT 搜索。
-**目前尚未证明比 464 更小的 Ramsey 上界；项目区间仍为 `21 <= R3 <= 464`。**
-这里的推进是三套保留共同约束的计数，以及它们已经证明的严格后果。
-它们尚未解决的统一估计，不能由小例子或计算量代替。
+This round explores pure mathematical upper bound counting in parallel according to user requirements, and does not carry out lower bound SAT search.
+**No Ramsey upper bound smaller than 464 has yet been proven; the project interval remains`21 <= R3 <= 464`.**
+The advance here are three sets of counts that preserve common constraints, and their proven stringent consequences.
+Their unresolved unified estimates cannot be replaced by small examples or computational quantities.
 
-基础提交：`5b5db22c3c65123193cb31f2aa5bd949b3075e1a`，即上一研究检查点。
-所有坐标从零开始，唯一禁止的方向为 `(x,y),(x+d,y),(x+d,y+d)`，`d>0`。
-主稿未作数学修改；本轮结果及独立审阅保存在此目录。
+Basic submission:`5b5db22c3c65123193cb31f2aa5bd949b3075e1a`, which is the previous research checkpoint.
+All coordinates start from zero, the only forbidden direction is`(x,y),(x+d,y),(x+d,y+d)`,`d>0`.
+The main manuscript has not been mathematically revised; the results of this round and independent review are kept in this directory.
 
-## 1. 从逐源计数转向同一格子的颜色请求
+## 1. Switch from source-by-source counting to color requests for the same grid
 
-三个对角颜色类各自生成二色严格源。即使这三个源各自合法，它们
-对源外同一格提出的要求仍可能排除全部三色。
-[完整推导](completion/COUNTING.md)把这些请求保留到求和之后：
+Each of the three diagonal color classes generates a strictly dichromatic source. Even though these three sources are each legitimate, they
+Requests made to the same square outside the source may still exclude all three colors.
+[Full derivation](completion/COUNTING.md)Preserve these requests until after the summation:
 
-`C_mix = sum_q V_q^a H_q^b (H_q^e + V_q^e)`。
+`C_mix = sum_q V_q^a H_q^b (H_q^e + V_q^e)`.
 
-其中 q 的两个对角端点颜色为 a、b，e 是第三色；H、V 分别计数
-两个源经横、纵方向对 q 提出的同色输入请求。每个非零乘积数的是
-六个真实输入格形成的一组三色排除，完整正常方形必须满足 `C_mix=0`。
-进一步，对任意延拓，单色 L 总数满足
+Among them, the colors of the two diagonal endpoints of q are a and b, and e is the third color; H and V are counted respectively.
+Two sources make input requests of the same color to q in the horizontal and vertical directions. Every non-zero product number is
+A set of three-color exclusions formed by six real input cells. A complete normal square must satisfy`C_mix=0`.
+Furthermore, for any continuation, the total number of monochromatic L satisfies
 
-`N_mono >= sum_q min(V_q^a, H_q^b, H_q^e+V_q^e)`。
+`N_mono >= sum_q min(V_q^a, H_q^b, H_q^e+V_q^e)`.
 
-这里给出了真实重数：每个被计入的 L 只有一个尚未填写的格 q，
-不会在其他 q 下重复计入。这是所列请求族的精确最小代价；它没有
-包含所有跨源 L，因此不能把零代价当作全方形可延拓的充分条件。
+Here the true multiplicity is given: each L counted has only one unfilled cell q,
+Not double-counted under other q's. This is the exact minimum cost of the request family listed; it does not
+contains all cross-sources L, so zero cost cannot be regarded as a sufficient condition for full square continuation.
 
-我们给出一个十阶部分染色：三个源以及所有已填写格上的 L 都合法，
-但 `(8,3)` 同时收到排除三色的请求，任何延拓都会产生单色 L。
-它严格展示了独立处理三个源时丢失的信息，并不是十阶方形不存在的证明。
-**要把此法变成更小的 R3 上界，仍须证明足够大的任意三个相容源必然
-使上述全局代价为正。** 这一步保持开放。
+We are given a partial coloring of order ten: all three sources and L on all filled cells are legal,
+but`(8,3)`When a request is received to exclude three colors at the same time, any continuation will result in a single color L.
+It strictly demonstrates the information lost when processing three sources independently, and is not proof that the tenth-order square does not exist.
+**To turn this method into a smaller upper bound for R3, it is still necessary to prove that any three compatible sources that are large enough must
+Make the above global cost positive. ** This step remains open.
 
-## 2. 同时计算所有大小层级和首尾匹配
+## 2. Calculate all size levels and head-to-tail matching at the same time
 
-[全层级计数](multilayer/THEOREM.md)保留每种对角颜色、每个步长的
-前两个同色回归位置。两个完成色类的容量等于同一对角词的所有嵌套
-前缀截断自相关之和，而不只计算第 24 个标记。
+[Full level count](multilayer/THEOREM.md)Keep each diagonal color, each step size
+The first two same color return positions. The capacity of two perfect color classes is equal to all nestings of the same diagonal word
+Prefix truncates the sum of autocorrelations instead of just counting the 24th token.
 
-新的双端匹配进一步要求同一个类的最小点与最大点配对。一个明确的
-十点集合通过分别计算首端、末端和跨度所得的容量检查（均为 10），
-但双端共同容量只有 9，因而不可能分成两个 Golomb 类。
+The new paired-ended matching further requires that the minimum and maximum points of the same class are paired. a clear
+The ten-point set is checked for capacity by calculating the head, end, and span separately (all 10),
+However, the common capacity of both ends is only 9, so it is impossible to divide it into two Golomb classes.
 
-[信息差见证](information_gap.json)还给出两个九字颜色词，全部标量
-自相关 `R_d` 完全相同，而新双端计数在 d=3 分别为 4 和 3。
-因此这个计数确实保留了旧 `R_d` 数组无法恢复的信息。
-尚未完成的是对任意长对角词统一控制加权容量，不能用随机词均值替代。
+[Information gap testimony](information_gap.json)Two nine-character color words are also given, all scalar
+autocorrelation`R_d`are exactly the same, while the new paired-ended counts are 4 and 3 respectively at d=3.
+So this count does preserve the old`R_d`Array of unrecoverable information.
+What has not yet been completed is the unified control of weighted capacity for any long diagonal word, which cannot be replaced by the mean of random words.
 
-## 3. 为互不相容的极端形状计算额外跨度
+## 3. Calculate extra spans for mutually exclusive extreme shapes
 
-[跨度代价证明](multiscale/THEOREM.md)同时使用各类的最小、最大点：
-若 t 个不交 m 标记类的最小跨度为 g，而至多 a 个可同时达到 g，则
+[Span Cost Proof](multiscale/THEOREM.md)Use the minimum and maximum points of various types at the same time:
+If the minimum span of t disjoint m label classes is g, and at most a can reach g at the same time, then
 
-`t*g + max(0,t-a) <= t*(p-t)`。
+`t*g + max(0,t-a) <= t*(p-t)`.
 
-应用 OGR-24 已公布的最优尺唯一性及其差集，可严格降低四个六类容量：
+Applying OGR-24's published optimal ruler uniqueness and its difference set, the four Category 6 capacities can be strictly reduced:
 
-| 可用位置数 p | 上轮容量 | 本轮容量 |
+| Number of available positions p | Capacity of the previous round | Capacity of this round |
 |---|---:|---:|
 | 428 | 141 | 140 |
 | 429 | 142 | 141 |
 | 430 | 143 | 142 |
 | 431 | 144 | 143 |
 
-这一应用比上轮多使用了已公布的“唯一性”结论。本地只核对给出的尺、
-差集和推导，没有重新执行 OGR 穷尽搜索。相同极端形状跨步长的平移
-还受同一个对角颜色和重叠矩预算限制：若同一朝向有 t 个出现位置，
-其格点覆盖重数满足 `sum r=24t`、`sum r^2=t(t+23)`。
-结合一类卷积计数得到的对角颜色类大小至多 164，可推出：假设存在
-正常的 463 阶方形，则所有步长合计最多有 **56 个跨度恰为 425 的
-完成类**，而逐步长独立预算允许 74 个。464 阶对应独立预算为 76。
-这是整体出现次数上限，尚无与之矛盾的统一出现次数下界。
+This application uses more published “uniqueness” conclusions than the previous round. Only the given ruler is checked locally.
+Difference and derivation without re-executing the OGR exhaustive search. Translation of the same extreme shape step length
+It is also subject to the same diagonal color and overlapping moment budget constraints: if there are t occurrence positions in the same direction,
+Its grid point coverage multiplicity satisfies`sum r=24t`,`sum r^2=t(t+23)`.
+The diagonal color class size obtained by combining one-class convolution counting is at most 164, which can be deduced: Assume that there
+For a normal square of order 463, there are at most **56 steps with a span of exactly 425 in total.
+Complete class**, while progressively longer independent budget allows for 74. Level 464 corresponds to an independent budget of 76.
+This is the upper limit of the overall number of occurrences, and there is no unified lower bound of the number of occurrences that contradicts it.
 
-仅将四个新容量用于原来的整数权重时，n=463 的矛盾量仍为
-`-2534488525`，不能排除 463；n=464 的矛盾量为 `1433217328`。
-这项容量改进与带颜色边界计数涉及相同亏损，不能直接叠加其收益。
+When using only the four new capacities with the original integer weights, the contradiction for n=463 is still
+`-2534488525`, 463 cannot be ruled out; the amount of contradiction for n=464 is`1433217328`.
+This capacity improvement involves the same penalties as colored boundary counting, and its gains cannot be directly stacked.
 
-## 证据与下一步
+## Evidence and next steps
 
-- [独立审阅](review/REVIEW.md)与独立整数重建代码；不是 Lean 形式化认证。
-- [来源与新旧方法比较](COUNTING_COMPARISON.md)：不将经典工具、重新发现
-  的历史结论或未完成的必要条件称为全球原创突破。
-- [目标契约](CONTRACT.md)、各包原始证明、完整见证及检查输出均保留。
-- `threshold_scan.py` 只侦察全层级**标量**容量与有限权重范围；浮点输出
-  不参与新定理，也没有排除更好的权重或其他方法。
+- [Independent review](review/REVIEW.md)Reconstruct code with independent integers; not Lean formal authentication.
+- [Sources compared with old and new methods](COUNTING_COMPARISON.md): Not to rediscover classic tools
+The historical conclusion or unfinished necessary conditions are called global original breakthroughs.
+- [Target Contract](CONTRACT.md), the original certificate, complete witness and inspection output of each package are retained.
+- `threshold_scan.py`Only scout full level **scalar** capacity and limited weight range; floating point output
+No new theorem is involved, and no better weights or other methods are excluded.
 
-从仓库根目录运行 `python research/global_counting_20261108/verify_release.py`
-可在临时副本复现全部精确检查，并重跑主稿的 13 组有限核验。原始
-研究记录保持不变；结果与逐文件哈希写入 `release_validation.json`，
-版本、实际命令和运行范围记录在 `release_manifest.json`。
+Run from the repository root directory`python research/global_counting_20261108/verify_release.py`
+All accurate checks can be reproduced on a temporary copy and 13 sets of limited checks on the main draft can be re-run. original
+Research records remain unchanged; results are written with file-by-file hashes`release_validation.json`,
+The version, actual command and run scope are documented in`release_manifest.json`.
 
-下一主攻点是跨源请求的统一正代价下界，以及同一对角词的双端、
-跨层级共同容量。极端尺平移的全局重叠预算可作为第三种独立输入。
-这些方向仍开放；本检查点不是“进一步压缩上界”这一研究目标的完成。
+The next main focus is the unified positive cost lower bound for cross-source requests, as well as the double-ended,
+Common capacity across tiers. Global overlap budgets for extreme scale translations are available as a third independent input.
+These directions are still open; this checkpoint is not the completion of the research goal of "further compressing the upper bound".

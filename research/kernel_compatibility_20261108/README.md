@@ -1,80 +1,80 @@
-# 新计数：六类完成格共用起点，将上界推进至464
+# New count: Six types of completion grids share a starting point, pushing the upper bound to 464
 
-日期：2026-11-08。基于 `654cc044cad3d8ca6079a1931565a6ec44dcf2b5`（PR5）。本轮按用户明确修正的方向，集中发明上界计数方式；没有开展新的下界SAT搜索。
+Date: 2026-11-08. based on`654cc044cad3d8ca6079a1931565a6ec44dcf2b5`(PR5). This round focused on inventing the upper bound counting method according to the direction specified by the user; no new lower bound SAT search was carried out.
 
-本轮证明 **`R3≤464`**，项目区间更新为 **`21≤R3≤464`**。区别于上一轮恢复历史465证明，这次的推进来自新增的共同占位计数。新的推导是组合证明；数值应用仍使用已核实的外部Golomb跨度下界 `G(24)≥425,G(25)≥480`，并未重新证明或重跑这两项外部穷尽结果。
+Proof of this round **`R3≤464`**, the project interval is updated to **`21≤R3≤464`**. Different from the previous round of restoration of historical 465 proofs, this advancement comes from the newly added common occupancy count. The new derivation is a combinatorial proof; numerical applications still use the verified external Golomb span lower bound`G(24)≥425,G(25)≥480`, the two external exhaustive results were not reproved or rerun.
 
-## 计数对象发生了什么变化
+## What changes have occurred to the counting object?
 
-旧计数对每种主对角线颜色分别估计差分纤维，再把三个上限相加。这样允许不同颜色的纤维在估计中重复使用同一批最早位置。
+The old count estimates differential fibers separately for each main diagonal color and then sums the three upper bounds. This allows fibers of different colors to reuse the same earliest positions in estimation.
 
-新计数保留两种颜色标签。对每个步长d，定义
+New counts retain both color labels. For each step size d, define
 
 ```math
 B_{c,b}(d)=\{u:\chi(u,u)=\chi(u+d,u+d)=c,\ \chi(u+d,u)=b\},\qquad b\ne c.
 ```
 
-共有六个实际集合。它们都是Golomb集，而且两两不交。一个24标记的集合需要至少425的跨度，因此在p个可用位置中，它的最小点只能占用前p−425个位置。不同集合不能共用这个最小点。
+There are six actual sets. They are both Golomb sets, and no two of them intersect. A 24-mark set requires a span of at least 425, so its smallest point can only occupy the first p−425 positions out of p available positions. Different sets cannot share this minimum point.
 
-把非空集合按最小点排序，得到更一般的共同占位计数：
+Sort the non-empty set by the smallest point to get a more general common occupancy count:
 
 ```math
 R_d=\sum_{c\ne b}|B_{c,b}(d)|\le\sum_{j=0}^{5}g(n-d-j),
 ```
 
-其中g(p)表示p个连续位置中Golomb集的最大大小。旧式上限为6g(n−d)。两者在Golomb容量跳变处严格不同：
+where g(p) represents the maximum size of the Golomb set in p consecutive positions. The old upper limit is 6g(n−d). The two are strictly different at the Golomb capacity jump:
 
-| 可用位置p | 426 | 427 | 428 | 429 | 430 |
+| Available positions p | 426 | 427 | 428 | 429 | 430 |
 |---|---:|---:|---:|---:|---:|
-| 分别估计六类 | 144 | 144 | 144 | 144 | 144 |
-| 共同最小点计数 | 139 | 140 | 141 | 142 | 143 |
+| Estimate six categories separately | 144 | 144 | 144 | 144 | 144 |
+| Common minimum point count | 139 | 140 | 141 | 142 | 143 |
 
-[完整几何推导](geometry/SIX_CLASS_LEMMA.md)证明了六类为何确实不交、为何是Golomb集，以及空类、重叠点对和跨度端点如何处理。这个约束处理的是旧计数遗漏的共同位置竞争。
+[Complete geometric derivation](geometry/SIX_CLASS_LEMMA.md)It is proved why the six categories do not intersect, why they are Golomb sets, and how to deal with empty categories, overlapping point pairs and span endpoints. This constraint handles co-location competition that is missed by the old count.
 
-## 它怎样产生实际数值改进
+## How it produces actual numerical improvements
 
-将新上限记为U(n−d)。三色主对角线指示函数之和等于整条对角线，因而平方和计数给出必要不等式
+Let the new upper limit be U(n−d). The three-color principal diagonal indicates that the sum of the functions is equal to the entire diagonal, so counting sums of squares gives the necessary inequality
 
 ```math
 \sum_{d>0}(n-d-3U(n-d))a_d\le na_0,\qquad
 a_d=\sum_i w_iw_{i+d}.
 ```
 
-取 `n=464`、`w_i=i(86−i)`（i=1,…,85）。自相关系数有显式五次多项式公式，全部整数求和可以直接核算：
+Pick`n=464`,`w_i=i(86−i)`(i=1,…,85). The autocorrelation coefficient has an explicit quintic polynomial formula, and the sum of all integers can be calculated directly:
 
-| 同一权重下的计数 | 左侧减右侧 |
+| Counts under the same weight | Left side minus right side |
 |---|---:|
-| 旧独立容量 | −2,799,639,872 |
-| 新共同占位容量 | **477,965,143** |
+| Old independent capacity | −2,799,639,872 |
+| New common space capacity | **477,965,143** |
 
-正数与必要不等式矛盾。因此改进确实来自新计数，而不是只更换权重。[完整代数证明](kernel_upper/README.md)给出公式和分段求和；[独立审阅](review/REVIEW.md)另行从实际格点重建推导。
+Positive numbers contradict necessary inequalities. So the improvement does come from new counts, not just replacing weights. [Complete algebraic proof](kernel_upper/README.md)Gives formulas and piecewise sums; [Independent review](review/REVIEW.md)It is deduced separately from the actual grid point reconstruction.
 
-## 第二层新计数：不同步长共享同一组颜色
+## New count for the second layer: sharing the same set of colors with different sync sizes
 
-最小点还带有原对角线颜色c，每个c只有两个完成色标签。令k=max(0,n−d−425)，并令m_c(d)计数前k个起点中、两端对角线颜色均为c的点对，则
+The minimum point also has the original diagonal color c, and each c has only two completion color labels. Let k=max(0,n−d−425), and let m_c(d) count the first k point pairs in the starting point and the diagonal color at both ends are c, then
 
 ```math
 R_d\le138+\sum_c\min(2,m_c(d)).
 ```
 
-不同d的m_c不是独立变量，它们来自同一段边界颜色词。相邻两层比较边组成一条交替路径。若路径使用r种颜色，则单色边数至多2k−r；每种颜色在两层最多贡献4个计数单位。因此
+m_c with different d are not independent variables, they come from the same boundary color word. The comparison edges of two adjacent layers form an alternating path. If the path uses r colors, the number of single-color edges is at most 2k-r; each color contributes up to 4 counting units in the two layers. therefore
 
 ```math
 t_{k-1}+t_k\le\max_{1\le r\le3}\min(4r,2k-r).
 ```
 
-这给出了跨步长的共同预算。以非负权重合并三个这样的限制，可在464证书上再增加721,186,665的矛盾量，但尚未把整数上界降到463。[组合计数工作包](combinatorial_upper/THEOREM.md)给出纯组合证明、确切数值和未完成的延续。
+This gives a common budget across strides. Combining three such constraints with non-negative weights adds another 721,186,665 inconsistencies to the 464 certificate, but does not yet lower the integer upper bound to 463. [Combined Counting Work Package](combinatorial_upper/THEOREM.md)Give purely combinatorial proofs, exact numerical values, and unfinished continuations.
 
-边界词长度5至9的有限实验支持更强的计数式；这些枚举没有作为464定理的前提。长度9的加权实验在463处仍留下负差额−161,570,116，不能据此宣称463成立。
+Limited experiments with boundary word lengths 5 to 9 support stronger enumerations; these enumerations do not serve as premises for Theorem 464. The weighted experiment of length 9 still leaves a negative difference of −161,570,116 at 463, and it cannot be claimed that 463 is established based on this.
 
-## 验证、出处和创新边界
+## Verification, Provenance and Innovation Boundaries
 
-- 主结论有完整组合证明、两种独立整数实现和一份新审阅者从定义出发的审查。计算用于核算恒等式与寻找候选，不使用SAT不可满足性或浮点不可行状态证明464。
-- 小例核验覆盖全部59,049个四阶弱三角形着色赋值，以及一个共同占位上限严格优于独立上限、且能取等的Golomb例子。它们检验实现，普遍命题由书面证明承担。
-- 不交Golomb尺已有研究历史。本轮贡献是六种实际完成格类别的共同计数、跨步长颜色关联及其464后果；没有把已有概念或权重优化宣称为全新领域。出处、实际阅读范围和2026差值装填论文的适用性区别见[计数方法比较](COUNTING_COMPARISON.md)。
-- Fourier搜索、权重发现和边界词实验保留源码、实际范围及结果。浮点可行不代表存在网格染色，超时不代表不可行。没有新Lean形式化或主稿全文审查声明。
+- The main conclusion has a complete combinatorial proof, two independent integer implementations and a review by a new reviewer starting from the definition. The calculation is used to check identities and find candidates without using SAT unsatisfiability or floating point infeasible state proofs 464.
+- The small example verification covers all 59,049 fourth-order weak triangle shading assignments, as well as a Golomb example in which the common occupancy upper limit is strictly better than the independent upper limit and can be obtained. They test realization, and universal propositions are undertaken by written proofs.
+- The Golomb Ruler has a research history. The contribution of this round is the common count of the six actual completion categories, the stride color correlation and its 464 consequences; no existing concepts or weight optimization are claimed as new fields. For differences in source, actual reading range, and applicability of 2026 differential filling papers, see [Comparison of Counting Methods](COUNTING_COMPARISON.md).
+- Fourier search, weight discovery and boundary word experiments retain the source code, actual scope and results. The fact that floating point is feasible does not mean that grid coloring exists, and the timeout does not mean that it is not feasible. There is no new Lean formalization or full-text review statement for the main manuscript.
 
-精确核验入口：
+Accurate verification entrance:
 
 ```sh
 python research/kernel_compatibility_20261108/verify_release.py
@@ -83,8 +83,8 @@ python research/kernel_compatibility_20261108/geometry/audit_464.py
 python research/kernel_compatibility_20261108/geometry/verify_geometry.py
 ```
 
-第一条命令在临时副本中重新执行五项精确检查，并记录输入哈希和实际输出，保留原始运行记录。独立审阅与组合工作包另列自己的复现命令。所有文件在本次研究分支保存，数学主稿尚未并入。
+The first command re-executes the five exact checks in a temporary copy and logs the input hashes and actual output, preserving the original run record. Independent review and assembly work packages have their own recurrence commands. All files are kept in this research branch, and the mathematical main manuscript has not yet been incorporated.
 
-## 下一计数问题
+## Next counting question
 
-下一步的关键不是再增加SAT搜索量，而是证明边界比较阵列中“每色每层最多两个贡献”的联合极值，或找到新的可相加亏损。相邻层路径计数已给出第一组严格关系，更远层之间存在环和共享顶点，需要同时控制。任何进一步数值结论都必须完成从共同计数到正矛盾量的推导；当前保留463为待解决目标。
+The key to the next step is not to increase the SAT search volume, but to prove the joint extreme value of "up to two contributions per color per layer" in the boundary comparison array, or to find new additive losses. Adjacent layer path counts have given the first set of strict relationships, and there are loops and shared vertices between further layers that require simultaneous control. Any further numerical conclusion must complete the derivation from the common count to the positive contradiction quantity; currently, 463 is reserved as a target to be solved.
