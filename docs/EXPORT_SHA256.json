@@ -764,7 +764,6 @@
   "exploration/research_round4/research/fibers/SQUARE_ROOT_COLOR_MECHANISM_0037.md": "67565bdf87225d3265fedc1ce4331b475f07c235a010dd143bab9062be8122c4",
   "exploration/research_round4/research/fibers/SQUARE_SOURCE_PROBE.md": "c39bd2847aed1b1f7881bd8681eb55fa0e500383b5120e624fa65307043c2a9f",
   "exploration/research_round4/research/fibers/T11_FIVE_RAINBOW_LEMMA_0043.md": "2475ac5bb761c117896581dbbf28b60468adf610661c549a8674bdb8245b20e9",
-  "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-副本20260913000350.md": "074438090acc9e89ebbf57b12c69daf6e3b13d55befddc20aa2588c1130642fe",
   "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043.md": "d2d99e227e7dfb33e8396c44d4650fd5cece25b6e20ea2c79b6d4604ac2558db",
   "exploration/research_round4/research/fibers/THREE_ANCHOR_JOINT_DEFECT_REDUCTION_0045.md": "06c9a7779b92f83a53153d6ab37f9988b14b50e049890985fe7f11fb78abc53b",
   "exploration/research_round4/research/fibers/THREE_AXIS_BINARY_FIBER_0027.md": "6105a4fb83c4bb39e0983270c06db3657323cfe6635ebbb2bb4f9975273dca31",
@@ -1079,5 +1078,6 @@
   "manuscript/SAT_USAGE.md": "908b47d55ce616958db39acba0d1421395fc62615ce01c607bbb1a8b39cc4333",
   "manuscript/verification_results.json": "51f690243aeb0ab4456a030af79db85f69261c5423598b02288c56aedc934af6",
   "manuscript/verify_directed_L_manuscript.py": "2c3a01fa06babb4dc52c94350ea44e9de3a750f54734c9b1e5fadc47abe27e07",
-  "README.md": "25f2acb5bc2d754dcab121641b651801927900b5a9bece84a0e3ccccbf6bcc76"
+  "README.md": "25f2acb5bc2d754dcab121641b651801927900b5a9bece84a0e3ccccbf6bcc76",
+  "exploration/research_round4/research/fibers/T12_SEVEN_RAINBOW_LEMMA_0043-copy20260913000350.md": "074438090acc9e89ebbf57b12c69daf6e3b13d55befddc20aa2588c1130642fe"
 }

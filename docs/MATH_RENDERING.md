@@ -1,5 +1,5 @@
-# GitHub 数学排版约定
+# GitHub Math Typesetting Conventions
 
-复杂行内公式使用 GitHub 官方支持的美元符号加反引号分隔格式，重点公式使用独立的 math 围栏。避免在 Markdown 表格中直接写含竖线的公式，集合花括号须保留 LaTeX 转义。项目自定义命令如 \F 应在 Markdown 中展开成标准命令。历史 tex/latex 代码围栏是源码展示，不应误当作渲染失败。
+Complex inline formulas use the dollar sign plus backtick delimited format officially supported by GitHub, and key formulas use independent math fences. Avoid writing formulas containing vertical bars directly in Markdown tables, and set curly braces must retain LaTeX escapes. Project custom commands such as \F should expand into standard commands in Markdown. Historical tex/latex code fences are source code displays and should not be mistaken for rendering failures.
 
-依据：[GitHub 数学表达式官方说明](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)。检查针对仓库网页，其他客户端可能不支持相同语法。
+Based on: [GitHub Mathematical Expression Official Description](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions). Check against the repository page, other clients may not support the same syntax.

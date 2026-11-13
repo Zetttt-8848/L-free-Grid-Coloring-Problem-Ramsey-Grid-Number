@@ -1,8 +1,8 @@
-# 当前命题与证明索引
+# Current proposition and proof index
 
-本索引指向当前数学稿。Open assertion 是未解决的假设，External theorem 是文献输入。历史 Lean 覆盖记录不能代替当前稿的逐项对应。
+This index points to the current mathematical manuscript. Open assertions are unresolved hypotheses and External theorem are literature inputs. Historical Lean coverage records are not a substitute for item-by-item correspondence of the current draft.
 
-| 类型 | 标题 | 标签与正文位置 |
+| Type | Title | Tags and text position |
 |---|---|---|
 | lemma | Transposition | [lem:transpose](../manuscript/main.tex#L179) |
 | proposition | Exact source counts | [prop:counts](../manuscript/main.tex#L226) |

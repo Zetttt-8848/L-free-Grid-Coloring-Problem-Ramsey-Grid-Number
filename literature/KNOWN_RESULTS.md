@@ -1,75 +1,75 @@
-# 学界已有成果与本项目的关系
+# The relationship between existing achievements in academia and this project
 
-核查日期：2026-11-05。以下是已核查的核心原始文献地图，不是对全部文献的穷尽调查。数值界更新必须有可核查原始出处、版本和证明位置。
+Verification date: 2026-11-05. The following is a map of the core original literature that has been verified and is not an exhaustive survey of the entire literature. Numerical bounds updates must have verifiable original source, version, and proven location.
 
-## 先统一问题约定
+## First unify the problem agreement
 
-本项目固定正步长、等长两条腿的定向 L：
+This project fixes the positive step length and the orientation L of two legs of equal length:
 
 ```math
 \mathcal L(x,y;d)=\{(x,y),(x+d,y),(x+d,y+d)\},\qquad d>0.
 ```
 
-部分文献写成另一个朝向，坐标转置把两者对应，因此其正步长 L 数相同。一般三点直角形、允许任意长宽的角、密度版本及三维 corners 不能直接混同。方向转换证明见本项目正文的 Transposition 引理。
+Some documents are written in another orientation, and the coordinate transposition corresponds to the two, so the number of positive steps L is the same. Generally, three-point right angles, angles that allow arbitrary length and width, density versions and three-dimensional corners cannot be directly confused. For the proof of direction conversion, see the Transposition Lemma in the main text of this project.
 
-## 1. 两色精确值：已解决的基准
+## 1. Two-Color Exact Value: Solved Benchmark
 
 ```math
 R_2(\mathcal L)=5.
 ```
 
-来源：Maria Axenovich 与 Jacob Manske，*On monochromatic subsets of a rectangular grid*，Integers 8 (2008), A21。[期刊原文](https://math.colgate.edu/~integers/i21/i21.pdf)。另可与下面 Canakci 等文献的 Theorem 2.2 交叉核对。
+Source: Maria Axenovich and Jacob Manske, *On monochromatic subsets of a rectangular grid*, Integers 8 (2008), A21. [Journal original text](https://math.colgate.edu/~integers/i21/i21.pdf). It can also be cross-checked with Theorem 2.2 of Canakci et al.'s literature below.
 
-用途：核验方向、索引和小规模实现。不能将两色证明直接视为三色答案。
+Purpose: Verifying direction, indexing, and small-scale implementations. The two-color proof cannot be viewed directly as a three-color answer.
 
-## 2. 三色下界与早期上界
+## 2. Three-color lower bound and early upper bound
 
-Canakci、Christenson、Fleischman、Gasarch、McNabb、Smolyak 的 [2023 预印本 v1](https://arxiv.org/html/2312.01159v1) 在 Theorem 2.3 给出上界2593，Theorem 3.1 给出区间21至2593。下界来自完整20×20正常三染色，而不是搜索未找到反例。
+[2023 preprint v1 by Canakci, Christenson, Fleischman, Gasarch, McNabb, Smolyak](https://arxiv.org/html/2312.01159v1)Theorem 2.3 gives an upper bound of 2593, and Theorem 3.1 gives the interval 21 to 2593. The lower bound comes from the full 20×20 normal tricolor, rather than from searching for no counterexamples found.
 
 ```math
 21\le R_3(\mathcal L)\le2593.
 ```
 
-研究价值：对角线消色、强迫关系及 SAT 构造。2593是历史上界，已被下一项改进，不应在项目首页标为当前基准上界。
+Research value: diagonal achromaticity, forced relations, and SAT constructs. 2593 is a historical upper bound that has been improved by the next project and should not be marked as the current benchmark upper bound on the project homepage.
 
-## 3. 三色已核查的更强上界
+## 3. Three-color verified stronger upper bound
 
-Mammel、Smith、Yerger，*Ramsey Theory on the Integer Grid: The “L” Problem*，Integers 25 (2025), A21，Theorem 6：
+Mammel,Smith,Yerger,*Ramsey Theory on the Integer Grid: The “L” Problem*,Integers 25 (2025), A21,Theorem 6:
 
 ```math
 R_3(\mathcal L)\le493.
 ```
 
-[期刊原文](https://math.colgate.edu/~integers/z21/z21.pdf)；[arXiv版本](https://arxiv.org/abs/2502.05162)。方法使用区间计数和 Golomb 尺约束。论文致谢将772与493的证明归功于审稿人。期刊版与预印本对中间数值有表述差别，本库只将最终 Theorem 6 的493作为比较基准。arXiv版另外讨论下界及搜索策略。
+[Journal original text](https://math.colgate.edu/~integers/z21/z21.pdf);[arXiv version](https://arxiv.org/abs/2502.05162). The method uses interval counting and Golomb ruler constraints. The paper acknowledgments attribute the proofs of 772 and 493 to the reviewers. There are differences in the representation of intermediate values ​​between the journal version and the preprint version. This library only uses the final Theorem 6 value of 493 as the benchmark for comparison. The arXiv version also discusses lower bounds and search strategies.
 
-合并已核查上下界，协作的无条件数值起点是：
+Merging the checked upper and lower bounds, the unconditional numerical starting point for collaboration is:
 
 ```math
 21\le R_3(\mathcal L)\le493.
 ```
 
-该区间仍不等于精确值。本次定向检索未核实更强的后续无条件界，不能据此断言不存在后续文献。该文提出的22×22正常着色猜测也不应当成已存在的构造。
+The range is still not equal to the exact value. This directed search did not verify the stronger subsequent unconditional bound, and it cannot be concluded based on this that there is no subsequent literature. The 22×22 normal coloring prediction proposed in this article should not become an existing structure.
 
-## 4. 一般密度工具：准多项式 corners 定理
+## 4. General density tools: quasi-polynomial corners theorem
 
-Jaber、Liu、Lovett、Ostuni、Sawhney，*Quasipolynomial bounds for the corners theorem*，[完整版本 v2，Theorem 1.1](https://arxiv.org/html/2504.07006v2)。对于无非零步长 standard corner 的有限阿贝尔群平方子集，有绝对常数 c>0，使
+Jaber, Liu, Lovett, Ostuni, Sawhney, *Quasipolynomial bounds for the corners theorem*, [Full version v2, Theorem 1.1](https://arxiv.org/html/2504.07006v2). For the finite square subset of the Abelian group with no non-zero step size standard corner, there is an absolute constant c>0, such that
 
 ```math
 |A|\le |G|^2\exp\!\left(-c(\log |G|)^{1/600}\right).
 ```
 
-标准角为 (x,y)、(x+d,y)、(x,y+d)。该定理本身不是本项目定向 L 的小色数数值界。正步长处理、反射、配对颜色及无绕回嵌入需要另证。本项目附录给出一条转化，导出关于颜色数的一般增长界，但不直接把493改小。
+Standard angles are (x,y), (x+d,y), (x,y+d). The theorem itself is not a numerical bound on small color numbers for the orientation L of this project. Positive step processing, reflection, paired colors and wraparound-free embedding require additional certification. The appendix of this project provides a transformation to derive a general growth bound for the number of colors, but does not directly change 493 to a smaller value.
 
-## 5. 相关数学输入与阅读顺序
+## 5. Related math input and reading order
 
-- Graham–Solymosi，*Monochromatic equilateral right triangles on the integer grid* (2006)：该网格着色问题的重要背景。[出版者 DOI](https://doi.org/10.1007/3-540-33700-8_7)。本轮未重新审计其全部定量推导。
-- Ajtai–Szemerédi 的经典 corners 工作：密度路线的背景输入，具体版本见 bibliography 中 AS74。
-- Sidon/Golomb 理论：用于单色纤维约束；binary Sidon 输入和 Wood 的 no-carry 转化与立方体讨论相关。[Wood原文入口](https://arxiv.org/abs/math/0509455)。具体容量与权重假设须回到项目正文和其引用，不能由普通 Sidon 定义自动推出全局源界。
+- Graham–Solymosi, *Monochromatic equilateral right triangles on the integer grid* (2006): Important background on this grid coloring problem. [Publisher DOI](https://doi.org/10.1007/3-540-33700-8_7). Its entire quantitative derivation was not re-audited in this round.
+- Classic corners work by Ajtai–Szemerédi: background input for density routes, see AS74 in bibliography for a specific version.
+- Sidon/Golomb theory: for monochromatic fiber constraints; binary Sidon input and Wood's no-carry transformation are relevant to the cube discussion. [Wood original entry](https://arxiv.org/abs/math/0509455). The specific capacity and weight assumptions must be returned to the project text and its references, and the global source boundary cannot be automatically derived from ordinary Sidon definitions.
 
-建议先读 L 问题的两篇数值文献，再沿“全局完成格兼容性”与“密度/结构增量”两个方向读背景。已有理论是检验新机制的基准，不等于禁止使用前人的定理。
+It is recommended to read two numerical literature on the L problem first, and then read the background along the two directions of "global completion lattice compatibility" and "density/structure increment". Existing theories are the benchmark for testing new mechanisms, which does not mean that the use of previous theorems is prohibited.
 
-## 6. 不得混入学界数值基准的项目结论
+## 6. Project conclusions that must not be mixed into industry numerical benchmarks
 
-本项目的源计数、Golomb 联合计数、六标记分类和结构化源界见当前数学正文。它们的优先权未由本次导入自动确认。
+Source counting, Golomb union counting, six-label classification, and structured source bounds for this project are provided in the Current Mathematics text. Their priority is not automatically confirmed by this import.
 
-S21下379及98777、存在型G9下361，都是保留未证假设的条件推论。五维立方体排除只是一项必要条件。F11(5)、F12(7)、F13(17)已被项目中的完整着色证书否定。上述数字或失败前提均不能替换学界无条件区间。
+379 and 98777 under S21 and 361 under existential G9 are all conditional inferences that retain unproven assumptions. The five-dimensional cube exclusion is only a necessary condition. F11(5), F12(7), F13(17) have been negated by the full tinting certificate in the project. Neither the above numbers nor the failed premise can replace the unconditional interval in academia.
