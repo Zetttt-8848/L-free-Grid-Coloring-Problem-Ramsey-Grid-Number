@@ -172,11 +172,22 @@ fibers, which share completion cells.
 
 **Cheapest discriminating test.** First search `exploration/` for existing
 enumerations of small binary sources and reuse any that are complete. Then
-compute exactly, for small `L`, the
-maximum `f(L)` of `|A|` over `A` in `{0,...,L}` with properly two-colorable
-strict source, together with the extremal sets, and compare the growth with
-`sqrt(42 L)` (S21) and with the elementary cap. If `f(L)^2 / L` stays
-bounded on the computed range the linear conjecture gains support and the
-extremal sets show which structure a proof must exploit; if it grows, S21 is
-in doubt and the exponent question becomes the primary target. Either result
-changes the plan; a larger scan of weight families would not.
+compute exactly, for small `L`, the maximum `f(L)` of `|A|` over `A` in
+`{0,...,L}` with properly two-colorable strict source, together with the
+extremal sets. What this can and cannot decide:
+
+- It tests the **constant**: a single `A` with `M(A) > 21 L(A)` refutes S21,
+  and the trend of `max M/L` shows whether small coefficients are plausible.
+- It exposes **extremal structure**, which is what a proof of any linear
+  bound would have to exploit.
+- It cannot settle the **exponent**: the elementary cap and `sqrt(42 L)`
+  separate only at spans far beyond exhaustive reach. For the exponent the
+  informative experiment is structural, not exhaustive: take the densest
+  known binary sources and ask whether any construction achieves
+  `|A| >= L^gamma` with `gamma > 1/2`. A construction would redirect the
+  four-color program (linear bounds would be false); repeated failure, with
+  the reason for each failure recorded, indicates which compatibility
+  constraint a proof should formalize.
+
+A larger scan of weight families or profiles would not change any of these
+conclusions.

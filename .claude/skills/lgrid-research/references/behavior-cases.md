@@ -19,3 +19,6 @@ is a failure. Record date, commit, and outcome in the table at the end.
 
 | Date | Commit | Method | Outcome |
 |---|---|---|---|
+| 2026-11-13 | `8222226` plus refresh-script fix | `claude -p` (CLI 2.1.322) started in the primary working tree | Session init listed `lgrid-research`, `lgrid-invent`, `lgrid-verify` among available skills: **discovery observed**. Every model turn returned "Not logged in", so no behavior was observed by this method. |
+| 2026-11-13 | same | Seven cold subagents started in the primary working tree (at `080822b`, behind the checkpoint), each given only the case prompt | All seven cases made the listed decisions (case 2 wrote the five-link card and named a discriminating test, but stated that it had not searched `research/` for earlier multi-diagonal attempts). In every run the agent read `CLAUDE.md`/`AGENTS.md`, read the routed `SKILL.md` files, and ran the refresh script. The Skill tool did **not** list the project skills inside subagents (the parent session's skill registry predates their creation), so activation was through the instruction route, not the Skill tool. |
+| 2026-11-13 | same | Scratch clone with the checkpoint ref advanced, one pinned ref deleted, one unmerged ref added | Refresh script exited 1 and listed the moved ref with files to reread, the missing ref, and the unpinned branch. |

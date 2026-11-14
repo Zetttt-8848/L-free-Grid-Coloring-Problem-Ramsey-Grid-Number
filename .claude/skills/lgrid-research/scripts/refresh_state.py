@@ -6,9 +6,11 @@ affected evidence. Standard library only.
 
     python .claude/skills/lgrid-research/scripts/refresh_state.py [--fetch] [--json]
 
-Exit status 0 means every pin matches; 1 means something is stale or
-missing and the corresponding lines of references/state.md must be
-re-derived before they are relied on.
+Exit status 0 means every pin matches; 1 means a pin moved, disappeared, or
+an unpinned branch carries new commits, so the corresponding lines of
+references/state.md must be re-derived before they are relied on. Notices
+(for example a working tree that is behind the checkpoint) do not change the
+exit status: the snapshot is still valid, but local files may predate it.
 """
 import argparse
 import json
@@ -44,7 +46,7 @@ def main():
     if args.fetch:
         git(root, "fetch", "--all", "--prune", check=False)
 
-    report = {"snapshot_date": pins["snapshot_date"], "stale": []}
+    report = {"snapshot_date": pins["snapshot_date"], "stale": [], "notices": []}
     head = rev(root, "HEAD")
     _, branch = git(root, "rev-parse", "--abbrev-ref", "HEAD")
     _, dirty = git(root, "status", "--porcelain")
@@ -56,9 +58,10 @@ def main():
     code, _ = git(root, "merge-base", "--is-ancestor", checkpoint["commit"], "HEAD", check=False)
     report["head"]["contains_pinned_checkpoint"] = code == 0
     if code != 0:
-        report["stale"].append(
+        report["notices"].append(
             "HEAD does not contain the pinned research checkpoint: files in this "
-            "working tree may predate the recorded results. Read evidence with "
+            "working tree may predate the recorded results (state.md describes the "
+            "checkpoint, not this tree). Read evidence with "
             f"`git show {checkpoint['commit'][:12]}:<path>` or use a worktree on the checkpoint.")
 
     moved = []
@@ -100,11 +103,20 @@ def main():
 
     skill_branch = pins.get("skill_branch")
     if skill_branch and rev(root, skill_branch):
-        code, names = git(root, "diff", "--name-only", skill_branch, "--", *pins["skill_paths"], check=False)
-        differing = names.splitlines()
+        # Compare contents directly so that untracked copies (a working tree on
+        # a branch that does not track the skills) are handled; whitespace and
+        # line endings are ignored.
+        _, names = git(root, "ls-tree", "-r", "--name-only", skill_branch, "--", *pins["skill_paths"])
+        differing = []
+        for name in names.splitlines():
+            done = subprocess.run(["git", "show", f"{skill_branch}:{name}"], cwd=root, capture_output=True)
+            local = Path(root) / name
+            here = local.read_bytes() if local.is_file() else None
+            if here is None or here.split() != done.stdout.split():
+                differing.append(name)
         report["skill_copy_differs_from_branch"] = differing
         if differing:
-            report["stale"].append(
+            report["notices"].append(
                 f"Skill files in this working tree differ from {skill_branch}: "
                 + ", ".join(differing[:8]) + ". Reconcile before editing either copy.")
 
@@ -123,6 +135,8 @@ def main():
         for entry in new_refs:
             flag = "merged into checkpoint" if entry["already_in_checkpoint"] else "NOT in checkpoint"
             print(f"NEW    {entry['ref']} {entry['commit'][:12]} ({flag})")
+        for line in report["notices"]:
+            print(f"NOTICE {line}")
         if report["stale"]:
             print("\nSTALE - treat the affected lines of references/state.md as unverified:")
             for line in report["stale"]:
