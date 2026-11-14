@@ -1,4 +1,6 @@
-# A finite certificate for the directed L at side 462
+# Finite certificates for directed L-grid Ramsey numbers
+
+The [three-color proof at side 461](THREE_COLOR_461.md) gives **$21\le R_3\le461$**. It combines a [forced-color exclusion](NO_OPTIMAL_461.md) with a complete count of 35-letter diagonal words. The side-462 proof below uses fewer external Golomb inputs.
 
 The [finite Sidon bound](FOUR_COLOR_SIDON.md) gives **21,953,510** for four colors using the Carter, O'Bryant and Tao theorem. The accompanying [recursive span proof](FOUR_COLOR.md) gives a self-contained four-color upper bound of **21,987,409**. The fixed-word certificate below tests the next three-color obstruction. The [global occurrence certificate](RULER_OCCURRENCES.md) also restricts the entire 461 diagonal to at most two optimal completion classes.
 
@@ -132,4 +134,4 @@ py -3.11 -m ziglang cc -std=c99 -O3 verify_462.c -o verify_462.exe
 .\verify_462.exe
 ~~~
 
-For independent inspection of the explicit completion witnesses and the four-color matching calculation, run **verify_followups.py** using Python 3.10 or later in the same directory. It reads **completion_witnesses.json** and the existing **r4_profile_endpoint_21991300.json**. No solver is needed to verify these witnesses. **verify_bounds.py** reproduces the preceding 463 and four-color computations. The new three-color proof uses no SAT result, no four-color input, and no assumption on the optimal 24-mark ruler's shape.
+For independent inspection of the explicit completion witnesses and the four-color matching calculation, run **verify_followups.py** using Python 3.10 or later in the same directory. It reads **completion_witnesses.json** and the existing **r4_profile_endpoint_21991300.json**. No solver is needed to verify these witnesses. **verify_bounds.py** reproduces the preceding 463 and four-color computations. The side-462 proof uses the span bounds alone. The side-461 proof also uses uniqueness of the optimal ruler and the separate forced-color verifier.

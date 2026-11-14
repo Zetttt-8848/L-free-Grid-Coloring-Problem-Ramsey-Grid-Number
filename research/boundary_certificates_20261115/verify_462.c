@@ -96,8 +96,8 @@ static Score evaluate(const char *word, unsigned count, int with_shape) {
     return sum;
 }
 
-static Score setup(unsigned n) {
-    length = n - 425;
+static Score setup(unsigned n, unsigned minimum_span) {
+    length = n - minimum_span;
     for (unsigned i = 0; i <= 84; i++) {
         weight[i] = 0;
         for (Score j = 1; j + i <= 85; j++)
@@ -125,7 +125,7 @@ static void require(int condition, const char *message) {
 /* In the smaller test, count every full word below a chosen threshold by literal
    loops and independently by the partial-word bound and symmetry factors. */
 static void self_test(void) {
-    setup(432); /* shape of the search only, with 7 letters */
+    setup(432,425); /* shape of the search only, with 7 letters */
     layers = 6;
     cutoff = INT64_C(2000000000);
     covered = remaining = visits = cuts = 0;
@@ -144,8 +144,8 @@ static void self_test(void) {
            literal, powers_of_three[length]);
 }
 
-static void certificate(unsigned n, unsigned use_layers, Score target) {
-    Score base = setup(n);
+static void certificate(unsigned n, unsigned minimum_span, unsigned use_layers, Score target) {
+    Score base = setup(n,minimum_span);
     layers = use_layers; cutoff = target;
     covered = remaining = visits = cuts = 0;
     search(0, 1, smaller(length,2*layers));
@@ -159,16 +159,22 @@ static void certificate(unsigned n, unsigned use_layers, Score target) {
            n,layers,length,covered,visits,cuts,remaining,base,target,base+3*target);
 }
 
-int main(void) {
+int main(int argc, char **argv) {
     self_test();
-    certificate(463,10,INT64_C(1322324010));
+    if (argc == 2 && strcmp(argv[1], "--461") == 0) {
+        /* The stricter 24-mark span uses verify_no_optimal.py at this side. */
+        certificate(461,426,34,INT64_C(3274170394));
+        return 0;
+    }
+    require(argc == 1, "usage: verify_462 [--461]");
+    certificate(463,425,10,INT64_C(1322324010));
     require(evaluate("00111111110000000000000000000000000011",10,0)
             == INT64_C(1322324010), "463 equality witness");
-    certificate(462,36,INT64_C(2500000000));
-    certificate(462,23,INT64_C(2492241107));
+    certificate(462,425,36,INT64_C(2500000000));
+    certificate(462,425,23,INT64_C(2492241107));
     require(evaluate("0002222111220111101020020020020121121",22,1)
             == INT64_C(2488214141), "22-layer negative witness");
-    Score base = setup(461);
+    Score base = setup(461,425);
     const char *word = "000222211111100020211022002112022110";
     Score loss = evaluate(word,35,1);
     require(loss == INT64_C(3451852478) && base+3*loss == -INT64_C(1013624558),

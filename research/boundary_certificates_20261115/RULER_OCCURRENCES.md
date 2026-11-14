@@ -1,6 +1,6 @@
 # At most two optimal completion classes on the entire 461 diagonal
 
-A proper three-color square of side at most 461 has **at most two completion classes of size 24 and span exactly 425 in total over all positive shifts**. Each orientation supplies at most one. This strengthens the earlier bound of 56 at comparable sides. The proof uses the external uniqueness of the optimal 24-mark Golomb ruler and a finite binary-source certificate covering 595 placement patterns. The three-color upper bound in the PR remains 462 pending the universal side-461 count. [Earlier occurrence-count argument](../../research/global_counting_20261108/multiscale/THEOREM.md) · [OGR-24 completion announcement](https://blogs.distributed.net/2004/11/)
+A proper three-color square of side at most 461 has **at most two completion classes of size 24 and span exactly 425 in total over all positive shifts**. Each orientation supplies at most one. This strengthens the earlier bound of 56 at comparable sides. The proof uses the external uniqueness of the optimal 24-mark Golomb ruler and a finite binary-source certificate covering 595 placement patterns. The subsequent [single-class exclusion](NO_OPTIMAL_461.md) and [35-letter certificate](THREE_COLOR_461.md) give the three-color upper bound 461. [Earlier occurrence-count argument](../../research/global_counting_20261108/multiscale/THEOREM.md) · [OGR-24 completion announcement](https://blogs.distributed.net/2004/11/)
 
 ## Occurrences in one diagonal word
 

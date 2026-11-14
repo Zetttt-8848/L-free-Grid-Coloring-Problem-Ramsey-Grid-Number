@@ -7,3 +7,5 @@ The rank bounds currently estimate the inner positive-difference multiplicities 
 ## Three colors and both boundaries at 461
 
 An extremal class gives a pair of full-diagonal occurrences of the same oriented optimal ruler. Independent choices for its color and orientation at different distances discard this fact. Fix both orientation colors across all distances, and test extremal endpoint equality only in those colors. For each distance at most one exact class of each orientation can occur. A second constraint uses the explicit contribution to the convolution variance at the two ends, where the prefix or suffix already determines the color sums. The implication to a new bound requires exhaustive coverage. The immediate falsification test is to search for a pair of 36-letter words surviving both conditions and measure how much of a preliminary single-end list is excluded.
+
+The single-class exclusion supersedes this search at side 461. See the [forced-color count](NO_OPTIMAL_461.md) and the [complete boundary certificate](THREE_COLOR_461.md). The four-color calculation above gives [21,953,510](FOUR_COLOR_SIDON.md).
