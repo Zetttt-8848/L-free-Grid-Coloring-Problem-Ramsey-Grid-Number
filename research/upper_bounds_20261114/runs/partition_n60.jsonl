@@ -1,0 +1,1 @@
+{"problem": "partition", "n": 60, "k": 3, "vars": 5490, "clauses": 218011, "sat": true, "seconds": 47.539, "checked": true, "classes": "012012002210121110100221000121102202021120201220210122011011"}

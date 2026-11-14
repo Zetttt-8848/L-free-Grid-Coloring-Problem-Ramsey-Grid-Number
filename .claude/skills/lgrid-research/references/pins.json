@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-13",
+  "snapshot_date": "2026-11-14",
   "remote": "origin",
   "research_checkpoint": {
     "ref": "origin/codex/global-counting-research-20261108",
@@ -16,7 +16,8 @@
     "origin/codex/three-cube-forcing-minimum": "d6755b48f1fb6e786cc9b480b0d40139f3da2140",
     "origin/codex/recover-claude-calibration-20261113": "0910ed1f08e3d0de023ea2b65c9c1d38355b7f49",
     "origin/codex/english-main-20261113": "3fbed5fbf6f0513f965a626a6f6274645732eeaa",
-    "origin/codex/english-only-20261113": "ecd65e8d086d7b6bc55b827b574f1872a1c517db"
+    "origin/codex/english-only-20261113": "ecd65e8d086d7b6bc55b827b574f1872a1c517db",
+    "origin/claude/upper-bound-skills-20261113": "6630b5e27a07a35ac5a06af325551265a692daf6"
   },
   "watched_paths": [
     "README.md",
