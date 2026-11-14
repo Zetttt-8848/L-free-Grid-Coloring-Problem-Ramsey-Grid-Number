@@ -1,0 +1,73 @@
+{
+  "conditional": [
+    {
+      "q": 10,
+      "side": 47441,
+      "margin_positive": true
+    },
+    {
+      "q": 21,
+      "side": 98733,
+      "margin_positive": true
+    },
+    {
+      "q": 25,
+      "side": 117345,
+      "margin_positive": true
+    },
+    {
+      "q": 50,
+      "side": 233437,
+      "margin_positive": true
+    },
+    {
+      "q": 100,
+      "side": 465093,
+      "margin_positive": true
+    },
+    {
+      "q": 250,
+      "side": 1158789,
+      "margin_positive": true
+    },
+    {
+      "q": 500,
+      "side": 2313601,
+      "margin_positive": true
+    },
+    {
+      "q": 1000,
+      "side": 4621577,
+      "margin_positive": true
+    },
+    {
+      "q": 2000,
+      "side": 9235201,
+      "margin_positive": true
+    },
+    {
+      "q": 3000,
+      "side": 13847517,
+      "margin_positive": true
+    },
+    {
+      "q": 4000,
+      "side": 18459149,
+      "margin_positive": true
+    },
+    {
+      "q": 4500,
+      "side": 20764797,
+      "margin_positive": true
+    }
+  ],
+  "status": "PASS",
+  "threshold_margin_positive": true,
+  "elementary": {
+    "golomb_cap_plus_one_excluded": true,
+    "binary_cap_plus_one_excluded": true,
+    "ternary_cap_plus_one_excluded": true,
+    "pigeonhole_class_size": 5512307,
+    "pigeonhole_exceeds_ternary_cap": true
+  }
+}

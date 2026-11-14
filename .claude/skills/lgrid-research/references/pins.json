@@ -1,0 +1,36 @@
+{
+  "snapshot_date": "2026-11-13",
+  "remote": "origin",
+  "research_checkpoint": {
+    "ref": "origin/codex/global-counting-research-20261108",
+    "commit": "dc1cbe6daf7d9816329217a511741fbeabd726b3"
+  },
+  "refs": {
+    "origin/main": "1231d436d1990f22a9f421246c5b8fc51b66750f",
+    "origin/codex/global-counting-research-20261108": "dc1cbe6daf7d9816329217a511741fbeabd726b3",
+    "origin/codex/kernel-compatibility-research-20261108": "5b5db22c3c65123193cb31f2aa5bd949b3075e1a",
+    "origin/codex/coupled-budget-research-20261108": "654cc044cad3d8ca6079a1931565a6ec44dcf2b5",
+    "origin/codex/boundary-extension-research-20261108": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
+    "origin/codex/three-cube-pair-repair": "a53970c49472813ac65d37428074e5c530134e76",
+    "origin/codex/three-cube-boundary-obstructions": "7f8e8bfc4d5c8d46664764c6ca0a534bd6a90962",
+    "origin/codex/three-cube-forcing-minimum": "d6755b48f1fb6e786cc9b480b0d40139f3da2140",
+    "origin/codex/recover-claude-calibration-20261113": "0910ed1f08e3d0de023ea2b65c9c1d38355b7f49",
+    "origin/codex/english-main-20261113": "3fbed5fbf6f0513f965a626a6f6274645732eeaa",
+    "origin/codex/english-only-20261113": "ecd65e8d086d7b6bc55b827b574f1872a1c517db"
+  },
+  "watched_paths": [
+    "README.md",
+    "docs/ROADMAP.md",
+    "docs/OPEN_PROBLEMS.md",
+    "docs/RESULTS_INDEX.md",
+    "literature/KNOWN_RESULTS.md",
+    "manuscript/main.tex",
+    "research"
+  ],
+  "skill_paths": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".claude/skills"
+  ],
+  "skill_branch": "claude/upper-bound-skills-20261113"
+}

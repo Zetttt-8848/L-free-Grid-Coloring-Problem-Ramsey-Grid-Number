@@ -1,5 +1,13 @@
 # Research route: Original structural method, solve R3 first
 
+> **Objective update, 2026-11-13.** By direction of the project owner, the
+> governing objective is now to improve the upper bounds of both `R_3` and
+> `R_4`, with four-color upper-bound research authorized immediately. Where
+> this roadmap defers four colors until `R_3` is resolved, the update takes
+> precedence; see [AGENTS.md](../AGENTS.md). The unconditional four-color
+> baseline and its evidence are summarized in
+> [the research state snapshot](../.claude/skills/lgrid-research/references/state.md).
+
 ## Overall goal and sequence
 
 The long-term first goal: continuously improve the lower bound and lower the upper bound of R3(L), ​​finally determine the precise value, and provide matching construction and impossibility proof. Only after completing this goal can we start the systematic upper and lower bound research on R4(L). When R3 has not yet been solved, R4 only retains the existing background and conditional inferences.
