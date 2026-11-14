@@ -1,6 +1,6 @@
 # A finite certificate for the directed L at side 462
 
-The [finite Sidon bound](FOUR_COLOR_SIDON.md) gives **21,953,510** for four colors using the Carter, O'Bryant and Tao theorem. The accompanying [recursive span proof](FOUR_COLOR.md) gives a self-contained four-color upper bound of **21,987,409**. The fixed-word certificate below tests the next three-color obstruction.
+The [finite Sidon bound](FOUR_COLOR_SIDON.md) gives **21,953,510** for four colors using the Carter, O'Bryant and Tao theorem. The accompanying [recursive span proof](FOUR_COLOR.md) gives a self-contained four-color upper bound of **21,987,409**. The fixed-word certificate below tests the next three-color obstruction. The [global occurrence certificate](RULER_OCCURRENCES.md) also restricts the entire 461 diagonal to at most two optimal completion classes.
 
 15 November 2026. **PROVED with external inputs** G(24) >= 425 and G(25) >= 480. For the directed shape
 $$
