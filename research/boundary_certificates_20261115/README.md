@@ -1,5 +1,7 @@
 # A finite certificate for the directed L at side 462
 
+The accompanying [recursive span proof](FOUR_COLOR.md) gives a self-contained four-color upper bound of **21,987,409**. The fixed-word certificate below tests the next three-color obstruction.
+
 15 November 2026. **PROVED with external inputs** G(24) >= 425 and G(25) >= 480. For the directed shape
 \[
  (x,y),\quad (x+d,y),\quad (x+d,y+d), \qquad d>0 ,
@@ -81,6 +83,14 @@ At 461 there are 36 letters and 35 nonzero shifts. Even after imposing the extra
 has full loss **3,501,823,174** and margin **−863,712,470**. The loss needed is **3,789,727,331**. This gives a counterexample to the universal loss inequality for this side, kernel, and prefix model. It is a test word for the diagonal.
 
 I also checked whether that word triggers the local three-color requests of PR 7. In the triangular grid of its 36 positions, prescribe the diagonal and every cell whose two diagonal endpoints have equal colors. This gives 234 prescribed cells. The supplied witness colors them and chooses a color for each remaining mixed cell. All **370** triples with three prescribed cells and all **1,887** triples with exactly two prescribed cells are proper. Thus even the enlarged family containing every request from two prescribed cells is consistent on this word. Triples with two or three mixed cells remain available to a stronger argument.
+
+## Two mixed cells change the fixed-word result
+
+For the 36-letter word **122120100110100020212021121202210012**, the included source assignment and mixed-cell colors satisfy every directed triple with at least two prescribed cells. Here a prescribed cell has equal diagonal endpoint colors. Now include all directed triples with **at least one** prescribed cell and allow all the source and mixed colors to be chosen afresh. This finite instance is **UNSAT with a checked RUP refutation**. The word is excluded as the prefix of a proper square. Other 36-letter words remain possible under this test.
+
+The triangle has 666 positions, with exactly one of three colors at each. The diagonal is fixed to the displayed word. Each strict cell with equal endpoint colors must avoid that common color. For each directed triple having at least one prescribed position include one three-negative-literal clause per color. This gives 1,998 variables and 19,587 clauses. For each triple the left endpoint in the lower triangle and its positive step determine its other two positions. There is no imposed geometric symmetry. A proper full square extending the word restricts to a satisfying triangle assignment.
+
+To reproduce, run **python verify_mixed.py /path/to/drat-trim**. The checker regenerates the CNF from the word, verifies its SHA-256 and the decompressed proof digest, and requires the external checker to accept in RUP-only mode. The original discovery used CaDiCaL 1.9.5 via PySAT. The proof was reduced and verified again with drat-trim at commit **2e3b2dc0ecf938addbd779d42877b6ed69d9a985**. On Windows the same C source was compiled with **-Dgetc_unlocked=getc**. Compressed proof SHA-256 is **b584e45fe8280944391f80f2384deadcb4674008f02d63a0fa37e3d46540b623**. [Proof-checker source](https://github.com/marijnheule/drat-trim/tree/2e3b2dc0ecf938addbd779d42877b6ed69d9a985)
 
 ## Two follow-up checks from the plan
 
