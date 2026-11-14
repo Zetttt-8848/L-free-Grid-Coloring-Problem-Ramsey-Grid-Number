@@ -11,6 +11,15 @@ Latest Research Catalog Results: [Global Count](../research/global_counting_2026
 | PROVED, using external OGR uniqueness and span input | Extreme shape span cost, reducing each of the six types of capacity from p=428 to 431 by 1; stride length translation overlap budget | [Span and overlap count](../research/global_counting_20261108/multiscale/THEOREM.md) |
 | UNDECIDED | A smaller Ramsey upper bound than 464 deduced from the above global count | [Independent review and scope](../research/global_counting_20261108/review/REVIEW.md) |
 
+Four colors (added 2026-11-13; see [state snapshot](../.claude/skills/lgrid-research/references/state.md)):
+
+| Status | Result | Certification |
+|---|---|---|
+| PROVED per repository history; certificate arithmetic rerun 2026-11-13; inherited Round-2 lemmas not re-audited | R4 <= 21991300 | [Round-3 report](../exploration/research_round3/four/R3_R4_REPORT.md), [review](../exploration/research_round3/audits/fresh_astra/REVIEW.md) |
+| PROVED, elementary; not independently reviewed | R4 <= 22049225 | [Four-color sensitivity note, section 3](../research/four_color_sensitivity_20261113/README.md) |
+| CONDITIONAL on a binary-source bound M <= qL | R4 <= N(q) (table); any proved q <= 4765 on spans up to 21991297 improves R4 | [Same note, sections 1-2](../research/four_color_sensitivity_20261113/README.md) |
+| CONDITIONAL on S21 | R4 <= 98777 | manuscript, thm:s21four |
+
 It has been proved previously that [the six types of perfective cases count together](../research/kernel_compatibility_20261108/README.md):
 
 | Status | Result | Certification |

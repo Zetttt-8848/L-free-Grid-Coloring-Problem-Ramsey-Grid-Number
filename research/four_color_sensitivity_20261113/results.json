@@ -1,0 +1,135 @@
+{
+  "hypothesis": "H(q, n-2): M(A) <= q*L(A) for properly 2-colorable strict sources of span <= n-2",
+  "conditional_table": [
+    {
+      "q": 10,
+      "certified_side": 47441,
+      "t": 419,
+      "margin": 2251698220,
+      "span_range_needed": 47439,
+      "ratio_side_over_q": 4744.1,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 21,
+      "certified_side": 98733,
+      "t": 601,
+      "margin": 5990823972,
+      "span_range_needed": 98731,
+      "ratio_side_over_q": 4701.571,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 25,
+      "certified_side": 117345,
+      "t": 654,
+      "margin": 7758506556,
+      "span_range_needed": 117343,
+      "ratio_side_over_q": 4693.8,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 50,
+      "certified_side": 233437,
+      "t": 921,
+      "margin": 60023835954,
+      "span_range_needed": 233435,
+      "ratio_side_over_q": 4668.74,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 100,
+      "certified_side": 465093,
+      "t": 1299,
+      "margin": 178898713350,
+      "span_range_needed": 465091,
+      "ratio_side_over_q": 4650.93,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 250,
+      "certified_side": 1158789,
+      "t": 2047,
+      "margin": 1229299193196,
+      "span_range_needed": 1158787,
+      "ratio_side_over_q": 4635.156,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 500,
+      "certified_side": 2313601,
+      "t": 2891,
+      "margin": 4688782922016,
+      "span_range_needed": 2313599,
+      "ratio_side_over_q": 4627.202,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 1000,
+      "certified_side": 4621577,
+      "t": 4084,
+      "margin": 18284229498120,
+      "span_range_needed": 4621575,
+      "ratio_side_over_q": 4621.577,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 2000,
+      "certified_side": 9235201,
+      "t": 5771,
+      "margin": 75594799912764,
+      "span_range_needed": 9235199,
+      "ratio_side_over_q": 4617.6,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 3000,
+      "certified_side": 13847517,
+      "t": 7065,
+      "margin": 190318574393346,
+      "span_range_needed": 13847515,
+      "ratio_side_over_q": 4615.839,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 4000,
+      "certified_side": 18459149,
+      "t": 8157,
+      "margin": 119166396981606,
+      "span_range_needed": 18459147,
+      "ratio_side_over_q": 4614.787,
+      "side_minus_one_scanned_margin_positive": false
+    },
+    {
+      "q": 4500,
+      "certified_side": 20764797,
+      "t": 8651,
+      "margin": 190367929436676,
+      "span_range_needed": 20764795,
+      "ratio_side_over_q": 4614.399,
+      "side_minus_one_scanned_margin_positive": false
+    }
+  ],
+  "notes": [],
+  "threshold": {
+    "side": 21991299,
+    "largest_q_with_positive_margin": 4765,
+    "t": 8903,
+    "margin": 247484481219945548,
+    "first_q_without_scanned_certificate": 4766
+  },
+  "elementary_unconditional": {
+    "n": 22049225,
+    "golomb_cap": 4764,
+    "binary_cap": 459020,
+    "ternary_cap": 5512306,
+    "needed": 5512307,
+    "excluded": true,
+    "t": [
+      296892,
+      31870,
+      7923
+    ],
+    "archived_bound_for_comparison": 21991300
+  }
+}
