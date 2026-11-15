@@ -1,5 +1,25 @@
 # Coverage record
 
+## 2026-11-14, Codex binary-source round 3
+
+Base fdaa1f05ad8fc12f4f890117fde1b25e8b6d3d83. State refresh with fetch found
+no new completed external Claude package. No all-branch proof audit is claimed.
+
+Read: governing skills, current state and round-2 report; inherited
+FOUR_COLOR.md, FOUR_COLOR_WINDOW.md, FOUR_COLOR_DOUBLE_WINDOW.md,
+FOUR_COLOR_EDGE_VARIANCE.md, FOUR_COLOR_TWENTY.md and their consumer scripts;
+the complete new round-3 package. Read the upstream DRAT-trim documentation.
+Searched/partial: README, RESULTS_INDEX, OPEN_PROBLEMS, CONTRIBUTING, pins,
+and local tool locations. Claude's unfinished worktree was not inspected.
+
+Executed: five complete DRAT refutations checked during discovery and again
+through independent CNF reconstruction; all 15 source witnesses; independent
+rank/discrepancy/201-threshold/566-row/full-square arithmetic; inherited raw
+window-data regeneration. The independent review authors wrote separate
+checkers and reviewed proofs without launching numerical workers.
+The result has no Lean or external referee certification. The manuscript was
+not edited, and R3 was not investigated this round.
+
 ## 2026-11-14, Codex binary-source round 2
 
 Base: fb33871768bd94fd8e88452ac62ac2789eb0e882. Remote fetch and state refresh

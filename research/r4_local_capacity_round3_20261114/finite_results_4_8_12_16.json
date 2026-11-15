@@ -1,0 +1,124 @@
+{
+  "runs": [
+    {
+      "n": 4,
+      "k": 2,
+      "status": "SAT",
+      "seconds": 0.0033970000076806173
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "status": "SAT",
+      "seconds": 0.00129489999380894
+    },
+    {
+      "n": 4,
+      "k": 4,
+      "status": "SAT",
+      "seconds": 0.001483400003053248
+    },
+    {
+      "n": 8,
+      "k": 4,
+      "status": "SAT",
+      "seconds": 0.001530199995613657
+    },
+    {
+      "n": 8,
+      "k": 6,
+      "status": "SAT",
+      "seconds": 0.0018942000024253502
+    },
+    {
+      "n": 8,
+      "k": 7,
+      "status": "SAT",
+      "seconds": 0.0019764000026043504
+    },
+    {
+      "n": 8,
+      "k": 8,
+      "status": "UNSAT-CHECKED",
+      "seconds": 0.07786489999853075,
+      "proof_lines": 160
+    },
+    {
+      "n": 12,
+      "k": 6,
+      "status": "SAT",
+      "seconds": 0.002599500003270805
+    },
+    {
+      "n": 12,
+      "k": 9,
+      "status": "SAT",
+      "seconds": 0.0038989000022411346
+    },
+    {
+      "n": 12,
+      "k": 11,
+      "status": "UNSAT-CHECKED",
+      "seconds": 0.10003750000032596,
+      "proof_lines": 277
+    },
+    {
+      "n": 12,
+      "k": 10,
+      "status": "UNSAT-CHECKED",
+      "seconds": 0.10246350000670645,
+      "proof_lines": 1233
+    },
+    {
+      "n": 16,
+      "k": 8,
+      "status": "SAT",
+      "seconds": 0.006328300005407073
+    },
+    {
+      "n": 16,
+      "k": 12,
+      "status": "UNSAT-CHECKED",
+      "seconds": 0.7993858000118053,
+      "proof_lines": 57277
+    },
+    {
+      "n": 16,
+      "k": 10,
+      "status": "SAT",
+      "seconds": 0.004270199991879053
+    },
+    {
+      "n": 16,
+      "k": 11,
+      "status": "SAT",
+      "seconds": 0.005749999996623956
+    }
+  ],
+  "caps": [
+    {
+      "n": 4,
+      "witness_lower": 4,
+      "certified_upper": 4,
+      "exact": true
+    },
+    {
+      "n": 8,
+      "witness_lower": 7,
+      "certified_upper": 7,
+      "exact": true
+    },
+    {
+      "n": 12,
+      "witness_lower": 9,
+      "certified_upper": 9,
+      "exact": true
+    },
+    {
+      "n": 16,
+      "witness_lower": 11,
+      "certified_upper": 11,
+      "exact": true
+    }
+  ]
+}

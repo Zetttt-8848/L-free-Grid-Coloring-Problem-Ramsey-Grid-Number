@@ -1,11 +1,12 @@
 {
-  "snapshot_date": "2026-11-13",
+  "snapshot_date": "2026-11-14",
   "remote": "origin",
   "research_checkpoint": {
-    "ref": "origin/codex/global-counting-research-20261108",
-    "commit": "dc1cbe6daf7d9816329217a511741fbeabd726b3"
+    "ref": "origin/codex/r4-collision-round2-20261114",
+    "commit": "fdaa1f05ad8fc12f4f890117fde1b25e8b6d3d83"
   },
   "refs": {
+    "origin/codex/r4-collision-round2-20261114": "fdaa1f05ad8fc12f4f890117fde1b25e8b6d3d83",
     "origin/main": "1231d436d1990f22a9f421246c5b8fc51b66750f",
     "origin/codex/global-counting-research-20261108": "dc1cbe6daf7d9816329217a511741fbeabd726b3",
     "origin/codex/kernel-compatibility-research-20261108": "5b5db22c3c65123193cb31f2aa5bd949b3075e1a",

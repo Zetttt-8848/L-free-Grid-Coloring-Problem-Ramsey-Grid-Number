@@ -1,5 +1,22 @@
 # Research state snapshot
 
+## Current Codex four-color checkpoint: 2026-11-14, round 3
+
+R4 <= 21,947,865 is PROVED, computer-assisted, with internally reviewed
+geometry/encoding and executed independent proof/arithmetic checks. Evidence:
+`research/r4_local_capacity_round3_20261114/THEOREM.md`, both review files,
+`finite_audit_results.json`, and `verification.json`, on branch
+`codex/r4-local-capacity-round3-20261114`, based on
+fdaa1f05ad8fc12f4f890117fde1b25e8b6d3d83. Exact input/artifact hashes are in
+the package manifest. This is not Lean or external peer review.
+
+The bound has no open conjectural premise. It uses checked finite binary-source
+exclusions, hereditary rank transfer, and the inherited exact rational window
+construction. Its source matrices and coverage checks were replayed this round.
+The improvement over 21,947,877 is 12: 11 from the no-finite rank integration
+comparison, one further from the checked finite seeds. R3 is unchanged by this
+work and was not re-audited. Older numerical snapshots below are historical.
+
 ## Newer local research record: 2026-11-14
 
 The historical numerical snapshot below is superseded where indicated by

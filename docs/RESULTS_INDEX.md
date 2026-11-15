@@ -1,5 +1,12 @@
 # Current proposition and proof index
 
+2026-11-14, Codex binary-source round 3: **R4 <= 21,947,865**, unconditional
+and computer-assisted. Checked finite source caps improve hereditary endpoint
+capacities and the exact full-square contradiction. See the
+[theorem](../research/r4_local_capacity_round3_20261114/THEOREM.md),
+[report and reproduction](../research/r4_local_capacity_round3_20261114/ROUND3_REPORT.md),
+and its two internal independent reviews. No Lean or external review claimed.
+
 2026-11-14, Codex binary-source lane: [round 2 report](../research/r4_collision_round2_20261114/ROUND2_REPORT.md)
 records a proved short-request demand inequality, exact coefficient certificates,
 and a checked counterexample to lower-half Golombness. It establishes no new

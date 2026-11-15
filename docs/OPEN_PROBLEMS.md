@@ -1,6 +1,16 @@
 # Open issues and failed routes
 
-Prioritization see [Short-term vs. Long-term Roadmap](ROADMAP.md): Advance and solve R3 first, and then systematically study R4. These source realms are candidate routes, not destinations that must all be proven.
+Both R3 and R4 upper-bound research are authorized under AGENTS.md. The older
+R3-first ordering is superseded. These source questions are candidate routes,
+not prerequisites that must all be solved.
+
+Four-color update, 2026-11-14: the
+[round-3 package](../research/r4_local_capacity_round3_20261114/ROUND3_REPORT.md)
+establishes R4 <= 21,947,865. It leaves C_binary(20) between 12 and 14,
+with larger finite-cap tests undecided. Select further finite exclusions by
+their predicted effect on the proved hereditary/endpoint consumer. Global
+collision and near-extremality inequalities remain open. Older numerical
+snapshots below do not supersede this dated R4 result.
 
 The general source world is currently unresolved. The following assertions are taken verbatim from the current text and are all open hypotheses. Do not rely on qualified inferences as proof of these assumptions.
 

@@ -1,0 +1,186 @@
+{
+  "cnfs": [
+    {
+      "file": "n12_k10.cnf",
+      "variables": 153,
+      "clauses": 719,
+      "physical_Ls": 220,
+      "sha256": "fba752053f6a9d612f63c1f50d8e2a46e50dabb96425c7016ea3f2d939734172"
+    },
+    {
+      "file": "n12_k11.cnf",
+      "variables": 155,
+      "clauses": 726,
+      "physical_Ls": 220,
+      "sha256": "c88f04e9e8c4a1b0f11b98fac6775b1c6a02d086bb31a24d4f4459747044f354"
+    },
+    {
+      "file": "n16_k12.cnf",
+      "variables": 262,
+      "clauses": 1597,
+      "physical_Ls": 560,
+      "sha256": "f9a0f974430a16e6cd2c6524d8d916cbdd240386814ca73f4298923bcdc68175"
+    },
+    {
+      "file": "n20_k15.cnf",
+      "variables": 405,
+      "clauses": 3026,
+      "physical_Ls": 1140,
+      "sha256": "5719e4cd5b6276a66c4be7dad7756596269f5311915e81fe6d10d5682e06e743"
+    },
+    {
+      "file": "n8_k8.cnf",
+      "variables": 72,
+      "clauses": 241,
+      "physical_Ls": 56,
+      "sha256": "7d01882ba7dd485c5aba8ef2ecbdbdaba138878f1b5b4cf9c9ae8ca8245a5fb5"
+    }
+  ],
+  "witnesses": [
+    {
+      "file": "n12_k6.witness.json",
+      "marks": 6,
+      "cells": 15,
+      "physical_Ls": 14,
+      "sha256": "9303ab3ac455c14b5eab285e9c72c5259548123346f80e254ed93fa8ca3b5804"
+    },
+    {
+      "file": "n12_k9.witness.json",
+      "marks": 9,
+      "cells": 36,
+      "physical_Ls": 54,
+      "sha256": "81c2086f5575b11294ffe5e16811a3b4072258251c089f48ff499a7dca1ab6bb"
+    },
+    {
+      "file": "n16_k10.witness.json",
+      "marks": 10,
+      "cells": 45,
+      "physical_Ls": 60,
+      "sha256": "12290976d840633092c4a697b39c6d395003be8537b527d5c8118844b9aeccde"
+    },
+    {
+      "file": "n16_k11.witness.json",
+      "marks": 11,
+      "cells": 55,
+      "physical_Ls": 91,
+      "sha256": "e6e7cfc8624367660b7d19a0afbe0c8b47d5d55e99d50cc9dc578746a40d1179"
+    },
+    {
+      "file": "n16_k8.witness.json",
+      "marks": 8,
+      "cells": 28,
+      "physical_Ls": 37,
+      "sha256": "06e30c0d01a0ad3efbfd92a30d037e5be50d31249f6d87c9e55b7f22d36ebb65"
+    },
+    {
+      "file": "n20_k10.witness.json",
+      "marks": 10,
+      "cells": 45,
+      "physical_Ls": 48,
+      "sha256": "61ed51d8956cf6762f84ef17d4f881959bcf9dc39eed6aa6b7555b4b2ba2630a"
+    },
+    {
+      "file": "n20_k12.witness.json",
+      "marks": 12,
+      "cells": 66,
+      "physical_Ls": 98,
+      "sha256": "f5b3f5f99e590d67f0a0693c26fa5044393cdbb927cc02b6acf9cfc13b93d7f2"
+    },
+    {
+      "file": "n24_k12.witness.json",
+      "marks": 12,
+      "cells": 66,
+      "physical_Ls": 96,
+      "sha256": "60cf3ec2e8d83853b10ba112b7e60cf19586297224052079d806f8ef07d67cbe"
+    },
+    {
+      "file": "n32_k16.witness.json",
+      "marks": 16,
+      "cells": 120,
+      "physical_Ls": 228,
+      "sha256": "e237c762ca7c0a684a6c832f24f3d680da6969c922a2e5a599042f95624ce8c5"
+    },
+    {
+      "file": "n4_k2.witness.json",
+      "marks": 2,
+      "cells": 1,
+      "physical_Ls": 0,
+      "sha256": "4eb5547a6059f6bf4b5a661551f548dd0d31ac76ad25d255fbab23e4dbe90950"
+    },
+    {
+      "file": "n4_k3.witness.json",
+      "marks": 3,
+      "cells": 3,
+      "physical_Ls": 1,
+      "sha256": "fcfd1993fceb1cbaaa4977d4f91c4694911a78c0384f66a4f418eb07f9bb7ce0"
+    },
+    {
+      "file": "n4_k4.witness.json",
+      "marks": 4,
+      "cells": 6,
+      "physical_Ls": 4,
+      "sha256": "4253d239e9c037914aaeb9c5849e03c191b004f3e3fba5c86eb46bc3d1d12e24"
+    },
+    {
+      "file": "n8_k4.witness.json",
+      "marks": 4,
+      "cells": 6,
+      "physical_Ls": 4,
+      "sha256": "2a0b07787f96ce641b29783c7558f5b1b0578b83beeca3cf35a163ea6ab674bb"
+    },
+    {
+      "file": "n8_k6.witness.json",
+      "marks": 6,
+      "cells": 15,
+      "physical_Ls": 16,
+      "sha256": "a0f9d48273e0f08eaef8ad465a59dd22ee3e564e24bb2872edba6e260d5df2e3"
+    },
+    {
+      "file": "n8_k7.witness.json",
+      "marks": 7,
+      "cells": 21,
+      "physical_Ls": 27,
+      "sha256": "703698cf3246dd9e5359fe1aed3b2964822f9b69c37c58e4383918b124929ea3"
+    }
+  ],
+  "proofs": [
+    {
+      "cnf": "n12_k10.cnf",
+      "stored_proof": "n12_k10.drat.xz",
+      "expanded_sha256": "6ea45e9c7b5c0bab125d3a65a8ac537fcf2db2dee41516fdbb7959d901b9bc24",
+      "log": "n12_k10.audit.check.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "cnf": "n12_k11.cnf",
+      "stored_proof": "n12_k11.drat.xz",
+      "expanded_sha256": "b822585ffea883e8ab14f13b9da65631e985a0fd2b65b83582de66f7ac89d9c3",
+      "log": "n12_k11.audit.check.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "cnf": "n16_k12.cnf",
+      "stored_proof": "n16_k12.drat.xz",
+      "expanded_sha256": "aaa8b3abe2928299d72d0bcbadc44af5e81c80e6064a3e68938880dc97f38cc7",
+      "log": "n16_k12.audit.check.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "cnf": "n20_k15.cnf",
+      "stored_proof": "n20_k15.drat.xz",
+      "expanded_sha256": "34fd347ad872fe9430a1bae564e7f9d8544ded5af0015ec806950647a18f830c",
+      "log": "n20_k15.audit.check.txt",
+      "status": "VERIFIED"
+    },
+    {
+      "cnf": "n8_k8.cnf",
+      "stored_proof": "n8_k8.drat.xz",
+      "expanded_sha256": "b23803d5f8b67bf71da1f1e519f218c11d1e4238ef151896ee4a2099219788e3",
+      "log": "n8_k8.audit.check.txt",
+      "status": "VERIFIED"
+    }
+  ],
+  "scope": "CNF reconstruction and complete source witnesses; optional full external DRAT checking",
+  "proof_checker": "drat-trim.exe",
+  "proof_checker_sha256": "62a29bed0f0a87bff21c1332a948c6d335146513a7fc246e0eef3c9148d50697"
+}

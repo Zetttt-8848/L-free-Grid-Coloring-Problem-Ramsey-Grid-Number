@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-14",
+  "status": "PASS",
+  "finite_check": "audit_finite.py --checker drat-trim.exe: five refutations VERIFIED and fifteen witnesses checked",
+  "numeric_check": "verify_numeric.py: all three comparisons PASS; no author function imports",
+  "data_replay": "verify_four_edges.py with original matrices: PASS",
+  "final_side": 21947865,
+  "exact_margin": 667767862929561436134957406955093129954012400,
+  "limits": [
+    "Not Lean",
+    "Internal independent reviews, not external peer review",
+    "Inherited window geometry is a mathematical proof, not machine formalized"
+  ]
+}

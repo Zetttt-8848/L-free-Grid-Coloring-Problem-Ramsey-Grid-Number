@@ -1,6 +1,15 @@
 <!-- Repository language policy: English only. -->
 # Directed L-grid Ramsey numbers
 
+**Four-color checkpoint (2026-11-14): R4 <= 21,947,865**, an unconditional
+computer-assisted improvement by 12 over the preceding window certificate.
+The new finite binary-source exclusions, hereditary capacity transfer, full
+proof, independent checks, and reproduction instructions are in the
+[round-3 report](research/r4_local_capacity_round3_20261114/ROUND3_REPORT.md).
+This has internal independent review and checked proof traces; it is not Lean
+formalization or external peer review. The shared manuscript is unchanged.
+Earlier numerical entries below are historical records.
+
 A mathematical repository for collaborative research on forward L-grid Ramsey numbers. The complete proof, construction, and finite certificates of the current paper are at [manuscript/main.tex](manuscript/main.tex), references are saved separately in [references.bib](manuscript/references.bib).
 
 Start with [Index of Propositions and Proofs](docs/RESULTS_INDEX.md), [Open issues and failure routes](docs/OPEN_PROBLEMS.md) and [collaboration agreement](docs/CONTRIBUTING.md).

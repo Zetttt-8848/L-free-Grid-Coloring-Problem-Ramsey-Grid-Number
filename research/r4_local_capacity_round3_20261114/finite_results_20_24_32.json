@@ -1,0 +1,73 @@
+{
+  "runs": [
+    {
+      "n": 20,
+      "k": 10,
+      "status": "SAT",
+      "seconds": 0.00832069999887608
+    },
+    {
+      "n": 20,
+      "k": 15,
+      "status": "UNSAT-CHECKED",
+      "seconds": 1.7185751000070013,
+      "proof_lines": 101290
+    },
+    {
+      "n": 20,
+      "k": 12,
+      "status": "SAT",
+      "seconds": 0.007387700010440312
+    },
+    {
+      "n": 20,
+      "k": 13,
+      "status": "UNDECIDED",
+      "seconds": 1.353874899999937
+    },
+    {
+      "n": 24,
+      "k": 12,
+      "status": "SAT",
+      "seconds": 0.0078975999931572
+    },
+    {
+      "n": 24,
+      "k": 18,
+      "status": "UNDECIDED",
+      "seconds": 1.313944800000172
+    },
+    {
+      "n": 32,
+      "k": 16,
+      "status": "SAT",
+      "seconds": 1.2021412000030978
+    },
+    {
+      "n": 32,
+      "k": 24,
+      "status": "UNDECIDED",
+      "seconds": 1.5140266000089468
+    }
+  ],
+  "caps": [
+    {
+      "n": 20,
+      "witness_lower": 12,
+      "certified_upper": 14,
+      "exact": false
+    },
+    {
+      "n": 24,
+      "witness_lower": 12,
+      "certified_upper": 24,
+      "exact": false
+    },
+    {
+      "n": 32,
+      "witness_lower": 16,
+      "certified_upper": 32,
+      "exact": false
+    }
+  ]
+}
