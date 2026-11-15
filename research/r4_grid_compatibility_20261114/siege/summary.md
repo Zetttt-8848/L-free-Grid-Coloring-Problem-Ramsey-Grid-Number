@@ -1,89 +1,137 @@
-# Running summary after round 2 (written at the round-3 plan step)
+# Running summary after round 3 (written at the round-4 plan step)
 
 ## Goal (ledger entry 1, OPEN; unchanged)
-P1 (i)-(v) exactly as posed, plus Part D settled at level (D-a) [an explicit-delta proportional-loss inequality with every hypothesis named] or (D-b) [an explicit, L-by-L checkable family of proper ternary sources showing that no request-based inequality of that kind can hold, with classes as large as the regime requires]. (D-c) is a separate OPEN line (entry 6) and not part of the goal. No complete proof of the goal exists, so the audit rule is not triggered. Ledger entries 18-29 were added at this step.
+P1 (i)-(v) exactly as posed, plus Part D settled at level (D-a) or (D-b).
+- (D-a): an explicit-delta proportional-loss inequality sum_e |S_e(h)| <= (1-delta)(sum of separate binary caps), per h or a_h-averaged, with every hypothesis named.
+- (D-b): an explicit, L-by-L checkable family of proper ternary sources showing that no request-based inequality of that kind can hold, with classes as large as the regime requires.
+- (D-c) is a separate line (entries 6, 35, 39), not part of the goal.
+- No complete written proof of the goal is in hand, so the audit rule is not triggered. The escalation rule applies from this round on.
 
-## Established
+## Standing results (never dropped)
+1. **P1 (i)-(v), complete (entry 9; round1_q1 Part A is the cleanest chain; round1_q3 and round1_q4 agree).**
+   - Lemma 0: every L in V(D) is L(u,d,h), 1<=d<h, with cells (u+d,u), corner (u+h,u), (u+h,u+h-d), arm length h-d; it lies in V(D) iff u, u+d, u+h-d, u+h ∈ D.
+   - (i) L(u,d,h) is monochromatic of color e iff u ∈ F_{h-d}(S_e(d)) ∩ S_e(h).
+   - (ii) R_e(h) ⊆ F_h(D).
+   - (iii) Double cover, with the sharp identity sum_e |R_e| = 2|F_h| - 2#{k=0} - #{k=1}.
+   - (iv) The shifted source avoids e; F_l(X) ⊆ R_e(h); the Golomb split by four L's; F_l(X) ∩ R_{e'} ⊆ G_{e''}; F_l(X) ∩ R_{e'} ∩ R_{e''} = ∅.
+   - (v) Accounting.
+2. Single-shift satisfiability: the shift-h L's are satisfiable iff R_0 ∩ R_1 ∩ R_2 = ∅. Single-shift counting bounds |F_h| only from below (entry 12, round1_q3).
+3. Conditional energy reduction: if the energy bound holds with C2 < 3/2 for all e, then min_e N_e <= (2C1/(3-2C2))|F_h| (entry 13, round1_q4).
+4. Forced energy: some color e has sum m^2 >= (3/2)N_e^2/|F_h| (entry 25, round2_q3).
+5. Collision lemma (entry 15, round2_plan).
+6. Single-L coupling lemma (entry 24, round2_q2).
+7. Lemma F, and the forcing of five triangle cells for AABA (entry 26, round2_q4) and for ABAA (round3_q1, entry 30); r = s is impossible for both (round3_q1).
+8. Summed rank-neighbor inequality 2P(H_tot;w) + 12 sum_i (c-i)e_{i+1} <= 3L'c(c+1), with joint multiplicity w_l = sum_e r_{S_e(d)}(l) (entry 27, round2_q4).
+9. Prefix formula and prefix-dominated sufficiency (entry 33, round3_q4).
+   - P(H;w) = sum_{lambda>=0} max(0, H - C_w(lambda)), where C_w(lambda) = sum_{l<=lambda} w_l.
+   - Hence C_w(lambda) <= C_{w'}(lambda) for all lambda implies P(H;w) >= P(H;w').
+   - So a prefix-averaged joint deficit sum_{l<=lambda} sum_e r_{S_e(d)}(l) <= (1-delta) sum_{l<=lambda} 3v_l suffices for the summed rank inequality with w' = (1-delta)3v.
+   - Director's addition (elementary, from the prefix formula with real multiplicities): P(H; alpha w) = alpha P(H/alpha; w). The integer rounding of alpha w_l is not yet handled. The conversion delta -> delta' has NOT been computed.
+10. Digit families (entries 18-22, round2_q1). The general family is proper for every choice of roles and arm colors. Over arbitrary sources it refutes:
+    - UW(lambda) for every lambda;
+    - the U1-type energy bound for every C;
+    - union growth with positive liminf;
+    and it does so simultaneously on any finite set of shifts. It is not embeddable (span > 21,987,408).
+11. Lifted digit family (round3_q3; entries 31, 32). D = L·D_base + G with G a fine Sidon block of size 3r, colors twisted by the labels s_g. It is proper (Lemma 0', Lemma E, Theorem F). On every shift H of a set W of m' shifts:
+    - min_e N_e(H) >= lambda|F_H|;
+    - sum_e |R_e(H)| = |F_H|;
+    - the energy ratio is unbounded;
+    - the request-producing classes and their fibers at the request lags have size >= c·span^alpha, for every alpha < 1/2.
+    - Director's check (scratchpad r3q3.py; evidence only): 9 instances with p in {5,7}, 1-2 copies, k = 2-3; 0 monochromatic L among up to 2772 L's; N_e = 2kr exactly as claimed.
+    - Not embeddable (k >= 360 is needed for ratio 240).
+12. (D-c+) is refuted for arbitrary sources (round3_q2; entries 34, 35). An explicit family, proper L by L, has a fiber F_l(S_0(d)) of 2k points:
+    - the two Golomb classes are balanced (k each);
+    - every point is foreign-requested (A = G'', B = G').
+    - Director's check (scratchpad r3q2.py; evidence only): k = 1, 2, 3 give 0 monochromatic L's; the Golomb colors and request colors are as claimed.
+13. Density obstruction, MODULO the corners theorem cited from memory (entry 36, round3_q4). For fixed rho > 0, no proper ternary source has D of density >= rho on an interval of length >= S(rho). S(rho) is non-explicit, so the statement is useless at the scale 2.2*10^7.
+14. Director's lemma, color Cauchy-Schwarz (entry 37, round4_plan; proved below; numerically sanity-checked on random sets). Let Y = F_d(D), let w >= 0 be supported on [1,t], and put a_k = sum_i w_i w_{i+|k|} >= 0. Then
+    - sum_{k∈Z} a_k r_Y(k) <= 3 sum_e sum_{k∈Z} a_k r_{S_e(d)}(k), with r_X(0) = |X| and r_X(-k) = r_X(k);
+    - with the per-class caps r_{S_e(d)}(l) <= v_l this gives sum_{l>=1} a_l r_{F_d(D)}(l) <= a_0 |F_d(D)| + 9 sum_{l>=1} a_l v_l.
+    - Proof: sum_k a_k r_X(k) = sum_x (1_X ⋆ w)(x)^2, and pointwise (sum_e y_e)^2 <= 3 sum_e y_e^2.
+    - Meaning: r_{F_d(D)}(l) = #{u : u, u+d, u+l, u+l+d ∈ D} is the "rectangle count" of D. In the regime both sides are about 8.5*10^4 (the regime sits at equality of the color Cauchy-Schwarz). This is a second-order analogue of the outer inequality. Equality forces the three classes to be locally equidistributed at window scale t. By itself it gives no saving.
 
-### P1 is proved (round1_q1, most complete; round1_q3 and round1_q4 agree; entry 9)
-- Lemma 0. Every directed L inside V(D) is L(u,d,h) for exactly one triple with 1<=d<h: horizontal end (u+d,u), corner (u+h,u), vertical end (u+h,u+h-d), arm length h-d. It lies in V(D) iff u, u+d, u+h-d, u+h ∈ D. d ranges over all of [1,h-1], including d > h/2 (mirrored L's).
-- (i) L(u,d,h) is monochromatic of color e iff u ∈ F_{h-d}(S_e(d)) ∩ S_e(h). So chi is proper iff S_e(h) ∩ R_e(h) = ∅ for all h, e. Uses all L's.
-- (ii) R_e(h) ⊆ F_h(D). (iii) k(u) = #{e : u ∈ R_e(h)} <= 2; u ∈ R_e ∩ R_{e'} forces u ∈ S_{e''}(h); sharp identity sum_e |R_e(h)| = 2|F_h| - 2#{k=0} - #{k=1}.
-- (iv) The shifted source of X = S_e(d) avoids e via L(a,d,d+(b-a)); F_l(X) ⊆ R_e(d+l); the classes G_f = F_l(X) ∩ S_f(h) are Sidon (3-APs included; round1_q1 proves it with four L's L1-L4); F_l(X) ∩ R_{e'} ⊆ G_{e''}; F_l(X) ∩ R_{e'} ∩ R_{e''} = ∅.
-- (v) The chain uses only same-shift, same-class instances (binary-source property, Golomb split, partition of F_d(D)). New content: the union over d in R_e(h), (ii), (iii), and the cross-color parts of (iv).
-- Useful reformulations (director, elementary):
-  - u ∈ F_{h-d}(S_e(d)) iff the L with corner (u+h,u) has both arms of color e (round2_q1 (*)).
-  - Row/column form: with w_u(x) = chi(u+x,u) and c_v(x) = chi(v,v-x), chi is proper iff for all u<v in D, h = v-u, and every d with u+d, v-d ∈ D, NOT w_u(d) = c_v(d) = w_u(h).
-  - Agreement identity: with z_d(u) = chi(u+d,u), sum_e r_{S_e(d)}(l) is the lag-l agreement count of z_d on F_d(D), and sum_e N_e(h) = sum_{d<h} sum_e r_{S_e(d)}(h-d) = #{L's with corner offset h whose arms agree}.
+## Dead ends (each a REFUTED statement with its refuting file)
+- U1 (entry 3, d1 witness). UW(1) (entry 4, d1 witness).
+- round1_q2's original digit family being proper (entry 10, round1_q2: its mirrored L's are monochromatic).
+- UW(lambda) for every lambda (entry 20, round2_q1).
+- U1-type energy for every C, and union growth with positive liminf, over arbitrary sources, also on finite shift sets (entry 21, round2_q1).
+- The union of the same-corner-color pieces G_e^f ∪ G_{e'}^f is Sidon (entry 16, explicit witness on D = [0,10)).
+- (D-b)-type variants refuted by the lifted family (entry 32, round3_q3):
+  - every inequality hypothesizing fiber multiplicity >= m at the request lags (variant b);
+  - every inequality hypothesizing class sizes >= c·span^alpha with alpha < 1/2 (variant a below 1/2).
+- (D-c+) without near-extremality hypotheses (entry 35, round3_q2): "|A| >= alpha|G''| implies |G'| <= (1-beta)|G''|" fails for all alpha <= 1 and beta > 0.
+- Fixed-density counter-families at unbounded span (entry 36, round3_q4, modulo the corners theorem).
 
-### Single-shift structure (round1_q3, entry 12)
-- D1: given the lower-shift classes, the shift-h L's are satisfiable iff R_0(h) ∩ R_1(h) ∩ R_2(h) = ∅.
-- D2: single-shift counting only bounds |F_h(D)| from below. A proportional saving needs union growth |R_e(h)| > (2/3)|F_h| for all three e on an a-weighted share of h, or a multi-shift / joint-fiber argument.
-- D3: per-class near-extremality refutations save only additively. The useful hypothesis is the averaged H_avg(eta), whose negation is the consumable saving.
+## Open gaps (set aside, not refuted)
+- **(D-b) at regime size.** This means class sizes about 98 sqrt(span), fibers near 2 sqrt(span), the a_h-weighted interval average, and density 1/4 at span about 2.2*10^7 (entry 38).
+  - Product/digit designs reach only a tiny constant times sqrt(span).
+  - Explicit constructions at regime size look out of reach.
+- **AABA / ABAA forbiddenness (entry 28).** round3_q1 shows that even forbidding both gives no proportional saving by counting alone. This is deprioritized.
+- **(D-c) under the near-extremality hypotheses (H1)-(H3) of round3_q2 (entry 39)**, and multi-L imbalance chains.
+- **Union growth and anti-collision under saturation (entry 7).** The sparse refutations do not touch the saturated regime.
+- **Arm-agreement deficit (AD), entry 29.** It is subsumed by the missing statement below: its prefix form is the joint deficit.
+- **The conversion delta -> delta'.** This is elementary but not done.
 
-### Energy facts
-- Conditional reduction (round1_q4, entry 13): if sum_u m_{e,h}^2 <= C1 N_e + C2 N_e^2/|F_h| for all three e with C2 < 3/2, then min_e N_e(h) <= (2C1/(3-2C2))|F_h|.
-- Forced energy (round2_q3 Lemma B, entry 25): in every proper source and every h, some color e has sum_u m_{e,h}(u)^2 >= (3/2) N_e(h)^2/|F_h(D)| (Cauchy-Schwarz plus min_e |R_e(h)| <= (2/3)|F_h|). So any energy bound with C2 < 3/2 must be color-asymmetric, or must track which color is minimal as h varies.
-- round2_q3 also named H_avg(eta) and H_fib(eta) precisely (H_fib: sum_{l<=l_0} r_{S_e(d)}(l) >= (1-eta) sum_{l<=l_0} v_l(L-d)). It proved Lemma C (heavy start: for e-requests at d_1<...<d_m, the points u+(d_j-d_i) and u+l_i-(d_j-d_i) avoid S_e(d_i)), judged by itself a dead end (density 1/48 makes the exclusions automatic). Row, column and diagonal colorings are not proper at regime size (dead end as no-go models).
+## The chain and the missing statement
 
-### Collision lemma (director, entry 15)
-If u ∈ F_{h-d}(S_e(d)) ∩ F_{h-d'}(S_e(d')), d<d', then u+(d'-d) ∉ S_e(d) and u+(h-d') ∉ S_e(d) (L's L(u,d,d') and L(u+h-d',d,d')). Not yet turned into a bound.
+**Chain.**
+1. Entry 9 settles P1 (i)-(v) as posed. It remains to settle Part D at (D-a).
+2. Fix a shift d and the three classes S_e(d), each a binary source of span <= S := max F_d(D) - min F_d(D).
+   - Entry 27 gives the summed rank-neighbor inequality with joint multiplicity w_l = sum_e r_{S_e(d)}(l).
+   - Entry 33 gives the prefix form: if C_w(lambda) <= C_{w'}(lambda) for every lambda, then the summed inequality holds with w replaced by w'.
+3. The missing statement MS (below) gives exactly that domination with w' = (1-delta)·3v.
+4. Hence 2P(H_tot; (1-delta)3v) + 12 sum_i (c-i)e_{i+1} <= 3S c(c+1) for every admissible c. By the scaling identity P(H; alpha w) = alpha P(H/alpha; w) (real multiplicities; rounding to be handled), this is the single-class rank inequality at total size sum_e s_e with the multiplicities scaled by (1-delta).
+5. Optimizing c as in the certification of K gives sum_e |S_e(d)| <= (1-delta')·3K(S) with explicit delta' > 0 (heuristically delta' ≈ 1 - sqrt(1-delta) ≈ delta/2, from P ~ H^2/(2w)).
+   - This is the (D-a) inequality per shift d, for every proper ternary source, with no hypothesis.
+   - Applied to each main color c in the square, it lowers U_d by the factor (1-delta').
+6. What remains after MS: the explicit computation of delta' in step 5. It is an elementary finite optimization, not a structural question.
 
-### D-b: the digit families (round2_q1; entries 18-22; checked by the director)
-- General digit family: copies c with shift h_c, role rho(c), atom set A_c (atoms smaller than h_c; implicit in round2_q1 and required), A_c^0 = A_c ∪ {0}. Atoms and shifts are distinct powers of B >= 9; T_c = tau_c B^M with tau a Sidon set; D = ∪_c T_c + (A_c^0 ∪ (h_c - A_c^0)).
-- Coloring: corner C_c(a) = (T_c+h_c-a, T_c+a) gets rho(c); left (T_c+b,T_c+a) and up (T_c+h_c-a, T_c+h_c-b), a<b, get f_c(a,b) ≠ rho(c); mirror cells (T_c+h_c-x, T_c+y), x≠y, get rho(c)+1; cross corner (T_{c'}+h, T_c), T_c<T_{c'}, equal shifts, gets rho(c)+1; cross low cell (T_{c'},T_c) gets rho(c); everything else 0.
-- Lemma A (coefficient lemma plus Sidon): the L's are exactly (S1), (S2) within copies (two per a<b, corner C_c(a)) and (X1), (X2) across equal-shift copies. Theorem B: proper for every rho, f. Lemma C: F_h(D) = {T_c : h_c = h}; the start T_c gets |A_c| requests of color rho(c)+1 from (S2) plus one request of color f_c(0,b) per atom b from (S1).
-- Director's check (scratchpad scripts digit3.py, digit4.py; evidence only): 150 random instances (1-3 shifts, 2-6 copies, equal roles allowed) have no monochromatic L. A two-shift k=3 instance with one padding copy gives |F_h| = 4, N_e = (6,6,6), |R_e| = (1,1,1) at both shifts, as claimed. NOTE: my first test put atoms above the shift and produced monochromatic L's; that is outside the construction (E_c must lie in [0,h_c]).
-- Consequences (PROVED):
-  - UW(lambda) is false for every lambda (cyclic three-copy family: N_e = 2k, |F_h| = 3).
-  - The U1-type energy bound is false for every C (padding s = k).
-  - Union growth with positive liminf is false (padding s ~ sqrt k gives N_e/|F_h| ~ 2 sqrt k and |R_e|/|F_h| -> 0).
-  - Theorem D: all three fail simultaneously on any finite set W of m shifts.
-- Scope:
-  - |D| = O(log span), classes of size r or O(1), fibers r_{S_e(d)}(l) <= 1, and the span is at least about 9^9.
-  - Hence the families are NOT in the regime and NOT embeddable in a proper four-colored square (span exceeds 21,987,408).
-  - Crucially, these families have min_e N_e(h)/(h|F_h(D)|) -> 0. So they leave alive the statement the consumer actually needs: min_e N_e(h) <= c h |F_h| with c below about 1/146. (Under H_fib, N_e(h) ≈ v h, and |F_h| <= 3K gives a contradiction exactly when c < v/(3K) ≈ 1/146.)
-- Surviving variants (entry 23): polynomial class sizes; fibers >= 2 on many lags; interval averages at fixed window t; density of D; the "c h" form above. round2_q1 judged that digit designs cannot reach fibers >= 2 (heuristic only).
-- Judgment: (D-b) "as posed" (classes as large as the regime requires) is NOT met. The families settle the sparse, arbitrary-source variants only.
+**Missing statement (MS; ledger entry 41, OPEN, locator round4_plan).**
+Let Q(m), for m >= 0, be the largest size of a Sidon set (no a+b = c+d except trivially, 3-term progressions included) contained in m+1 consecutive integers, and put Q(m) = 0 for m < 0. MS asserts: there is an explicit absolute constant delta > 0 such that the following holds for every proper ternary source (D, chi), i.e. every finite set D ⊂ Z with a coloring chi of V(D) = {(v,u) : u < v, u,v ∈ D} by P = {0,1,2} having no monochromatic directed L (x,y),(x+t,y),(x+t,y+t), t > 0. For every d >= 1 with F_d(D) ≠ ∅, write:
+- S = max F_d(D) - min F_d(D);
+- v_l = Q(S-l) + Q(S-l-1), the per-class fiber cap of the consumer;
+- S_e(d) = {u ∈ F_d(D) : chi(u+d,u) = e};
+- r_X(l) = #{u ∈ X : u+l ∈ X}.
 
-### D-c (round1_q1, round2_q2; entries 6, 14, 24)
-- Easy part: A = F_l(X) ∩ R_{e'}(h) ⊆ G_{e''} and B ⊆ G_{e'}; both are Sidon and disjoint. (C1)-(C3) are consistent with r_X(l) = 2Q (abstract model), so imbalance needs generating L's.
-- Single-L coupling lemma (round2_q2, proved): the only L's containing a Golomb cell C_w = (w+h,w) and a witness cell (u+d',u) or (u+h,u+h-d') of a foreign-requested u are L(w,d',h) with w = u ∓ (h-d'), i.e. w's own request L. They never constrain membership in G'. Any imbalance must come from chains of >= 2 L's through free cells.
-- round2_q2 conjectures (unproved) that a digit realization of balanced, fully foreign-requested classes exists at log scale.
+Then for every integer lambda with 1 <= lambda <= S,
 
-### Joint fiber bound (round2_q4; entries 16, 17, 26, 27, 28)
-- The two same-corner-color pieces G_e^f, G_{e'}^f need not have a Sidon union (entry 16; explicit witness D=[0,10) in the round-2 queries).
-- Lemma F (proved): for p<q in pieces with the same corner color f, C(p,q) = (q+h,p) is the corner of L(p,h,h+q-p), whose ends are both f, so C(p,q) ≠ f. If p and q are in the same class e, C(p,q) is a shifted-source cell of S_e(d), so it is the third color.
-- AABA (a, a+r, a+r+s in class e; a+s in e'): every corner-triangle cell is forced. C(a,a+r) = C(a,a+r+s) = C(a+r,a+r+s) = e', and C(a+s,a+r+s) = C(a,a+s) = e. No monochromatic L has been found yet; forbiddenness is OPEN (entry 28).
-- Evidence: AABA and ABAA were never observed in random proper sources (n <= 16); ABBA, AAAB, ABBB, AABB and ABAB were observed.
-- Consumer deduction (proved): sum the rank-neighbor inequality over the three classes S_e(d) with a common rank c < min s_e. This gives 2P(H_tot; w) + 12 sum_i (c-i) e_{i+1} <= 3L'c(c+1), where w_l = sum_e r_{S_e(d)}(l) and H_tot = sum_e (c s_e - c(c+1)/2). So a joint bound w_l <= (1-delta)3v_l lowers the joint cap of each main-color triple, hence U_d. delta' as a function of delta has not been computed.
+    sum_{l=1}^{lambda} sum_{e∈P} r_{S_e(d)}(l)  <=  (1-delta) · sum_{l=1}^{lambda} 3 v_l.
 
-### Agreement framing (director, round-3 plan; heuristic except the identities)
-- Regime arithmetic:
-  - D_c has density ≈ 1/4 (some diagonal color covers >= n/4 cells), and |F_h| ≈ n/16.
-  - Lambda(h) := #{L's with corner offset h} ≈ h|F_h|/16 ≈ 8.6*10^4 h, while sum_e N_e(h) ≈ 3vh ≈ 2.8*10^4 h.
-  - So the agreement rate is ≈ 1/3, the rate of a random coloring. "All binary caps nearly attained" means "the words z_d have random-like lag agreement", and a proportional agreement deficit is a proportional joint fiber deficit, consumable via the summed rank inequality.
-- Heuristic for a deficit: for each pair u<v, the corner color w_u(h) is never an agreement color between w_u and c_v. Independent words would therefore agree at rate 2/9 only, and rate 1/3 needs positive row/column correlation. Sparse digit designs achieve agreement rate 1, so any valid deficit needs a density or near-cap hypothesis (entry 29).
-- Bounding Lambda(h) through a ternary capacity of windows of length h does not help. In the regime D_c has density 1/4 in windows, which gives min_e N_e/(h|F_h|) ≈ 1/48 > 1/146. The missing factor is exactly the agreement deficit.
+Equivalently, the lag-l agreement counts of the word z_d(u) = chi(u+d,u) on F_d(D), summed over l <= lambda, fall a fixed proportion short of three times the summed single-class caps.
+- For small S the statement holds trivially, since r_{F_d(D)}(l) <= S-l+1 is far below 3v_l. Its content lies at large S.
+- It is a universal statement and carries no hypothesis.
 
-## Dead ends (and why)
-- U1 and UW(1) (pre-registered witnesses; entries 3, 4). Now also UW(lambda), U1-type energy and union growth, for every constant, over arbitrary sources (entries 20, 21).
-- Single-shift counting (D2).
-- Sidon union of the same-f pieces (entry 16): the naive factor-2 joint saving is dead. Disjoint difference sets alone give no saving either.
-- Imbalance from (C1)-(C3) alone (abstract model), and from any single L (entry 24).
-- Lemma C exclusions by themselves (density makes them automatic).
-- Row-, column- and diagonal-structured colorings as no-go models (not proper at size).
-- Ternary-source capacity as a bound on Lambda(h): a factor 3 short.
+**Why it should hold (director's sketch; heuristic).**
+- Equality in MS needs all six Golomb pieces G_e^f(l) = F_l(S_e(d)) ∩ S_f(d+l), e ≠ f, to be near-maximal Sidon sets for most l <= lambda.
+- Near-maximal Sidon sets are Fourier-uniform and equidistributed (Erdős–Turán, Lindström type).
+- By entry 37, in the regime the color Cauchy-Schwarz is near equality, so the three classes are locally equidistributed in F_d(D).
+- Candidate mechanism (corner exclusion with uniformity): every start u ∈ G_e^f(l) has corner (u+h,u) of color f, while its two arms both have color e.
+  - Uniformity of the pieces makes the row word w_u and the column word c_v asymptotically independent on the non-corner colors. This should push the agreement rate toward 2/9 rather than 1/3.
+  - Equivalently, in the request picture, saturation makes the request sets R_e(h) of all three colors exceed (2/3)|F_h|, which contradicts the double cover (iii).
+- Concretely: show that saturation of the six pieces at lags l <= lambda forces some two pieces with equal corner color f to share additive quadruples at a positive rate. Lemma F plus the forced AABA/ABAA triangles would then give monochromatic L's at a positive rate.
+- A proof would plausibly be a counting (Cauchy-Schwarz / Fourier) argument with explicit, possibly tiny, delta.
+- Risk: MS may be false if near-cap ternary sources exist with a perfectly 1/3 random-like agreement. No such source is known, and none is excluded.
 
-## Open gaps between the state and the goal
-1. (D-a) An explicit-delta proportional loss under named hypotheses: agreement deficit (entry 29), joint fiber bound (entry 17), union growth (entry 7), or a window-averaged color-asymmetric energy bound (entry 8). The consumer-side deduction is in place (entry 27); the missing piece is a structural inequality.
-2. (D-b) A family meeting the surviving variants (entry 23): fibers >= 2, polynomial class sizes, interval averages, the "c h" form, density. Classes as large as the regime requires are likely out of reach of explicit construction: by the corners theorem dense sources have bounded span, and the binary caps K are not known to be nearly attained.
-3. Mixed patterns AABA / ABAA (entry 28), as a step toward a joint fiber bound.
-4. (D-c) An explicit balanced, fully foreign-requested realization, or a multi-L imbalance (entry 6).
+**Tried so far (on MS or earlier wordings: entry 17 joint per-lag bound, entry 29 AD).**
+- round2_q4: pattern classification of mixed additive quadruples. It gave Lemma F, the AABA forcing, and the refutation of the Sidon union (entry 16); no bound.
+- round3_q1: AABA/ABAA forbiddenness. Only forcing was found (r = s degenerate; ABAA triangle forced). It showed that forbidding both patterns gives no saving by counting.
+- round3_q4: AD via corner exclusion with independence. It gave the prefix sufficiency lemma and the density obstruction; the correlation step was not achieved.
+- round2_q3: near-extremality hypotheses H_avg, H_fib and the Lemma C exclusions; no deficit.
+- round1_q4: energy route; conditional reduction only.
 
-## Where the next round should concentrate (round 3 wave: four attempt queries)
-- q1: settle AABA and ABAA (forbidden, with an L-chain, or an explicit witness), and derive the pair bound if they are forbidden.
-- q2: (D-c) an explicit digit realization of balanced, fully foreign-requested Golomb classes for every k, or a multi-L imbalance.
-- q3: (D-b) extend the digit families to fibers of multiplicity >= m and larger classes with a large request ratio (variants (b), (a)), or prove an obstruction.
-- q4: (D-a) the arm-agreement deficit (AD) under a named density/near-cap hypothesis, with the consumer link, or an explicit refutation.
-- Escalation (state.md: ESC_ROUND=4) will likely require the next plan step to name a single missing statement. The strongest candidate is (AD) / the joint fiber bound.
+## Where the next round should concentrate
+
+**Progress test.** Rounds 2-3 produced no proof of the missing statement and no proof of the goal.
+- They did produce new PROVED universal results that shorten the chain on the consumer side:
+  - the summed rank inequality (entry 27, round 2);
+  - the prefix sufficiency lemma (entry 33, round 3), which weakened the needed per-lag joint bound to a prefix-averaged one.
+- This counts as progress, but only on the consumption side. The structural core (any joint deficit at all) had no progress in rounds 2-3.
+- The sparse/product refutations narrow the D-b side only.
+- What differs this round: the missing statement is posed for the first time, in its weakest consumable (prefix) form. The sketch now names a uniformity / Cauchy-Schwarz mechanism, anchored by the new equality-case observation (entry 37), instead of local pattern-forbidding.
+
+**Round 4 wave (escalation; six attempt queries, all on MS).**
+- q1-q3: identical closing task on MS. It carries P1's key lemmas, the Golomb split with proof, Lemma F, the AABA/ABAA forcing, the prefix lemma with proof, the summed rank inequality, entry 37, and the chain.
+- q4: refute MS exactly as stated (an explicit family with prefix joint ratio -> 1), or derive something false from it.
+- q5: the hardest step of the sketch: saturation of the six pieces implies a positive rate of monochromatic L's (the uniformity / corner-exclusion counting step), posed as a self-contained claim through the Fourier / Cauchy-Schwarz approach.
+- q6: bare query (MS plus the cited statements only). It must derive the chain itself, then attack MS by a first move none of the listed attempts used, or report the derivation flawed.
+- Next round: if any of q1-q3 or q5 proves MS, the [GOAL] goes PROVED with the conversion delta -> delta' still needed. Check whether the closing answer supplies it. If it does not, the delta' computation becomes the next missing statement (the chain then needs it).

@@ -26,3 +26,9 @@ R: 0
 - phase: round 3 wave (math-proof:math-proof-worker x4)
 - round 3 wave: cap 4, math-proof:math-proof-worker x4, answered 4, partial 0, no answer 0; R = 3
 - phase: round 4 plan, attempt 1 (ESC_ROUND reached: cap WAVE_DEEP=6, deep workers)
+- round 4 plan attempt 1: judge done; screen_r3 all OK appended
+- round 4 check: WAVE 6 FLOOR 1 (ledger +12, kind=attempt 6/6); cap 6; summary copied
+- phase: round 4 wave (math-proof:math-proof-worker-deep x6)
+- round 4 wave first launch: deep x6; TOTAL (6 queries): answered 3, partial 3, no answer 0 (usage limit hit); re-running q1,q4,q6
+- round 4 wave re-run (q1,q4,q6, deep): final TOTAL (6 queries): answered 5, partial 1, no answer 0; R = 4
+- phase: round 5 plan, attempt 1

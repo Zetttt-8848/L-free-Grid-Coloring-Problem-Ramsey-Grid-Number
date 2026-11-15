@@ -1,48 +1,49 @@
-# Notes (director, rewritten at round 3 plan)
+# Notes (director, rewritten at the round-4 plan step)
 
 ## Status
-- Goal = entry 1 (OPEN): P1 plus Part D at (D-a) or (D-b). P1 is PROVED (entry 9; round1_q1 Part A is the cleanest chain). Part D is unsettled. Audit is not triggered.
-- The ledger after the round-3 block holds entries 1-29:
-  - 18-22: the digit families (round2_q1): proper; UW(lambda) and the energy/union-growth refutations, also on finite shift sets; non-embeddable.
-  - 23: OPEN, the surviving D-b variants.
-  - 24: single-L coupling (q2).
-  - 25: forced energy (q3).
-  - 26: Lemma F / AABA forcing (q4).
-  - 27: summed rank inequality (q4).
-  - 28: OPEN, AABA/ABAA.
-  - 29: OPEN, the arm-agreement deficit (AD), mine.
-- Rank-neighbor inequality quote: round2_q4.md lines 57-61. Single-class Golomb quote: round2_q4.md lines 13-39. Digit family: round2_q1.answer.md lines 3-186. Shared facts preamble: scratchpad facts.md.
+- Goal: entry 1 (OPEN), unchanged. It asks for P1 plus Part D at (D-a) or (D-b).
+  - P1 is PROVED (entry 9; round1_q1 Part A, lines 7-90 of the answer file, is the cleanest chain).
+  - No complete proof of the goal exists. Audit not triggered. Escalation is active from round 4.
+- The ledger after the round-4 block has entries 1-41:
+  - 30 ABAA forcing (round3_q1)
+  - 31/32 the lifted family, proper; it kills D-b variants (b) and (a, alpha<1/2) (round3_q3)
+  - 33 the prefix lemma (round3_q4)
+  - 34/35 the round3_q2 family; D-c+ refuted without hypotheses
+  - 36 density obstruction, modulo the corners theorem
+  - 37 color Cauchy-Schwarz (mine, round4_plan)
+  - 38 OPEN D-b survivors
+  - 39 OPEN D-c under H1-H3
+  - 40 RETRACT 23
+  - 41 OPEN MS
+- MISSING STATEMENT (entry 41): a joint prefix deficit with explicit delta, unconditional, for every proper ternary source, every d and every lambda:
+  sum_{l<=lambda} sum_e r_{S_e(d)}(l) <= (1-delta) sum_{l<=lambda} 3(Q(S-l)+Q(S-l-1)), with S = span F_d(D).
+  - Chain: entry 9, then entry 27 (summed rank inequality), then entry 33 (prefix), then MS, then the conversion delta -> delta'.
+  - The conversion is still uncomputed (elementary). No rounding issue arises: use the real-valued P*(H) = sum_lambda max(0, H - (1-delta)C_{3v}(lambda)), which scales exactly.
 
-## Checks done this step
-- Digit family (round2_q1): random instances, scratchpad digit3.py: 150 instances, 0 monochromatic L. Counts checked with digit4.py.
-  - CAVEAT: atoms must be below their copy's shift. With atoms above the shift there are monochromatic L's. This was my test bug, not the construction's; I flagged it in the queries.
-- Lemma F and the AABA forcing were rechecked by hand: they are fine.
-- Summed rank inequality: fine.
-- A background python job (task bm748ey2m, digit4.py, first version) has an infinite loop. I could not kill it (taskkill was denied). I told the orchestrator.
+## Checks done this step (scratchpad, evidence only)
+- r3q2.py: the round3_q2 family at k = 1, 2, 3 has 0 monochromatic L's (32/144/336 L's). Golomb colors are (2..2,1..1); request colors are {0,1} for U'' and {0,2} for U', as claimed.
+- r3q3.py: the lifted family, p in {5,7}, 1-2 copies, k = 2-3, 3 seeds each: 0 monochromatic L's (up to 2772 L's); N_e = 2kr exactly.
+- pos.py: the color Cauchy-Schwarz identity and inequality hold on 200 random sets and partitions.
 
-## Key insight (round 3 plan)
-- The digit families have min_e N_e(h)/(h|F_h|) -> 0. The consumer needs exactly c < v/(3K) ≈ 1/146 in "min_e N_e <= c h |F_h|".
-- Regime = agreement rate 1/3 of the words z_d(u) = chi(u+d,u), i.e. random-like. Properness excludes the corner color from the agreements at every pair (u,v), so independent row and column words would agree at rate 2/9 only.
-- The D-a target is therefore an agreement deficit (AD) under a density/near-cap hypothesis. Sparse designs have rate 1, so a hypothesis is needed.
-- A ternary-cap bound on Lambda(h) misses by a factor of 3.
-- An attempted "K3 < 3K" shortcut is WRONG: ternary-source fibers have no Golomb split, and D_c has density 1/4.
+## Key insights
+- Entry 37: in the regime, both sides of sum a_l r_{F_d(D)}(l) <= a_0|F_d| + 9 sum a_l v_l are about 8.5e4. The regime is at near-equality, i.e. local equidistribution of the classes plus saturated caps.
+- This "second-order outer inequality" (rectangle counts u, u+d, u+l, u+l+d of D_c) gives, to leading order, the same exclusion n ~ 2.1e7 as the first-order one (both give n^{1/4} ~ 48 sqrt2). So it is not a saving by itself. It could become a second consumer if it is combined with a 2D positivity lower bound on the monochromatic rectangle counts of the diagonal word. Not pursued.
+- On intervals, the caps force agreement rates below 1/3 once S-l > ~324. Proper ternary sources on long intervals are bounded anyway (three-color triangle).
+- Two disjoint near-max Sidon sets exist (Singer set plus a translate minus one point). So no saving comes from additive combinatorics alone; the L's must be used.
 
 ## Route impressions
-- D-a: research-hard; (AD) is the cleanest formulation. Expect partial or conditional output.
-- D-b as posed (regime-size classes): out of reach of explicit construction. The sparse variants are done.
-  - q3 tries fibers >= 2 and polynomial classes.
-- D-c: q2 tries an explicit balanced digit realization. If it succeeds, D-c+ is refuted for arbitrary sources. That is not the goal, but it is good material for "Other routes".
-- AABA (q1): a local, settleable question. Value toward a joint bound is uncertain.
-- Do not weaken the goal. The final document presents P1 plus the D-b sparse refutations plus the conditionals.
+- MS is research-hard; I expect partial output. A refutation needs saturated constructions (near-max Sidon pieces), probably out of reach. Watch for q4 producing a constant-ratio family (useful).
+- If MS is proved, the [GOAL] becomes provable only after delta' is computed. Check whether the q1-q3 answers do it; otherwise the next missing statement is the delta' computation, a finite optimization.
+- D-b at regime size: explicit constructions look hopeless. Do not weaken the goal.
 
-## Round 3 wave (all four "kind: attempt")
-- q1: AABA/ABAA.
-- q2: D-c balanced realization.
-- q3: D-b with fibers >= m.
-- q4: D-a agreement deficit (AD).
+## Round 4 wave (6 queries, all "kind: attempt", all on MS)
+- q1 = q2 = q3: closing task (byte-identical).
+- q4: refute MS.
+- q5: named Fourier-uniformity approach.
+- q6: bare (statements only; derive the chain; new first move).
 
-## Next round checks
-- Verify every returned construction by enumerating all L's, both middle orders, with a script on small parameters. Keep atoms below their shift.
-- If a witness for AABA is given as rows, check its properness with a script.
-- Escalation from round 4 (ESC_ROUND=4): name a single missing statement. The best candidate is (AD) or the joint fiber bound (entries 29, 17).
-- If any complete D-a chain appears, it needs 2 verify queries carrying P1 (round1_q1 Part A) plus the chain verbatim.
+## Next round
+- Round 5 of 6 counts as "one further round"? Check the brief wording.
+- Verify any construction with a script (both middle orders; atoms below shifts).
+- If a full MS proof plus the conversion appears, record PROVED [GOAL] and send 2 verify queries carrying P1 Part A, entries 27/33, the MS proof and the conversion, verbatim.
+- If MS is refuted: record it under dead ends and build the next line. Candidates are D-c under H1-H3 (entry 39), or a second-order consumer through entry 37.
