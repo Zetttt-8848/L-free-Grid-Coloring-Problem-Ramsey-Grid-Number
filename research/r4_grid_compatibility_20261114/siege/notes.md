@@ -1,49 +1,49 @@
-# Notes (director, rewritten at the round-4 plan step)
+# Notes (director, rewritten at the round-5 plan step)
 
 ## Status
-- Goal: entry 1 (OPEN), unchanged. It asks for P1 plus Part D at (D-a) or (D-b).
-  - P1 is PROVED (entry 9; round1_q1 Part A, lines 7-90 of the answer file, is the cleanest chain).
-  - No complete proof of the goal exists. Audit not triggered. Escalation is active from round 4.
-- The ledger after the round-4 block has entries 1-41:
-  - 30 ABAA forcing (round3_q1)
-  - 31/32 the lifted family, proper; it kills D-b variants (b) and (a, alpha<1/2) (round3_q3)
-  - 33 the prefix lemma (round3_q4)
-  - 34/35 the round3_q2 family; D-c+ refuted without hypotheses
-  - 36 density obstruction, modulo the corners theorem
-  - 37 color Cauchy-Schwarz (mine, round4_plan)
-  - 38 OPEN D-b survivors
-  - 39 OPEN D-c under H1-H3
-  - 40 RETRACT 23
-  - 41 OPEN MS
-- MISSING STATEMENT (entry 41): a joint prefix deficit with explicit delta, unconditional, for every proper ternary source, every d and every lambda:
-  sum_{l<=lambda} sum_e r_{S_e(d)}(l) <= (1-delta) sum_{l<=lambda} 3(Q(S-l)+Q(S-l-1)), with S = span F_d(D).
-  - Chain: entry 9, then entry 27 (summed rank inequality), then entry 33 (prefix), then MS, then the conversion delta -> delta'.
-  - The conversion is still uncomputed (elementary). No rounding issue arises: use the real-valued P*(H) = sum_lambda max(0, H - (1-delta)C_{3v}(lambda)), which scales exactly.
+- Goal: entry 1 (OPEN), never proved, never raised. P1 is PROVED (entry 9; round1_q1 Part A is the cleanest chain). Part D open.
+- Ledger after the round-5 block: entries 1-54.
+  - 42 Theorem A (conversion, round4_q6). I re-checked every step: the algebra H_tot - E_0 > 3 sqrt(alpha) H*, Lemma A1 (b),(c), and K <= K^Pi. Sound.
+  - 43 Lemma W / Corollary U (round4_q2); 44 no single mixed pattern forbidden; 45 TSD => MS up to an O(m0) error; 46 OPEN TSD.
+  - 47 near-extremality transfer, w_1 <= (8/9)|Y| (round4_q3); 48 Lemma E/C/Obstruction O (round4_q5); 49 Bose six translates (round4_q1); 50 SC => MS (round4_q6).
+  - 51 RETRACT 41 (MS replaced, not refuted); 52 OPEN MS' (slack S/100, S >= S_0); 53 OPEN lead from round4_q4.partial (product ceiling 1/sqrt(M)); 54 the m = 23 TSD equality instance.
+- round4_q4 was partial twice (only a 1 KB stub). The round4_q1/q6 partials are superseded by their re-runs.
 
-## Checks done this step (scratchpad, evidence only)
-- r3q2.py: the round3_q2 family at k = 1, 2, 3 has 0 monochromatic L's (32/144/336 L's). Golomb colors are (2..2,1..1); request colors are {0,1} for U'' and {0,2} for U', as claimed.
-- r3q3.py: the lifted family, p in {5,7}, 1-2 copies, k = 2-3, 3 seeds each: 0 monochromatic L's (up to 2772 L's); N_e = 2kr exactly.
-- pos.py: the color Cauchy-Schwarz identity and inequality hold on 200 random sets and partitions.
+## Checks done this step (scratchpad q5parts/, tsd.py, disj.py, verify23.py; evidence only)
+- TSD exact maxima for m = 4..24, exhaustive over disjoint Sidon pairs with a backtracking 2-coloring:
+  - deficit of 1-2 for 7 <= m <= 22;
+  - EQUALITY (12 = Q+Q) at m = 23 and 24.
+- The instance A = {0,1,4,13,15,21}, B = {2,5,7,16,22,23} was verified independently (76 L's, 0 monochromatic).
+- Plain disjoint Sidon pairs reach the cap for every m in 5..24 except 7.
 
-## Key insights
-- Entry 37: in the regime, both sides of sum a_l r_{F_d(D)}(l) <= a_0|F_d| + 9 sum a_l v_l are about 8.5e4. The regime is at near-equality, i.e. local equidistribution of the classes plus saturated caps.
-- This "second-order outer inequality" (rectangle counts u, u+d, u+l, u+l+d of D_c) gives, to leading order, the same exclusion n ~ 2.1e7 as the first-order one (both give n^{1/4} ~ 48 sqrt2). So it is not a saving by itself. It could become a second consumer if it is combined with a 2D positivity lower bound on the monochromatic rectangle counts of the diagonal word. Not pursued.
-- On intervals, the caps force agreement rates below 1/3 once S-l > ~324. Proper ternary sources on long intervals are bounded anyway (three-color triangle).
-- Two disjoint near-max Sidon sets exist (Singer set plus a translate minus one point). So no saving comes from additive combinatorics alone; the L's must be used.
+## Key insights this step
+- Cross-lag collision counting is too weak at the lags Theorem A needs.
+  - A cell z_{d+m}(p) lies in about 36 lambda/S lag-structures. Collisions number about lambda^3/S, against C_w of about 6 sqrt(S) lambda.
+  - The two are comparable only at lambda ~ S^{3/4}, but at the optimal rank the chain needs lambda up to about S^{5/8}.
+  - Raising the rank to reach lambda ~ S makes the needed statement equivalent to the conclusion itself (circular).
+- So any deficit must be single-lag and asymptotic, in the coupled structure (W, kappa) of three binary sources.
+  - First-moment heuristic for one U_f: about (2·(3/4)^2)^m ≈ 1.1^m colorings, which is borderline.
+  - The cross-f couplings W(a), W(b) might push it below 1. MS' may well be false.
+- The per-shift (D-a) inequality from MS' needs the named span hypothesis S >= S_1, and it compares to 3K^Pi (the Pi-form certified cap).
+  - The only remaining elementary step of the chain is an explicit lower bound K^Pi >= c S^{3/4} (Bose + Bertrand for Q).
 
-## Route impressions
-- MS is research-hard; I expect partial output. A refutation needs saturated constructions (near-max Sidon pieces), probably out of reach. Watch for q4 producing a constant-ratio family (useful).
-- If MS is proved, the [GOAL] becomes provable only after delta' is computed. Check whether the q1-q3 answers do it; otherwise the next missing statement is the delta' computation, a finite optimization.
-- D-b at regime size: explicit constructions look hopeless. Do not weaken the goal.
+## Round 5 wave (6 queries, all "kind: attempt", all on MS')
+- q1 = q2 = q3: closing task on MS' (byte-identical, about 54 KB with splices).
+  - Splices: round4_q1.md lines 29-194, round4_q6 Part A + Lemma B1, round4_q2 Secs 1-3, round4_q3 Sec 3, round4_q5 Secs 0-5, the Bose statement, the m = 23 data.
+- q4: refute MS' exactly as stated (its wording is new this round).
+- q5: the single-lag core SL (=> MS'), via TSD or a finite unsatisfiable gadget plus counting; or refute SL/TSD.
+- q6: bare query (MS' + the cited statements 9/27/33/42 only; derive the chain; new first move).
 
-## Round 4 wave (6 queries, all "kind: attempt", all on MS)
-- q1 = q2 = q3: closing task (byte-identical).
-- q4: refute MS.
-- q5: named Fourier-uniformity approach.
-- q6: bare (statements only; derive the chain; new first move).
-
-## Next round
-- Round 5 of 6 counts as "one further round"? Check the brief wording.
-- Verify any construction with a script (both middle orders; atoms below shifts).
-- If a full MS proof plus the conversion appears, record PROVED [GOAL] and send 2 verify queries carrying P1 Part A, entries 27/33, the MS proof and the conversion, verbatim.
-- If MS is refuted: record it under dead ends and build the next line. Candidates are D-c under H1-H3 (entry 39), or a second-order consumer through entry 37.
+## Next round (round 6, the final round)
+- If any answer proves MS' (or SL/TSD with the derivation):
+  - record PROVED [GOAL] citing entries 9, 27, 33, 42 and the new proof;
+  - send two verify queries carrying the whole chain verbatim (P1 Part A, rank inequalities, prefix lemma, Theorem A, the new proof, plus the elementary K^Pi lower-bound step);
+  - round 6 is final, so follow the brief's wording on concluding.
+- If MS' is refuted by an explicit family:
+  - that does not refute (D-a) in general, but it is a strong (D-b)-type result;
+  - check whether it meets the goal's (D-b) clause (classes as large as the regime requires); probably record it as a major standing result;
+  - verify it with a script (all L's).
+- If nothing: the goal was never proved, so there is no goal to come back to.
+  - The final document presents the standing results (summary section), with MS' marked open.
+  - Up to two queries in the final round may write up standing results.
+- Verify any construction by script (both middle orders; atoms below shifts; mirrored L's).

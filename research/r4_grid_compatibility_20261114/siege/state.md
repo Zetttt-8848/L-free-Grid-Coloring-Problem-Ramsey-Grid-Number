@@ -32,3 +32,6 @@ R: 0
 - round 4 wave first launch: deep x6; TOTAL (6 queries): answered 3, partial 3, no answer 0 (usage limit hit); re-running q1,q4,q6
 - round 4 wave re-run (q1,q4,q6, deep): final TOTAL (6 queries): answered 5, partial 1, no answer 0; R = 4
 - phase: round 5 plan, attempt 1
+- round 5 plan attempt 1: judge done; screen_r4 all OK appended
+- round 5 check: WAVE 6 FLOOR 1 (ledger +13, kind=attempt 6/6); cap 6; summary copied
+- phase: round 5 wave (math-proof:math-proof-worker-deep x6)
