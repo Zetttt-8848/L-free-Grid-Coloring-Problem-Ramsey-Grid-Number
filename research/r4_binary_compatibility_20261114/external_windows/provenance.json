@@ -1,0 +1,17 @@
+{
+  "G": {
+    "bytes": 8392,
+    "sha256": "bfd7fbf4b93be3484c51f8b50c8419b6ab9cd07f6a9065b1ccb3c8bbe0d8cb4c",
+    "url": "https://raw.githubusercontent.com/dcartermath/sidon-error/ff5b032fc3745140549777a96a9ec3ba7f8dd954/asymptotic/G.txt"
+  },
+  "H": {
+    "bytes": 176335,
+    "sha256": "cfaf69e83f34860761fb67faa832bea3eae0372787fbd5042efbec31e308ad03",
+    "url": "https://raw.githubusercontent.com/dcartermath/sidon-error/ff5b032fc3745140549777a96a9ec3ba7f8dd954/asymptotic/H.txt"
+  },
+  "p": {
+    "bytes": 586,
+    "sha256": "895a88c77c3a8b17473c5ba8b863e0aac41dfa1a58c7d1e8f7760684da97d9ed",
+    "url": "https://raw.githubusercontent.com/dcartermath/sidon-error/ff5b032fc3745140549777a96a9ec3ba7f8dd954/asymptotic/p.txt"
+  }
+}

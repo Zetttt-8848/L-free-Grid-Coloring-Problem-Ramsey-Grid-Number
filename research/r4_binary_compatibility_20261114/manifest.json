@@ -1,0 +1,34 @@
+{
+  "base_commit": "726998b9da3edd36247a6e2a5c487ba25b0a7297",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "artifacts": {
+    "research\\r4_binary_compatibility_20261114\\check_collision_family.py": "d4b92bf9f17e435c51a878bb1d4b3a2eb19ba1c888ff10aa9dbfd6b6b361d557",
+    "research\\r4_binary_compatibility_20261114\\collision_candidate.md": "f50f1e4d42184b3f1c84737f193ae472248a1eb7903c57e4d178a07d30b9c139",
+    "research\\r4_binary_compatibility_20261114\\collision_examples.json": "caa0056930d042e3f6c9628082fab669effd401936d674213d361fa8c6cd1682",
+    "research\\r4_binary_compatibility_20261114\\CONTRACT.md": "f57ff85b4f022288e15a8a18e14324e593c8dd6ef053aeea24ee315d9c6fe6d7",
+    "research\\r4_binary_compatibility_20261114\\ROUND1_REPORT.md": "48b728be1a311f827495c199cf6d1a0a63a47e3b3b9ca53bc6a9ee395fa78074",
+    "research\\r4_binary_compatibility_20261114\\sensitivity.json": "3ea8b28de21a69aa44e1d2f7d19d1ed409c3643bf169792a6a3172502b7709a1",
+    "research\\r4_binary_compatibility_20261114\\sensitivity.py": "b3a7ddb8d291d7632183d7c8ea0fe35e9c550786846eb78b7ac9eb1cef85a425",
+    "research\\r4_binary_compatibility_20261114\\THEORY.md": "46bcfd5da3bdf8ed5eb31810a8d0e20bd1e8981a23c432b01cdb5f213e91f431",
+    "research\\r4_binary_compatibility_20261114\\WINDOW_AUDIT.md": "ffbb17d1179f6a9cf056a885ca4f8397313c25a8c23b6cc144d5daf413751432",
+    "research\\r4_binary_compatibility_20261114\\external_windows\\G.txt": "bfd7fbf4b93be3484c51f8b50c8419b6ab9cd07f6a9065b1ccb3c8bbe0d8cb4c",
+    "research\\r4_binary_compatibility_20261114\\external_windows\\H.txt": "cfaf69e83f34860761fb67faa832bea3eae0372787fbd5042efbec31e308ad03",
+    "research\\r4_binary_compatibility_20261114\\external_windows\\p.txt": "895a88c77c3a8b17473c5ba8b863e0aac41dfa1a58c7d1e8f7760684da97d9ed",
+    "research\\r4_binary_compatibility_20261114\\external_windows\\provenance.json": "2509a95a4410912266c366be09a397a1e1cf7c242810ef2358d0ae6e7734270a"
+  },
+  "source_inputs": {
+    "research\\boundary_certificates_20261115\\verify_four_double.py": "4240c104b64728f64520f2faab0616558a4a9372b8f84196df21910b453c6b43",
+    "research\\boundary_certificates_20261115\\verify_four_edges.py": "7e5cfad32f3592c8d178a0755764f640df3b707e4368d2da5beecfb682d5b7c6",
+    "research\\boundary_certificates_20261115\\verify_four_rank.py": "e2a91b2438ad0263f59c917a6bc0b15ba9daff33528d780b5b563632ef09b696",
+    "research\\boundary_certificates_20261115\\verify_four_sidon.py": "d554d5c5d93b5c2e00a7d955b70d442ca5d8cf5e7b66eb3fbd49966c49ce524e",
+    "research\\boundary_certificates_20261115\\verify_four_twenty.py": "6bb373ad28484002444ef937389c438d7259c182a64cfc62d4b7475a6c7d5b32",
+    "research\\boundary_certificates_20261115\\verify_four_window.py": "9280d378124808e7287ce545d8869c75bd712d9eeef7b44ffab254d6c3ccd246",
+    "research\\boundary_certificates_20261115\\four_capacity_runs.json": "2a782fbd81e5c7013ae057a4604bd360d541d3f0e80bd08ef5a349b567a8bfd0",
+    "research\\boundary_certificates_20261115\\four_double_window_runs.json": "a4dcf79d314d25af0d6e91fc38c1c0091fbe3c44ee2c13ca1341ad8649271baa",
+    "research\\boundary_certificates_20261115\\four_edge_runs.json": "a152da1678b756a80cbb8bc4fd2083d7e4a6ac3713be846d5e478e047ffe3b08",
+    "research\\boundary_certificates_20261115\\four_sidon_runs.json": "90b4bf18d5516a17e231de1d665660c1d51257014013d01ea2f81e3d2fc791b7",
+    "research\\boundary_certificates_20261115\\four_window_runs.json": "9f225f8a73bab850532e253ef96107e995a13350ac5861e8f0d967aff4bc8452",
+    "research\\boundary_certificates_20261115\\four_window_correlations.json": "32ece521e4467d0a055fef14480f0297549dc492e7d4bfe9307cd401f53da90f",
+    "research\\boundary_certificates_20261115\\four_window_edges.json": "bda9ccfe8de3f8640ee2130b66696236d3fa649d727aaad9cefbd8b1eea5eee2"
+  }
+}
