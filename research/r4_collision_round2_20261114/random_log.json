@@ -1,0 +1,8 @@
+{
+  "seed": 20261114,
+  "draws": 1200,
+  "nonpartition_candidates": 183,
+  "solver_attempts": 183,
+  "elapsed": 2.7069577999936882,
+  "scope": "Reconnaissance only; false/limited solver returns are not infeasibility evidence"
+}

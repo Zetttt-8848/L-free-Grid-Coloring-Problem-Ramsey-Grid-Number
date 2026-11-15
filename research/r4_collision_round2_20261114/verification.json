@@ -1,0 +1,50 @@
+{
+  "witness": {
+    "marks": 10,
+    "cells": 45,
+    "physical_Ls": 32,
+    "actual_requests": [
+      11,
+      12,
+      14,
+      15,
+      85,
+      86,
+      88,
+      89
+    ],
+    "lower_half": [
+      11,
+      12,
+      14,
+      15
+    ]
+  },
+  "finite_sliding_window": {
+    "words": 9840,
+    "width_checks": 73812,
+    "max_positions": 8
+  },
+  "exact_duals": [
+    {
+      "h": 1,
+      "every_integer_constraint_checked": 358398,
+      "positive_widths": 1
+    },
+    {
+      "h": 89599,
+      "every_integer_constraint_checked": 268800,
+      "positive_widths": 1
+    },
+    {
+      "h": 179199,
+      "every_integer_constraint_checked": 179200,
+      "positive_widths": 1
+    }
+  ],
+  "rectangular_gate": {
+    "demand": 63626655522,
+    "hypothetical_budget": 2707527284138,
+    "profile_provenance": "supplied profile; capacity derivation not independently reimplemented"
+  }
+}

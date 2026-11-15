@@ -1,5 +1,18 @@
 # Research state snapshot
 
+## Newer local research record: 2026-11-14
+
+The historical numerical snapshot below is superseded where indicated by
+the refresh output; it must not be treated as the latest baseline.
+For Codex's binary-source lane, see `research/r4_binary_compatibility_20261114/`
+(base fb33871768bd94fd8e88452ac62ac2789eb0e882 for the following round) and
+`research/r4_collision_round2_20261114/ROUND2_REPORT.md`. Round 2 proves a
+short-request demand inequality with an exact certificate interface and refutes
+lower-half Golombness. It establishes no new R4 bound. Candidate R2-C1 remains
+undecided; the 2.35 percent consumer diagnostic is hypothetical. The owner
+authorized independent continuation and publication before Claude's integration.
+Numerical baseline pins are not promoted by these structural results.
+
 Snapshot date: 2026-11-13. Pins: `pins.json`. This file is a dated summary
 with pointers; the cited project records are the authority. If
 `scripts/refresh_state.py` reports a moved pin, the affected lines below are

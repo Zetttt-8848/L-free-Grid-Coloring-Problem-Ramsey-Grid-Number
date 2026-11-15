@@ -1,5 +1,27 @@
 # Coverage record
 
+## 2026-11-14, Codex binary-source round 2
+
+Base: fb33871768bd94fd8e88452ac62ac2789eb0e882. Remote fetch and state refresh
+completed. The dated state pins remain stale; no repository-wide review or
+new numerical bound is claimed. External Claude's unfinished work was not read.
+
+Read: all three governing skills; state, obstructions, information-losses,
+and color-transfer references; round-1 THEORY.md, sensitivity.py, and
+check_collision_family.py; boundary-certificate FOUR_COLOR.md,
+FOUR_COLOR_EDGE_VARIANCE.md, verify_four_edges.py, verify_four_double.py;
+the complete newly authored round-2 package.
+
+Searched/partial: manuscript/main.tex (forcing and signed-completion section
+read; other matches searched), docs/RESULTS_INDEX.md, this coverage record,
+and literature/KNOWN_RESULTS.md. No fresh external literature audit.
+
+Run: the bounded probes, exact certificate generator, and independent
+verify_round2.py, with coverage in ROUND2_REPORT.md and verification.json.
+These checks do not independently rederive the inherited capacity tables or
+the external correlation construction. Internal helpers performed theory and
+read-only review, apart from the reviewer's REVIEW.md; no numerical workers.
+
 What has actually been read, and how deeply. Append dated entries; do not
 upgrade a level without doing the reading. Levels:
 

@@ -1,5 +1,12 @@
 # Current proposition and proof index
 
+2026-11-14, Codex binary-source lane: [round 2 report](../research/r4_collision_round2_20261114/ROUND2_REPORT.md)
+records a proved short-request demand inequality, exact coefficient certificates,
+and a checked counterexample to lower-half Golombness. It establishes no new
+R4 bound. The numerical entries below are dated historical records; consult
+the [round-1 baseline audit](../research/r4_binary_compatibility_20261114/WINDOW_AUDIT.md)
+for the newer window chain and its verification limits.
+
 This index points to the current mathematical manuscript. Open assertions are unresolved hypotheses and External theorem are literature inputs. Historical Lean coverage records are not a substitute for item-by-item correspondence of the current draft.
 
 Latest Research Catalog Results: [Global Count](../research/global_counting_20261108/README.md), has not yet been incorporated into the main manuscript. The range is still 21 to 464.

@@ -1,0 +1,25 @@
+{
+  "base": "fb33871768bd94fd8e88452ac62ac2789eb0e882",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "sha256": {
+    "research/boundary_certificates_20261115/four_edge_runs.json": "9dbf8c62eb0ad8e4204b92337d3147a175ad92d90ff4f4f66077404c23ac0036",
+    "research/boundary_certificates_20261115/four_window_correlations.json": "d5e81c64ca2f2ef498e140bc1cea095b61e9a91677f99dd22169077cf8532ac1",
+    "research/boundary_certificates_20261115/verify_four_double.py": "d66c46f5ebe5e51147a37306b88e9e506938bcf7a401e304229007f1f5e73f44",
+    "research/boundary_certificates_20261115/verify_four_edges.py": "fcbb1f23213b6ce7370fbe419922e91937da8761178911955748ed15afcfe236",
+    "research/boundary_certificates_20261115/verify_four_window.py": "2b8ed314a5110a667f570db9f594ffd86d9f6f5b78eb4492205e80c9f1bda516",
+    "research/r4_collision_round2_20261114/build_duals.py": "7f052212c09d05ba8f39d24b3b62cf3ad5c89764d51656823baed23abad2c49f",
+    "research/r4_collision_round2_20261114/CONTRACT.md": "d84bd71493fed0703f26387b9bc4df3ff80c38947a9092a1268fbf35191e172e",
+    "research/r4_collision_round2_20261114/demand_certificates.json": "8bcffca2fd32c116c888e0a8c739e06530c71a778c0a909f6175036e5ebe05c4",
+    "research/r4_collision_round2_20261114/pilot.py": "101889ec922e7ab360942a73c22f57061d0a5200f7367567673bbaf133e53686",
+    "research/r4_collision_round2_20261114/random_log.json": "ccc16a4330ea5c4cf91e020d9407d9439b2d7c6605fdc2624269d453e469116a",
+    "research/r4_collision_round2_20261114/random_probe.py": "a6f62a95b344b45c409983fd31ea76fac4f498e4933b8a970712777babd11094",
+    "research/r4_collision_round2_20261114/REVIEW.md": "5d7dc2b80be6395b5f9e87d8414919b9e0b275e7fc6cfd3ea55e693209b9b36a",
+    "research/r4_collision_round2_20261114/ROUND2_REPORT.md": "3ad1f817d806aac2c0af8819eb389066af2b492be9da2a547672cd3812368c59",
+    "research/r4_collision_round2_20261114/SHORT_DEMAND.md": "a9da6aad95ca0f261c51ebc91fcc3bc7c5205ed85c1158ad838f44b84ea9bb89",
+    "research/r4_collision_round2_20261114/translated_probe.json": "1924d0288bd8823a52b45a011ede44c657e3b5114af8abb7e05b7e40378859ff",
+    "research/r4_collision_round2_20261114/translated_search.json": "267745872014fdacf3d0d3d7f6447f4b70b532f9e48cc0a07a6bcdf870c72146",
+    "research/r4_collision_round2_20261114/verification.json": "e4cf3fb51818ef602459798d7a70013a48df44d3f72059385894b1c1199ab351",
+    "research/r4_collision_round2_20261114/verify_round2.py": "628430159558d8693bc70acd8115d860f349d0f6b960fc657902189f33cc284c"
+  },
+  "hash_scope": "Canonical Git index bytes, not platform line endings"
+}

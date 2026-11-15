@@ -1,5 +1,22 @@
 # Refuted statements and what survives them
 
+## 2026-11-14 addition: request offsets in one half
+
+The claim that request offsets below half the target lag form a Golomb set
+is refuted by the 10-mark proper binary source in
+`research/r4_collision_round2_20261114/translated_probe.json`; all 45 cells and
+32 physical Ls are checked by `verify_round2.py`. The lower offsets are
+{11,12,14,15}, with repeated difference 1. The weaker claim that all offsets
+partition into two Golomb sets remains undecided. This is not a full-square
+construction. Evidence base: fb33871768bd94fd8e88452ac62ac2789eb0e882 plus
+the round-2 package and its manifest.
+
+The same package proves a short-request demand interface. Its explicitly
+hypothetical rectangular consumer test reaches only about 2.35 percent of
+the allowed request budget, even assuming the unproved pointwise cap
+2*ceil(sqrt(t)). This blocks that tested aggregate from excluding its saturated
+profile; it does not refute weighted or near-extremal collision methods.
+
 Each entry names the exact proposition that failed, the evidence, and the
 variants it does **not** rule out. A counterexample refutes a statement, not
 a direction. Add entries when a formulation fails; cite the record that holds
