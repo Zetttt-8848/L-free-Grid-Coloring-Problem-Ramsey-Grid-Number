@@ -1,0 +1,15 @@
+{
+  "domain": "square",
+  "k": 4,
+  "cells": 36,
+  "corners": 55,
+  "monochromatic": 0,
+  "rainbows": 10,
+  "mixed_parallel_inputs": 45,
+  "proper": true,
+  "first_monochromatic_corners": [],
+  "n": 6,
+  "implied_Rk_lower_bound": 7,
+  "input_sha256": "5a58456b10359ef88d272865a0dda00342328717aa686d3029d84c6e46afb00e",
+  "checker_sha256": "d8a12772c97a8321d93f228c665a12ad960db5c9021954261cb9c2beb561d3aa"
+}

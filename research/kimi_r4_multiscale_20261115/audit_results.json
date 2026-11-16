@@ -1,0 +1,128 @@
+{
+  "status": "PASS; old Q3a is refuted and multiscale pair-tight counts are geometric identities",
+  "python": "3.12.16",
+  "signature_word_counts": {
+    "1_colors_signature_7": 4,
+    "2_colors_signature_3": 36,
+    "3_colors_signature_1": 24
+  },
+  "proper_witness": {
+    "n": 6,
+    "cells": 36,
+    "geometric_Ls": 55,
+    "P_d": {
+      "1": 25,
+      "2": 16,
+      "3": 9,
+      "4": 4
+    },
+    "old_Q3a_lhs": "1381/144",
+    "old_Q3a_rhs": 12,
+    "shortfall": "347/144",
+    "unweighted_pair_tight_Ls": 54,
+    "old_unweighted_lower_bound": 12
+  },
+  "improper_monochrome_square_has_same_P_d": true,
+  "position_independent_multiplicity_counterexamples": [
+    {
+      "n": 5,
+      "L": [
+        0,
+        0,
+        1
+      ],
+      "actual_multiplicity": 1,
+      "old_claimed_multiplicity": 16
+    },
+    {
+      "n": 6,
+      "L": [
+        0,
+        0,
+        1
+      ],
+      "actual_multiplicity": 1,
+      "old_claimed_multiplicity": 16
+    }
+  ],
+  "scale_identities": [
+    {
+      "n": 5,
+      "scale": 1,
+      "copies": 1,
+      "host_Ls": 30,
+      "total_copy_L_incidences": 30,
+      "identity": "30*copies",
+      "multiplicity_sha256": "9759128859a4f5bff74dd478888d0312ce7d848d81794f4e839a9c559bd10b88"
+    },
+    {
+      "n": 6,
+      "scale": 1,
+      "copies": 4,
+      "host_Ls": 55,
+      "total_copy_L_incidences": 120,
+      "identity": "30*copies",
+      "multiplicity_sha256": "bcb3fa104184bb05049a86a080c5d913043778b4133f42d8accf4909677bd9a8"
+    },
+    {
+      "n": 9,
+      "scale": 1,
+      "copies": 25,
+      "host_Ls": 204,
+      "total_copy_L_incidences": 750,
+      "identity": "30*copies",
+      "multiplicity_sha256": "16dbc39a1cda6e883ea5ddf920560fb8ed70c70c883de555308c14de5c1fd69b"
+    },
+    {
+      "n": 9,
+      "scale": 2,
+      "copies": 1,
+      "host_Ls": 204,
+      "total_copy_L_incidences": 30,
+      "identity": "30*copies",
+      "multiplicity_sha256": "a630d85e9c51522130aac8b32f81b734de2a85e75807f53a945ac77af805b063"
+    },
+    {
+      "n": 10,
+      "scale": 1,
+      "copies": 36,
+      "host_Ls": 285,
+      "total_copy_L_incidences": 1080,
+      "identity": "30*copies",
+      "multiplicity_sha256": "93a3657e5f120d3161607ca13ae75f65122a64c98c139837fc81132f1ef05551"
+    },
+    {
+      "n": 10,
+      "scale": 2,
+      "copies": 4,
+      "host_Ls": 285,
+      "total_copy_L_incidences": 120,
+      "identity": "30*copies",
+      "multiplicity_sha256": "a6de6638ec4813910db5e82cb615b3176cfccd6e7b4d54389ec67ef9e90836b0"
+    }
+  ],
+  "proper_6_block_pair_tight_counts": [
+    30,
+    30,
+    30,
+    30
+  ],
+  "improper_6_block_pair_tight_counts": [
+    30,
+    30,
+    30,
+    30
+  ],
+  "quotient_incidence_6_scale_1": {
+    "actual": 330,
+    "rainbow_incidence": 15,
+    "identity": "Q=90*C-2*R",
+    "copies": 4,
+    "trivial_lower_from_nonempty_signatures": 120,
+    "seven_applications_of_R2_equals_5": 28,
+    "trivial_rainbow_upper": 120,
+    "seven_quotient_rainbow_upper": "166",
+    "consumer": "none; the seven-quotient lower bound is weaker"
+  },
+  "scope": "Finite checks and exact general identities; no numerical Ramsey bound"
+}
