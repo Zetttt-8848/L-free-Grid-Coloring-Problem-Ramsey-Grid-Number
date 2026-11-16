@@ -55,12 +55,14 @@ preserving selections, such as contiguous or equally scaled blocks, may be used.
 The remaining contiguous-block count has no known upper-bound consumer; do not
 expand this lane without first supplying that consumer.
 
-### Route O: off-diagonal words coupled to the main diagonal
+### Route O: two-diagonal product classes (refuted in round 2)
 
-Treat another diagonal word as a source in its own right and retain the cells
-sharing constraints with the main diagonal. Seek one labelled inequality over
-at least two diagonals rather than independent per-diagonal capacities. First
-test the smallest pair of diagonals where the incumbent loses the interaction.
+The proposed joint-fiber palette reduction is false. Main and off-diagonal
+pairs of lag `h` on diagonals `0` and `c` use different completion cells
+`W_h[u]` and `W_(c+h)[u]`. A checked proper 3 by 3 square refutes the enabling
+statement, and the sixteen-class consumer was not run. Only the standard
+single-lag restriction `F_c(J_(a,a))=empty` survives. Do not revive product-class
+capacities without a genuinely different shared-cell mechanism.
 
 ### Route M: explicit multiscale full-square recursion
 
