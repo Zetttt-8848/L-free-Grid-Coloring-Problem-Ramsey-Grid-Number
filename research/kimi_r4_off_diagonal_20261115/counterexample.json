@@ -1,0 +1,51 @@
+{
+  "status": "COUNTEREXAMPLE",
+  "search_domain": "all 4^5 assignments to unprescribed cells, stopping at first witness",
+  "tested_assignments": 18,
+  "free_cells": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "fixed_cells": {
+    "(0, 0)": 0,
+    "(1, 1)": 0,
+    "(1, 0)": 1,
+    "(2, 1)": 1
+  },
+  "witness": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "O1_violation": "W_0[0]=W_0[1]=0, W_1[0]=W_1[1]=1, but chi(1,0)=1"
+}

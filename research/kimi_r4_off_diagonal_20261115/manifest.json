@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15",
+  "branch": "kimi/r4-off-diagonal-20261115",
+  "base_commit": "252bdcfb9da09eb149a7e5c0505d512fbd907405",
+  "python": "3.12.16",
+  "dependencies": "Python standard library only",
+  "checks": {
+    "counterexample_independent_verifier": "PASS",
+    "ascii_only_new_files": "PASS",
+    "sixteen_class_consumer": "CANCELLED: enabling proposition O1 refuted"
+  },
+  "sha256": {
+    "CONTRACT.md": "15664d3e25c9aef06fabd39db87a20f02f43a39705134e24ac3b271d90113334",
+    "HANDOFF.md": "260a58b6a918f6a7723d89e014f73aa76ade3da0230035c5b2f1cc6ba61ee27a",
+    "ROUND2_REPORT.md": "49ad2ce5e249f55dda7fcdfef19d819b08f8142e2484527d63d3f2ef486a74d4",
+    "THEOREM.md": "c5e051e6c47a2c3434d9e0ecbacc889653bbc069b8b39342b4d80b8ab486bdf6",
+    "counterexample.json": "fd4fdf02a53bdc2dc1f481e9ab0aef43aa99b79d093875445767ee2807c40d91",
+    "find_counterexample.py": "4852cbc7d184fdda4c690cc3f0f699b7dbbfdd0af1aa349c6512760d2747c0bc",
+    "verify_counterexample.py": "a8e13e6eb120ea2960bebbffa963e22989cdfe37fa14cd8f345cd1e83780d444"
+  },
+  "scope": "The complete stored witness refutes O1. No numerical Ramsey bound changed."
+}
