@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "independent_coordinates": "Ls indexed by integer triples u<v<w",
+  "all_four_color_words_checked": 4164,
+  "formula_rows_recomputed": 10,
+  "pair_completion_bijections_checked": [
+    2,
+    3,
+    4
+  ],
+  "k3_manuscript_reduction_checked_through_N": 99,
+  "pure_energy_contradiction": false,
+  "scope": "Internal independent recomputation; not external review or formalization"
+}
