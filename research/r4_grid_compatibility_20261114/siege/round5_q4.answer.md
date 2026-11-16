@@ -189,3 +189,57 @@ uniformly in lambda. With M >= 2rho + 1:
    This is a per-lag hypothesis; for the prefix form only the weaker statement "ratio <= theta + kappa"
    is proved. Products shrink the ratio by about sqrt(rho/M); they cannot amplify it.
 
+## 5. Two further exclusions of candidate types (proved)
+**5.1 Difference colorings.** If chi(v,u) = phi(v-u) for some phi (e.g. quadratic-residue type
+colorings of differences, or any coloring constant on each diagonal offset), then for every d one
+class S_{phi(d)}(d) = F_d(D) and the other two are empty. So w_l = r_{F_d(D)}(l) and, F_d(D) being a
+single class, Fact 0 gives w_l <= v_l: the joint prefix ratio is <= 1/3 for every lambda.
+More generally, by Theorem N(c) a refuting instance needs, at the shift d, all three colours on the
+offset-d cells (u+d,u), u in Y, each on >= c(eps) sqrt(S) cells with c(eps) -> infinity. Any coloring
+rule in which the offset-d cells of most of Y carry one or two colours is excluded:
+if |X_e| < sqrt(2(1-3eps)S/(300eps)) for some e, (*) fails.
+
+**5.2 Sidon-type sources.** If D is Sidon then V(D) contains no L at all (an L needs a, a+delta, c,
+c+delta in D with a < c, a repeated difference or a 3-AP when a+delta = c), but then |F_d(D)| <= 1 for
+every d >= 1 and the instance is trivial (S = 0). So all the mass of a counterexample must come from
+the additive energy of D; by Theorem N(c), D needs |F_d(D)| >= 3 c(eps) sqrt(S).
+
+## 6. Where the attempts stopped (precise obstruction)
+- All proved inputs available here (Golomb split, Lemma F, AABA/ABAA forcing, no-collision, gap
+  coverage, equidistribution, binary cap) are single-lag or single-pair-of-lags statements, and each
+  is consistent with saturation at a single lag (director's m = 23 instance; six disjoint Bose
+  translates; translate obstruction O). Theorem N shows a refutation is a statement about
+  lambda >> sqrt(S) lags simultaneously, so none of the single-lag constructions transfers.
+- Every explicit construction type I could analyse rigorously (block/digit product, difference
+  colorings, Sidon-type) has joint prefix ratio bounded away from 1 (Prop. P, 5.1, 5.2).
+- A sumset-type class X ⊇ C + T (C a near-maximal Sidon set with all small gaps, T a short set with
+  r_T(l) = 2 for l <= lambda) would give r_X(l) ~ 2|C| ~ v_l at those lags. HEURISTIC ONLY: the cross
+  terms sum_j r_T(j) 1[l - j in C - C] are about |T|^2/2 >= 2 lambda >> sqrt(S) = v_l/2 per lag
+  (Lemma G: C - C contains almost every small gap), contradicting Fact 0; so this type cannot be a
+  binary source when lambda >> sqrt(S), and the only way out (C - C avoiding small gaps) is the block
+  type of Prop. P. I did not write this as a theorem (representation multiplicities in C + T make
+  the lower bound on r_X(l) need care).
+
+## 7. Status table
+PROVED: Fact 0; Lemma K (|binary source| <= sqrt(16 L Q(L))); Lemma G (gap coverage);
+Theorem N (necessary conditions: lambda >= S/(600 eps Q(S-1)), class sizes
+>= sqrt((1-3eps)/(150eps)) sqrt S, saturated per-class prefixes, near-maximal pieces);
+Proposition P (block-placed / digit-product sources: ratio <= theta + kappa ~ Q(rho)/sqrt(M) + O(g^{-1/2}));
+5.1 (difference colorings: ratio <= 1/3); 5.2.
+CITED (from memory): (Q+), (Q-), (Tab); used only in asymptotic readings and the small-rho table.
+HEURISTIC: Section 6 sumset remark.
+NOT ACHIEVED: an explicit refuting family; a proof of MS'; the labelled partial results requested
+(a family with joint prefix ratio bounded below by a constant close to 1, or a full proper ternary
+source with all three U_f(l) saturated at one lag) were not obtained.
+OPEN:
+- MS' itself.
+- Problem SAT (Section 3): existence of binary sources with sum_{l<=lambda} r_X(l) >= (1-o(1))C_v(lambda),
+  lambda/sqrt(S) -> infinity. Necessary for refuting MS'; a uniform negative answer with slack proves MS'.
+  Even binary sources of size >> sqrt(S) with prefix ratio bounded below by a positive constant on
+  lags up to omega(sqrt S) are not known to me.
+- Whether SAT (for one class) can be lifted to three classes at one shift (sufficiency gap).
+- Proposition P for small rho with Q(rho)^2 >= 2rho+1 (e.g. rho = 17) and for bounded beta.
+No claim about R_4 is made.
+
+=== END OF ANSWER round5_q4 ===
+
