@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "witnesses": [
+    {
+      "m": 3,
+      "status": "PASS",
+      "proper_Ls_checked": 5,
+      "strict_triangle_Ls_checked": 1,
+      "rainbow_Ls": 0,
+      "rho_m": 0
+    },
+    {
+      "m": 4,
+      "status": "PASS",
+      "proper_Ls_checked": 14,
+      "strict_triangle_Ls_checked": 4,
+      "rainbow_Ls": 0,
+      "rho_m": 0
+    },
+    {
+      "m": 5,
+      "status": "PASS",
+      "proper_Ls_checked": 30,
+      "strict_triangle_Ls_checked": 10,
+      "rainbow_Ls": 0,
+      "rho_m": 0
+    }
+  ],
+  "known_answer_checks": [
+    {
+      "m": 4,
+      "two_color_proper_exists": true,
+      "zero_rainbow_when_proper": true,
+      "status": "PASS"
+    },
+    {
+      "m": 5,
+      "two_color_proper_exists": false,
+      "zero_rainbow_when_proper": false,
+      "status": "PASS"
+    }
+  ],
+  "new_R4_bound": false,
+  "scope": "Literal witness checks and known-answer encoding checks only"
+}

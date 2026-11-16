@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-15",
+  "python": "3.12.16",
+  "validity_condition": "a-b+s>=1; equivalently every local strict-triangle cell lies in host T_N",
+  "origin_formula": "q=N-1-(m-1)s; t=min(s-1,q); A=C(q+2,2)+t(q+1)-C(t+1,2)",
+  "corrected_J": "sum_s a_s*A(N,m,s)",
+  "Lambda_upper": "sum_(j|h,1<=j<=m-2) a_(h/j)*C(m-j,2)",
+  "uniform_J_leading_coefficient": "(m+1)/(6*m*(m-1))",
+  "uniform_K": "C(m,3)",
+  "asymptotic_closure": "m=3,4,5 have rho=0; for m>=6 even rho=C(m,3) cannot beat the uniform-K ceiling",
+  "scenarios": [
+    {
+      "N": 4,
+      "m": 3,
+      "scale_rows": [
+        {
+          "s": 1,
+          "valid_origins": 3
+        }
+      ],
+      "J_uniform": 3,
+      "host_Ls": 4,
+      "incidence_entries": 3,
+      "total_incidences": 3,
+      "maximum_actual_incidence": 1,
+      "universal_Lambda_cap_C_m": 1,
+      "literal_copy_and_formula_agreement": true
+    },
+    {
+      "N": 5,
+      "m": 3,
+      "scale_rows": [
+        {
+          "s": 1,
+          "valid_origins": 6
+        },
+        {
+          "s": 2,
+          "valid_origins": 1
+        }
+      ],
+      "J_uniform": 7,
+      "host_Ls": 10,
+      "incidence_entries": 7,
+      "total_incidences": 7,
+      "maximum_actual_incidence": 1,
+      "universal_Lambda_cap_C_m": 1,
+      "literal_copy_and_formula_agreement": true
+    },
+    {
+      "N": 6,
+      "m": 4,
+      "scale_rows": [
+        {
+          "s": 1,
+          "valid_origins": 6
+        }
+      ],
+      "J_uniform": 6,
+      "host_Ls": 20,
+      "incidence_entries": 16,
+      "total_incidences": 24,
+      "maximum_actual_incidence": 3,
+      "universal_Lambda_cap_C_m": 4,
+      "literal_copy_and_formula_agreement": true
+    },
+    {
+      "N": 7,
+      "m": 4,
+      "scale_rows": [
+        {
+          "s": 1,
+          "valid_origins": 10
+        },
+        {
+          "s": 2,
+          "valid_origins": 1
+        }
+      ],
+      "J_uniform": 11,
+      "host_Ls": 35,
+      "incidence_entries": 26,
+      "total_incidences": 44,
+      "maximum_actual_incidence": 3,
+      "universal_Lambda_cap_C_m": 4,
+      "literal_copy_and_formula_agreement": true
+    },
+    {
+      "N": 8,
+      "m": 5,
+      "scale_rows": [
+        {
+          "s": 1,
+          "valid_origins": 10
+        }
+      ],
+      "J_uniform": 10,
+      "host_Ls": 56,
+      "incidence_entries": 46,
+      "total_incidences": 100,
+      "maximum_actual_incidence": 5,
+      "universal_Lambda_cap_C_m": 10,
+      "literal_copy_and_formula_agreement": true
+    }
+  ],
+  "thresholds": [
+    {
+      "m": 3,
+      "C_m": 1,
+      "J_over_N_cubed_limit": "1/9",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "3/8",
+      "required_rho_strictly_above": "3/8",
+      "asymptotic_uniform_consumer_possible": true,
+      "tested_rho": 0,
+      "consumer_closed": true
+    },
+    {
+      "m": 4,
+      "C_m": 4,
+      "J_over_N_cubed_limit": "5/72",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "3/5",
+      "required_rho_strictly_above": "12/5",
+      "asymptotic_uniform_consumer_possible": true,
+      "tested_rho": 0,
+      "consumer_closed": true
+    },
+    {
+      "m": 5,
+      "C_m": 10,
+      "J_over_N_cubed_limit": "1/20",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "5/6",
+      "required_rho_strictly_above": "25/3",
+      "asymptotic_uniform_consumer_possible": true,
+      "tested_rho": 0,
+      "consumer_closed": true
+    },
+    {
+      "m": 6,
+      "C_m": 20,
+      "J_over_N_cubed_limit": "7/180",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "15/14",
+      "required_rho_strictly_above": "150/7",
+      "asymptotic_uniform_consumer_possible": false,
+      "tested_rho": "not tested",
+      "consumer_closed": true
+    },
+    {
+      "m": 7,
+      "C_m": 35,
+      "J_over_N_cubed_limit": "2/63",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "21/16",
+      "required_rho_strictly_above": "735/16",
+      "asymptotic_uniform_consumer_possible": false,
+      "tested_rho": "not tested",
+      "consumer_closed": true
+    },
+    {
+      "m": 8,
+      "C_m": 56,
+      "J_over_N_cubed_limit": "3/112",
+      "rainbow_ceiling_over_N_cubed_limit": "1/24",
+      "required_rho_over_C_m_strictly_above": "14/9",
+      "required_rho_strictly_above": "784/9",
+      "asymptotic_uniform_consumer_possible": false,
+      "tested_rho": "not tested",
+      "consumer_closed": true
+    }
+  ],
+  "new_R4_bound": false
+}

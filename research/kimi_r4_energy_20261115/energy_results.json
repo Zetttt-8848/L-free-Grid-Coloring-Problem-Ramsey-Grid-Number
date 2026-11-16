@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-15",
+  "branch": "kimi/r4-energy-20261115",
+  "python": "3.12.16",
+  "coordinates": "T_N={(x,y):0<=y<x<N}; L=(x,y),(x+d,y),(x+d,y+d)",
+  "general_identity": "D_k+2R_k-4B_k=2*C(N,3)-S_N/k+3*C(N,2)",
+  "proper_identity": "P_k+R_k=C(N,3)",
+  "manuscript_k3_reduction": "D_3+2R_3=N(N-1) in every proper three-coloring",
+  "four_color_H": "H_N_4=N(N-1)(2N+23)/24",
+  "four_color_balanced_defect": "E_N=3*sum_(1<=l<N) r_l*(4-r_l)/4, r_l=l mod 4",
+  "asymptotic": {
+    "equal_pair_floor_over_C": "3/4",
+    "rainbow_ceiling_over_C": "1/4",
+    "gap_C_minus_equal_pair_floor": "N^3/24+O(N^2)"
+  },
+  "pure_energy_consumer": "CLOSED: positive rainbow ceiling; no contradiction at any N",
+  "exhaustive_checks": [
+    {
+      "N": 2,
+      "cells": 1,
+      "Ls": 0,
+      "line_pairs": 0,
+      "all_four_color_words_checked": 4,
+      "proper_words": 4,
+      "identity": "D+2R-4B=2*C(N,3)-S/4+3*C(N,2)",
+      "status": "PASS"
+    },
+    {
+      "N": 3,
+      "cells": 3,
+      "Ls": 1,
+      "line_pairs": 3,
+      "all_four_color_words_checked": 64,
+      "proper_words": 60,
+      "identity": "D+2R-4B=2*C(N,3)-S/4+3*C(N,2)",
+      "status": "PASS"
+    },
+    {
+      "N": 4,
+      "cells": 6,
+      "Ls": 4,
+      "line_pairs": 12,
+      "all_four_color_words_checked": 4096,
+      "proper_words": 3156,
+      "identity": "D+2R-4B=2*C(N,3)-S/4+3*C(N,2)",
+      "status": "PASS"
+    }
+  ],
+  "exact_table": [
+    {
+      "N": 1,
+      "C": 0,
+      "H_N_4": "0",
+      "balanced_D_floor": "0",
+      "rainbow_ceiling": "0",
+      "equal_pair_floor": "0",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 2,
+      "C": 0,
+      "H_N_4": "9/4",
+      "balanced_D_floor": "9/4",
+      "rainbow_ceiling": "0",
+      "equal_pair_floor": "0",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 3,
+      "C": 1,
+      "H_N_4": "29/4",
+      "balanced_D_floor": "21/4",
+      "rainbow_ceiling": "1",
+      "equal_pair_floor": "0",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 4,
+      "C": 4,
+      "H_N_4": "31/2",
+      "balanced_D_floor": "15/2",
+      "rainbow_ceiling": "4",
+      "equal_pair_floor": "0",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 5,
+      "C": 10,
+      "H_N_4": "55/2",
+      "balanced_D_floor": "15/2",
+      "rainbow_ceiling": "10",
+      "equal_pair_floor": "0",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 6,
+      "C": 20,
+      "H_N_4": "175/4",
+      "balanced_D_floor": "39/4",
+      "rainbow_ceiling": "17",
+      "equal_pair_floor": "3",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 7,
+      "C": 35,
+      "H_N_4": "259/4",
+      "balanced_D_floor": "51/4",
+      "rainbow_ceiling": "26",
+      "equal_pair_floor": "9",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 8,
+      "C": 56,
+      "H_N_4": "91",
+      "balanced_D_floor": "15",
+      "rainbow_ceiling": "38",
+      "equal_pair_floor": "18",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 9,
+      "C": 84,
+      "H_N_4": "123",
+      "balanced_D_floor": "15",
+      "rainbow_ceiling": "54",
+      "equal_pair_floor": "30",
+      "pure_energy_forces_impossibility": false
+    },
+    {
+      "N": 10,
+      "C": 120,
+      "H_N_4": "645/4",
+      "balanced_D_floor": "69/4",
+      "rainbow_ceiling": "72",
+      "equal_pair_floor": "48",
+      "pure_energy_forces_impossibility": false
+    }
+  ],
+  "new_R3_bound": false,
+  "new_R4_bound": false
+}
