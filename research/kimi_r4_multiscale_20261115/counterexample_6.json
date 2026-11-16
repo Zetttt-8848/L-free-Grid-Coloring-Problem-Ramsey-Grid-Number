@@ -1,0 +1,65 @@
+{
+  "domain": "square",
+  "k": 4,
+  "n": 6,
+  "rows": [
+    [
+      2,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      2,
+      2,
+      0,
+      2,
+      2
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      2,
+      1
+    ]
+  ],
+  "coordinate_convention": "rows[x][y] is the color of cell (x,y)",
+  "proper": true,
+  "checked_geometric_Ls": 55,
+  "provenance": {
+    "source_file": "paper20.json",
+    "source_sha256": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+    "operation": "crop to x=0..5 and y=0..5; no recoloring",
+    "source_colors": 3,
+    "external_theorem_used": false
+  }
+}
