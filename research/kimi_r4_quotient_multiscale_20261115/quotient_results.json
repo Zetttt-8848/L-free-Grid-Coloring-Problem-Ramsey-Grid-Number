@@ -1,0 +1,55 @@
+{
+  "status": "FINITE-CHECKED samples; not exhaustive over all colorings",
+  "self_tests": "PASS",
+  "n": 5,
+  "requested_samples": 2000,
+  "completed_samples": 77,
+  "seed": 20261115,
+  "geometric_L_count": 30,
+  "random_generation_attempts": 559,
+  "minimum_cover_distribution": {
+    "3": 76,
+    ">=4": 1
+  },
+  "example": {
+    "rows": [
+      [
+        1,
+        3,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        3,
+        2,
+        2
+      ]
+    ],
+    "minimum_cover": ">=4",
+    "witness": null
+  }
+}

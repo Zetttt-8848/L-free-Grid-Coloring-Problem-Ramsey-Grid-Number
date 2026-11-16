@@ -1,0 +1,103 @@
+{
+  "status": "PROVED contiguous-block arithmetic; no Ramsey contradiction",
+  "invalid_previous_mechanism": "Arbitrary combinatorial row/column subsquares do not preserve equal-leg L geometry",
+  "proved_lower_bound_asymptotic": "9/n for the unweighted density lower bound; not an estimate of the true density",
+  "rows": [
+    {
+      "n": 5,
+      "contiguous_5_blocks": 1,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*1",
+      "unweighted_pair_tight_L_lower_bound": 3,
+      "all_geometric_Ls": 30,
+      "density_lower_bound_numerator": 3,
+      "density_lower_bound_denominator": 30,
+      "density_float_diagnostic_only": 0.1
+    },
+    {
+      "n": 6,
+      "contiguous_5_blocks": 4,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*4",
+      "unweighted_pair_tight_L_lower_bound": 12,
+      "all_geometric_Ls": 55,
+      "density_lower_bound_numerator": 12,
+      "density_lower_bound_denominator": 55,
+      "density_float_diagnostic_only": 0.21818181818181817
+    },
+    {
+      "n": 10,
+      "contiguous_5_blocks": 36,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*36",
+      "unweighted_pair_tight_L_lower_bound": 108,
+      "all_geometric_Ls": 285,
+      "density_lower_bound_numerator": 108,
+      "density_lower_bound_denominator": 285,
+      "density_float_diagnostic_only": 0.37894736842105264
+    },
+    {
+      "n": 100,
+      "contiguous_5_blocks": 9216,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*9216",
+      "unweighted_pair_tight_L_lower_bound": 27648,
+      "all_geometric_Ls": 328350,
+      "density_lower_bound_numerator": 27648,
+      "density_lower_bound_denominator": 328350,
+      "density_float_diagnostic_only": 0.08420283234353586
+    },
+    {
+      "n": 1000,
+      "contiguous_5_blocks": 992016,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*992016",
+      "unweighted_pair_tight_L_lower_bound": 2976048,
+      "all_geometric_Ls": 332833500,
+      "density_lower_bound_numerator": 2976048,
+      "density_lower_bound_denominator": 332833500,
+      "density_float_diagnostic_only": 0.008941551857009586
+    },
+    {
+      "n": 21947865,
+      "contiguous_5_blocks": 481708602475321,
+      "step_multiplicities": {
+        "1": 16,
+        "2": 9,
+        "3": 4,
+        "4": 1
+      },
+      "weighted_lower_bound": "sum(P_d/(5-d)^2, d=1..4) >= 3*481708602475321",
+      "unweighted_pair_tight_L_lower_bound": 1445125807425963,
+      "all_geometric_Ls": 3524159502524576108740,
+      "density_lower_bound_numerator": 1445125807425963,
+      "density_lower_bound_denominator": 3524159502524576108740,
+      "density_float_diagnostic_only": 4.1006254296683476e-07
+    }
+  ]
+}
