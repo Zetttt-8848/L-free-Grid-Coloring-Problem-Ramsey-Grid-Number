@@ -104,23 +104,49 @@ General non-quotient multiscale recursion is not refuted. A future candidate
 must retain information that distinguishes proper from improper colorings and
 must name a compatible upper estimate before computation.
 
-### Route N: non-quotient two-dimensional color-class energy (next candidate)
+### Route N: non-quotient two-dimensional color-class energy (closed in round 4)
 
-Represent the full square directly by its four color-class indicators and study
-horizontal, vertical, slope-one, and higher-order correlations without palette
-quotients. First compare the exact statement against manuscript Lemma
-`lem:variance`, its weighted embedding lemma, and PR 11's triangle catalogs.
-The cheapest test is an algebraic consumer check, not a large energy scan. Stop
-if it is only the known line identity or if the four-color leading coefficient
-cannot contradict properness. No proposition in this route is currently claimed.
+On the complete strict triangle `T_N`, the general identity is
 
-### Route F: certified finite kernels as lemma generators
+```text
+D_k+2R_k-4B_k=2*C(N,3)-S_N/k+3*C(N,2).
+```
 
-This is the independent fallback if Route N has no usable inequality. Extract
-small full-grid obstructions only to propose general forbidden patterns. Bare
-UNSAT, unchecked DRAT/RUP, partial cubes, restricted families, and timeouts are
-not upper-bound evidence. A new numerical bound would still require arbitrary
-full-square colorings and complete geometric reductions.
+It reduces exactly to manuscript `lem:variance` at `k=3`. For proper four-color
+colorings, balanced lines give an equal-pair floor with asymptotic ratio `3/4`
+to all Ls and a rainbow ceiling asymptotic to `C(N,3)/4`. The ceiling is
+nonnegative for every `N`, so pure second-order energy cannot exclude a
+coloring. All 4,164 four-color words at `N=2,3,4`, including improper words,
+were independently checked. Do not run a larger energy scan without a new
+coloring-dependent lower bound on `D_4`.
+
+### Route F: full-square finite kernels and their corrected consumer
+
+The complete-square local minima satisfy `rho_3=rho_4=rho_5=0`; complete proper
+witnesses have no rainbow L even in the whole square. These are not new Ramsey
+lower bounds. No positive-minimum catalog or SAT nonexistence claim was made.
+
+The contracted square-copy count was corrected before use. A scale-`s` copy at
+origin `(a,b)` can charge its local strict-triangle rainbows to host `T_N` only
+when `a-b+s>=1`. With `q=N-1-(m-1)s` and `t=min(s-1,q)`, the valid-origin count
+is `C(q+2,2)+t(q+1)-C(t+1,2)`.
+
+For uniform scale weights and `K=C(m,3)`, a large-`N` contradiction would need
+`rho_m/C(m,3)>m(m-1)/(4(m+1))`. The zero witnesses close orders 3, 4, and 5;
+for every `m>=6` the required fraction exceeds one. Therefore do not enumerate
+larger orders for this uniform asymptotic consumer. Nonuniform weights,
+position-dependent incidence estimates, other host regions, and isolated finite
+sides are not refuted. See `research/kimi_r4_energy_20261115/`.
+
+### Route H: hybrid discrepancy/capacity coupling (next candidate)
+
+A new attempt must couple the four-color line discrepancy `D_4` to actual
+diagonal or off-diagonal compatibility data, or supply nonuniform scale weights
+with a position-sharp incidence certificate. The required consumer is explicit:
+beat `D_4>=E_N` enough to force `D_4>N(N-1)(2N+23)/24`, or produce a positive
+exact margin in the corrected embedding inequality. The cheapest next test is
+an exact rational sensitivity/dual calculation, not more coloring enumeration.
+No proposition in Route H is currently claimed; write a new contract first.
 
 ## 5. English research and writing protocol
 
