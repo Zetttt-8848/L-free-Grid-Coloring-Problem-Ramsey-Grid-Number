@@ -1,5 +1,10 @@
 # Quotient-color statements and contiguous-block averaging
 
+> **ERRATUM:** Section 5 (Q3a) is REFUTED and its proof is withdrawn. The
+> unweighted statement is true only by a trivial geometric count, not by the old
+> argument. Sections 2-4 are separate and unaffected. Read `ERRATUM.md` and
+> `research/kimi_r4_multiscale_20261115/THEOREM.md` before using this record.
+
 ## 1. Definitions
 
 Let a proper four-coloring of `[n]^2` avoid every monochromatic forward L
@@ -28,8 +33,8 @@ when `a` and `b` lie on the same side. Fixing `{a,b}` as one side, the other two
 colors give exactly three nontrivial complementary choices: `{c}`, `{d}`, or
 `{c,d}`. Thus its signature has size three. If the L uses exactly three colors,
 only the bipartition with those three colors against the fourth is pair-tight,
-so the signature has size one. If it uses four colors, its signature is empty.
-Hence every L covers at most three of seven required signatures, and fewer than
+so the signature has size one. Hence every L covers at most three of seven
+required signatures, and fewer than
 three Ls cannot suffice. QED.
 
 This is a covering lower bound, not a claim that exactly three Ls always cover.
@@ -63,45 +68,33 @@ distances. Such a selection does not in general preserve the directed equal-leg
 L family. No averaging bound over arbitrary combinatorial subsquares is claimed.
 This is a failure of that mechanism, not a counterexample to R_2=5.
 
-## 5. Contiguous-block weighted count
+## 5. Withdrawn contiguous-block weighted count
 
-Let `P_d` be the number of pair-tight Ls of step `d` in a proper four-coloring
-of `[n]^2`, `n>=5`, and consider only contiguous 5 by 5 blocks.
-
-**Proposition Q3a (PROVED with external input R_2=5).**
+The original Q3a asserted
 
 ```text
 sum_(d=1)^4 P_d/(5-d)^2 >= 3(n-4)^2.
 ```
 
-In particular, the unweighted number `P=sum_d P_d` satisfies
-`P>=3(n-4)^2`.
+**Q3a is REFUTED and its proof is withdrawn.** A complete proper 6-square
+counterexample gives `1381/144<12`. Fixed-L multiplicity is position-dependent,
+and every L in every four-coloring is pair-tight for some quotient, so
+`P_d=(n-d)^2` independently of the coloring. The former unweighted consequence
+is true only because the first three geometric terms already dominate
+`3(n-4)^2`; it carries no quotient or capacity information.
 
-**Proof.** By Q1, every contiguous 5-block contains at least three distinct
-pair-tight Ls. There are `(n-4)^2` such blocks. A fixed L of step `d<=4` lies in
-exactly `(5-d)^2` contiguous 5-blocks: independently choose the block's row and
-column origins among `5-d` possibilities. Divide by these exact multiplicities
-and sum. The unweighted consequence follows from `1/(5-d)^2<=1`. QED.
-
-The total number of geometric Ls in the full square is
-
-```text
-N_n=sum_(d=1)^(n-1)(n-d)^2=n(n-1)(2n-1)/6.
-```
-
-Consequently `P/N_n>=18(n-4)^2/(n(n-1)(2n-1))`, whose asymptotic is `9/n`.
-This is only a lower bound on pair-tight incidence. No matching upper bound or
-contradiction with the incumbent capacity certificate has been established.
+See `ERRATUM.md` and `research/kimi_r4_multiscale_20261115/THEOREM.md` for the
+exact multiscale identity and independent verification.
 
 ## 6. Status and scope
 
 - Q1: PROVED with external input `R_2=5`; author proof and independent finite
-  implementation checks.
+  implementation checks; unaffected by the Q3a erratum.
 - Q2: REFUTED by the explicit complete witness above; independently checked.
 - Arbitrary combinatorial-subselection averaging: REFUTED as a mechanism by the
   geometric argument in Section 4.
-- Q3a: PROVED with the same external input; incidence arithmetic independently
-  checked for the stored side list, with direct small-side enumeration.
+- Q3a and position-independent fixed-L multiplicity: REFUTED.
+- Old averaging output and its PASS label: WITHDRAWN; historical artifacts only.
 - A new numerical bound on R_4: not established.
 - The exact maximum or universal minimum quotient-cover size beyond the Q1
   lower bound: UNDECIDED.

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "independent_implementation": true,
+  "checked_color_words": 64,
+  "checked_proper_witness_Ls": 55,
+  "checked_scale_rows": 6,
+  "checked_multiplicity_entries": 1063,
+  "old_Q3a_lhs": "1381/144",
+  "old_Q3a_rhs": 12,
+  "conclusion": "Q3a is false; Q1 and Q2 are not refuted by this audit",
+  "ramsey_bound_change": false
+}
