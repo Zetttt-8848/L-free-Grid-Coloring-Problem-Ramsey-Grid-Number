@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "temporary_copy_reproduction": true,
+  "byte_identical_output_files": [
+    "energy_results.json",
+    "energy_verification.json",
+    "kernel_results.json",
+    "kernel_verification.json",
+    "consumer_results.json",
+    "consumer_verification.json",
+    "kernel_3.json",
+    "kernel_4.json",
+    "kernel_5.json",
+    "standard_3.json",
+    "standard_4.json",
+    "standard_5.json"
+  ],
+  "output_count": 12,
+  "temporary_directory_removed": true,
+  "sha256": {
+    "energy_results.json": "41dd7fa13bb5936b43df9cafc19a5ff8683ceada4d4d1fbb73f4a38e25d56785",
+    "energy_verification.json": "68096fbb467f567c7c15dc46480a6f7a1d5856e0517bf6bd0d056cc737ee19f7",
+    "kernel_results.json": "cd1200139df7a771d600db2b00cca4afe4fd061356b1ee001c76f2aae4e2d26e",
+    "kernel_verification.json": "31d3f4a256929b4a2b8149108908f87990719a657d19250b433d2c6208d41dda",
+    "consumer_results.json": "53ae6c3b332e7664d9bf357a8292a5f0512b1657c75ab66db198dfb53e10ea9e",
+    "consumer_verification.json": "61948abf5c6a67ffffc2975bac1f8d26b14a4087db73453235b49232debd11e8",
+    "kernel_3.json": "a9edba7a5fee51851eec61375e8880bab9d9935e502c8a40ef8cc1d1780ecbcd",
+    "kernel_4.json": "b64ea39075ac2cac8cca3f9230dc58d7cade303d75828c9714212bfb10579dfc",
+    "kernel_5.json": "10161c5a2a7021f3645e2485f599ce1f2b6e47e473980e7ce6685d4a951a5d62",
+    "standard_3.json": "8a314111fcf454714db8cf6c5f6509f5bba9b0181f27ace80575101b33b60634",
+    "standard_4.json": "60d43604ede04dbcfee25ab68b785cdc38d04dae721d6f6db15e5bceaa11a786",
+    "standard_5.json": "0dccb5251eccdbfd5a313b243bd95d9715c27b79c024c9bf143d634a6d274e27"
+  },
+  "scope": "Clean-copy recomputation of all package outputs"
+}

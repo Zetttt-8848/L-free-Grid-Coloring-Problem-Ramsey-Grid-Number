@@ -1,0 +1,33 @@
+{
+  "domain": "square",
+  "k": 4,
+  "n": 4,
+  "rows": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  "coordinate_convention": "rows[x][y] is the color of cell (x,y)",
+  "strict_triangle_rainbow_Ls": 0
+}

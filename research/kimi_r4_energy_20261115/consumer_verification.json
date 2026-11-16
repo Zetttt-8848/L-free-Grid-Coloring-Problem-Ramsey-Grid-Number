@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "origin_rows_recomputed_by_difference_enumeration": 7,
+  "cubic_coefficients_reconstructed_by_exact_finite_sums": [
+    {
+      "m": 3,
+      "J_coefficient": "1/9",
+      "required_fraction": "3/8",
+      "status": "PASS"
+    },
+    {
+      "m": 4,
+      "J_coefficient": "5/72",
+      "required_fraction": "3/5",
+      "status": "PASS"
+    },
+    {
+      "m": 5,
+      "J_coefficient": "1/20",
+      "required_fraction": "5/6",
+      "status": "PASS"
+    },
+    {
+      "m": 6,
+      "J_coefficient": "7/180",
+      "required_fraction": "15/14",
+      "status": "PASS"
+    },
+    {
+      "m": 7,
+      "J_coefficient": "2/63",
+      "required_fraction": "21/16",
+      "status": "PASS"
+    },
+    {
+      "m": 8,
+      "J_coefficient": "3/112",
+      "required_fraction": "14/9",
+      "status": "PASS"
+    }
+  ],
+  "uniform_asymptotic_consumer_closed_for_all_m": true,
+  "nonuniform_weights_or_other_consumers": "not refuted",
+  "new_R4_bound": false,
+  "scope": "Internal independent arithmetic and geometry checks"
+}

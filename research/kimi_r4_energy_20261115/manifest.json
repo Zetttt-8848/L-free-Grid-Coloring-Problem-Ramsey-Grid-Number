@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-15",
+  "branch": "kimi/r4-energy-20261115",
+  "base_commit": "b7d52434061f7cb15395d50edc949e2700356926",
+  "contract_commit": "2f56b6e8c774adc534cf7e67dcd360d77c04b474",
+  "preregistration_amendment_commit": "7b5fa53293f1791ae52d5d7546565648beff7348",
+  "python": "3.12.16",
+  "dependencies": "Python standard library only; project coloring checker for standard_*.json",
+  "checks": {
+    "energy_generator": "PASS",
+    "energy_independent_verifier": "PASS",
+    "kernel_witnesses_and_known_answers": "PASS",
+    "consumer_geometry_and_exact_asymptotics": "PASS",
+    "standard_coloring_checker": "PASS for all three witnesses",
+    "temporary_copy_reproduction": "PASS; 12 output files byte-identical; copy removed",
+    "ascii_and_python_syntax_new_package": "PASS",
+    "english_only": "English-only check: 1113 tracked files, 0 violations"
+  },
+  "coverage": {
+    "all_four_color_words": 4164,
+    "energy_formula_rows": 10,
+    "zero_rainbow_full_squares": [
+      3,
+      4,
+      5
+    ],
+    "full_square_Ls_checked": [
+      5,
+      14,
+      30
+    ],
+    "known_answer_two_color_squares": [
+      4,
+      5
+    ],
+    "consumer_host_scenarios": 5,
+    "consumer_scale_rows": 7,
+    "asymptotic_coefficients_independently_reconstructed": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "results": {
+    "general_line_identity": "PROVED",
+    "pure_four_color_energy_consumer": "CLOSED; no contradiction",
+    "rho_3_4_5": "PROVED equal to zero",
+    "contracted_copy_count": "REFUTED for the intended host-triangle consumer; corrected",
+    "uniform_asymptotic_consumer": "CLOSED for every m; finite isolated sides not classified",
+    "nonuniform_weights": "UNDECIDED",
+    "new_R3_bound": false,
+    "new_R4_bound": false
+  },
+  "sha256": {
+    "build_manifest.py": "3052e4af40d9bef10c1782b99d77123eb1e1b84c92a2e5a9e2925f13e01dab69",
+    "consumer_audit.py": "ab1966e1388e271353b68c9dc2b6a8e00c34b09bfc3752099f51babc5fe8362a",
+    "CONSUMER_ERRATUM.md": "bdd799bee08d0b17372ba42a6ebec6e91ddd7115da1c29ceb8c691a34b783b92",
+    "consumer_results.json": "53ae6c3b332e7664d9bf357a8292a5f0512b1657c75ab66db198dfb53e10ea9e",
+    "consumer_verification.json": "61948abf5c6a67ffffc2975bac1f8d26b14a4087db73453235b49232debd11e8",
+    "CONTRACT.md": "289c60558420f781fee465805241ec38bae636f69fcc50d144717a785fcb36dc",
+    "energy_probe.py": "cd110f3397d2276e20dac2307b5c3f2887bd77f758874eb237d52a076f0e3619",
+    "energy_results.json": "41dd7fa13bb5936b43df9cafc19a5ff8683ceada4d4d1fbb73f4a38e25d56785",
+    "energy_verification.json": "68096fbb467f567c7c15dc46480a6f7a1d5856e0517bf6bd0d056cc737ee19f7",
+    "enumerate_kernels.py": "44e89683c431515b5c654cf657bb8e80ce1e110cecedbbd38f72726d5891054e",
+    "HANDOFF.md": "d42f1c15ae7465afd162e0b6032e0380528746c61b25a69bc43cb301cd2f486f",
+    "kernel_3.json": "a9edba7a5fee51851eec61375e8880bab9d9935e502c8a40ef8cc1d1780ecbcd",
+    "kernel_4.json": "b64ea39075ac2cac8cca3f9230dc58d7cade303d75828c9714212bfb10579dfc",
+    "kernel_5.json": "10161c5a2a7021f3645e2485f599ce1f2b6e47e473980e7ce6685d4a951a5d62",
+    "kernel_results.json": "cd1200139df7a771d600db2b00cca4afe4fd061356b1ee001c76f2aae4e2d26e",
+    "kernel_verification.json": "31d3f4a256929b4a2b8149108908f87990719a657d19250b433d2c6208d41dda",
+    "PREREGISTRATION_AMENDMENT.md": "c339ff8211c840a5ad90e67dd47babbaebec7c42ef12d5641de44a676b9ef03c",
+    "reproduce.py": "b4d9d67a398e8baa600fc6785d3bc20f7e2461038024c038c0a0d8d0c9950099",
+    "reproduction.json": "511c216160bd15d9020aefdbde2e1c18e68a29649ec33343f5c8ab1cf04a4fa1",
+    "ROUND4_REPORT.md": "aa1e044be57f62ed64b4be3c53dbb87eaf1a99d09e02f19f0a601c920a4da687",
+    "standard_3.json": "8a314111fcf454714db8cf6c5f6509f5bba9b0181f27ace80575101b33b60634",
+    "standard_4.json": "60d43604ede04dbcfee25ab68b785cdc38d04dae721d6f6db15e5bceaa11a786",
+    "standard_5.json": "0dccb5251eccdbfd5a313b243bd95d9715c27b79c024c9bf143d634a6d274e27",
+    "THEOREM.md": "a1f59e431a58a76bc276f113c76ed496c7c2364160be88d226a2457d5025eb0b",
+    "verify_consumer.py": "da0b7721de1028ba50144c643c390a550301cdcbe290ed2204a8fc3433f3eebc",
+    "verify_energy.py": "94d2bca6cd40936082450ff65aa54037a40378f7a8e0df8a6bfa19434b891116",
+    "verify_kernels.py": "68584b146522baf2a5daa952ee0059cf4278186d3a44606b989dc4b3d2b07da7"
+  },
+  "project_plan_sha256": "c32c5984c6ddf914555035c6b5490bc9d045d5ca7a8b1b8dd055581326e3f4ea",
+  "scope": "Internal reproducibility and mathematical checks; not external review or formalization"
+}
