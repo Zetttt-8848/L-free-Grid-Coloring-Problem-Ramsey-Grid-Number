@@ -35,3 +35,6 @@ R: 0
 - round 5 plan attempt 1: judge done; screen_r4 all OK appended
 - round 5 check: WAVE 6 FLOOR 1 (ledger +13, kind=attempt 6/6); cap 6; summary copied
 - phase: round 5 wave (math-proof:math-proof-worker-deep x6)
+- round 5 wave: first launch and re-run both lost to API usage limits (TOTAL answered 0, partial 0, no answer 6 < FLOOR 1); run stopped per protocol
+- worktree directory deleted externally twice; recreated from origin 8c2308f on 2026-11-16
+- resume on user request ("Try again"): phase round 5 wave; relaunching all six as the wave's first launch
