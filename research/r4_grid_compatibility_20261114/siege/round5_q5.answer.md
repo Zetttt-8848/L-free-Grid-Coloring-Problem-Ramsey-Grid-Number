@@ -152,3 +152,62 @@ The mirror image (exchange A and B, and the colors 0 and 1) and the reflection x
 
 **Consequence for Proposition O.** The translate pair (A, A+2) of Proposition O survives every Lemma C test. But it fails as soon as A contains a G1 configuration with t = 2: an A-pair (x, y) such that both x + y - 2 and x + y + 2 are sums of two elements of A strictly between x and y. So the translate obstruction is an obstruction only to first-generation arguments. It is not an obstruction to TSD.
 
+**What remains for the translate family (OPEN, precise).** This is the *Counting Lemma G1(t)*. There should be eta > 0 and N_0 such that every Sidon set A ⊆ [0,N] with N >= N_0, |A| >= (1-eta) sqrt(N), and no difference in [1,2t] contains a G1 configuration of step t. A positive-density version (at least c N disjoint copies) would be needed to turn G1 into a proportional deficit for translate-correlated pairs.
+- The statement is about the 3-point correlation sum_s 1[s in A+A] r_in(s-t) r_in(s+t) of the sumset. Here r_in counts representations by elements strictly inside the A-pair that realises s. It is not controlled by the pair-correlation (energy, Lemma E) estimates available here.
+- *Heuristic only.* For random-like A, about a constant fraction of the ~N/2 A-pairs (x,y) with y - x ≍ N have both x+y±t in the inner sumset, each with probability about 1/16. So Θ(N) copies are expected.
+- I could not prove it. I also found no structured near-maximal Sidon family that avoids it. Residue-class restrictions would avoid it, but they cost a constant factor in size.
+
+## 4. Small-difference saturation (PROVED; the input for any counting lemma)
+
+**Lemma S.** Let A ⊆ [0,N] be Sidon with |A| = k, and let 1 <= T <= N. Then
+
+    sum_{g=1}^{T-1} (T-g) · 1[g ∉ Δ(A)]  <=  T(T-1)/2 - T^2 k^2 / (2(N+T)) + Tk/2.
+
+If k >= (1-eta) sqrt(N), then the right-hand side, divided by the maximal weight T(T-1)/2, is at most 1 - (1-eta)^2 N/(N+T) · T/(T-1) + k/(T-1). This is at most 2eta + T/N + 2(sqrt(N)+1)/(T-1) for T >= 2.
+
+*Proof.* Put a(x) = |A ∩ [x, x+T)| for the N+T integers x in [-(T-1), N]. Then sum_x a(x) = Tk. Also sum_x a(x)(a(x)-1) = sum_{a≠a'} (T - |a-a'|)_+ = 2 sum_{g=1}^{T-1} (T-g) 1[g in Δ], because A is Sidon. By Cauchy-Schwarz, sum a^2 >= (Tk)^2/(N+T). Hence
+
+    2 sum_{g<T} (T-g) 1[g in Δ] >= T^2k^2/(N+T) - Tk.
+
+Subtract this from the total weight 2 sum_{g<T}(T-g) = T(T-1). For the second form:
+- The ratio equals 1 - T k^2/((N+T)(T-1)) + k/(T-1).
+- Use k^2 >= (1-eta)^2 N >= (1-2eta) N, N/(N+T) >= 1 - T/N, and T/(T-1) >= 1.
+- Use k <= N^{1/2} + N^{1/4} + 1 <= 2(sqrt(N)+1). This is the classical Erdős–Turán/Lindström bound, cited from memory.
+
+∎
+
+**Corollary S2.** Take a TSD instance in an interval of span m with |A| + |B| >= (1-eta)(Q(m)+Q(m-1)). Then each of |A|, |B| is >= (1-2eta) Q(m) - 2 >= (1-3eta) sqrt(m) for m large. This is because each is at most Q(m). Hence, for sqrt(m) << T << m, all but a fraction O(eta + T/m + sqrt(m)/T) of the weight sum_{g<T}(T-g) lies on differences g common to A and B.
+- At each such g, Lemma C gives the no-collision constraint.
+- Section 3 shows that the dangerous case where A-starts and B-starts are aligned (translates) is handled by G1 instead.
+
+This is the precise sense in which a proof of TSD has to be a **dichotomy**:
+- either A and B are not translate-correlated, and then Lemma C collisions should occur at a positive rate;
+- or they are translate-correlated, and then G1-type gadgets should occur at a positive rate.
+
+Neither half is proved. The dichotomy itself is a heuristic organisation, not a theorem.
+
+## 5. A further constraint family for route (b) (PROVED, small)
+
+**Lemma W(a') (negative inner lag).** In the setting of Lemma W, extend kappa(p,q) := chi(q+h, p) to all p, q in W with q + h > p. This is a cell of V(D): p is in D, q+h = (q+l)+d is in D, and q+h > p. Then for all p < p' in W and all integers g with h + g > 0 and p+g, p'+g in W, the values kappa(p,p+g), kappa(p',p'+g), kappa(p,p'+g) are not all equal.
+
+*Proof.* Take the L (a, a+δ), (c, c+δ), (a, c+δ) of pair language with a = p, c = p', δ = h + g > 0. All four points p, p+g+h, p', p'+g+h lie in D, because p+g and p'+g are in W. The three cells are the three kappa values listed. ∎
+
+For g >= 0 this is Lemma W(a), with p' = p + y - x and g = x. For -h < g < 0 it is new. It couples "backward" cells kappa(q,p), q > p, into the system. In the regime h << m it only affects inner distances below h. I did not find a use for it. I record it because route (b) must use some constraint outside Corollary U, and this is one.
+
+## 6. Status
+
+**PROVED here.**
+1. SL(m0, delta) => MS' with the same delta and S_0 = max(1, ceil(300 delta m0^2)). TSD => SL, and every refutation of SL yields near-saturated TSD instances (Section 1).
+2. Theorem T: an exact reformulation of TSD for translate pairs (A, A+t), where A is Sidon with no difference in [1,2t]. It is a finite system of order conditions (T1)-(T4) on the starts of A-pairs (Section 2).
+3. Proposition G1: the explicit gadget. Its general-TSD form, with a direct cell-by-cell proof, is valid for arbitrary TSD instances (Section 3). This settles, negatively for every A containing G1, the satisfiability question that Proposition O left OPEN.
+4. Lemma S, Corollary S2 (small-difference saturation, explicit) and Lemma W(a') (Sections 4-5).
+
+**OPEN (named).**
+- **SL** and **TSD**: not proved and not refuted. No near-saturated family was found. The translate family, the natural candidate, is now reduced to the Counting Lemma G1(t).
+- **Counting Lemma G1(t)** (Section 3): near-maximal Sidon sets contain the G1 configuration, preferably Θ(N) disjoint copies.
+- **The non-translate half of the dichotomy** (Section 4): if A and B are near-maximal and not translate-correlated in a quantified sense, Lemma C collisions occur at a positive rate.
+- Whether the full system (T1)-(T4) can be satisfied for some near-maximal Sidon A that avoids G1 and its mirror images. A positive answer would refute TSD and kill route (a).
+
+**Not claimed.** Nothing here is a bound on R_4. Every R_4 consequence passes through SL or MS', which remain hypotheses. No computation was run in this answer. The finite data quoted in the query (TSD saturated at m = 23, 24) is consistent with all the statements above, since G1 needs six A-points in specific additive position and was not required there.
+
+=== END OF ANSWER round5_q5 ===

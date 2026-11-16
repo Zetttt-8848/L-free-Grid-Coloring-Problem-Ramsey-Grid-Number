@@ -116,6 +116,79 @@ Then, with s = sum_e |S_e(d)|,
 - The factor 1/2 is again intrinsic: in the saturated model M_v(Lambda_c)/Lambda_c ≈ g/2.
 - **The hypothesis actually needed is one inequality, at the one scale Lambda_c**, the crossing point of the single-class certificate. Estimate: Lambda_c ≈ sqrt(Phi/v) ≈ rho sqrt(S/v), about 3.4e4 at rho ≈ 700 in the regime.
 - MS' (all lambda in [1,S], pointwise prefixes) is much stronger than this. **Recommended target:** WE(Lambda_c(S); 1-delta, Lambda_c S/100), or WE on a short range of Lambda around Lambda_c.
+- In Corollary B2, the overall bound is s <= max{2 max(rho,K^flat) + rho, (1-delta') 3K^flat}.
+
+## 3. What MS' contains: the window-energy identity (PROVED)
+
+**Lemma W1.** Let X ⊆ [m, m+S] be finite with |X| = s and Lambda >= 1. Put a(x) = |X ∩ [x, x+Lambda)|. The windows that meet X have x in [m-Lambda+1, m+S], and there are S+Lambda of them. Put abar = Lambda s/(S+Lambda). Then
+
+`sum_x a(x)^2 = Lambda s + 2 M_{r_X}(Lambda)`, and hence
+`2 M_{r_X}(Lambda) = Lambda^2 s^2/(S+Lambda) - Lambda s + Var_Lambda(X)`, where `Var_Lambda(X) = sum_{x=m-Lambda+1}^{m+S} (a(x) - abar)^2 >= 0`.
+
+*Proof.* sum_x a(x)^2 = sum_{p,q in X} #{x : p,q in [x,x+Lambda)} = sum_{p,q} (Lambda - |p-q|)_+ = Lambda s + 2 sum_{l=1}^{Lambda-1} (Lambda-l) r_X(l). The second identity is the variance decomposition, using sum_x a(x) = Lambda s. ∎
+
+**Proposition E (WE splits into a size part and a dispersion part).** For the three classes X_e = S_e(d) of sizes s_e, all in an interval of span S, the hypothesis WE(Lambda; alpha, E) is equivalent to
+
+`sum_e [ Lambda^2 s_e^2/(S+Lambda) + Var_Lambda(X_e) ] <= 6 alpha M_v(Lambda) + Lambda s + 2E`.
+
+Consequences:
+- (E-a) **WE alone already caps the sizes** by Cauchy-Schwarz (drop Var). Using M_v(Lambda) <= Q(S) Lambda(Lambda-1):
+  sum_e s_e^2 <= (S+Lambda)(s/Lambda + 6 alpha Q(S) + 2E/Lambda^2).
+  In the regime this gives s <= sqrt(3 sum s_e^2) ≈ 3 sqrt(alpha) sqrt(2Q(S) S) ≈ 3 sqrt(alpha) K. This is a cruder relative of Theorem B.
+- (E-b) **Conversely, for equidistributed classes WE is the size bound itself.** If Var_Lambda(X_e) <= eta Lambda^2 s_e^2/(S+Lambda) for each e, then WE(Lambda; alpha, E) holds as soon as
+  (1+eta) sum_e s_e^2 <= (S+Lambda)(6 alpha M_v(Lambda) + 2E)/Lambda^2.
+  Hence any proof of MS' (or of WE at Lambda ≈ Lambda_c) contains a proof that well-spread triples of binary sources have sum_e s_e^2 <= (1+o(1)) 6 alpha M_v(Lambda_c) S/Lambda_c^2. In the regime, that is a size deficit of the very kind (D-a) asks for.
+
+**Interpretation (calibration, not a theorem).**
+- The prefix/window formulation does **not** reduce the problem. It is (D-a) plus a dispersion term.
+- It is the natural currency only for *local* proofs: lag-by-lag deficits at lags <= Lambda_c.
+- Any such local proof must be strong enough to give the global size deficit for equidistributed classes.
+- By Lemma E of entry 48, near-maximal Sidon pieces are equidistributed. So near-extremal configurations are exactly the case in which (E-b) applies.
+
+## 4. Partial results on MS' itself (PROVED)
+
+**Lemma T (trivial range).** MS' holds, for every delta in (0,1), at every lambda <= S/(600 delta (sqrt(2S)+1)).
+
+*Proof.*
+- w_l <= 3v_l, so C_w(lambda) <= (1-delta) 3C_v(lambda) + 3 delta C_v(lambda).
+- v_l <= 2Q(S), and Q(S) <= 1/2 + sqrt(2S+1/4) <= sqrt(2S) + 1. The middle bound holds because k Sidon points in [0,S] have k(k-1)/2 distinct positive differences, all <= S.
+- Hence 3 delta C_v(lambda) <= 6 delta lambda (sqrt(2S)+1) <= S/100. ∎
+
+**Lemma K0 (elementary local cap).** Every binary source Y of span <= lambda (lambda >= 1) has |Y| <= 1 + 2 sqrt(lambda Q(lambda)) <= 1 + 3.108 lambda^{3/4}.
+
+*Proof.*
+- The |Y|-1 consecutive gaps of Y are positive integers summing to <= lambda.
+- The gaps equal to g are pairs at lag g, so there are at most r_Y(g) <= 2Q(lambda) of them (Golomb split; both Sidon parts lie in an interval of <= lambda+1 integers).
+- H positive integers, each value used at most V times, have sum >= H^2/(2V). (Write H = kV + r, 0 <= r < V. The minimum is V k(k+1)/2 + r(k+1), which exceeds H^2/(2V) by Vk/2 + r - r^2/(2V) >= 0.)
+- So (|Y|-1)^2 <= 4 lambda Q(lambda). Finally Q(lambda) <= sqrt(2 lambda) + 1 <= (sqrt 2 + 1) sqrt(lambda), and 2 sqrt(sqrt 2 + 1) < 3.108. ∎
+
+**Proposition N (a counterexample needs three large binary sources).** Let 0 < delta <= 1/6 and S >= 146. Suppose MS' fails at (d, lambda), that is,
+C_w(lambda) > (1-delta) 3 C_v(lambda) + S/100. Then **every** class X_e = S_e(d) satisfies
+
+`|X_e| > ((1-3delta) C_v(lambda) + S/100) / (3.108 lambda^{3/4})`, and in particular `|X_e| > S^{5/8}/16`.
+
+Each X_e is a binary source contained in an interval of S+1 integers (heredity, Lemma B1).
+
+*Proof.*
+- (Transfer, Lemma 3.1(a) with slack.) Each class has C_{r_e}(lambda) <= C_v(lambda), because r_X(l) <= v_l. Hence C_{r_e} > (3-3delta)C_v + S/100 - 2C_v = (1-3delta)C_v + S/100.
+- (Upper count.) C_{r_X}(lambda) = sum_{a in X} (|X ∩ [a, a+lambda]| - 1). Each X ∩ [a, a+lambda] is a binary source of span <= lambda (heredity and translation invariance of L's). So by K0, C_{r_X}(lambda) <= 3.108 |X| lambda^{3/4}. This gives the first bound.
+- (Lower count, lambda <= S/2.) For l <= lambda we have S-l-1 >= S/2 - 1 >= 72. So by (Q1) of Sec. 1, v_l >= 2Q(S-l-1) >= sqrt(S-2)/2, and C_v(lambda) >= lambda sqrt(S-2)/2.
+  - With 1 - 3delta >= 1/2: |X| > (a lambda^{1/4} + b lambda^{-3/4})/3.108, where a = sqrt(S-2)/4 and b = S/100.
+  - By AM-GM on three copies of a lambda^{1/4}/3 and one copy of b lambda^{-3/4}, this is >= 4 * 3^{-3/4} a^{3/4} b^{1/4}/3.108 >= 0.0631 (S-2)^{3/8} S^{1/4}.
+  - For S >= 146, (S-2)^{3/8} >= 0.9948 S^{3/8}. So the bound is > 0.0628 S^{5/8} > S^{5/8}/16.
+- (lambda > S/2.) C_v(lambda) >= C_v(floor(S/2)) >= (S-1) sqrt(S-2)/4 and lambda^{3/4} <= S^{3/4}. Dropping S/100:
+  |X| > (S-1) sqrt(S-2)/(8 * 3.108 S^{3/4}) >= S^{3/4}/26 >= S^{5/8}/16, since S^{1/8} >= 1.625 for S >= 49. ∎
+
+**Corollary N1 (sufficient condition for MS').** Fix delta <= 1/6 and suppose that, for some S >= 146, every binary source contained in S+1 consecutive integers has at most S^{5/8}/16 elements. Then MS' holds at that S, for every d and every lambda. Proof: the contrapositive of N.
+
+**Reading of N.**
+- Refuting MS' requires, at arbitrarily large S, three disjoint binary sources (the three classes at one shift) of size > S^{5/8}/16 each.
+- At the scale lambda ≈ S they must be of size ≈ S^{3/4}.
+- The brief mentions no known construction of binary sources beyond span^{1/2+o(1)}: Sidon sets, the lifted digit families, and the 12-point m=23 instance. So no refutation is within reach of the known constructions.
+- Conversely, an upper bound K_true(S) <= S^{5/8}/16 would prove MS', but it would also improve the consumer directly and by far. So N gives no proof route.
+- At the regime, S^{5/8}/16 ≈ 2.4e3, far below K ≈ 4.6e5. N is a structural statement, not a regime statement.
+
+
 
 
 
