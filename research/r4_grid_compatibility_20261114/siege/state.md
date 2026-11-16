@@ -38,3 +38,5 @@ R: 0
 - round 5 wave: first launch and re-run both lost to API usage limits (TOTAL answered 0, partial 0, no answer 6 < FLOOR 1); run stopped per protocol
 - worktree directory deleted externally twice; recreated from origin 8c2308f on 2026-11-16
 - resume on user request ("Try again"): phase round 5 wave; relaunching all six as the wave's first launch
+- round 5 wave (resume launch, deep x6): TOTAL (6 queries): answered 6, partial 0, no answer 0; R = 5
+- phase: round 6 plan, attempt 1 (final round)

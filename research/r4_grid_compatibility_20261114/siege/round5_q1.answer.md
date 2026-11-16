@@ -187,6 +187,47 @@ Each X_e is a binary source contained in an interval of S+1 integers (heredity, 
 - The brief mentions no known construction of binary sources beyond span^{1/2+o(1)}: Sidon sets, the lifted digit families, and the 12-point m=23 instance. So no refutation is within reach of the known constructions.
 - Conversely, an upper bound K_true(S) <= S^{5/8}/16 would prove MS', but it would also improve the consumer directly and by far. So N gives no proof route.
 - At the regime, S^{5/8}/16 ≈ 2.4e3, far below K ≈ 4.6e5. N is a structural statement, not a regime statement.
+- Hedge on the third bullet: I know of no family of binary sources of size >= span^{1/2+epsilon}, and the brief cites none. I have not proved that none exists.
+
+## 5. The gadget route: a necessary feature (PROVED)
+
+This concerns the single-lag W-structure of entry 43, with all three diagonal colours. Give each point p in W its type (cls(p), diag(p)), where diag(p) = kappa(p,p).
+
+The unary domain of a pair p < q is D_pq = P minus {f, if diag(p) = diag(q) = f} minus {e, if cls(p) = cls(q) = e}. These unary domains come from Lemma W(a) with x = 0 and from Lemma W(b). Every D_pq is nonempty, and |D_pq| = 1 iff p and q have the same type.
+
+**Lemma G.** Take one additive quadruple P1 < P2 <= P3 < P4 in W with P1 + P4 = P2 + P3, and keep only its two Lemma-W(a) constraints, T1 = {k12, k34, k14} and T2 = {k13, k24, k14}, together with the unary domains. This system is unsatisfiable iff all four points have the same type. When P2 = P3 there is one constraint, and the same statement holds.
+
+*Proof.*
+- The cells k12, k34, k13, k24 each occur in only one constraint.
+- Fix k14 = gamma. Then T1 fails for every choice iff D12 = D34 = {gamma}, and T2 fails for every choice iff D13 = D24 = {gamma}.
+- Case |D14| >= 2. Unsatisfiability needs both kinds of failure, one for each of two values gamma_1 != gamma_2. Then P1~P2 and P1~P3 have the same type, so all four points share one type and gamma_1 = gamma_2, a contradiction.
+- Case |D14| = 1. Then P1~P4 have the same type. Failure needs P1~P2 and P3~P4, or P1~P3 and P2~P4, of the same type. Either way all four points share one type.
+- The converse is the Sidon property of a single type. ∎
+
+**Consequences.**
+- A forbidden finite gadget of the kind the director's sketch asks for must involve at least two overlapping additive relations that share cells. In the full source it may instead involve cells outside the lag-l W-structure.
+- Entry 43 already showed that no mixed U-structure pattern is forbidden. Lemma G extends this to the full three-colour W-structure for single quadruples.
+- I did not find a forbidden multi-relation gadget. That remains OPEN.
+
+## 6. What remains OPEN (explicit)
+1. **MS'** itself, as stated: OPEN. Neither a proof nor a counterexample is given here.
+2. **The weaker, sufficient target WE(Lambda_c)** of Sec. 2: OPEN. It needs the inequality only at the single window scale Lambda_c(S). By Sec. 3 it is equivalent, for equidistributed classes, to a size deficit sum_e s_e^2 <= (1-delta)(1+o(1)) * (saturated value).
+3. Whether binary sources of size >= span^{1/2+epsilon} exist. A family with size > S^{5/8}/16 is necessary for any counterexample (Prop. N).
+4. TSD and the AABA question of earlier entries: still OPEN. They are not touched here, beyond Lemma G.
+
+## 7. Status table
+- PROVED here:
+  - the audit of steps 1-5, which are correct;
+  - the step-6 flaw and its correction (Q1, E1, K1);
+  - Lemma B0, Lemma B1', Theorem B, Corollary B2;
+  - Lemma W1 and Proposition E;
+  - Lemma T, Lemma K0, Proposition N, Corollary N1;
+  - Lemma G.
+- CITED from memory: Bertrand's postulate, and the Erdos-Turan Sidon construction (whose proof is reproduced). Also the brief's established inputs: F1, F4, the prefix formula, the Golomb split and heredity.
+- ESTIMATES (not proved): the regime values (rho ≈ 700, Lambda_c ≈ 3.4e4, delta' ≈ delta/2 - 2.3e-4) and the remark that S_1 ≈ (1.2/delta)^8.
+- No claim about R_4 is made. Every R_4 consequence remains conditional on MS' or on WE(Lambda_c).
+
+=== END OF ANSWER round5_q1 ===
 
 
 
