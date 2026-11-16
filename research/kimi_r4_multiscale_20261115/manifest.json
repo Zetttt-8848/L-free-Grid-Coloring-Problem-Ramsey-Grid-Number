@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-15",
+  "branch": "kimi/r4-multiscale-20261115",
+  "base_commit": "af166bc27aaa3f22b4f62907d983fbecb20f4aec",
+  "contract_commit": "f81582ee8b307b17b796655952cdaa76e3d44e7b",
+  "python": "3.12.16",
+  "dependencies": "Python standard library only",
+  "checks": {
+    "generator": "PASS",
+    "independent_verifier": "PASS",
+    "standard_coloring_checker": "PASS",
+    "temporary_directory_reproduction": "PASS; all four output files byte-identical",
+    "ascii_only_new_package": "PASS",
+    "python_syntax": "PASS"
+  },
+  "coverage": {
+    "color_words": 64,
+    "witness_cells": 36,
+    "witness_geometric_Ls": 55,
+    "scale_rows": 6,
+    "multiplicity_entries": 1063
+  },
+  "results": {
+    "old_Q3a": "REFUTED",
+    "signature_trichotomy": "PROVED",
+    "multiscale_pair_tight_identity": "PROVED and coloring-independent",
+    "seven_quotient_consumer": "DOMINATED by a trivial bound",
+    "Q1_and_Q2": "unaffected",
+    "new_R3_bound": false,
+    "new_R4_bound": false
+  },
+  "source_input_sha256": "98d96c87b67a539151b40159fec4d399eb8a205e6769271eaeec4b7240c2cccd",
+  "sha256": {
+    "audit_incidence.py": "729da0a4880cf4bb7285418b4eb5834f72d7db1aad2af70da31325fc4fe4ac88",
+    "audit_results.json": "c9bed6fdba245290eb751ef04b849f1921798cd2d33283f9ba8311752182e6da",
+    "build_manifest.py": "69ed7cdb83593e7da033ca2d6f4c14e91d97b0eee76a15da23db3d0ecc8c9862",
+    "CONTRACT.md": "8942fbd73129db761a609130d472865b4db99b4c1339fc95f9def4d4a4870b3a",
+    "counterexample_6.json": "5a58456b10359ef88d272865a0dda00342328717aa686d3029d84c6e46afb00e",
+    "HANDOFF.md": "8014967cfeb03da22e08effe35d6334003c3e3a452bea76916573197d7e57fe4",
+    "prepare_counterexample.py": "69f0b1039949c11723a818536b20a67d431b47126d565ebfa71491f586bc6b6a",
+    "ROUND3_REPORT.md": "0a63fb50ded7773ae32a5d2968fc24cf86241dc9606287edf7a615b165a7a178",
+    "standard_coloring_check.json": "a50bb65e0b3e98599b36ea79f083352bb5c09874794796960249a1a92fcded57",
+    "THEOREM.md": "a2cc054197ed1c6bfc6b8e6dacdd1131e6c939e8cfa80d518290d6a7e41fc783",
+    "verification.json": "168936b8e6898d58abc4ff1d5cb26983cdfa427c630ca34ebfc03e37d7d3c83e",
+    "verify_audit.py": "0e8177074a5c9fbd6ccac01adb763cc31e8b561a6528ac960c3e9518db56deed"
+  },
+  "corrected_round1_manifest_sha256": "ad260d1026d70c2bb6423ee6d3cb08d05996b3a348cbc9e497c9170fcd1700aa",
+  "project_plan_sha256": "45fe9b2738b75f17efac43b1125a4e1453852c05f9c8524d7cad24b685dac0f1",
+  "scope": "Internal reproducibility only; not external review or formalization"
+}

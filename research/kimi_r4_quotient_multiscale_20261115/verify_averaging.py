@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Independent exact checks for contiguous-block averaging results."""
+"""HISTORICAL AND WITHDRAWN: this checked identities, not false Q3a.
+
+See ERRATUM.md and the independent round-3 verifier for valid evidence.
+"""
 
 import argparse
 import json

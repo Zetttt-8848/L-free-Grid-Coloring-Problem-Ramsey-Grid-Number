@@ -2,24 +2,39 @@
   "date": "2026-11-15",
   "branch": "kimi/r4-quotient-multiscale-20261115",
   "base_commit": "14647e607c2525b0cd12081b03899827d306a030",
+  "correction_branch": "kimi/r4-multiscale-20261115",
+  "status": "SUPERSEDED IN PART: Q3a and its averaging evidence are withdrawn",
+  "checks": {
+    "counterexample_independent_verifier": "PASS; Q1/Q2 evidence unaffected",
+    "contiguous_averaging_independent_verifier": "INVALID for Q3a; it checked aggregate identities but not the claimed inequality",
+    "old_averaging_results": "WITHDRAWN; historical artifact only",
+    "current_ascii_and_syntax": "PASS"
+  },
+  "superseded_statements": [
+    "Q3a weighted pair-tight inequality",
+    "position-independent fixed-L block multiplicity",
+    "structural interpretation of the unweighted pair-tight count"
+  ],
+  "unaffected_statements": [
+    "Q1",
+    "Q2",
+    "unequal-subselection obstruction"
+  ],
+  "superseded_by": "research/kimi_r4_multiscale_20261115/THEOREM.md",
   "python": "3.12.16",
   "dependencies": "Python standard library only",
-  "checks": {
-    "counterexample_independent_verifier": "PASS",
-    "contiguous_averaging_independent_verifier": "PASS",
-    "ascii_only_new_files": "PASS"
-  },
   "sha256": {
-    "CONTRACT.md": "0470867db62215bf9c5d7bcd44afb3dc8d84d8677f5b2ff933e98c2fae0d7178",
-    "HANDOFF.md": "568f25f211027e425408127b67f35631af1c1ee3bf5a1cc84e6cfb7a6dc65b4b",
-    "ROUND1_REPORT.md": "832e45023d52388e27dc58e79a6a669f56d004edaa01242ac73daf8e9e443fe3",
-    "THEOREM.md": "ea9e9c494a76de198539fc0dc61eee9460026f6917dc891cadf50cda61fd5d06",
-    "averaging.py": "f174d3ae20e73dc5a44925a025081a78dd2a78970539de1003eb080a510c2ea4",
+    "averaging.py": "c181cc1bfeff4223c46b14f4807a797cf6489be0b4ec1da0696300f7a833e705",
     "averaging_results.json": "ad8252de9d221a9d611e7b03f2cffe73d108ca0d3f62f32864e72d9df1c3477c",
+    "CONTRACT.md": "0470867db62215bf9c5d7bcd44afb3dc8d84d8677f5b2ff933e98c2fae0d7178",
+    "ERRATUM.md": "4eb98963c909594b5b02ac3927e63ca39b20300fa1580203b02ce37ed9799fe8",
+    "HANDOFF.md": "54eefb737a46900a71c6167d120d4607c66bcbdf36d1b20a3a2e7b6b64fce6e1",
     "quotient_probe.py": "6ca08479b9dffd9a648af399f5682b31063d09d0169c15f0fab67c5e28612c1f",
     "quotient_results.json": "cd42cb2259cac4b41f42f16d5ca8f1e4a8a9644af9d286ffe2793a17134d6d8e",
-    "verify_averaging.py": "6e8d8ea7d9fda0fe2f1a0eef3a57493b88b401ddb2b2527534db53cfa45da5f4",
+    "ROUND1_REPORT.md": "8f90619cbf592c0d6fb9fa6c106c76d500ef6976d45bd3309204cd00ef09b5e9",
+    "THEOREM.md": "c5ad3a9e48b785fd9548098272cd89f34a1c50a27cdbddcf2a8a4de28f679cd9",
+    "verify_averaging.py": "35b3f2019de11e5a61105817d4a7e0cd1c82845f0cac5c500d2eda263291f405",
     "verify_results.py": "ffeb8d9e70369910123b415416c6600b562610c1bcd64a3b9b923854536123f4"
   },
-  "scope": "Hashes identify this round's final local artifacts. No numerical Ramsey bound changed."
+  "scope": "Current hashes on the correction branch; no numerical Ramsey bound changed"
 }

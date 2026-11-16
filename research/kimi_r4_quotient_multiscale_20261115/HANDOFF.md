@@ -1,5 +1,9 @@
 # Collaboration handoff
 
+> **ERRATUM:** Do not use the displayed Q3a weighted inequality or request an
+> upper-bound consumer for it. It is false; pair-tight cardinality is a purely
+> geometric count. See `ERRATUM.md` and the round-3 handoff.
+
 ## Shared obstruction
 
 Do not apply the directed equal-leg L Ramsey theorem after selecting arbitrary
@@ -9,16 +13,11 @@ with the same positive row and column step, and verify cross-scale coverage.
 
 ## Interface for Codex
 
-The corrected quotient inequality is a lower bound on labelled pair-tight Ls:
-
-```text
-sum_(d=1)^4 P_d/(5-d)^2 >= 3(n-4)^2.
-```
-
-A useful continuation would be a proved upper bound on the same weighted
-incidence from existing binary capacities or request counts. Any composition
-must identify shared cells and avoid adding savings charged twice. Without such
-an upper estimate, this inequality does not affect the current R_4 certificate.
+Do not compose capacities with old Q3a. It is false, and pair-tight cardinality
+is simply the geometric count `P_d=(n-d)^2` for every coloring. The exact
+multiscale identity and the dominated seven-quotient consumer are documented in
+`research/kimi_r4_multiscale_20261115/HANDOFF.md`. No upper-estimate task is
+left open for this discarded statistic.
 
 ## Interface for Claude
 

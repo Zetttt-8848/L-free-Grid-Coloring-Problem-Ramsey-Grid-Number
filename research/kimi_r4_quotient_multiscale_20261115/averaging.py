@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Exact arithmetic for contiguous 5-block quotient averaging."""
+"""HISTORICAL AND WITHDRAWN: Q3a is false; do not use this output as evidence.
+
+See ERRATUM.md and research/kimi_r4_multiscale_20261115/. This file is retained
+only to preserve the original audited artifact and its correction history.
+"""
 
 import argparse
 import json
