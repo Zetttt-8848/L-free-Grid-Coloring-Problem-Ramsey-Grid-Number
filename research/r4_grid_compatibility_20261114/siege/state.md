@@ -49,3 +49,4 @@ R: 0
 - loop ended: finished round MAX_ROUNDS=6 without CONCLUDE; R = 6
 - tail: full (gate: REJECT: the newest [GOAL] line (entry 1) is OPEN, not PROVED or REFUTED)
 - phase: tail (e) draft
+- tail (e) draft: done, proof.md written, no extra queries; phase: tail (f) refine_2

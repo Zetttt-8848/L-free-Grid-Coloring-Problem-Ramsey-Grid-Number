@@ -1,35 +1,40 @@
-# Notes (director, rewritten at the round-6 plan step; round 6 is the final round)
+# Notes (director, rewritten at the proof-draft step; rounds are over)
 
 ## Status
-- Goal: entry 1 (OPEN), never proved, never raised; no goal to come back to. P1 is PROVED (entry 9; round1_q1 Part A is the cleanest chain). Part D open.
-- Ledger after the round-6 block: entries 1-68.
-  - 55 Lemma F / Corollary F0 (Fejer cap K_F >= sqrt(v_1 S)); 56 Theorem B (Fejer route); 57 Prop C / C1 (MS' => SD => (D-a)).
-  - 58 chain audit (step-6 direction flaw fixed); 59 Prop N; 60 Lemma K and Prop P; 61 RETRACT 53.
-  - 62 inscribed-pair rule; 63 SL => MS', Theorem T, gadget G1; 64 single-quadruple W lemma.
-  - 65 RETRACT 52 (MS' retired, not refuted); 66 OPEN FD (new missing statement); 67 OPEN SCF; 68 PROVED separation lemma (director, round6_plan).
-- Round 5: all six answered after a resume (screen_r5 all OK). No proof, no counterexample.
+- Goal: entry 1 OPEN; never proved, never raised; there is no earlier proved goal. P1 PROVED (entry 9). Part D open; its core is FD (entry 66). SCF/SCD (entry 67) implies FD.
+- Round 6: five queries answered (q1, q2, q3, q4, q6); q5 (SCF) not run because it is Codex's lane. No proof and no counterexample of FD.
+- The round-6 results are NOT yet in the ledger (the ledger ends at entry 68). New proved items, all used in proof.md:
+  - Lemma A / S0: K_F <= (1 + 3.83 S^{-3/8}) c(S);
+  - Prop 1 (q2) and Prop S (q3): every class of an FD-violator is near the cap, with saturated fibres;
+  - Prop 3 / 4 (q2) and R3 (q4): FD holds for translation-invariant colourings and for difference-coloured classes (factor 1/sqrt2);
+  - band lemma (q1);
+  - R1 (q4): BD => FD, and the doubling reduction of the converse;
+  - q6 verification: the digit family needs hypothesis (H) (atoms below their copy's shift); explicit failure D = {-9900,0,100,10000} without it; side asides corrected (the B=9 aside is false; restrict "no member" to the families actually used).
 
-## Key insights this step
-- round5_q6 Prop C: MS' implies the plain size deficit, so all the local fibre statements (MS, MS', WE, TSD/SL) are at least as hard as (D-a). The missing statement is now FD: |F_d(D)| <= 3(1-eta) sqrt(v_1 S). The chain is three lines: entry 9, Corollary F0, FD.
-- FD is essentially the (D-a) clause itself; the reductions did not make Part D easier.
-- Counterexamples to FD need three binary sources of size about sqrt(2) S^{3/4} at one shift. None known; Sidon sets give about sqrt S.
-- Separation lemma (mine): at each outer pair of a binary source, agreeing inscribed pairs have only one colour. Under Fejer saturation there are about 2L/sqrt(S) inscribed pairs per outer pair, so random-like colourings fail. Whether structured ones can survive is the core of SCF.
-- The consumer caveat: K_F may exceed the consumer's rank cap K by about 1% (heuristic), so a deficit against K_F helps the consumer only beyond that gap.
-- SCF touches the binary-source capacity lane (Codex's). Flag this to the orchestrator.
+## proof.md (written this step)
+- Sections:
+  - 1. P1 in full, plus the collision lemma, the inscribed-pair rule and the separation lemma.
+  - 2. Energy reduction, forced energy; digit family with (H) (Lemma 2.3 L-list, Theorem 2.4, Lemma 2.5, Theorem 2.6 many-shift refutation); lifted family (Lemmas 2.7-2.8, Theorems 2.9-2.10, Corollary 2.11).
+  - 3. (D-c): Prop 3.1, abstract obstruction, Theorem 3.2 (round3_q2 family), Prop 3.3 (under near-extremality, imbalance = fibre deficit).
+  - 4. Q bounds, Lemma F, Fejer cap, Lemma 4.4, Theorem 4.5 (per-shift (D-a) vs Fejer caps <=> FD up to xi), Prop 4.6 (SCD => FD; violator structure), Prop 4.7 (saturation), Prop 4.8 (structured cases).
+  - 5. Conditional R_4 implication.
+  - 6. Other routes.
+  - 7. Open core.
+- Script checks this step (scratchpad, evidence only), all with 0 monochromatic L's:
+  - digit family: cyclic k = 2, 3, 4; a two-shift Theorem-D instance (r=1, k'=2, s=1, role-1 padding under the general table) with counts as predicted;
+  - (H)-violating example: monochromatic, as predicted;
+  - lifted family: (p,r,k,m') = (5,1,2,2), (7,2,2,2), (5,1,3,1), with counts and fibre multiplicity as predicted;
+  - (D-c+) family: k = 1, 2, 3, with A = G'' and B = G' confirmed;
+  - TSD m = 23 datum: both sets Sidon; proper colouring exists (76 L's);
+  - Lemma F identity on random sets; K_F/c - 1 ≈ 0.0021 at S = 2.2e7.
+- First attempt at the Theorem-D check failed because atom exponents collided with shift exponents (my implementation error, not a flaw in the theorem). The distinct-exponent condition is essential.
+- No extra_q files were written: nothing load-bearing is in doubt, and FD cannot be settled by a targeted query.
 
-## Round 6 wave (6 queries; 5 "kind: attempt", 1 "kind: verify")
-- q1 = q2 = q3: closing task on FD (byte-identical, about 41 KB).
-  - Splices: P1 Part A (round1_q1 lines 3, 7-88), round5_q6 lines 10-56 and 187-249, round5_q2 lines 58-78, 102-152 and 156-183, round4_q2 lines 20-81, round5_q1 lines 121-190, the m = 23 datum, and the sketch.
-- q4: refute FD (wording new), with round5_q4 Secs 0-6 and the Fejer material.
-- q5: SCF cut out, with the separation lemma as first move.
-- q6: verify the round2_q1 digit-family theorems (final-round standing-results allowance).
-
-## For the proof-writing steps
-- If FD is proved, the goal still needs its audit. No further round exists, so the proof-writing steps must handle it, marking it uncertified unless verified.
-- If FD is not settled, the final document presents:
-  - P1 (entry 9) in full;
-  - the (D-b)-type standing results (digit families, entries 18-22; lifted family, entries 31-32; (D-c+) refutation, entries 34-35);
-  - the conversion results (entries 27, 33, 42, 55-57);
-  - the necessary conditions for counterexamples (entries 59, 60);
-  - FD as the clearly marked open statement.
-- Verify any construction by script: both middle orders, atoms below shifts, mirrored L's.
+## If invoked again
+- Possible polish: the ledger lacks the round-6 entries. proof.md is self-contained.
+- Keep the honesty points:
+  - FD open;
+  - c(S) <= K(S) uncertified (margin about 0.7%, heuristic);
+  - no R_4 bound;
+  - B = 9 embedding open;
+  - interval averaging not refuted.
