@@ -52,3 +52,4 @@ R: 0
 - tail (e) draft: done, proof.md written, no extra queries; phase: tail (f) refine_2
 - tail (f) refine_2: done, no extra queries; phase: tail (f) refine_3
 - tail (f) refine_3: done, no extra queries; phase: tail (g) select
+- tail (g) select: r3_q1..q4 + r3_verify written; phase: tail (h) commit wave (deep x5)
