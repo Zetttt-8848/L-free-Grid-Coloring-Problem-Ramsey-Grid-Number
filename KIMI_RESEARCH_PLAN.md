@@ -138,15 +138,30 @@ larger orders for this uniform asymptotic consumer. Nonuniform weights,
 position-dependent incidence estimates, other host regions, and isolated finite
 sides are not refuted. See `research/kimi_r4_energy_20261115/`.
 
-### Route H: hybrid discrepancy/capacity coupling (next candidate)
+### Route H: nonuniform scale duals (finite audit completed in round 5)
 
-A new attempt must couple the four-color line discrepancy `D_4` to actual
-diagonal or off-diagonal compatibility data, or supply nonuniform scale weights
-with a position-sharp incidence certificate. The required consumer is explicit:
-beat `D_4>=E_N` enough to force `D_4>N(N-1)(2N+23)/24`, or produce a positive
-exact margin in the corrected embedding inequality. The cheapest next test is
-an exact rational sensitivity/dual calculation, not more coloring enumeration.
-No proposition in Route H is currently claimed; write a new contract first.
+The complete nonnegative scale-weight cone was tested for `m=6` at
+`N=30,60,120`, rather than scanned through another weight family. Exact
+feasible primal and dual vectors have equal objectives and prove
+
+```text
+V(30,6)=7458/125,
+V(60,6)=671151/1250,
+V(120,6)=2810248/625.
+```
+
+The best-case margins `20*V-U_N` are `-7093/25`, `31052/125`, and
+`1474742/125`. Thus the uniform-incidence consumer is closed at `N=30` even if
+all 20 local Ls could be rainbow. At `N=60,120`, positive best-case margins do
+not prove a bound: actual use requires respectively
+`rho_6>13112500/671151` and `rho_6>24415625/1405124`. No such actual local
+minimum is known or searched in round 5.
+
+Do not enlarge the same scale optimization. The next contract must either
+prove a useful actual six-square rainbow lower bound or introduce a genuinely
+different position-dependent or full-square statistic. No all-`N` or asymptotic
+claim follows from these three hosts. See
+`research/kimi_r4_nonuniform_dual_20261116/`.
 
 ## 5. English research and writing protocol
 

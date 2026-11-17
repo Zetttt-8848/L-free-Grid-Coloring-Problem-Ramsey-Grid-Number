@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-16",
+  "branch": "kimi/r4-hybrid-dual-20261116",
+  "base_commit": "e1a62f30ce74d03681c04b58d0486e551e775124",
+  "python": "3.12.16",
+  "discovery_dependencies": "NumPy 2.4.4 and SciPy 1.18.1; floating point used for discovery only",
+  "verification_dependencies": "Python standard library only",
+  "checks": {
+    "exact_primal_and_dual_verifier": "PASS",
+    "negative_controls": "PASS; both rejected",
+    "python_syntax_new_package": "PASS by AST parsing",
+    "english_only": "English-only check: 1554 tracked files, 0 violations"
+  },
+  "coverage": {
+    "pairs": [
+      [
+        30,
+        6
+      ],
+      [
+        60,
+        6
+      ],
+      [
+        120,
+        6
+      ]
+    ],
+    "primal_host_step_constraints": 204,
+    "dual_scale_constraints": 39,
+    "origin_count_cross_checks": 8,
+    "actual_rho_6_search": false
+  },
+  "results": {
+    "three_finite_optima": "PROVED by equal exact feasible primal and dual values",
+    "N30_best_case_consumer": "CLOSED",
+    "N60_N120_best_case_margins": "POSITIVE; actual consumer UNDECIDED",
+    "nonuniform_all_N_consumer": "UNDECIDED",
+    "new_R3_bound": false,
+    "new_R4_bound": false
+  },
+  "sha256": {
+    "build_manifest.py": "48521c9095887f0e625390235c70ed524cec8a0f5c3795fda5c13d474c5bf7a7",
+    "CONTRACT.md": "559cb13439700f136e6ba2f236d695a8f39a0b175f2cc148f85eaf9d0a9a9544",
+    "dual_probe.py": "c9ad5c9bab16b24dae7e41285cb4035509f0213abf2cc4981a1b09f482ea7bf5",
+    "dual_results.json": "55ee03538f6d3edd432be9edbcc5b8922285ac9c2d69ec0859549cca4b7b81e1",
+    "dual_verification.json": "ac037b7ddfda91ae7aaba6902c64afadb2289e559254a219ce0e348100427a6b",
+    "HANDOFF.md": "fe2048c92644452f888deed74c045dd07eddfce199eba916978c3f5175e462f5",
+    "ROUND5_REPORT.md": "2ceeb86a417730f5760661d620449b5a5ea7acabe098925cc98d2217be6bac2c",
+    "solver_diagnostics.json": "92320044fd9bea1dc2bcc44746fc87507493339ac38e09a22542af28265598cf",
+    "THEOREM.md": "d1c2c007a22ff5b9bbfcf68d48b1e3920fcd3072ed9bb15be908d2e2b4c15042",
+    "verify_dual.py": "72dad7f6b6573dfd30db159e235975c32e920c4f5d09593743137ff14cbc12d4"
+  },
+  "project_plan_sha256": "3b2dd46daeca859509540a2fb953897e18ddc1f87004a1e0f56d9d2384448fd4",
+  "scope": "Internal finite mathematical checks; not external review or formalization"
+}
