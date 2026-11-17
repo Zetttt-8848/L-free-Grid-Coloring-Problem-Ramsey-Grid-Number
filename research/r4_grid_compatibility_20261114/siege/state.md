@@ -51,3 +51,4 @@ R: 0
 - phase: tail (e) draft
 - tail (e) draft: done, proof.md written, no extra queries; phase: tail (f) refine_2
 - tail (f) refine_2: done, no extra queries; phase: tail (f) refine_3
+- tail (f) refine_3: done, no extra queries; phase: tail (g) select

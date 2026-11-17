@@ -5,7 +5,7 @@
 - **Part P1 (i)-(v) is PROVED completely** from the cell coordinates (Theorem 1, Section 1).
 - **Part D is NOT settled.** No explicit proportional-loss inequality (D-a) is proved for ternary sources at the regime size. No counterexample at regime size (D-b) is known either. What is proved is listed below. The single statement that remains open is named in Section 7 (statement FD, equivalently the per-shift (D-a) clause against the Fejér caps).
 - **Proved toward Part D:**
-  - (D-b) over arbitrary ternary sources (Section 2). Explicit proper families, checked L by L in the text, refute every request-counting inequality of the kinds proposed: the request ratio UW(λ) for every λ, U1-type energy bounds for every constant, and union growth. They do so simultaneously on any finite set of shifts. A lifted version keeps these properties with classes and fibres of size span^{1/2-o(1)}. None of these sources can be a diagonal class of a properly four-colored square. Variants that survive: interval averaging with the weights a_h, classes of size near the regime constant times sqrt(span), and fibres near v_l.
+  - (D-b) over arbitrary ternary sources (Section 2). Explicit proper families, checked L by L in the text, refute every request-counting inequality of the kinds proposed: the request ratio UW(λ) for every λ, U1-type energy bounds for every constant, and union growth. They do so simultaneously on any finite set of shifts. A lifted version has classes and fibres of size span^{1/2-o(1)}, but keeps only part of this. It still refutes UW(λ) for every λ. It refutes the U1-type energy bound only for constants C < 3, and union growth only for f with liminf f > 1/3 (Corollary 2.11). None of these sources can be a diagonal class of a properly four-colored square. Variants that survive: interval averaging with the weights a_h, classes of size near the regime constant times sqrt(span), and fibres near v_l.
   - (D-c) (Section 3). The forced sets are Golomb (Sidon), hence of size at most Q(span), but this costs nothing. An explicit proper family shows that full foreign-request coverage forces no Golomb imbalance. Under near-extremality, a Golomb imbalance is the same thing as a fibre deficit.
   - An exact reduction (Section 4). The per-shift (D-a) clause against certified single-class caps is equivalent, up to an explicit O(S^{-3/8}) term, to the single inequality FD. FD is implied by a single-binary-source deficit. Any violation of FD forces all three classes to be within 3η + O(S^{-3/8}) of the cap, with saturated fibres over all short lags. FD holds, with explicit η, in several structured sub-cases.
 - **No new bound on R_4 is claimed.** Section 5 states only the conditional implication.
@@ -17,6 +17,8 @@ Labels: **PROVED** means proved in full in this document. **CITED** marks a clas
 - the lifted family of Section 2.3 with (p, r, k, m') = (5,1,1,2), (5,1,2,2), (7,2,1,2): proper, with the counts of Theorem 2.10;
 - the family of Theorem 3.2 with k = 1, 2, 3: proper, with X = F_d(D), |F_l(X)| = 2k, A = G_2 and B = G_1;
 - the m = 23 datum and the Bose translates of Section 6, and the numerical values in Sections 4-5.
+
+The family of Theorem 3.2 (k = 1, 2, 3: 32, 144 and 336 L's) and the numerics of Sections 4-5 were rechecked independently at the last revision.
 
 ---
 
@@ -362,9 +364,18 @@ Moreover, every request-producing class S_e(Lb), b ∈ A_c, contains the r start
 
 So the request-producing classes, and their fibres at the request-producing lags, have size ≥ r ≥ span^{1/2−o(1)}. The ratio 2k/3 is unbounded, with p chosen after k.
 
-**Corollary 2.11. PROVED.** Every request-based inequality of the UW, U1-energy or union-growth kind remains false if one adds either of the following hypotheses at the request-producing classes:
+**Corollary 2.11. PROVED.** Suppose one adds either of the following hypotheses at the request-producing classes:
 - fibre multiplicities ≥ m, for any m (even growing like span^{1/2−o(1)});
 - class sizes ≥ c·span^α, for any c > 0 and α < 1/2.
+
+Then the following inequalities are still false:
+- UW(λ), min_e N_e(H) ≤ λ|F_H|, for every λ;
+- the U1-type energy bound Σ_u m_{e,H}(u)^2 ≤ C(N_e + N_e^2/|F_H|), for every C < 3;
+- union growth |R_e(H)| ≥ f(N_e/|F_H|)|F_H|, for every f with liminf_{x→∞} f(x) > 1/3.
+
+*Proof.* By Theorem 2.10, N_e/|F_H| = 2k/3. The energy ratio is 4k^2 r/(2kr + 4k^2 r/3) = 6k/(3+2k), which tends to 3 from below. Also |R_e(H)|/|F_H| = 1/3. Take k large, then p large. ∎
+
+**Limitation (stated so it is not overread).** The lifted family does not refute an energy bound with C ≥ 3, nor a union-growth bound with f ≤ 1/3. The reason is that it has no padding: every start of F_H requests exactly one color. Padding copies of the kind used in Theorem 2.6 cannot be added directly. Two base copies with equal shifts create an (X2)-type base L. Its three cells (T_{c3}, T_{c0}), (T_{c3}+h, T_{c0}) and (T_{c3}+h, T_{c0}+h) are all cross cells, none of them a corner cell, so all three have color 1 under χ_B: the L is monochromatic. Whether a lifted family with padding exists is not settled here. Only Theorem 2.6, whose classes are far below sqrt(span), refutes these two bounds for every constant.
 
 These instances are not diagonal classes of a four-colored square: a ratio of 240 needs k ≥ 360, so span ≥ B^M with M > 360.
 
@@ -483,6 +494,8 @@ and K_F(S) ≥ c(S). In particular every class satisfies s_e ≤ K_F(S).
 
 *Proof.* 2Σ(Λ−l) r(l) ≤ v_1 λΛ ≤ v_1 Λ^2. So Lemma 4.2 gives s^2 ≤ (N/Λ)s + v_1 N, and s^2 − bs − c ≤ 0 implies s ≤ b + sqrt(c). The lower bound holds because N > S. ∎
 
+*Sharper form (PROVED, same proof).* Keeping the factor λ/Λ gives s^2 ≤ b s + c' with b = N/Λ and c' = v_1 λN/Λ. So s ≤ K_F^♯(S) := min_λ (b + sqrt(b^2 + 4c'))/2 ≤ K_F(S). Nothing below needs this form. It matters only for the numerics of Section 5.
+
 The per-fibre cap applies to every binary source X of span ≤ S, with the Golomb split of its own fibres. In this document it is proved for the classes S_e(d); for an abstract binary source the Golomb split follows from Lemma 1.2 by the argument of (iv.2) with d = 0.
 
 **Lemma 4.4 (K_F is asymptotically c).** For S ≥ 34, K_F(S) ≤ (1 + ξ(S)) c(S) with ξ(S) = 3.83 S^{−3/8}.
@@ -493,7 +506,7 @@ The per-fibre cap applies to every binary source X of span ≤ S, with the Golom
 - sqrt(v_1 N) = c·sqrt(1+Λ/S) ≤ c(1 + Λ/(2S)) ≤ c(1 + S^{−3/8}).
 - (S^{3/8}+1)/c ≤ sqrt 2 (S^{3/8}+1) S^{−3/4} ≤ 2 sqrt 2 S^{−3/8}, and 1 + 2 sqrt 2 < 3.83. ∎
 
-(Numerical evaluation, HEURISTIC inputs S = 2.2·10^7 and v_1 = 9.4·10^3: c ≈ 4.548·10^5, and K_F ≈ 4.557·10^5, i.e. 0.21% above c.)
+(Numerical evaluation, HEURISTIC inputs S = 2.2·10^7 and v_1 = 9.4·10^3, minimum taken over integer λ by computer: c ≈ 4.548·10^5. K_F ≈ 4.557·10^5, i.e. 0.21% above c, at λ ≈ 46,000. K_F^♯ ≈ 4.554·10^5, i.e. 0.15% above c.)
 
 **Definition (FD(η, S_0)).** For every proper ternary source and every d with S = span F_d(D) ≥ S_0,
 
@@ -548,17 +561,24 @@ Combined with Proposition 4.6(b), taking θ = 3η + 2ξ and λ ≈ εS: an FD-vi
 
 ## 5. Consequence for R_4 (implication only; no bound is claimed)
 
-Suppose FD(η, S_0) holds with explicit η and with S_0 below about 2·10^7. Apply it to each D_c (c a main-diagonal color) at every shift d ≤ t−1 = 34,999. Then
+Suppose FD(η, S_0) holds with explicit η and an explicit S_0 (how small S_0 must be is stated below). Apply it to each D_c (c a main-diagonal color) at every shift d ≤ t−1 = 34,999. Then
 
-  X_d = Σ_c |F_d(D_c)| ≤ 12(1−η) c(n−1−d),
+  X_d = Σ_c |F_d(D_c)| ≤ 12(1−η) c(n−1−d) + 4S_0,
 
-using that c is nondecreasing. This gives the problem's hypothetical saving X_d ≤ (1−δ)U_d only after one more step: certify c(S) ≤ K(S−j) for the consumer's rank caps K at the spans used, with Q replaced by a certified upper bound (replacing Q by an upper bound only enlarges the right side of FD).
+using that c is nondecreasing. Here:
+- D_c, with χ restricted to V(D_c), is a proper ternary source after relabelling the three colors other than c, and span F_d(D_c) ≤ n−1−d.
+- The term 4S_0 covers the colors c for which span F_d(D_c) < S_0. Such a set has at most S_0 elements.
+- At the regime, 12 c(n−1−d) ≈ 5.45·10^6 (HEURISTIC inputs as in Section 4). So 4S_0 ≤ (η/2)·12c(n−1−d) as soon as S_0 ≤ 6·10^5·η. Then X_d ≤ 12(1−η/2) c(n−1−d). So FD is useful to the consumer only with S_0 well below the spans, not merely below about 2·10^7. This gives the problem's hypothetical saving X_d ≤ (1−δ)U_d only after one more step: certify c(S) ≤ K(S−j) for the consumer's rank caps K at the spans used, with Q replaced by a certified upper bound (replacing Q by an upper bound only enlarges the right side of FD).
 
-The problem's numbers suggest c ≈ 4.55·10^5 against K ≈ 4.58·10^5, a margin of about 0.7%. This is HEURISTIC and must be certified. The loss of staggering (12 distinct minima) is additive and of relative size about 10^{−6}.
+The problem's numbers suggest c ≈ 4.55·10^5 against K ≈ 4.58·10^5, a margin of about 0.7%. This is HEURISTIC and must be certified. The margin shrinks to about 0.1% if v_1 is computed from the classical bound Q(m) ≤ sqrt(m) + m^{1/4} + 1 (v_1 ≈ 9,517, c ≈ 4.574·10^5). The loss of staggering (12 distinct minima) is additive and of relative size about 10^{−6}.
 
-With that, δ ≥ η, and the sensitivity statement of the problem applies: a factor of about 1 − 3.9δ (HYPOTHETICAL).
+With that, δ ≥ η/2 (δ ≥ η − O(S_0/c) in general), and the sensitivity statement of the problem applies: a factor of about 1 − 3.9δ (HYPOTHETICAL).
 
-**Remark (HEURISTIC; a single-class question, outside Part D).** The same numbers place the Fejér cap itself below the consumer's cap: K_F ≈ 4.557·10^5 (computed from v_1 = 9.4·10^3, S = 2.2·10^7) against K ≈ 4.58·10^5, about 0.5% lower. Corollary 4.3 is a valid single-class cap for every class, with Q replaced by any certified upper bound. If, after both caps are recomputed with the same certified Q-bound at the consumer's spans, K_F(S−j) < K(S−j) still holds, then replacing K by min(K, K_F) in U_d is a proportional saving obtained without any cross-class information. The problem's figures are rounded to about ±0.3% in this comparison, so this is not established here. It concerns the binary-source capacity, not the request geometry of Part D.
+**Remark (HEURISTIC; a single-class question, outside Part D).** The same numbers place the Fejér cap itself below the consumer's cap: K_F ≈ 4.557·10^5 (computed from v_1 = 9.4·10^3, S = 2.2·10^7) against K ≈ 4.58·10^5, about 0.5% lower. Corollary 4.3 is a valid single-class cap for every class, with Q replaced by any certified upper bound. If, after both caps are recomputed with the same certified Q-bound at the consumer's spans, K_F(S−j) < K(S−j) still holds, then replacing K by min(K, K_F^♯) in U_d is a proportional saving obtained without any cross-class information. This is not established here, and the sign is fragile. Computer evaluation at S = 2.1987·10^7 (HEURISTIC inputs):
+- with v_1 = 9,350, 9,400 or 9,450 (the rounding range of "9.4·10^3"), K_F/4.58·10^5 − 1 is about −0.8%, −0.5% and −0.3%;
+- with the classical upper bound Q(m) ≤ sqrt(m) + m^{1/4} + 1 (CITED, Erdős–Turán/Lindström type), v_1 ≈ 9,517 and K_F is about 0.1% above 4.58·10^5. K_F^♯ is still 0.03% above it.
+
+So the comparison is decided by which certified Q-bound the consumer's v_l uses, and by the unrounded K. It concerns the binary-source capacity, not the request geometry of Part D.
 
 Nothing in this document proves FD. So nothing here improves R_4.
 
@@ -597,8 +617,10 @@ SCD is a statement about binary sources alone: are binary sources of span S boun
 
 What is not done:
 - **(D-a): not proved,** in any of the forms requested, per shift or a_h-averaged, with any explicit δ > 0.
-- **(D-b) at regime size: not done.** The constructions of Section 2 refute every request-based inequality over arbitrary sources, but their classes are far below the regime (about 98 sqrt(span)) and below the binary cap. None is a diagonal class of a four-colored square. A refutation of FD would need three disjoint binary sources of size (1−o(1)) sqrt 2·S^{3/4} at one shift. No binary source beyond about sqrt(span) is known.
+- **(D-b) at regime size: not done.** The constructions of Section 2 refute every request-based inequality over arbitrary sources. The lifted family, with classes of size span^{1/2−o(1)}, refutes UW(λ) for every λ, but energy bounds only for C < 3 and union growth only beyond 1/3. In all of them the classes are far below the regime (about 98 sqrt(span)) and below the binary cap. None is a diagonal class of a four-colored square. A refutation of FD would need three disjoint binary sources of size (1−o(1)) sqrt 2·S^{3/4} at one shift. No binary source beyond about sqrt(span) is known.
 - **Interval averaging** with the weights a_h is not refuted by any construction here; the counterexample shift sets W are sparse.
 - **(D-c) under near-extremality** is equivalent to a fibre deficit (Proposition 3.3), hence again to the open core.
 - The consumer comparison c(S) ≤ K(S) at S ≈ 2.2·10^7 needs a numerical certification (Section 5).
 - Whether the Fejér cap K_F alone undercuts the consumer's rank cap K, once both use the same certified Q-bound, is unchecked here (Section 5, remark). It is a single-class question.
+- Any proof of FD must come with an explicit S_0 well below the spans (S_0 ≤ 6·10^5·η suffices at the regime), because the shifts where F_d(D_c) has span below S_0 enter the consumer as an additive term 4S_0 (Section 5).
+- The lifted family of Section 2.3 has no padding. A lifted family that refutes energy bounds with C ≥ 3, or union growth with f ≤ 1/3, at classes of size span^{1/2−o(1)}, is not known (Corollary 2.11).
