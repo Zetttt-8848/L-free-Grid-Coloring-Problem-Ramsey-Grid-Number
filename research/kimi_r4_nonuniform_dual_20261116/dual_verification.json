@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "python": "3.12.16",
+  "implementation": "standard library only; no import from dual_probe.py",
+  "origin_counts_cross_checked": 8,
+  "negative_controls_rejected": 2,
+  "known_feasible_controls_accepted": 2,
+  "rows": [
+    {
+      "N": 30,
+      "m": 6,
+      "primal_constraints_checked": 28,
+      "dual_constraints_checked": 5,
+      "primal_J": "7458/125",
+      "dual_bound": "7458/125",
+      "exact_optimum_certified_by_equal_feasible_values": true,
+      "C_m_times_V_minus_U_N": "-7093/25",
+      "uniform_best_case_margin": "-672",
+      "status": "PASS"
+    },
+    {
+      "N": 60,
+      "m": 6,
+      "primal_constraints_checked": 58,
+      "dual_constraints_checked": 11,
+      "primal_J": "671151/1250",
+      "dual_bound": "671151/1250",
+      "exact_optimum_certified_by_equal_feasible_values": true,
+      "C_m_times_V_minus_U_N": "31052/125",
+      "uniform_best_case_margin": "-3105",
+      "status": "PASS"
+    },
+    {
+      "N": 120,
+      "m": 6,
+      "primal_constraints_checked": 118,
+      "dual_constraints_checked": 23,
+      "primal_J": "2810248/625",
+      "dual_bound": "2810248/625",
+      "exact_optimum_certified_by_equal_feasible_values": true,
+      "C_m_times_V_minus_U_N": "1474742/125",
+      "uniform_best_case_margin": "-15060",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Three finite weighted uniform-incidence programs only",
+  "actual_local_rho_6": "not computed; the positive best-case margins are not Ramsey bounds",
+  "new_Ramsey_bound": false
+}
