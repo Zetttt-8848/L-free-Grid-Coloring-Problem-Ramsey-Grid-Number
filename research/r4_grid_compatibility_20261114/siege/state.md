@@ -50,3 +50,4 @@ R: 0
 - tail: full (gate: REJECT: the newest [GOAL] line (entry 1) is OPEN, not PROVED or REFUTED)
 - phase: tail (e) draft
 - tail (e) draft: done, proof.md written, no extra queries; phase: tail (f) refine_2
+- tail (f) refine_2: done, no extra queries; phase: tail (f) refine_3

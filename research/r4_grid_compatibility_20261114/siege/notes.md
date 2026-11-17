@@ -1,40 +1,44 @@
-# Notes (director, rewritten at the proof-draft step; rounds are over)
+# Notes (director, rewritten at refine_2; rounds are over)
 
 ## Status
-- Goal: entry 1 OPEN; never proved, never raised; there is no earlier proved goal. P1 PROVED (entry 9). Part D open; its core is FD (entry 66). SCF/SCD (entry 67) implies FD.
-- Round 6: five queries answered (q1, q2, q3, q4, q6); q5 (SCF) not run because it is Codex's lane. No proof and no counterexample of FD.
-- The round-6 results are NOT yet in the ledger (the ledger ends at entry 68). New proved items, all used in proof.md:
-  - Lemma A / S0: K_F <= (1 + 3.83 S^{-3/8}) c(S);
-  - Prop 1 (q2) and Prop S (q3): every class of an FD-violator is near the cap, with saturated fibres;
-  - Prop 3 / 4 (q2) and R3 (q4): FD holds for translation-invariant colourings and for difference-coloured classes (factor 1/sqrt2);
-  - band lemma (q1);
-  - R1 (q4): BD => FD, and the doubling reduction of the converse;
-  - q6 verification: the digit family needs hypothesis (H) (atoms below their copy's shift); explicit failure D = {-9900,0,100,10000} without it; side asides corrected (the B=9 aside is false; restrict "no member" to the families actually used).
+- Goal: entry 1 OPEN; never proved, never raised. P1 PROVED (entry 9). Part D open; its core is FD (entry 66). SCF/SCD (entry 67) implies FD.
+- Round 6: q1, q2, q3, q4, q6 answered; q5 (SCF) not run (Codex lane). No proof and no counterexample of FD.
+- The ledger still lacks the round-6 entries (it ends at entry 68). proof.md is self-contained.
 
-## proof.md (written this step)
-- Sections:
-  - 1. P1 in full, plus the collision lemma, the inscribed-pair rule and the separation lemma.
-  - 2. Energy reduction, forced energy; digit family with (H) (Lemma 2.3 L-list, Theorem 2.4, Lemma 2.5, Theorem 2.6 many-shift refutation); lifted family (Lemmas 2.7-2.8, Theorems 2.9-2.10, Corollary 2.11).
-  - 3. (D-c): Prop 3.1, abstract obstruction, Theorem 3.2 (round3_q2 family), Prop 3.3 (under near-extremality, imbalance = fibre deficit).
-  - 4. Q bounds, Lemma F, Fejer cap, Lemma 4.4, Theorem 4.5 (per-shift (D-a) vs Fejer caps <=> FD up to xi), Prop 4.6 (SCD => FD; violator structure), Prop 4.7 (saturation), Prop 4.8 (structured cases).
-  - 5. Conditional R_4 implication.
-  - 6. Other routes.
-  - 7. Open core.
-- Script checks this step (scratchpad, evidence only), all with 0 monochromatic L's:
-  - digit family: cyclic k = 2, 3, 4; a two-shift Theorem-D instance (r=1, k'=2, s=1, role-1 padding under the general table) with counts as predicted;
-  - (H)-violating example: monochromatic, as predicted;
-  - lifted family: (p,r,k,m') = (5,1,2,2), (7,2,2,2), (5,1,3,1), with counts and fibre multiplicity as predicted;
-  - (D-c+) family: k = 1, 2, 3, with A = G'' and B = G' confirmed;
-  - TSD m = 23 datum: both sets Sidon; proper colouring exists (76 L's);
-  - Lemma F identity on random sets; K_F/c - 1 ≈ 0.0021 at S = 2.2e7.
-- First attempt at the Theorem-D check failed because atom exponents collided with shift exponents (my implementation error, not a flaw in the theorem). The distinct-exponent condition is essential.
-- No extra_q files were written: nothing load-bearing is in doubt, and FD cannot be settled by a targeted query.
+## refine_2 (this step)
+- Saved the incoming draft as judge/refine_2_previous_proof.md, then edited proof.md in place (structure unchanged).
+- Re-audited by hand:
+  - P1 incl. the four-L Golomb split and the per-fibre cap;
+  - Lemma 2.3 cases; Lemma 2.5; Lemma 2.7; Lemma 2.8 / Theorem 2.9 table;
+  - Lemmas 4.1-4.4, Theorem 4.5, Props 4.6-4.8, the difference-colored remark.
+  - No mathematical error found.
+- Fixes made:
+  - Q-low: Bertrand is now applied to the integer n = floor(x), so a prime lies in (x, 2x]; the bound max G_0 < 2p^2 <= m is made explicit.
+  - Prop 4.7(a): the case theta >= 1/2 is trivial; the step s^2 >= (1-2theta) v_1 S is justified for theta < 1/2.
+  - Heuristic reading after Prop 4.7 was numerically wrong: it said 3.7% / 8%; correct is theta ≈ 3.4% and Dbar ≤ 8.9% (with numerical K_F), or 4.4% / 10.7% with the proved xi.
+  - Prop 4.6(c): sqrt2·S^{3/4} is now marked as asymptotic (CITED Q ~ sqrt m); the proved bound is c >= S^{3/4}/sqrt2.
+  - Bose six-translates: a one-line proof was added.
+  - TSD m=23 datum: now marked as a computer-checked finite fact.
+  - Labels paragraph: lists exactly which instances were checked.
+- New HEURISTIC remark (Section 5, plus a Section 7 bullet): with the problem's rounded figures, K_F ≈ 4.557e5 < K ≈ 4.58e5, about 0.5% lower. If that survives recertification with the same Q-bound, min(K, K_F) would already be a proportional single-class saving. This is in Codex's lane A; hand it off, do not claim it. The rounding is about ±0.3%.
+- Script checks (scratchpad common.py, digit.py, lifted.py, dc.py, misc.py; evidence only), all passed:
+  - Theorem 2.6 two-shift instance: 40 points, 60 L's, 0 mono; F=4, N=4, R=1, E=16.
+  - Cyclic family with random f, k = 2, 3, 4: 0 mono.
+  - (H)-failure example: mono, as stated.
+  - Lifted family (5,1,1,2), (5,1,2,2), (7,2,1,2): 0 mono; counts as in Theorem 2.10.
+  - Theorem 3.2 family, k = 1, 2, 3: 0 mono; A = G2, B = G1, X = F_d.
+  - TSD datum: 76 L's; proper coloring found; Q(23) = 6.
+  - Bose q = 7: six disjoint translates.
+  - K_F/c - 1 = 0.0021; xi(2.2e7) = 0.0068; xi(2700) = 0.198, so eta = 0.6 is OK.
+- Implementation slip of mine (not a math issue): a dead loop over range(h) with h = 100^13 hung the first run; removed.
+- No extra_q files written: FD is the only load-bearing gap, and no single query settles it. Earlier rounds tried MS, MS', TSD, SL and FD directly, all without result.
 
 ## If invoked again
-- Possible polish: the ledger lacks the round-6 entries. proof.md is self-contained.
 - Keep the honesty points:
   - FD open;
-  - c(S) <= K(S) uncertified (margin about 0.7%, heuristic);
+  - c(S) <= K(S) uncertified;
+  - the K_F-vs-K remark is heuristic only;
   - no R_4 bound;
   - B = 9 embedding open;
   - interval averaging not refuted.
+- Possible polish: add the round-6 items to the ledger.

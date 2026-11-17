@@ -10,7 +10,13 @@
   - An exact reduction (Section 4). The per-shift (D-a) clause against certified single-class caps is equivalent, up to an explicit O(S^{-3/8}) term, to the single inequality FD. FD is implied by a single-binary-source deficit. Any violation of FD forces all three classes to be within 3η + O(S^{-3/8}) of the cap, with saturated fibres over all short lags. FD holds, with explicit η, in several structured sub-cases.
 - **No new bound on R_4 is claimed.** Section 5 states only the conditional implication.
 
-Labels: **PROVED** means proved in full in this document. **CITED** marks a classical fact quoted by name. **HEURISTIC** marks an estimate that nothing depends on. Small members of every construction in Section 2 and Section 3 were also checked exhaustively by computer against every L; those checks are evidence only, and every claim below is proved by hand in the text.
+Labels: **PROVED** means proved in full in this document. **CITED** marks a classical fact quoted by name. **HEURISTIC** marks an estimate that nothing depends on. Small members of every construction in Section 2 and Section 3 were also checked exhaustively by computer against every L; those checks are evidence only, and every claim below is proved by hand in the text. The members checked were:
+- a two-shift instance of Theorem 2.6 (k' = 2, r = 1, s = 1; 40 points, 60 L's): proper, with |F_h| = 4, N_e = 4, |R_e| = 1 and Σ m^2 = 16 at both shifts, as predicted;
+- the three-copy family of Theorem 2.4 with k = 2, 3, 4 and random admissible f_c: proper;
+- the (H)-failure example of Section 2.2: monochromatic, as stated;
+- the lifted family of Section 2.3 with (p, r, k, m') = (5,1,1,2), (5,1,2,2), (7,2,1,2): proper, with the counts of Theorem 2.10;
+- the family of Theorem 3.2 with k = 1, 2, 3: proper, with X = F_d(D), |F_l(X)| = 2k, A = G_2 and B = G_1;
+- the m = 23 datum and the Bose translates of Section 6, and the numerical values in Sections 4-5.
 
 ---
 
@@ -459,7 +465,7 @@ Fix a proper ternary source, a shift d, Y = F_d(D), S = span Y, X_e = S_e(d) and
 
 **Lemma 4.1 (bounds on Q).**
 - (Q-up) Q(m) ≤ sqrt(2m) + 1. A Sidon set of size q in m+1 consecutive integers has q(q−1)/2 distinct positive differences, all ≤ m.
-- (Q-low) Q(m) > sqrt(m/8) for m ≥ 32. By Bertrand's postulate (CITED) there is a prime p with x < p ≤ 2x, where x = sqrt(m/8) ≥ 2, so p is odd. The Erdős–Turán set G_0 of Section 2.3 is Sidon, has p elements, and lies in [0, 2p^2 − p − 1] ⊂ [0, m].
+- (Q-low) Q(m) > sqrt(m/8) for m ≥ 32. Put x = sqrt(m/8) ≥ 2 and n = ⌊x⌋ ≥ 2. By Bertrand's postulate (CITED: for every integer n ≥ 2 there is a prime p with n < p < 2n) there is a prime p with x < n+1 ≤ p < 2n ≤ 2x; p ≥ 3 is odd. The Erdős–Turán set G_0 of Section 2.3 is Sidon, has p elements, and its largest element is at most 2p(p−1) + (p−1) = 2p^2 − p − 1 < 2p^2 ≤ 8x^2 = m. So G_0 ⊂ [0, m] and Q(m) ≥ p > x.
 - (Q-step) Q(m−1) ≥ Q(m) − 1: delete the largest element.
 - Consequently, for S ≥ 34, v_1 ≥ 2Q(S−2) > sqrt((S−2)/2) ≥ sqrt(S)/2, and c(S) = sqrt(v_1 S) ≥ S^{3/4}/sqrt 2.
 
@@ -504,7 +510,7 @@ So, against certified single-class caps of Fejér type, Part D (D-a) per shift i
 **Proposition 4.6 (single-class deficit implies FD; structure of any violator). PROVED.**
 - (a) Suppose every binary source of span S' ≥ S_1 has size ≤ (1−η') c(S') (statement **SCD(η', S_1)**). Then FD(η, S_0) holds for every η < η', with S_0 = max(34, (sqrt 2·S_1/(η'−η))^{4/3}).
 - (b) If |F_d(D)| ≥ 3(1−η) c(S) with S ≥ 34, then every class satisfies s_e ≥ (1 − 3η − 2ξ(S)) c(S).
-- (c) Hence a family refuting FD for every η > 0 contains, at one shift and inside one interval of S+1 integers, three pairwise disjoint binary sources of size (1−o(1)) c(S) ≈ sqrt 2·S^{3/4}. In particular it refutes SCD.
+- (c) Hence a family refuting FD for every η > 0 contains, at one shift and inside one interval of S+1 integers, three pairwise disjoint binary sources of size (1−o(1)) c(S). Here c(S) ≥ S^{3/4}/sqrt 2 by Lemma 4.1, and c(S) = (1+o(1)) sqrt 2·S^{3/4} if Q(m) = (1+o(1)) sqrt m (CITED: Erdős–Turán upper bound and Singer sets). In particular such a family refutes SCD(η') for every η' > 0.
 
 *Proof.*
 - (a) A class of span S_e ≥ S_1 has size ≤ (1−η') c(S_e) ≤ (1−η') c(S), since c is nondecreasing, Q being nondecreasing. A class of span < S_1 has size ≤ S_1. So |F_d(D)| ≤ 3(1−η') c(S) + 3S_1, and 3S_1 ≤ 3(η'−η) c(S) once S^{3/4}/sqrt 2 ≥ S_1/(η'−η).
@@ -523,11 +529,11 @@ Then:
 - (c) at every lag with r(l) ≥ (1−β) v_1, both Golomb classes have size ≥ Q(S−2) − β v_1, so both are near-maximal Sidon sets.
 
 *Proof.*
-- (a) Lemma 4.2 gives 2Σ(Λ−l)(v_1 − r) ≤ v_1 λΛ + sΛ − s^2Λ^2/N. Divide by v_1 λΛ. Use Λ ≥ λ, s^2 ≥ (1−2θ) v_1 S and S/N ≥ 1 − Λ/S, so that s^2Λ/(v_1 λN) ≥ (1−2θ)(1−Λ/S) ≥ 1 − 2θ − Λ/S. The bound on s/v_1 follows from s ≤ K_F ≤ (1+ξ)c and c/v_1 = sqrt(S/v_1) ≤ sqrt 2·S^{1/4}.
+- (a) If θ ≥ 1/2 the bound is trivial, since D̄ ≤ 1 ≤ 2θ. Let θ < 1/2. Since 2Σ_{l≤λ}(Λ−l) = λΛ, we have 2Σ(Λ−l)(v_1 − r) = v_1λΛ − 2Σ(Λ−l)r, and Lemma 4.2 gives 2Σ(Λ−l)(v_1 − r) ≤ v_1 λΛ + sΛ − s^2Λ^2/N. Divide by v_1 λΛ. Use Λ ≥ λ, s^2 ≥ (1−θ)^2 v_1 S ≥ (1−2θ) v_1 S > 0 and S/N ≥ 1 − Λ/S, so that s^2Λ/(v_1 λN) ≥ (1−2θ)(1−Λ/S) ≥ 1 − 2θ − Λ/S. The bound on s/v_1 follows from s ≤ K_F ≤ (1+ξ)c and c/v_1 = sqrt(S/v_1) ≤ sqrt 2·S^{1/4}.
 - (b) is Markov's inequality for the weights (Λ−l), whose total is λΛ/2.
 - (c) Each Golomb class is ≤ Q(S−1) ≤ Q(S−2) + 1, and r(l) ≥ (1−β)(Q(S−1) + Q(S−2)). ∎
 
-Combined with Proposition 4.6(b), taking θ = 3η + 2ξ and λ ≈ εS: an FD-violator at level η has, in each of its three classes and at all but a weighted fraction O((η + ε + S^{−3/8})/β) of the lags l ≤ εS, fibres that are unions of two Sidon sets each of size ≥ Q(S−2) − βv_1. (HEURISTIC reading at the regime: for η = 0.01, each class must be within about 3.7% of c, with mean fibre deficit below about 8% over every lag window up to 2% of S.)
+Combined with Proposition 4.6(b), taking θ = 3η + 2ξ and λ ≈ εS: an FD-violator at level η has, in each of its three classes and at all but a weighted fraction O((η + ε + S^{−3/8})/β) of the lags l ≤ εS, fibres that are unions of two Sidon sets each of size ≥ Q(S−2) − βv_1. (HEURISTIC reading at the regime, with S = 2.2·10^7 and v_1 = 9.4·10^3, using the numerical value K_F/c − 1 ≈ 0.0021 in place of ξ: for η = 0.01, each class must be within about 3.4% of c, i.e. θ ≈ 0.034, and at λ = 0.02 S the bound (a) gives D̄(λ) ≤ about 0.089, i.e. a weighted mean fibre deficit below about 9% over the lags l ≤ 0.02 S. With the proved ξ(S) ≈ 0.0068 instead, the numbers are θ ≈ 0.044 and D̄ ≤ about 0.107.)
 
 **Proposition 4.8 (FD in structured sub-cases). PROVED.**
 - (a) **Translation-invariant colorings**, χ(v,u) = φ(v−u). Then F_d(D) = S_{φ(d)}(d) is a single class, so |F_d(D)| ≤ K_F ≤ (1+ξ)c. FD holds with η = (2 − ξ(S_0))/3, for example η = 0.6 for S_0 = 2700.
@@ -552,6 +558,8 @@ The problem's numbers suggest c ≈ 4.55·10^5 against K ≈ 4.58·10^5, a margi
 
 With that, δ ≥ η, and the sensitivity statement of the problem applies: a factor of about 1 − 3.9δ (HYPOTHETICAL).
 
+**Remark (HEURISTIC; a single-class question, outside Part D).** The same numbers place the Fejér cap itself below the consumer's cap: K_F ≈ 4.557·10^5 (computed from v_1 = 9.4·10^3, S = 2.2·10^7) against K ≈ 4.58·10^5, about 0.5% lower. Corollary 4.3 is a valid single-class cap for every class, with Q replaced by any certified upper bound. If, after both caps are recomputed with the same certified Q-bound at the consumer's spans, K_F(S−j) < K(S−j) still holds, then replacing K by min(K, K_F) in U_d is a proportional saving obtained without any cross-class information. The problem's figures are rounded to about ±0.3% in this comparison, so this is not established here. It concerns the binary-source capacity, not the request geometry of Part D.
+
 Nothing in this document proves FD. So nothing here improves R_4.
 
 ---
@@ -560,9 +568,9 @@ Nothing in this document proves FD. So nothing here improves R_4.
 
 - **Joint fibre and prefix deficits.** The statements MS (a joint prefix deficit of Σ_e r_{S_e(d)}(l) against 3v_l for all λ) and MS' (the same with an additive slack S/100 and S ≥ S_0) were the missing statements of earlier rounds. They are neither proved nor refuted. They were retired, because MS' implies the size deficit Σ_e s_e^2 < 3(1−η) v_1 S, hence FD. The proof is Lemma 4.2 summed over windows. So MS' is no reduction of the goal. A rank-based conversion "prefix deficit δ ⇒ cap loss about δ/2" against the consumer's rank caps was also proved; it is superseded here by the cleaner Fejér route.
 - **Lag-by-lag information cannot give a deficit.**
-  - For every prime power q ≥ 7 there are six pairwise disjoint Sidon sets of size q in [0, q^2 − 2] (translates of a Bose set). So "six disjoint Sidon pieces per lag" gives no joint deficit.
+  - For every prime power q ≥ 7 there are six pairwise disjoint Sidon sets of size q in [0, q^2 − 2]. *Proof:* a Bose set A ⊂ Z/(q^2−1) (CITED) has q elements, is Sidon mod q^2−1, and its nonzero differences are exactly the residues not divisible by q+1. So the translates A + j(q+1), 0 ≤ j < q−1, are pairwise disjoint, each is Sidon mod q^2−1, and read as subsets of [0, q^2−2] each is Sidon in Z. (Checked by computer for q = 7.) So "six disjoint Sidon pieces per lag" gives no joint deficit.
   - In the coupled one-lag structure, no single mixed additive-quadruple pattern is forbidden. A single quadruple's constraints are unsatisfiable only when all four points have the same (class, color) type.
-  - The single-lag statement TSD (two disjoint Sidon sets A, B whose union carries a proper 2-coloring of its strict source, constant on A-pairs and on B-pairs with different constants, lose a fixed proportion of Q(m) + Q(m−1)) fails at m = 23: A = {0,1,4,13,15,21}, B = {2,5,7,16,22,23} reach 12 = Q(23) + Q(22). So TSD can hold only asymptotically.
+  - The single-lag statement TSD (two disjoint Sidon sets A, B whose union carries a proper 2-coloring of its strict source, constant on A-pairs and on B-pairs with different constants, lose a fixed proportion of Q(m) + Q(m−1)) fails at m = 23: A = {0,1,4,13,15,21}, B = {2,5,7,16,22,23} reach 12 = Q(23) + Q(22). (Finite facts, computer-checked, evidence for exactly this instance: A and B are disjoint Sidon sets; there is no 7-element Sidon set in [0,23], so Q(23) = Q(22) = 6; V(A ∪ B) contains 76 L's, and a backtracking search finds a proper 2-coloring with A-pairs 0 and B-pairs 1.) So TSD can hold only asymptotically.
 - **Lag-pair counting is balanced (HEURISTIC dead end).** At saturation, parallelogram counts, Sidon agreement bounds, transport and separation (Corollary 1.3) are all met in proportion by random-like colorings. A ±1 sum over all L's reduces to bookkeeping. Energy and Gowers-type counts are consistent at saturation. A proof must be global across lags.
 - **Constructions toward a counterexample that fail.**
   - Block-placed and digit-product sources (M·B + R with B Sidon) have joint prefix ratio at most about Q(ρ)/sqrt(M). Base-M products need full-grid 2-colorings and do not raise the exponent above 1/2.
@@ -593,3 +601,4 @@ What is not done:
 - **Interval averaging** with the weights a_h is not refuted by any construction here; the counterexample shift sets W are sparse.
 - **(D-c) under near-extremality** is equivalent to a fibre deficit (Proposition 3.3), hence again to the open core.
 - The consumer comparison c(S) ≤ K(S) at S ≈ 2.2·10^7 needs a numerical certification (Section 5).
+- Whether the Fejér cap K_F alone undercuts the consumer's rank cap K, once both use the same certified Q-bound, is unchecked here (Section 5, remark). It is a single-class question.
