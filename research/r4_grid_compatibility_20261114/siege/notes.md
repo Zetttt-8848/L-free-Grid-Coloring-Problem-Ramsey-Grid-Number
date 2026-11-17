@@ -1,49 +1,35 @@
-# Notes (director, rewritten at the round-5 plan step)
+# Notes (director, rewritten at the round-6 plan step; round 6 is the final round)
 
 ## Status
-- Goal: entry 1 (OPEN), never proved, never raised. P1 is PROVED (entry 9; round1_q1 Part A is the cleanest chain). Part D open.
-- Ledger after the round-5 block: entries 1-54.
-  - 42 Theorem A (conversion, round4_q6). I re-checked every step: the algebra H_tot - E_0 > 3 sqrt(alpha) H*, Lemma A1 (b),(c), and K <= K^Pi. Sound.
-  - 43 Lemma W / Corollary U (round4_q2); 44 no single mixed pattern forbidden; 45 TSD => MS up to an O(m0) error; 46 OPEN TSD.
-  - 47 near-extremality transfer, w_1 <= (8/9)|Y| (round4_q3); 48 Lemma E/C/Obstruction O (round4_q5); 49 Bose six translates (round4_q1); 50 SC => MS (round4_q6).
-  - 51 RETRACT 41 (MS replaced, not refuted); 52 OPEN MS' (slack S/100, S >= S_0); 53 OPEN lead from round4_q4.partial (product ceiling 1/sqrt(M)); 54 the m = 23 TSD equality instance.
-- round4_q4 was partial twice (only a 1 KB stub). The round4_q1/q6 partials are superseded by their re-runs.
-
-## Checks done this step (scratchpad q5parts/, tsd.py, disj.py, verify23.py; evidence only)
-- TSD exact maxima for m = 4..24, exhaustive over disjoint Sidon pairs with a backtracking 2-coloring:
-  - deficit of 1-2 for 7 <= m <= 22;
-  - EQUALITY (12 = Q+Q) at m = 23 and 24.
-- The instance A = {0,1,4,13,15,21}, B = {2,5,7,16,22,23} was verified independently (76 L's, 0 monochromatic).
-- Plain disjoint Sidon pairs reach the cap for every m in 5..24 except 7.
+- Goal: entry 1 (OPEN), never proved, never raised; no goal to come back to. P1 is PROVED (entry 9; round1_q1 Part A is the cleanest chain). Part D open.
+- Ledger after the round-6 block: entries 1-68.
+  - 55 Lemma F / Corollary F0 (Fejer cap K_F >= sqrt(v_1 S)); 56 Theorem B (Fejer route); 57 Prop C / C1 (MS' => SD => (D-a)).
+  - 58 chain audit (step-6 direction flaw fixed); 59 Prop N; 60 Lemma K and Prop P; 61 RETRACT 53.
+  - 62 inscribed-pair rule; 63 SL => MS', Theorem T, gadget G1; 64 single-quadruple W lemma.
+  - 65 RETRACT 52 (MS' retired, not refuted); 66 OPEN FD (new missing statement); 67 OPEN SCF; 68 PROVED separation lemma (director, round6_plan).
+- Round 5: all six answered after a resume (screen_r5 all OK). No proof, no counterexample.
 
 ## Key insights this step
-- Cross-lag collision counting is too weak at the lags Theorem A needs.
-  - A cell z_{d+m}(p) lies in about 36 lambda/S lag-structures. Collisions number about lambda^3/S, against C_w of about 6 sqrt(S) lambda.
-  - The two are comparable only at lambda ~ S^{3/4}, but at the optimal rank the chain needs lambda up to about S^{5/8}.
-  - Raising the rank to reach lambda ~ S makes the needed statement equivalent to the conclusion itself (circular).
-- So any deficit must be single-lag and asymptotic, in the coupled structure (W, kappa) of three binary sources.
-  - First-moment heuristic for one U_f: about (2·(3/4)^2)^m ≈ 1.1^m colorings, which is borderline.
-  - The cross-f couplings W(a), W(b) might push it below 1. MS' may well be false.
-- The per-shift (D-a) inequality from MS' needs the named span hypothesis S >= S_1, and it compares to 3K^Pi (the Pi-form certified cap).
-  - The only remaining elementary step of the chain is an explicit lower bound K^Pi >= c S^{3/4} (Bose + Bertrand for Q).
+- round5_q6 Prop C: MS' implies the plain size deficit, so all the local fibre statements (MS, MS', WE, TSD/SL) are at least as hard as (D-a). The missing statement is now FD: |F_d(D)| <= 3(1-eta) sqrt(v_1 S). The chain is three lines: entry 9, Corollary F0, FD.
+- FD is essentially the (D-a) clause itself; the reductions did not make Part D easier.
+- Counterexamples to FD need three binary sources of size about sqrt(2) S^{3/4} at one shift. None known; Sidon sets give about sqrt S.
+- Separation lemma (mine): at each outer pair of a binary source, agreeing inscribed pairs have only one colour. Under Fejer saturation there are about 2L/sqrt(S) inscribed pairs per outer pair, so random-like colourings fail. Whether structured ones can survive is the core of SCF.
+- The consumer caveat: K_F may exceed the consumer's rank cap K by about 1% (heuristic), so a deficit against K_F helps the consumer only beyond that gap.
+- SCF touches the binary-source capacity lane (Codex's). Flag this to the orchestrator.
 
-## Round 5 wave (6 queries, all "kind: attempt", all on MS')
-- q1 = q2 = q3: closing task on MS' (byte-identical, about 54 KB with splices).
-  - Splices: round4_q1.md lines 29-194, round4_q6 Part A + Lemma B1, round4_q2 Secs 1-3, round4_q3 Sec 3, round4_q5 Secs 0-5, the Bose statement, the m = 23 data.
-- q4: refute MS' exactly as stated (its wording is new this round).
-- q5: the single-lag core SL (=> MS'), via TSD or a finite unsatisfiable gadget plus counting; or refute SL/TSD.
-- q6: bare query (MS' + the cited statements 9/27/33/42 only; derive the chain; new first move).
+## Round 6 wave (6 queries; 5 "kind: attempt", 1 "kind: verify")
+- q1 = q2 = q3: closing task on FD (byte-identical, about 41 KB).
+  - Splices: P1 Part A (round1_q1 lines 3, 7-88), round5_q6 lines 10-56 and 187-249, round5_q2 lines 58-78, 102-152 and 156-183, round4_q2 lines 20-81, round5_q1 lines 121-190, the m = 23 datum, and the sketch.
+- q4: refute FD (wording new), with round5_q4 Secs 0-6 and the Fejer material.
+- q5: SCF cut out, with the separation lemma as first move.
+- q6: verify the round2_q1 digit-family theorems (final-round standing-results allowance).
 
-## Next round (round 6, the final round)
-- If any answer proves MS' (or SL/TSD with the derivation):
-  - record PROVED [GOAL] citing entries 9, 27, 33, 42 and the new proof;
-  - send two verify queries carrying the whole chain verbatim (P1 Part A, rank inequalities, prefix lemma, Theorem A, the new proof, plus the elementary K^Pi lower-bound step);
-  - round 6 is final, so follow the brief's wording on concluding.
-- If MS' is refuted by an explicit family:
-  - that does not refute (D-a) in general, but it is a strong (D-b)-type result;
-  - check whether it meets the goal's (D-b) clause (classes as large as the regime requires); probably record it as a major standing result;
-  - verify it with a script (all L's).
-- If nothing: the goal was never proved, so there is no goal to come back to.
-  - The final document presents the standing results (summary section), with MS' marked open.
-  - Up to two queries in the final round may write up standing results.
-- Verify any construction by script (both middle orders; atoms below shifts; mirrored L's).
+## For the proof-writing steps
+- If FD is proved, the goal still needs its audit. No further round exists, so the proof-writing steps must handle it, marking it uncertified unless verified.
+- If FD is not settled, the final document presents:
+  - P1 (entry 9) in full;
+  - the (D-b)-type standing results (digit families, entries 18-22; lifted family, entries 31-32; (D-c+) refutation, entries 34-35);
+  - the conversion results (entries 27, 33, 42, 55-57);
+  - the necessary conditions for counterexamples (entries 59, 60);
+  - FD as the clearly marked open statement.
+- Verify any construction by script: both middle orders, atoms below shifts, mirrored L's.

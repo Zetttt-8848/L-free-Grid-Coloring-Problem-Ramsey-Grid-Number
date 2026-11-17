@@ -40,3 +40,7 @@ R: 0
 - resume on user request ("Try again"): phase round 5 wave; relaunching all six as the wave's first launch
 - round 5 wave (resume launch, deep x6): TOTAL (6 queries): answered 6, partial 0, no answer 0; R = 5
 - phase: round 6 plan, attempt 1 (final round)
+- round 6 plan attempt 1: judge done; screen_r5 all OK appended
+- round 6 check: WAVE 6 FLOOR 1 (ledger +14, kind=attempt 5/6); cap 6; summary copied
+- round6_q5 (single-class binary-source deficit SCF) NOT launched: it lies in Codex's lane A (binary-source capacity) under R4-PAIR-20261114-v2 and the project instructions; recorded for hand-off to Codex
+- phase: round 6 wave (math-proof:math-proof-worker-deep x5: q1,q2,q3,q4,q6)
