@@ -44,3 +44,8 @@ R: 0
 - round 6 check: WAVE 6 FLOOR 1 (ledger +14, kind=attempt 5/6); cap 6; summary copied
 - round6_q5 (single-class binary-source deficit SCF) NOT launched: it lies in Codex's lane A (binary-source capacity) under R4-PAIR-20261114-v2 and the project instructions; recorded for hand-off to Codex
 - phase: round 6 wave (math-proof:math-proof-worker-deep x5: q1,q2,q3,q4,q6)
+- round 6 wave: deep x5 (q5 not run, Codex lane), TOTAL (5 queries): answered 5, partial 0, no answer 0; R = 6
+- rounds finished (MAX_ROUNDS=6); proof tail next
+- loop ended: finished round MAX_ROUNDS=6 without CONCLUDE; R = 6
+- tail: full (gate: REJECT: the newest [GOAL] line (entry 1) is OPEN, not PROVED or REFUTED)
+- phase: tail (e) draft
