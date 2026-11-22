@@ -2,7 +2,7 @@
 
 **Status: NTSD-F is not proved.**
 
-- **Proved:** a new local obstruction, G1+, with a four-L proof. It strictly contains the round-1 gadget G1.
+- **Proved:** the local obstruction G1+, with a four-L proof. As corrected below, it coincides with the round-1 gadget G1 for sets with no small differences, so the proof is an independent re-derivation.
 - **Reduced:** for translate pairs (the case Theorem P leaves open), NTSD follows from a single explicit counting statement about Sidon sets, CL(β, t) below.
 - **Open:** CL(β, t), and the collision-free pairs that are not translates.
 - **No claim about R_4.**
@@ -49,7 +49,11 @@ Steps 2 and 4 contradict each other. ∎
 **Remarks.**
 - Only A ∩ (A+t) = ∅ and the stated memberships and orders are used. The Sidon property is needed only for (A, B) to be a TSD instance.
 - If A has no difference in [1, 2t], then x + t < b holds automatically for every b ∈ A with b > x.
-- The gadget G1 recorded in round 1 asks for all four summands strictly between x and y. That is a special case of G1+: take b to be the larger of z_1, z_2 and d the smaller of y_1, y_2. The converse fails, because G1+ lets a and e lie outside (x, z).
+- **Correction (2026-11-22, see `CL_ATTACK.md` §1).** An earlier version of this note claimed that G1+ strictly contains the round-1 gadget G1, because a and e could lie outside (x, z). That claim is **false**.
+  - If x+t < b < z, then a = x+z+t−b also lies in (x+t, z).
+  - If x < d < z−t, then e = x+z−t−d also lies in (x, z−t).
+  - So for A with no difference in [1, 2t], G1+ is exactly the base form of G1.
+  - The four-L proof above is an independent re-derivation of round 1's G1 result, not a new obstruction. The larger G1+ coverage counts in this note, compared with round 1's G1 counts, come from different samples and from round 1's separate treatment of mirror forms, not from a more general gadget.
 - In the language of Proposition 2G, G1+ is a type II conflict on the cell (x+t, z):
   - it is forced to 1 from lag g_1, by the BA start x+t and the AA start b;
   - it is forced to 0 from lag g_2, by the BB start x+t and the BA start d+t.
