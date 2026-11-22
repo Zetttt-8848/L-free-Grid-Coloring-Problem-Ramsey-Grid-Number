@@ -1,0 +1,26 @@
+{
+ "e_tail": [
+  2793,
+  2799,
+  2805,
+  2812,
+  2819
+ ],
+ "e_seeds": {
+  "8": 8,
+  "10": 12,
+  "12": 16,
+  "15": 20
+ },
+ "spans_equal_codex": true,
+ "first_difference": null,
+ "D_float": 219.44128252868413,
+ "D_ge_1097_5": true,
+ "rows_verified": 566,
+ "side": 21947865,
+ "blocks": 561,
+ "loss": 41,
+ "margin": 667767862929561436134957406955093129954012400,
+ "margin_positive": true,
+ "margin_equals_codex": true
+}

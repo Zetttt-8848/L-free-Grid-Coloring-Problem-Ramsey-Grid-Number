@@ -1,0 +1,100 @@
+{
+ "claims": "C(4)=4, C(8)=7, C(12)=9, C(16)=11, C(20)<=14",
+ "checks": [
+  {
+   "n": 4,
+   "witness_size": 4,
+   "witness_found": true,
+   "witness_A": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "elapsed_s": 0.0
+  },
+  {
+   "n": 8,
+   "witness_size": 7,
+   "witness_found": true,
+   "witness_A": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+   ],
+   "excluded_size": 8,
+   "subsets_checked": 1,
+   "all_uncolorable": true,
+   "elapsed_s": 0.0
+  },
+  {
+   "n": 12,
+   "witness_size": 9,
+   "witness_found": true,
+   "witness_A": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10
+   ],
+   "excluded_size": 10,
+   "subsets_checked": 55,
+   "all_uncolorable": true,
+   "elapsed_s": 0.1
+  },
+  {
+   "n": 16,
+   "witness_size": 11,
+   "witness_found": true,
+   "witness_A": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    13,
+    14,
+    15
+   ],
+   "excluded_size": 12,
+   "subsets_checked": 1365,
+   "all_uncolorable": true,
+   "elapsed_s": 2.0
+  },
+  {
+   "n": 20,
+   "witness_size": 12,
+   "witness_found": true,
+   "witness_A": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    15,
+    16,
+    18
+   ],
+   "excluded_size": 15,
+   "subsets_checked": 11628,
+   "all_uncolorable": true,
+   "elapsed_s": 37.5
+  }
+ ]
+}
