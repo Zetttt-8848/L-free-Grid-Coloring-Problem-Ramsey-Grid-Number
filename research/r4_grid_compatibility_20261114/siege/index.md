@@ -28,3 +28,8 @@ round6_q2 | answered | FD is not settled. Chain check: steps 1-3 correct, four p
 round6_q3 | answered | FD is not settled. Chain valid with caveats C1-C3. Proposition S with explicit constants: if FD fails, all three classes near-extremal. Dead ends: +/-1 identity over all L's, energy and Gowers-type counts. Missing: an anti-saturation lemma for binary sources.
 round6_q4 | answered | FD is NOT SETTLED. Proved: R1 two-sided reduction BD(eta) => FD(eta'), and refuting FD needs near-Fejer binary sources; R2 binary form of properness; R3 difference-colored sources; R4 two failed constructions. Heuristic R5.
 round6_q6 | answered | The digit-family proof is correct only after adding hypothesis (H): every atom of copy c is below h_c. Explicit counterexample without (H). With (H), Lemma A, Theorem B, Lemma C, Theorem D hold; several side remarks corrected.
+r3_q1 | no answer | (worker terminated: API usage limit)
+r3_q2 | no answer | (worker terminated: API usage limit)
+r3_q3 | no answer | (worker terminated: API usage limit)
+r3_q4 | no answer | (worker terminated: API usage limit)
+r3_verify | partial | (worker terminated: API usage limit)
