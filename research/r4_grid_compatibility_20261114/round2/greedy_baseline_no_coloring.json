@@ -1,0 +1,22 @@
+{
+ "100": {
+  "best_min_size_no_coloring": 11,
+  "Q_ogr": 12,
+  "rho": 0.9166666666666666
+ },
+ "150": {
+  "best_min_size_no_coloring": 13,
+  "Q_ogr": 14,
+  "rho": 0.9285714285714286
+ },
+ "200": {
+  "best_min_size_no_coloring": 14,
+  "Q_ogr": 17,
+  "rho": 0.8235294117647058
+ },
+ "300": {
+  "best_min_size_no_coloring": 17,
+  "Q_ogr": 20,
+  "rho": 0.85
+ }
+}
