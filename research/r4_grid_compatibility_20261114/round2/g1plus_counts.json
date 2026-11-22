@@ -1,0 +1,114 @@
+[
+ {
+  "q": 13,
+  "t": 1,
+  "mean_size": 11.0,
+  "mean_span": 154.5,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 0.6666666666666666
+ },
+ {
+  "q": 13,
+  "t": 3,
+  "mean_size": 8.833333333333334,
+  "mean_span": 140.33333333333334,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 0.0
+ },
+ {
+  "q": 17,
+  "t": 1,
+  "mean_size": 15.0,
+  "mean_span": 238.83333333333334,
+  "min_pairs_with_G1plus": 1,
+  "mean_pairs": 2.5
+ },
+ {
+  "q": 17,
+  "t": 3,
+  "mean_size": 12.5,
+  "mean_span": 269.0,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 0.3333333333333333
+ },
+ {
+  "q": 19,
+  "t": 1,
+  "mean_size": 17.5,
+  "mean_span": 314.1666666666667,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 3.8333333333333335
+ },
+ {
+  "q": 19,
+  "t": 3,
+  "mean_size": 14.333333333333334,
+  "mean_span": 323.0,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 0.3333333333333333
+ },
+ {
+  "q": 23,
+  "t": 1,
+  "mean_size": 21.0,
+  "mean_span": 481.3333333333333,
+  "min_pairs_with_G1plus": 2,
+  "mean_pairs": 5.166666666666667
+ },
+ {
+  "q": 23,
+  "t": 3,
+  "mean_size": 18.0,
+  "mean_span": 487.8333333333333,
+  "min_pairs_with_G1plus": 0,
+  "mean_pairs": 0.8333333333333334
+ },
+ {
+  "q": 29,
+  "t": 1,
+  "mean_size": 27.0,
+  "mean_span": 786.5,
+  "min_pairs_with_G1plus": 4,
+  "mean_pairs": 9.0
+ },
+ {
+  "q": 29,
+  "t": 3,
+  "mean_size": 24.0,
+  "mean_span": 781.3333333333334,
+  "min_pairs_with_G1plus": 4,
+  "mean_pairs": 4.666666666666667
+ },
+ {
+  "q": 31,
+  "t": 1,
+  "mean_size": 29.166666666666668,
+  "mean_span": 903.6666666666666,
+  "min_pairs_with_G1plus": 6,
+  "mean_pairs": 9.833333333333334
+ },
+ {
+  "q": 31,
+  "t": 3,
+  "mean_size": 26.0,
+  "mean_span": 909.8333333333334,
+  "min_pairs_with_G1plus": 2,
+  "mean_pairs": 3.5
+ },
+ {
+  "q": 37,
+  "t": 1,
+  "mean_size": 35.166666666666664,
+  "mean_span": 1273.3333333333333,
+  "min_pairs_with_G1plus": 14,
+  "mean_pairs": 20.166666666666668
+ },
+ {
+  "q": 37,
+  "t": 3,
+  "mean_size": 31.5,
+  "mean_span": 1313.0,
+  "min_pairs_with_G1plus": 2,
+  "mean_pairs": 8.666666666666666
+ }
+]
