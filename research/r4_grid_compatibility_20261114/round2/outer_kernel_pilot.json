@@ -1,0 +1,30 @@
+{
+ "quartic": {
+  "n": 21947865,
+  "margin": 667767862929561436134957406955093129954012400,
+  "positive": true,
+  "blocks": 561
+ },
+ "eigen": [
+  {
+   "width": 35990,
+   "at_n0": {
+    "n": 21947865,
+    "lambda": 205682.1324864495,
+    "negative_correlation": true
+   },
+   "positive_at_n0": false
+  },
+  {
+   "width": 30000,
+   "at_n0": {
+    "n": 21947865,
+    "lambda": -538393.8874758857,
+    "margin": -8343068969261550689946,
+    "blocks": 466,
+    "w_min": 252239
+   },
+   "positive_at_n0": false
+  }
+ ]
+}

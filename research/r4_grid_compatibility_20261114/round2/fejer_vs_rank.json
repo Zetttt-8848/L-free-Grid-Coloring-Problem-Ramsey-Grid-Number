@@ -1,0 +1,32 @@
+[
+ {
+  "index": 27000,
+  "span": 21947998,
+  "Q(S)": 4753,
+  "v_1": 9506,
+  "codex_cap_K": 457154,
+  "fejer_cap": 457384.0,
+  "best_lambda": 35250,
+  "fejer_minus_K_rel": 0.0005
+ },
+ {
+  "index": 45138,
+  "span": 21929860,
+  "Q(S)": 4751,
+  "v_1": 9502,
+  "codex_cap_K": 456871,
+  "fejer_cap": 457101.2,
+  "best_lambda": 35250,
+  "fejer_minus_K_rel": 0.0005
+ },
+ {
+  "index": 64131,
+  "span": 21910867,
+  "Q(S)": 4749,
+  "v_1": 9498,
+  "codex_cap_K": 456590,
+  "fejer_cap": 456805.3,
+  "best_lambda": 35250,
+  "fejer_minus_K_rel": 0.00047
+ }
+]

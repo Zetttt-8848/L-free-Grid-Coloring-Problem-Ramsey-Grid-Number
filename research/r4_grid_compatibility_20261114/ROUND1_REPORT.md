@@ -76,7 +76,7 @@
 
 **Hand-offs to lane A.**
 - **SCD.** The single-binary-source deficit is the cleanest sufficient statement, and it lies in Codex's lane. The round-6 query on it (`siege/round6_q5.md`) was deliberately not run here.
-- **Fejér cap remark.** The final document records a fragile heuristic: the Fejér-type cap `K_F` is about 0.3–0.8% below the rank cap `K` at this scale, depending on the certified Q-bound. If certified, this would be a single-class proportional saving. It is a lane-A matter; nothing here certifies it.
+- **Fejér cap remark.** The final document records a fragile heuristic: the Fejér-type cap `K_F` is about 0.3–0.8% below the rank cap `K` at this scale, depending on the certified Q-bound. If certified, this would be a single-class proportional saving. It is a lane-A matter; nothing here certifies it. **Update 2026-11-22:** recomputed with Codex's certified profile, K_F^♯ is 0.05% *above* the certified K, so there is no saving (`round2/NEXT_TARGETS.md` §1).
 
 ## Not done, and verification limits
 

@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-22",
+ "inputs": "Codex round-3 finite_seeded rows (codex/r4-local-capacity-round3-20261114 at 14647e6), inherited verify_four_twenty.outer_twenty; last row padded by monotonicity",
+ "quartic_width_35990": {"n": 21947865, "exact_margin": "667767862929561436134957406955093129954012400", "blocks": 561, "reproduces_codex": true},
+ "unconstrained_top_eigenvector": {
+  "width_35990": {"lambda_max": 205682.13, "negative_entries": 17995, "admissible": false, "reason": "negative correlations b_d"},
+  "width_30000": {"lambda_max": -538393.89, "exact_margin_at_n0": "-8343068969261550689946"}
+ },
+ "nonnegative_projected_kernel_with_linearised_bonus": {
+  "width_35990": {"n0_positive": true, "rayleigh_n0": 5036.0, "exact_margin_n0": "90553329840302340808", "rayleigh_n0_minus_1": -2381.5, "smallest_positive_side_in_bracket": 21947865, "bracket": [21947864, 21947865]},
+  "width_36900": {"rayleigh_n0": 5036.0, "rayleigh_n0_minus_1": -2381.5, "positive_at_n0_minus_1": false},
+  "width_33000": {"rayleigh_n0": -53601.3, "positive_at_n0": false}
+ },
+ "conclusion": "No admissible kernel found by this method beats the quartic kernel by even one unit of side. This is evidence, not an optimality proof (projected power iteration is a local method)."
+}
