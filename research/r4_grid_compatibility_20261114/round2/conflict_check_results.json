@@ -1,0 +1,9181 @@
+{
+ "elapsed_s": 1.2,
+ "instances": 225,
+ "colorable": 21,
+ "uncolorable": 204,
+ "uncolorable_with_C_collision": 0,
+ "uncolorable_with_type_I_or_II": 198,
+ "uncolorable_not_covered": 6,
+ "not_covered_refuted_by_propagation": 0,
+ "not_covered_max_decisions": 4,
+ "rows": [
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    61,
+    160
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 2,
+   "A": [
+    21,
+    29,
+    40,
+    44,
+    50,
+    53,
+    80,
+    97,
+    115,
+    158,
+    163
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    5,
+    43
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     45,
+     80,
+     0,
+     31
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    24,
+    39,
+    45,
+    48,
+    56,
+    75,
+    79,
+    91,
+    128,
+    148,
+    153,
+    166
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    127,
+    58
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     92,
+     166,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    17,
+    33,
+    37,
+    67,
+    91,
+    98,
+    113,
+    153,
+    158,
+    166
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    103,
+    135
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     15,
+     50,
+     1,
+     31
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    15,
+    19,
+    38,
+    46,
+    49,
+    55,
+    70,
+    96,
+    109,
+    114,
+    134
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    121,
+    72
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     26,
+     46,
+     1,
+     10
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    17,
+    25,
+    36,
+    40,
+    46,
+    49,
+    76,
+    93,
+    113,
+    154,
+    159
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    101,
+    132
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     120,
+     160,
+     1,
+     20
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    17,
+    25,
+    38,
+    60,
+    65,
+    69,
+    120,
+    140,
+    152,
+    159
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    163,
+    141
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     105,
+     140,
+     1,
+     31
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    31,
+    36,
+    56,
+    93,
+    105,
+    109,
+    128,
+    136,
+    139,
+    145,
+    160
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    55,
+    155
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     112,
+     134,
+     0,
+     19
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    9,
+    20,
+    42,
+    47,
+    82,
+    111,
+    114,
+    130,
+    134,
+    164
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    89,
+    117
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     46,
+     166,
+     1,
+     107
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    36,
+    46,
+    59,
+    113,
+    119,
+    138,
+    149,
+    153,
+    156,
+    165
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    101,
+    67
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     76,
+     141,
+     0,
+     12
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    4,
+    55,
+    75,
+    87,
+    94,
+    105,
+    120,
+    128,
+    141,
+    163,
+    166
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    109,
+    147
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     85,
+     157,
+     0,
+     68
+    ]
+   ],
+   "type_II_example": [
+    [
+     7,
+     157
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    6,
+    25,
+    51,
+    78,
+    84,
+    88,
+    127,
+    136,
+    139,
+    152,
+    157
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    83,
+    104
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     51,
+     83,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    19,
+    29,
+    51,
+    64,
+    70,
+    82,
+    91,
+    128,
+    164,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    145,
+    92
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     129,
+     150,
+     0,
+     16
+    ]
+   ],
+   "type_II_example": [
+    [
+     38,
+     144
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    11,
+    37,
+    45,
+    69,
+    90,
+    113,
+    128,
+    133,
+    140,
+    144,
+    150
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    5,
+    102
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     104,
+     139,
+     0,
+     31
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    19,
+    39,
+    44,
+    57,
+    83,
+    98,
+    104,
+    107,
+    115,
+    134,
+    138,
+    150
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    25,
+    72
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     85,
+     97,
+     0,
+     3
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    52,
+    64,
+    84,
+    87,
+    93,
+    97,
+    118,
+    137,
+    144,
+    161
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    47,
+    125
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 4,
+   "A": [
+    5,
+    12,
+    38,
+    43,
+    86,
+    104,
+    121,
+    148,
+    151,
+    157,
+    161
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    61,
+    43
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     42,
+     95,
+     1,
+     4
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    41,
+    46,
+    72,
+    79,
+    91,
+    95,
+    101,
+    104,
+    131,
+    148,
+    166
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    47,
+    35
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     68,
+     121,
+     0,
+     4
+    ]
+   ],
+   "type_II_example": [
+    [
+     32,
+     121
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    31,
+    58,
+    61,
+    67,
+    71,
+    82,
+    90,
+    116,
+    121,
+    162
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    23,
+    30
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     140,
+     163,
+     1,
+     17
+    ]
+   ],
+   "type_II_example": [
+    [
+     10,
+     162
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    9,
+    32,
+    53,
+    77,
+    85,
+    111,
+    140,
+    146,
+    150,
+    157,
+    162
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    151,
+    118
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     80,
+     166,
+     1,
+     17
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    7,
+    22,
+    44,
+    80,
+    97,
+    101,
+    110,
+    130,
+    141,
+    149,
+    165
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    157,
+    42
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     136,
+     152,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    23,
+    31,
+    47,
+    69,
+    106,
+    118,
+    136,
+    141,
+    147,
+    151
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    59,
+    123
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     15,
+     134,
+     1,
+     3
+    ]
+   ],
+   "type_II_example": [
+    [
+     15,
+     134
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    18,
+    24,
+    51,
+    77,
+    96,
+    113,
+    118,
+    131,
+    134,
+    143
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    109,
+    166
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     97,
+     156,
+     1,
+     10
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    8,
+    25,
+    44,
+    70,
+    97,
+    103,
+    107,
+    146,
+    155,
+    158
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    5,
+    120
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 10,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     58,
+     122,
+     0,
+     59
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    37,
+    57,
+    62,
+    75,
+    101,
+    116,
+    122,
+    125,
+    133,
+    152,
+    156
+   ]
+  },
+  {
+   "q": 13,
+   "t": 1,
+   "u_s": [
+    85,
+    62
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     96,
+     168,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     97,
+     167
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    38,
+    75,
+    84,
+    96,
+    102,
+    115,
+    137,
+    147,
+    162,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    107,
+    60
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     4,
+     31,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    12,
+    23,
+    31,
+    57,
+    62,
+    103,
+    123,
+    140,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    145,
+    35
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     12,
+     58,
+     0,
+     23
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    33,
+    56,
+    71,
+    76,
+    87,
+    93,
+    122,
+    148,
+    156
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    107,
+    24
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    83,
+    69
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     20,
+     56,
+     1,
+     9
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    29,
+    35,
+    47,
+    56,
+    93,
+    129,
+    137,
+    152,
+    162
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    163,
+    1
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     84,
+     158,
+     1,
+     37
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    20,
+    46,
+    59,
+    64,
+    84,
+    121,
+    133,
+    156,
+    164
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    95,
+    117
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    59,
+    121
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     116,
+     142,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    16,
+    22,
+    49,
+    75,
+    94,
+    109,
+    116,
+    129,
+    140
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    53,
+    27
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     82,
+     132,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     41,
+     149
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    17,
+    39,
+    54,
+    64,
+    80,
+    88,
+    99,
+    119,
+    126,
+    132,
+    149
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    163,
+    25
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 2,
+   "A": [
+    12,
+    20,
+    29,
+    44,
+    70,
+    83,
+    88,
+    108,
+    145,
+    161
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    103,
+    82
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     81,
+     155,
+     1,
+     37
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    17,
+    43,
+    56,
+    61,
+    81,
+    118,
+    130,
+    153,
+    163
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    29,
+    95
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     36,
+     81,
+     0,
+     18
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    36,
+    52,
+    61,
+    71,
+    79,
+    84,
+    124,
+    139,
+    146
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    137,
+    19
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     9,
+     142,
+     0,
+     29
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    9,
+    31,
+    36,
+    91,
+    111,
+    123,
+    130,
+    140,
+    156,
+    164
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    115,
+    130
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     71,
+     103,
+     0,
+     24
+    ]
+   ],
+   "type_II_example": [
+    [
+     28,
+     103
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    26,
+    31,
+    38,
+    58,
+    69,
+    77,
+    93,
+    103,
+    118,
+    140
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    11,
+    4
+   ],
+   "size": 10,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    53,
+    81
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     7,
+     17,
+     1,
+     5
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    12,
+    17,
+    35,
+    71,
+    93,
+    108,
+    118,
+    134,
+    142,
+    153
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    115,
+    138
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     35,
+     85,
+     0,
+     44
+    ]
+   ],
+   "type_II_example": [
+    [
+     18,
+     126
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    16,
+    33,
+    39,
+    46,
+    66,
+    77,
+    85,
+    101,
+    111,
+    126,
+    148
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    89,
+    116
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     45,
+     150,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    13,
+    35,
+    45,
+    58,
+    112,
+    118,
+    137,
+    148,
+    155,
+    164
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    131,
+    140
+   ],
+   "size": 10,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    71,
+    164
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     31,
+     67,
+     1,
+     9
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    29,
+    40,
+    46,
+    58,
+    67,
+    104,
+    140,
+    147,
+    163
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    113,
+    80
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     20,
+     73,
+     0,
+     46
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    20,
+    25,
+    46,
+    58,
+    64,
+    71,
+    105,
+    124,
+    153
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    125,
+    117
+   ],
+   "size": 10,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    1,
+    68
+   ],
+   "size": 11,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     2,
+     108,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     10,
+     165
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    8,
+    35,
+    44,
+    59,
+    69,
+    85,
+    90,
+    102,
+    108,
+    165
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    37,
+    42
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 4,
+   "A": [
+    6,
+    16,
+    46,
+    71,
+    79,
+    103,
+    124,
+    147,
+    162,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    113,
+    138
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 2,
+   "u_s": [
+    19,
+    126
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     42,
+     121,
+     0,
+     73
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    10,
+    21,
+    40,
+    46,
+    100,
+    113,
+    121,
+    145,
+    162
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    137,
+    106
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     52,
+     83,
+     1,
+     23
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    30,
+    42,
+    49,
+    60,
+    75,
+    83,
+    96,
+    118,
+    127
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    145,
+    113
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     35,
+     134,
+     1,
+     23
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    32,
+    58,
+    66,
+    90,
+    111,
+    134,
+    152,
+    165
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    17,
+    41
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     10,
+     32,
+     0,
+     11
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    18,
+    29,
+    49,
+    58,
+    79,
+    115,
+    137,
+    152,
+    162
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    101,
+    129
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [
+    [
+     17,
+     167
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    22,
+    35,
+    57,
+    66,
+    117,
+    137,
+    149,
+    156,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    79,
+    138
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     76,
+     142,
+     0,
+     33
+    ]
+   ],
+   "type_II_example": [
+    [
+     54,
+     142
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    28,
+    41,
+    51,
+    73,
+    90,
+    99,
+    106,
+    117,
+    142
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    25,
+    3
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     27,
+     114,
+     1,
+     65
+    ]
+   ],
+   "type_II_example": [
+    [
+     27,
+     163
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    24,
+    49,
+    68,
+    76,
+    92,
+    114,
+    151,
+    163
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    115,
+    9
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     108,
+     124,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    19,
+    55,
+    76,
+    85,
+    105,
+    116,
+    124,
+    140,
+    150,
+    165
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    121,
+    94
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    85,
+    50
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    47,
+    2
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    29,
+    17
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    71,
+    123
+   ],
+   "size": 10,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    113,
+    163
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    151,
+    110
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     125,
+     141,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    36,
+    72,
+    89,
+    102,
+    122,
+    133,
+    141,
+    157,
+    167
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    155,
+    143
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    37,
+    64
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 2,
+   "A": [
+    1,
+    21,
+    28,
+    38,
+    68,
+    93,
+    101,
+    125,
+    146
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    89,
+    94
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    113,
+    120
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    139,
+    140
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    67,
+    164
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     106,
+     137,
+     0,
+     23
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    59,
+    68,
+    90,
+    103,
+    111,
+    126,
+    137,
+    144,
+    156
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    61,
+    47
+   ],
+   "size": 8,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    97,
+    114
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    29,
+    81
+   ],
+   "size": 9,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     50,
+     70,
+     0,
+     10
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    38,
+    47,
+    57,
+    70,
+    110,
+    125,
+    132,
+    156
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    101,
+    79
+   ],
+   "size": 10,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [],
+   "refuted_by_propagation": false,
+   "decisions": 2,
+   "A": [
+    7,
+    16,
+    67,
+    87,
+    99,
+    106,
+    116,
+    132,
+    140,
+    153
+   ]
+  },
+  {
+   "q": 13,
+   "t": 3,
+   "u_s": [
+    41,
+    41
+   ],
+   "size": 9,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    271,
+    107
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 22,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     203,
+     251,
+     1,
+     4
+    ]
+   ],
+   "type_II_example": [
+    [
+     91,
+     285
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    39,
+    84,
+    90,
+    109,
+    118,
+    140,
+    150,
+    155,
+    203,
+    207,
+    224,
+    236,
+    247,
+    250,
+    285
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    53,
+    268
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 21,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     24,
+     200,
+     1,
+     9
+    ]
+   ],
+   "type_II_example": [
+    [
+     118,
+     272
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    18,
+    24,
+    33,
+    103,
+    117,
+    149,
+    161,
+    172,
+    191,
+    194,
+    199,
+    220,
+    255,
+    259,
+    272
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    79,
+    242
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 9,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     28,
+     93,
+     1,
+     43
+    ]
+   ],
+   "type_II_example": [
+    [
+     28,
+     286
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    27,
+    33,
+    50,
+    71,
+    83,
+    93,
+    148,
+    157,
+    187,
+    228,
+    262,
+    270,
+    275,
+    286
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    35,
+    22
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     96,
+     172,
+     0,
+     68
+    ]
+   ],
+   "type_II_example": [
+    [
+     104,
+     262
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    57,
+    69,
+    96,
+    103,
+    107,
+    122,
+    138,
+    163,
+    171,
+    185,
+    214,
+    242,
+    259,
+    262,
+    272
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    173,
+    125
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 10,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     216,
+     250,
+     1,
+     25
+    ]
+   ],
+   "type_II_example": [
+    [
+     4,
+     249
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    10,
+    29,
+    32,
+    42,
+    73,
+    77,
+    88,
+    94,
+    128,
+    188,
+    211,
+    216,
+    225,
+    241,
+    249
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    23,
+    234
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     139,
+     253,
+     0,
+     57
+    ]
+   ],
+   "type_II_example": [
+    [
+     12,
+     279
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    11,
+    14,
+    28,
+    38,
+    43,
+    94,
+    125,
+    138,
+    186,
+    195,
+    214,
+    253,
+    257,
+    279
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    17,
+    165
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 18,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     22,
+     70,
+     0,
+     4
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    22,
+    25,
+    36,
+    49,
+    65,
+    69,
+    117,
+    124,
+    132,
+    154,
+    163,
+    182,
+    188,
+    233,
+    275
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    275,
+    28
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     26,
+     161,
+     1,
+     129
+    ]
+   ],
+   "type_II_example": [
+    [
+     16,
+     268
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    25,
+    32,
+    121,
+    129,
+    152,
+    155,
+    161,
+    182,
+    198,
+    220,
+    240,
+    253,
+    264,
+    268
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    263,
+    102
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     6,
+     120,
+     0,
+     104
+    ]
+   ],
+   "type_II_example": [
+    [
+     16,
+     247
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    6,
+    15,
+    54,
+    77,
+    88,
+    109,
+    119,
+    154,
+    169,
+    207,
+    233,
+    247,
+    266,
+    274
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    271,
+    40
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 21,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     136,
+     184,
+     1,
+     4
+    ]
+   ],
+   "type_II_example": [
+    [
+     24,
+     218
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    17,
+    23,
+    42,
+    51,
+    73,
+    83,
+    88,
+    136,
+    140,
+    157,
+    169,
+    180,
+    183,
+    218,
+    260
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    149,
+    49
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     165,
+     198,
+     0,
+     25
+    ]
+   ],
+   "type_II_example": [
+    [
+     123,
+     282
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    40,
+    69,
+    122,
+    134,
+    164,
+    167,
+    172,
+    183,
+    189,
+    198,
+    241,
+    245,
+    269,
+    282
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    89,
+    81
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     264,
+     274,
+     1,
+     5
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    32,
+    47,
+    110,
+    142,
+    149,
+    170,
+    180,
+    223,
+    229,
+    253,
+    256,
+    264,
+    269,
+    273
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    113,
+    274
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 25,
+   "type_II": 10,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     100,
+     150,
+     1,
+     45
+    ]
+   ],
+   "type_II_example": [
+    [
+     138,
+     176
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    35,
+    39,
+    62,
+    99,
+    105,
+    137,
+    145,
+    150,
+    157,
+    167,
+    176,
+    192,
+    226,
+    241,
+    270
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    43,
+    163
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 25,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     212,
+     232,
+     0,
+     10
+    ]
+   ],
+   "type_II_example": [
+    [
+     175,
+     272
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    39,
+    47,
+    63,
+    122,
+    141,
+    144,
+    174,
+    186,
+    206,
+    211,
+    215,
+    221,
+    232,
+    259,
+    272
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    257,
+    80
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     271,
+     277,
+     0,
+     3
+    ]
+   ],
+   "type_II_example": [
+    [
+     96,
+     286
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    32,
+    49,
+    55,
+    76,
+    87,
+    95,
+    107,
+    117,
+    132,
+    156,
+    191,
+    244,
+    270,
+    273,
+    277,
+    286
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    217,
+    151
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 12,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     195,
+     251,
+     1,
+     52
+    ]
+   ],
+   "type_II_example": [
+    [
+     103,
+     247
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    38,
+    46,
+    75,
+    80,
+    102,
+    149,
+    155,
+    180,
+    195,
+    199,
+    212,
+    240,
+    247,
+    250,
+    261
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    205,
+    71
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     35,
+     167,
+     1,
+     127
+    ]
+   ],
+   "type_II_example": [
+    [
+     14,
+     134
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    13,
+    27,
+    34,
+    40,
+    43,
+    51,
+    74,
+    93,
+    119,
+    134,
+    162,
+    167,
+    244,
+    266,
+    276
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    89,
+    236
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 19,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     121,
+     140,
+     0,
+     3
+    ]
+   ],
+   "type_II_example": [
+    [
+     97,
+     165
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    9,
+    16,
+    35,
+    47,
+    90,
+    96,
+    120,
+    123,
+    131,
+    136,
+    140,
+    165,
+    188,
+    202,
+    265
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    227,
+    159
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 32,
+   "type_II": 10,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     46,
+     138,
+     0,
+     85
+    ]
+   ],
+   "type_II_example": [
+    [
+     99,
+     212
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    46,
+    52,
+    63,
+    67,
+    98,
+    108,
+    111,
+    130,
+    137,
+    179,
+    187,
+    203,
+    212,
+    217,
+    240
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    155,
+    113
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 9,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     12,
+     28,
+     0,
+     10
+    ]
+   ],
+   "type_II_example": [
+    [
+     18,
+     238
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    17,
+    21,
+    27,
+    38,
+    65,
+    78,
+    134,
+    141,
+    157,
+    216,
+    235,
+    238,
+    268,
+    280
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    29,
+    67
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     167,
+     181,
+     1,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     154,
+     274
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    19,
+    96,
+    118,
+    128,
+    153,
+    167,
+    174,
+    180,
+    183,
+    191,
+    214,
+    233,
+    259,
+    274
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    281,
+    222
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     117,
+     203,
+     1,
+     9
+    ]
+   ],
+   "type_II_example": [
+    [
+     118,
+     215
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    21,
+    26,
+    33,
+    77,
+    92,
+    117,
+    126,
+    155,
+    174,
+    178,
+    194,
+    202,
+    205,
+    215,
+    247
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    59,
+    127
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     131,
+     154,
+     1,
+     17
+    ]
+   ],
+   "type_II_example": [
+    [
+     32,
+     280
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    31,
+    38,
+    52,
+    75,
+    79,
+    122,
+    131,
+    137,
+    148,
+    153,
+    156,
+    188,
+    198,
+    251,
+    280
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    23,
+    181
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     246,
+     280,
+     1,
+     17
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    41,
+    72,
+    85,
+    133,
+    140,
+    161,
+    200,
+    204,
+    226,
+    238,
+    246,
+    249,
+    263,
+    273,
+    279
+   ]
+  },
+  {
+   "q": 17,
+   "t": 1,
+   "u_s": [
+    283,
+    150
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 18,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     219,
+     246,
+     0,
+     24
+    ]
+   ],
+   "type_II_example": [
+    [
+     11,
+     221
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    16,
+    32,
+    61,
+    75,
+    130,
+    145,
+    171,
+    179,
+    198,
+    209,
+    218,
+    221,
+    242,
+    246
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    169,
+    114
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     57,
+     71,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     64,
+     162
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    57,
+    62,
+    69,
+    113,
+    127,
+    153,
+    162,
+    191,
+    208,
+    214,
+    230,
+    241,
+    251,
+    283
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    269,
+    208
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     205,
+     278,
+     0,
+     64
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    17,
+    29,
+    102,
+    112,
+    132,
+    160,
+    189,
+    203,
+    212,
+    236,
+    252,
+    267,
+    273,
+    278
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    119,
+    269
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     28,
+     38,
+     1,
+     5
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    26,
+    33,
+    38,
+    100,
+    132,
+    142,
+    153,
+    169,
+    175,
+    192,
+    221,
+    230,
+    256,
+    270
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    247,
+    198
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     124,
+     152,
+     0,
+     14
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    6,
+    34,
+    89,
+    122,
+    136,
+    146,
+    152,
+    157,
+    202,
+    217,
+    243,
+    255,
+    263
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    179,
+    168
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     100,
+     270,
+     1,
+     161
+    ]
+   ],
+   "type_II_example": [
+    [
+     74,
+     268
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    20,
+    59,
+    72,
+    100,
+    109,
+    120,
+    130,
+    165,
+    173,
+    187,
+    242,
+    261,
+    268,
+    284
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    257,
+    25
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 12,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     42,
+     231,
+     0,
+     12
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    21,
+    32,
+    40,
+    52,
+    62,
+    77,
+    101,
+    136,
+    189,
+    217,
+    222,
+    231,
+    265,
+    282
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    191,
+    142
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     18,
+     139,
+     0,
+     111
+    ]
+   ],
+   "type_II_example": [
+    [
+     20,
+     137
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    26,
+    31,
+    42,
+    71,
+    77,
+    94,
+    115,
+    127,
+    137,
+    192,
+    201,
+    231,
+    272
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    179,
+    62
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 10,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     16,
+     67,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     16,
+     253
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    14,
+    24,
+    59,
+    67,
+    81,
+    136,
+    155,
+    162,
+    178,
+    202,
+    241,
+    253,
+    282,
+    287
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    197,
+    116
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     156,
+     191,
+     0,
+     29
+    ]
+   ],
+   "type_II_example": [
+    [
+     70,
+     183
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    20,
+    25,
+    42,
+    68,
+    95,
+    109,
+    120,
+    144,
+    154,
+    160,
+    183,
+    191,
+    247
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    107,
+    198
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     28,
+     150,
+     1,
+     100
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    16,
+    26,
+    50,
+    61,
+    75,
+    102,
+    128,
+    145,
+    150,
+    211,
+    267,
+    275
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    5,
+    41
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     116,
+     272,
+     1,
+     142
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    20,
+    46,
+    61,
+    116,
+    130,
+    159,
+    176,
+    181,
+    237,
+    258,
+    270,
+    281
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    115,
+    67
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 9,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     182,
+     271,
+     1,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     100,
+     239
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    64,
+    98,
+    104,
+    115,
+    150,
+    162,
+    182,
+    189,
+    231,
+    239,
+    255,
+    264,
+    269
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    85,
+    130
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     182,
+     247,
+     1,
+     21
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    6,
+    61,
+    75,
+    104,
+    120,
+    126,
+    182,
+    203,
+    215,
+    226,
+    245,
+    253,
+    279
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    79,
+    216
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     47,
+     67,
+     1,
+     10
+    ]
+   ],
+   "type_II_example": [
+    [
+     3,
+     244
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    7,
+    24,
+    45,
+    57,
+    67,
+    124,
+    131,
+    161,
+    202,
+    236,
+    244,
+    249,
+    264
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    23,
+    32
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     14,
+     114,
+     1,
+     63
+    ]
+   ],
+   "type_II_example": [
+    [
+     53,
+     272
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    51,
+    77,
+    89,
+    97,
+    114,
+    124,
+    130,
+    180,
+    211,
+    224,
+    272,
+    281
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    53,
+    78
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     2,
+     133,
+     0,
+     122
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    9,
+    30,
+    65,
+    82,
+    106,
+    116,
+    122,
+    131,
+    201,
+    215,
+    247,
+    259,
+    270
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    119,
+    181
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     135,
+     233,
+     0,
+     49
+    ]
+   ],
+   "type_II_example": [
+    [
+     135,
+     233
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    44,
+    57,
+    65,
+    81,
+    87,
+    104,
+    133,
+    142,
+    167,
+    182,
+    226,
+    233,
+    238
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    155,
+    227
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     66,
+     271,
+     0,
+     77
+    ]
+   ],
+   "type_II_example": [
+    [
+     133,
+     255
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    42,
+    64,
+    94,
+    106,
+    126,
+    131,
+    141,
+    152,
+    179,
+    192,
+    247,
+    255,
+    271
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    65,
+    119
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     91,
+     192,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     25,
+     216
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    23,
+    30,
+    60,
+    71,
+    91,
+    99,
+    124,
+    134,
+    146,
+    184,
+    190,
+    211,
+    216,
+    230
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    91,
+    108
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     35,
+     70,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     43,
+     156
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    33,
+    41,
+    64,
+    70,
+    80,
+    104,
+    115,
+    129,
+    156,
+    184,
+    199,
+    204,
+    265
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    287,
+    241
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     76,
+     240,
+     0,
+     25
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    29,
+    74,
+    80,
+    99,
+    108,
+    130,
+    140,
+    145,
+    193,
+    213,
+    226,
+    240,
+    275
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    83,
+    47
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     77,
+     91,
+     1,
+     7
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    25,
+    44,
+    67,
+    75,
+    84,
+    91,
+    105,
+    130,
+    142,
+    162,
+    239,
+    244,
+    272,
+    287
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    41,
+    70
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     7,
+     122,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     7,
+     261
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    13,
+    22,
+    47,
+    66,
+    109,
+    116,
+    122,
+    132,
+    146,
+    179,
+    234,
+    261
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    161,
+    44
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 10,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     47,
+     71,
+     1,
+     12
+    ]
+   ],
+   "type_II_example": [
+    [
+     47,
+     216
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    45,
+    59,
+    71,
+    112,
+    147,
+    155,
+    177,
+    192,
+    205,
+    211,
+    216,
+    232,
+    284
+   ]
+  },
+  {
+   "q": 17,
+   "t": 2,
+   "u_s": [
+    257,
+    196
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 10,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     167,
+     211,
+     0,
+     38
+    ]
+   ],
+   "type_II_example": [
+    [
+     150,
+     248
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    19,
+    72,
+    98,
+    105,
+    114,
+    148,
+    165,
+    171,
+    192,
+    203,
+    211,
+    223,
+    233,
+    248,
+    272
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    49,
+    282
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     156,
+     190,
+     0,
+     12
+    ]
+   ],
+   "type_II_example": [
+    [
+     116,
+     214
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    14,
+    40,
+    47,
+    56,
+    90,
+    113,
+    134,
+    145,
+    153,
+    165,
+    175,
+    190,
+    214,
+    249
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    23,
+    17
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     77,
+     99,
+     0,
+     11
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    40,
+    62,
+    74,
+    85,
+    99,
+    114,
+    165,
+    196,
+    209,
+    257,
+    266,
+    285
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    49,
+    149
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     4,
+     20,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    12,
+    20,
+    32,
+    42,
+    57,
+    81,
+    116,
+    169,
+    195,
+    202,
+    211,
+    245,
+    262
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    163,
+    180
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     113,
+     152,
+     1,
+     23
+    ]
+   ],
+   "type_II_example": [
+    [
+     36,
+     276
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    33,
+    41,
+    55,
+    110,
+    129,
+    136,
+    152,
+    176,
+    215,
+    227,
+    256,
+    265,
+    276,
+    286
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    175,
+    230
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     62,
+     178,
+     0,
+     58
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    24,
+    38,
+    49,
+    59,
+    66,
+    79,
+    117,
+    154,
+    178,
+    234,
+    263,
+    278
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    271,
+    61
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     63,
+     242,
+     0,
+     130
+    ]
+   ],
+   "type_II_example": [
+    [
+     66,
+     281
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    44,
+    63,
+    72,
+    94,
+    102,
+    109,
+    157,
+    177,
+    190,
+    204,
+    239,
+    281
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    115,
+    269
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     21,
+     153,
+     1,
+     124
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    29,
+    64,
+    74,
+    96,
+    103,
+    145,
+    153,
+    169,
+    178,
+    206,
+    266
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    203,
+    254
+   ],
+   "size": 12,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    7,
+    95
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     73,
+     162,
+     1,
+     39
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    70,
+    102,
+    112,
+    123,
+    143,
+    162,
+    191,
+    200,
+    226,
+    240,
+    284
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    187,
+    111
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     264,
+     286,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     13,
+     283
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    36,
+    76,
+    89,
+    132,
+    159,
+    169,
+    207,
+    214,
+    236,
+    264,
+    275,
+    283
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    257,
+    248
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     200,
+     278,
+     1,
+     23
+    ]
+   ],
+   "type_II_example": [
+    [
+     15,
+     285
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    36,
+    71,
+    124,
+    150,
+    157,
+    166,
+    200,
+    223,
+    244,
+    255,
+    263,
+    275,
+    285
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    215,
+    237
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     141,
+     212,
+     1,
+     23
+    ]
+   ],
+   "type_II_example": [
+    [
+     35,
+     233
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    25,
+    32,
+    64,
+    127,
+    141,
+    164,
+    189,
+    198,
+    209,
+    233,
+    282
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    199,
+    128
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     29,
+     236,
+     0,
+     173
+    ]
+   ],
+   "type_II_example": [
+    [
+     32,
+     233
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    29,
+    41,
+    60,
+    67,
+    99,
+    162,
+    176,
+    199,
+    224,
+    233,
+    241,
+    274
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    53,
+    180
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 12,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     76,
+     111,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     18,
+     233
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    29,
+    61,
+    73,
+    84,
+    103,
+    111,
+    132,
+    167,
+    184,
+    208,
+    224,
+    233
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    41,
+    27
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     194,
+     250,
+     0,
+     28
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    23,
+    68,
+    79,
+    89,
+    103,
+    136,
+    191,
+    219,
+    250,
+    258,
+    270
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    85,
+    215
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     0,
+     26,
+     0,
+     13
+    ]
+   ],
+   "type_II_example": [
+    [
+     26,
+     211
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    10,
+    23,
+    42,
+    50,
+    76,
+    91,
+    146,
+    160,
+    189,
+    211,
+    263
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    257,
+    82
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     100,
+     134,
+     0,
+     12
+    ]
+   ],
+   "type_II_example": [
+    [
+     60,
+     158
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    34,
+    57,
+    78,
+    89,
+    97,
+    109,
+    119,
+    134,
+    158,
+    193,
+    246,
+    272,
+    279
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    161,
+    168
+   ],
+   "size": 12,
+   "colorable": true,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": []
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    161,
+    134
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [
+    [
+     21,
+     267
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    7,
+    18,
+    38,
+    86,
+    135,
+    149,
+    161,
+    202,
+    235,
+    244,
+    267,
+    282
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    137,
+    107
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     82,
+     276,
+     0,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     53,
+     146
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    11,
+    50,
+    59,
+    79,
+    87,
+    106,
+    120,
+    146,
+    184,
+    199,
+    234,
+    244,
+    265,
+    276
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    151,
+    213
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     47,
+     241,
+     1,
+     186
+    ]
+   ],
+   "type_II_example": [
+    [
+     177,
+     270
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    21,
+    44,
+    55,
+    76,
+    86,
+    121,
+    136,
+    174,
+    200,
+    214,
+    233,
+    241,
+    257,
+    270
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    229,
+    277
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     65,
+     276,
+     1,
+     191
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    37,
+    65,
+    78,
+    85,
+    124,
+    153,
+    206,
+    216,
+    248,
+    256,
+    273,
+    282
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    35,
+    15
+   ],
+   "size": 13,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     92,
+     265,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     53,
+     164
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    50,
+    62,
+    89,
+    96,
+    115,
+    131,
+    155,
+    164,
+    178,
+    207,
+    235,
+    255,
+    265
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    97,
+    69
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     74,
+     183,
+     0,
+     46
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    17,
+    74,
+    84,
+    96,
+    117,
+    134,
+    169,
+    180,
+    193,
+    227,
+    268
+   ]
+  },
+  {
+   "q": 17,
+   "t": 3,
+   "u_s": [
+    209,
+    209
+   ],
+   "size": 12,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     92,
+     267,
+     1,
+     131
+    ]
+   ],
+   "type_II_example": [
+    [
+     9,
+     223
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    6,
+    13,
+    70,
+    80,
+    92,
+    113,
+    136,
+    162,
+    181,
+    189,
+    223,
+    264
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    203,
+    221
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 32,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     168,
+     186,
+     0,
+     9
+    ]
+   ],
+   "type_II_example": [
+    [
+     8,
+     309
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    7,
+    22,
+    64,
+    77,
+    83,
+    114,
+    168,
+    176,
+    185,
+    220,
+    232,
+    250,
+    266,
+    271,
+    295,
+    298,
+    309
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    341,
+    289
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     270,
+     294,
+     1,
+     12
+    ]
+   ],
+   "type_II_example": [
+    [
+     88,
+     282
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    6,
+    37,
+    43,
+    87,
+    108,
+    115,
+    132,
+    185,
+    231,
+    244,
+    260,
+    270,
+    279,
+    282,
+    293,
+    334
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    67,
+    139
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 30,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     95,
+     245,
+     0,
+     147
+    ]
+   ],
+   "type_II_example": [
+    [
+     98,
+     206
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    38,
+    50,
+    68,
+    87,
+    94,
+    97,
+    102,
+    152,
+    175,
+    184,
+    200,
+    206,
+    241,
+    245,
+    269,
+    283,
+    336
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    343,
+    72
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     30,
+     66,
+     0,
+     29
+    ]
+   ],
+   "type_II_example": [
+    [
+     56,
+     331
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    30,
+    36,
+    55,
+    58,
+    65,
+    82,
+    103,
+    119,
+    133,
+    174,
+    207,
+    284,
+    288,
+    297,
+    320,
+    331,
+    346
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    329,
+    279
+   ],
+   "size": 18,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 36,
+   "type_II": 10,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     102,
+     118,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [
+    [
+     106,
+     326
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    33,
+    54,
+    101,
+    105,
+    115,
+    118,
+    144,
+    149,
+    171,
+    207,
+    223,
+    230,
+    242,
+    248,
+    272,
+    280,
+    317,
+    326
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    181,
+    161
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 25,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     169,
+     183,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     173,
+     351
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    39,
+    84,
+    114,
+    155,
+    168,
+    172,
+    180,
+    183,
+    190,
+    206,
+    227,
+    233,
+    269,
+    318,
+    337,
+    342,
+    351
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    349,
+    324
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 18,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     295,
+     319,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    9,
+    23,
+    30,
+    34,
+    67,
+    80,
+    185,
+    188,
+    217,
+    226,
+    252,
+    271,
+    279,
+    295,
+    301,
+    313,
+    318
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    299,
+    159
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     41,
+     99,
+     0,
+     47
+    ]
+   ],
+   "type_II_example": [
+    [
+     99,
+     272
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    28,
+    41,
+    51,
+    87,
+    93,
+    98,
+    114,
+    122,
+    165,
+    204,
+    223,
+    257,
+    260,
+    272,
+    326,
+    356
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    49,
+    237
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 21,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     103,
+     286,
+     0,
+     172
+    ]
+   ],
+   "type_II_example": [
+    [
+     130,
+     303
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    19,
+    38,
+    102,
+    113,
+    129,
+    165,
+    187,
+    190,
+    221,
+    231,
+    235,
+    244,
+    268,
+    274,
+    286,
+    303
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    317,
+    181
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     61,
+     90,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     80,
+     325
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    27,
+    60,
+    72,
+    79,
+    90,
+    136,
+    173,
+    194,
+    209,
+    217,
+    223,
+    226,
+    248,
+    264,
+    291,
+    315,
+    325
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    269,
+    146
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     46,
+     136,
+     1,
+     87
+    ]
+   ],
+   "type_II_example": [
+    [
+     46,
+     136
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    37,
+    45,
+    49,
+    55,
+    74,
+    79,
+    88,
+    101,
+    133,
+    136,
+    191,
+    207,
+    222,
+    260,
+    283,
+    304,
+    330
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    91,
+    353
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     3,
+     95,
+     0,
+     88
+    ]
+   ],
+   "type_II_example": [
+    [
+     4,
+     94
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    6,
+    38,
+    51,
+    60,
+    65,
+    84,
+    90,
+    94,
+    101,
+    167,
+    195,
+    216,
+    239,
+    277,
+    292,
+    308
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    151,
+    276
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 23,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     85,
+     167,
+     1,
+     77
+    ]
+   ],
+   "type_II_example": [
+    [
+     44,
+     358
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    24,
+    43,
+    51,
+    67,
+    73,
+    85,
+    90,
+    141,
+    155,
+    162,
+    166,
+    199,
+    214,
+    317,
+    320,
+    349,
+    358
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    359,
+    274
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 23,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     167,
+     208,
+     0,
+     36
+    ]
+   ],
+   "type_II_example": [
+    [
+     50,
+     297
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    36,
+    49,
+    65,
+    75,
+    84,
+    87,
+    98,
+    139,
+    166,
+    171,
+    202,
+    208,
+    252,
+    273,
+    280,
+    297,
+    350
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    283,
+    60
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 24,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     16,
+     113,
+     1,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     25,
+     188
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    18,
+    24,
+    31,
+    49,
+    61,
+    94,
+    105,
+    113,
+    152,
+    162,
+    167,
+    188,
+    217,
+    259,
+    276,
+    343
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    299,
+    342
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 24,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     272,
+     306,
+     1,
+     25
+    ]
+   ],
+   "type_II_example": [
+    [
+     47,
+     272
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    27,
+    46,
+    80,
+    83,
+    95,
+    149,
+    179,
+    193,
+    211,
+    224,
+    234,
+    272,
+    276,
+    281,
+    297,
+    305,
+    348
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    281,
+    1
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     63,
+     121,
+     0,
+     47
+    ]
+   ],
+   "type_II_example": [
+    [
+     121,
+     294
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    32,
+    50,
+    63,
+    73,
+    109,
+    115,
+    120,
+    136,
+    144,
+    187,
+    226,
+    245,
+    279,
+    282,
+    294,
+    348
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    259,
+    263
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 26,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     156,
+     308,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     35,
+     218
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    19,
+    34,
+    52,
+    66,
+    77,
+    96,
+    127,
+    150,
+    155,
+    162,
+    191,
+    201,
+    218,
+    300,
+    308,
+    324,
+    345
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    41,
+    180
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     83,
+     295,
+     1,
+     204
+    ]
+   ],
+   "type_II_example": [
+    [
+     222,
+     317
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    6,
+    45,
+    50,
+    59,
+    83,
+    91,
+    109,
+    196,
+    218,
+    221,
+    233,
+    252,
+    287,
+    294,
+    304,
+    317
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    301,
+    176
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 18,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     127,
+     174,
+     1,
+     43
+    ]
+   ],
+   "type_II_example": [
+    [
+     94,
+     340
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    67,
+    85,
+    93,
+    117,
+    126,
+    131,
+    170,
+    174,
+    221,
+    232,
+    242,
+    248,
+    284,
+    303,
+    315,
+    318,
+    340
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    23,
+    359
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 35,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     74,
+     224,
+     1,
+     147
+    ]
+   ],
+   "type_II_example": [
+    [
+     52,
+     215
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    22,
+    51,
+    73,
+    77,
+    87,
+    126,
+    134,
+    145,
+    178,
+    190,
+    208,
+    215,
+    221,
+    224,
+    256,
+    323,
+    340
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    71,
+    347
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     67,
+     157,
+     1,
+     87
+    ]
+   ],
+   "type_II_example": [
+    [
+     67,
+     157
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    58,
+    66,
+    70,
+    76,
+    95,
+    100,
+    109,
+    122,
+    154,
+    157,
+    212,
+    228,
+    243,
+    281,
+    304,
+    325,
+    351
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    79,
+    346
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     227,
+     285,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     54,
+     227
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    53,
+    65,
+    68,
+    102,
+    121,
+    160,
+    203,
+    211,
+    227,
+    232,
+    238,
+    274,
+    284,
+    297,
+    315,
+    329,
+    359
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    41,
+    167
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 19,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     33,
+     304,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [
+    [
+     209,
+     304
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    32,
+    37,
+    46,
+    70,
+    78,
+    96,
+    183,
+    205,
+    208,
+    220,
+    239,
+    274,
+    281,
+    291,
+    304,
+    349,
+    353
+   ]
+  },
+  {
+   "q": 19,
+   "t": 1,
+   "u_s": [
+    209,
+    351
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 42,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     101,
+     183,
+     0,
+     77
+    ]
+   ],
+   "type_II_example": [
+    [
+     102,
+     310
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    53,
+    68,
+    101,
+    105,
+    112,
+    126,
+    177,
+    182,
+    194,
+    200,
+    216,
+    224,
+    243,
+    269,
+    279,
+    307,
+    310
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    329,
+    164
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     129,
+     165,
+     0,
+     30
+    ]
+   ],
+   "type_II_example": [
+    [
+     58,
+     165
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    29,
+    34,
+    56,
+    92,
+    108,
+    115,
+    127,
+    133,
+    157,
+    165,
+    202,
+    211,
+    278,
+    299,
+    350
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    281,
+    326
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 18,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     17,
+     85,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     30,
+     313
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    15,
+    28,
+    38,
+    74,
+    80,
+    85,
+    102,
+    109,
+    152,
+    191,
+    210,
+    247,
+    259,
+    313,
+    343,
+    357
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    293,
+    264
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     219,
+     318,
+     1,
+     90
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    67,
+    120,
+    134,
+    158,
+    197,
+    203,
+    219,
+    228,
+    251,
+    301,
+    309,
+    316,
+    335,
+    353
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    287,
+    208
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     305,
+     358,
+     1,
+     15
+    ]
+   ],
+   "type_II_example": [
+    [
+     20,
+     356
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    18,
+    42,
+    71,
+    81,
+    87,
+    114,
+    135,
+    219,
+    237,
+    244,
+    249,
+    286,
+    305,
+    320,
+    343,
+    356
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    233,
+    125
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 1,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     23,
+     95,
+     0,
+     36
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    23,
+    52,
+    57,
+    93,
+    115,
+    139,
+    154,
+    166,
+    211,
+    222,
+    260,
+    341,
+    348,
+    358
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    31,
+    106
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     107,
+     143,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     107,
+     214
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    59,
+    68,
+    105,
+    113,
+    137,
+    143,
+    155,
+    162,
+    178,
+    214,
+    236,
+    241,
+    267,
+    284,
+    331,
+    352
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    229,
+    315
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 23,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     136,
+     172,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [
+    [
+     136,
+     243
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    21,
+    88,
+    97,
+    134,
+    142,
+    166,
+    172,
+    184,
+    191,
+    207,
+    243,
+    265,
+    270,
+    299,
+    309
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    107,
+    346
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     22,
+     66,
+     0,
+     25
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    22,
+    31,
+    39,
+    45,
+    64,
+    93,
+    98,
+    130,
+    156,
+    177,
+    195,
+    208,
+    252,
+    263,
+    301
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    293,
+    308
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     37,
+     180,
+     0,
+     14
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    19,
+    37,
+    49,
+    111,
+    164,
+    178,
+    202,
+    241,
+    247,
+    263,
+    272,
+    295,
+    345,
+    350
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    163,
+    280
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 8,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     83,
+     327,
+     1,
+     234
+    ]
+   ],
+   "type_II_example": [
+    [
+     163,
+     325
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    22,
+    83,
+    93,
+    131,
+    136,
+    147,
+    161,
+    168,
+    194,
+    235,
+    244,
+    266,
+    290,
+    317,
+    325,
+    359
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    359,
+    307
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 17,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     110,
+     241,
+     1,
+     6
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    23,
+    69,
+    82,
+    98,
+    108,
+    116,
+    131,
+    174,
+    199,
+    204,
+    235,
+    241,
+    285,
+    306,
+    313,
+    330
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    209,
+    2
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     229,
+     290,
+     0,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     195,
+     290
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    64,
+    79,
+    112,
+    123,
+    137,
+    188,
+    193,
+    205,
+    211,
+    227,
+    235,
+    254,
+    280,
+    290,
+    318
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    191,
+    85
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     14,
+     162,
+     1,
+     143
+    ]
+   ],
+   "type_II_example": [
+    [
+     14,
+     310
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    12,
+    19,
+    44,
+    91,
+    157,
+    162,
+    183,
+    193,
+    206,
+    221,
+    276,
+    288,
+    294,
+    310,
+    318,
+    327
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    359,
+    156
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     48,
+     164,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     55,
+     307
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    23,
+    48,
+    53,
+    84,
+    90,
+    134,
+    155,
+    162,
+    179,
+    232,
+    278,
+    291,
+    307,
+    317,
+    329,
+    340
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    281,
+    11
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 22,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     119,
+     156,
+     0,
+     29
+    ]
+   ],
+   "type_II_example": [
+    [
+     44,
+     236
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    28,
+    42,
+    60,
+    73,
+    83,
+    119,
+    125,
+    130,
+    146,
+    154,
+    197,
+    236,
+    255,
+    292,
+    304,
+    358
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    163,
+    93
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     306,
+     341,
+     0,
+     30
+    ]
+   ],
+   "type_II_example": [
+    [
+     81,
+     309
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    7,
+    51,
+    57,
+    79,
+    103,
+    130,
+    138,
+    172,
+    195,
+    256,
+    266,
+    304,
+    309,
+    320,
+    334,
+    341
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    169,
+    260
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 13,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     185,
+     333,
+     0,
+     143
+    ]
+   ],
+   "type_II_example": [
+    [
+     37,
+     333
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    16,
+    27,
+    35,
+    51,
+    57,
+    69,
+    124,
+    139,
+    152,
+    162,
+    183,
+    188,
+    254,
+    301,
+    326,
+    333
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    229,
+    73
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 4,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     118,
+     311,
+     1,
+     172
+    ]
+   ],
+   "type_II_example": [
+    [
+     30,
+     252
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    1,
+    23,
+    28,
+    54,
+    67,
+    118,
+    139,
+    206,
+    215,
+    252,
+    260,
+    284,
+    290,
+    302,
+    309,
+    325
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    29,
+    319
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     12,
+     262,
+     0,
+     237
+    ]
+   ],
+   "type_II_example": [
+    [
+     6,
+     237
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    4,
+    12,
+    23,
+    66,
+    73,
+    98,
+    145,
+    211,
+    216,
+    237,
+    247,
+    260,
+    275,
+    330,
+    342,
+    348
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    131,
+    47
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 30,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     192,
+     228,
+     0,
+     30
+    ]
+   ],
+   "type_II_example": [
+    [
+     121,
+     228
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    2,
+    53,
+    63,
+    92,
+    97,
+    119,
+    155,
+    171,
+    178,
+    190,
+    196,
+    220,
+    228,
+    265,
+    274,
+    341
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    209,
+    306
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 14,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     62,
+     137,
+     1,
+     70
+    ]
+   ],
+   "type_II_example": [
+    [
+     139,
+     234
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    23,
+    60,
+    67,
+    81,
+    132,
+    137,
+    149,
+    155,
+    171,
+    179,
+    198,
+    224,
+    234,
+    262
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    149,
+    259
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 16,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     32,
+     95,
+     1,
+     53
+    ]
+   ],
+   "type_II_example": [
+    [
+     32,
+     203
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    13,
+    30,
+    42,
+    48,
+    72,
+    80,
+    85,
+    95,
+    129,
+    151,
+    187,
+    203,
+    214,
+    276,
+    297,
+    304
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    311,
+    275
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 15,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     270,
+     291,
+     0,
+     13
+    ]
+   ],
+   "type_II_example": [
+    [
+     41,
+     347
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    23,
+    39,
+    50,
+    112,
+    133,
+    140,
+    209,
+    226,
+    238,
+    244,
+    268,
+    276,
+    281,
+    291,
+    322,
+    347
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    89,
+    68
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 11,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     12,
+     157,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [
+    [
+     141,
+     320
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    25,
+    58,
+    139,
+    144,
+    151,
+    157,
+    181,
+    203,
+    226,
+    235,
+    254,
+    293,
+    309,
+    320,
+    356
+   ]
+  },
+  {
+   "q": 19,
+   "t": 2,
+   "u_s": [
+    259,
+    22
+   ],
+   "size": 17,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 20,
+   "type_II": 10,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     69,
+     185,
+     1,
+     102
+    ]
+   ],
+   "type_II_example": [
+    [
+     61,
+     320
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    59,
+    67,
+    83,
+    104,
+    138,
+    153,
+    171,
+    185,
+    196,
+    215,
+    246,
+    269,
+    274,
+    281,
+    310,
+    320,
+    337
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    137,
+    146
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     174,
+     208,
+     0,
+     17
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    11,
+    33,
+    49,
+    138,
+    174,
+    188,
+    205,
+    217,
+    235,
+    256,
+    283,
+    290,
+    339,
+    352
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    89,
+    245
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     129,
+     187,
+     0,
+     47
+    ]
+   ],
+   "type_II_example": [
+    [
+     23,
+     235
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    20,
+    43,
+    52,
+    71,
+    110,
+    126,
+    137,
+    173,
+    187,
+    202,
+    235,
+    316,
+    324,
+    334,
+    358
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    317,
+    30
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 8,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     61,
+     299,
+     0,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     100,
+     345
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    22,
+    43,
+    58,
+    66,
+    75,
+    97,
+    113,
+    140,
+    164,
+    174,
+    236,
+    269,
+    281,
+    288,
+    299,
+    345
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    7,
+    86
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 9,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     230,
+     288,
+     0,
+     47
+    ]
+   ],
+   "type_II_example": [
+    [
+     125,
+     343
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    39,
+    93,
+    109,
+    122,
+    188,
+    221,
+    230,
+    238,
+    274,
+    285,
+    297,
+    312,
+    336,
+    343
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    221,
+    12
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     84,
+     106,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     53,
+     121
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    28,
+    50,
+    57,
+    71,
+    84,
+    95,
+    103,
+    121,
+    136,
+    194,
+    233,
+    242,
+    299,
+    327
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    259,
+    23
+   ],
+   "size": 16,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 19,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     278,
+     321,
+     0,
+     7
+    ]
+   ],
+   "type_II_example": [
+    [
+     63,
+     338
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    60,
+    68,
+    84,
+    105,
+    139,
+    154,
+    172,
+    186,
+    197,
+    216,
+    247,
+    275,
+    282,
+    311,
+    321,
+    338
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    41,
+    304
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     16,
+     210,
+     0,
+     156
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    16,
+    51,
+    58,
+    68,
+    79,
+    126,
+    169,
+    183,
+    207,
+    215,
+    233,
+    320,
+    342,
+    357
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    121,
+    313
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 6,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     42,
+     64,
+     0,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     45,
+     117
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    9,
+    19,
+    42,
+    50,
+    61,
+    74,
+    88,
+    95,
+    117,
+    176,
+    206,
+    260,
+    272,
+    307
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    187,
+    15
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 4,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     151,
+     218,
+     0,
+     19
+    ]
+   ],
+   "type_II_example": [
+    [
+     95,
+     218
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    34,
+    51,
+    64,
+    92,
+    117,
+    148,
+    159,
+    167,
+    196,
+    203,
+    218,
+    241,
+    265,
+    333
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    217,
+    138
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     124,
+     206,
+     1,
+     7
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    37,
+    60,
+    121,
+    131,
+    170,
+    187,
+    199,
+    206,
+    232,
+    273,
+    282,
+    304,
+    328,
+    355
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    71,
+    90
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 7,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     161,
+     349,
+     1,
+     18
+    ]
+   ],
+   "type_II_example": [
+    [
+     27,
+     346
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    24,
+    47,
+    68,
+    94,
+    161,
+    169,
+    179,
+    198,
+    212,
+    225,
+    260,
+    315,
+    331,
+    346
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    287,
+    148
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     16,
+     283,
+     1,
+     229
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    13,
+    27,
+    54,
+    75,
+    159,
+    177,
+    184,
+    226,
+    245,
+    260,
+    283,
+    292,
+    318,
+    342
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    167,
+    120
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     44,
+     352,
+     0,
+     246
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    11,
+    29,
+    41,
+    103,
+    156,
+    170,
+    194,
+    239,
+    255,
+    264,
+    287,
+    337,
+    345,
+    352
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    83,
+    70
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 0,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [],
+   "type_II_example": [
+    [
+     3,
+     309
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    0,
+    25,
+    34,
+    83,
+    96,
+    115,
+    137,
+    153,
+    242,
+    278,
+    292,
+    309,
+    321,
+    339
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    229,
+    21
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     238,
+     276,
+     1,
+     19
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    15,
+    66,
+    87,
+    154,
+    163,
+    200,
+    208,
+    238,
+    250,
+    257,
+    273,
+    309,
+    331
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    83,
+    126
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     152,
+     196,
+     0,
+     22
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    5,
+    17,
+    35,
+    56,
+    80,
+    90,
+    139,
+    152,
+    171,
+    193,
+    204,
+    298,
+    334,
+    342
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    319,
+    100
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     323,
+     349,
+     1,
+     13
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    28,
+    47,
+    62,
+    84,
+    171,
+    189,
+    197,
+    221,
+    230,
+    278,
+    323,
+    336,
+    346,
+    353
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    113,
+    201
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 9,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     74,
+     110,
+     1,
+     18
+    ]
+   ],
+   "type_II_example": [
+    [
+     11,
+     289
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    57,
+    71,
+    92,
+    99,
+    110,
+    122,
+    165,
+    184,
+    243,
+    253,
+    289,
+    314,
+    336
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    247,
+    34
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 3,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     125,
+     167,
+     0,
+     21
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    51,
+    70,
+    113,
+    125,
+    136,
+    143,
+    164,
+    178,
+    227,
+    259,
+    281,
+    306,
+    342,
+    352
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    227,
+    29
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     55,
+     189,
+     0,
+     13
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    10,
+    21,
+    55,
+    65,
+    74,
+    107,
+    173,
+    186,
+    208,
+    256,
+    312,
+    319,
+    343,
+    358
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    163,
+    56
+   ],
+   "size": 15,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 6,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     96,
+     283,
+     0,
+     8
+    ]
+   ],
+   "type_II_example": [
+    [
+     23,
+     297
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    11,
+    20,
+    42,
+    66,
+    93,
+    101,
+    135,
+    158,
+    219,
+    229,
+    272,
+    283,
+    297,
+    304,
+    330
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    353,
+    122
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     283,
+     341,
+     1,
+     11
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    20,
+    86,
+    99,
+    115,
+    169,
+    225,
+    232,
+    253,
+    271,
+    283,
+    294,
+    330,
+    338,
+    347
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    223,
+    250
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     191,
+     225,
+     1,
+     17
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    3,
+    25,
+    44,
+    57,
+    106,
+    113,
+    140,
+    161,
+    179,
+    191,
+    208,
+    222,
+    258,
+    347
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    41,
+    304
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 2,
+   "type_II": 0,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     16,
+     210,
+     0,
+     156
+    ]
+   ],
+   "type_II_example": [],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    16,
+    51,
+    58,
+    68,
+    79,
+    126,
+    169,
+    183,
+    207,
+    215,
+    233,
+    320,
+    345,
+    357
+   ]
+  },
+  {
+   "q": 19,
+   "t": 3,
+   "u_s": [
+    343,
+    321
+   ],
+   "size": 14,
+   "colorable": false,
+   "C_collisions": 0,
+   "type_I": 5,
+   "type_II": 2,
+   "direct_fixed_conflicts": 0,
+   "type_I_example": [
+    [
+     178,
+     223,
+     0,
+     11
+    ]
+   ],
+   "type_II_example": [
+    [
+     11,
+     331
+    ]
+   ],
+   "refuted_by_propagation": true,
+   "decisions": 0,
+   "A": [
+    8,
+    22,
+    63,
+    96,
+    178,
+    186,
+    209,
+    220,
+    235,
+    279,
+    307,
+    314,
+    331,
+    352
+   ]
+  }
+ ]
+}
