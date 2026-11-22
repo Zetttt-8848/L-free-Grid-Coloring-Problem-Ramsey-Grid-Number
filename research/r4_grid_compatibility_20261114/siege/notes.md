@@ -1,58 +1,44 @@
-# Notes (director, rewritten at select / commit wave)
+# Notes (director; rewritten at finalize)
 
-## Status
-- Goal: entry 1 OPEN; never proved, never raised. P1 PROVED (entry 9). Part D open; its core is FD (entry 66). SCF/SCD (entry 67) implies FD; SCD is Codex lane A.
-- Round 6: q1-q4 and q6 answered; q5 (SCF) not run (Codex lane). No proof and no counterexample of FD.
-- Ledger still ends at entry 68 (round-6 items not added). proof.md is self-contained. It was not changed at this step.
-- No extra_q files exist.
+## Final status
+- Goal (ledger entry 1) is OPEN. It was never proved and never raised, so there is no earlier PROVED [GOAL] to fall back on. The main claim of proof.md is the posed goal: P1 complete plus Part D settled. Verdict: NOT PROVED.
+- P1 (i)-(v) is PROVED (entry 9). The verify report confirmed it step by step.
+- Part D is open. Its per-shift core is FD. Sufficient conditions: SCD (Codex lane A) and NTSD (Claude lane; new at finalize).
 
-## select step (this step): commit wave written
-- Route chosen: NTSD (near-maximal two-layer unsatisfiability). This is in Claude's lane: it couples two different completion classes at one shift, not single-class capacity.
-  - NTSD(β, m_0): no TSD instance of span m ≥ m_0 with |A|, |B| ≥ (1−β)Q(m).
-  - A TSD instance: disjoint Sidon A, B; pairs coloured 0 on A-pairs, 1 on B-pairs, proper on V(A∪B).
-  - Key observation: NTSD ⇒ FD needs only ONE contradiction in ONE near-maximal pair. Earlier rounds wanted a density of gadgets. The chain:
-    1. Prop 4.6(b): an FD-violator has three near-cap classes.
-    2. Prop 4.7(b), union bound over classes: one lag l ≤ εS is good for all classes.
-    3. Prop 4.7(c): all Golomb pieces at that lag are near-maximal.
-    4. Corollary U: U_f(l) is a TSD instance, which NTSD forbids.
-  - Expected η ≈ β/200.
-- Director computations (scratchpad tsd*.py; evidence only):
-  - DPLL TSD solver, validated on the m = 23 datum (SAT).
-  - Bose-type near-maximal pairs: q = 7, 11, 13, 17, with B = uA + s; 240 pairs, all UNSAT.
-  - Bose translates by j(q+1): all UNSAT.
-  - C-collisions (first-generation clash at one mixed cell) in random Bose pairs: minimum counts 1, 2, 4, 8, 10 for q = 7..19.
-  - Trimmed small translates (B = A+t, no differences ≤ 2t):
-    - 0 C-collisions, as Prop O predicts;
-    - UNSAT for q ≥ 13 except one case;
-    - G1 gadgets present except in two UNSAT cases with t = 3 and |A|/q ≈ 0.7.
-  - Below near-max, SAT is easy: a SAT-preserving greedy matches unconstrained greedy at about 0.77-0.87 of v. So β < about 0.2.
-  - First-generation forcing for a mixed cell (a, a+g), derived and checked:
-    - AB cell: forced 1 if α_A(g) > a; forced 0 if α_B(g) < a.
-    - BA cell: forced 0 if α_B(g) > b; forced 1 if α_A(g) < b.
-    - Collision iff the left end lies strictly between the starts on the forbidden side.
-    - A spanning-position mixed cell is never first-generation forced.
-- Files written:
-  - r3_q1: full NTSD via the collision/gadget dichotomy.
-  - r3_q2: non-aligned half; C-collision under an explicit alignment parameter τ.
-  - r3_q3: aligned half; translates via Theorem T/G1, then partial translates.
-  - r3_q4: rigorous reduction NTSD ⇒ FD ⇒ per-shift (D-a), explicit η(β), S_0. This one is the most likely to succeed. If proved, add it to proof.md as a conditional theorem, an implication only.
-  - r3_verify: full proof.md, cat-spliced, with a step-by-step check request.
-- Context blocks: C1-C3 = Lemma 0, (iv), Lemma W/Cor U, spliced. C5 = proof.md §4 lines 475-549, spliced. C6 = Lemma S, C7 = Theorem T + G1 (round5_q5.answer), spliced. C4/C8/C9 were written by hand (Lemma C1 with proofs, Prop O, NTSD, evidence).
+## Commit wave outcome
+- r3_q4 answered: Theorem R, NTSD(beta, m_0) => FD(beta/48, S_0) with S_0 = max((1471/beta)^{8/3}, (96/95)m_0). Theorem R' is the parametrised version. Checked by hand; constants checked by python. Integrated as proof.md Section 4.9, together with Lemma W, Corollary U, the TSD definition and Lemmas A, B, C', D, all written out.
+  - Vacuous at the R4 scale: S_0 > 1.7e9.
+  - Heuristic: Theorem R' at S = 2.2e7 needs beta > 0.046.
+- r3_q1 answered: Theorem P (Sigma_1 is satisfiable iff there is no C-collision), Corollary P1, Proposition 2G (type I/II conflicts), Lemma M, and the split-graph lemma for the translate model. NTSD is not proved.
+  - Theorem P was checked by python on 2990 random instances, with full agreement. Integrated in Section 4.10.
+  - Lemma M and the split-graph lemma were recorded under "Other routes" only.
+- r3_q2 and r3_q3 got no answer (API safeguards).
+- r3_verify answered: no fatal errors.
+  - One serious item, S1: the Status overclaimed embedding exclusion for small lifted members. Fixed.
+  - Minor items m1-m9: m1, m2, m3, m7, m8 and m9 fixed in the text. m4 and m5 were fixed by rewording the Status. m6 was fixed by marking "earlier work, not proved here" in Other routes.
+- The m = 23 TSD datum was rechecked by python: Sidon, Q(22) = Q(23) = 6, 76 L's, colorable. So NTSD needs m_0 > 23.
 
-## If invoked again (integration)
-- If r3_q4 proves Theorem R: add it to proof.md §4 or §7 as PROVED (conditional on NTSD). Then the open core can be restated as NTSD, which is a sharper and in-lane statement than FD. Keep FD as the equivalent per-shift form.
-- If r3_q1/q2/q3 claim NTSD or one half: check hard. Points to check:
-  - the order arguments;
-  - that the statement covers ALL near-max Sidon pairs, Bose/Singer included;
-  - that the alignment parameter in q2 really complements q3.
-  - Re-test any claimed gadget on the solver instances (scratchpad tsd.py has solve, clashes, g1).
-- Even full NTSD gives an R_4 consequence only after the consumer certification: c(S) ≤ K(S) is uncertified and fragile, and S_0 must be ≤ about 6e5·η.
-- Keep the honesty points:
-  - FD open;
-  - c(S) ≤ K(S) uncertified;
-  - the K_F-vs-K remark is heuristic;
+## proof.md structure (final)
+- Answer in brief.
+- Sections 0-4.8 from the draft, with repairs.
+- 4.9 NTSD => FD.
+- 4.10 known facts about NTSD.
+- 5 consumer implication.
+- Status.
+- Other routes.
+- The old Sections 6 and 7 were merged into Status and Other routes.
+
+## If anything continues
+- The best in-lane target is NTSD at large m, or NTSD* (only the instances that arise from saturated fibres).
+- A proof must use L's with mixed spanning cells (Corollary P1).
+- Open finite check: do the two non-colorable C9 instances without G1 (q=17, t=3, |A|=12; q=19, t=3, |A|=14) contain a type I or type II conflict?
+- Any R4 use needs certified xi* and K_F/v_1 at spans of about 2.2e7, plus the comparison of 12c(n-1-d) against U_d.
+- The ledger has not been updated with round-6 or commit-wave items. Candidate PROVED lines:
+  - Theorem R;
+  - Theorem P;
+  - Proposition 2G.
+- Honesty points to keep:
+  - FD and NTSD are open;
   - no R_4 bound;
-  - B = 9 embedding open;
-  - interval averaging not refuted;
-  - the lifted family is limited to C < 3 and f > 1/3.
-- Possible polish: add the round-6 items and the commit-wave outcome to the ledger.
+  - the B = 9 and small lifted embeddings are unsettled;
+  - interval averaging is not refuted.
