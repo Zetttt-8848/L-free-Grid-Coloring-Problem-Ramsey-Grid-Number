@@ -54,3 +54,4 @@ R: 0
 - tail (f) refine_3: done, no extra queries; phase: tail (g) select
 - tail (g) select: r3_q1..q4 + r3_verify written; phase: tail (h) commit wave (deep x5)
 - tail (h) commit wave first launch: all five stopped by API usage limit; TOTAL answered 0, partial 1, no answer 4; resume on user request: one re-run
+- tail (h) commit wave re-run: answered r3_q1, r3_q4, r3_verify; r3_q2 and r3_q3 stopped by API safeguards; phase: tail (i) finalize
