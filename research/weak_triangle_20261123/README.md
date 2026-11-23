@@ -72,7 +72,7 @@ and can have different hashes. The original run recorded drat-trim revision
 `2e3b2dc`. The inherited catalog coverage and its reproduction commands
 are documented in [the local rainbow minima record](../boundary_certificates_20261115/LOCAL_RAINBOW_MINIMA.md).
 
-The smaller side-140 target, enlarged patch library, exact order-14
-minimum, and improved four-color bound are open items in the plan.
+The follow-up certificates establish [side 141](SIDE_141.md) for three colors
+and [side 21,947,855](../r4_disjoint_edge_bins_20261123/README.md) for four colors.
 
 [pr11]: https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/pull/11
