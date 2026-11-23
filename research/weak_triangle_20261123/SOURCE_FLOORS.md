@@ -18,6 +18,10 @@ $(a,b,c)$ receives weight 6 plus 5 for each strictly positive gap.
 The finite extension minima can be reproduced with
 `python3 ../boundary_certificates_20261115/verify_minimizer_extensions.py --through-12`.
 
+The [sharp extension table](ORDER14_EXTENSIONS.md) gives two further
+inequalities involving all ten order-11 subtriangles or all six order-12
+subtriangles of the same order-14 triangle.
+
 ## Packing and integer rounding
 
 | Source order | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |
