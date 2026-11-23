@@ -29,23 +29,38 @@ def check(record):
 
 def main():
     records = read_json(DATA / "placement_witnesses.json.xz")
-    observed = set()
+    thresholds = {11: (5, 6), 12: (8, 9), 13: (12,)}
+    coverage = set()
+    placements = set()
     for record in records:
         check(record)
-        spec = tuple(record["spec"])
-        if spec in observed:
+        m, cutoff, side, x, y, step = record["spec"]
+        gap = side - m + 1
+        if (side not in (16, 17, 18) or step != 1 or cutoff not in thresholds[m]
+                or (x, y) > (gap - y, gap - x)):
+            raise ValueError("Unexpected placement or threshold")
+        key = (m, side, x, y)
+        if key in placements:
             raise ValueError("Duplicate placement")
-        observed.add(spec)
-    expected = set()
-    for order, cutoff, side in ((11, 5, 16), (12, 8, 16), (13, 12, 16), (13, 12, 17)):
-        gap = side - order + 1
-        expected.update((order, cutoff, side, x, y, 1)
-                        for x in range(gap + 1) for y in range(gap + 1)
-                        if (x, y) <= (gap - y, gap - x))
-    expected.add((13, 12, 18, 3, 2, 1))
-    if observed != expected:
-        raise ValueError(f"Incorrect placement coverage: {observed ^ expected}")
-    print(f"Verified {len(records)} placements and literal full-square witnesses.")
+        placements.add(key)
+        for test in thresholds[m]:
+            if cutoff <= test:
+                coverage.add((m, test, side, x, y))
+
+    for side in (16, 17):
+        for m, cutoffs in thresholds.items():
+            gap = side - m + 1
+            expected = {(m, cutoff, side, x, y) for cutoff in cutoffs
+                        for x in range(gap + 1) for y in range(gap + 1 - x)}
+            if not expected <= coverage:
+                raise ValueError(f"Missing side-{side} witness at {min(expected - coverage)}")
+    side18 = {(m, cutoff): sum(1 for row in coverage if row[:3] == (m, cutoff, 18))
+              for m, cutoffs in thresholds.items() for cutoff in cutoffs}
+    if side18 != {(11, 5): 4, (11, 6): 6, (12, 8): 0, (12, 9): 2, (13, 12): 1}:
+        raise ValueError("Unexpected side-18 witness count")
+    if (13, 12, 18, 3, 2) not in coverage:
+        raise ValueError("Missing order-13 witness at (3, 2)")
+    print(f"Verified {len(records)} literal square colorings across {len(coverage)} cutoff/offset cases.")
 
 
 if __name__ == "__main__":

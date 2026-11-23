@@ -9,12 +9,18 @@ extension results for unit-step triangles.
 | 16 | 11 | 5 | 28 | Every offset |
 | 16 | 12 | 8 | 21 | Every offset |
 | 16 | 13 | 12 | 15 | Every offset |
+| 17 | 11 | 5 | 36 | Every offset |
+| 17 | 12 | 8 | 28 | Every offset |
 | 17 | 13 | 12 | 21 | Every offset |
+| 18 | 11 | 5 | 4 | Four representatives |
+| 18 | 11 | 6 | 6 | Includes the four at cutoff 5 |
+| 18 | 12 | 9 | 2 | Two representatives |
 | 18 | 13 | 12 | 1 | Offset (3, 2) and its reflection |
 
-The side-16 examples for cutoffs 5 and 8 also establish existence at
-cutoffs 6 and 9, respectively. This covers all 113 side-16 combinations
-in the plan after quotienting by the antidiagonal reflection.
+The cutoff-5 and cutoff-8 witnesses also establish existence at cutoffs
+6 and 9. This covers all 113 side-16 and all 149 side-17 combinations
+in the plan after quotienting by antidiagonal reflection. A further 13
+side-18 combinations have explicit square colorings in this archive.
 
 Use coordinates `(x,y)` with `0 <= x,y < side`, in which an L has
 vertices `(x,y),(x+d,y),(x+d,y+d)` for positive `d`. The file stores

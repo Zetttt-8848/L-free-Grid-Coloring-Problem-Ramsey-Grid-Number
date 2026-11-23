@@ -23,8 +23,8 @@ A checked refutation for each group supplies both local lower bounds.
 
 All 1,035 proof groups passed drat-trim and the C99 RUP checker during
 generation. During review, all groups were matched to freshly reconstructed
-formula hashes and the archived proof hashes. Both checkers were rerun on
-all 31 order-13 groups and 32 evenly spaced order-12 groups. The compressed
+formula hashes and the archived proof hashes. Both checkers were independently rerun on
+all 31 order-13 groups and all 1,004 order-12 groups. The compressed
 [manifest](data/side_141_patch_manifest.json.xz) records the coverage and
 hashes. The replay and regeneration command below reconstructs every input.
 
