@@ -22,6 +22,9 @@ directed Ls and cuts out every translation of the indicated subtriangle.
 The minimum of $r_{14}$ over **all** proper colorings remains between 14
 and 17 inclusive.
 
+At the lower endpoint, the [boundary refutations](ORDER14_BOUNDARY.md)
+exclude all twelve orbits of rainbow Ls touching multiple outer sides.
+
 ## Exhaustive lower endpoints
 
 Take the complete [low-rainbow catalogs](../boundary_certificates_20261115/triangle_grid_catalogs.json.xz)

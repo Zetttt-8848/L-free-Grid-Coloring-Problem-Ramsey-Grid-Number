@@ -12,6 +12,7 @@ typedef struct {
     int size;
     int active;
     int lits_offset;
+    int next_in_bucket;
 } Clause;
 
 static int num_vars = 0;
@@ -19,6 +20,9 @@ static Clause *clauses = NULL;
 static int num_clauses = 0, cap_clauses = 0;
 static int *lit_pool = NULL;
 static int pool_len = 0, pool_cap = 0;
+enum { HASH_BUCKETS = 1 << 18 };
+/* Bucket links are clause IDs plus one, with zero denoting an empty bucket. */
+static int clause_buckets[HASH_BUCKETS];
 
 /* Watch lists: lit_index(l) = 2*|l| + (l < 0 ? 1 : 0) */
 static int *watch_head = NULL;
@@ -31,6 +35,42 @@ static int trail_len = 0;
 
 static inline int lit_idx(int l) {
     return (l > 0) ? (2 * l) : (2 * (-l) + 1);
+}
+
+static unsigned clause_bucket(const int *literals, int length) {
+    uint32_t sum = 0;
+    for (int i = 0; i < length; ++i) {
+        uint32_t x = (uint32_t)literals[i];
+        x ^= x >> 16;
+        x *= UINT32_C(0x85ebca6b);
+        x ^= x >> 13;
+        x *= UINT32_C(0xc2b2ae35);
+        sum += x ^ (x >> 16);
+    }
+    return sum & (HASH_BUCKETS - 1);
+}
+
+static void delete_clause(const int *literals, int length) {
+    if (length < 2) return;
+    int *link = &clause_buckets[clause_bucket(literals, length)];
+    while (*link) {
+        Clause *candidate = &clauses[*link - 1];
+        if (candidate->size == length) {
+            const int *stored = &lit_pool[candidate->lits_offset];
+            int i;
+            for (i = 0; i < length; ++i) {
+                int j = 0;
+                while (j < length && literals[j] != stored[i]) ++j;
+                if (j == length) break;
+            }
+            if (i == length) {
+                candidate->active = 0;
+                *link = candidate->next_in_bucket;
+                return;
+            }
+        }
+        link = &candidate->next_in_bucket;
+    }
 }
 
 static inline int is_true(int l) {
@@ -183,6 +223,9 @@ static int add_clause(const int *buf, int len, int base_qhead) {
     clauses[cid].size = n;
     clauses[cid].active = 1;
     clauses[cid].lits_offset = pool_len;
+    unsigned bucket = clause_bucket(arr, n);
+    clauses[cid].next_in_bucket = clause_buckets[bucket];
+    clause_buckets[bucket] = cid + 1;
     memcpy(&lit_pool[pool_len], arr, n * sizeof(int));
     pool_len += n;
     add_watch(lit_pool[clauses[cid].lits_offset + 0], 2 * cid + 0);
@@ -273,7 +316,9 @@ int main(int argc, char **argv) {
         if (is_del) { del_mode = 1; len = 0; continue; }
         if (val == 0) {
             if (del_mode) {
-                /* Deletion is optional in RUP soundness; ignore safely for maximal soundness! */
+                /* Watches unlink inactive clauses on their next visit. Retained root
+                   implications and units have already been proved from the input. */
+                delete_clause(buf, len);
                 del_mode = 0;
                 len = 0;
                 continue;
