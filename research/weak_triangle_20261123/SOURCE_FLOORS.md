@@ -50,3 +50,25 @@ to expand every physical corner independently and compare the exact
 quotients. These local inequalities supply inputs for the global
 side-140 calculation. The verified full-square bound in this package is
 [141](SIDE_141.md).
+
+## Packing with the boundary-layer inequalities
+
+Use the [weighted boundary inequalities at orders 14 through 18](BOUNDARY_LAYERS.md)
+and the [three embedded-subtriangle weight vectors at order 14](ORDER14_EXTENSIONS.md)
+as further source columns. Independent integer rounding gives the following
+improved bounds. The clearance condition is the same as in the preceding table.
+
+| Order | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional | 20 | 24 | 28 | 32 | 37 | 42 | 48 |
+| With clearance | 22 | 26 | 31 | 36 | 41 | 45 | 50 |
+
+| Order | 26 | 27 | 28 | 29 | 30 | 31 | 32 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Unconditional | 53 | 58 | 65 | 71 | 78 | 85 | 93 |
+| With clearance | 56 | 62 | 69 | 75 | 82 | 90 | 98 |
+
+The [integer columns](data/local_boundary_packings.json) record each
+source, spacing, placement, weight rule and coefficient. Run
+`python3 verify_local_packing.py` to expand the weights on the literal
+corner sets, check each rational quotient, and reproduce both tables.

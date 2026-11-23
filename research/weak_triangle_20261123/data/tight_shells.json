@@ -1,0 +1,71 @@
+[
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-001021",
+    "cnf_sha256": "6ed76c87fec6c6854bdbba0c7998819af7ede7dccf0d05a18d9a25dd1e64c65f",
+    "proof_sha256": "9ab9cbaceaa89e1c02c87c0a5b7563382a1761786b03c172297a9b1f2f1d3736",
+    "coarse_word": "001021"
+  },
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-002021",
+    "cnf_sha256": "a0db89ecafaba66018370601f162eb13dea9395ada609645b93f1e067319e9d1",
+    "proof_sha256": "e20306b0ca1b06a9b6a0adb3abcca83222e38012f5440d0017df73b080131616",
+    "coarse_word": "002021"
+  },
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-010001",
+    "cnf_sha256": "2cf663e1333de1df306cc8f564d7e7cf8e98c4cb02d4809ff33465fbcec278d7",
+    "proof_sha256": "44e22b996e0dd270e3ab41f25db28098ca854a696173f0919c1aecea73344e1d",
+    "coarse_word": "010001"
+  },
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-010011",
+    "cnf_sha256": "96f069c70d8bf795d3c604b9c1c5795ae89cb3a2c52b1f4c1fc9adb081d8e9f2",
+    "proof_sha256": "cf33019b7fccb0e7a5b184bdc076fe045040632d50a2948a43f9ff3b1f940be4",
+    "coarse_word": "010011"
+  },
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-020001",
+    "cnf_sha256": "684297e20eb149d4ef64486dd75452e81df7eec855243d84c93bb2d65bcbde2c",
+    "proof_sha256": "a35c93e034c34280b1e6e663509a1a80c184a19ecf84420a5cfa59895993cb35",
+    "coarse_word": "020001"
+  },
+  {
+    "order": 14,
+    "sides": 0,
+    "name": "order14-zero-022021",
+    "cnf_sha256": "8ae30fe3b08431e974662b514a1699aa41a91d9290453b5dda698c02f5bfd9ea",
+    "proof_sha256": "00e081dd186a9c6f1153d274e4f1b3a04ce905ac11d525766aa42568bcf28f20",
+    "coarse_word": "022021"
+  },
+  {
+    "order": 14,
+    "sides": 1,
+    "name": "order14-one",
+    "cnf_sha256": "2e58b13645de12081fe1ffa21517e5d9fdbcea53c31aa995a7cfb4b7e361bd49",
+    "proof_sha256": "0e1215b45aa9dc62bfdbacca574653ba8f157bea3cd44c0cbff21fdb6956cf8a"
+  },
+  {
+    "order": 15,
+    "sides": 0,
+    "name": "order15-interior",
+    "cnf_sha256": "e1c79ef49f6039e8535ea7c740a7cf0f623aafbb5b7b97fc41b66599fa1a7a70",
+    "proof_sha256": "64fe37e932e7378cc29d6cf2816bc685bc294be23ed9481828dadea020fae1e4"
+  },
+  {
+    "order": 16,
+    "sides": 0,
+    "name": "order16-interior",
+    "cnf_sha256": "d6f8fb1bad526524a65e975b1cb4787a509c077afaadef7680123fa9ec107c6b",
+    "proof_sha256": "43fb55ae4565c296ead270c728f5745bc496b8dbce5ee2c9febc089bed55cae1"
+  }
+]

@@ -4,6 +4,9 @@ If a properly three-colored $T_{14}$ has fourteen rainbow Ls, **each
 rainbow L that meets the boundary meets exactly one of its three
 outer sides**. In particular, every L of step 11 or 12 is bichromatic.
 The existence of a proper coloring with fourteen rainbows remains open.
+The [boundary-layer proof](BOUNDARY_LAYERS.md) further forces two or three
+distinct boundary rainbows at this count and propagates the conclusion
+through order 18.
 
 There is also an unconditional weighted inequality. Give a corner
 weight 3 if it meets at most one outer side, 2 if it meets two and

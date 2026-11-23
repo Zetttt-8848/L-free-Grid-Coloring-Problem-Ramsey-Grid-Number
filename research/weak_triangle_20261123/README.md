@@ -77,5 +77,7 @@ and [side 21,947,855](../r4_disjoint_edge_bins_20261123/README.md) for four colo
 
 The [side-18 placement classification](ORDER13_SIDE18.md) and
 [rounded source floors](SOURCE_FLOORS.md) provide further local results.
+The [five-target status table](PLAN_STATUS.md) links the current proofs and
+records the remaining placement and exact-minimum questions.
 
 [pr11]: https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/pull/11
