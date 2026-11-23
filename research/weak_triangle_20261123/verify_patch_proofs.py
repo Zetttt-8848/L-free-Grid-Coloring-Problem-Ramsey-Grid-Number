@@ -19,11 +19,13 @@ def check(command):
         raise RuntimeError(f"{command[0]} failed\n{detail}")
 
 
-def verify_group(baseline, proof_path, patch, words, checkers, generate):
+def verify_group(baseline, proof_path, patch, words, checkers, generate, expected_formula=None):
     sys.path.insert(0, str(baseline))
     from verify_square_patches import square_formula
 
     clauses, dimacs = square_formula(patch, words)
+    if expected_formula is not None and hashlib.sha256(dimacs).hexdigest() != expected_formula:
+        raise ValueError(f"Regenerated formula disagrees with manifest for {proof_path.name}")
     existing = proof_path.is_file()
     if not existing and not generate:
         raise FileNotFoundError(proof_path)

@@ -1,4 +1,4 @@
-"""Reconstruct and check every additional local proof group used at side 141."""
+"""Reconstruct and check groups of additional ambient-square refutations."""
 
 import argparse
 import sys
@@ -16,6 +16,7 @@ def main():
     parser.add_argument("--drat-trim", type=Path, required=True)
     parser.add_argument("--rup-check", type=Path, required=True)
     parser.add_argument("--jobs", type=int, default=1)
+    parser.add_argument("--collection", choices=("side-141", "order12-side18"), default="side-141")
     parser.add_argument("--generate-missing", action="store_true")
     args = parser.parse_args()
     baseline = args.baseline.resolve()
@@ -25,10 +26,14 @@ def main():
     from verify_triangle_boundary import cost, orientations
 
     catalogs = read_json(baseline / "triangle_grid_catalogs.json.xz")
-    manifest = read_json(DATA / "side_141_patch_manifest.json.xz")
-    specs = read_json(DATA / "side_141_patches.json")
+    if args.collection == "side-141":
+        manifest = read_json(DATA / "side_141_patch_manifest.json.xz")
+        specs = read_json(DATA / "side_141_patches.json")
+    else:
+        manifest = read_json(DATA / "order12_side18_0_1.json.xz")
+        specs = [[12, 9, 18, 0, 1, 1]]
     if [entry["patch"] for entry in manifest] != specs:
-        raise ValueError("Manifest is missing a patch used in the arithmetic")
+        raise ValueError("The patches in the manifest differ from the requested collection")
     tasks = []
     for entry in manifest:
         order, budget, side, x, y, stride = spec = entry["patch"]
@@ -48,12 +53,13 @@ def main():
             group = words[start:start + 96]
             if record["spec"] != spec or record["count"] != len(group):
                 raise ValueError(f"Incorrect group coverage for patch {spec}")
-            tasks.append((directory / f"{start:06d}.rup.xz", patch, group, record["proof_sha256"]))
+            tasks.append((directory / f"{start:06d}.rup.xz", patch, group, record))
 
     with ProcessPoolExecutor(max_workers=args.jobs) as pool:
         futures = {
-            pool.submit(verify_group, baseline, path, patch, words, checkers, args.generate_missing): digest
-            for path, patch, words, digest in tasks
+            pool.submit(verify_group, baseline, path, patch, words, checkers,
+                        args.generate_missing, record["cnf_sha256"]): record["proof_sha256"]
+            for path, patch, words, record in tasks
         }
         for count, future in enumerate(as_completed(futures), start=1):
             existing, _, digest = future.result()

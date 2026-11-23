@@ -56,7 +56,7 @@ def main():
                 raise ValueError(f"Missing side-{side} witness at {min(expected - coverage)}")
     side18 = {(m, cutoff): sum(1 for row in coverage if row[:3] == (m, cutoff, 18))
               for m, cutoffs in thresholds.items() for cutoff in cutoffs}
-    if side18 != {(11, 5): 4, (11, 6): 6, (12, 8): 0, (12, 9): 2, (13, 12): 1}:
+    if side18 != {(11, 5): 8, (11, 6): 12, (12, 8): 0, (12, 9): 8, (13, 12): 1}:
         raise ValueError("Unexpected side-18 witness count")
     if (13, 12, 18, 3, 2) not in coverage:
         raise ValueError("Missing order-13 witness at (3, 2)")
