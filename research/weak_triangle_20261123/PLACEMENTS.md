@@ -26,9 +26,9 @@ for a representative of that orbit.
 
 The order-13 witness at offset (3, 2) in the 18-square has exactly
 12 rainbows. The [side-141 proof](SIDE_141.md) records the checked
-refutations at the two offsets used in that certificate. The other
-host sizes and the exhaustive classification of surviving rainbow
-profiles are ongoing work.
+refutations at the two offsets used in that certificate. The [order-13 placement proof](ORDER13_SIDE18.md) classifies the full
+set of surviving profiles at this offset and excludes 26 side-18
+offset orbits.
 
 Run `python3 verify_placement_witnesses.py` to check all colorings and
 coverage from the [compressed witness file](data/placement_witnesses.json.xz).

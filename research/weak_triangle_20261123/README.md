@@ -75,4 +75,7 @@ are documented in [the local rainbow minima record](../boundary_certificates_202
 The follow-up certificates establish [side 141](SIDE_141.md) for three colors
 and [side 21,947,855](../r4_disjoint_edge_bins_20261123/README.md) for four colors.
 
+The [side-18 placement classification](ORDER13_SIDE18.md) and
+[rounded source floors](SOURCE_FLOORS.md) provide further local results.
+
 [pr11]: https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/pull/11
