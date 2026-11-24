@@ -1,0 +1,167 @@
+{
+  "theorem": "r_14 >= 15 (shells 2 and 3; shells 0 and 1 are in tight_shells.json)",
+  "archive_name": "order14-min15-proofs.zip",
+  "archive_sha256": "8e84f7dac42c19443cdbe31909a5624a4ee4871bf46f35c979fc84270cbffb11",
+  "cases": [
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "001021",
+      "name": "2-001021",
+      "cnf_sha256": "3664bd54b414eef81938a540ab2ae466c58ee2832a7b2bf7930b60acf8d6e679",
+      "proof_sha256": "81f3fbcf0f0ad4b4e15c7bbc8be1bb09bf328080101c0954916bbd7787220133"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "001100",
+      "name": "2-001100",
+      "cnf_sha256": "7c7c4b31a5611eed13dea36afd3a1ee8481390b763953f8f93c9b2b471c7a235",
+      "proof_sha256": "85a18c90392b92ccc6c8cfbea590919d328cf92e435043a62eddfedc57f07202"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "001101",
+      "name": "2-001101",
+      "cnf_sha256": "7740704f02d066c5adbbd39b53e8c6e3568d76096f5e8e52c0d18a37aeb757ce",
+      "proof_sha256": "d3d323a7f6ff900f851fe061d3854d26f69688fa231f293ba934d72f2c293d66"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "001110",
+      "name": "2-001110",
+      "cnf_sha256": "24010d57a2fa5793c16a6adad0c9549a659a0ae6524fb0ed44746a63c3f78a5e",
+      "proof_sha256": "6f6bdd47368a90185f162069afd3f662f87947bed49ed9aff859850fb2633653"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "002011",
+      "name": "2-002011",
+      "cnf_sha256": "70931f12f2fe241ce98ea7f45b942b0773751a8e5777579ad0822f2890b5ba55",
+      "proof_sha256": "9f262e79b84013b6a2bb5b23070b8f2e734abb2e78aa7247a562293f0c321dc2"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "002021",
+      "name": "2-002021",
+      "cnf_sha256": "bab20cf8c285d50fd21f25fb8afaccdceaa0d6e9b618fbda286eb8e8cf3a9673",
+      "proof_sha256": "18baa28b41ce9934cb14006381ae9449a8b077c74d3588be9a1a7bda9d8a71ac"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "002100",
+      "name": "2-002100",
+      "cnf_sha256": "9ad52cffc271dccc43602c3745ed48e341a6fcdb3a3bc3ba2cbb3aea02472775",
+      "proof_sha256": "7cd2e795f3ca53ee90aad5e83074c6740050963a1b5a1d2d6f10d62c2a20e193"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "002111",
+      "name": "2-002111",
+      "cnf_sha256": "502ceb6bfe91ec708c0ab590fffa8af7873125850273378eea941939881cbb91",
+      "proof_sha256": "d22fc0390811db745d69751751112b90a389c7bf37da3e1f35acf9167f5dbf46"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "011001",
+      "name": "2-011001",
+      "cnf_sha256": "05904d516e3b10898470be02497b444d372cd0d33e6228231dfca254bf6cdbe5",
+      "proof_sha256": "755524f2a497a9a9c1b9484a91be0b7adfe7e671ad8b0c8d3194e17130ea8068"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "011101",
+      "name": "2-011101",
+      "cnf_sha256": "e4fe9329343797e9e251e1940b8c58811b14f0aa3de2d484c3909fb223a11714",
+      "proof_sha256": "6cb63555fb9df854967a333093efd2d8ff949b240854e7453319214bd862d9d2"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "011121",
+      "name": "2-011121",
+      "cnf_sha256": "5ed879c97383da6f9ccd23a23e5960fdc2a8ef4ec943db34c7492c998f37c276",
+      "proof_sha256": "4203a2ca0d62105326ee3d46f753bd1f712d5b18d4c3a84315c2a971ef837d34"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "022021",
+      "name": "2-022021",
+      "cnf_sha256": "16b5f77a5f814aabf2a8ac2377b6230ebbc4e862fa64745504efbc5cae437015",
+      "proof_sha256": "25a84ed301fdba0638cb9fc45b6514bcfa0155118d13920283b5b77d1b1db902"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "022111",
+      "name": "2-022111",
+      "cnf_sha256": "204ec3bdeea8e7501f93c6fc633c993e8a6deaaf7f8fdd5aee64d8719f1dd4a1",
+      "proof_sha256": "c6260ac7914c84aea9b2760aa82eba1ea8403fee85d728800c6cc8de528d644b"
+    },
+    {
+      "order": 14,
+      "sides": 2,
+      "coarse_word": "022121",
+      "name": "2-022121",
+      "cnf_sha256": "1c1fe0a4883c24471c551a4283be2ca9bc70c0a6eed818863de9254f00f41ccc",
+      "proof_sha256": "d48a2f28e4d1e65325e2fe7ff8f0607317d20e830cb988083257d91469fd1067"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "001021",
+      "name": "3-001021",
+      "cnf_sha256": "45ee2f00ae56e253d588aabe864e01c386f21ea4a3272a006465d08e605c7b59",
+      "proof_sha256": "7269bcc1459763d3b122eae7e1fa921d0bf4d918e8f2680cbbbe719f36e43513"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "002021",
+      "name": "3-002021",
+      "cnf_sha256": "0cf822053495d6980908a7b3333dd6756d11e1cb75722a8245f994c32d224a48",
+      "proof_sha256": "8cd190eee774948c5733f84b398871f0c4bcbc631c8ea139e5acb23f51ab6241"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "010001",
+      "name": "3-010001",
+      "cnf_sha256": "fb3c5e695e0b8b6c0c78877c0d27179ce622794cb9ed80e7ac858cf0f103d06c",
+      "proof_sha256": "db6c87fa85c3245d8f1d97c8e7229a2723072b9a3c77f938d204b0b0e62e22ef"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "010011",
+      "name": "3-010011",
+      "cnf_sha256": "4788da093dd72d97d32cba29b5af824ee411e68acd1e6012872883474228e307",
+      "proof_sha256": "9d60ee308cc34a4b75e1fe60d7c8ede235fd87982393cd898690f596cdbe9ad7"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "020001",
+      "name": "3-020001",
+      "cnf_sha256": "a44489f4a90fdbbed2a287193a52cbab0e4c689ddd0a9931c439c29447cd77b1",
+      "proof_sha256": "9627fa7470d3d8ff53dc9bf301674449e66902f4efb2404faf0d1720cde30029"
+    },
+    {
+      "order": 14,
+      "sides": 3,
+      "coarse_word": "022021",
+      "name": "3-022021",
+      "cnf_sha256": "bde057434b6492a76d55c803fb13bd3e1b9b35c33d2261b0c6fb6211ef43095f",
+      "proof_sha256": "62eca188aef5395ba655a2c16cfb9a8c89a79be5461af4818ae4f6060b71a0f7"
+    }
+  ]
+}
