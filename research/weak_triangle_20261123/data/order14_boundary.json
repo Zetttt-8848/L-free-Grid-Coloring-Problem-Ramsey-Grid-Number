@@ -1,0 +1,62 @@
+[
+  {
+    "step": 1,
+    "cnf_sha256": "95c5792da430a87108d187eb71951fe05f5f48dd979c75d8ff0335312128f781",
+    "proof_sha256": "716e2fcedbb29a309d58e36ac1890fc1dcac6750d761077ac936830bdd90c9ea"
+  },
+  {
+    "step": 2,
+    "cnf_sha256": "56784145833631bdffcdfb45f9c158b28f33598a386ae2da7f3a49b252d26f78",
+    "proof_sha256": "a0ea190040511e9b14f6865eafe3690bca4af0e1df6fa607c2452a485ec61f88"
+  },
+  {
+    "step": 3,
+    "cnf_sha256": "3503e6ec6762299a54d911ed2e5e1cb5879422f72166eb4236cf0480b982941e",
+    "proof_sha256": "d929693db75853eec2d9e7166ee57445fc32928d2ee2b856ee9dc01199417353"
+  },
+  {
+    "step": 4,
+    "cnf_sha256": "3c0afd8e199c89003e2344116d639a32f29f9de17d0b28d3c997c5936638a505",
+    "proof_sha256": "18917a164d93a637da4a6776b39628e9f83503525796c4558847ae0fb8ffc2c2"
+  },
+  {
+    "step": 5,
+    "cnf_sha256": "734a586aea24112fdb2334488c892e71dbf29dc32e4cd9a97275078e3541fdc7",
+    "proof_sha256": "66d362ca890835e181a0bddf99391bae60c6deee7e596f72bcb9582cbf269be6"
+  },
+  {
+    "step": 6,
+    "cnf_sha256": "20e1822cdbe8026042af6b71f11299b6265fab1e6fdbbc61bc8516e5b51220f0",
+    "proof_sha256": "b7e42a9fee923f110c71ead8d94e3feddb3ddf6e1017665dc9e8ccf195e1ef5c"
+  },
+  {
+    "step": 7,
+    "cnf_sha256": "0ba6659c963cddb3d10fb06d5d8cfc5c1b70e97dc4771fccaf095ef6f62dad7a",
+    "proof_sha256": "09bcae00bc1b87959d2dd2872d1f1616fb6c31722cdfaca1d3bb2f29a65dcd18"
+  },
+  {
+    "step": 8,
+    "cnf_sha256": "45537bf2fd554399d0c8c83bfe8a3401684ebc698ea35c935798b476982b8377",
+    "proof_sha256": "4143d9ef96a157bb7af830176ec00f85ce20f24abafca517d9083591ab2ed55f"
+  },
+  {
+    "step": 9,
+    "cnf_sha256": "6ac14c24b98644d3b372539e1d8557b109d063221a8667d7b8b31125564c1568",
+    "proof_sha256": "d122014b3b40eb209f22d23da8ee6629b40420c1bb550c525d4e284af2fe2e20"
+  },
+  {
+    "step": 10,
+    "cnf_sha256": "0b7d30ae2c3d7734076be1aee6b7cf15c592ede0d140ac631b5ea4bb0b75deb8",
+    "proof_sha256": "8a7aa2ad5a4146738735e5ff12a709a852d3080c90b5541e1a9811fde457e167"
+  },
+  {
+    "step": 11,
+    "cnf_sha256": "2223c499f68785e3825b170a16a83501a8d4a249f519c80745fd7bb9c9a054c7",
+    "proof_sha256": "b0eeb2c6cdbd655d7932e8d883ced59825e99a65c7d9e20655f2fad5a6916771"
+  },
+  {
+    "step": 12,
+    "cnf_sha256": "322b2897ba4d02d8d7ed9c6615539d042b30a11e0827b5dbe14dee41494d7625",
+    "proof_sha256": "4c06c6dc4eb92d3e06eda3f366edfee534a2a8d321fd876d137d8469caf02c39"
+  }
+]
