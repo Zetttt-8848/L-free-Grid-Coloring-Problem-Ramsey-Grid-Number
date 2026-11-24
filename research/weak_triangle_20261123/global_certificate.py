@@ -4,10 +4,12 @@ import argparse
 import json
 import lzma
 from collections import Counter
-from math import comb
+from fractions import Fraction
+from math import ceil, comb
 from pathlib import Path
 
 from verify_143 import BASELINE, BASELINE_PATCHES
+import verify_local_packing as vlp
 
 DATA = Path(__file__).resolve().parent / "data"
 
@@ -17,30 +19,60 @@ def read_json(path):
     return json.loads(lzma.decompress(raw) if Path(path).suffix == ".xz" else raw)
 
 
-def build_integer_certificate(sol_json_path, patches, out_cert_path, scale=10**11):
+def certified_packing_tables():
+    """Independently verify and return (generic, clearance) from local_boundary_packings.json."""
+    records = read_json(DATA / "local_boundary_packings.json")
+    generic = {10: 1, 11: 3, 12: 6, 13: 11, 14: 14, 15: 15, 16: 16, 17: 17, 18: 18}
+    clearance = {10: 1, 11: 3, 12: 10, 13: 13}
+    for field, destination in (("generic", generic), ("with_clearance", clearance)):
+        for n, row in zip(range(14, 33), records[field], strict=True):
+            external = clearance if field == "with_clearance" else None
+            if row["n"] != n or vlp.expand(row, generic, external) != row["floor"]:
+                raise ValueError(f"Unverified {field} boundary-weighted floor at order {n}")
+            destination[n] = row["floor"]
+    return generic, clearance
+
+
+def recorded_patches():
+    """Return all archived and manifest-recorded square patches in this package."""
+    patches = set(BASELINE_PATCHES)
+    patches.update(map(tuple, read_json(DATA / "side_141_patches.json")))
+    if (DATA / "side_140_patches.json").exists():
+        patches.update(map(tuple, read_json(DATA / "side_140_patches.json")))
+    for entry in read_json(DATA / "order12_side18_0_1.json.xz"):
+        patches.add(tuple(entry["patch"]))
+    for row in read_json(DATA / "order13_side18_profiles.json.xz")["placements"]:
+        if not row["survivors"]:
+            patches.add((13, 12, 18, *row["offset"], 1))
+    return sorted(patches)
+
+
+def build_integer_certificate(
+    sol_json_path, patches, out_cert_path, scale=10**11,
+    use_boundary_rays=False, use_clearance_floors=False,
+):
     raw = read_json(sol_json_path)
     sq_side = raw["sq_side"]
 
-    # Combine rules that share the exact same (m, d, tlist_key) by summing their integer corner-weight vectors!
+    int_rules = []
+    used_sources = set()
     grouped_rules = {}
     for m, d, w_10k, er, tlist, alpha_val in raw["rules"]:
         if alpha_val <= 0:
             continue
-        # Multiply w_10k (which has min ~ 10000) by alpha_val * scale / 10000
         mult = alpha_val * (scale / 10000.0)
         w_int = [int(round(w * mult)) for w in w_10k]
         if max(w_int) == 0:
             continue
-        t_key = (m, d, tuple((a, b0, c0) for a, b0, c0 in tlist))
-        if t_key not in grouped_rules:
-            grouped_rules[t_key] = [m, d, w_int, tlist]
+        t_tuple = tuple((a, b0, c0) for a, b0, c0 in tlist)
+        key = (m, d, tuple(w_10k), t_tuple) if use_boundary_rays else (m, d, t_tuple)
+        if key not in grouped_rules:
+            grouped_rules[key] = [m, d, w_int, tlist]
         else:
-            acc = grouped_rules[t_key][2]
+            acc = grouped_rules[key][2]
             for i in range(len(acc)):
                 acc[i] += w_int[i]
 
-    int_rules = []
-    used_sources = set()
     for _, (m, d, w_int, tlist) in sorted(grouped_rules.items(), key=lambda kv: (kv[0][0], kv[0][1])):
         if max(w_int) > 0:
             int_rules.append({"order": m, "dilation": d, "weights": w_int, "translations": tlist})
@@ -52,7 +84,16 @@ def build_integer_certificate(sol_json_path, patches, out_cert_path, scale=10**1
         if wt > 0:
             int_caps.append([s, i, j, k, wt])
 
+    generic, _ = (
+        certified_packing_tables()
+        if (any(m >= 19 for m in used_sources) or use_clearance_floors)
+        else ({}, {})
+    )
     source_cutoffs = {11: 6, 12: 9, 13: 12, 14: 13, 15: 14, 16: 15, 17: 16, 18: 17}
+    for m in used_sources:
+        if m >= 19:
+            source_cutoffs[m] = generic[m] - 1
+
     cert = {
         "square_side": sq_side,
         "weak_triangle_order": sq_side + 1,
@@ -61,19 +102,77 @@ def build_integer_certificate(sol_json_path, patches, out_cert_path, scale=10**1
         "upper_caps": int_caps,
         "rules": int_rules,
     }
+    if use_boundary_rays:
+        cert["use_boundary_rays"] = True
+    if use_clearance_floors:
+        cert["use_clearance_floors"] = True
     encoded = json.dumps(cert, separators=(",", ":")).encode("ascii")
     output = Path(out_cert_path)
     output.write_bytes(lzma.compress(encoded, preset=6) if output.suffix == ".xz" else encoded)
     return cert
 
 
-def verify_A_physical(cert, catalogs):
+def physical_rays_for_order(m, keys, rep_by_kid):
+    """Build certified weighted inequalities directly in physical coordinates of W_{m-1}."""
+    rays = []
+    if m == 14:
+        for s, base, extra, bound in ((13, 6, 5, 279), (12, 24, 5, 636), (11, 20, 3, 490)):
+            offsets = [(ox, oy) for ox in range(14 - s + 1) for oy in range(ox + 1)]
+            prices = []
+            for ki in range(len(keys)):
+                xw, y, j = rep_by_kid[ki]
+                cnt = sum(0 <= y - oy <= xw - ox and xw - ox + j <= s - 2 for ox, oy in offsets)
+                prices.append(base + extra * cnt)
+            rays.append((prices, bound))
+    if 14 <= m <= 18:
+        p_single, p_mult, p_bnd = [], [], []
+        for ki in range(len(keys)):
+            xw, y, j = rep_by_kid[ki]
+            faces = (y == 0) + (xw == y) + (xw + j == m - 2)
+            p_single.append(2 + int(faces == 1))
+            p_mult.append(3 - max(0, faces - 1))
+            p_bnd.append(1 + int(faces > 0))
+        rays.append((p_single, 2 * m + 2))
+        rays.append((p_mult, 3 * m))
+        if m >= 17:
+            rays.append((p_bnd, m + 2))
+    return rays
+
+
+def barycentric_rays_for_order(m, keys):
+    """Build certified weighted inequalities directly in barycentric coordinates (j, a, b, c)."""
+    rays = []
+    if m == 14:
+        for s, base, extra, bound in ((13, 6, 5, 279), (12, 24, 5, 636), (11, 20, 3, 490)):
+            delta = 14 - s
+            margins = [(u, v, delta - u - v) for u in range(delta + 1) for v in range(delta + 1 - u)]
+            prices = [
+                base + extra * sum(u <= a and v <= bb and w <= c for u, v, w in margins)
+                for _, a, bb, c in keys
+            ]
+            rays.append((prices, bound))
+    if 14 <= m <= 18:
+        zeros = [(a == 0) + (bb == 0) + (c == 0) for _, a, bb, c in keys]
+        rays.append(([2 + int(z == 1) for z in zeros], 2 * m + 2))
+        rays.append(([3 - max(0, z - 1) for z in zeros], 3 * m))
+        if m >= 17:
+            rays.append(([1 + int(z > 0) for z in zeros], m + 2))
+    return rays
+
+
+def verify_A_physical(cert, catalogs, generic_pack, clearance_pack):
     """Verifier A: Direct physical square coordinates in S_N = {0, ..., N-1}^2."""
     N = cert["square_side"]
     patches = [tuple(p) for p in cert["patches"]]
+    use_rays = bool(cert.get("use_boundary_rays", False))
+    use_clearance = bool(cert.get("use_clearance_floors", False))
+    if use_clearance and not {(12, 9, 18, 0, 0, 1), (13, 12, 18, 0, 0, 1)} <= set(patches):
+        raise ValueError("Seven-step clearance floors require side-18 (0, 0) patches at orders 12 and 13")
 
     src_info = {}
     for m, b in cert["sources"]:
+        if m >= 19 and b + 1 != generic_pack[m]:
+            raise ValueError(f"Uncertified source cutoff {b} at order {m}")
         corners_by_key = Counter()
         raw_c = []
         for xw in range(m - 1):
@@ -88,7 +187,8 @@ def verify_A_physical(cert, catalogs):
         keys = sorted(corners_by_key)
         kid = {k: idx for idx, k in enumerate(keys)}
         indexed = [(kid[k], xw, y, j, i0, i1, i2) for k, xw, y, j, i0, i1, i2 in raw_c]
-        words = catalogs[f"{m}/{b}"]
+        rep_by_kid = {ki: (xw, y, j) for ki, xw, y, j, *_ in indexed}
+        words = [] if m >= 19 else catalogs[f"{m}/{b}"]
         ncells = comb(m, 2)
         profiles = set()
         for w in words:
@@ -104,7 +204,8 @@ def verify_A_physical(cert, catalogs):
             if len(prof) > b:
                 raise ValueError("Catalog cutoff exceeded")
             profiles.add(tuple(sorted(prof)))
-        src_info[m] = (b, keys, indexed, profiles)
+        rays = physical_rays_for_order(m, keys, rep_by_kid) if use_rays else []
+        src_info[m] = (b, keys, indexed, profiles, rays)
 
     def patch_fits(m, d, x_off, y_off, min_r):
         for p_ord, p_cut, p_side, px, py, p_stride in patches:
@@ -119,28 +220,41 @@ def verify_A_physical(cert, catalogs):
                     return True
         return False
 
+    def physical_has_7step_clearance(m, d, x_off, y_off):
+        span_m = (m - 2) * d
+        pos_ok = (x_off + span_m + 7 * d < N) and (y_off + span_m + 7 * d < N)
+        neg_ok = (x_off - 7 * d >= 0) and (y_off - 7 * d >= 0)
+        return pos_ok or neg_ok
+
     J_total = 0
     combined_md = {}
     for rule in cert["rules"]:
         m, d, weights, tlist = rule["order"], rule["dilation"], rule["weights"], rule["translations"]
-        b, keys, indexed, profiles = src_info[m]
+        b, keys, indexed, profiles, rays = src_info[m]
         if len(weights) != len(keys) or any(type(w) is not int or w < 0 for w in weights):
             raise ValueError("Bad weights")
         Q = N - 1 - d * (m - 2)
         if d < 1 or Q < 0:
             raise ValueError("Bad dilation")
         w_min = min(weights)
-        # Precompute floor for every threshold
-        possible_ths = sorted({p_cut + 1 for p_ord, p_cut, *_ in patches if p_ord == m}, reverse=True)
+        ray_fl = 0
+        for prices, bound in rays:
+            lam = min(Fraction(w, p) for w, p in zip(weights, prices))
+            ray_fl = max(ray_fl, ceil(bound * lam))
+
+        possible_ths = {0, *(p_cut + 1 for p_ord, p_cut, *_ in patches if p_ord == m)}
+        if use_clearance and m in clearance_pack:
+            possible_ths.add(clearance_pack[m])
+        possible_ths = sorted(possible_ths, reverse=True)
         floor_cache = {}
-        for th in [0] + possible_ths:
+        for th in possible_ths:
             fl = max(b + 1, th) * w_min
             for p in profiles:
                 if len(p) >= th:
                     s = sum(weights[i] for i in p)
                     if s < fl:
                         fl = s
-            floor_cache[th] = fl
+            floor_cache[th] = max(fl, ray_fl)
 
         md_map = combined_md.setdefault((m, d), {})
         seen_pairs = set()
@@ -154,12 +268,15 @@ def verify_A_physical(cert, catalogs):
             oris = [(a, b0, c0)] if b0 == c0 else [(a, b0, c0), (a, c0, b0)]
             for ta, tb, tc in oris:
                 x_off, y_off = ta + tb, tb
-                best_fl = floor_cache[0]
+                best_th = 0
                 for th in possible_ths:
-                    if patch_fits(m, d, x_off, y_off, th):
-                        best_fl = max(best_fl, floor_cache[th])
+                    if th > best_th and patch_fits(m, d, x_off, y_off, th):
+                        best_th = th
                         break
-                J_total += best_fl
+                if use_clearance and m in clearance_pack and clearance_pack[m] > best_th:
+                    if physical_has_7step_clearance(m, d, x_off, y_off):
+                        best_th = clearance_pack[m]
+                J_total += floor_cache[best_th]
                 acc = md_map.get((x_off, y_off))
                 if acc is None:
                     md_map[(x_off, y_off)] = list(weights)
@@ -169,7 +286,7 @@ def verify_A_physical(cert, catalogs):
 
     host_I = {h: [0] * ((N - h) * (N - h + 1) // 2) for h in range(1, N)}
     for (m, d), md_map in combined_md.items():
-        _, _, indexed, _ = src_info[m]
+        _, _, indexed, _, _ = src_info[m]
         for (x_off, y_off), w_vec in md_map.items():
             for ki, xw, y, j, _, _, _ in indexed:
                 w = w_vec[ki]
@@ -199,7 +316,6 @@ def verify_A_physical(cert, catalogs):
                     A = p0 + s * la
                     rem_bc = sum_abc - la
                     for lb in range(rem_bc + 1):
-                        lc = rem_bc - lb
                         B = p1 + s * lb
                         X = A + B
                         Y = B
@@ -212,18 +328,22 @@ def verify_A_physical(cert, catalogs):
     return J_total, V_total, J_total - V_total
 
 
-def verify_B_barycentric(cert, catalogs):
+def verify_B_barycentric(cert, catalogs, generic_pack, clearance_pack):
     """Verifier B: Independent barycentric-coordinate checker on T_{N+1}."""
     M = cert["weak_triangle_order"]
     N = M - 1
     if N != cert["square_side"]:
         raise ValueError("M != N + 1")
     patches = [tuple(p) for p in cert["patches"]]
+    use_rays = bool(cert.get("use_boundary_rays", False))
+    use_clearance = bool(cert.get("use_clearance_floors", False))
+    if use_clearance and not {(12, 9, 18, 0, 0, 1), (13, 12, 18, 0, 0, 1)} <= set(patches):
+        raise ValueError("Seven-step clearance floors require side-18 (0, 0) patches at orders 12 and 13")
 
-    # Build barycentric geometry directly on triples (a, b, c) + step j with a+b+c+j = m-2
     src_bary = {}
     for m, b in cert["sources"]:
-        # Map cell (u, v) in T_m (1<=u<m, 0<=v<u) to barycentric (u-v-1, v, m-1-u)
+        if m >= 19 and b + 1 != generic_pack[m]:
+            raise ValueError(f"Uncertified source cutoff {b} at order {m}")
         bary_to_idx = {}
         for u in range(1, m):
             for v in range(u):
@@ -243,7 +363,7 @@ def verify_B_barycentric(cert, catalogs):
                     corners.append((key, j, a, bb, c, i0, i1, i2))
         keys = sorted(key_set)
         kid = {k: idx for idx, k in enumerate(keys)}
-        words = catalogs[f"{m}/{b}"]
+        words = [] if m >= 19 else catalogs[f"{m}/{b}"]
         profiles = set()
         for w in words:
             prof = tuple(sorted(
@@ -251,29 +371,36 @@ def verify_B_barycentric(cert, catalogs):
                 if len({w[i0], w[i1], w[i2]}) == 3
             ))
             profiles.add(prof)
-        src_bary[m] = (b, keys, [(kid[key], j, a, bb, c) for key, j, a, bb, c, _, _, _ in corners], profiles)
+        rays = barycentric_rays_for_order(m, keys) if use_rays else []
+        src_bary[m] = (b, keys, [(kid[key], j, a, bb, c) for key, j, a, bb, c, _, _, _ in corners], profiles, rays)
 
     host_bary = Counter()
     J_total = 0
     for rule in cert["rules"]:
         m, d, weights, tlist = rule["order"], rule["dilation"], rule["weights"], rule["translations"]
-        b, keys, b_corners, profiles = src_bary[m]
+        b, keys, b_corners, profiles, rays = src_bary[m]
         w_min = min(weights)
-        # Floors depend on the rule and the certified rainbow threshold.
+        ray_fl = 0
+        for prices, bound in rays:
+            lam = min(Fraction(w, p) for w, p in zip(weights, prices))
+            ray_fl = max(ray_fl, ceil(bound * lam))
+
         possible_thresholds = {0, *(p[1] + 1 for p in patches if p[0] == m)}
+        if use_clearance and m in clearance_pack:
+            possible_thresholds.add(clearance_pack[m])
         floors = {
-            threshold: min(
-                [max(b + 1, threshold) * w_min]
-                + [sum(weights[i] for i in profile) for profile in profiles if len(profile) >= threshold]
+            threshold: max(
+                ray_fl,
+                min(
+                    [max(b + 1, threshold) * w_min]
+                    + [sum(weights[i] for i in profile) for profile in profiles if len(profile) >= threshold]
+                ),
             )
             for threshold in possible_thresholds
         }
         for a, b0, c0 in tlist:
             oris = [(a, b0, c0)] if b0 == c0 else [(a, b0, c0), (a, c0, b0)]
             for ta, tb, tc in oris:
-                # Check best patch threshold in barycentric coordinates:
-                # Condition for patch (p_ord, p_cut, p_side, px, py, p_stride) with gap = p_side-1-(m-2)*p_stride:
-                # ta + tb >= unit*ox, tc >= unit*(gap - ox), tb >= unit*oy, ta + tc >= unit*(gap - oy)!
                 best_th = 0
                 for p_ord, p_cut, p_side, px, py, p_stride in patches:
                     if p_ord != m or p_cut + 1 <= best_th or d % p_stride != 0:
@@ -285,6 +412,9 @@ def verify_B_barycentric(cert, catalogs):
                                 and tb >= unit * oy and ta + tc >= unit * (gap - oy)):
                             best_th = p_cut + 1
                             break
+                if use_clearance and m in clearance_pack and clearance_pack[m] > best_th:
+                    if max(tb, tc) >= 7 * d:
+                        best_th = clearance_pack[m]
                 J_total += floors[best_th]
                 for ki, j_loc, la, lb, lc in b_corners:
                     w = weights[ki]
@@ -318,6 +448,10 @@ def main():
     export = commands.add_parser("export", help="round discovery weights to exact integers")
     export.add_argument("solver_output", type=Path)
     export.add_argument("certificate", type=Path)
+    export.add_argument("--scale", type=int, default=10**11)
+    export.add_argument("--all-patches", action="store_true")
+    export.add_argument("--use-boundary-rays", action="store_true")
+    export.add_argument("--use-clearance-floors", action="store_true")
     verify = commands.add_parser("verify", help="reconstruct both integer scores")
     verify.add_argument("certificate", type=Path)
     verify.add_argument("--baseline", type=Path, default=BASELINE)
@@ -325,25 +459,35 @@ def main():
     args = parser.parse_args()
 
     if args.command == "export":
-        patches = [*BASELINE_PATCHES, *read_json(DATA / "side_141_patches.json")]
-        build_integer_certificate(args.solver_output, patches, args.certificate)
+        patches = (
+            recorded_patches()
+            if args.all_patches
+            else [*BASELINE_PATCHES, *read_json(DATA / "side_141_patches.json")]
+        )
+        build_integer_certificate(
+            args.solver_output, patches, args.certificate,
+            scale=args.scale,
+            use_boundary_rays=args.use_boundary_rays,
+            use_clearance_floors=args.use_clearance_floors,
+        )
         return
 
     cert = read_json(args.certificate)
     archived = set(BASELINE_PATCHES)
-    additional = set(map(tuple, read_json(DATA / "side_141_patches.json")))
+    allowed = set(recorded_patches())
     patches = set(map(tuple, cert["patches"]))
-    if not patches <= archived | additional:
+    if not patches <= allowed:
         raise ValueError("Certificate refers to a patch outside the recorded run")
     if args.archived_patches_only:
         cert["patches"] = sorted(patches & archived)
         patches &= archived
     missing_proof_patches = sorted(patches - archived)
+    need_pack = any(m >= 19 for m, _ in cert["sources"]) or bool(cert.get("use_clearance_floors", False))
+    generic_pack, clearance_pack = certified_packing_tables() if need_pack else ({}, {})
     catalogs = read_json(args.baseline / "triangle_grid_catalogs.json.xz")
-    # The archived interior and boundary refutations prove these empty cases.
     catalogs.update({"17/16": [], "18/17": []})
-    physical = verify_A_physical(cert, catalogs)
-    barycentric = verify_B_barycentric(cert, catalogs)
+    physical = verify_A_physical(cert, catalogs, generic_pack, clearance_pack)
+    barycentric = verify_B_barycentric(cert, catalogs, generic_pack, clearance_pack)
     if physical != barycentric:
         raise ValueError(f"Coordinate verifiers disagree: {physical} versus {barycentric}")
     lower, ceiling, margin = physical

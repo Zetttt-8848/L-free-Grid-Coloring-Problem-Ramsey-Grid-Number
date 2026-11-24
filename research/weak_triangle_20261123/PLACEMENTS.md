@@ -1,4 +1,4 @@
-# Square placement witnesses for Part 2
+# Square placement witnesses and exclusions for Part 2
 
 In a proper three-coloring every directed equal-leg L has at least two
 colors. The square colorings in this package give the following exact
@@ -15,7 +15,7 @@ extension results for unit-step triangles.
 | 18 | 11 | 5 | 8 | Eight representatives |
 | 18 | 11 | 6 | 12 | Includes the eight at cutoff 5 |
 | 18 | 12 | 9 | 8 | Eight representatives |
-| 18 | 13 | 12 | 1 | Offset (3, 2) and its reflection |
+| 18 | 13 | 12 | 1 | Offset `(3, 2)` and its reflection |
 
 The cutoff-5 and cutoff-8 witnesses also establish existence at cutoffs
 6 and 9. This covers all 113 side-16 and all 149 side-17 combinations
@@ -30,20 +30,26 @@ vertices `(x,y),(x+d,y),(x+d,y+d)` for positive `d`. The file stores
 the number of rainbow corners in the triangle. Each witness is given
 for a representative of that orbit.
 
-The order-13 witness at offset (3, 2) in the 18-square has exactly
-12 rainbows. The [side-141 proof](SIDE_141.md) records the checked
-refutations at the two offsets used in that certificate. The [order-13 placement proof](ORDER13_SIDE18.md) classifies the full
-set of surviving profiles at this offset and excludes 26 side-18
-offset orbits.
+## Certified exclusions beyond the baseline
 
-For $T_{12}$ at offset (0, 1) in the 18-square, every proper coloring
-has at least ten rainbows. Reflection gives the same conclusion at
-(6, 7). The [group manifest](data/order12_side18_0_1.json.xz) covers all
-96,360 palette-normalized oriented words with at most nine rainbows in
-1,004 consecutive groups. This excludes the placement at both cutoffs
-8 and 9. To replay the traces, use the command in the
-[side-141 reproduction instructions](SIDE_141.md#reproduction) with
-`--collection order12-side18`.
+- **Order 13 in the 18-square (`stride = 1`)**: The [order-13 placement proof](ORDER13_SIDE18.md)
+  completes all 28 offset orbits, excluding **27** orbits (all offsets except `(3, 2)`)
+  and classifying all surviving oriented words at sides 16, 17, and 18.
+- **Order 12 at `(0, 1)` in the 18-square (`stride = 1`)**: Every proper coloring
+  has at least ten rainbows (and likewise at `(6, 7)` by reflection). The
+  [group manifest](data/order12_side18_0_1.json.xz) covers all 96,360
+  palette-normalized oriented words with at most nine rainbows in 1,004
+  consecutive groups, excluding both cutoffs 8 and 9.
+- **Order 11 at `(0, 0)` in the 18-square (`stride = 1`, cutoff 5)** and
+  **Order 13 at `(0, 0)` in the 23-square (`stride = 2`, cutoff 12)**:
+  The [side-140 patch manifest](data/side_140_patch_manifest.json.xz) excludes
+  all 16,452 oriented words of $T_{11}$ with at most five rainbows at `(0, 0)`
+  in the 18-square (172 RUP groups) and all 2,928 oriented words of stride-2
+  $T_{13}$ with at most twelve rainbows in the 23-square (31 RUP groups). Note
+  that `23 - 1 = 2 * 11`, so the stride-2 23-square has the exact bounding box
+  of a dilated $T_{13}$ at every even step $d$, upgrading every even-dilation
+  copy of $T_{13}$ across the entire host square to at least 13 rainbows.
 
-Run `python3 verify_placement_witnesses.py` to check all colorings and
-coverage from the [compressed witness file](data/placement_witnesses.json.xz).
+Run `python3 verify_placement_witnesses.py` to check all literal colorings and
+updated plan totals, and `python3 verify_new_patches.py --collection side-140`
+(or `--collection order12-side18`) to verify the formula and RUP group manifests.

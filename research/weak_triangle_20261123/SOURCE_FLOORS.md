@@ -48,8 +48,8 @@ has $r$ rainbows, then $Dr\ge L$, so $r\ge\lceil L/D\rceil$.
 Induct in increasing order. Run `python3 verify_local_packing.py`
 to expand every physical corner independently and compare the exact
 quotients. These local inequalities supply inputs for the global
-side-140 calculation. The verified full-square bound in this package is
-[141](SIDE_141.md).
+side-140 calculation. The verified full-square bounds in this package are [141](SIDE_141.md) and
+[140](SIDE_140.md).
 
 ## Packing with the boundary-layer inequalities
 

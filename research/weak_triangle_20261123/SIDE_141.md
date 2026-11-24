@@ -68,4 +68,6 @@ with python-sat installed to generate and check absent traces into the
 chosen directory. Baseline replay is documented in the side-143 package.
 The arithmetic check is independent of the floating-point search.
 
-The stage-2 all-offset catalog and stage-3 side-140 target remain open.
+The [side-140 certificate](SIDE_140.md) extends this construction with two
+further square exclusions and boundary-layer inequalities to establish
+$R_3(\mathcal L)\le 140$.

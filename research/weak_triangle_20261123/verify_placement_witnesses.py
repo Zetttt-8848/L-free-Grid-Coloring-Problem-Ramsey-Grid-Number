@@ -46,12 +46,13 @@ def excluded_by_patch(spec, patches):
 def verify_plan(coverage, thresholds):
     patches = set(BASELINE_PATCHES)
     patches.update(map(tuple, read_json(DATA / "side_141_patches.json")))
+    patches.update(map(tuple, read_json(DATA / "side_140_patches.json")))
     patches.update(tuple(row["patch"]) for row in read_json(DATA / "order12_side18_0_1.json.xz"))
     for row in read_json(DATA / "order13_side18_profiles.json.xz")["placements"]:
         if not row["survivors"]:
             patches.add((13, 12, 18, *row["offset"], 1))
-    expected = {16: (113, 0, 0), 17: (149, 0, 0), 18: (29, 31, 130),
-                21: (0, 0, 14), 23: (0, 0, 43)}
+    expected = {16: (113, 0, 0), 17: (149, 0, 0), 18: (29, 33, 128),
+                21: (0, 0, 14), 23: (0, 1, 42)}
     for side, step in ((16, 1), (17, 1), (18, 1), (21, 2), (23, 2)):
         counts = Counter()
         for m, cutoffs in thresholds.items():

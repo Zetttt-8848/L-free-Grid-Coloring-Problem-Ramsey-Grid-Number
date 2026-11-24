@@ -72,10 +72,11 @@ and can have different hashes. The original run recorded drat-trim revision
 `2e3b2dc`. The inherited catalog coverage and its reproduction commands
 are documented in [the local rainbow minima record](../boundary_certificates_20261115/LOCAL_RAINBOW_MINIMA.md).
 
-The follow-up certificates establish [side 141](SIDE_141.md) for three colors
-and [side 21,947,855](../r4_disjoint_edge_bins_20261123/README.md) for four colors.
+The follow-up certificates establish [side 141](SIDE_141.md) and
+[side 140](SIDE_140.md) for three colors, and
+[side 21,947,855](../r4_disjoint_edge_bins_20261123/README.md) for four colors.
 
-The [side-18 placement classification](ORDER13_SIDE18.md) and
+The [side-16 through side-18 placement classifications](ORDER13_SIDE18.md) and
 [rounded source floors](SOURCE_FLOORS.md) provide further local results.
 The [five-target status table](PLAN_STATUS.md) links the current proofs and
 records the remaining placement and exact-minimum questions.
