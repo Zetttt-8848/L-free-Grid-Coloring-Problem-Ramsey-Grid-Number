@@ -47,7 +47,12 @@ unconditional order-14 rays:
 For `15 <= m <= 18`, since every child `T_{m-1}` now satisfies
 `r_{m-1} >= m`, deleting any outer side from a coloring with `r_m = m + k`
 (`k >= 1`) removes at most `k` rainbows, sharpening the multi-side boundary
-inequality to `3 r_m - d_2 - 2 d_3 >= 3 m + 1`.
+inequality to `3 r_m - d_2 - 2 d_3 >= 3 m + 1`. Likewise, at `m = 15` (`r_15 >= 16`),
+every unit-step `T_13` (6 copies), `T_12` (10 copies), and `T_11` (15 copies)
+lies inside at least one of the three `T_14` faces, summing the order-14 rays to
+`6 r_15 + sum r_13 >= 174`, `10 r_15 + sum r_12 >= 250`,
+`20 r_15 + sum r_12 >= 420`, and `30 r_15 + sum r_11 >= 585` (used in the
+[side-139 full-square certificate](SIDE_139.md)).
 
 Re-packing these strengthened local inequalities through order 32
 ([`data/local_boundary_packings_15.json`](data/local_boundary_packings_15.json))

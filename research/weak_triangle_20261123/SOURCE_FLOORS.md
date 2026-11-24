@@ -48,8 +48,8 @@ has $r$ rainbows, then $Dr\ge L$, so $r\ge\lceil L/D\rceil$.
 Induct in increasing order. Run `python3 verify_local_packing.py`
 to expand every physical corner independently and compare the exact
 quotients. These local inequalities supply inputs for the global
-side-140 calculation. The verified full-square bounds in this package are [141](SIDE_141.md) and
-[140](SIDE_140.md).
+side-140 calculation. The verified full-square bounds in this package are [141](SIDE_141.md),
+[140](SIDE_140.md), and [139](SIDE_139.md).
 
 ## Packing with the boundary-layer inequalities
 
@@ -69,6 +69,8 @@ improved bounds. The clearance condition is the same as in the preceding table.
 | With clearance | 56 | 62 | 69 | 75 | 82 | 90 | 98 |
 
 The [integer columns](data/local_boundary_packings.json) record each
-source, spacing, placement, weight rule and coefficient. Run
-`python3 verify_local_packing.py` to expand the weights on the literal
-corner sets, check each rational quotient, and reproduce both tables.
+source, spacing, placement, weight rule and coefficient. With
+[$r_{14} \ge 15$ proved](ORDER14_MIN15.md), [`data/local_boundary_packings_15.json`](data/local_boundary_packings_15.json)
+records the strengthened floors used in the [side-139 full-square certificate](SIDE_139.md).
+Run `python3 verify_local_packing.py` to expand the weights on the literal
+corner sets, check each rational quotient, and reproduce all three tables.
