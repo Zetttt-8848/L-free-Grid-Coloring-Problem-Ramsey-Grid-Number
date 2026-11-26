@@ -1,22 +1,35 @@
 {
-  "snapshot_date": "2026-11-13",
+  "snapshot_date": "2026-11-26",
   "remote": "origin",
   "research_checkpoint": {
-    "ref": "origin/codex/global-counting-research-20261108",
-    "commit": "dc1cbe6daf7d9816329217a511741fbeabd726b3"
+    "ref": "origin/codex/swarm-r3-r4-20261126",
+    "commit": "b3bff411258547dffe522865dc4df3c27ca2235a"
   },
   "refs": {
-    "origin/main": "1231d436d1990f22a9f421246c5b8fc51b66750f",
+    "origin/claude/project-routing-20261116": "376eb65b158ff2dde101b59e9c04254674266589",
+    "origin/claude/r4-grid-compatibility-20261114": "deb509763d437cba0ff0fa6e9146ea1a3c32bc1b",
+    "origin/claude/upper-bound-skills-20261113": "6630b5e27a07a35ac5a06af325551265a692daf6",
+    "origin/claude/upper-bounds-20261114": "4517f60d7c9d9284cb0b60428f7cb362d59d02c4",
+    "origin/codex/antigravity-r3-r4-20261123": "c5a6394fcb9a6ac89fa4ec1da5de058f68baa704",
+    "origin/codex/boundary-extension-research-20261108": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
+    "origin/codex/coupled-budget-research-20261108": "654cc044cad3d8ca6079a1931565a6ec44dcf2b5",
+    "origin/codex/english-main-20261113": "3fbed5fbf6f0513f965a626a6f6274645732eeaa",
+    "origin/codex/english-only-20261113": "ecd65e8d086d7b6bc55b827b574f1872a1c517db",
     "origin/codex/global-counting-research-20261108": "dc1cbe6daf7d9816329217a511741fbeabd726b3",
     "origin/codex/kernel-compatibility-research-20261108": "5b5db22c3c65123193cb31f2aa5bd949b3075e1a",
-    "origin/codex/coupled-budget-research-20261108": "654cc044cad3d8ca6079a1931565a6ec44dcf2b5",
-    "origin/codex/boundary-extension-research-20261108": "df6e35cfff68580dc78aa91bc35d4c6399a6464a",
-    "origin/codex/three-cube-pair-repair": "a53970c49472813ac65d37428074e5c530134e76",
+    "origin/codex/r4-binary-compatibility-20261114": "fb33871768bd94fd8e88452ac62ac2789eb0e882",
+    "origin/codex/r4-collision-round2-20261114": "fdaa1f05ad8fc12f4f890117fde1b25e8b6d3d83",
+    "origin/codex/r4-local-capacity-round3-20261114": "14647e607c2525b0cd12081b03899827d306a030",
+    "origin/codex/recover-claude-calibration-20261113": "0910ed1f08e3d0de023ea2b65c9c1d38355b7f49",
     "origin/codex/three-cube-boundary-obstructions": "7f8e8bfc4d5c8d46664764c6ca0a534bd6a90962",
     "origin/codex/three-cube-forcing-minimum": "d6755b48f1fb6e786cc9b480b0d40139f3da2140",
-    "origin/codex/recover-claude-calibration-20261113": "0910ed1f08e3d0de023ea2b65c9c1d38355b7f49",
-    "origin/codex/english-main-20261113": "3fbed5fbf6f0513f965a626a6f6274645732eeaa",
-    "origin/codex/english-only-20261113": "ecd65e8d086d7b6bc55b827b574f1872a1c517db"
+    "origin/codex/three-cube-pair-repair": "a53970c49472813ac65d37428074e5c530134e76",
+    "origin/kimi/r4-energy-20261115": "e1a62f30ce74d03681c04b58d0486e551e775124",
+    "origin/kimi/r4-hybrid-dual-20261116": "1da352c4cb1f8b8f5974563832347c18dc84b956",
+    "origin/kimi/r4-multiscale-20261115": "b7d52434061f7cb15395d50edc949e2700356926",
+    "origin/kimi/r4-off-diagonal-20261115": "af166bc27aaa3f22b4f62907d983fbecb20f4aec",
+    "origin/kimi/r4-quotient-multiscale-20261115": "252bdcfb9da09eb149a7e5c0505d512fbd907405",
+    "origin/main": "1231d436d1990f22a9f421246c5b8fc51b66750f"
   },
   "watched_paths": [
     "README.md",
@@ -32,5 +45,5 @@
     "CLAUDE.md",
     ".claude/skills"
   ],
-  "skill_branch": "claude/upper-bound-skills-20261113"
+  "skill_branch": "codex/swarm-r3-r4-20261126"
 }

@@ -1,10 +1,10 @@
 # Open issues and failed routes
 
-Prioritization see [Short-term vs. Long-term Roadmap](ROADMAP.md): Advance and solve R3 first, and then systematically study R4. These source realms are candidate routes, not destinations that must all be proven.
+Prioritization: per [AGENTS.md](../AGENTS.md) (2026-11-13 governing objective), upper-bound improvements for both `R3` and `R4` are active simultaneously (superseding the earlier "R3 first, then R4" ordering in [ROADMAP.md](ROADMAP.md)). These source assertions remain candidate routes, not destinations that must all be proven.
 
-The general source world is currently unresolved. The following assertions are taken verbatim from the current text and are all open hypotheses. Do not rely on qualified inferences as proof of these assumptions.
+The general source world is currently unresolved. The following assertions are taken verbatim from the current text and are all open hypotheses. Do not rely on conditional inferences (such as `R4 <= 98,777` under S21, or `R3 <= 379` / `361` under S21 / existential G9) as established unconditional bounds.
 
-The latest project range is`21≤R3≤464`, see [Six categories of common counting checkpoints](../research/kernel_compatibility_20261108/README.md). 464 is derived from the new common starting point count without using the following open assumptions. Currently, we are focusing on inventing the upper bound counting method according to user requirements. The next numerical target is 463 or less; the lower bound remains 21.
+At the 2026-11-26 checkpoint ([state snapshot](../.claude/skills/lgrid-research/references/state.md)), the established unconditional ranges are `21 <= R3 <= 138` ([side-138 full-square certificate](../research/r3_side138_20261126/README.md), zero external OGR assumptions; exploratory `N = 137` dual LP remains undecided at `W_LB = 1.049678 > 1`) and `21 <= R4 <= 21,947,741` ([MCF Farkas and 3-segment outer DP certificate](../research/r4_mcf_minimax_20261126/README.md), negative margin at `21,947,740`). Earlier diagonal-word checkpoints proved `21 <= R3 <= 464` ([Six categories of common counting checkpoints](../research/kernel_compatibility_20261108/README.md)) and `461` ([PR 11](../research/boundary_certificates_20261115/THREE_COLOR_461.md)) using OGR-24/25 inputs.
 
 New pending counting problem: multi-level comparisons generated for the same boundary color word, strictly controlling the joint total of "at most two contributions per color per level". Adjacent layer path counts have been combined proven, but still not enough to rule out 463. The extreme values ​​of finite word pairs with lengths 5 to 9 are only valid within their actual enumeration range and cannot be used as arbitrary length formulas.
 

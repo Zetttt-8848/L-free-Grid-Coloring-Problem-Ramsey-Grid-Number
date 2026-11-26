@@ -50,6 +50,14 @@ for a representative of that orbit.
   of a dilated $T_{13}$ at every even step $d$, upgrading every even-dilation
   copy of $T_{13}$ across the entire host square to at least 13 rainbows.
 
+- **Order 12 at `(0, 0)` in the 21-square (`stride = 2`, cutoff 6)**:
+  The [stride-2 order-12 manifest](data/stride2_order12_21_manifest.json.xz)
+  excludes all 204 palette-normalized oriented words of $T_{12}$ with at most
+  six rainbows in 34 consecutive six-word RUP groups (`21 - 1 = 2 * 10`, so
+  every even-dilation copy of $T_{12}$ across the entire host square has at
+  least seven rainbows).
+
 Run `python3 verify_placement_witnesses.py` to check all literal colorings and
 updated plan totals, and `python3 verify_new_patches.py --collection side-140`
-(or `--collection order12-side18`) to verify the formula and RUP group manifests.
+(or `--collection order12-side18` / `--collection stride2-order12`) to verify
+the formula and RUP group manifests.

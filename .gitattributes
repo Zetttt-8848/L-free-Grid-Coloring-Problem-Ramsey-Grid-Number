@@ -6,3 +6,6 @@
 /research/coupled_budget_20261108/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 /research/kernel_compatibility_20261108/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 /research/global_counting_20261108/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/research/binary_source_spans_20261126/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/research/r3_side138_20261126/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/research/r4_mcf_minimax_20261126/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -66,6 +66,9 @@ In particular, if the order-14 lower bound increases from 14 to 15,
 the lower bounds on orders 15 through 18 increase to **16, 17, 18, 19**.
 A putative coloring at the old bound has a boundary rainbow. Deleting
 its side would violate the improved lower bound at the preceding order.
+The [complete two- and three-side coarse refutations](ORDER14_MIN15.md)
+subsequently establish $r_{14} \ge 15$ unconditionally, activating these
+upgraded minima.
 
 ## Unconditional weighted inequalities
 

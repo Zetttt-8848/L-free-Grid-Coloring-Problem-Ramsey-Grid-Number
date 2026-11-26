@@ -18,7 +18,7 @@ def main():
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument(
         "--collection",
-        choices=("side-141", "order12-side18", "side-140"),
+        choices=("side-141", "order12-side18", "side-140", "stride2-order12"),
         default="side-141",
     )
     parser.add_argument("--generate-missing", action="store_true")
@@ -40,6 +40,9 @@ def main():
     elif args.collection == "order12-side18":
         manifest = read_json(DATA / "order12_side18_0_1.json.xz")
         specs = [[12, 9, 18, 0, 1, 1]]
+    elif args.collection == "stride2-order12":
+        manifest = read_json(DATA / "stride2_order12_21_manifest.json.xz")
+        specs = [[12, 6, 21, 0, 0, 2]]
     else:
         manifest = read_json(DATA / "side_140_patch_manifest.json.xz")
         specs = read_json(DATA / "side_140_patches.json")
@@ -49,22 +52,24 @@ def main():
     tasks = []
     for entry in manifest:
         order, budget, side, x, y, stride = spec = entry["patch"]
+        group_size = entry.get("group_size", 96)
         deepest = deepest_by_order[order]
         words = sorted({
             orientation for word in catalogs[f"{order}/{deepest}"]
             if cost(order, word.encode("ascii")) <= budget
             for orientation in orientations(order, word.encode("ascii"))
         })
-        starts = list(range(0, len(words), 96))
+        starts = list(range(0, len(words), group_size))
         records = entry["proof_records"]
         if len(words) != entry["oriented_cases"] or [r["start"] for r in records] != starts:
             raise ValueError(f"Incomplete proof coverage for patch {spec}")
-        patch = Patch(order, budget, side, x, y, 96, len(words), stride)
-        directory = (args.proof_dir / "-".join(map(str, spec))) if args.proof_dir else None
+        patch = Patch(order, budget, side, x, y, group_size, len(words), stride)
+        tag = "-".join(map(str, spec)) + (f"_g{group_size}" if group_size != 96 else "")
+        directory = (args.proof_dir / tag) if args.proof_dir else None
         if directory is not None:
             directory.mkdir(parents=True, exist_ok=True)
         for start, record in zip(starts, records):
-            group = words[start:start + 96]
+            group = words[start:start + group_size]
             if record["spec"] != spec or record["count"] != len(group):
                 raise ValueError(f"Incorrect group coverage for patch {spec}")
             if directory is None:

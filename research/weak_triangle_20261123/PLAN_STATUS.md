@@ -4,9 +4,9 @@
 | --- | --- | --- |
 | 1. Audit the side-144 result and prove a bound of at most 143 | The baseline arithmetic and 539 square proof groups were replayed. The weak triangle excludes side 143. | Reached |
 | 2. Classify small-square extensions and their rainbow profiles | 325 of 509 cutoff/offset cases have certified existence or exclusion. At order 13, all 64 placements across sides 16, 17, and 18 (15 + 21 + 28 orbits) have complete witnessed survivor lists and RUP-refuted complements. | All $T_{13}$ unit-step placements complete |
-| 3. Use square symmetry and local weights to reach 140 or below | Exact three-color certificates exclude the full [141-square](SIDE_141.md) (margin `40,535,231`) and the full [140-square](SIDE_140.md) (margin `338,693,821`), proving $R_3(\mathcal L)\le 140$. At side 139 the current patch and boundary-layer LP has lower bound `1.0056 > 1`. | Reached ($R_3(\mathcal L)\le 140$) |
-| 4. Determine the order-14 minimum and propagate improvements | The minimum is in $[14,17]$. Eight conditional minima are sharp. At orders 14 through 18, a coloring with exactly as many rainbows as its order has two or three boundary rainbows on different sides. | Exact minimum open |
-| 5. Improve the four-color bound below 21,947,865 | The disjoint endpoint capacities and independent integer calculation give $R_4(\mathcal L)\le21{,}947{,}855$. | Reached |
+| 3. Use square symmetry and local weights to reach 140 or below | Exact three-color certificates exclude the full [141-square](SIDE_141.md) (margin `40,535,231`), the full [140-square](SIDE_140.md) (margin `338,693,821`), and the full [139-square](SIDE_139.md) via cross-diagonal shifted-triangle coupling (margin `384,370,061`), proving $R_3(\mathcal L)\le 139$. | Reached ($R_3(\mathcal L)\le 139$) |
+| 4. Determine the order-14 minimum and propagate improvements | The [order-14 minimum >= 15 proof](ORDER14_MIN15.md) refutes $r_{14}=14$, narrowing the exact minimum to $[15,17]$, raising unconditional minima at orders 14 through 18 to `15, 16, 17, 18, 19`, and strengthening local Chvatal-Gomory packings through order 32. | $15 \le r_{\min}(T_{14}) \le 17$ |
+| 5. Improve the four-color bound below 21,947,865 | Disjoint endpoint bins give [$21{,}947{,}855$](../r4_disjoint_edge_bins_20261123/README.md), subadditive Farkas discrepancies with 26-shift rank weights give [$21{,}947{,}834$](../r4_subadditive_farkas_20261124/README.md), and 35-shift histogram-stratified rank-split deficits give [$R_4(\mathcal L)\le 21{,}947{,}830$](../r4_stratified_farkas_20261124/README.md). | Reached ($R_4(\mathcal L)\le 21{,}947{,}830$) |
 
 ### Square placements
 
@@ -31,10 +31,10 @@ witness and exclusion manifests.
 
 ### Proofs and reproduction
 
-- [Side-143 audit](README.md), [side-141 certificate](SIDE_141.md), and [side-140 certificate](SIDE_140.md)
-- [Square witnesses and exclusions](PLACEMENTS.md) and [order-13 survivor classifications across sides 16–18](ORDER13_SIDE18.md)
-- [Eight sharp extension minima](ORDER14_EXTENSIONS.md), [boundary structure through order 18](BOUNDARY_LAYERS.md), and [local weighted bounds through order 32](SOURCE_FLOORS.md)
-- [Four-color integer certificate](../r4_disjoint_edge_bins_20261123/README.md)
+- [Side-143 audit](README.md), [side-141 certificate](SIDE_141.md), [side-140 certificate](SIDE_140.md), and [side-139 full-square certificate](SIDE_139.md)
+- [Square witnesses and exclusions](PLACEMENTS.md) (including the stride-2 21-square exclusion `(12, 6, 21, 0, 0, 2)`) and [order-13 survivor classifications across sides 16–18](ORDER13_SIDE18.md)
+- [Eight sharp extension minima](ORDER14_EXTENSIONS.md), [boundary structure through order 18](BOUNDARY_LAYERS.md), [unconditional `r_14 >= 15` proof](ORDER14_MIN15.md), and [local weighted bounds through order 32](SOURCE_FLOORS.md)
+- Four-color integer certificates: [21,947,855](../r4_disjoint_edge_bins_20261123/README.md), [21,947,834](../r4_subadditive_farkas_20261124/README.md), and [21,947,830](../r4_stratified_farkas_20261124/README.md)
 
 The draft *Directed L-grid proof archives for PR #19* on the
 [repository Releases page](https://github.com/Zetttt-8848/L-free-Grid-Coloring-Problem-Ramsey-Grid-Number/releases)
