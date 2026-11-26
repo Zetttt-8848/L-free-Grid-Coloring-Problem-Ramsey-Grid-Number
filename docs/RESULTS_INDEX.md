@@ -2,7 +2,17 @@
 
 This index points to the current mathematical manuscript. Open assertions are unresolved hypotheses and External theorem are literature inputs. Historical Lean coverage records are not a substitute for item-by-item correspondence of the current draft.
 
-Latest Research Catalog Results: [Global Count](../research/global_counting_20261108/README.md), has not yet been incorporated into the main manuscript. The range is still 21 to 464.
+Latest Research Catalog Results (2026-11-26 checkpoint, not yet incorporated into `manuscript/main.tex`; see [state snapshot](../.claude/skills/lgrid-research/references/state.md)): unconditional working intervals are `21 <= R3 <= 138` and `21 <= R4 <= 21,947,741`.
+
+| Status | Result | Certification |
+|---|---|---|
+| PROVED, computer-assisted, self-contained in repository; reviewed in repository | `R3 <= 138` on full square `S_138` (exact integer margin `+1,659,966,634`; zero external OGR assumptions) | [Side-138 full-square certificate](../research/r3_side138_20261126/README.md), `verify.py` |
+| PROVED, computer-assisted, self-contained in repository | `R3 <= 139`, `140`, `141`, `143`, `144` and `r_min(T_14) >= 15` | [Weak-triangle & full-square certificates](../research/weak_triangle_20261123/SIDE_139.md), [PR 11 weighted proof](../research/boundary_certificates_20261115/THREE_COLOR_WEIGHTED.md) |
+| PROVED, computer-assisted, self-contained in repository; reviewed in repository | `R4 <= 21,947,741` (exact integer margin `+67,076,013,380,690,640,788,136,578,854,518,589,429,308,720`; negative at `21,947,740`) | [MCF Farkas & 3-segment outer DP certificate](../research/r4_mcf_minimax_20261126/README.md), `verify.py` |
+| PROVED, computer-assisted, self-contained in repository; reviewed in repository | Exact strict binary-source minimum spans `e_1..e_16 = (0,1,2,3,4,6,7,9,10,12,14,17,19,21,24,27)` and interval capacities `C(1)..C(27)` | [Binary-source span certificates](../research/binary_source_spans_20261126/README.md), `verify.py` |
+| PROVED / EXPLICIT WITNESSES | Proper 4-colorings of `S_6..S_10` with zero rainbow Ls in `T_m` (`0` across all of `S_6, S_7`) | [Zero-rainbow witnesses](../research/r4_mcf_minimax_20261126/zero_rainbow_witnesses.json) |
+
+Earlier 2026-11-08 diagonal-word research catalog ([Global Count](../research/global_counting_20261108/README.md)):
 
 | Status | Result | Certification |
 |---|---|---|
@@ -11,10 +21,12 @@ Latest Research Catalog Results: [Global Count](../research/global_counting_2026
 | PROVED, using external OGR uniqueness and span input | Extreme shape span cost, reducing each of the six types of capacity from p=428 to 431 by 1; stride length translation overlap budget | [Span and overlap count](../research/global_counting_20261108/multiscale/THEOREM.md) |
 | UNDECIDED | A smaller Ramsey upper bound than 464 deduced from the above global count | [Independent review and scope](../research/global_counting_20261108/review/REVIEW.md) |
 
-Four colors (added 2026-11-13; see [state snapshot](../.claude/skills/lgrid-research/references/state.md)):
+Four colors (updated 2026-11-26; see [state snapshot](../.claude/skills/lgrid-research/references/state.md)):
 
 | Status | Result | Certification |
 |---|---|---|
+| PROVED, computer-assisted, self-contained in repository; reviewed in repository | R4 <= 21947741 | [MCF Farkas & 3-segment outer DP](../research/r4_mcf_minimax_20261126/README.md) (superseding [21947830](../research/r4_stratified_farkas_20261124/README.md), [21947834](../research/r4_subadditive_farkas_20261124/README.md), [21947855](../research/r4_disjoint_edge_bins_20261123/README.md), [21947877](../research/boundary_certificates_20261115/FOUR_COLOR_EDGE_VARIANCE.md)) |
+| PROVED, elementary and self-contained | R4 <= 21987409 | [Recursive span proof](../research/boundary_certificates_20261115/FOUR_COLOR.md) |
 | PROVED per repository history; certificate arithmetic rerun 2026-11-13; inherited Round-2 lemmas not re-audited | R4 <= 21991300 | [Round-3 report](../exploration/research_round3/four/R3_R4_REPORT.md), [review](../exploration/research_round3/audits/fresh_astra/REVIEW.md) |
 | PROVED, elementary; not independently reviewed | R4 <= 22049225 | [Four-color sensitivity note, section 3](../research/four_color_sensitivity_20261113/README.md) |
 | CONDITIONAL on a binary-source bound M <= qL | R4 <= N(q) (table); any proved q <= 4765 on spans up to 21991297 improves R4 | [Same note, sections 1-2](../research/four_color_sensitivity_20261113/README.md) |
