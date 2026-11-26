@@ -1,0 +1,11 @@
+{
+  "source_repository": "https://github.com/dcartermath/sidon-error",
+  "source_commit": "ff5b032fc3745140549777a96a9ec3ba7f8dd954",
+  "source_subdir": "asymptotic",
+  "paper": "Daniel Carter, Kevin O'Bryant, and Terence Tao, arXiv:2610.36207v1",
+  "sha256": {
+    "G.txt": "bfd7fbf4b93be3484c51f8b50c8419b6ab9cd07f6a9065b1ccb3c8bbe0d8cb4c",
+    "H.txt": "cfaf69e83f34860761fb67faa832bea3eae0372787fbd5042efbec31e308ad03",
+    "p.txt": "895a88c77c3a8b17473c5ba8b863e0aac41dfa1a58c7d1e8f7760684da97d9ed"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source_commit": "d18a9650826e8c2e3e87c90a2480fda738a4afba",
+  "description": "In-tree certified local catalogs, placement profiles, extension witnesses, and square-patch manifests vendored for standalone verification.",
+  "files": [
+    {
+      "file": "triangle_grid_catalogs.json.xz",
+      "upstream_repo_path": "research/boundary_certificates_20261115/triangle_grid_catalogs.json.xz",
+      "bytes": 140236,
+      "sha256": "60af8c7b79d362a35eaeb3b0494e34bd2820ebc7d3fc23fd5ec8bcd5f72b48d6"
+    },
+    {
+      "file": "order13_side16_profiles.json.xz",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/order13_side16_profiles.json.xz",
+      "bytes": 640708,
+      "sha256": "88ad7ce92a7131f51154e96c8c78182c4d041e6fc6524c1a50e607c0dd2acaaf"
+    },
+    {
+      "file": "order13_side17_profiles.json.xz",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/order13_side17_profiles.json.xz",
+      "bytes": 145860,
+      "sha256": "c9be93f04f08b8773d5b0e6fff150d24bdb5d0d5cf6db4dd8cb0553c4e99fcb5"
+    },
+    {
+      "file": "order13_side18_profiles.json.xz",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/order13_side18_profiles.json.xz",
+      "bytes": 55436,
+      "sha256": "1ec346c036a58c0397822eb184f632cf8d7d47f113b40465960df8c4f3820ac5"
+    },
+    {
+      "file": "order14_extension_minima.json",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/order14_extension_minima.json",
+      "bytes": 1652,
+      "sha256": "c80d36a4f4de445074d4f352cdfa59c7c7759c6e95c6ea78cec22d7c52098496"
+    },
+    {
+      "file": "side_141_patches.json",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/side_141_patches.json",
+      "bytes": 108,
+      "sha256": "07f1fc1f74efabc715616aa3e081894775e4e3aeeb18526299df542a4885816b"
+    },
+    {
+      "file": "side_140_patches.json",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/side_140_patches.json",
+      "bytes": 108,
+      "sha256": "f9ddeae10ef298a3f8ffe59e757ee38472aa2ac332f181dc3b7ab2166822c8b1"
+    },
+    {
+      "file": "order12_side18_0_1.json.xz",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/order12_side18_0_1.json.xz",
+      "bytes": 111376,
+      "sha256": "a129d91abdcf56726ed02f00938c5d137b6b009c620415dfb04f2a3f7b59dd46"
+    },
+    {
+      "file": "stride2_order12_21_manifest.json.xz",
+      "upstream_repo_path": "research/weak_triangle_20261123/data/stride2_order12_21_manifest.json.xz",
+      "bytes": 2760,
+      "sha256": "0efe9c0a6eff4d75e9586602a10f26d94b19eaf46ccbe11bb21c3cab68ac3cc3"
+    }
+  ]
+}
